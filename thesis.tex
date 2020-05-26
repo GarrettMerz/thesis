@@ -1,0 +1,99 @@
+% Use the University of Michigan thesis class.
+\documentclass[thesis,openany]{./tex/thesis-umich}
+
+% Title of the thesis
+\title{My Thesis}
+
+% Author name
+\author{Name}
+
+% Department
+\department{Department}
+
+% Year of completion
+\year=2020
+
+% ORCID ID 
+\orcid{My Orcid ID}
+
+% UM Unique Name 
+\umuniquename{name}
+
+% Frontispiece
+%\frontispiece{\includegraphics[width=4in]{./pics/frontispiece.pdf}}
+
+% Default style for front pages
+\frontpagestyle{1}
+
+% Dedication
+\dedication{ %
+Dedicated to... }
+
+% Acknowledgments
+\acknowledgments[6]{ %
+I would like to acknowledge... 
+}
+% This command sets the width of the acknowledgments area as a fraction
+% of the total width of the text area.
+\acknowledgmentswidth{0.85}
+
+% Preface
+%\preface[2]{ Do I need this?}
+
+% Committee
+\committee{ %
+Member 1, Chair \\
+Member 2 \\ 
+Member 3 \\ 
+Member 4 \\ 
+Member 5 \\ }
+
+% Chair must be entered separately for formatting reasons.
+\chair{Member 1}
+
+% Commands to hide or show lists of figures, tables, etc.
+%\hidelistoftables
+%\showlistofprograms
+\showlistofappendices
+
+% Definition of any abbreviations used.
+\abbreviations{ %
+    \acro{TH}{Thesis}
+    \acrodefplural{TH}{Theses}   
+}
+
+
+
+% Some abstract text
+\abstract{ %
+My Abstract. 
+}
+%\hideabstractpagenumber
+
+%% DOCUMENT AREA
+\begin{document}
+
+% ----- Introduction ----- %
+
+\chapter{A Chapter} \label{chap:example_chapter}
+	\input{sections/chapter_example} 
+
+
+% ----- Appendices ----- % 
+
+\appendix
+
+\chapter{An Appendix} \label{app:example_appendix}
+	\input{appendix/appendix_example}
+
+
+ 
+% Using AIAA bibliography style 
+\bibliographystyle{aiaa}
+% Give this command the relative path to the .bib file.
+\bibliography{./bib/thesis-bib}
+
+
+\end{document}
+
+
