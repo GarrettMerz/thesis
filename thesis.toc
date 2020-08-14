@@ -1,0 +1,21 @@
+\contentsline {chapter}{Dedication}{ii}{section*.1}
+\contentsline {chapter}{Acknowledgements}{iii}{section*.2}
+\contentsline {chapter}{List of Figures}{v}{section*.4}
+\contentsline {chapter}{List of Tables}{vi}{section*.5}
+\contentsline {chapter}{List of Appendices}{vii}{section*.6}
+\contentsline {chapter}{List of Abbreviations}{viii}{section*.8}
+\contentsline {chapter}{Abstract}{ix}{section*.9}
+\vspace {1.3ex}\noindent {\bf Chapter}\vspace {1.3ex}
+\contentsline {chapter}{\numberline {1}The ATLAS Detector}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}The Large Hadron Collider}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}The ATLAS Detector}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Inner Detector}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Solenoid Magnet}{7}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Calorimeters}{7}{subsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.3.1}ECAL}{8}{subsubsection.1.2.3.1}
+\contentsline {subsubsection}{\numberline {1.2.3.2}HCAL}{11}{subsubsection.1.2.3.2}
+\contentsline {subsection}{\numberline {1.2.4}Toroid Magnets}{13}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Muon Spectrometer}{15}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}Trigger}{20}{subsection.1.2.6}
+\contentsline {chapter}{Appendices}{22}{section*.23}
+\setcounter {tocdepth}{1}
