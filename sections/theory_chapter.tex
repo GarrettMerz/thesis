@@ -1,7 +1,8 @@
+\usepackage{ amssymb }
 
 \section{The Standard Model} \label{sec:SM} 
 
-The Standard Model of Particle Physics is arguably one of the crowning achievements of the last century of physics research. Though it is doubtless incomplete (it does not, for instance, explain the dark energy or dark matter observed in cosmological experiments, nor does it provide a satisfactory quantum-mechanical model of gravity), all predictions it has made have yet to be falsified.
+The Standard Model of Particle Physics is arguably one of the crowning achievements of the last century of physics research. Though it is doubtless incomplete (it does not, for instance, explain the dark energy or dark matter observed in cosmological experiments, nor does it provide a satisfactory quantum-mechanical model of gravity), all predictions it has made have yet to be falsified \ref{Peskin}, \ref{Gordy}, \ref{FTGA}, \ref{Griffiths}.
 
 The Standard Model is a quantum field theory, meaning that it describes the behavior of fields (physical quantities that are defined at all points in spacetime; common examples of fields include electric and magnetic fields) and their discrete, quantized excitations, referred to as particles (common examples of particles are the electron and the photon, which are excitations of the "electron field" and the electromagnetic field respectively). More about the mathematics of field dynamics will be discussed in section \ref{sec:Lagrangians}.
 
@@ -21,7 +22,13 @@ The Higgs boson is the only scalar (spin-0) boson in the Standard Model. Though 
 
 \subsection{sec:Lagrangians}
 
-In order to fully explain the Higgs mechanism, we must first discuss the language of quantum field theory.
+In order to fully explain the Higgs mechanism, we must first discuss the mathematical language of quantum field theory. Both quantum and classical field theories are often discussed using Lagrangian dynamics, where the Lagrangian is defined as  $\mathcal{L} = T - V$, the difference of the kinetic and the potential energy. Physical properties will always evolve in such a way that the integral of this property with respect to time, $\mathcal{S} = \int \mathcal{L} dt$, called the action, is a constant. Lagrangians are also incredibly useful in that they give rise to conservation laws: Noether's Theorem states that operations performed on a system that do not change the Lagrangian are each associated to conserved quantities of a system (i.e., systems with translationally invariant Lagrangians must respect conservation of momentum, systems with temporally-invariant Lagrangians must respect conservation of energy, etc.).
+
+In traditional quantum mechanics, quantities called operators act on the states of a system. Likewise, in a quantum field theory, quantities such as energy, momentum, and position are also treated as operators that act on the state of the vacuum. A variety of types of fields exist, but we will discuss 
+
+
+
+ 
 
 \section{The Higgs Mechanism and Electroweak Symmetry Breaking} \label{sec:EWSB} 
 
