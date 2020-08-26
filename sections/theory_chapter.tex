@@ -20,22 +20,52 @@ The strong nuclear interaction binds quarks together, while the weak interaction
 
 The Higgs boson is the only scalar (spin-0) boson in the Standard Model. Though it does not mediate any force directly, its existence is a consequence of the unification of the electromagnetic and weak nuclear interactions into one "electroweak" interaction at high energy scales. Without the role of the Higgs boson in this process, the fermions, the W-bosons, and the Z-boson would all be massless; thus, the Higgs can be said to "give mass" to the particles of the Standard Model. It couples to all massive particles in the Standard Model, namely, the fermions and the W and Z bosons.
 
-\subsection{sec:Lagrangians}
+\subsection{sec:Lagrangians, Fields, and Gaug}
 
 In order to fully explain the Higgs mechanism, we must first discuss the mathematical language of quantum field theory. Both quantum and classical field theories are often discussed using Lagrangian dynamics, where the Lagrangian is defined as  $\mathcal{L} = T - V$, the difference of the kinetic and the potential energy. Physical properties will always evolve in such a way that the integral of this property with respect to time, $\mathcal{S} = \int \mathcal{L} dt$, called the action, is a constant. Lagrangians are also incredibly useful in that they give rise to conservation laws: Noether's Theorem states that operations performed on a system that do not change the Lagrangian are each associated to conserved quantities of a system (i.e., systems with translationally invariant Lagrangians must respect conservation of momentum, systems with temporally-invariant Lagrangians must respect conservation of energy, etc.).
 
-In traditional quantum mechanics, quantities called operators act on the states of a system. Likewise, in a quantum field theory, quantities such as energy, momentum, and position are also treated as operators that act on the state of the vacuum. A variety of types of fields exist, but we will discuss 
+A variety of types of fields exist, but we will discuss three at length: Klein-Gordon fields, which are scalar fields (single quantities defined everywhere), Dirac spinor fields (vector quantities defined everywhere), and gauge fields (additional vector fields that must be introduced in order to preserve certain physical symmetries. We begin with the Klein-Gordon field.
+
+Klein-Gordon fields, one of the simplest examples of a field, are real scalar-valued quantities often denoted using the symbol $\phi$. A non-interacting "free" Klein-Gordon field evolves according to the Lagrangian:
+
+\begin{equation}
+\mathcal{L} = T - V 
+=\frac{1}{2} \frac{\partial^{2} \phi}{\partial t^{2}} - \frac{1}{2} (\nabla \phi)^{2} - \frac{1}{2} m^{2} \phi^{2}
+=-\frac{1}{2}(\partial^{\mu}\phi)(\partial_{\mu}\phi)- \frac{1}{2} m^{2} \phi^{2}
+\end{equation}
+
+where we utilize Einstein sum notation in the last line to compress the four derivatives in the preceding expression into a single shorthand symbol. The Lagrangian of an interacting Klein-Gordon field would look similar, but would possess additional $V$ potential terms depending on the nature of the interaction. As the only scalar in the Standard Model, the observable Higgs boson is the only elementary particle to follow an interacting Klein-Gordon field equation.
+
+While the concept of a complex-valued scalar field does not directly correspond to any of the physical elementary particles that are present in the Standard Model, it plays an important role in the understanding of the Higgs mechanism. A complex-valued scalar field behaves similarly to a real-valued one, with the Lagrangian
+
+\begin{equation}
+\mathcal{L} = (\partial^{\mu}\phi^{*})(\partial_{\mu}\phi) - \frac{1}{2} m^{2} \phi^{*} \phi
+\end{equation}
+
+Where * denotes the complex conjugate of the scalar field.
+
+Dirac fields describe all Standard Model fermions (with the possible exception of neutrinos). They are vectors as opposed to scalars, and behave according to the Lagrangian:
+
+\begin{equation}
+\mathcal{L} = \bar{\psi}(i \gamma^{mu} \partial_{mu} - m) \psi
+\end{equation}
+
+where the overbar denotes the transpose of the complex conjugate of the vector field, and $\gamma^{mu}$ denotes the set of Dirac gamma matrices. 
+
+A Dirac vector field can be written in a variety of ways, but one of the most useful is that of a doublet of two Weyl spinors, one left-handed and one right-handed, that is, $\psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}$. 
+
+In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a complex Klein-Gordon field described by the equation \ref{eq:complexKG}. Introducing a 
 
 
-
- 
 
 \section{The Higgs Mechanism and Electroweak Symmetry Breaking} \label{sec:EWSB} 
 
-This is a subsection. It will be included in the table of contents. 
+
+
 
 \section{The Higgs Boson and Its Couplings} \label{sec:example_subsubsection} 
 
 This is a subsubsection. It will not be included in the table of contents. 
 
 \section{CP-Symmetry}
+We return to the Dirac field to discuss its properties.  
