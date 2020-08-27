@@ -44,21 +44,35 @@ While the concept of a complex-valued scalar field does not directly correspond 
 
 Where * denotes the complex conjugate of the scalar field.
 
-Finally, Dirac fields describe all Standard Model fermions (with the possible exception of neutrinos). They are vectors as opposed to scalars, and behave according to the Lagrangian:
+Finally, Dirac fields describe all Standard Model fermions (with the possible exception of neutrinos). They are vector fields as opposed to scalar fields, and behave according to the Lagrangian:
 
 \begin{equation}
 \mathcal{L} = \bar{\psi}(i \gamma^{mu} \partial_{mu} - m) \psi
 \end{equation}
 
-FIXME
-where $\gamma^{mu}$ denotes the set of Dirac gamma matrices, and $\bar{\psi}$ denotes the transpose of the complex conjugate of the vector field,  times
-FIXME
+where $\gamma^{mu}$ denotes the set of Dirac gamma matrices, and $\bar{\psi} = \psi^{\dagger} \gamma^0$ denotes the transpose of the complex conjugate of the vector field multiplied by one of these matrices, defined as such in order to preserve invariance under relativistic Lorentz boosts. 
 
+A four-component Dirac vector field can be written in a variety of representations, but one of the most useful is that of a doublet of two two-component Weyl spinors, one left-handed and one right-handed, that is, $\psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}$. Each of these components transforms differently under Lorentz boosts.
 
-A Dirac vector field can be written in a variety of ways, but one of the most useful is that of a doublet of two spinors, one left-handed and one right-handed, that is, $\psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}$. 
+In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a complex Klein-Gordon field described by equation \ref{eq:complexKG}. We transform the field by rotating it by a constant phase $\alpha$:  $\phi \rightarrow e^{i \alpha} \phi $, $\bar{\phi} \rightarrow e^{-i \alpha} \bar{\phi} $.
 
-In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a complex Klein-Gordon field described by the equation \ref{eq:complexKG}. Introducing a 
+\begin{equation}
+\mathcal{L} = - \frac{1}{2} \partial^{mu}(e^{i \alpha}\phi)\partial_{mu}(e^{-i \alpha}\phi^{*})- \frac{1}{2} m^{2}(e^{i \alpha}\phi)(e^{-i \alpha}\phi^{*})
+=- \frac{1}{2} (e^{i \alpha} e^{-i \alpha})\partial^{mu}(\phi)\partial_{mu}(\phi^{*})- \frac{1}{2} m^{2}(e^{i \alpha}e^{-i \alpha})(\phi \phi^{*})
+= - \frac{1}{2} \partial^{mu}(\phi)\partial_{mu}(\phi^{*})- \frac{1}{2} m^{2}(\phi \phi^{*})
+\end{equation}
 
+We see that we recover the original complex Klein-Gordon Lagrangian. Thus, the lagrangian is invariant under a constant phase rotation. A transformation of this charater is called a global gauge transformation. A one-dimensional rotation is a unitary transformation, so we call this a global $U(1)$ gauge symmetry.
+
+We next consider the concept of a local gauge transformation, that is, one in which the phase $\alpha$ may vary with position. The field transforms, as before, like  $\phi \rightarrow e^{i \alpha (x)} \phi $, $\bar{\phi} \rightarrow e^{-i \alpha (x)} \bar{\phi} $. hHowever, we note that the dependence on position means that we can no longer factor out the exponentials, and we thus have
+
+\begin{equation}
+\mathcal{L} = - \frac{1}{2} \partial^{mu}(e^{i \alpha (x)}\phi)\partial_{mu}(e^{-i \alpha (x)}\phi^{*})- \frac{1}{2} m^{2}(e^{i \alpha (x)}\phi)(e^{-i \alpha (x)}\phi^{*})
+=- \frac{1}{2}(e^{i \alpha (x)}\partial^{mu}\phi + i \phi e^{i \alpha (x)}\partial^{mu}\alpha(x))(e^{-i \alpha (x)}\partial_{mu}\phi^{*} - i \phi^{*} e^{-i \alpha (x)}\partial^{mu}\alpha(x))- \frac{1}{2} m^{2}(\phi)(\phi^{*})
+=- \frac{1}{2}(e^{i \alpha (x)} e^{-i \alpha (x)})(\partial^{mu} + i \partial^{mu}\alpha(x))\phi(\partial_{mu} - i \partial_{mu}\alpha(x))\phi^{*}- \frac{1}{2} m^{2}(\phi)(\phi^{*})
+\end{equation}
+
+i.e., the Lagrangian is not invariant under this sort of transformation. However, local gauge invariance is an important physical symmetry, so in order to attempt to preserve it, we add an additional term to the original Lagrangian: an extra vector field $A_\mu$ that transforms like $A_\mu \rightarrow $
 
 
 \section{The Higgs Mechanism and Electroweak Symmetry Breaking} \label{sec:EWSB} 
