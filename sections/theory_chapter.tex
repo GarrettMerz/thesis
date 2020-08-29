@@ -14,7 +14,7 @@ The quarks are the only fermions that undergo both the strong and weak nuclear i
 
 In addition to these 12 fermion species, each fermion species has a corresponding antimatter "antifermion" species, which has the opposite charge and parity quantum numbers. This is discussed at length in section \ref{sec:CPT}.
 
-The bosons of the standard model are the "messengers" through which the fundamental forces operate (with the exception of the Higgs boson, which is detailed at length in section \ref{sec:EWSB}). The photon, the gluons and the as-yet-unobserved graviton are massless, while the two W-bosons, the Z-boson, and the Higgs boson are all massive. The photon is the mediator of the electromagnetic force and couples to charged particles; the graviton is the mediator of the gravitational fore and couples to massive particles; the gluon is the mediator of the strong nuclear force and couples to particles with "color charge", and the W and Z bosons are the mediators of the weak nuclear interaction, coupling to all fermions with left-handed parity and antifermions with right-handed parity. In addition, the three weak bosons ($W^{+}$, $W^{-}$, and $Z$) can all couple to each other, as can the gluons.
+The bosons of the standard model are the "messengers" through which the fundamental forces operate (with the exception of the Higgs boson, which is detailed at length in section \ref{sec:EWSB}). The photon and the gluons are massless, while the two W-bosons, the Z-boson, and the Higgs boson are all massive. The photon is the mediator of the electromagnetic force and couples to charged particles; the gluon is the mediator of the strong nuclear force and couples to particles with "color charge", and the W and Z bosons are the mediators of the weak nuclear interaction, coupling to all fermions with left-handed parity and antifermions with right-handed parity. In addition, the three weak bosons ($W^{+}$, $W^{-}$, and $Z$) can all couple to each other, as can the gluons.
 
 The strong nuclear interaction binds quarks together, while the weak interaction governs the decay of one species of fermion into another. Weak interactions operate primarily on fermion doublets, coupling each up-type quark to its corresponding down-type quark and each charged lepton to its corresponding neutrino. However, some intergenerational coupling does occur, the rarity of which is governed by a matrix of coefficients called the Cabibbo-Kobayashi-Makasawa (or CKM) matrix. 
 
@@ -54,28 +54,68 @@ where $\gamma^{mu}$ denotes the set of Dirac gamma matrices, and $\bar{\psi} = \
 
 A four-component Dirac vector field can be written in a variety of representations, but one of the most useful is that of a doublet of two two-component Weyl spinors, one left-handed and one right-handed, that is, $\psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}$. Each of these components transforms differently under Lorentz boosts.
 
-In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a complex Klein-Gordon field described by equation \ref{eq:complexKG}. We transform the field by rotating it by a constant phase $\alpha$:  $\phi \rightarrow e^{i \alpha} \phi $, $\bar{\phi} \rightarrow e^{-i \alpha} \bar{\phi} $.
+In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a single Dirac vector field described by equation \ref{eq:Dirac}. We transform the field by rotating it by a constant phase $\alpha$:  $\psi \rightarrow e^{i \alpha} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha} \bar{\psi} $.
 
 \begin{equation}
-\mathcal{L} = - \frac{1}{2} \partial^{mu}(e^{i \alpha}\phi)\partial_{mu}(e^{-i \alpha}\phi^{*})- \frac{1}{2} m^{2}(e^{i \alpha}\phi)(e^{-i \alpha}\phi^{*})
-=- \frac{1}{2} (e^{i \alpha} e^{-i \alpha})\partial^{mu}(\phi)\partial_{mu}(\phi^{*})- \frac{1}{2} m^{2}(e^{i \alpha}e^{-i \alpha})(\phi \phi^{*})
-= - \frac{1}{2} \partial^{mu}(\phi)\partial_{mu}(\phi^{*})- \frac{1}{2} m^{2}(\phi \phi^{*})
+\mathcal{L} = - (e^{-i \alpha} \bar{\psi})(i \gamma^{mu} \partial_{mu} - m) (e^{i \alpha} \psi)
+= - (e^{-i \alpha} e^{i \alpha})\bar{\psi} (i \gamma^{mu} \partial_{mu} - m)\psi
+= -\bar{\psi}(i \gamma^{mu} \partial_{mu} - m) \psi
 \end{equation}
 
-We see that we recover the original complex Klein-Gordon Lagrangian. Thus, the lagrangian is invariant under a constant phase rotation. A transformation of this charater is called a global gauge transformation. A one-dimensional rotation is a unitary transformation, so we call this a global $U(1)$ gauge symmetry.
+We see that we recover the original Dirac Lagrangian. Thus, the lagrangian is invariant under a constant phase rotation. A transformation of this charater is called a global gauge transformation. A one-dimensional rotation is a unitary transformation, so we call this a global $U(1)$ gauge symmetry.
 
-We next consider the concept of a local gauge transformation, that is, one in which the phase $\alpha$ may vary with position. The field transforms, as before, like  $\phi \rightarrow e^{i \alpha (x)} \phi $, $\bar{\phi} \rightarrow e^{-i \alpha (x)} \bar{\phi} $. hHowever, we note that the dependence on position means that we can no longer factor out the exponentials, and we thus have
+We next consider the concept of a local gauge transformation, that is, one in which the phase $\alpha$ may vary with position. The field transforms, as before, like  $\psi \rightarrow e^{i \alpha (x)} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha (x)} \bar{\psi} $. However, we note that the dependence on position means that we can no longer factor out the exponentials, and we thus have
 
 \begin{equation}
-\mathcal{L} = - \frac{1}{2} \partial^{mu}(e^{i \alpha (x)}\phi)\partial_{mu}(e^{-i \alpha (x)}\phi^{*})- \frac{1}{2} m^{2}(e^{i \alpha (x)}\phi)(e^{-i \alpha (x)}\phi^{*})
-=- \frac{1}{2}(e^{i \alpha (x)}\partial^{mu}\phi + i \phi e^{i \alpha (x)}\partial^{mu}\alpha(x))(e^{-i \alpha (x)}\partial_{mu}\phi^{*} - i \phi^{*} e^{-i \alpha (x)}\partial^{mu}\alpha(x))- \frac{1}{2} m^{2}(\phi)(\phi^{*})
-=- \frac{1}{2}(e^{i \alpha (x)} e^{-i \alpha (x)})(\partial^{mu} + i \partial^{mu}\alpha(x))\phi(\partial_{mu} - i \partial_{mu}\alpha(x))\phi^{*}- \frac{1}{2} m^{2}(\phi)(\phi^{*})
+\mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{mu} \partial_{mu} - m) (e^{i \alpha (x)} \psi)
+=-i e^{-i \alpha (x)} \bar{\psi} \gamma^{mu} (e^{i \alpha (x)} \partial_{mu} \psi + i e^{i \alpha (x)} \psi \partial_{mu} \alpha -m \bar{psi}\psi
+=-\bar{\psi}(i \gamma^{mu} \partial_{mu} + \gamma^{mu} \partial_{mu} \alpha - m) \psi
 \end{equation}
 
-i.e., the Lagrangian is not invariant under this sort of transformation. However, local gauge invariance is an important physical symmetry, so in order to attempt to preserve it, we add an additional term to the original Lagrangian: an extra vector field $A_\mu$ that transforms like $A_\mu \rightarrow $
+i.e., the Lagrangian is not invariant under this sort of transformation. However, local gauge invariance is an important physical symmetry, so in order to attempt to preserve it, we add an additional term to the original Lagrangian: an extra vector field $A_\mu$ that transforms like $A_\mu \rightarrow A_\mu - \frac{1}{q} \partial_{mu} \alpha(x) $ for a constant q. We also define a new operator, called the covariant derivative: $D_{mu} = \partial_{mu}+ iqA_{mu} $. Given how $A_{mu}$ transforms, we see that $D_{mu}$ transforms like
 
+\begin{equation}
+D_{mu} = \partial_mu + iqA_{mu}
+\rightarrow \partial_mu + iq(A_{mu}-frac{1}{q}\partial_{mu}\alpha(x))
+= \partial_mu + iqA_{mu}-i\partial_{mu}\alpha(x)
+=D_{mu}-i\partial_{mu}\alpha(x)
+\end{equation}
+
+Let us replace the $\partial_{mu}\phi$ terms in the initial Lagrangian with $\D_{mu}\phi$ and transform.
+
+\begin{equation}
+\mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{mu} (D_{mu}-i\partial_{mu}\alpha(x)) - m) (e^{i \alpha (x)} \psi)
+=-(e^{-i \alpha (x)} \bar{\psi})(i \gamma^{mu} (\partial_mu + iqA_{mu}-i\partial_{mu}\alpha(x))-m)(e^{i \alpha (x)} \psi)
+=-\bar{\psi}(i \gamma^{mu} \D_{mu} + \gamma^{mu} \partial_{mu} \alpha - \gamma^{mu} \partial_{mu} \alpha - m) \psi
+=-\bar{\psi}(i \gamma^{mu} \D_{mu} - m) \psi
+\end{equation}
+
+Thus, by introducing an additional vector field that corresponds to the local U(1) gauge symmetry, we have restored the invariance of our lagrangian. Physically, this field is analogous to the introduction of electromagnetism to our single Dirac fermion model, with the $A_mu$ field playing the role of the photon: it is a vector quantity and so has spin-1, it must be massless (as adding an $A_mu$ mass term to the Lagrangian would violate the symmetry again), and couples to the fermion fields according to their electromagnetic charge. We note that we can also still preserve invariance if we add an additional term $L_{kin} = -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}$ to the Lagrangian, where $F_{\mu \nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}$: this corresponds to the energy inherent in electromagnetic fields themselves. 
+
+Each of the fundamental forces in the Standard Model can be understood in terms of these sorts of gauge symmetries. The photon is the particle excitiation of the electromagnetic field, which corresponds to a one-dimensional rotation "U(1)" transformation. In order to be invariant under three dimensional transformations of the type "SU(3)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 3D vector space), we must add eight new vector fields (these are the eight gluons), leading to the incorporation of the strong interaction into the Standard Model.
+
+Similarly, in order to be invariant under two-dimensional transformations of the type "SU(2)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 2D vector space), we must add three new vector fields. However, these cannot be the observed weak-interaction bosons, the $W^{+}, W^{-} and Z$: as mentioned before, the new fields must be massless, as adding a mass term for these bosons would violate the local gauge symmetry. How, then, can the masses of the weak bosons fit into the Standard Model? The answer lies in the introduction of yet another field, called the Higgs field, the particle excitation of which is the much-lauded Higgs boson.
 
 \section{The Higgs Mechanism and Electroweak Symmetry Breaking} \label{sec:EWSB} 
+
+By now, it should be clear that the Higgs field is important not simply because it "gives particles mass" (an often-made claim which is, in a sense, true), but because it is a vital missing piece of the Standard Model that is necessary to reconcile the elegant mathematical language of the fundamental interactions with the particles we observe in real-world experiments.
+
+To understand the Higgs mechanism, we must first devote a brief detour to the concept of symmetry breaking. This occurs when an unstable, symmetric state spontaneously changes into a more stable, symmetric one. Consider, for example, the "wine-bottle" potential shape depicted in figure \ref{fig:potential}.
+
+\begin{figure}
+\end{figure}
+
+When the ball is balanced at the top of the potential "hill", the configuration is spatially symmetric: that is, no direction is privileged over any other. However, when this delicate balance is even slightly disturbed, the ball will roll down the hill in some direction, resulting in a final state that is \emph{not} symmetrical. This is the phenomenon known as "spontaneous symmetry breaking".
+
+Using the language of quantum field theory, we can easily add spontaneously-breakable symmetric potential terms to a Lagrangian. If we do so, the phenomenon of symmetry breaking allows us to rewrite these terms as a combination of massless fields (one for each "choice" the symmetry breaking must make) and massive fields (corresponding to the leftover degrees of freedom). If we rewrite the "wine-bottle" potential in this way, for example, the one new massless field corresponds to the ball's angular position along the circle at the base, while the massive field corresponds to the ball's  radial position "up" or "down" the hill. The massless particles that arise from these massless fields are known as Goldstone bosons.
+
+We are now ready to discuss the Higgs mechanism. We write the terms of the Standard Model Lagrangian, noting that, since the weak interaction is observed to be chiral, it may couple differently to left- and right-handed fermions.
+
+We can combine the electromagnetic and weak nuclear forces as different manifestations of the same force, called the electroweak force, that transforms like $U(1) \cross SU(2)$.
+
+In this case, the generator of the U(1) symmetry ($frac{\alpha}(x)$) is not the electric charge $Q$ as in our previous example, but is instead the "Weak Hypercharge" $Y = 2(Q -I_{3})$, where $I_{3}$ is the "Weak Isospin". For right-handed particles, $I_{3} = 0$, for left-handed up/charm/top quarks and neutrinos, $I_{3} = +frac{1}{2}$, and for left-handed down/strange/bottom quarks and charged leptons, $I_{3} = +frac{1}{2}$.
+
+
 
 
 
@@ -85,4 +125,4 @@ i.e., the Lagrangian is not invariant under this sort of transformation. However
 This is a subsubsection. It will not be included in the table of contents. 
 
 \section{CP-Symmetry}
-We return to the Dirac field to discuss its properties.  
+We return to the Dirac field to discuss its properties. 
