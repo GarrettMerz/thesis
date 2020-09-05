@@ -98,7 +98,7 @@ Similarly, in order to be invariant under two-dimensional transformations of the
 
 \section{CP-Symmetry}
 
-In addition to the SU(2)_{L} \cross U(1) \cross SU(3) gauge symmetry, the Standard Model also respects a discrete symmetry called CPT. This is the combined product of three separate symmetries: charge conjugation (C), parity inversion (P), and time reversal (T). While some interactions may respect a limited combination of these symmetries (i.e., just C, or the product CP), all Standard Model processes must respect the product of the three: that is, for a given physics process, if we invert all the charges, flip all the parities, and run the interaction backward, the resulting new process must also be physically allowed.
+In addition to the $SU(2)_{L} \times U(1) \times SU(3)$ gauge symmetry, the Standard Model also respects a discrete symmetry called CPT. This is the combined product of three separate symmetries: charge conjugation (C), parity inversion (P), and time reversal (T). While some interactions may respect a limited combination of these symmetries (i.e., just C, or the product CP), all Standard Model processes must respect the product of the three: that is, for a given physics process, if we invert all the charges, flip all the parities, and run the interaction backward, the resulting new process must also be physically allowed.
 
 The strong nuclear, electromagnetic, and gravitational interactions are symmetric under C, P, and T individually. The weak nuclear interaction, however, is invariant only under the combination of all three: it violates C, P, and, in some cases, CP. The CP violation that occurs in the weak interaction is through the CKM off-diagonal quark-mixing matrix mentioned briefly in section \ref{sec:SM}.
 
@@ -117,21 +117,23 @@ Given the results of previous sections, it should be clear that the Higgs field 
 To understand the Higgs mechanism, we must first devote a brief detour to the concept of spontaneous symmetry breaking. This occurs when an unstable, continuous symmetric state spontaneously changes into a more stable, asymmetric one. Consider, for example, the "wine-bottle" potential shape depicted in figure \ref{fig:potential}.
 
 \begin{figure}
+\includegraphics[width=\linewidth]{figures/theory_chapter/higgspotential.png}
+\caption{The "wine bottle" or "Mexican hat" potential hill, from reference \ref{Ellis}}
 \end{figure}
 
 When the ball is balanced at the top of the potential "hill", the configuration is spatially symmetric: that is, no direction is privileged over any other. However, when this delicate balance is even slightly disturbed, the ball will roll down the hill in some direction, resulting in a final state that is $\emph{not}$ symmetrical. This is the phenomenon known as "spontaneous symmetry breaking".
 
 Using the language of quantum field theory, we can easily add spontaneously-breakable symmetric potential terms to a Lagrangian. If we do so, the phenomenon of symmetry breaking allows us to rewrite these terms as a combination of massless fields (one for each "choice" the symmetry breaking must make) and massive fields (corresponding to the leftover degrees of freedom). If we rewrite the "wine-bottle" potential in this way, for example, the one new massless field corresponds to the ball's angular position along the circle at the base, while the massive field corresponds to the ball's  radial position "up" or "down" the hill. The massless particles that arise from these massless fields are known as Goldstone bosons.
 
-We are now ready to discuss the Higgs mechanism. We can combine the electromagnetic and weak nuclear forces as different manifestations of the same force, called the electroweak force, that transforms like $U(1) \cross SU(2)$. We write the terms of the Standard Model electroweak Lagrangian, noting that, since the weak interaction is observed to be chiral, it couples differently to left- and right-handed fermions.
+We are now ready to discuss the Higgs mechanism. We can combine the electromagnetic and weak nuclear forces as different manifestations of the same force, called the electroweak force, that transforms like $U(1) \times SU(2)$. We write the terms of the Standard Model electroweak Lagrangian, noting that, since the weak interaction is observed to be chiral, it couples differently to left- and right-handed fermions.
 
 In this case, the generator of the U(1) symmetry ($frac{\alpha}(x)$) is not the electric charge $Q$ as in our previous example, but is instead the "Weak Hypercharge" $Y = 2(Q -I_{3})$, where $I_{3}$ is the third component of the "Weak Isospin" $I$. For right-handed particles, $I_{3} = 0$, for left-handed up/charm/top quarks and neutrinos, $I_{3} = +frac{1}{2}$, and for left-handed down/strange/bottom quarks and charged leptons, $I_{3} = +frac{1}{2}$. We will call our U(1) boson $B_{mu}$ rather than $A_{mu}$, to distinguish it from the photon. For a fermion $\psi$ (u/c/s/e/$\mu$/$\tau$) that couples weakly to another fermion $\psi'$, we can write the left-and-right-handed components of f as 
 
 $L = \begin{pmatrix} \psi_{L} \\ \psi'_{L}, R = \begin{pmatrix}\psi_{R}$.
 
-Similarly, the generators of the SU(2) symmetry are the three matrices $\tau_{i}$, one corresponding to each weak boson $W^{mu}_{i}$. The self-interaction term for the weak interaction is $L_{kin} = -\frac{1}{4}G^{\mu \nu}G_{\mu \nu}$, where $G_{\mu \nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}+frac{g}{2} W_{\mu}\crossW_{\nu}$.
+Similarly, the generators of the SU(2) symmetry are the three matrices $\tau_{i}$, one corresponding to each weak boson $W^{mu}_{i}$. The self-interaction term for the weak interaction is $L_{kin} = -\frac{1}{4}G^{\mu \nu}G_{\mu \nu}$, where $G_{\mu \nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}+frac{g}{2} W_{\mu}\timesW_{\nu}$.
 
-We can define a new covariant derivative capturing the weak interaction terms as well: $D^{\mu} = \partial^{\mu}- \frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i I g_2 \Sigma \tau_{i}W_{i}^\mu$ Thus, the full electroweak $SU(2)_L \cross U(1)$ Lagrangian is:
+We can define a new covariant derivative capturing the weak interaction terms as well: $D^{\mu} = \partial^{\mu}- \frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i I g_2 \Sigma \tau_{i}W_{i}^\mu$ Thus, the full electroweak $SU(2)_L \times U(1)$ Lagrangian is:
 
 \begin{equation}
 \mathcal{L} = i\bar{R}\gamma^{\mu}D_{\mu}R + i\bar{L}\gamma^{\mu}D_{\mu}L -\frac{1}{4}G^{\mu \nu}G_{\mu \nu} -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}
@@ -190,7 +192,7 @@ V = {\mu}^2\phi^{dagger}\phi + \lambda(\phi^{dagger}\phi)^{2} = frac{1}{2}{\mu}^
 we see a mass term of the form $(frac{M_{h}^{2}{2})h^{2} = frac{6}{4}\lambda v^{2} h^{2} - frac{1}{2}\lambda v^{2} h^{2} = \lambda v^{2} h^{2}$;
 That is, $M_{h} = v \sqrt{2 \lambda}$.
 
-In sum: without a Higgs field, in order for the Standard Model electroweak Lagrangian to preserve $SU(2)_L \cross U(1)$ symmetry, we are forbidden from including mass terms for the fermions or the gauge bosons. However, by adding this additional field to the model and breaking its symmetry, we find that we can include fermion mass terms that do not violate the $SU(2)_L \cross U(1)$ symmetry, and that the electroweak gauge bosons now acquire mass terms by default. Furthermore, this new field also has a mass. This is a remarkable result: by simply adding one extra field to the model, we have solved several different problems in one fell swoop!
+In sum: without a Higgs field, in order for the Standard Model electroweak Lagrangian to preserve $SU(2)_L \times U(1)$ symmetry, we are forbidden from including mass terms for the fermions or the gauge bosons. However, by adding this additional field to the model and breaking its symmetry, we find that we can include fermion mass terms that do not violate the $SU(2)_L \times U(1)$ symmetry, and that the electroweak gauge bosons now acquire mass terms by default. Furthermore, this new field also has a mass. This is a remarkable result: by simply adding one extra field to the model, we have solved several different problems in one fell swoop!
 
 \section{The Higgs Boson and Its Couplings} \label{sec:example_subsubsection} 
 
@@ -198,5 +200,52 @@ As we have seen, the Standard Model Higgs is massive, and couples directly to al
 
 With the discovery of the Higgs, it can be argued that we have now entered an era of precision-measurement in collider physics. By closely studying interactions that are very sensitive to the injection of new physics, we can potentially detect deviations from the Standard Model: in many cases, we may see hints of the existence of new particles through changes to quantities of interest well before we are actually able to produce these particles in colliders directly. Due to the Higgs coupling to all massive particles, Higgs interactions are especially sensitive to new physics, and thus can serve as a useful bellwether for physics beyond the standard model.
 
-The Large Hadron Collider is a proton-proton collider; as such, physics processes that occur in it are almost always initiated by quarks or gluons.
+The Large Hadron Collider is a proton-proton collider; as such, physics processes that occur in it are almost always initiated by quarks or gluons. The predominant production modes are, in order of frequency, gluon-gluon fusion (ggF), vector boson fusion (VBF), vector-boson 
+associated (VH) and top-associated (ttH). The top-associated Higgs production mode is of particular interest to many experimentalists due to its direct dependence on the Higgs coupling to a fermion- by closely measuring the frequency and properties of the ttH mode, we can better understand the nature of this variety of couplings. Rarer production modes, such as single-top associated Higgs production (tH), can shed still more light on the nature of the top-quark/Higgs coupling (called the top quark Yukawa coupling), but are much more difficult to observe.
+
+\begin{figure}[htp]
+  \centering
+  \label{figure}\caption{Feynman diagrams depicting the leading Higgs production modes.}
+  \subfloat[Subcaption 1]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/VBF.png}}
+  \subfloat[Subcaption 2]{\label{figure:2}\includegraphics[width=60mm]{figures/theory_chapter/ggH.png}}
+  \\
+  \subfloat[Subcaption 3]{\label{figure:3}\includegraphics[width=60mm]{figures/theory_chapter/VH.png}}
+  \subfloat[Subcaption 4]{\label{figure:4}\includegraphics[width=60mm]{figures/theory_chapter/ttH.png}}
+  \\
+\end{figure}
+
+\begin{figure}[htp]
+  \centering
+  \label{figure}\caption{Feynman diagrams depicting single-top associated Higgs production.}
+  \subfloat[Subcaption 1]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/tWH1.png}}
+  \subfloat[Subcaption 2]{\label{figure:2}\includegraphics[width=60mm]{figures/theory_chapter/tWH2.png}}
+  \\
+  \subfloat[Subcaption 3]{\label{figure:3}\includegraphics[width=60mm]{figures/theory_chapter/tqH1.png}}
+  \subfloat[Subcaption 3]{\label{figure:3}\includegraphics[width=60mm]{figures/theory_chapter/tqH2.png}}
+  \\
+\end{figure}
+
+
+\begin{figure}[htp]
+  \centering
+  \label{figure}\caption{Feynman diagrams depicting the leading-order processes contributing to the Higgs diphoton decay.}
+  \subfloat[Subcaption 1]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/toploop.png}}
+  \subfloat[Subcaption 2]{\label{figure:2}\includegraphics[width=60mm]{figures/theory_chapter/Wloop1.png}}
+  \subfloat[Subcaption 3]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/Wloop2.png}}
+\end{figure}
+
+Similarly, the dominant decay mode of the Higgs is to bottom quarks ($H \rightarrow bb$), followed by to W bosons ($H \rightarrow WW$), gluons ($H \rightarrow WW$), tau leptons ($H \rightarrow \tau \tau$), charm quarks ($H \rightarrow bb$), Z bosons ($H \rightarrow ZZ$), photons ($H \rightarrow \gamma \gamma$), and a Z boson and a photon ($H \rightarrow Z \gamma$). Because the Higgs does not couple to massless particles directly, the decays to gg and $\gamma \gamma$ are mediated by loop diagrams, most often involving top quarks.
+
+\begin{figure}
+\includegraphics[width=\linewidth]{figures/theory_chapter/HiggsBR.png}
+\caption{The branching ratio of the Higgs to various final state particles as a function of its mass (now known to be ~125 GeV), from reference \ref{2011WG}.}
+\end{figure}
+
+Investigating each of these decay modes has different benefits and detriments. While the Higgs decay to bottom quarks is the most common, correctly identifying and accurately reconstructing quarks and gluons using the jets that they produce in detectors is often very difficult. Decays to W bosons, Z bosons, and $\tau$ leptons provide "cleaner" channels, but because the W, Z and $\tau$ decay dominantly to hadrons, similar reconstruction issues occur unless we restrict ourselves to the rarer leptonic subchannels of these decays. The Higgs to diphoton channel occurs very rarely, but offers a much more unambiguous signal, as the odds of misidentifying high-energy gamma rays are fairly low.
+
+Additionally, we must consider combinatorics: in the ttH production mode, for instance, the final state contains two bottom quarks from the decay of the associated top quarks. If we choose to examine the subchannel in which the Higgs decays to bottom quarks as well, we find that we have at least four final-state bottom quark jets in the event, with 12 different unique assignments of bottom quark jets to parent particles. Correctly matching up which jet originated from which parent particle thus further complicates the reconstruction problem.
+
+This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa y_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa y_{t} \bar{t} (i gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa y_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$.
+
+The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel. A combined fit is performed in different regions of phase space that correspond to the ggH, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
 
