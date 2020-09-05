@@ -1,5 +1,3 @@
-\usepackage{ amssymb }
-
 \section{The Standard Model} \label{sec:SM} 
 
 The Standard Model of Particle Physics is arguably one of the crowning achievements of the last century of physics research. Though it is doubtless incomplete (it does not, for instance, explain the dark energy or dark matter observed in cosmological experiments, nor does it provide a satisfactory quantum-mechanical model of gravity), all predictions it has made have yet to be falsified \ref{Peskin}, \ref{Gordy}, \ref{Griffiths}.
@@ -20,7 +18,12 @@ The strong nuclear interaction binds quarks together, while the weak interaction
 
 The Higgs boson is the only scalar (spin-0) boson in the Standard Model. Though it does not mediate any force directly, its existence is a consequence of the unification of the electromagnetic and weak nuclear interactions into one "electroweak" interaction at high energy scales. Without the role of the Higgs boson in this process, the fermions, the W-bosons, and the Z-boson would all be massless; thus, the Higgs can be said to "give mass" to the particles of the Standard Model. It couples to all massive particles in the Standard Model, namely, the fermions and the W and Z bosons.
 
-\subsection{sec:Lagrangians, Fields, and Gauge Transformations}
+\begin{figure}
+\includegraphics[width=\linewidth]{figures/theory_chapter/SM.png}
+\caption{The "periodic table" of the Standard Model, depicting the three generations of fermions, the gauge bosons, and the Higgs. Taken from reference \ref{Wikipedia}.}
+\end{figure}
+
+\subsection{Lagrangians, Fields, and Gauge Transformations}\label{sec:Lagrangians}
 
 In order to fully explain the Higgs mechanism, we must first discuss the mathematical language of quantum field theory. Both quantum and classical field theories are often discussed using Lagrangian dynamics, where the Lagrangian is defined as  $\mathcal{L} = T - V$, the difference of the kinetic and the potential energy. Physical properties will always evolve in such a way that the integral of this property with respect to time, $\mathcal{S} = \int \mathcal{L} dt$, called the action, is a constant. Lagrangians are also incredibly useful in that they give rise to conservation laws: Noether's Theorem states that operations performed on a system that do not change the Lagrangian are each associated to conserved quantities of a system (i.e., systems with translationally invariant Lagrangians must respect conservation of momentum, systems with temporally-invariant Lagrangians must respect conservation of energy, etc.).
 
@@ -28,11 +31,13 @@ A variety of types of fields exist, but we will discuss three at length: Klein-G
 
 Klein-Gordon fields, one of the simplest examples of a field, are real scalar-valued quantities often denoted using the symbol $\phi$. A non-interacting "free" Klein-Gordon field evolves according to the Lagrangian:
 
-\begin{equation}
-\mathcal{L} = T - V 
-=\frac{1}{2} \frac{\partial^{2} \phi}{\partial t^{2}} - \frac{1}{2} (\nabla \phi)^{2} - \frac{1}{2} m^{2} \phi^{2}
+\begin{flalign}
+  \begin{aligned}
+\mathcal{L} = T - V \\
+=\frac{1}{2} \frac{\partial^{2} \phi}{\partial t^{2}} - \frac{1}{2} (\nabla \phi)^{2} - \frac{1}{2} m^{2} \phi^{2} \\
 =-\frac{1}{2}(\partial^{\mu}\phi)(\partial_{\mu}\phi)- \frac{1}{2} m^{2} \phi^{2}
-\end{equation}
+  \end{aligned}&&&
+\end{flalign}
 
 where we utilize Einstein sum notation in the last line to compress the four derivatives in the preceding expression into a single shorthand symbol. The Lagrangian of an interacting Klein-Gordon field would look similar, but would possess additional $V$ potential terms depending on the nature of the interaction. As the only scalar in the Standard Model, the observable Higgs boson is the only elementary particle to follow an interacting Klein-Gordon field equation.
 
@@ -47,62 +52,72 @@ Where * denotes the complex conjugate of the scalar field.
 Finally, Dirac fields describe all Standard Model fermions (with the possible exception of neutrinos). They are vector fields as opposed to scalar fields, and behave according to the Lagrangian:
 
 \begin{equation}
-\mathcal{L} = \bar{\psi}(i \gamma^{mu} \partial_{mu} - m) \psi
+\mathcal{L} = \bar{\psi}(i \gamma^{\mu} \partial_{\mu} - m) \psi
 \end{equation}
 
-where $\gamma^{mu}$ denotes the set of Dirac gamma matrices, and $\bar{\psi} = \psi^{\dagger} \gamma^0$ denotes the transpose of the complex conjugate of the vector field multiplied by one of these matrices, defined as such in order to preserve invariance under relativistic Lorentz boosts. 
+where $\gamma^{\mu}$ denotes the set of Dirac gamma matrices, and $\bar{\psi} = \psi^{\dag} \gamma^0$ denotes the transpose of the complex conjugate of the vector field multiplied by one of these matrices, defined as such in order to preserve invariance under relativistic Lorentz boosts. 
 
 A four-component Dirac vector field can be written in a variety of representations, but one of the most useful is that of a doublet of two two-component Weyl spinors, one left-handed and one right-handed, that is, $\psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}$. Each of these components transforms differently under Lorentz boosts.
 
 In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a single Dirac vector field described by equation \ref{eq:Dirac}. We transform the field by rotating it by a constant phase $\alpha$:  $\psi \rightarrow e^{i \alpha} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha} \bar{\psi} $.
 
-\begin{equation}
-\mathcal{L} = - (e^{-i \alpha} \bar{\psi})(i \gamma^{mu} \partial_{mu} - m) (e^{i \alpha} \psi)
-= - (e^{-i \alpha} e^{i \alpha})\bar{\psi} (i \gamma^{mu} \partial_{mu} - m)\psi
-= -\bar{\psi}(i \gamma^{mu} \partial_{mu} - m) \psi
-\end{equation}
+\begin{flalign}
+  \begin{aligned}
+\mathcal{L} = - (e^{-i \alpha} \bar{\psi})(i \gamma^{\mu} \partial_{\mu} - m) (e^{i \alpha} \psi) \\
+= - (e^{-i \alpha} e^{i \alpha})\bar{\psi} (i \gamma^{\mu} \partial_{\mu} - m)\psi \\
+= -\bar{\psi}(i \gamma^{\mu} \partial_{\mu} - m) \psi 
+  \end{aligned}&&&
+\end{flalign}
 
 We see that we recover the original Dirac Lagrangian. Thus, the lagrangian is invariant under a constant phase rotation. A transformation of this charater is called a global gauge transformation. A one-dimensional rotation is a unitary transformation, so we call this a global $U(1)$ gauge symmetry.
 
 We next consider the concept of a local gauge transformation, that is, one in which the phase $\alpha$ may vary with position. The field transforms, as before, like  $\psi \rightarrow e^{i \alpha (x)} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha (x)} \bar{\psi} $. However, we note that the dependence on position means that we can no longer factor out the exponentials, and we thus have
 
-\begin{equation}
-\mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{mu} \partial_{mu} - m) (e^{i \alpha (x)} \psi)
-=-i e^{-i \alpha (x)} \bar{\psi} \gamma^{mu} (e^{i \alpha (x)} \partial_{mu} \psi + i e^{i \alpha (x)} \psi \partial_{mu} \alpha -m \bar{psi}\psi
-=-\bar{\psi}(i \gamma^{mu} \partial_{mu} + \gamma^{mu} \partial_{mu} \alpha - m) \psi
-\end{equation}
+\begin{flalign}
+  \begin{aligned}
+\mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{\mu} \partial_{\mu} - m) (e^{i \alpha (x)} \psi) \\
+=-i e^{-i \alpha (x)} \bar{\psi} \gamma^{\mu} (e^{i \alpha (x)} \partial_{\mu} \psi  + i e^{i \alpha (x)} \psi \partial_{\mu} \alpha -m \bar{\psi}\psi \\
+=-\bar{\psi}(i \gamma^{\mu} \partial_{\mu} + \gamma^{\mu} \partial_{\mu} \alpha - m) \psi
+  \end{aligned}&&&
+\end{flalign}
 
-i.e., the Lagrangian is not invariant under this sort of transformation. However, local gauge invariance is an important physical symmetry, so in order to attempt to preserve it, we add an additional term to the original Lagrangian: an extra vector field $A_\mu$ that transforms like $A_\mu \rightarrow A_\mu - \frac{1}{q} \partial_{mu} \alpha(x) $ for a constant q. We also define a new operator, called the covariant derivative: $D_{mu} = \partial_{mu}+ iqA_{mu} $. Given how $A_{mu}$ transforms, we see that $D_{mu}$ transforms like
+i.e., the Lagrangian is not invariant under this sort of transformation. However, local gauge invariance is an important physical symmetry, so in order to attempt to preserve it, we add an additional term to the original Lagrangian: an extra vector field $A_\mu$ that transforms like $A_\mu \rightarrow A_\mu - \frac{1}{q} \partial_{\mu} \alpha(x) $ for a constant q. We also define a new operator, called the covariant derivative: $D_{\mu} = \partial_{\mu}+ iqA_{\mu} $. Given how $A_{\mu}$ transforms, we see that $D_{\mu}$ transforms like
 
-\begin{equation}
-D_{mu} = \partial_mu + iqA_{mu}
-\rightarrow \partial_mu + iq(A_{mu}-frac{1}{q}\partial_{mu}\alpha(x))
-= \partial_mu + iqA_{mu}-i\partial_{mu}\alpha(x)
-=D_{mu}-i\partial_{mu}\alpha(x)
-\end{equation}
+\begin{flalign}
+  \begin{aligned}
+D_{\mu} = \partial_\mu + iqA_{\mu} \\
+\rightarrow \partial_\mu + iq(A_{\mu}-\frac{1}{q}\partial_{\mu}\alpha(x)) \\
+= \partial_\mu + iqA_{\mu}-i\partial_{\mu}\alpha(x) \\
+=D_{\mu}-i\partial_{\mu}\alpha(x)
+  \end{aligned}&&&
+\end{flalign}
 
-Let us replace the $\partial_{mu}\phi$ terms in the initial Lagrangian with $\D_{mu}\phi$ and transform.
+Let us replace the $\partial_{\mu}\phi$ terms in the initial Lagrangian with $D_{\mu}\phi$ and transform.
 
-\begin{equation}
-\mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{mu} (D_{mu}-i\partial_{mu}\alpha(x)) - m) (e^{i \alpha (x)} \psi)
-=-(e^{-i \alpha (x)} \bar{\psi})(i \gamma^{mu} (\partial_mu + iqA_{mu}-i\partial_{mu}\alpha(x))-m)(e^{i \alpha (x)} \psi)
-=-\bar{\psi}(i \gamma^{mu} \D_{mu} + \gamma^{mu} \partial_{mu} \alpha - \gamma^{mu} \partial_{mu} \alpha - m) \psi
-=-\bar{\psi}(i \gamma^{mu} \D_{mu} - m) \psi
-\end{equation}
+\begin{flalign}
+  \begin{aligned}
+\mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{\mu} (D_{\mu}-i\partial_{\mu}\alpha(x)) - m) (e^{i \alpha (x)} \psi) \\
+=-(e^{-i \alpha (x)} \bar{\psi})(i \gamma^{\mu} (\partial_\mu + iqA_{\mu}-i\partial_{\mu}\alpha(x))-m)(e^{i \alpha (x)} \psi) \\
+=-\bar{\psi}(i \gamma^{\mu} D_{\mu} + \gamma^{\mu} \partial_{\mu} \alpha - \gamma^{\mu} \partial_{\mu} \alpha - m) \psi \\
+=-\bar{\psi}(i \gamma^{\mu} D_{\mu} - m) \psi
+  \end{aligned}&&&
+\end{flalign}
 
-Thus, by introducing an additional vector field that corresponds to the local U(1) gauge symmetry, we have restored the invariance of our lagrangian. Physically, this field is analogous to the introduction of electromagnetism to our single Dirac fermion model, with the $A_mu$ field playing the role of the photon: it is a vector quantity and so has spin-1, it must be massless (as adding an $A_mu$ mass term to the Lagrangian would violate the symmetry again), and couples to the fermion fields according to their electromagnetic charge. We note that we can also still preserve invariance if we add an additional term $L_{kin} = -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}$ to the Lagrangian, where $F_{\mu \nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}$: this corresponds to the energy inherent in electromagnetic fields themselves. 
+Thus, by introducing an additional vector field that corresponds to the local U(1) gauge symmetry, we have restored the invariance of our lagrangian. Physically, this field is analogous to the introduction of electromagnetism to our single Dirac fermion model, with the $A_\mu$ field playing the role of the photon: it is a vector quantity and so has spin-1, it must be massless (as adding an $A_\mu$ mass term to the Lagrangian would violate the symmetry again), and couples to the fermion fields according to their electromagnetic charge. We note that we can also still preserve invariance if we add an additional term $L_{kin} = -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}$ to the Lagrangian, where $F_{\mu \nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}$: this corresponds to the energy inherent in electromagnetic fields themselves. 
 
 Each of the fundamental forces in the Standard Model can be understood in terms of these sorts of gauge symmetries. The photon is the particle excitiation of the electromagnetic field, which corresponds to a one-dimensional rotation "U(1)" transformation. In order to be invariant under three dimensional transformations of the type "SU(3)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 3D vector space), we must add eight new vector fields (these are the eight gluons), leading to the incorporation of the strong interaction into the Standard Model.
 
 Similarly, in order to be invariant under two-dimensional transformations of the type "SU(2)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 2D vector space), we must add three new vector fields. However, these cannot be the observed weak-interaction bosons, the $W^{+}, W^{-} and Z$: as mentioned before, the new fields must be massless, as adding a mass term for these bosons would violate the local gauge symmetry. How, then, can the masses of the weak bosons fit into the Standard Model? The answer lies in the introduction of yet another field, called the Higgs field, the particle excitation of which is the much-lauded Higgs boson.
 
-\section{CP-Symmetry}
+\section{CP-Symmetry}\label{sec:CP}
 
 In addition to the $SU(2)_{L} \times U(1) \times SU(3)$ gauge symmetry, the Standard Model also respects a discrete symmetry called CPT. This is the combined product of three separate symmetries: charge conjugation (C), parity inversion (P), and time reversal (T). While some interactions may respect a limited combination of these symmetries (i.e., just C, or the product CP), all Standard Model processes must respect the product of the three: that is, for a given physics process, if we invert all the charges, flip all the parities, and run the interaction backward, the resulting new process must also be physically allowed.
 
 The strong nuclear, electromagnetic, and gravitational interactions are symmetric under C, P, and T individually. The weak nuclear interaction, however, is invariant only under the combination of all three: it violates C, P, and, in some cases, CP. The CP violation that occurs in the weak interaction is through the CKM off-diagonal quark-mixing matrix mentioned briefly in section \ref{sec:SM}.
 
-A parity inversion is equivalent to reversing a particle's momentum without reversing its spin. For a fermion field $\psi(t,x)$, a parity transform P takes $\psi(t,x)$ to $\psi(t,-x)$, and looks like $P \psi(t,x) P = e^{i \theta} \gamma^{0} \psi(t,-x)$ for some constant matrix $theta$. Given this, we find that the expression $P \bar{\psi}\psi P = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under parity, while the expression $iP \bar{\psi}\gamma^{5}\psi P = -i\bar{\psi}\gamma^{5}\psi$ acquires a minus sign, so $i\bar{\psi}\gamma^{5}\psi$ is a $\emph{pseudoscalar}$ under parity.
+A parity inversion is equivalent to reversing a particle's momentum without reversing its spin. For a fermion field $\psi(t,x)$, a parity transform P takes $\psi(t,x)$ to $\psi(t,-x)$, and looks like $P \psi(t,x) P = e^{i \theta} \gamma^{0} \psi(t,-x)$ for some constant matrix $\theta$. 
+
+Given this, we find that the expression $P \bar{\psi}\psi P = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under parity, while the expression $iP \bar{\psi}\gamma^{5}\psi P = -i\bar{\psi}\gamma^{5}\psi$ acquires a minus sign, so $i\bar{\psi}\gamma^{5}\psi$ is a $\emph{pseudoscalar}$ under parity.
 
 A time-reversal is equivalent to "running a process backward". For example, a swinging pendulum is a process that is approximately T symmetric, as it looks similar "played" in forward or reverse, while a plate shattering on the ground is not a T symmetric process, as reversing it does not make physical sense (broken plates do not spontaneously reform). For a fermion field $\psi(t,x)$, a time-reversal transform T takes $\psi(t,x)$ to $\psi(-t,x)$, and looks like $T \psi(t,x) T = -\gamma^{1}\gamma^{3} \psi(-t,x)$. Given this, we find that the expression $T \bar{\psi}\psi T = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under parity, while the expression $iT \bar{\psi}\gamma^{5}\psi T = -i\bar{\psi}\gamma^{5}\psi$ acquires a minus sign, so $i\bar{\psi}\gamma^{5}\psi$ is a pseudoscalar under time-reversal.
 
@@ -127,11 +142,11 @@ Using the language of quantum field theory, we can easily add spontaneously-brea
 
 We are now ready to discuss the Higgs mechanism. We can combine the electromagnetic and weak nuclear forces as different manifestations of the same force, called the electroweak force, that transforms like $U(1) \times SU(2)$. We write the terms of the Standard Model electroweak Lagrangian, noting that, since the weak interaction is observed to be chiral, it couples differently to left- and right-handed fermions.
 
-In this case, the generator of the U(1) symmetry ($frac{\alpha}(x)$) is not the electric charge $Q$ as in our previous example, but is instead the "Weak Hypercharge" $Y = 2(Q -I_{3})$, where $I_{3}$ is the third component of the "Weak Isospin" $I$. For right-handed particles, $I_{3} = 0$, for left-handed up/charm/top quarks and neutrinos, $I_{3} = +frac{1}{2}$, and for left-handed down/strange/bottom quarks and charged leptons, $I_{3} = +frac{1}{2}$. We will call our U(1) boson $B_{mu}$ rather than $A_{mu}$, to distinguish it from the photon. For a fermion $\psi$ (u/c/s/e/$\mu$/$\tau$) that couples weakly to another fermion $\psi'$, we can write the left-and-right-handed components of f as 
+In this case, the generator of the U(1) symmetry ($\alpha(x)$) is not the electric charge $Q$ as in our previous example, but is instead the "Weak Hypercharge" $Y = 2(Q -I_{3})$, where $I_{3}$ is the third component of the "Weak Isospin" $I$. For right-handed particles, $I_{3} = 0$, for left-handed up/charm/top quarks and neutrinos, $I_{3} = +\frac{1}{2}$, and for left-handed down/strange/bottom quarks and charged leptons, $I_{3} = +\frac{1}{2}$. We will call our U(1) boson $B_{\mu}$ rather than $A_{\mu}$, to distinguish it from the photon. For a fermion $\psi$ (u/c/s/e/$\mu$/$\tau$) that couples weakly to another fermion $\psi'$, we can write the left-and-right-handed components of f as 
 
-$L = \begin{pmatrix} \psi_{L} \\ \psi'_{L}, R = \begin{pmatrix}\psi_{R}$.
+$L = \begin{pmatrix} \psi_{L} \\ \psi'_{L} \end{pmatrix}$, $R = \begin{pmatrix}\psi_{R} \end{pmatrix}$.
 
-Similarly, the generators of the SU(2) symmetry are the three matrices $\tau_{i}$, one corresponding to each weak boson $W^{mu}_{i}$. The self-interaction term for the weak interaction is $L_{kin} = -\frac{1}{4}G^{\mu \nu}G_{\mu \nu}$, where $G_{\mu \nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}+frac{g}{2} W_{\mu}\timesW_{\nu}$.
+Similarly, the generators of the SU(2) symmetry are the three matrices $\tau_{i}$, one corresponding to each weak boson $W^{\mu}_{i}$. The self-interaction term for the weak interaction is $L_{kin} = -\frac{1}{4}G^{\mu \nu}G_{\mu \nu}$, where $G_{\mu \nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}+\frac{g}{2} W_{\mu}\times W_{\nu}$.
 
 We can define a new covariant derivative capturing the weak interaction terms as well: $D^{\mu} = \partial^{\mu}- \frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i I g_2 \Sigma \tau_{i}W_{i}^\mu$ Thus, the full electroweak $SU(2)_L \times U(1)$ Lagrangian is:
 
@@ -141,60 +156,64 @@ We can define a new covariant derivative capturing the weak interaction terms as
 
 However, we note that this Lagrangian does not allow for gauge boson mass or fermion mass, as a fermion mass term $m\bar{\psi}\psi = m(\bar{\psi_{R}}\psi_{L}+\bar{\psi_{L}}\psi_{R})$ is not an SU(2) singlet and would thus not be invariant under the SU(2) symmetry. 
 
-To rectify this, we can introduce a new complex SU(2) doublet scalar field $\phi = \begin{pmatrix} \phi^{+} \\ \phi^{0} = \begin{pmatrix} \phi_{1} + i\phi_{2}  \\ \phi_{3} + i\phi_{4}$$ called the $\emph{Higgs field}$. It follows the Lagrangian
+To rectify this, we can introduce a new complex SU(2) doublet scalar field $\phi = \begin{pmatrix} \phi^{+} \\ \phi^{0} \end{pmatrix} = \begin{pmatrix} \phi_{1} + i\phi_{2}  \\ \phi_{3} + i\phi_{4} \end{pmatrix}$ called the $\emph{Higgs field}$. It follows the Lagrangian
 
 \begin{equation}
-\mathcal{L} = T-V = (D^{\mu}\phi)^{dagger}(D_{\mu}\phi) - {\mu}^2\phi^{dagger}\phi - \lambda(\phi^{dagger}\phi)^{2}
+\mathcal{L} = T-V = (D^{\mu}\phi)^{\dag}(D_{\mu}\phi) - {\mu}^2\phi^{\dag}\phi - \lambda(\phi^{\dag}\phi)^{2}
 \end{equation}
 
 which, if $mu^{2} < 0$ has a minimum at
 \begin{equation}
-\phi^{dagger}\phi = \frac{-\mu^{2}}{2 \lambda} = \frac{v^{2}}{2}
+\phi^{\dag}\phi = \frac{-\mu^{2}}{2 \lambda} = \frac{v^{2}}{2}
 \end{equation}
 
-We note that the potential is symmetric, so we can pick a direction to "break the symmetry" in. Let us define the vacuum as $\phi_0 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v$. Then, for any arbitrary configuration of the field, we can expand the potential about the minimum as $\phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ (v + h(x))$.
+We note that the potential is symmetric, so we can pick a direction to "break the symmetry" in. Let us define the vacuum as $\phi_0 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}$. Then, for any arbitrary configuration of the field, we can expand the potential about the minimum as $\phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ (v + h(x)) \end{pmatrix}$.
 
 We can expand the kinetic term in the Lagrangian as
 
 \begin{equation}
-(D^{\mu}\phi)^{dagger}(D_{\mu}\phi) = frac{1}{2}(\partial_{mu}h)(\partial^{mu}h)+ \phi^{dagger}(\frac{1}{2}iYg_{1}B_{\mu} -\frac{1}{2}iI g_2 \Sigma \tau_{i}W_{i}_\mu)^{\dagger}(\frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}iI g_2 \Sigma \tau_{i}W_{i}^mu) \phi
+(D^{\mu}\phi)^{\dag}(D_{\mu}\phi) = \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h)+ \phi^{\dag}(\frac{1}{2}iYg_{1}B_{\mu} -\frac{1}{2}iI g_2 \Sigma \tau_{i}W_{i\mu})^{\dag}(\frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}iI g_2 \Sigma \tau_{i}W_{i}^mu) \phi
 \end{equation} 
 
 Which, using the definitions of the three tau matrices, and putting Y = I = 1, becomes
 
-\begin{equation}
-frac{1}{2}(\partial_{mu}h)(\partial^{mu}h) + frac{1}{8} \abs{\begin{bmatrix} g_{1}B_{mu}+g_{2}W_{mu}^{3} & g_{2}(W_{mu}^{1}-iW_{mu}^{2}) \\ g_{2}(W_{mu}^{1}+iW_{mu}^{2}) & g_{1}B_{mu}+g_{2}W_{mu}^{3} \end{bmatrix}\begin{bmatrix} 0 \\ v \end{bmatrix}}^{2}
-= frac{1}{2}(\partial_{mu}h)(\partial^{mu}h) + frac{1}{8}v^{2}g_{2}^{2}((W_{mu}^{1})^{2}+(W_{mu}^{2})^{2}) + frac{1}{8}v^{2}(g_{1} B{mu}-g_{2}W_{mu}^{3})^{2}
-\end{equation}
+\begin{flalign}
+  \begin{aligned}
+\frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8} |\begin{bmatrix} g_{1}B_{\mu}+g_{2}W_{\mu}^{3} & g_{2}(W_{\mu}^{1}-iW_{\mu}^{2}) \\ g_{2}(W_{\mu}^{1}+iW_{\mu}^{2}) & g_{1}B_{\mu}+g_{2}W_{\mu}^{3} \end{bmatrix} \begin{bmatrix} 0 \\ v \end{bmatrix}|^{2} \\
+= \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8}v^{2}g_{2}^{2}((W_{\mu}^{1})^{2}+(W_{\mu}^{2})^{2})) + \frac{1}{8}v^{2}(g_{1} B{\mu}-g_{2}W_{\mu}^{3})^{2}
+  \end{aligned}&&&
+\end{flalign}
 
-If we again define some new field combinations here: $W_{mu}^{+} -\frac{1}{\sqrt{2}}(W_{mu}^{1}-iW_{mu}^{2})$, $W_{mu}^{-} -\frac{1}{\sqrt{2}}(W_{mu}^{1}+iW_{mu}^{2})$, $Z_{mu} = frac{g_{1}B{mu}+g_{2}W_{mu}}{\sqrt{{g_1}^2+{g_2}^2}$ and $A_{mu} = frac{g_{1}B{mu}-g_{2}W_{mu}}{\sqrt{{g_1}^2+{g_2}^2}$,
+If we again define some new field combinations here: $W_{\mu}^{+} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}-iW_{\mu}^{2})$, $W_{\mu}^{-} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}+iW_{\mu}^{2})$, $Z_{\mu} = \frac{g_{1}B{\mu}+g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}$ and $A_{\mu} = \frac{g_{1}B{\mu}-g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}$,
 
 then we get: 
 \begin{equation}
-frac{1}{2}(\partial_{mu}h)(\partial^{mu}h) + (frac{1}{2}vg_{2})^{2}W_mu^{+}W_mu^{-}+(frac{1}{2}v(\sqrt{{g_1}^2+{g_2}^2}))^{2}Z_{mu}
+\frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + (\frac{1}{2}vg_{2})^{2}W_\mu^{+}W_\mu^{-}+(\frac{1}{2}v(\sqrt{{g_1}^2+{g_2}^2}))^{2}Z_{\mu}
 \end{equation}
 
 And we see that Z field and the two W fields have acquired mass terms, while the A field has remained massless. This corresponds to what we observe in the real world: the W bosons and the Z boson are massive, while the photon remains massless!
 
-For fermions, the coupling to the Higgs field looks like $g_{f}(\bar{f}_{L}\phi f_{R} + \phi^{dagger}\bar{f}_{R} f_{L})$ (for some constant $g_{f}$).
+For fermions, the coupling to the Higgs field looks like $g_{f}(\bar{f}_{L}\phi f_{R} + \phi^{\dag}\bar{f}_{R} f_{L})$ (for some constant $g_{f}$).
 
-We note that, if we expand $\phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ (v + h(x))$ as before, we find that the coupling term now looks like 
+We note that, if we expand $\phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ (v + h(x)) \end{pmatrix}$ as before, we find that the coupling term now looks like 
 $\frac{g_{f}v}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L}) + \frac{g_{f}}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L})$. Thus, the presence of the Higgs field allows us to have fermion mass terms in our Lagrangians, where the masses are $m_{f} = \frac{g_{f}v}{\sqrt{2}}$. However, we note that, at the current time, there is no way to derive the $g_{f}$ coupling theoretically: thus, while the Higgs mechanism now allows us to have massive fermions in our theory, it does not actually determine what the masses of these fermions are.
 
 Finally, we note that if we expand the potential term in the complex Klein-Gordon Lagrangian for the Higgs field about the minimum, that is, 
 
-\begin{equation}
-V = {\mu}^2\phi^{dagger}\phi + \lambda(\phi^{dagger}\phi)^{2} = frac{1}{2}{\mu}^2(v+h)^{2} + frac{1}{4}\lambda(v+h)^{4}
-= -frac{1}{2}{\lambda v^{2}}(v+h)^{2} + frac{1}{4}\lambda(v+h)^{4}
-= -frac{1}{2}\lambda(v^{4} + 2v^{3}h + v^{2}h^{2}) + frac{1}{4}\lambda(v^{4}+4vh^{3}+6v^{2}h^{2} + 4v^{3}h + h^{4})
-\end{equation}
+\begin{flalign}
+  \begin{aligned}
+V = {\mu}^2\phi^{\dag}\phi + \lambda(\phi^{\dag}\phi)^{2} = \frac{1}{2}{\mu}^2(v+h)^{2} + \frac{1}{4}\lambda(v+h)^{4} \\
+= -\frac{1}{2}{\lambda v^{2}}(v+h)^{2} + \frac{1}{4}\lambda(v+h)^{4} \\
+= -\frac{1}{2}\lambda(v^{4} + 2v^{3}h + v^{2}h^{2}) + \frac{1}{4}\lambda(v^{4}+4vh^{3}+6v^{2}h^{2} + 4v^{3}h + h^{4})
+  \end{aligned}&&&
+\end{flalign}
 
-we see a mass term of the form $(frac{M_{h}^{2}{2})h^{2} = frac{6}{4}\lambda v^{2} h^{2} - frac{1}{2}\lambda v^{2} h^{2} = \lambda v^{2} h^{2}$;
+we see a mass term of the form $(\frac{M_{h}^{2}}{2})h^{2} = \frac{6}{4}\lambda v^{2} h^{2} - \frac{1}{2}\lambda v^{2} h^{2} = \lambda v^{2} h^{2}$;
 That is, $M_{h} = v \sqrt{2 \lambda}$.
 
 In sum: without a Higgs field, in order for the Standard Model electroweak Lagrangian to preserve $SU(2)_L \times U(1)$ symmetry, we are forbidden from including mass terms for the fermions or the gauge bosons. However, by adding this additional field to the model and breaking its symmetry, we find that we can include fermion mass terms that do not violate the $SU(2)_L \times U(1)$ symmetry, and that the electroweak gauge bosons now acquire mass terms by default. Furthermore, this new field also has a mass. This is a remarkable result: by simply adding one extra field to the model, we have solved several different problems in one fell swoop!
 
-\section{The Higgs Boson and Its Couplings} \label{sec:example_subsubsection} 
+\section{The Higgs Boson and Its Couplings} \label{sec:Higgs Couplings} 
 
 As we have seen, the Standard Model Higgs is massive, and couples directly to all other massive particles (with the possible exception of neutrinos; this is an active area of research). However, the existence of the Higgs is clearly not all there is to the story: the Standard Model is noticeably incomplete (What are dark matter and dark energy? What determines the exact masses of each of the fermions? Why have we never observed right-handed neutrinos? Can we unify other forces like we have unified electromagnetism and the weak force?). In the majority of proposed Beyond-the-Standard Model extensions, other particles that would interact with the Standard Model Higgs are introduced, including additional Higgs fields, as well as new massive fermions and bosons.
 
@@ -205,33 +224,99 @@ associated (VH) and top-associated (ttH). The top-associated Higgs production mo
 
 \begin{figure}[htp]
   \centering
-  \label{figure}\caption{Feynman diagrams depicting the leading Higgs production modes.}
-  \subfloat[Subcaption 1]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/VBF.png}}
-  \subfloat[Subcaption 2]{\label{figure:2}\includegraphics[width=60mm]{figures/theory_chapter/ggH.png}}
-  \\
-  \subfloat[Subcaption 3]{\label{figure:3}\includegraphics[width=60mm]{figures/theory_chapter/VH.png}}
-  \subfloat[Subcaption 4]{\label{figure:4}\includegraphics[width=60mm]{figures/theory_chapter/ttH.png}}
-  \\
+       \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/VBF.png}
+         \caption{VBF}
+         \label{fig:VBF}
+     \end{subfigure}
+     \hfill
+         \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/ggF.png}
+         \caption{ggF}
+         \label{fig:ggH}
+     \end{subfigure}
+     \hfill 
+     \\
+        \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/VH.png}
+         \caption{VH}
+         \label{fig:VH}
+     \end{subfigure}
+     \hfill
+         \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/ttH.png}
+         \caption{ttH}
+         \label{fig:ttH}
+     \end{subfigure}
+     \hfill 
+  \label{fig:Higgsmodes}
+  \caption{Feynman diagrams depicting the leading Higgs production modes.}  
 \end{figure}
 
 \begin{figure}[htp]
   \centering
-  \label{figure}\caption{Feynman diagrams depicting single-top associated Higgs production.}
-  \subfloat[Subcaption 1]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/tWH1.png}}
-  \subfloat[Subcaption 2]{\label{figure:2}\includegraphics[width=60mm]{figures/theory_chapter/tWH2.png}}
-  \\
-  \subfloat[Subcaption 3]{\label{figure:3}\includegraphics[width=60mm]{figures/theory_chapter/tqH1.png}}
-  \subfloat[Subcaption 3]{\label{figure:3}\includegraphics[width=60mm]{figures/theory_chapter/tqH2.png}}
-  \\
+       \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/tWH1.png}
+         \caption{A tWH mode}
+         \label{fig:tWH1}
+     \end{subfigure}
+     \hfill
+         \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/tWH2.png}
+         \caption{A tWH mode}
+         \label{fig:tWH2}
+     \end{subfigure}
+     \hfill 
+     \\
+        \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/tqH1.png}
+         \caption{A tqH mode}
+         \label{fig:tqH1}
+     \end{subfigure}
+     \hfill
+         \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/tqH2.png}
+         \caption{A tqH mode}
+         \label{fig:tqH2}
+     \end{subfigure}
+     \hfill 
+  \label{fig:tHmodes}
+  \caption{Feynman diagrams depicting single-top associated Higgs production modes.}  
 \end{figure}
-
 
 \begin{figure}[htp]
   \centering
-  \label{figure}\caption{Feynman diagrams depicting the leading-order processes contributing to the Higgs diphoton decay.}
-  \subfloat[Subcaption 1]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/toploop.png}}
-  \subfloat[Subcaption 2]{\label{figure:2}\includegraphics[width=60mm]{figures/theory_chapter/Wloop1.png}}
-  \subfloat[Subcaption 3]{\label{figure:1}\includegraphics[width=60mm]{figures/theory_chapter/Wloop2.png}}
+       \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/toploop.png}
+         \caption{Top-mediated}
+         \label{fig:tWH1}
+     \end{subfigure}
+     \hfill
+         \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/Wloop1.png}
+         \caption{W $\rightarrow \gamma$ }
+         \label{fig:tWH2}
+     \end{subfigure}
+     \hfill 
+        \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/Wloop2.png}
+         \caption{W $\rightarrow \gamma \gamma$}
+         \label{fig:tqH1}
+     \end{subfigure}
+     \hfill
+  \label{fig:loopmodes}
+  \caption{Feynman diagrams depicting the leading-order processes contributing to the Higgs diphoton decay.}  
 \end{figure}
 
 Similarly, the dominant decay mode of the Higgs is to bottom quarks ($H \rightarrow bb$), followed by to W bosons ($H \rightarrow WW$), gluons ($H \rightarrow WW$), tau leptons ($H \rightarrow \tau \tau$), charm quarks ($H \rightarrow bb$), Z bosons ($H \rightarrow ZZ$), photons ($H \rightarrow \gamma \gamma$), and a Z boson and a photon ($H \rightarrow Z \gamma$). Because the Higgs does not couple to massless particles directly, the decays to gg and $\gamma \gamma$ are mediated by loop diagrams, most often involving top quarks.
@@ -245,7 +330,7 @@ Investigating each of these decay modes has different benefits and detriments. W
 
 Additionally, we must consider combinatorics: in the ttH production mode, for instance, the final state contains two bottom quarks from the decay of the associated top quarks. If we choose to examine the subchannel in which the Higgs decays to bottom quarks as well, we find that we have at least four final-state bottom quark jets in the event, with 12 different unique assignments of bottom quark jets to parent particles. Correctly matching up which jet originated from which parent particle thus further complicates the reconstruction problem.
 
-This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa y_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa y_{t} \bar{t} (i gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa y_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$.
+This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa y_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa y_{t} \bar{t} (i \gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa y_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$.
 
 The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel. A combined fit is performed in different regions of phase space that correspond to the ggH, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
 
