@@ -4,12 +4,22 @@
 In order to accurately reconstruct and measure objects that are produced in high-energy physics collisions, a variety of high-level techniques are employed. One of the most widely-used is Monte Carlo simulation, a way of modelling expected real-world observations given certain theoretical predictions. 
 
 
+
 \subsection{Reconstruction and Tagging} \label{sec:Reco} 
 
 Objects 
 
 
 \subsubsection{Tracks} \label{sec:Tracks} 
+
+Track reconstruction is essential for identifying and measuring the properties of a wide variety of physics objects, including both muons and hadronic jets.
+
+Initially, the "space points" (spatial coordinates) of potential particle hits are reconstructed using clusters of energy deposits in both the Pixel and SCT detectors. Track candidates are then identified combinatorially using this space-point information (with a minimum of three space-points per track candidate); these track candidates are then passed through an analytic weight-based "ambiguity solver" designed to weed out unphysical track candidates. To aid the ambiguity solver, a neural network is implemented in order to distinguish between isolated and merged clusters of energy deposits. After this, a neural network-based procedure is used to fit the identified tracks. \ref{cite:tracker}.
+
+Fitted tracks from the Pixel detector and SCT can be extended into the TRT if nearby TRT hits are identified. In addition, tracks that are seeded by TRT hits can also be identified and reconstructed using an "outside-in" approach; this helps mitigate the potential loss of real tracks at the ambiguity-solver stage \ref{cite:NEWT}.
+
+After tracks are identified and reconstructed, they are used to identify interaction vertices in the event.
+
 
 \subsubsection{Photons} \label{sec:Photons} 
 
