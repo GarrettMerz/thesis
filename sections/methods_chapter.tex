@@ -20,19 +20,25 @@ Fitted tracks from the Pixel detector and SCT can be extended into the TRT if ne
 
 After tracks are identified and reconstructed, they are used to identify interaction vertices in the event. Each vertex candidate must contain at least two tracks, each with transverse momentum $p_{T} > 400$ MeV and $|\eta|<2.5$, at least nine hits in the Pixel or SCT detector for tracks with $|\eta|<1.65$ or at least eleven hits for tracks with $|\eta|>1.65$, at least one hit in the first two pixel layers (i.e., the IBL and the inner b-layer), no more than one shared module (i.e. one shared pixel hit or two shared SCT hits), no holes in the Pixel detector, and no more than one hole in the SCT. An iterative combinatorial procedure is then used to fit all compatible tracks to vertex candidates; the primary vertex (PV) representing the initial protom-proton collision is chosen as the vertex with the greatest $\Sigma p_{T}^{2}$ \ref{cite:VertexMeloni}.
 
-However, we note that, for $H \rightarrow \gamma \gamma$ events, a potential lack of charged particles in the final state means that a different primary-vertexing method utilizing ECAL clusters must be considered This is detailed at length in section \ref{sec:Photons}.
+However, we note that, for $H \rightarrow \gamma \gamma$ events, a potential lack of charged particles in the final state means that a different primary-vertexing method utilizing ECAL clusters must be considered. This is detailed at length in section \ref{sec:Photons}.
 
 
-\subsection{Photons and Electrons} \label{sec:Photons} 
+\subsection{Clusters} \label{sec:Clusters} 
 
-Photons and electrons are reconstructed using topological clusters of hits ("topo-clusters") in the electromagnetic calorimeter. Clusters are reconstructed using a "seed-and-collect" method, where cluster-initiating "seeds" are defined as cells in the second and third layers of the ECAL with an energy four times greater than the expected noise threshold for that cell (the first layer of the ECAL is not used to seed topo-clusters in order to reduce the likelihood of producing clusters of noise) \ref{cite:CERN-EP-2019-145}.
+Photons, electrons and jets are reconstructed using topological clusters of hits ("topo-clusters") in the electromagnetic and hadronic calorimeters. Clusters are reconstructed using a "seed-and-collect" method, where cluster-initiating "seeds" are defined as calorimeter cells with an energy four times greater than the expected noise threshold for that cell  \ref{cite:CERN-EP-2019-145}, \ref{cite:CERN-PH-EP-2015-304}.
 
-After the identification of seed cells, ECAL cells neighboring the seed cell with recorded energy greater than twice their noise threshold
+After the identification of seed cells, calorimeter cells neighboring the seed cell with recorded energy greater than twice their noise threshold are added to the proto-cluster. If proto-clusters contain more than two local maxima with energy greater than 500 GeV in a single cell, the proto-cluster is split into two in order to account for potential overlap. Initally, seed cells in these split clusters may reside only in the ECAL sampling layers EMB2, EMB3, EME2 and EME3, or the forward calorimeter module FCAL0, after this splitting, clusters are then iteratively split again, with maxima now allowed in the other HCAL and FCAL layers (The first layer of the ECAL is not used to seed topo-clusters in order to reduce the likelihood of producing clusters of noise). In the case of overlap between multiple clusters, cells are assigned to the two cluster candidates with the largest maxima.
 
-\subsubsection{Electrons} \label{sec:Photons} 
+\subsubsection{Electrons and Photons} \label{sec:Electrons} 
 
+Electrons and photons are defined using tracks that are matched to topo-clusters in the ECAL. Topo-clusters compatible with EM showers are selected and used to define Regions of Interest; those Regions of Interest are then matched to tracks in the ID. Track candidates are extrapolated into the Regions of Interest using both the measured track momentum and the rescaled momentum measured in the relevant topo-cluster (the latter of which allows for accounting of radiative energy loss in the calorimeter). 
 
-\subsubsection{Muons} \label{sec:Muons} 
+For a track to be considered matched to a topo-cluster, under either momentum-definition-extrapolation, it must fall within $|\Delta \eta| < 0.05$ of its relevant topo-cluster and satisfy $-0.10 < q \times (\phi_{track}-\phi_{cluster}) < 0.05$, where q is the charge of the incident particle. 
+
+Topo-clusters matched to a single charged track are considered to be electron candidates, topo-clusters matched to two oppositely-charged tracks forming a vertex consistent with a photon are considered to be "converted" photon candidates (i.e., clusters resulting from a photon converting into and electron-positron pair in the ID), and topo-clusters matched to no tracks are considered to be "unconverted" photon candidates. In addition, single tracks that have no hits in the innermost layers of the ID are also considered as potential converted photon candidates\ref{cite:CERN-EP-2019-145}. 
+
+Since the start of Run 2, combined topo-clusters called "superclusters" have been implemented in the EM clustering process in order to capture bremsstralung photons and other energy lost in the calorimeter \ref{cite:ATL-PHYS-PUB-2017-022}. 
+
 
 
 \subsubsection{Jets} \label{sec:Jets} 
@@ -40,6 +46,8 @@ After the identification of seed cells, ECAL cells neighboring the seed cell wit
 \subsubsection{b-jets} \label{sec:b-jets} 
 
 \subsubsection{Top Reconstruction} \label{sec:top} 
+
+\subsubsection{Muons} \label{sec:Muons} 
 
 \subsubsection{MET} \label{sec:MET} 
 
