@@ -9,7 +9,6 @@ In order to accurately reconstruct and measure objects that are produced in high
 
 Objects 
 
-
 \subsection{Tracks} \label{sec:Tracks} 
 
 Track reconstruction is essential for identifying and measuring the properties of a wide variety of physics objects, including both muons and hadronic jets.
@@ -37,19 +36,63 @@ For a track to be considered matched to a topo-cluster, under either momentum-de
 
 Topo-clusters matched to a single charged track are considered to be electron candidates, topo-clusters matched to two oppositely-charged tracks forming a vertex consistent with a photon are considered to be "converted" photon candidates (i.e., clusters resulting from a photon converting into and electron-positron pair in the ID), and topo-clusters matched to no tracks are considered to be "unconverted" photon candidates. In addition, single tracks that have no hits in the innermost layers of the ID are also considered as potential converted photon candidates\ref{cite:CERN-EP-2019-145}. 
 
-Since the start of Run 2, combined topo-clusters called "superclusters" have been implemented in the EM clustering process in order to capture bremsstralung photons and other energy lost in the calorimeter \ref{cite:ATL-PHYS-PUB-2017-022}. 
+Since the start of Run 2, combined topo-clusters called "superclusters" have been implemented in the EM clustering process in order to capture bremsstralung photons and other energy lost in the calorimeter \ref{cite:ATL-PHYS-PUB-2017-022}. For electrons, a supercluster seed must be a cluster with momentum $p_{T} > 1 GeV$ matched to a track with at least four hits, while for photons, a supercluster seed must be a cluster with momentum $p_{T} > 1.5 GeV$. Satellite clusters are then added to the seed to form a supercluster if they fall into a window $\Delta |\eta| \times \Delta\phi = 0.075 \times 0.125$ around the center of the seed cluster. For electrons, an additional satellite cluster search is performed, adding clusters that fall into the window $\Delta |\eta| \times \Delta\phi = 0.075 \times 0.125$ that are matched to the same track as the seed. For converted photons, the $\eta-\phi$ window is not used: all satellite clusters matched to one of the tracks of the converted photon vertex are added to the supercluster.
 
+Following the identification of superclusters and tracks, energy calibration corrections are applied (determined using Monte Carlo simulation for photons and $Z \rightarrow ee$ decays for electrons)\ref{cite:91}, and the photon and electron candidate objects are passed to cluster-shape-based identification algorithms. For both electrons and photons, three identification working points are defined using cut-based multivariate discriminants based on the shower-shape variables.
 
+For photons, the $loose$ ID threshhold is determined based on the following variables:
+\begin{itemize}
+  \item Acceptance: $|\eta|<2.37$, excluding the calorimeter crack at $1.37 <= |\eta|<1.52$  
+  \item $R_{had}$: the ratio of transverse energy deposited in the HCAL to transverse energy deposited in the ECAL for clusters with $0.8 <= |\eta|<1.37$ 
+  \item $R_{had1}$: the ratio of transverse energy deposited in the first layer of the HCAL to transverse energy deposited in the ECAL for clusters with $0.8 <= |\eta|<1.37$ 
+  \item $R_{eta}$: the ratio of the energy deposited in the ECAL in a $3 \times 7$ rectangle in the $\eta \times \phi$ plane to the energy deposited in the ECAL in a $7 \times 7$ rectangle in the $\eta \times \phi$ plane, both centered on the calorimeter cell with the most deposited energy. 
+   \item Lateral shower width $w_{eta2}$: $\sqrt{\frac{\sigma E_{i} \eta_{i}^{2}}{\sigma E_{i}}-{\frac{\sigma E_{i} \eta_{i}}{\sigma E_{i}}}^2}$ (where E is the energy and $\eta$ is the pseudorapidity of cell 'i', summed over all cells in a $3 \times 5$ rectangle centered around the most energetic calorimeter cell. 
+\end{itemize}
+
+The $medium$ photon ID threshold is determined based on both passage of the loose threshold and the variable $E_{ratio} = frac{E_{1}-E_{2}}{E_{1}+E_{2}}$, where E_{1} and E_{2} are the leading and subleading energies deposited in calorimeter cells, respectively.
+
+The $tight$ photon ID threshold is determined based on passage of the medium ID threshold and the following shape variables in the strip layer of the ECAL
+\begin{itemize}
+  \item Lateral Shower Width:$w_{s3} = \sqrt{\frac{\sigma E_{i}(i-i_{max})^{2}}{\sigma E_{i}}}$ (where E is the energy of a strip, '$i_{max}$' is the index of the highest-energy strip, and 'i' is the index of each strip with respect to $i_{max}$ calculated in a $3 \times 2 \eta-\phi$  rectangle centered around the strip with the maximum energy deposit
+  \item Total Lateral Shower Width:$w_{s tot} = \sqrt{\frac{\sigma E_{i}(i-i_{max})^{2}}{\sigma E_{i}}}$ (where E is the energy of a strip, '$i_{max}$' is the index of the highest-energy strip, and 'i' is the index of each strip with respect to $i_{max}$ calculated in a $20 \times 2 \eta-\phi$  rectangle centered around the strip with the maximum energy deposit
+  \item $\Delta E_{s}$: the difference between the second-largest strip energy and the minimum energy in the strips that lie between the largest- and second-largest strip energies
+  \item $f_{1}$: The ratio of the energy in the first layer to the energy in the whole EM cluster.
+  \item $f_{side}$: the total energy outside the three central strips but within seven strips, divided by the energy of the three central strips 
+\end{itemize}
+
+Each working-point threshold varies in bins of $\eta$. For loose and medium working points, converted and unconverted photons are not treated differently, but for tight working points, they are determined separately. \ref{cite:gammaID CERN-EP-2018-216}
+
+For electrons, the identification process proceeds similarly: working-points are defined using shower-shape variables $f_{1}, E_{ratio}, w_{s tot}, R_{eta}, w_{eta2}, f_{3}, R_{had}, and R_{had1},$ as well as $R_{phi}$ (the ratio of the energy deposited in the ECAL in a $3 \times 3$ rectangle in the $\eta \times \phi$ plane to the energy deposited in the ECAL in a $3 \times 7$ rectangle in the $\eta \times \phi$ plane, both centered on the calorimeter cell with the most deposited energy). Electron ID working-points also include the following track variables:
+\begin{itemize}
+\item $n_{Blayer}$: Number of hits in the B-layer
+\item $n_{Pixel}$: Number of hits in the Pixel
+\item $n_{Si}$: Number of hits in the silicon detectors (ID and SCT)
+\item $d_{0}$: the transverse impact parameter relative to the beamline
+\item $|d_{0} / \sigma(d_{0})|$: the impact parameter significance relative to its uncertainty
+\item $\Delta(p)/p = (p-p_{last})/p$: the momentum difference between the track perigee and its endpoint, divided by the momentum at perigee
+\item $eProbabilityHT$: the electron probability based on TRT radiation
+\item $\Delta \eta_{1}$: the difference in pseudorapidity between the cluster position in the first layer and the matched track
+\item $q \times (\phi_{track}-\phi_{cluster})$: where $\phi_{track}$ is the momentum-rescaled track extrapolated from the perigee and $\phi_{cluster}$ is the cluster position in the second ECAL layer.
+\item $E/p$: ratio of the cluster energy to the track momentum (used for $E_{T} > 150 GeV$ only) 
+\end{itemize}
+
+However, the photon identification is a cut-based process, while the electron identification process relies on a likelihood-based discriminant\ref{cite:elID-CERN-EP-2018-273}.
+
+LOOSEp4
+
+VERTEXING  
+
+PHOTON ISOLATION
 
 \subsubsection{Jets} \label{sec:Jets} 
 
-\subsubsection{b-jets} \label{sec:b-jets} 
+Hadronic jets are identified from topo-clusters using the $anti-k_{t}$ algorithm.
 
-\subsubsection{Top Reconstruction} \label{sec:top} 
+\subsubsection{b-jets} \label{sec:b-jets} 
 
 \subsubsection{Muons} \label{sec:Muons} 
 
-\subsubsection{MET} \label{sec:MET} 
+\subsubsection{MET} \label{sec:MET}
 
-\subsubsection{Taus} \label{sec:taus} 
-
+\subsubsection{taus} \label{sec:taus}
+We note that, though many physics analyses use $\tau$ leptons, they are not considered in any of the event signatures discussed in this thesis, so we refrain from discussing their reconstruction at length. However, we note that tau leptons can decay both hadronically and leptonically; as a result of this, their reconstruction depends on the reconstruction of electrons, muons, and jets.
