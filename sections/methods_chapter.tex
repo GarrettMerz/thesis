@@ -4,6 +4,8 @@
 In order to accurately reconstruct and measure objects that are produced in high-energy physics collisions, a variety of high-level techniques are employed. One of the most widely-used is Monte Carlo simulation, a way of modelling expected real-world observations given certain theoretical predictions. 
 
 
+Hard scatter
+
 
 \subsection{Reconstruction and Tagging} \label{sec:Reco} 
 
@@ -19,7 +21,7 @@ Fitted tracks from the Pixel detector and SCT can be extended into the TRT if ne
 
 After tracks are identified and reconstructed, they are used to identify interaction vertices in the event. Each vertex candidate must contain at least two tracks, each with transverse momentum $p_{T} > 400$ MeV and $|\eta|<2.5$, at least nine hits in the Pixel or SCT detector for tracks with $|\eta|<1.65$ or at least eleven hits for tracks with $|\eta|>1.65$, at least one hit in the first two pixel layers (i.e., the IBL and the inner b-layer), no more than one shared module (i.e. one shared pixel hit or two shared SCT hits), no holes in the Pixel detector, and no more than one hole in the SCT. An iterative combinatorial procedure is then used to fit all compatible tracks to vertex candidates; the primary vertex (PV) representing the initial protom-proton collision is chosen as the vertex with the greatest $\Sigma p_{T}^{2}$ \ref{cite:VertexMeloni}.
 
-However, we note that, for $H \rightarrow \gamma \gamma$ events, a potential lack of charged particles in the final state means that a different primary-vertexing method utilizing ECAL clusters must be considered. This is detailed at length in section \ref{sec:Photons}.
+However, we note that, for $H \rightarrow \gamma \gamma$ events, a potential lack of charged particles in the final state means that a different primary-vertexing method utilizing ECAL clusters must be considered. This is detailed at length in section \ref{sec:Electrons and Photons}.
 
 
 \subsection{Clusters} \label{sec:Clusters} 
@@ -78,11 +80,27 @@ For electrons, the identification process proceeds similarly: working-points are
 
 However, the photon identification is a cut-based process, while the electron identification process relies on a likelihood-based discriminant\ref{cite:elID-CERN-EP-2018-273}.
 
-LOOSEp4
+For the analyses discussed in subsequent chapters, additional photon ID working points are created. These "LoosePrimeN" working points involve photons that pass the 'loose' identification criteria, but fail one or more of N 'tight' identification criteria. The analyses discussed in this dissertation use the LoosePrime4 working point, which is defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$, and $E_{ratio}$ criteria \ref{ANA-EGAM-2018-01}.
 
-VERTEXING  
+To distinguish between photons originating from the hard scatter and photons radiated off of other final-state objects, we consider the relative isolation of identified photons. Photons near large amounts of calorimeter activity are likely to be radiative photons ('non-prompt') radiated from final-state particles after the hard-scatter event, while photons that are isolated are more likely to originate from the hard-scatter.
 
-PHOTON ISOLATION
+Two types of isolation variables are considered: calorimetric and track-based.
+
+Calorimetric isolation is defined using topo-clusters with a radius of $\Delta R$ = 0.2. 
+
+
+Track  
+
+ \ref{cite:CERN-EP-2019-145}
+
+In analyses discussed in this dissertation, the diphoton vertex originating from the Higgs decay is not the hardest vertex. This is because, in processes such as gluon-gluon fusion ($ggF$), many events contain a low final-state track multiplicity \ref{1408.7084}. The diphoton vertex is identified using a Neural Network, trained on variables including the $photon pointing$ (that is, the vertex position in $z$ most compatible with the shower-shapes observed in the ECAL), the $\Delta \phi$ between the vector sum of the track momenta and the diphoton system (as determined by the ECAL), and the scalar momentum sums $p_{T}$ and $p_{T}^2$ for the tracks in each vertex candidate. \ref{HGAMSTXSINT}
+
+The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS bins") for the full Run-2 Couplings analysis is shown in Figure .
+
+\begin{figure}
+\end{figure}
+
+
 
 \subsubsection{Jets} \label{sec:Jets} 
 
