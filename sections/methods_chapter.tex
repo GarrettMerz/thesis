@@ -86,21 +86,18 @@ To distinguish between photons originating from the hard scatter and photons rad
 
 Two types of isolation variables are considered: calorimetric and track-based.
 
-Calorimetric isolation is defined using topo-clusters with a radius of $\Delta R$ = 0.2. 
+The calorimetric isolation variable employed in the analyses discussed here is $E_{T}^{cone20} = E_{T,raw}^{isol20} -E_{T}^{core} - C$, where $E_{T,raw}^{isol20}$ is the total calorimeter energy in a cone of $\Delta R = 0.2$ around the electron or photon of interest, $E_{T}^{core}$ is the total calorimeter energy in a $5 \times 7$ rectangle in $\Delta \eta \times \Delta \phi$ around the barycenter of the electron or photon of interest, and C is a correction for pileup and leakage.
 
+The photon track isolation variable employed in the analyses discussed here is $p_{T}^{cone20} = p_{T}^{cone} - p_{T}^{core}$, where $p_{T}^{cone}$ is the total track momentum of all tracks with $p_{T} > 1GeV$ in a cone of $\Delta R = 0.2$ around the photon of interest and $p_{T}^{core}$ is the total track momentum of all tracks with $p_{T} > 1GeV$ matched to the photon candidate. In addition to satifying $p_{T} > 1GeV$, all tracks considered for this metric must also fall within $z= 3mm$ of the primary vertex and have $|\eta|<2.5$.
 
-Track  
+The electron track isolation variable considered is $p_{T}^{varcone20}$, identical to $p_{T}^{cone20}$ except for the fact that, rather than consider a constant-radius cone of $\Delta R = 0.2$, we consider a cone of radius $\Delta R = max(frac{10}{p_{T}[GeV]}, 0.2)$ \ref{cite:CERN-EP-2019-145}.
 
- \ref{cite:CERN-EP-2019-145}
-
-In analyses discussed in this dissertation, the diphoton vertex originating from the Higgs decay is not the hardest vertex. This is because, in processes such as gluon-gluon fusion ($ggF$), many events contain a low final-state track multiplicity \ref{1408.7084}. The diphoton vertex is identified using a Neural Network, trained on variables including the $photon pointing$ (that is, the vertex position in $z$ most compatible with the shower-shapes observed in the ECAL), the $\Delta \phi$ between the vector sum of the track momenta and the diphoton system (as determined by the ECAL), and the scalar momentum sums $p_{T}$ and $p_{T}^2$ for the tracks in each vertex candidate. \ref{HGAMSTXSINT}
+In analyses discussed in this dissertation, the diphoton vertex originating from the Higgs decay is often not the hardest vertex. This is because, in processes such as gluon-gluon fusion ($ggF$), many events contain a low final-state track multiplicity \ref{1408.7084}. The diphoton vertex is therefore identified using a Neural Network, trained on variables including the $photon pointing$ (that is, the vertex position in $z$ most compatible with the shower-shapes observed in the ECAL), the $\Delta \phi$ between the vector sum of the track momenta and the diphoton system (as determined by the ECAL), and the scalar momentum sums $p_{T}$ and $p_{T}^2$ for the tracks in each vertex candidate. \ref{HGAMSTXSINT}
 
 The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS bins") for the full Run-2 Couplings analysis is shown in Figure .
 
 \begin{figure}
 \end{figure}
-
-
 
 \subsubsection{Jets} \label{sec:Jets} 
 
