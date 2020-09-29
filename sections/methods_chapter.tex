@@ -1,13 +1,25 @@
 \section{Experimental Methods} \label{sec:methods} 
 
+It is not possible to induce a particular interaction in a particle collider: every physics process that $can$ occur from the collision of two protons at $13 TeV$ $will$ occur in the ATLAS detector. Thus, the process of studying rare Higgs interactions is not one of determining how to produce them in a laboratory setting, but of determining whether or not they are being produced in our detector at all. Because physics 'signal' processes are fundamentally indistinguishable from unwanted 'background' processes, ATLAS studies are statistical counting experiments which test the compatibility of the observed numbers of events with different detector signatures against the event counts that are predicted to occur under different physics hypotheses. 
+
+Performing these experiments effectively in the data-rich environment of the LHC requires many clever statistical and computational tools, which vary from analysis to analysis. However, in all analyses, it is vitally important both to accurately model what the physics processes of interest may look like in the ATLAS detector and to translate observed detector signals into high-level physics objects. The Monte Carlo simulation method is used for the former, while the latter is performed by the variety of identification and reconstruction techniques detailed in this chapter.
+
 \subsection{Monte Carlo} \label{sec:MC} 
 
+The Monte Carlo simulation method is a way of modelling how a given physics process that may occur at the point of collision may translates into signatures in the ATLAS detector. For a given physics process, say, $gg \rightarrow t \bar{t} H$, we must model both the initial process (i.e., what is the likelihood two gluons will interact to make a $ttH$ event? What properties of the gluons make this more or less likely to occur? How will the top quarks and Higgs boson decay, and what might their decay products look like?), and the detector stage (how will the hadronic jets produced by decaying top quarks and the photons produced by a decaying Higgs look in the ATLAS detector?).
+
+In order to make this problem computationally tractable, each stage is performed separately. In the first stage, the $generator$ stage, physics events for a given process are generated according to their cross-sections $\sigma$ (a measure of how likely they are to occur that is calculated using perturbation theory). A variety of different generator packages are used to produce events for different processes; common generator packages include PYTHIA \ref{Pythia}, HERWIG \ref{Herwig}, and aMCatNLO \ref{aMCNLO}. In many cases, intermediate decays are also performed by the generator software. Meanwhile, detector-level simulation is performed using the GEANT4 (GEometry ANd Tracking 4) package \ref{GEANT4}, which models the signatures of different particles produced in a collision as they pass through detector material.
+
+Simulated events are then reconstructed in the same manner as real events. Because, unlike data events, Monte Carlo events include a "truth record" of what particles they contain, Monte Carlo simulations enable us to perform a number of useful tasks, including training machine learning algorithms to search for specific processes, model the relative contributions of various signal and background processes, and calculate various statistical and systematic uncertainties on our measurements \ref{1005.4568}.
 
 \subsection{Reconstruction and Tagging} \label{sec:Reco} 
 
 Objects produced in the ATLAS detector produce a wide variety of signatures, many of which can be difficult to distinguish from one another. For this reason, dedicated algorithms and criteria are employed to reconstruct and identify the particles used in ATLAS analyses. A sample illustration of the ATLAS detector showing typical shapes of a variety of physics objects is shown in Figure .
 
 \begin{figure}
+  \includegraphics[width=\linewidth]{figures/methods_chapter/Sigs.jpg}
+  \caption{Shapes and signatures of a variety of objects in the detector \ref{CERN-EX-1301009}}
+  \label{fig:Signatures}
 \end{figure}
 
 \subsection{Tracks} \label{sec:Tracks} 
@@ -50,7 +62,7 @@ For photons, the $loose$ ID threshhold is determined based on the following vari
    \item Lateral shower width $w_{eta2}$: $\sqrt{\frac{\sigma E_{i} \eta_{i}^{2}}{\sigma E_{i}}-{\frac{\sigma E_{i} \eta_{i}}{\sigma E_{i}}}^2}$ (where E is the energy and $\eta$ is the pseudorapidity of cell 'i', summed over all cells in a $3 \times 5$ rectangle centered around the most energetic calorimeter cell. 
 \end{itemize}
 
-The $medium$ photon ID threshold is determined based on both passage of the loose threshold and the variable $E_{ratio} = frac{E_{1}-E_{2}}{E_{1}+E_{2}}$, where E_{1} and E_{2} are the leading and subleading energies deposited in calorimeter cells, respectively.
+The $medium$ photon ID threshold is determined based on both passage of the loose threshold and the variable $E_{ratio} = \frac{E_{1}-E_{2}}{E_{1}+E_{2}}$, where $E_{1}$ and $E_{2}$ are the leading and subleading energies deposited in calorimeter cells, respectively.
 
 The $tight$ photon ID threshold is determined based on passage of the medium ID threshold and the following shape variables in the strip layer of the ECAL
 \begin{itemize}
@@ -77,7 +89,7 @@ For electrons, the identification process proceeds similarly: working-points are
 \item $E/p$: ratio of the cluster energy to the track momentum (used for $E_{T} > 150 GeV$ only) 
 \end{itemize}
 
-However, the photon identification is a cut-based process, while the electron identification process relies on a likelihood-based discriminant. For the analyses discussed in subsequent chapters, we utilize the $Medium$ electron working point, with an efficiency of approximately 88$%$ \ref{cite:elID-CERN-EP-2018-273}. Electrons are also required to satisfy $p_{T} > 10 GeV, |\eta| < 2.47$ (excluding the calorimeter crack at ($1.37<|\eta|<1.52$), have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 5$, and satisfy $z_{0} \times sin(\theta)$ < 0.5 mm with respect to the primary vertex \ref{ATL-COM-PHYS-2020-378}.
+However, the photon identification is a cut-based process, while the electron identification process relies on a likelihood-based discriminant. For the analyses discussed in subsequent chapters, we utilize the $Medium$ electron working point, with an efficiency of approximately 88$\%$ \ref{cite:elID-CERN-EP-2018-273}. Electrons are also required to satisfy $p_{T} > 10 GeV, |\eta| < 2.47$ (excluding the calorimeter crack at ($1.37<|\eta|<1.52$), have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 5$, and satisfy $z_{0} \times sin(\theta) < 0.5 mm$ with respect to the primary vertex \ref{ATL-COM-PHYS-2020-378}.
 
 To aid in modelling, additional photon ID working points are created. These "LoosePrimeN" working points involve photons that pass the 'loose' identification criteria, but fail one or more of N 'tight' identification criteria. The analyses discussed in this dissertation use the LoosePrime4 working point, which is defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$, and $E_{ratio}$ criteria \ref{ANA-EGAM-2018-01}.
 
@@ -89,7 +101,7 @@ The calorimetric isolation variable employed in the analyses discussed here is $
 
 The photon track isolation variable employed in the analyses discussed here is $p_{T}^{cone20} = p_{T}^{cone} - p_{T}^{core}$, where $p_{T}^{cone}$ is the total track momentum of all tracks with $p_{T} > 1GeV$ in a cone of $\Delta R = 0.2$ around the photon of interest and $p_{T}^{core}$ is the total track momentum of all tracks with $p_{T} > 1GeV$ matched to the photon candidate. In addition to satifying $p_{T} > 1GeV$, all tracks considered for this metric must also fall within $z= 3mm$ of the diphoton vertex and have $|\eta|<2.5$.
 
-The electron track isolation variable considered is $p_{T}^{varcone20}$, identical to $p_{T}^{cone20}$ except for the fact that, rather than consider a constant-radius cone of $\Delta R = 0.2$, we consider a cone of radius $\Delta R = max(frac{10}{p_{T}[GeV]}, 0.2)$ \ref{cite:CERN-EP-2019-145}.
+The electron track isolation variable considered is $p_{T}^{varcone20}$, identical to $p_{T}^{cone20}$ except for the fact that, rather than consider a constant-radius cone of $\Delta R = 0.2$, we consider a cone of radius $\Delta R = max(\frac{10}{p_{T}[GeV]}, 0.2)$ \ref{cite:CERN-EP-2019-145}.
 
 Unlike in Run 1, photon isolation cut thresholds are defined as a function of photon energy rather than being fixed. The isolation thresholds used are $FixedCutLoose$ ($E_{T}^{cone20}< 0.065 E_{T}^{\gamma}$ and $p_{T}^{cone20} < 0.05 E_{T}^{\gamma}$) and $FixedCutTight$ ($E_{T}^{cone40}< 0.022 E_{T}^{\gamma} + 2.45 GeV$ and $p_{T}^{cone20} < 0.05 E_{T}^{\gamma}$) for photons and $FCLoose$ ($E_{T}^{cone20}< 0.2 p_{T}$ and $p_{T}^{cone20} < 0.15 p_{T}$) for electrons \ref{cite:ATL-COM-PHYS-2020-378}.
 
@@ -98,6 +110,9 @@ In analyses discussed in this dissertation, the diphoton vertex originating from
 The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS bins") for the full Run-2 Couplings analysis is shown in Figure .
 
 \begin{figure}
+  \includegraphics[width=\linewidth]{figures/methods_chapter/Vertexing.png}
+  \caption{Shapes and signatures of a variety of objects in the detector \ref{ATL-COM-PHYS-2020-378}}
+  \label{fig:Vertexing}
 \end{figure}
 
 \subsubsection{Jets} \label{sec:Jets} 
@@ -105,11 +120,11 @@ The efficiency of the Neural Network diphoton vertex compared to the hardest ver
 Hadronic jets are identified from topo-clusters using the $anti-k_{t}$ algorithm. Clustering algorithms iteratively follow the following procedure: for each topo-cluster $i$, calculate the distance between both the topo-cluster and every other topo-cluster $j$ and between the topo-cluster and the beam $B$: 
 
 \begin{equation} 
-d_{i,j} = min(p_{T,i}^{2k}, p_{T,j}^{2k})frac{((y_{i}-y_{j})^{2}-(\phi_{i}-\phi_{j})^{2})}{R^2}
+d_{i,j} = min(p_{T,i}^{2k}, p_{T,j}^{2k})\frac{((y_{i}-y_{j})^{2}-(\phi_{i}-\phi_{j})^{2})}{R^2}
 d_{i,B} = p_{T,i}^{2k}
 \end{equation} 
 
-Where $y_{i}$ is the rapidity of particle $i$, defined as $y=frac{1}{2} ln(frac{ E + p_{L}}{ E - p_{L}})$ (where $p_{L}$ is the particle's momentum in the beam direction), $R = 0.4$ (the jet radius), and k is some constant. For the anti-$k_{t}$ algorithm, k = -1; other common clustering algorithms use k=1 ($k_{t}$) or k=0 (Cambridge-Aachen). 
+Where $y_{i}$ is the rapidity of particle $i$, defined as $y=\frac{1}{2} ln(\frac{ E + p_{L}}{ E - p_{L}})$ (where $p_{L}$ is the particle's momentum in the beam direction), $R = 0.4$ (the jet radius), and k is some constant. For the anti-$k_{t}$ algorithm, $k = -1$; other common clustering algorithms use $k=1$ ($k_{t}$) or $k=0$ (Cambridge-Aachen). 
 
 After calculating these metrics, combine the two cluster objects that are the smallest distance apart and re-calculate the distance metrics for the combined object. If a cluster object is closer to the beam than to another object, it is considered a jet and is removed from the list of objects for potential combination.
 
@@ -125,13 +140,13 @@ A Jet Vertex Tagger (JVT) multivariate discriminant is also used to reject pileu
 
 While in general it is very difficult to identify thetype of particle that seeded a hadronic jet, jets originating from hadrons containing bottom quarks are often identifiable with some degree of accuracy. This is due to their long lifetimes compared to other hadrons, meaning that they will travel a short distance in the inner detector (~$450 \mu m$) before hadronizing into jets. 
 
-For EMTopo jets, the Boosted Decision Tree-based Mv2c10 algorithm is used, while for ParticleFlow jets, the Neural Network-based DL1r algorithm is used. The Mv2c10 algorithm is based on a Boosted Decision Tree trained on variables such as impact parameter significance, the presence ad properties of a secondary vertex, and jet kinematic variables such as $p_{T}$ and $\eta$ \ref{cite:CERN-EP-2018-047, CERN-PH-EP-2015-216}; the DL1r algorithm is based on a Deep Neural Network \ref{cite:ATL-PHYS-PUB-2017-013} trained on the same input variables as the Mv2c10 tagger, with additional vertex variables included to allow for charm-quark jet discrimination. The DL1r tagger also features a recurrent neural network trained to take advantage of correlations between track impact parameters in discrimination. The Mv2c10 tagger has an efficiency of approximately 77$%$, while the DL1r has an efficiency of approximately 70$%$.  
+For EMTopo jets, the Boosted Decision Tree-based Mv2c10 algorithm is used, while for ParticleFlow jets, the Neural Network-based DL1r algorithm is used. The Mv2c10 algorithm is based on a Boosted Decision Tree trained on variables such as impact parameter significance, the presence ad properties of a secondary vertex, and jet kinematic variables such as $p_{T}$ and $\eta$ \ref{cite:CERN-EP-2018-047, CERN-PH-EP-2015-216}; the DL1r algorithm is based on a Deep Neural Network \ref{cite:ATL-PHYS-PUB-2017-013} trained on the same input variables as the Mv2c10 tagger, with additional vertex variables included to allow for charm-quark jet discrimination. The DL1r tagger also features a recurrent neural network trained to take advantage of correlations between track impact parameters in discrimination. The Mv2c10 tagger has an efficiency of approximately 77$\%$, while the DL1r has an efficiency of approximately 70$\%$.  
 
 \subsubsection{Muons} \label{sec:Muons} 
 
 Muons are reconstructed using tracks from either the muon spectrometer and inner detector or the muon spectrometer only.
 
-In the muon spectrometer, segments of hits along the bending plane in the MDT chambers are identified using a Hough transform \ref{Hough}, an image-processing technique from the field of edge-detection that maps observed line segments into a polar-coordinate feature space. The coordinate orthogonal to the bending plane is found using TGC and RPC hits, while segments in the CSC detectors are reconstructed using a separate combinatorial algorithm. Muon tracks are then reconstructed from the segments using a $\chi$^{2} algorithm- a track must contain at least two segments, except in the barrel-endcap transition region, where one segment is sufficient to build a track. 
+In the muon spectrometer, segments of hits along the bending plane in the MDT chambers are identified using a Hough transform \ref{Hough}, an image-processing technique from the field of edge-detection that maps observed line segments into a polar-coordinate feature space. The coordinate orthogonal to the bending plane is found using TGC and RPC hits, while segments in the CSC detectors are reconstructed using a separate combinatorial algorithm. Muon tracks are then reconstructed from the segments using a $\chi^{2}$ algorithm- a track must contain at least two segments, except in the barrel-endcap transition region, where one segment is sufficient to build a track. 
 
 Tracks are used to define four types of muons: Combined Muons, for which a track is fitted using both the Inner Detector and Muon Spectrometer, Segment-Tagged, for which a track in the ID is matched to a segment (but not a full track) in the Muon Spectrometer, Calorimeter-Tagged for which a track in the ID is matched to a calorimeter deposit compatible with a muon, and Extrapolated Muons, reconstructed using segments in the Muon Spectrometer that are not associated with any ID tracks but are compatible with the primary vertex. For all muons using the ID, criteria on the number of hits in each ID subsystem are employed to ensure track quality.
 
@@ -141,18 +156,28 @@ Muons must also pass identification criteria to distinguish them from potential 
 \item The charge-to-momentum ratio significance, defined as the absolute value of the difference between the ratio of the charge and momentum of the muons measured in the ID and MS divided by the sum in quadrature of thecorresponding uncertainties
 \item $\rho'$, defined as the absolute value of the difference between the transverse momentum measurements in the ID and MS divided by the $p_{T}$ of the combined track
 \item the normalized $\chi^{2}$ of the combined track fit
+\end{itemize}
 
-The analyses detailed in this thesis use the Medium identification working point, which allows only Combined and Extrapolated muons. Medium Combined Muons require at least 3 hits in at least two MDT layers, except for tracks in the $|η|<0.1 region$, where tracks containing at least one MDT layer but no more than one MDT hole layer are allowed. Medium Extrapolated muons require at least three MDT or CSC hits, and are only used in the region $2.5 < |\eta| < 2.7$. Additionally, the q/p significance is required to be less than 7 \ref{CERN-EP-2016-033}. 
+The analyses detailed in this thesis use the Medium identification working point, which allows only Combined and Extrapolated muons. Medium Combined Muons require at least 3 hits in at least two MDT layers, except for tracks in the $|\eta| <0.1$ region, where tracks containing at least one MDT layer but no more than one MDT hole layer are allowed. Medium Extrapolated muons require at least three MDT or CSC hits, and are only used in the region $2.5 < |\eta| < 2.7$. Additionally, the q/p significance is required to be less than 7 \ref{CERN-EP-2016-033}. 
 
 Like other objects, we require isolated muons. Muon isolation variables are defined identically to those of electrons for the ttH-CP analysis, while for the Couplings analysis, the ParticleFlow algorithm is used to augment the isolation procedure with a new isolation variable called $neflowiso$, corresponding to the energy deposited in neutral reconstructed ParticleFlow objects rather than raw calorimeter clusters \ref{ATL-COM-PHYS-2019-177}.
 
 For the standard isolation, we use the $FixedCutLoose$ working point, corresponding to $E_{T}^{cone20}<0.30 \times p_{T}^{\mu}$ and $p_{T}^{varcone30}<0.15 \times p_{T}^{\mu}$. For the ParticleFlow isolation, we use $(ptvarcone30+ 0.4\times neflowisol20) <0.16 \times p_{T}$ for muons with $p_{T} < 50GeV$ and $(ptvarcone20+ 0.4\times neflowisol20) < 0.16 \times p_{T}$ for muons with $p_{T} > 50GeV$.
 
-Additionally, muons are required to satisfy $p_{T} > 10 GeV, |\eta| < 2.7$, have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 3$, and satisfy $z_{0} \times sin(\theta)$ < 0.5 mm with respect to the primary vertex \ref{ATL-COM-PHYS-2020-378}. Muon momentum and energy scale and resolution calibrations are determined using $J/\psi \rightarrow \mu \mu$ and $Z \rightarrow \mu \mu$ decays \ref{cite:muCalib}. A charge-dependent sagitta bias calibration is also applied to correct for a slight observed misalignment of the muon system and inner detector.
+Additionally, muons are required to satisfy $p_{T} > 10 GeV, |\eta| < 2.7$, have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 3$, and satisfy $z_{0} \times sin(\theta) < 0.5 mm$ with respect to the primary vertex \ref{ATL-COM-PHYS-2020-378}. Muon momentum and energy scale and resolution calibrations are determined using $J/\psi \rightarrow \mu \mu$ and $Z \rightarrow \mu \mu$ decays \ref{cite:muCalib}. A charge-dependent sagitta bias calibration is also applied to correct for a slight observed misalignment of the muon system and inner detector.
 
 \subsubsection{Overlap Removal} \label{sec:Overlap}
 
+An overlap removal procedure is employed to avoid double-counting objects. It proceeds in the following order:
 
+\begin{itemize}
+\item Remove electrons within $\Delta R=0.4$ of any photon
+\item Remove muons within $\Delta R=0.4$ of any photon
+\item Remove jets within $\Delta R=0.4$ of any photon
+\item Remove jets within $\Delta R=0.2$ of any electron
+\item Remove electrons within $\Delta R=0.4$ of any jet
+\item Remove muons within $\Delta R=0.4$ of any jet
+\end{itemize}
 
 \subsubsection{MET} \label{sec:MET}
 
