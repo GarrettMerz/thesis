@@ -1,0 +1,31 @@
+\section{Study of the CP properties of the top-quark Yukawa interaction in t\bar{t}H and tH events wth H \rightarrow \gamma \gamma} \label{sec:ttHCP}
+
+According to the Standard Model, the Higgs boson is a CP-even scalar boson: it is predicted to have spin-zero, with all its interactions CP-even. Previous analyses from both ATLAS and CMS have placed limits on the existence of anomalous CP-violating Higgs couplings to the gauge bosons (\ref{cite: } \ref{cite: } and \ref{cite: }); however, any such couplings would be suppressed by a factor of 1/$(\Lambda)^2$ (where $\Lambda$ indicates the energy scale of the new CP-violating physics), so these studies are thus somewhat limited in their sensitivity. Similarly, indirect measurements of the CP-nature of the Higgs coupling to fermions in loop-diagram mediated processes have been performed \ref{cite: }; however, these measurements are highly dependent on the choice of BSM model that induces CP violation.
+
+The analysis detailed in this chapter marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production ($ggF$ or $ggH$, used interchangeably) and Higgs to diphoton decay (H \rightarrow \gamma \gamma); however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Feynman diagrams for these four processes are depicted in Figures \ref{fig:1.3}-\ref{fig:1.3}.
+
+Because of its combined direct and indirect sensitivity to the top Yukawa coupling, we thus find that the $ttH$ and $tH$ processes with $H \rightarrow \gamma \gamma $ provide a well-motivated channel for probing the CP-structure of the top-Higgs interaction. In addition, the presence of two photons in the event final state provides a clean signal, further motivating the use of this channel.
+
+\subsection{Monte Carlo Samples} \label{sec:ttHCPMC} 
+
+In the $ttH CP$ analysis, an Effective Field Theory (EFT) that sets a cutoff scale of 1 TeV, below which no new BSM particles coupling to the Higgs exist, is used to generate Monte Carlo samples. The EFT used is the Higgs Characterization (HC) model \ref{cite: HC}, implemented in the  MadGraph5_aMC@NLO generator \ref{cite: Madgraph}. As previously mentioned, the top-Higgs interaction term of the Lagrangian in the presence of CP-violation can be parameterized as
+
+\begin{equation}
+\mathcal{L} = \kappa_{t} g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th
+\end{equation}
+
+where $g_{t} = \frac{-m_{t}}{v} = \frac{-173.26 GeV}{246 GeV} = -0.703$ , $\kappa_{t}$ is the dimensionless coupling-strength term ($\kappa_{t}= 1$ in the Standard Model), and $\alpha$ is an angle that parameterizes the CP-mixing strength ($\alpha = 0$ in the Standard Model, $\alpha = \frac{\pi}{2}$ in the fully CP-odd case). The treatment of the $H \rightarrow \gamma \gamma$ and $ggH$ dependence on $\alpha$ is handled in several different ways, as discussed in \ref{sec:ttHCPresults}.
+
+For all Monte Carlo samples, the renormalization ($μ_{R}$) and factorization ($μ_{F}$) scales are defined as the scalar sum of the transverse masses of all final-state particles divided by two (i.e. $H_{T}/2$). $t\bar{t}H$ and $tWH$ samples are generated using the five-flavor scheme, while the four-flavor scheme is used for the $tHjb$ process. The Standard Model cross-sections for all process are normalized to those given in the CERN Higgs Yellow Report 4 \ref{cite:yellowreport}, in which fixed scales and the five-flavour scheme are used. Those cross-sections are calculated at NLO QCD accuracy (without electroweak correction) for the $tHjb$ and $tWH$ processes, while $t\bar{t}H$ is calculated at both NLO QCD and NLO Electroweak accuracies. K-factors are then computed to scale the Higgs Characterization Monte Carlo cross-sections to the Yellow Report cross-sections. The obtained K-factors are shown to be similar for different CP mixing angles; thus, the K-factors derived for the SM case can be safely used for the various samples with different $\alpha$ values.
+
+
+
+
+\subsection{A Subsection} \label{sec:example_subsection} 
+
+This is a subsection. It will be included in the table of contents. 
+
+\subsubsection{A Subsubsection} \label{sec:example_subsubsection} 
+
+This is a subsubsection. It will not be included in the table of contents. 
+
