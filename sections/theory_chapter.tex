@@ -321,16 +321,125 @@ associated (VH) and top-associated (ttH). The top-associated Higgs production mo
 
 Similarly, the dominant decay mode of the Higgs is to bottom quarks ($H \rightarrow bb$), followed by to W bosons ($H \rightarrow WW$), gluons ($H \rightarrow WW$), tau leptons ($H \rightarrow \tau \tau$), charm quarks ($H \rightarrow bb$), Z bosons ($H \rightarrow ZZ$), photons ($H \rightarrow \gamma \gamma$), and a Z boson and a photon ($H \rightarrow Z \gamma$). Because the Higgs does not couple to massless particles directly, the decays to gg and $\gamma \gamma$ are mediated by loop diagrams, most often involving top quarks.
 
+Investigating each of these decay modes has different benefits and detriments. While the Higgs decay to bottom quarks is the most common, correctly identifying and accurately reconstructing quarks and gluons using the jets that they produce in detectors is often very difficult. Decays to W bosons, Z bosons, and $\tau$ leptons provide "cleaner" channels, but because the W, Z and $\tau$ decay dominantly to hadrons, similar reconstruction issues occur unless we restrict ourselves to the rarer leptonic subchannels of these decays. The Higgs to diphoton channel occurs very rarely, but offers a much more unambiguous signal, as the odds of misidentifying high-energy gamma rays are fairly low.
+
+Additionally, we must consider combinatorics: in the ttH production mode, for instance, the final state contains two bottom quarks from the decay of the associated top quarks. If we choose to examine the subchannel in which the Higgs decays to bottom quarks as well, we find that we have at least four final-state bottom quark jets in the event, with 12 different unique assignments of bottom quark jets to parent particles. Correctly matching up which jet originated from which parent particle thus further complicates the reconstruction problem.
+
+The rate of a particular physics production mode or scattering process is parameterized using a quantity called the cross-section $\sigma$, which is measured in units of "barns". Similarly, the rate of a particular decay process is parameterized using a quantity called the decay width $\Gamma$, which measures the probability of a particular decay occurring per unit time. We can also define the "Branching Fraction" of a particular process: if $\Gamma_{H}$ denotes the sum of all Higgs decay widths, for a given process $H \rightarrow XX$ we define
+
+\begin{equation}
+Br(H \rightarrow XX) = frac{\Gamma(H \rightarrow XX)}{\Gamma_{H}}
+\end{equation}
+
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/HiggsBR.png}
 \caption{The branching ratio of the Higgs to various final state particles as a function of its mass (now known to be ~125 GeV), from reference \ref{2011WG}.}
 \end{figure}
 
-Investigating each of these decay modes has different benefits and detriments. While the Higgs decay to bottom quarks is the most common, correctly identifying and accurately reconstructing quarks and gluons using the jets that they produce in detectors is often very difficult. Decays to W bosons, Z bosons, and $\tau$ leptons provide "cleaner" channels, but because the W, Z and $\tau$ decay dominantly to hadrons, similar reconstruction issues occur unless we restrict ourselves to the rarer leptonic subchannels of these decays. The Higgs to diphoton channel occurs very rarely, but offers a much more unambiguous signal, as the odds of misidentifying high-energy gamma rays are fairly low.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{cc}
+        	Decay Mode & Branching fraction [\%] \\
+            $H \rightarrow bb $ & $ 57.5 \pm 1.9 $ \\
+			$H \rightarrow WW $ & $ 21.6 \pm 0.9 $ \\
+			$H \rightarrow gg $ & $ 8.56 \pm 0.86 $ \\
+			$H \rightarrow \tau \tau $ & $ 6.30 \pm 0.36 $ \\
+			$H \rightarrow cc $ & $ 2.90 \pm 0.35 $ \\
+			$H \rightarrow ZZ $ & $ 2.67 \pm 0.11 $ \\
+			$H \rightarrow \gamma \gamma $ & $ 0.228 \pm 0.011 $ \\
+			$H \rightarrow Z \gamma $ & $ 0.155 \pm 0.014 $ \\
+			$H \rightarrow \mu \mu $ & $ 0.022 \pm 0.001 $ \\
+    \end{tabular}
+    \caption{Higgs decay modes and branching fractions, for a Standard Model Higgs with mass of 125.09 GeV \ref{cite:2017YellowReport}}
+    \label{mytable}
+\end{table}
 
-Additionally, we must consider combinatorics: in the ttH production mode, for instance, the final state contains two bottom quarks from the decay of the associated top quarks. If we choose to examine the subchannel in which the Higgs decays to bottom quarks as well, we find that we have at least four final-state bottom quark jets in the event, with 12 different unique assignments of bottom quark jets to parent particles. Correctly matching up which jet originated from which parent particle thus further complicates the reconstruction problem.
+\subsection{The Kappa Framework, STXS, and EFTs} \label{sec:kappaFW}
+
+When measuring Higgs couplings, it is often most useful to note the ratio of the measured coupling to the Standard Model prediction, rather than the measured coupling itself. For some Higgs coupling to a boson or fermion $i$, we write
+
+\begin{equation}
+\kappa_{i} = frac{y_{i}^{meas}}{y_{i}^{SM}}
+\end{equation}
+
+This $\kappa$ parameter is called the "coupling strength"-- if $kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \ref{cite:Jennet38}.
+
+The parameterization of various production cross-sections and decay widths (divided by their standard model values) in terms of the $\kappa$ framework is shown in table \ref{cite:kappatable} \ref{cite:Phys. Rev. D 101 (2020) 012002}. The "resolved" column assumes that only the particles of the Standard Model exist. However, it can also be useful to develop "effective" coupling terms that allows for the existence of additional particles that may influence the loop diagrams. These can be modeled by mutiplying the resolved coupling terms by the indicated factors:
+
+\begin{equation}
+\kappa_{g}^{2} = frac{\sigma_{ggF}^{meas}}{\sigma_{ggF}^{SM}}, \kappa_{\gamma}^{2} = frac{\Gamma{\gamma \gamma}^{meas}}{\Gamma_{\gamma \gamma}^{SM}}, \kappa_{Z \gamma}^{2} = frac{\Gamma{Z \gamma}^{meas}}{\Gamma_{Z \gamma}^{SM}}
+\end{equation}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ccc}
+	Production Mode & Effective Modifier & Resolved Modifier
+	$\sigma(ggF)$ & $\kappa_{g}^{2}$ & $1.04 \kappa_{t}^{2} + 0.002 \kappa_{b}^2 - 0.04 \kappa_{t} \kappa_{b}$
+	$\sigma(VBF)$ & & $0.73 \kappa_{W}^{2} + 0.27 \kappa_{Z}^2$ 
+	$\sigma(qq/qg \rightarrow W H)$ & & $\kappa_{W}^{2}$
+	$\sigma(qq/qg \rightarrow ZH)$ & & $\kappa_{Z}^{2}$
+	$\sigma(ggZH)$ && $2.46 \kappa_{Z}^{2} + 0.46 \kappa_{t}^2 - 1.90 \kappa_{t} \kappa_{Z}$
+	$\sigma(t\bar{t}H)$ && $\kappa_{t}^{2}$
+	$\sigma(b\bar{b}H)$ && $\kappa_{b}^{2}$
+	$\sigma(tHjb)$ && $2.63 \kappa_{t}^{2} + 3.58 \kappa_{W}^2 - 5.21 \kappa_{t} \kappa_{W}$
+	$\sigma(tWH)$ && $2.91 \kappa_{t}^{2} + 2.31 \kappa_{W}^2 - 4.22 \kappa_{t} \kappa_{W}$
+    \end{tabular}
+    \caption{Parameterization of Higgs cross-section dependence on $\kappa$ coefficients, from \ref{cite:Phys. Rev. D 101 (2020) 012002}}
+    \label{Xsecskappa}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ccc}
+	Production Mode & Effective Modifier & Resolved Modifier
+	$H \rightarrow bb$ & & $\kappa_{b}^2$
+	$H \rightarrow WW$ & & $\kappa_{W}^{2}$ 
+	$H \rightarrow gg & \kappa_{g}^{2}$ & $1.11 \kappa_{t}^{2} + 0.01 \kappa_{b}^2 - 0.12 \kappa_{t} \kappa_{b}$
+	$H \rightarrow \tau \tau$ & & $\kappa_{\tau}^{2}$
+	$H \rightarrow cc$ && $2.46 \kappa_{c}^{2}$
+	$H \rightarrow ZZ$ && $\kappa_{Z}^{2}$
+	$H \rightarrow \gamma \gamma$ & $\kappa_{\gamma}^{2} & 1.59 \kappa_{W}^{2} + 0.07 \kappa_{t}^2 - 0.67 \kappa_{t} \kappa_{W}$
+	$H \rightarrow Z \gamma$ & $\kappa_{z \gamma}^{2} & 1.12 \kappa_{W}^{2} + 0.12 \kappa_{t} \kappa_{W}$
+	$H \rightarrow \mu \mu$ && $\kappa_{\mu}^{2}$
+    \end{tabular}
+    \caption{Parameterization of Higgs branching ratio dependence on $\kappa$ coefficients, from \ref{cite:Phys. Rev. D 101 (2020) 012002}}
+    \label{BRskappa}
+\end{table}
+
+The Couplings analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework, where different regions of phase space, called "truth bins", are probed according to their production modes and kinematic properties. 
+
+The ggF STXS definition includes hadronically-decaying ggZH, while the VBF STXS definition includes hadronically-decaying VH. $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include the Z decay both in two charge leptons and two neutrinos.
+Truth bins of further production modes like bb̄H and tH are not split in kinematic regions because of their
+low production cross sections. In particular, since with the current data there is no sensitivity to measure
+bb̄H, it is merged into ggF scheme assuming the same truth bin acceptances of the ggF process.
+The truth bin acceptances are reported in the Figure ?? and Table ?? while the relative σ × BR γγ in
+Table ??: these values were computed by merging mc16a+d+e signal MC samples described in ?? and
+weighting events with their MC weight.
+
+
+
+
+
+
+
+
+
 
 This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa g_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa g_{t} \bar{t} (i \gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$.
 
 The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel. A combined fit is performed in different regions of phase space that correspond to the ggH, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
