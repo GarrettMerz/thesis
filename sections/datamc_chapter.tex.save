@@ -8,7 +8,33 @@ The trigger used to select events is the diphoton trigger HLT_g35_loose_g25_loos
 
 In addition to this, we require that all 
 
-\subsection{Data Control Region} \label{sec:NTI} 
+
+\begin{table}
+  \centering
+  \begin{tabular}{c l}
+  \toprule
+  Wilson coefficient & Operator \\
+  \hline
+  $\cHbox$ & $(H^\dag H)\Box(H^\dag H)$\\
+  $\cHDD$   & $\ \left(H^\dag D^\mu H\right)^* \left(H^\dag D_\mu H\right)$\\
+  $\cHG$  & $H^\dag H\, G^A_{\mu\nu} G^{A\mu\nu}$  \\
+  $\cHB$ &  $ H^\dag H\, B_{\mu\nu} B^{\mu\nu}$\\
+  $\cHW$ &  $H^\dag H\, W^I_{\mu\nu} W^{I\mu\nu}$\\
+  $\cHWB$ &  $ H^\dag \tau^I H\, W^I_{\mu\nu} B^{\mu\nu}$\\
+  $\cHl1$ & $(H^\dag i\overleftrightarrow{D}_\mu H)(\bar l_p \gamma^\mu l_r)$\\
+  $\cHl3$ & $(H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar l_p \tau^I \gamma^\mu l_r)$\\
+  $\cHe$  & $(H^\dag i\overleftrightarrow{D}_\mu H)(\bar e_p \gamma^\mu e_r)$\\
+  $\cHq1$ & $(H^\dag i\overleftrightarrow{D}_\mu H)(\bar q_p \gamma^\mu q_r)$\\
+  $\cHq3$ & $(H^\dag i\overleftrightarrow{D}^I_\mu H)(\bar q_p \tau^I \gamma^\mu q_r)$\\
+  $\cHu$  & $(H^\dag i\overleftrightarrow{D}_\mu H)(\bar u_p \gamma^\mu u_r)$\\
+  $\cHd$  & $(H^\dag i\overleftrightarrow{D}_\mu H)(\bar d_p \gamma^\mu d_r)$\\
+  $\cuGAbs$ & $(\bar q_p \sigma^{\mu\nu} T^A u_r) \widetilde H \, G_{\mu\nu}^A$ \\
+  $\cll1$   & $(\bar l_p \gamma_\mu l_r)(\bar l_s \gamma^\mu l_t)$ \\
+  \bottomrule
+\end{tabular}
+  \caption{Wilson coefficients $c_i$ and corresponding dimension-6 SMEFT operators $\mathcal{O}_i$ used in this analysis.}
+  \label{tab:CoeffOperators}
+\end{table}
 
 
 
@@ -16,7 +42,6 @@ In addition to this, we require that all
 
 
 
-\subsection{Nominal Monte Carlo Samples} \label{sec:NominalMC} 
 
 
 
@@ -28,7 +53,7 @@ In addition to this, we require that all
 
 \subsection{ttHCP Monte Carlo Samples} \label{sec:ttHCPMC} 
 
-In the $ttH CP$ analysis, an Effective Field Theory (EFT) setting a cutoff scale of 1 TeV, below which no new BSM particles coupling to the Higgs exist, is used to generate Monte Carlo samples. The EFT used is the Higgs Characterization (HC) model \ref{cite: HC}, implemented in the  MadGraph5_aMC@NLO generator \ref{cite: Madgraph}. As previously mentioned, the top-Higgs interaction term of the Lagrangian in the presence of CP-violation can be parameterized as
+In the $ttH CP$ analysis, an Effective Field Theory (EFT) setting a cutoff scale of 1 TeV, below which no new BSM particles coupling to the Higgs exist, is used to generate Monte Carlo samples. The EFT Model used is the Higgs Characterization (HC) model \ref{cite: HC}, implemented in the  MadGraph5_aMC@NLO generator \ref{cite: Madgraph}. As previously mentioned, the top-Higgs interaction term of the Lagrangian in the presence of CP-violation can be parameterized as
 
 \begin{equation}
 \mathcal{L} = \kappa_{t} g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th
@@ -40,11 +65,35 @@ For all Monte Carlo samples, the renormalization ($μ_{R}$) and factorization ($
 
 
 
-\subsection{SMEFT Monte Carlo Samples} \label{sec:SMEFTMC} 
+
+\subsection{A Subsection} \label{sec:example_subsection} 
+
+This is a subsection. It will be included in the table of contents. 
+
+\subsubsection{A Subsubsection} \label{sec:example_subsubsection} 
+
+This is a subsubsection. It will not be included in the table of contents. 
 
 
 
 
 
-\subsection{Higgs Preselection} \label{sec:Preselection} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
