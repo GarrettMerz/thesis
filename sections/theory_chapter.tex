@@ -133,7 +133,7 @@ To understand the Higgs mechanism, we must first devote a brief detour to the co
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/higgspotential.png}
-\caption{The "wine bottle" or "Mexican hat" potential hill, from reference \ref{Ellis}}
+\caption{The "wine bottle" Higgs potential hill, from reference \ref{Ellis}}
 \end{figure}
 
 When the ball is balanced at the top of the potential "hill", the configuration is spatially symmetric: that is, no direction is privileged over any other. However, when this delicate balance is even slightly disturbed, the ball will roll down the hill in some direction, resulting in a final state that is $\emph{not}$ symmetrical. This is the phenomenon known as "spontaneous symmetry breaking".
@@ -261,6 +261,25 @@ associated (VH) and top-associated (ttH). The top-associated Higgs production mo
   \centering
        \begin{subfigure}[b]{0.3\textwidth}
          \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/bbH.png}
+         \caption{bbH}
+         \label{fig:bbH}
+     \end{subfigure}
+     \hfill
+         \begin{subfigure}[b]{0.3\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{figures/theory_chapter/ggZH.png}
+         \caption{gg $\rightarrow ZH$ }
+         \label{fig:ggZH}
+     \end{subfigure}
+  \label{fig:loopmodes}
+  \caption{Feynman diagrams depicting relevant less-common Higgs production modes.}  
+\end{figure}
+
+\begin{figure}[htp]
+  \centering
+       \begin{subfigure}[b]{0.3\textwidth}
+         \centering
          \includegraphics[width=\textwidth]{figures/theory_chapter/tWH1.png}
          \caption{A tWH mode}
          \label{fig:tWH1}
@@ -298,21 +317,21 @@ associated (VH) and top-associated (ttH). The top-associated Higgs production mo
          \centering
          \includegraphics[width=\textwidth]{figures/theory_chapter/toploop.png}
          \caption{Top-mediated}
-         \label{fig:tWH1}
+         \label{fig:toploop}
      \end{subfigure}
      \hfill
          \begin{subfigure}[b]{0.3\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/theory_chapter/Wloop1.png}
          \caption{W $\rightarrow \gamma$ }
-         \label{fig:tWH2}
+         \label{fig:Wloop1}
      \end{subfigure}
      \hfill 
         \begin{subfigure}[b]{0.3\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/theory_chapter/Wloop2.png}
          \caption{W $\rightarrow \gamma \gamma$}
-         \label{fig:tqH1}
+         \label{fig:Wloop2}
      \end{subfigure}
      \hfill
   \label{fig:loopmodes}
@@ -356,7 +375,11 @@ Br(H \rightarrow XX) = frac{\Gamma(H \rightarrow XX)}{\Gamma_{H}}
 
 \subsection{The Kappa Framework, STXS, and EFTs} \label{sec:kappaFW}
 
-When measuring Higgs couplings, it is often most useful to note the ratio of the measured coupling to the Standard Model prediction, rather than the measured coupling itself. For some Higgs coupling to a boson or fermion $i$, we write
+This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa g_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa g_{t} \bar{t} (i \gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$. In this dissertation, we refer to this analysis as the "ttHCP Analysis".
+
+The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the ggH, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
+
+When measuring Higgs couplings in analyses suh as these, it is often most useful to note the ratio of the measured coupling to the Standard Model prediction, rather than the measured coupling itself. For some Higgs coupling to a boson or fermion $i$, we can write
 
 \begin{equation}
 \kappa_{i} = frac{y_{i}^{meas}}{y_{i}^{SM}}
@@ -406,28 +429,107 @@ The parameterization of various production cross-sections and decay widths (divi
     \label{BRskappa}
 \end{table}
 
-The Couplings analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework, where different regions of phase space, called "truth bins", are probed according to their production modes and kinematic properties. 
+The Couplings Analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework, where different regions of phase space, called "truth bins", are probed according to their production modes and kinematic properties. A visual guide to the different STXS1.2 bins is shown in figure \ref{fig:STXS_scheme}. The categorization is designed such that all events passing the $H \rightarrow \gamma \gamma$ selection criteria will fall into one of the STXS1.2 categories.
 
-The ggF STXS definition includes hadronically-decaying ggZH, while the VBF STXS definition includes hadronically-decaying VH. $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include the Z decay both in two charge leptons and two neutrinos.
-Truth bins of further production modes like bb̄H and tH are not split in kinematic regions because of their
-low production cross sections. In particular, since with the current data there is no sensitivity to measure
-bb̄H, it is merged into ggF scheme assuming the same truth bin acceptances of the ggF process.
-The truth bin acceptances are reported in the Figure ?? and Table ?? while the relative σ × BR γγ in
-Table ??: these values were computed by merging mc16a+d+e signal MC samples described in ?? and
-weighting events with their MC weight.
-
-
-
-
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/theory_chapter/simplifiedXS_ggF_1_2} \\[3mm]
+  \includegraphics[width=0.8\textwidth]{figures/theory_chapter/simplifiedXS_VBF_1_2} \\[3mm]
+  \includegraphics[width=0.6\textwidth]{figures/theory_chapter/simplifiedXS_VH_1_2}
+  \includegraphics[width=0.25\textwidth]{figures/theory_chapter/simplifiedXS_ttH_1_2}
+  \caption{Stage 1.2 STXS bin definitions for the main production modes.}
+  \label{fig:STXS_scheme}
+\end{figure}
 
 
+In addition to their nominal production and decay modes, the $ggF$ STXS1.2 truth bins include hadronically-decaying $gg \rightarrow ZH$ events, while the $VBF$ STXS definition includes hadronically-decaying $VH$. Furthermore, truth bins of further production modes like $b\bar{b}H$ and $tH$ are not split into dedicated kinematic regions because of their low production cross sections; in particular, in the Couplings analysis, the $b\bar{b}H$ categories are subsumed into the $ggF$ categorization scheme, while the tH categories are subsumed into the tH categorization scheme. Additionally, it is important to note that the leptonic $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include Z-boson decays both to two charged leptons and to two neutrinos (the latter of which will have a high MET signature). 
+
+For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algoritm using radius R=0.4, are required to have p_{T} > 30 GeV (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
+
+Using the Monte Carlo simulated samples described in section \ref{cite: DataMC}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \ref{cite:STXS_cross_sections}, and show the acceptance for each production mode in Figure . Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{sec:CouplingsChapter}.
+
+\begin{table}[htbp]
+        \centering
+        {\footnotesize
+        \begin{tabular}{lS}
+                STXS 1.2 Truth Bin                                     & {$\sigma\times\mathrm{BR}_{\yy} [\si{\fb}]$} \\
+                \toprule
+                gg2H\_0J\_ptH\_0\_10                                   & 15.038147                                    \\
+                gg2H\_0J\_ptH\_gt10                                    & 46.799419                                    \\
+                gg2H\_1J\_ptH\_0\_60                                   & 14.742653                                    \\
+                gg2H\_1J\_ptH\_60\_120                                 & 10.223149                                    \\
+                gg2H\_1J\_ptH\_120\_200                                & 1.692748                                     \\
+                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_0\_60                    & 2.639954                                     \\
+                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_60\_120                  & 4.058768                                     \\
+                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_120\_200                 & 2.133361                                     \\
+                gg2H\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_0\_25   & 0.569488                                     \\
+                gg2H\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_gt25    & 0.818394                                     \\
+                gg2H\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_0\_25      & 0.241653                                     \\
+                gg2H\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_gt25       & 0.363737                                     \\
+                gg2H\_ptH\_200\_300                                    & 1.036991                                     \\
+                gg2H\_ptH\_300\_450                                    & 0.239097                                     \\
+                gg2H\_ptH\_450\_650                                    & 0.035624                                     \\
+                gg2H\_ptH\_gt650                                       & 0.004947                                     \\
+                qq2Hqq\_0J                                             & 0.816245                                     \\
+                qq2Hqq\_1J                                             & 3.956656                                     \\
+                qq2Hqq\_ge2J\_MJJ\_0\_60                               & 0.224649                                     \\
+                qq2Hqq\_ge2J\_MJJ\_60\_120                             & 1.200933                                     \\
+                qq2Hqq\_ge2J\_MJJ\_120\_350                            & 1.426903                                     \\
+                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_0\_25 & 0.897833                                     \\
+                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_gt25  & 0.337811                                     \\
+                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_0\_25    & 1.356668                                     \\
+                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_gt25     & 0.314044                                     \\
+                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_gt200                & 0.104740                                     \\
+                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_gt200                   & 0.258838                                     \\
+                qq2Hlnu\_ptV\_0\_75                                    & 0.466795                                     \\
+                qq2Hlnu\_ptV\_75\_150                                  & 0.297442                                     \\
+                qq2Hlnu\_ptV\_150\_250\_0J                             & 0.051545                                     \\
+                qq2Hlnu\_ptV\_150\_250\_ge1J                           & 0.042651                                     \\
+                qq2Hlnu\_ptV\_gt250                                    & 0.030152                                     \\
+                qq2Hll\_ptV\_0\_75                                     & 0.236572                                     \\
+                qq2Hll\_ptV\_75\_150                                   & 0.157167                                     \\
+                qq2Hll\_ptV\_150\_250\_0J                              & 0.027476                                     \\
+                qq2Hll\_ptV\_150\_250\_ge1J                            & 0.022523                                     \\
+                qq2Hll\_ptV\_gt250                                     & 0.015076                                     \\
+                gg2Hll\_ptV\_0\_75                                     & 0.014989                                     \\
+                gg2Hll\_ptV\_75\_150                                   & 0.038219                                     \\
+                gg2Hll\_ptV\_150\_250\_0J                              & 0.007812                                     \\
+                gg2Hll\_ptV\_150\_250\_ge1J                            & 0.014855                                     \\
+                gg2Hll\_ptV\_gt250                                     & 0.004465                                     \\
+                ttH\_ptH\_0\_60                                        & 0.267960                                     \\
+                ttH\_ptH\_60\_120                                      & 0.404152                                     \\
+                ttH\_ptH\_120\_200                                     & 0.287483                                     \\
+                ttH\_ptH\_200\_300                                     & 0.119454                                     \\
+                ttH\_ptH\_gt300                                        & 0.055617                                     \\
+                bbH                                                    & 1.044426                                     \\
+                tH                                                     & 0.187064                                     \\
+                \bottomrule
+        \end{tabular}
+        }
+        \caption{Simplified template cross sections times diphoton branching ratio for each of the STXS 1.2 truth bins.}
+        \label{tab:STXS_cross_sections}
+\end{table}
+
+\begin{figure}[tbp]
+        \centering
+        \includegraphics[width=\linewidth]{figures/theory_chapter/STXS_acceptances.png}
+        \caption{Stage 1.2 STXS bin acceptances for all Higgs production modes considered in the Couplings analysis. The FWDH bins target events outside the nominal acceptance, i.e. with $|y_{H}|>2.5$.}
+        \label{fig:STXS_acceptances}
+\end{figure}
+
+In addition to the kappa-framework, the Couplings Analysis also makes use of an Effective Field Theory (EFT) approach to parameterize potential Higgs Couplings beyond the Standard Model. Effective Field Theories offer a model-independent way to parameterize new physics that may not be directly accessible at LHC energies. Using the Standard Model Effective Field Theory parameterization (SMEFT) \ref{cite:SMEFT}, we can write new physics that exists at some energy scale $\Lambda$ as
+
+\begin{equation}
+\mathcal{L}_{SMEFT} = \mathcal{L}_{SM} + (\frac{v}{\Lambda})\mathcal{L}_{5} + (\frac{v}{\Lambda})^2 \mathcal{L}_{6}
+\end{equation}
+
+Where $v$ denotes the Higgs field vacuum expectation value of 246 GeV. If we assume that 
 
 
 
 
-This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa g_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa g_{t} \bar{t} (i \gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$.
 
-The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel. A combined fit is performed in different regions of phase space that correspond to the ggH, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
+
 
 
 
