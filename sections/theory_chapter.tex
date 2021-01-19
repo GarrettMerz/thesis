@@ -517,31 +517,51 @@ Using the Monte Carlo simulated samples described in section \ref{cite: DataMC},
         \label{fig:STXS_acceptances}
 \end{figure}
 
-In addition to the kappa-framework, the Couplings Analysis also makes use of an Effective Field Theory (EFT) approach to parameterize potential Higgs Couplings beyond the Standard Model. Effective Field Theories offer a model-independent way to parameterize new physics that may not be directly accessible at LHC energies. Using the Standard Model Effective Field Theory parameterization (SMEFT) \ref{cite:SMEFT}, we can write new physics that exists at some energy scale $\Lambda$ as
+In addition to the kappa-framework, the Couplings Analysis also makes use of an Effective Field Theory (EFT) approach to parameterize potential Higgs Couplings beyond the Standard Model. Effective Field Theories offer a model-independent way to parameterize new physics that may not be directly accessible at LHC energies. Using the Standard Model Effective Field Theory parameterization (SMEFT) \ref{cite:SMEFT}, we can write the Lagrangian for new physics that exists at some energy scale $\Lambda >> v$ (where $v$ denotes the Higgs field vacuum expectation value of 246 GeV) as
 
 \begin{equation}
 \mathcal{L}_{SMEFT} = \mathcal{L}_{SM} + (\frac{v}{\Lambda})\mathcal{L}_{5} + (\frac{v}{\Lambda})^2 \mathcal{L}_{6}
 \end{equation}
 
-Where $v$ denotes the Higgs field vacuum expectation value of 246 GeV. If we assume that 
+If we assume that lepton and baryon number are conserved, we find that we cannot have any $\mathcal{L}_{5}$ operators, as all allowable dimension-5 operators violate the conservation of lepton number; thus, the leading EFT terms are all proportional to $(\frac{v}{\Lambda})^2$ and have dimension-6.
+
+The dimension-6 Lagrangian term can be expanded as a linear combination of all allowable dimension-6 operators:
+
+\begin{equation}
+\mathcal{L}_{6} = \sum_{i} c_{i}^6 O_{i}^{6}
+\end{equation}
+
+In the Couplings Analysis, the operators are chosen using the so-called "Warsaw Basis" \ref{cite:Warsaw}; the $c_{i}$ terms are the free parameters to be determined by the final likelihood fit, called "Wilson Coefficients". A list of all allowed dimension-6 operators and their corresponding coefficients is given in \ref{tab:EFT}.
 
 
 
 
 
 
+Under this model, we can write the cross-section in some STXS bin as 
 
+\begin{equation}
+\sigma_{bin} =  \sigma_{bin}^{SM} + \sigma_{bin}^{interaction} + \sigma_{bin}^{BSM}
+\end{equation}
 
+where the first term refers to the Standard-Model cross-section, the second refers to the interaction between the SM and BSM physics processes, and the last refers to the BSM processes themselves.
 
+We can also write:
+\begin{equation}
+\frac{\sigma_{bin}^{interaction}}{\sigma_{bin}^{SM}} = \sum_{i} A_{i} c_{i}
+\frac{\sigma_{bin}^{BSM}}{\sigma_{bin}^{SM}} = \sum_{i} B_{ij} c_{i} c_{j}
+\end{equation}
 
+So we can parameterize the cross-section as:
+\begin{equation}
+\frac{\sigma_{bin}}{\sigma_{bin}^{SM}} = 1 + \sum_{i} A_{i} c_{i} + \sum_{i} B_{ij} c_{i} c_{j}
+\end{equation}
 
+Similarly, the Higgs partial decay width to diphotons (a measure of how often the Higgs decays to diphotons vs other channels) can be parameterized as follows:
 
+\begin{equation}
+\Gamma_{\gamma \gamma} = \Gamma_{\gamma \gamma}^{SM} + \Gamma_{\gamma \gamma}^{interaction} + \Gamma_{\gamma \gamma}^{BSM}
+\Gamma_{\gamma \gamma} = 1 + \sum_{i} A_{i}^{\Gamma_{\gamma \gamma}} c_{i} + \sum_{i} B_{ij}^{\Gamma_{\gamma \gamma}} c_{i} c_{j}
+\end{equation}
 
-
-
-
-
-
-
-
-
+Combining these, we can parameterize the event yield in each STXS bin in terms of the Wilson coefficients, using Monte Carlo simulated events to determine the $A_{i}$ and $B_{ij}$ coefficients. This is detailed further in Section \ref{sec:Couplings}.
