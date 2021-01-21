@@ -93,7 +93,7 @@ However, the photon identification is a cut-based process, while the electron id
 
 In addition, for the analyses discussed in this dissertation, all photon candidates must have $p_{T} > 25 GeV$ and $|\eta| < 2.37$, with the region $1.37 < |\eta| < 1.52$ vetoed. Similarly, electron candidates must have $p_{T} > 15 GeV$ and $|\eta| < 2.47$ with the region $1.37 < |\eta| < 1.52$ vetoed.
 
-To aid in modelling, additional photon ID working points are created. These "LoosePrimeN" working points involve photons that pass the 'loose' identification criteria, but fail one or more of N 'tight' identification criteria. The analyses discussed in this dissertation use the LoosePrime4 working point, which is defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$, and $E_{ratio}$ criteria \ref{ANA-EGAM-2018-01}.
+To aid in background modelling, additional photon ID working points are created. These "LoosePrimeN" working points involve photons that pass the 'loose' identification criteria, but fail one or more of N 'tight' identification criteria. The CP Analysis uses the LoosePrime4 working point, which is defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$, and $E_{ratio}$ criteria, while the Couplings analysis uses the LoosePrime3 working point (defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$ criteria) \ref{ANA-EGAM-2018-01}.
 
 To distinguish between photons originating from the hard scatter (i.e., the process of interest in an event) and photons radiated off of other final-state objects, we consider the relative isolation of identified photons. Photons near large amounts of calorimeter activity are likely to be radiative photons ('non-prompt') radiated from final-state particles after the hard-scatter event, while photons that are isolated are more likely to originate from the hard-scatter.
 
@@ -162,13 +162,13 @@ Muons must also pass identification criteria to distinguish them from potential 
 
 The analyses detailed in this thesis use the Medium identification working point, which allows only Combined and Extrapolated muons. Medium Combined Muons require at least 3 hits in at least two MDT layers, except for tracks in the $|\eta| <0.1$ region, where tracks containing at least one MDT layer but no more than one MDT hole layer are allowed. Medium Extrapolated muons require at least three MDT or CSC hits, and are only used in the region $2.5 < |\eta| < 2.7$. Additionally, the q/p significance is required to be less than 7 \ref{CERN-EP-2016-033}. 
 
-Like other objects, we require isolated muons. Muon isolation variables are defined identically to those of electrons for the ttH-CP analysis, while for the Couplings analysis, the ParticleFlow algorithm is used to augment the isolation procedure with a new isolation variable called $neflowiso$, corresponding to the energy deposited in neutral reconstructed ParticleFlow objects rather than raw calorimeter clusters \ref{ATL-COM-PHYS-2019-177}.
+Like other objects, we require isolated muons. Muon isolation variables are defined identically to those of electrons for the ttH-CP analysis, while for the Couplings analysis, the ParticleFlow algorithm is used to augment the isolation procedure with a new isolation variable called $neflowiso$, corresponding to the energy deposited in neutral reconstructed ParticleFlow objects rather than raw calorimeter clusters \ref{ATL-COM-PHYS-2019-177}. 
 
 For the standard isolation, we use the $FixedCutLoose$ working point, corresponding to $E_{T}^{cone20}<0.30 \times p_{T}^{\mu}$ and $p_{T}^{varcone30}<0.15 \times p_{T}^{\mu}$. For the ParticleFlow isolation, we use $(ptvarcone30+ 0.4\times neflowisol20) <0.16 \times p_{T}$ for muons with $p_{T} < 50GeV$ and $(ptvarcone20+ 0.4\times neflowisol20) < 0.16 \times p_{T}$ for muons with $p_{T} > 50GeV$.
 
 Additionally, muons are required to satisfy $p_{T} > 10 GeV, |\eta| < 2.7$, have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 3$, and satisfy $z_{0} \times sin(\theta) < 0.5 mm$ with respect to the primary vertex \ref{ATL-COM-PHYS-2020-378}. Muon momentum and energy scale and resolution calibrations are determined using $J/\psi \rightarrow \mu \mu$ and $Z \rightarrow \mu \mu$ decays \ref{cite:muCalib}. A charge-dependent sagitta bias calibration is also applied to correct for a slight observed misalignment of the muon system and inner detector.
 
-for the analyses discussed in this dissertation, all muon candidates must have $p_{T} > 15 GeV$ and $|\eta| < 2.37$.
+For the analyses discussed in this dissertation, all muon candidates must have $p_{T} > 15 GeV$ and $|\eta| < 2.37$.
  
 \subsubsection{Overlap Removal} \label{sec:Overlap}
 
