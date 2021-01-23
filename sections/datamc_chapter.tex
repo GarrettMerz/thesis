@@ -2,7 +2,11 @@
 
 \subsection{Data} \label{sec:Data}
 
-In both Run-2 HGam analyses discussed in this dissertation, we use the full LHC Run-2 dataset, consisting of $139.0 \plusminus 2.4 fb^{-1}$ of proton-proton collisions with a center of mass energy $\sqrt{s} = 13 TeV$ recorded by the ATLAS detector between 2015 and 2018 \ref{Jennet106}. Figure XXX shows the instantaneous luminosity gathered by the detector as a function of time. 
+In both Run-2 HGam analyses discussed in this dissertation, we use the full LHC Run-2 dataset, consisting of $139.0 \plusminus 2.4 fb^{-1}$ of proton-proton collisions with a center of mass energy $\sqrt{s} = 13 TeV$ recorded by the ATLAS detector between 2015 and 2018 \ref{Jennet106}. Figure \ref{fig:datalumi} shows the instantaneous luminosity gathered by the detector as a function of time; figure \ref{fig:pileup} shows the pileup as a function of time. 
+
+Figure: datalumi
+Figure: pileup
+
 
 The trigger used to select events is the diphoton trigger HLT_g35_loose_g25_loose (for 2015-2016 data) and HLT_g35_medium_g25_medium (for 2017-2018 data). Both triggers require two photon candidates, one with a transverse energy $E_{T}$ of at least 35 GeV and the other with transverse energy of at least 25 GeV. The 2015-2016 trigger requires two photons that pass the "loose" ID requirement, while the 2017-2018 trigger requires two photons that pass the "medium" ID requirement (the cut was tightened due to increased luminosity and pileup). The trigger was calibrated using radiative Z decays, and is observed to be greater than 95\% efficient for each photon as long as it is 5 GeV above the trigger threshold \ref:cite{TriggerPerformance}.
 
@@ -40,38 +44,42 @@ A list of the versions and purposes of the Monte Carlo generator tools is detail
 				Matrix Element &&& \\                
                 & MadGraph5_aMC@NLO & \ref{cite:MG5} \ref{cite:aMCNLO} \\
                 & Powheg & \ref{cite:Powheg1} \ref{cite:Powheg2} \ref{cite:Powheg3} \\ \hline
-                Showering &&& \\              
+                Showering + Matrix Element &&& \\              
                 & Pythia8 & \ref{cite:Pythia1} \ref{cite:Pythia2}  
                 & Herwig7 & \ref{cite:Herwig1} \ref{cite:Herwig2}
                 Hadronization &&& \\              
                 & EvtGen & \ref{cite:EvGen}  
-                ME+Showering+Hadronization &&& \\              
+                Matrix Element+Showering+Hadronization &&& \\              
                 & Sherpa & \ref{cite:Sherpa1} \ref{cite:Sherpa2} \ref{cite:Sherpa3} \ref{cite:Sherpa4}  
     \end{tabular}
-    \caption{Higgs decay modes and branching fractions, for a Standard Model Higgs with mass of 125.09 GeV \ref{cite:2017YellowReport}}
+    \caption{Tools used for Monte Carlo generation in the analyses detailed in this dissertation.}
     \label{MCTools}
 \end{table}
 
 After generation, Monte Carlo simulations are then passed through the Geant4 software package \ref{Geant4} to simulate the detector response. After this, the events are passed through the same object-reconstruction software used for data events \ref{arXiv: 1005.4568}. All Monte Carlo samples used in this dissertation are generated using the Geant4 full simulation, with the exception of the QCD continuum diphoton samples used for background modelling, which were treated using the GEANT4 fast simulation settings due to the number of events generated. For all MC samples, pile-up interactions were simulated by overlaying each Monte Carlo event with a different number of minimum-bias events simulated using Pythia 8.186 \ref{cite:Pythia} with the ATLAS "A3" tune \ref{cite:A3}.
 
-In all Monte Carlo simulations, the Higgs mass was set to 125 GeV and the decay width was set to 407MeV \ref{cite:HiggsWidth}.
+In all Monte Carlo simulations, the Higgs mass was set to 125 GeV and the decay width was set to 407MeV \ref{cite:HiggsWidth}. All samples described include the small contribution from Dalitz decays (that is, decays in which one photon converts into two real final-state leptons), which is accounted for in the normalization of the samples. For all Monte Carlo samples generated using Madgraph5_aMC@NLO, the renormalization ($μ_{R}$) and factorization ($μ_{F}$) scales are defined as the scalar sum of the transverse masses of all final-state particles divided by two (i.e. $H_{T}/2$), and the top and W boson decays are handled by MadSpin \ref{cite:MadSpin} in order to ensure the correct treatment of the spin correlations of the decay products.
+
+For all simulated samples, several corrections are applied to ensure the simulated samples correspond to data, including a beam-spot width correction, photon shower-shape and calorimetric isolation corrections, energy scale and resolution corrections, photon identification and isolation corrections, jet selection efficiency corrections, and electron and muon identification, reconstruction and isolation corrections.
 
 \begin{table}[h!]
   \centering
   \resizebox{\columnwidth}{!}{%
-	\begin{tabular}{ |c|c|c|c|c|l| }
-		DSID   &      Generator       & PDF (ME) & PDF+Tune (PS) & Prod. Mode & Events in AOD\\ 
+	\begin{tabular}{ |c|c|c|c| }
+    	Prod. Mode   &      Generator       & PDF (Matrix Element) & PDF+Tune (Parton Shower)\\ 
 		\toprule
-		343981 &  \NNLOPS + \PYTHIA   & \PDFLHC  &  AZNLOCTEQ6   &    \ggH    &  18.3  \\
-		346214 &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   &    \VBF    &  7M    \\
-		345318 &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   &  $W^{+}H$  &  0.6M  \\
-		345317 &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   &  $W^{-}H$  &  0.6M  \\
-		345319 &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   & $qq\to ZH$ &  1.5M  \\
-		345061 &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   & $gg\to ZH$ &  0.15M \\
-		346525 &      \POWPYTHIA      & \PDFLHC  &  A14NNPDF23   &    \ttH    &  7.8M  \\
-		346188 & \MGMCatNLO + \PYTHIA &  \NNPDF  &  A14NNPDF23   &   \tHbj    &  0.4M  \\
-		346486 & \MGMCatNLO + \PYTHIA &  \NNPDF  &  A14NNPDF23   &    \tHW    &  0.208M\\
-		345315 &      \POWPYTHIA      & \PDFLHC  &  A14NNPDF23   &    \bbH    &  0.299M\\ 
+		    \ggH    &  \NNLOPS + \PYTHIA   & \PDFLHC  &  AZNLOCTEQ6   \\
+			\VBF    &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   \\
+  			$W^{+}H$  &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   \\
+			$W^{-}H$  &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   \\
+			$qq\to ZH$ &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   \\
+			$gg\to ZH$ &      \POWPYTHIA      & \PDFLHC  &  AZNLOCTEQ6   \\
+			\bbH    &      \POWPYTHIA      & \PDFLHC  &  A14NNPDF23   \\
+			\ttH    &      \POWPYTHIA      & \PDFLHC  &  A14NNPDF23   \\
+			\ttH    & \MGMCatNLO + \PYTHIA &  \NNPDF  &  A14NNPDF23   \\
+			\tHjb   & \MGMCatNLO + \PYTHIA &  \NNPDF  &  A14NNPDF23   \\
+			\tHW    & \MGMCatNLO + \PYTHIA &  \NNPDF  &  A14NNPDF23   \\
+			
 		\bottomrule
 	\end{tabular}
 	}
@@ -79,28 +87,30 @@ In all Monte Carlo simulations, the Higgs mass was set to 125 GeV and the decay 
   \label{tab:signal_samples_pyt}
 \end{table}
 
-Gluon-gluon fusion events are simulated using the Powheg NNLOPS tool \ref{cite:NNLOPS} using the PDF4LHC15 PDF set \ref{cite:PDF4LHC}, while the nominal $VBF$, $WH$, $ZH$, and $ggZH$ are all generated using the Powheg generator with the PDF4LHC15 PDF set. Showering is performed with Pythia using the AZNLO tune \ref{cite:AZNLO} and the CTEQ6 PDF Set \ref{cite:CTEQ6} for all these samples.
+Nominal gluon-gluon fusion events are simulated using the Powheg NNLOPS tool \ref{cite:NNLOPS} using the PDF4LHC15 PDF set \ref{cite:PDF4LHC}, while the nominal $VBF$, $WH$, $ZH$, and $ggZH$ are all generated using the Powheg generator with the PDF4LHC15 PDF set. Showering is performed with Pythia using the AZNLO tune \ref{cite:AZNLO} and the CTEQ6 PDF set \ref{cite:CTEQ6} for these samples. Nominal Standard-Model $ttH$ and $bbH$ samples are generated using the PowhegBOX tool \ref{cite:PowhegBox} using the PDF4LHC15 PDF set; for these samples, showering is performed with Pythia using the A14 tune \ref{cite:A14} and the NNPDF23 PDF set \ref{cite:NNPDF23}. Nominal $tWH$ and $tHjb$ samples are generated using the Madgraph5_aMC@NLO generator with the NNPDF30 PDF Set \ref{cite:NNPDF30}, and are showered using Pythia with the A14 tune and the NNPDF23 PDF set. $tWH$ samples are generated using the five-flavor PDF scheme, while $tHjb$ samples are generated using the four-flavor PDF scheme. At first order, NLO corrections to the $tWH$ process contain final-state bottom quark jets that thus lead to interference with the more-common $ttH$ process \ref{cite:DemartintWH}; to resolve this, a diagram subtraction method is used \ref{cite:subtraction}.
+Additionally, a $ttH$ sample is generated using the Madgraph5_aMC@NLO generator with the NNPDF30 PDF Set \ref{cite:NNPDF30} for use with the dedicated $ttH CP$ samples, in order to confirm the validity of the effective field theory model used to generate them.
 
+Alternative Standard-Model samples are developed using Herwig for showering rather than Pythia, in order to evaluate the parton-showering uncertainty. The matrix element generators and PDFs are all the same as for the nominal samples, with the exception of the VBF sample, for which generator weights were unable to be included using the Herwig showering tool (and thus the NNPDF30 PDF is quoted for both the generator and the showering tool). $ggH$, $VBF$, $VH$, $tWH$, $tHjb$ and the supplementary Madgraph5_aMC@NLO $ttH$ sample are all showered using the H7P1 Tune \ref{cite:H7p1}, and the Powheg $ttH$ sample is showered using the \ref{cite:H7UE} tune.
 
-
-
-
+Additionally, a supplementary $ggH$ sample is generated using Madgraph5_aMC@NLO containing an additional two partons at the matrix element stage. To avoid double-counting events with additional final-state partons, the "FxFx" merging scheme is employed. This sample is showered with Pythia using the NNPDF30 PDF and the A14 tune.
+ 
 \begin{table}[h!]
   \centering
   \resizebox{\columnwidth}{!}{%
-    \begin{tabular}{ |c|c|c|c|c|l| }
-    	DSID   &      Generator       & PDF (ME) & PDF+Tune (PS) & Prod. Mode & Events in AOD\\ 
+    \begin{tabular}{ |c|c|c|c| }
+    	Prod. Mode   &      Generator       & PDF (Matrix Element) & PDF+Tune (Parton Shower)\\ 
     	\toprule
-    	346797 &  \NNLOPS + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  &    \ggH    &   18.3M \\
-    	346878 &  \POWHEG + \HERWIG   &  \NNPDF  &  \NNPDF+H7p1  &    \VBF    &   7M    \\
-    	346881 &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  &  $W^{+}H$  &   0.6M  \\
-    	346880 &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  &  $W^{-}H$  &   0.6M  \\
-    	346879 &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  & $qq\to ZH$ &   1.5M  \\
-    	346882 &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  & $gg\to ZH$ &   0.15M \\
-    	346526 &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7UE  &    \ttH    &   7.8M  \\
-    	346602 & \MGMCatNLO + \HERWIG &  \NNPDF  &     H7p1      &   \tHbj    &   0.210M\\
-    	346883 & \MGMCatNLO + \HERWIG &  \NNPDF  &     H7p1      &    \tHW    &   0.209M\\
-        345944 & \MGMCatNLO + \PYTHIA & \NNPDF   &     A14       &    \ggH    &   18.3M \\
+		\ggH    &  \NNLOPS + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  \\
+		\VBF    &  \POWHEG + \HERWIG   &  \NNPDF  &  \NNPDF+H7p1  \\
+		$W^{+}H$  &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  \\
+		$W^{-}H$  &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  \\
+		$qq\to ZH$ &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  \\
+		$gg\to ZH$ &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7p1  \\
+		\ttH    &  \POWHEG + \HERWIG   & \PDFLHC  &  \NNPDF+H7UE  \\
+		\ttH    & \MGMCatNLO + \HERWIG &  \NNPDF  &  \NNPDF+H7p1   \\
+		\tHbj    & \MGMCatNLO + \HERWIG &  \NNPDF  &     \NNPDF+H7p1      \\
+		\tHW    & \MGMCatNLO + \HERWIG &  \NNPDF  &     \NNPDF+H7p1      \\
+		\ggH    & \MGMCatNLO + \PYTHIA & \NNPDF   &     \NNPDF+A14       \\
     	\bottomrule
     \end{tabular}
   }
@@ -108,9 +118,7 @@ Gluon-gluon fusion events are simulated using the Powheg NNLOPS tool \ref{cite:N
   \label{tab:signal_samples_herwig}
 \end{table}  
 
-
-
-
+The cross-sections for all Higgs processes are normalized to the state-of-the-art precision measurements discussed in \ref{cite:Yellowreport} using K-factor scaling factors. The accuracy of the cross-sections is N3LO QCD $+$ NLO Electroweak for $ggH$, NNLO $QCD$ $+$ NLO Electroweak for $VBF$ and $VH$, and NLO QCD $+$ NLO Electroweak for $ttH$, while $tHjb$ and $tWH$ are produced at NLO QCD with no electroweak correction. Additionally, samples are normalized to account for the $H \rightarrow \gamma \gamma$ branching ratio of $2.270 \times 10^{-3}$ calculated with HDECAY \ref{HDecay} and PROPHECY4F \ref{Prophecy}.
 
 \begin{table}[h!]
   \centering
@@ -131,45 +139,40 @@ Gluon-gluon fusion events are simulated using the Powheg NNLOPS tool \ref{cite:N
     	\bottomrule
     \end{tabular}
   }
-  \caption{Cross sections times branching ratio values used to normalize each production mode. The values correspond to the state-of-the-art predictions and are taken from the CERN Yellow Report \ref{cite:yellowreport}. The accuracy of the numbers is NNNLO QCD $+$ NLO EW for ggH, NNLO QCD $+$ NLO EW for VBF, VH, NLO QCD $+$ NLO EW for ttH }
+  \caption{Cross sections times branching ratio values used to normalize each production mode. The values correspond to the state-of-the-art predictions and are taken from the CERN Yellow Report \ref{cite:yellowreport}.}
   \label{tab:signal_samples_norm}
 \end{table}  
+
+The background for $H \rightarrow \gamma \gamma$ events is generally treated as a smoothly-falling, continuous distribution in diphoton mass $m_{\gamma \gamma}$. It is comprised of non-Higgs events containing real final-state or initial-state radiated photons, as well as hadronic jets that behave like photons. To model this, a functional-form based data-driven method is used; however, Monte Carlo templates are nonetheless used to facilitate and validate the background modelling.
+
+Both QCD continuum $\gamma\gamma$ +jets production and the various $V\gamma\gamma \rightarrow ll\gamma\gamma$ samples are simulated at leading order in QCD using the Sherpa event generator with the CT10 PDF set \ref{cite:CT10}. Showering is performed using the default Sherpa showering tool. 
+
+$t\bar{t}\gamma\gamma$, one of the leading backgrounds in top-enriched regions, is simulated using Madgraph5_aMC@NLO with the NNPDF30 PDF set. It is showered using Pythia and tuned using the A14 tune.
 
 
 \begin{table}[h!]
   \centering
   \resizebox{\columnwidth}{!}{%
-  \begin{tabular}{|c|c|c|l|}
-  	 DSID  &    Generator + PS    &                         Process                         & Events in AOD\\ 
+  \begin{tabular}{|c|c|c|c|}
+  	 Prod. Mode   &      Generator       & PDF (Matrix Element) & PDF+Tune (Parton Shower)\\ 
   	\toprule
-  	364351 & \SHERPA (ME@NLO+PS)  & $\gamma\gamma+$0,1(NLO),2,3(LO), \myy $\in$ 50-90 \GeV  & 361.2M (AF2)     \\
-  	364352 & \SHERPA (ME@NLO+PS)  & $\gamma\gamma+$0,1(NLO),2,3(LO), \myy $\in$ 90-175 \GeV & 506.6M (AF2)     \\
-  	364862 &  \SHERPA (ME@LO+PS)  &         $ee\gamma\gamma$; $\myy>\SI{80}{\GeV}$          & 3.7M             \\
-  	364865 &  \SHERPA (ME@LO+PS)  &       $\mu\mu\gamma\gamma$; $\myy>\SI{80}{\GeV}$        & 3.7M             \\
-  	364868 &  \SHERPA (ME@LO+PS)  &      $\tau\tau\gamma\gamma$; $\myy>\SI{80}{\GeV}$       & 3.6M             \\
-    364871 &  \SHERPA (ME@LO+PS)  &      $\nu\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$         & 0.37M            \\ 
-  	364874 &  \SHERPA (ME@LO+PS)  &        $e\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$         & 3.7M             \\
-  	364877 &  \SHERPA (ME@LO+PS)  &       $\mu\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$        & 3.7M             \\
-  	364880 &  \SHERPA (ME@LO+PS)  &       $\tau\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$       & 3.7M             \\
-  	345868 & \MGMCatNLO + \PYTHIA &            $t\bar{t}\gamma\gamma$ (noallhad)            & 1.94M            \\
-  	345869 & \MGMCatNLO + \PYTHIA &             $t\bar{t}\gamma\gamma$ (allhad)             & 1.6M             \\ 
+  	$\gamma\gamma+$0,1(NLO),2,3(LO), \myy $\in$ 50-90 \GeV  & \SHERPA & \CT10 & \SHERPA & \CT10\\
+ $\gamma\gamma+$0,1(NLO),2,3(LO), \myy $\in$ 90-175 \GeV & \SHERPA & \CT10 & \SHERPA & \CT10\\
+         $ee\gamma\gamma$; $\myy>\SI{80}{\GeV}$          & \SHERPA & \CT10 & \SHERPA & \CT10\\
+       $\mu\mu\gamma\gamma$; $\myy>\SI{80}{\GeV}$        & \SHERPA & \CT10 & \SHERPA & \CT10\\
+      $\tau\tau\gamma\gamma$; $\myy>\SI{80}{\GeV}$       & \SHERPA & \CT10 & \SHERPA & \CT10\\
+      $\nu\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$         & \SHERPA & \CT10 & \SHERPA & \CT10\\
+        $e\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$         & \SHERPA & \CT10 & \SHERPA & \CT10\\
+       $\mu\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$        & \SHERPA & \CT10 & \SHERPA & \CT10\\
+       $\tau\nu\gamma\gamma$; $\myy>\SI{80}{\GeV}$       & \SHERPA & \CT10 & \SHERPA & \CT10\\
+            $t\bar{t}\gamma\gamma$ (noallhad)            & \MGMCatNLO & \NNPDF & \PYTHIA & \NNPDF+A14       \\
+             $t\bar{t}\gamma\gamma$ (allhad)             & \MGMCatNLO & \NNPDF & \PYTHIA & \NNPDF+A14       \\ 
   	\bottomrule
   \end{tabular}
   }
-\caption{Summary of background samples}
+\caption{Summary of nominal background samples}
 \label{tab:bckg_samples}
 \end{table}  
-
-
-
-
-
-
-
-
-
-
-
 
 \subsection{ttHCP Monte Carlo Samples} \label{sec:ttHCPMC} 
 
@@ -181,15 +184,13 @@ In the $ttH CP$ analysis, an Effective Field Theory (EFT) setting a cutoff scale
 
 where $g_{t} = \frac{-m_{t}}{v} = \frac{-173.26 GeV}{246 GeV} = -0.703$ , $\kappa_{t}$ is the dimensionless coupling-strength term ($\kappa_{t}= 1$ in the Standard Model), and $\alpha$ is an angle that parameterizes the CP-mixing strength ($\alpha = 0$ in the Standard Model, $\alpha = \frac{\pi}{2}$ in the fully CP-odd case). The treatment of the $H \rightarrow \gamma \gamma$ and $ggH$ dependence on $\alpha$ is handled in several different ways, as discussed in \ref{sec:ttHCPresults}.
 
-For all Monte Carlo samples, the renormalization ($μ_{R}$) and factorization ($μ_{F}$) scales are defined as the scalar sum of the transverse masses of all final-state particles divided by two (i.e. $H_{T}/2$). $t\bar{t}H$ and $tWH$ samples are generated using the five-flavor scheme, while the four-flavor scheme is used for the $tHjb$ process. The Standard Model cross-sections for all process are normalized to those given in the CERN Higgs Yellow Report 4 \ref{cite:yellowreport}, in which fixed scales and the five-flavor scheme are used. Those cross-sections are calculated at NLO QCD accuracy (without electroweak correction) for the $tHjb$ and $tWH$ processes, while $t\bar{t}H$ is calculated at both NLO QCD and NLO Electroweak accuracies. K-factors are then computed to scale the Higgs Characterization Monte Carlo cross-sections to the Yellow Report cross-sections. The obtained K-factors are shown to be similar for different CP mixing angles; thus, the K-factors derived for the SM case can be safely used for the various samples with different $\alpha$ values. 
+ttH tHjb tWH
+
+ggH
 
 
+table
 
-\subsection{SMEFT Monte Carlo Samples} \label{sec:SMEFTMC} 
+table
 
-
-
-
-
-
-
+As in the nominal case, $t\bar{t}H$ and $tWH$ samples are generated using the five-flavor scheme, while the four-flavor scheme is used for the $tHjb$ process. The Standard Model cross-sections for all process are normalized to those given in the CERN Higgs Yellow Report 4 \ref{cite:yellowreport}, in which fixed scales and the five-flavor scheme are used. Those cross-sections are calculated at NLO QCD accuracy (without electroweak correction) for the $tHjb$ and $tWH$ processes, while $t\bar{t}H$ is calculated at both NLO QCD and NLO Electroweak accuracies. K-factors are then computed to scale the Higgs Characterization Monte Carlo cross-sections to the Yellow Report cross-sections. The obtained K-factors are shown to be similar for different CP mixing angles; thus, the K-factors derived for the SM case can be safely used for the various samples with different $\alpha$ values. 
