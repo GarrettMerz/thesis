@@ -3,6 +3,45 @@
 
 \newcommand*{\ATLASLATEXPATH}{latex/}
 \usepackage{\ATLASLATEXPATH atlasphysics}
+\usepackage{ANA-HIGG-2020-16-INT1-defs}
+
+\usepackage{pgffor}
+\usepackage{longfigure}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage[export]{adjustbox}
+\usepackage{mathrsfs}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{lscape}
+\usepackage{pdflscape}
+
+\usepackage{rotating}
+\usepackage{etoolbox}
+\usepackage{tikz}
+
+\usepackage{siunitx}
+% High energy physics
+\DeclareSIUnit\micron{\micro\metre}
+\DeclareSIUnit\mrad{\milli\rad}
+\DeclareSIUnit\gauss{G}
+\DeclareSIUnit\eVperc{\eV\per\clight}
+\DeclareSIUnit\nanobarn{\nano\barn}
+\DeclareSIUnit\picobarn{\pico\barn}
+\DeclareSIUnit\femtobarn{\femto\barn}
+\DeclareSIUnit\attobarn{\atto\barn}
+\DeclareSIUnit\zeptobarn{\zepto\barn}
+\DeclareSIUnit\yoctobarn{\yocto\barn}
+\DeclareSIUnit\nb{\nano\barn}
+\DeclareSIUnit\pb{\pico\barn}
+\DeclareSIUnit\fb{\femto\barn}
+\DeclareSIUnit\ab{\atto\barn}
+\DeclareSIUnit\zb{\zepto\barn}
+\DeclareSIUnit\yb{\yocto\barn}
+
+
+
 
 % Title of the thesis
 \title{My Thesis}
@@ -87,6 +126,9 @@ My Abstract.
 
 \chapter{Experimental Methods} \label{chap:methods_chapter}
 	\input{sections/methods_chapter} 
+
+\chapter{Data and Monte Carlo Samples} \label{chap:datamc_chapter}
+	\input{sections/datamc_chapter} 
 
 % ----- Appendices ----- % 
 
