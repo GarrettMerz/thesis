@@ -5,19 +5,19 @@
 In both Run-2 HGam analyses discussed in this dissertation, we use the full LHC Run-2 dataset, consisting of $139.0 \pm 2.4 fb^{-1}$ of proton-proton collisions with a center of mass energy $\sqrt{s} = 13 TeV$ recorded by the ATLAS detector between 2015 and 2018 \ref{Jennet106}. Figure \ref{fig:datalumi} shows the instantaneous luminosity gathered by the detector as a function of time; figure \ref{fig:pileup} shows the number of pileup events per bunch-crossing as a function of time. 
 
 \begin{figure}
-\includegraphics[width=\linewidth]{figures/datamc_chapter/datalumi.png}
+\includegraphics[width=0.5\linewidth]{figures/datamc_chapter/datalumi.png}
 \caption{Integrated luminosity for the Run-2 ATLAS data-taking period.}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=\linewidth]{figures/datamc_chapter/pileup.png}
+\includegraphics[width=0.5\linewidth]{figures/datamc_chapter/pileup.png}
 \caption{Pileup for the Run-2 ATLAS data-taking period.}
 \end{figure}
 
 The trigger used to select events is the diphoton trigger HLT\_g35\_loose\_g25\_loose (for 2015-2016 data) and HLT\_g35\_medium\_g25\_medium (for 2017-2018 data). Both triggers require two photon candidates, one with a transverse energy $E_{T}$ of at least 35 GeV and the other with transverse energy of at least 25 GeV. The 2015-2016 trigger requires two photons that pass the "loose" ID requirement, while the 2017-2018 trigger requires two photons that pass the "medium" ID requirement (the cut was tightened due to increased luminosity and pileup). The trigger was calibrated using radiative Z decays, and is observed to be greater than 95\% efficient for each photon as long as it is 5 GeV above the trigger threshold \ref{cite:TriggerPerformance}.
 
 \begin{figure}
-\includegraphics[width=\linewidth]{figures/datamc_chapter/trigger.png}
+\includegraphics[width=0.5\linewidth]{figures/datamc_chapter/trigger.png}
 \caption{Efficiency of the trigger for the different years of the run-2 data taking period as a function of subleading photon $E_{T}$.}
 \end{figure}
 
@@ -55,11 +55,11 @@ A list of the versions and purposes of the Monte Carlo generator tools is detail
                 & Powheg & 7.03 & \ref{cite:Powheg1} \ref{cite:Powheg2} \ref{cite:Powheg3} \\ \hline
                 Showering + Matrix Element &&& \\              
                 & Pythia8 & 2 & \ref{cite:Pythia1} \ref{cite:Pythia2} \\ 
-                & Herwig7 & 2.6.2 & \ref{cite:Herwig1} \ref{cite:Herwig2} \\
+                & Herwig7 & 2.6.2 & \ref{cite:Herwig1} \ref{cite:Herwig2} \\ \hline
                 Hadronization &&& \\              
-                & EvtGen & 1.1 & \ref{cite:EvGen}  \\
+                & EvtGen & 1.1 & \ref{cite:EvGen}  \\ \hline
                 Matrix Element+Showering+Hadronization &&& \\              
-                & Sherpa & 1.2.0 & \ref{cite:Sherpa1} \ref{cite:Sherpa2} \ref{cite:Sherpa3} \ref{cite:Sherpa4} \\
+                & Sherpa & 1.2.0 & \ref{cite:Sherpa1} \ref{cite:Sherpa2} \ref{cite:Sherpa3} \ref{cite:Sherpa4} \\ \hline
     \end{tabular}
     \caption{Tools used for Monte Carlo generation in the analyses detailed in this dissertation.}
     \label{MCTools}

@@ -37,11 +37,14 @@
 \BOOKMARK [3][-]{subsubsection.3.1.4.5}{Overlap Removal}{subsection.3.1.4}% 37
 \BOOKMARK [3][-]{subsubsection.3.1.4.6}{MET}{subsection.3.1.4}% 38
 \BOOKMARK [3][-]{subsubsection.3.1.4.7}{Tau Leptons}{subsection.3.1.4}% 39
-\BOOKMARK [0][-]{chapter.4}{Data and Monte Carlo Samples}{}% 40
-\BOOKMARK [1][-]{section.4.1}{Data, Monte Carlo, and HGam Pre-selection}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.1.1}{Data}{section.4.1}% 42
-\BOOKMARK [2][-]{subsection.4.1.2}{Higgs Preselection and Data CRs}{section.4.1}% 43
-\BOOKMARK [2][-]{subsection.4.1.3}{Nominal and Alternative Monte Carlo Samples}{section.4.1}% 44
-\BOOKMARK [2][-]{subsection.4.1.4}{ttHCP Monte Carlo Samples}{section.4.1}% 45
-\BOOKMARK [0][-]{section*.51}{Appendices}{}% 46
-\BOOKMARK [0][-]{An Appendix.0}{An Appendix}{}% 47
+\BOOKMARK [3][-]{subsubsection.3.1.4.8}{Top reconstruction}{subsection.3.1.4}% 40
+\BOOKMARK [0][-]{chapter.4}{Data and Monte Carlo Samples}{}% 41
+\BOOKMARK [1][-]{section.4.1}{Data, Monte Carlo, and HGam Pre-selection}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.1.1}{Data}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.2}{Higgs Preselection and Data CRs}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.3}{Nominal and Alternative Monte Carlo Samples}{section.4.1}% 45
+\BOOKMARK [2][-]{subsection.4.1.4}{ttHCP Monte Carlo Samples}{section.4.1}% 46
+\BOOKMARK [0][-]{section*.55}{Appendices}{}% 47
+\BOOKMARK [0][-]{Alternative Top Reconstruction with the KLFitter.0}{Alternative Top Reconstruction with the KLFitter}{}% 48
+\BOOKMARK [1][-]{section.A.1}{The KLFitter}{Alternative Top Reconstruction with the KLFitter.0}% 49
+\BOOKMARK [1][-]{section.A.2}{Comparison}{Alternative Top Reconstruction with the KLFitter.0}% 50

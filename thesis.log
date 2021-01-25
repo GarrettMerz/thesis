@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  24 JAN 2021 02:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  25 JAN 2021 01:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,24 +950,24 @@ Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 No file thesis.aux.
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
+LaTeX Font Info:    ... okay on input line 119.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-18.
+19.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -1033,7 +1033,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring ON on input line 118.
+Package hyperref Info: Link coloring ON on input line 119.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1046,9 +1046,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count347
 )
-LaTeX Info: Redefining \ref on input line 118.
-LaTeX Info: Redefining \pageref on input line 118.
-LaTeX Info: Redefining \nameref on input line 118.
+LaTeX Info: Redefining \ref on input line 119.
+LaTeX Info: Redefining \pageref on input line 119.
+LaTeX Info: Redefining \nameref on input line 119.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
@@ -1087,23 +1087,23 @@ LaTeX Info: Redefining \nameref on input line 118.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 118
+LaTeX Font Info:    Trying to load font information for U+msa on input line 119
 .
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 118
+LaTeX Font Info:    Trying to load font information for U+msb on input line 119
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
-8.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1112,10 +1112,10 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package xcolor Warning: Incompatible color definition on input line 118.
+Package xcolor Warning: Incompatible color definition on input line 119.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-18.
+19.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [0
@@ -1149,7 +1149,7 @@ Package hyperref Warning: old loa file detected, not used; run LaTeX again.
 \openout8 = `thesis.loa'.
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
 
  []
 
@@ -1185,7 +1185,7 @@ LaTeX Warning: Reference `sec:CPT' on page 2 undefined on input line 13.
 
 LaTeX Warning: Reference `sec:EWSB' on page 2 undefined on input line 15.
 
-<figures/theory_chapter/SM.png, id=249, 1027.84pt x 983.675pt>
+<figures/theory_chapter/SM.png, id=261, 1027.84pt x 983.675pt>
 File: figures/theory_chapter/SM.png Graphic file (type png)
 <use figures/theory_chapter/SM.png>
 Package pdftex.def Info: figures/theory_chapter/SM.png  used on input line 22.
@@ -1220,7 +1220,7 @@ OML/cmm/m/it/12 P \OT1/cmr/m/n/12 =
 LaTeX Warning: Reference `fig:potential' on page 8 undefined on input line 132.
 
 
-<figures/theory_chapter/higgspotential.png, id=291, 563.10374pt x 355.3275pt>
+<figures/theory_chapter/higgspotential.png, id=303, 563.10374pt x 355.3275pt>
 File: figures/theory_chapter/higgspotential.png Graphic file (type png)
 <use figures/theory_chapter/higgspotential.png>
 Package pdftex.def Info: figures/theory_chapter/higgspotential.png  used on inp
@@ -1233,79 +1233,79 @@ LaTeX Warning: Reference `Ellis' on page 8 undefined on input line 136.
 LaTeX Warning: Reference `Ellis' on page 8 undefined on input line 136.
 
 [8 <./figures/theory_chapter/higgspotential.png>] [9] [10] [11]
-<figures/theory_chapter/ggF.png, id=320, 452.69125pt x 272.01625pt>
+<figures/theory_chapter/ggF.png, id=332, 452.69125pt x 272.01625pt>
 File: figures/theory_chapter/ggF.png Graphic file (type png)
 <use figures/theory_chapter/ggF.png>
 Package pdftex.def Info: figures/theory_chapter/ggF.png  used on input line 228
 .
 (pdftex.def)             Requested size: 140.92793pt x 84.6811pt.
-<figures/theory_chapter/VBF.png, id=321, 353.32pt x 351.3125pt>
+<figures/theory_chapter/VBF.png, id=333, 353.32pt x 351.3125pt>
 File: figures/theory_chapter/VBF.png Graphic file (type png)
 <use figures/theory_chapter/VBF.png>
 Package pdftex.def Info: figures/theory_chapter/VBF.png  used on input line 235
 .
 (pdftex.def)             Requested size: 140.92793pt x 140.12582pt.
-<figures/theory_chapter/VH.png, id=322, 479.7925pt x 212.795pt>
+<figures/theory_chapter/VH.png, id=334, 479.7925pt x 212.795pt>
 File: figures/theory_chapter/VH.png Graphic file (type png)
 <use figures/theory_chapter/VH.png>
 Package pdftex.def Info: figures/theory_chapter/VH.png  used on input line 243.
 
 (pdftex.def)             Requested size: 140.92793pt x 62.50447pt.
-<figures/theory_chapter/bbH.png, id=323, 492.84125pt x 425.59pt>
+<figures/theory_chapter/bbH.png, id=335, 492.84125pt x 425.59pt>
 File: figures/theory_chapter/bbH.png Graphic file (type png)
 <use figures/theory_chapter/bbH.png>
 Package pdftex.def Info: figures/theory_chapter/bbH.png  used on input line 255
 .
 (pdftex.def)             Requested size: 140.92793pt x 121.69702pt.
-<figures/theory_chapter/ggZH.png, id=324, 634.37pt x 320.19624pt>
+<figures/theory_chapter/ggZH.png, id=336, 634.37pt x 320.19624pt>
 File: figures/theory_chapter/ggZH.png Graphic file (type png)
 <use figures/theory_chapter/ggZH.png>
 Package pdftex.def Info: figures/theory_chapter/ggZH.png  used on input line 26
 2.
 (pdftex.def)             Requested size: 140.92793pt x 71.13228pt.
-<figures/theory_chapter/ggZH2.png, id=325, 654.445pt x 296.10625pt>
+<figures/theory_chapter/ggZH2.png, id=337, 654.445pt x 296.10625pt>
 File: figures/theory_chapter/ggZH2.png Graphic file (type png)
 <use figures/theory_chapter/ggZH2.png>
 Package pdftex.def Info: figures/theory_chapter/ggZH2.png  used on input line 2
 69.
 (pdftex.def)             Requested size: 140.92793pt x 63.761pt.
-<figures/theory_chapter/ttH1.png, id=326, 516.93124pt x 302.12875pt>
+<figures/theory_chapter/ttH1.png, id=338, 516.93124pt x 302.12875pt>
 File: figures/theory_chapter/ttH1.png Graphic file (type png)
 <use figures/theory_chapter/ttH1.png>
 Package pdftex.def Info: figures/theory_chapter/ttH1.png  used on input line 28
 1.
 (pdftex.def)             Requested size: 140.92793pt x 82.36879pt.
-<figures/theory_chapter/ttH2.png, id=327, 513.92pt x 293.095pt>
+<figures/theory_chapter/ttH2.png, id=339, 513.92pt x 293.095pt>
 File: figures/theory_chapter/ttH2.png Graphic file (type png)
 <use figures/theory_chapter/ttH2.png>
 Package pdftex.def Info: figures/theory_chapter/ttH2.png  used on input line 28
 7.
 (pdftex.def)             Requested size: 140.92793pt x 80.37105pt.
-<figures/theory_chapter/ttH3.png, id=328, 493.845pt x 378.41376pt>
+<figures/theory_chapter/ttH3.png, id=340, 493.845pt x 378.41376pt>
 File: figures/theory_chapter/ttH3.png Graphic file (type png)
 <use figures/theory_chapter/ttH3.png>
 Package pdftex.def Info: figures/theory_chapter/ttH3.png  used on input line 29
 2.
 (pdftex.def)             Requested size: 140.92793pt x 107.98184pt.
-<figures/theory_chapter/ttH4.png, id=329, 373.395pt x 271.0125pt>
+<figures/theory_chapter/ttH4.png, id=341, 373.395pt x 271.0125pt>
 File: figures/theory_chapter/ttH4.png Graphic file (type png)
 <use figures/theory_chapter/ttH4.png>
 Package pdftex.def Info: figures/theory_chapter/ttH4.png  used on input line 29
 8.
 (pdftex.def)             Requested size: 140.92793pt x 102.28694pt.
-<figures/theory_chapter/toploop.png, id=330, 413.545pt x 251.94125pt>
+<figures/theory_chapter/toploop.png, id=342, 413.545pt x 251.94125pt>
 File: figures/theory_chapter/toploop.png Graphic file (type png)
 <use figures/theory_chapter/toploop.png>
 Package pdftex.def Info: figures/theory_chapter/toploop.png  used on input line
  310.
 (pdftex.def)             Requested size: 140.92793pt x 85.85878pt.
-<figures/theory_chapter/Wloop1.png, id=331, 664.4825pt x 323.2075pt>
+<figures/theory_chapter/Wloop1.png, id=343, 664.4825pt x 323.2075pt>
 File: figures/theory_chapter/Wloop1.png Graphic file (type png)
 <use figures/theory_chapter/Wloop1.png>
 Package pdftex.def Info: figures/theory_chapter/Wloop1.png  used on input line 
 317.
 (pdftex.def)             Requested size: 140.92793pt x 68.5463pt.
-<figures/theory_chapter/Wloop2.png, id=332, 533.995pt x 269.005pt>
+<figures/theory_chapter/Wloop2.png, id=344, 533.995pt x 269.005pt>
 File: figures/theory_chapter/Wloop2.png Graphic file (type png)
 <use figures/theory_chapter/Wloop2.png>
 Package pdftex.def Info: figures/theory_chapter/Wloop2.png  used on input line 
@@ -1318,7 +1318,7 @@ ry_chapter/ttH1.png> <./figures/theory_chapter/ttH2.png> <./figures/theory_chap
 ter/ttH3.png> <./figures/theory_chapter/ttH4.png> <./figures/theory_chapter/top
 loop.png> <./figures/theory_chapter/Wloop1.png> <./figures/theory_chapter/Wloop
 2.png>]
-<figures/theory_chapter/HiggsBR.png, id=360, 593.21625pt x 425.59pt>
+<figures/theory_chapter/HiggsBR.png, id=372, 593.21625pt x 425.59pt>
 File: figures/theory_chapter/HiggsBR.png Graphic file (type png)
 <use figures/theory_chapter/HiggsBR.png>
 Package pdftex.def Info: figures/theory_chapter/HiggsBR.png  used on input line
@@ -1348,61 +1348,61 @@ LaTeX Warning: Reference `cite: FedericotH' on page 16 undefined on input line
 LaTeX Warning: Reference `cite: FedericotWH' on page 16 undefined on input line
  370.
 
-<figures/theory_chapter/tWH1.png, id=373, 453.695pt x 258.9675pt>
+<figures/theory_chapter/tWH1.png, id=385, 453.695pt x 258.9675pt>
 File: figures/theory_chapter/tWH1.png Graphic file (type png)
 <use figures/theory_chapter/tWH1.png>
 Package pdftex.def Info: figures/theory_chapter/tWH1.png  used on input line 37
 6.
 (pdftex.def)             Requested size: 140.92793pt x 80.4411pt.
-<figures/theory_chapter/tWH2.png, id=374, 453.695pt x 359.3425pt>
+<figures/theory_chapter/tWH2.png, id=386, 453.695pt x 359.3425pt>
 File: figures/theory_chapter/tWH2.png Graphic file (type png)
 <use figures/theory_chapter/tWH2.png>
 Package pdftex.def Info: figures/theory_chapter/tWH2.png  used on input line 38
 3.
 (pdftex.def)             Requested size: 140.92793pt x 111.61983pt.
-<figures/theory_chapter/tWH3.png, id=375, 654.445pt x 258.9675pt>
+<figures/theory_chapter/tWH3.png, id=387, 654.445pt x 258.9675pt>
 File: figures/theory_chapter/tWH3.png Graphic file (type png)
 <use figures/theory_chapter/tWH3.png>
 Package pdftex.def Info: figures/theory_chapter/tWH3.png  used on input line 39
 0.
 (pdftex.def)             Requested size: 140.92793pt x 55.76385pt.
-<figures/theory_chapter/tWH4.png, id=376, 459.7175pt x 395.4775pt>
+<figures/theory_chapter/tWH4.png, id=388, 459.7175pt x 395.4775pt>
 File: figures/theory_chapter/tWH4.png Graphic file (type png)
 <use figures/theory_chapter/tWH4.png>
 Package pdftex.def Info: figures/theory_chapter/tWH4.png  used on input line 39
 7.
 (pdftex.def)             Requested size: 140.92793pt x 121.23296pt.
-<figures/theory_chapter/tWH5.png, id=377, 520.94624pt x 252.945pt>
+<figures/theory_chapter/tWH5.png, id=389, 520.94624pt x 252.945pt>
 File: figures/theory_chapter/tWH5.png Graphic file (type png)
 <use figures/theory_chapter/tWH5.png>
 Package pdftex.def Info: figures/theory_chapter/tWH5.png  used on input line 40
 4.
 (pdftex.def)             Requested size: 140.92793pt x 68.42728pt.
-<figures/theory_chapter/tHjb1.png, id=378, 453.695pt x 440.64626pt>
+<figures/theory_chapter/tHjb1.png, id=390, 453.695pt x 440.64626pt>
 File: figures/theory_chapter/tHjb1.png Graphic file (type png)
 <use figures/theory_chapter/tHjb1.png>
 Package pdftex.def Info: figures/theory_chapter/tHjb1.png  used on input line 4
 16.
 (pdftex.def)             Requested size: 140.92793pt x 136.87459pt.
-<figures/theory_chapter/tHjb2.png, id=379, 554.07pt x 469.755pt>
+<figures/theory_chapter/tHjb2.png, id=391, 554.07pt x 469.755pt>
 File: figures/theory_chapter/tHjb2.png Graphic file (type png)
 <use figures/theory_chapter/tHjb2.png>
 Package pdftex.def Info: figures/theory_chapter/tHjb2.png  used on input line 4
 23.
 (pdftex.def)             Requested size: 140.92793pt x 119.48131pt.
-<figures/theory_chapter/tHjb3.png, id=380, 453.695pt x 439.6425pt>
+<figures/theory_chapter/tHjb3.png, id=392, 453.695pt x 439.6425pt>
 File: figures/theory_chapter/tHjb3.png Graphic file (type png)
 <use figures/theory_chapter/tHjb3.png>
 Package pdftex.def Info: figures/theory_chapter/tHjb3.png  used on input line 4
 30.
 (pdftex.def)             Requested size: 140.92793pt x 136.5628pt.
-<figures/theory_chapter/tHjb4.png, id=381, 453.695pt x 439.6425pt>
+<figures/theory_chapter/tHjb4.png, id=393, 453.695pt x 439.6425pt>
 File: figures/theory_chapter/tHjb4.png Graphic file (type png)
 <use figures/theory_chapter/tHjb4.png>
 Package pdftex.def Info: figures/theory_chapter/tHjb4.png  used on input line 4
 37.
 (pdftex.def)             Requested size: 140.92793pt x 136.5628pt.
-<figures/theory_chapter/tHjb5.png, id=382, 453.695pt x 440.64626pt>
+<figures/theory_chapter/tHjb5.png, id=394, 453.695pt x 440.64626pt>
 File: figures/theory_chapter/tHjb5.png Graphic file (type png)
 <use figures/theory_chapter/tHjb5.png>
 Package pdftex.def Info: figures/theory_chapter/tHjb5.png  used on input line 4
@@ -1450,7 +1450,7 @@ LaTeX Warning: Reference `fig:STXS_scheme' on page 19 undefined on input line 5
 
 pdfTeX warning: pdflatex (file ./figures/theory_chapter/simplifiedXS_ggF_1_2.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/theory_chapter/simplifiedXS_ggF_1_2.pdf, id=408, 834.11626pt x 423.582
+<figures/theory_chapter/simplifiedXS_ggF_1_2.pdf, id=420, 834.11626pt x 423.582
 5pt>
 File: figures/theory_chapter/simplifiedXS_ggF_1_2.pdf Graphic file (type pdf)
 <use figures/theory_chapter/simplifiedXS_ggF_1_2.pdf>
@@ -1461,7 +1461,7 @@ on input line 512.
 
 pdfTeX warning: pdflatex (file ./figures/theory_chapter/simplifiedXS_VBF_1_2.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/theory_chapter/simplifiedXS_VBF_1_2.pdf, id=409, 739.76375pt x 423.582
+<figures/theory_chapter/simplifiedXS_VBF_1_2.pdf, id=421, 739.76375pt x 423.582
 5pt>
 File: figures/theory_chapter/simplifiedXS_VBF_1_2.pdf Graphic file (type pdf)
 <use figures/theory_chapter/simplifiedXS_VBF_1_2.pdf>
@@ -1472,7 +1472,7 @@ on input line 513.
 
 pdfTeX warning: pdflatex (file ./figures/theory_chapter/simplifiedXS_VH_1_2.pdf
 ): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/theory_chapter/simplifiedXS_VH_1_2.pdf, id=410, 686.565pt x 365.365pt>
+<figures/theory_chapter/simplifiedXS_VH_1_2.pdf, id=422, 686.565pt x 365.365pt>
 
 File: figures/theory_chapter/simplifiedXS_VH_1_2.pdf Graphic file (type pdf)
 <use figures/theory_chapter/simplifiedXS_VH_1_2.pdf>
@@ -1483,7 +1483,7 @@ n input line 514.
 
 pdfTeX warning: pdflatex (file ./figures/theory_chapter/simplifiedXS_ttH_1_2.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/theory_chapter/simplifiedXS_ttH_1_2.pdf, id=411, 282.05376pt x 330.233
+<figures/theory_chapter/simplifiedXS_ttH_1_2.pdf, id=423, 282.05376pt x 330.233
 75pt>
 File: figures/theory_chapter/simplifiedXS_ttH_1_2.pdf Graphic file (type pdf)
 <use figures/theory_chapter/simplifiedXS_ttH_1_2.pdf>
@@ -1505,7 +1505,7 @@ ut line 525.
 LaTeX Warning: Reference `sec:CouplingsChapter' on page 21 undefined on input l
 ine 525.
 
-<figures/theory_chapter/STXS_acceptances.pdf, id=481, 990.38757pt x 713.91595pt
+<figures/theory_chapter/STXS_acceptances.pdf, id=493, 990.38757pt x 713.91595pt
 >
 File: figures/theory_chapter/STXS_acceptances.pdf Graphic file (type pdf)
 <use figures/theory_chapter/STXS_acceptances.pdf>
@@ -1526,74 +1526,74 @@ LaTeX Warning: Reference `tab:EFT' on page 21 undefined on input line 610.
 LaTeX Warning: Reference `sec:CouplingsChapter' on page 24 undefined on input l
 ine 665.
 
-) [24]
+) [24] [25]
 CHAPTER 2.
 (./sections/detector_chapter.tex
 
-LaTeX Warning: Reference `LHC' on page 25 undefined on input line 3.
+LaTeX Warning: Reference `LHC' on page 26 undefined on input line 3.
 
 
-LaTeX Warning: Reference `speed' on page 25 undefined on input line 3.
+LaTeX Warning: Reference `speed' on page 26 undefined on input line 3.
 
 
-LaTeX Warning: Reference `Trigger' on page 25 undefined on input line 3.
+LaTeX Warning: Reference `Trigger' on page 26 undefined on input line 3.
 
 
-LaTeX Warning: Reference `SPS' on page 25 undefined on input line 5.
+LaTeX Warning: Reference `SPS' on page 26 undefined on input line 5.
 
 
-LaTeX Warning: Reference `fig:LHC' on page 25 undefined on input line 5.
+LaTeX Warning: Reference `fig:LHC' on page 26 undefined on input line 5.
 
-<figures/detector_chapter/LHCRing.png, id=560, 2125.9425pt x 1619.04875pt>
+<figures/detector_chapter/LHCRing.png, id=576, 2125.9425pt x 1619.04875pt>
 File: figures/detector_chapter/LHCRing.png Graphic file (type png)
 <use figures/detector_chapter/LHCRing.png>
 Package pdftex.def Info: figures/detector_chapter/LHCRing.png  used on input li
 ne 8.
 (pdftex.def)             Requested size: 469.75502pt x 357.74821pt.
 
-LaTeX Warning: Reference `LHC' on page 25 undefined on input line 9.
+LaTeX Warning: Reference `LHC' on page 26 undefined on input line 9.
 
 
-LaTeX Warning: Reference `LHC' on page 25 undefined on input line 9.
+LaTeX Warning: Reference `LHC' on page 26 undefined on input line 9.
 
 
-LaTeX Warning: Reference `current lumi' on page 25 undefined on input line 13.
+LaTeX Warning: Reference `current lumi' on page 26 undefined on input line 13.
 
-[25
+[26
 
-] [26 <./figures/detector_chapter/LHCRing.png>]
+] [27 <./figures/detector_chapter/LHCRing.png>]
 
-LaTeX Warning: Reference `:' on page 27 undefined on input line 15.
-
-
-LaTeX Warning: Reference `ATLAS_prop' on page 27 undefined on input line 17.
+LaTeX Warning: Reference `:' on page 28 undefined on input line 15.
 
 
-LaTeX Warning: Reference `CMS' on page 27 undefined on input line 17.
+LaTeX Warning: Reference `ATLAS_prop' on page 28 undefined on input line 17.
 
 
-LaTeX Warning: Reference `LHCb' on page 27 undefined on input line 17.
+LaTeX Warning: Reference `CMS' on page 28 undefined on input line 17.
 
 
-LaTeX Warning: Reference `ALICE' on page 27 undefined on input line 17.
+LaTeX Warning: Reference `LHCb' on page 28 undefined on input line 17.
 
 
-LaTeX Warning: Reference `ATLAS' on page 27 undefined on input line 21.
+LaTeX Warning: Reference `ALICE' on page 28 undefined on input line 17.
 
 
-LaTeX Warning: Reference `muons' on page 27 undefined on input line 22.
+LaTeX Warning: Reference `ATLAS' on page 28 undefined on input line 21.
 
 
-LaTeX Warning: Reference `Diehl Muons' on page 27 undefined on input line 23.
+LaTeX Warning: Reference `muons' on page 28 undefined on input line 22.
 
 
-LaTeX Warning: Reference `ATLAS TDR' on page 27 undefined on input line 23.
+LaTeX Warning: Reference `Diehl Muons' on page 28 undefined on input line 23.
 
 
-LaTeX Warning: Reference `fig:ATLAS' on page 27 undefined on input line 23.
+LaTeX Warning: Reference `ATLAS TDR' on page 28 undefined on input line 23.
 
-[27]
-<figures/detector_chapter/ATLAS.png, id=575, 1043.9pt x 600.2425pt>
+
+LaTeX Warning: Reference `fig:ATLAS' on page 28 undefined on input line 23.
+
+[28]
+<figures/detector_chapter/ATLAS.png, id=591, 1043.9pt x 600.2425pt>
 File: figures/detector_chapter/ATLAS.png Graphic file (type png)
 <use figures/detector_chapter/ATLAS.png>
 Package pdftex.def Info: figures/detector_chapter/ATLAS.png  used on input line
@@ -1601,81 +1601,81 @@ Package pdftex.def Info: figures/detector_chapter/ATLAS.png  used on input line
 (pdftex.def)             Requested size: 469.75502pt x 270.10663pt.
 
 
-LaTeX Warning: Reference `ATLAS' on page 28 undefined on input line 27.
+LaTeX Warning: Reference `ATLAS' on page 29 undefined on input line 27.
 
 
-LaTeX Warning: Reference `ATLAS' on page 28 undefined on input line 27.
+LaTeX Warning: Reference `ATLAS' on page 29 undefined on input line 27.
 
 
-LaTeX Warning: Reference `fig:coords' on page 28 undefined on input line 31.
+LaTeX Warning: Reference `fig:coords' on page 29 undefined on input line 31.
 
-<figures/detector_chapter/coords.png, id=576, 504.88625pt x 241.90375pt>
+<figures/detector_chapter/coords.png, id=592, 504.88625pt x 241.90375pt>
 File: figures/detector_chapter/coords.png Graphic file (type png)
 <use figures/detector_chapter/coords.png>
 Package pdftex.def Info: figures/detector_chapter/coords.png  used on input lin
 e 34.
 (pdftex.def)             Requested size: 469.75502pt x 225.0752pt.
 
-LaTeX Warning: Reference `cds.cern.ch/record/1699952/plots' on page 28 undefine
+LaTeX Warning: Reference `cds.cern.ch/record/1699952/plots' on page 29 undefine
 d on input line 35.
 
 
-LaTeX Warning: Reference `cds.cern.ch/record/1699952/plots' on page 28 undefine
+LaTeX Warning: Reference `cds.cern.ch/record/1699952/plots' on page 29 undefine
 d on input line 35.
 
 
-LaTeX Warning: Reference `IBL TDR' on page 28 undefined on input line 41.
+LaTeX Warning: Reference `IBL TDR' on page 29 undefined on input line 41.
 
 
-LaTeX Warning: Reference `section:tagging' on page 28 undefined on input line 4
+LaTeX Warning: Reference `section:tagging' on page 29 undefined on input line 4
 1.
 
 
-LaTeX Warning: Reference `ATLAS' on page 28 undefined on input line 41.
+LaTeX Warning: Reference `ATLAS' on page 29 undefined on input line 41.
 
 
-LaTeX Warning: Reference `sec: Magnets' on page 28 undefined on input line 41.
+LaTeX Warning: Reference `sec: Magnets' on page 29 undefined on input line 41.
 
-[28 <./figures/detector_chapter/ATLAS.png>]
+[29 <./figures/detector_chapter/ATLAS.png>]
 
-LaTeX Warning: Reference `IBL TDR' on page 29 undefined on input line 43.
+LaTeX Warning: Reference `IBL TDR' on page 30 undefined on input line 43.
 
 
-LaTeX Warning: Reference `Knoll Radiation Detection' on page 29 undefined on in
+LaTeX Warning: Reference `Knoll Radiation Detection' on page 30 undefined on in
 put line 45.
 
-[29 <./figures/detector_chapter/coords.png (PNG copy)>]
+[30 <./figures/detector_chapter/coords.png (PNG copy)>]
 
-LaTeX Warning: Reference `Pixel' on page 30 undefined on input line 47.
-
-
-LaTeX Warning: Reference `SCT' on page 30 undefined on input line 49.
+LaTeX Warning: Reference `Pixel' on page 31 undefined on input line 47.
 
 
-LaTeX Warning: Reference `TRT' on page 30 undefined on input line 51.
+LaTeX Warning: Reference `SCT' on page 31 undefined on input line 49.
 
-<figures/detector_chapter/ID.png, id=588, 1075.01625pt x 621.32124pt>
+
+LaTeX Warning: Reference `TRT' on page 31 undefined on input line 51.
+
+<figures/detector_chapter/ID.png, id=604, 1075.01625pt x 621.32124pt>
 File: figures/detector_chapter/ID.png Graphic file (type png)
 <use figures/detector_chapter/ID.png>
 Package pdftex.def Info: figures/detector_chapter/ID.png  used on input line 58
 .
 (pdftex.def)             Requested size: 469.75502pt x 271.50504pt.
 
-LaTeX Warning: Reference `ID' on page 30 undefined on input line 59.
+LaTeX Warning: Reference `ID' on page 31 undefined on input line 59.
 
 
-LaTeX Warning: Reference `ID' on page 30 undefined on input line 59.
+LaTeX Warning: Reference `ID' on page 31 undefined on input line 59.
 
-[30]
+[31]
 
-LaTeX Warning: Reference `Misconceptions About Calorimetry' on page 31 undefine
+LaTeX Warning: Reference `Misconceptions About Calorimetry' on page 32 undefine
 d on input line 69.
 
 
-LaTeX Warning: Reference `fig:Calos' on page 31 undefined on input line 69.
+LaTeX Warning: Reference `fig:Calos' on page 32 undefined on input line 69.
 
-[31 <./figures/detector_chapter/ID.png>]
-<figures/detector_chapter/Calos.png, id=599, 983.675pt x 611.28375pt>
+[32 <./figures/detector_chapter/ID.png>]
+<figures/detector_chapter/Calos.png, id=615, 983.675pt x 611.28375pt>
 File: figures/detector_chapter/Calos.png Graphic file (type png)
 <use figures/detector_chapter/Calos.png>
 Package pdftex.def Info: figures/detector_chapter/Calos.png  used on input line
@@ -1683,25 +1683,25 @@ Package pdftex.def Info: figures/detector_chapter/Calos.png  used on input line
 (pdftex.def)             Requested size: 469.75502pt x 291.92047pt.
 
 
-LaTeX Warning: Reference `Calos' on page 32 undefined on input line 73.
+LaTeX Warning: Reference `Calos' on page 33 undefined on input line 73.
 
 
-LaTeX Warning: Reference `Calos' on page 32 undefined on input line 73.
+LaTeX Warning: Reference `Calos' on page 33 undefined on input line 73.
 
 
-LaTeX Warning: Reference `ATLAS Liquid Argon TDR' on page 32 undefined on input
+LaTeX Warning: Reference `ATLAS Liquid Argon TDR' on page 33 undefined on input
  line 82.
 
 
-LaTeX Warning: Reference `fig:KriegerECALphoto' on page 32 undefined on input l
+LaTeX Warning: Reference `fig:KriegerECALphoto' on page 33 undefined on input l
 ine 82.
 
 
-LaTeX Warning: Reference `fig:ECALdiagram' on page 32 undefined on input line 8
+LaTeX Warning: Reference `fig:ECALdiagram' on page 33 undefined on input line 8
 2.
 
-[32 <./figures/detector_chapter/Calos.png>]
-<figures/detector_chapter/ECALdiagram.png, id=606, 821.0675pt x 717.68124pt>
+[33 <./figures/detector_chapter/Calos.png>]
+<figures/detector_chapter/ECALdiagram.png, id=623, 821.0675pt x 717.68124pt>
 File: figures/detector_chapter/ECALdiagram.png Graphic file (type png)
 <use figures/detector_chapter/ECALdiagram.png>
 Package pdftex.def Info: figures/detector_chapter/ECALdiagram.png  used on inpu
@@ -1709,36 +1709,36 @@ t line 85.
 (pdftex.def)             Requested size: 469.75502pt x 410.60474pt.
 
 
-LaTeX Warning: Reference `ECALdiagram' on page 33 undefined on input line 86.
+LaTeX Warning: Reference `ECALdiagram' on page 34 undefined on input line 86.
 
 
-LaTeX Warning: Reference `ECALdiagram' on page 33 undefined on input line 86.
+LaTeX Warning: Reference `ECALdiagram' on page 34 undefined on input line 86.
 
-<figures/detector_chapter/ECALphoto.png, id=607, 762.85pt x 487.8225pt>
+<figures/detector_chapter/ECALphoto.png, id=624, 762.85pt x 487.8225pt>
 File: figures/detector_chapter/ECALphoto.png Graphic file (type png)
 <use figures/detector_chapter/ECALphoto.png>
 Package pdftex.def Info: figures/detector_chapter/ECALphoto.png  used on input 
 line 91.
 (pdftex.def)             Requested size: 469.75502pt x 300.3924pt.
 
-LaTeX Warning: Reference `KriegerECALphoto' on page 33 undefined on input line 
+LaTeX Warning: Reference `KriegerECALphoto' on page 34 undefined on input line 
 92.
 
 
-LaTeX Warning: Reference `KriegerECALphoto' on page 33 undefined on input line 
+LaTeX Warning: Reference `KriegerECALphoto' on page 34 undefined on input line 
 92.
 
 
 LaTeX Warning: Reference `Discussion on the electromagnetic calorimeters of ATL
-AS and CMS' on page 33 undefined on input line 96.
+AS and CMS' on page 34 undefined on input line 96.
 
-[33 <./figures/detector_chapter/ECALdiagram.png>]
+[34 <./figures/detector_chapter/ECALdiagram.png>]
 
-LaTeX Warning: Reference `Presampler' on page 34 undefined on input line 100.
+LaTeX Warning: Reference `Presampler' on page 35 undefined on input line 100.
 
-[34 <./figures/detector_chapter/ECALphoto.png>]
+[35 <./figures/detector_chapter/ECALphoto.png>]
 
-LaTeX Warning: Reference `Misconceptions About Calorimetry' on page 35 undefine
+LaTeX Warning: Reference `Misconceptions About Calorimetry' on page 36 undefine
 d on input line 104.
 
 
@@ -1748,96 +1748,95 @@ e Tile-Cal, which uses polystyrene
  []
 
 
-LaTeX Warning: Reference `fig:TileCalDiagram' on page 35 undefined on input lin
+LaTeX Warning: Reference `fig:TileCalDiagram' on page 36 undefined on input lin
 e 108.
 
-<figures/detector_chapter/TileCal.png, id=621, 601.24625pt x 696.6025pt>
+<figures/detector_chapter/TileCal.png, id=637, 601.24625pt x 696.6025pt>
 File: figures/detector_chapter/TileCal.png Graphic file (type png)
 <use figures/detector_chapter/TileCal.png>
 Package pdftex.def Info: figures/detector_chapter/TileCal.png  used on input li
 ne 111.
 (pdftex.def)             Requested size: 469.75502pt x 544.2725pt.
 
-LaTeX Warning: Reference `TileCal' on page 35 undefined on input line 112.
+LaTeX Warning: Reference `TileCal' on page 36 undefined on input line 112.
 
 
-LaTeX Warning: Reference `TileCal' on page 35 undefined on input line 112.
+LaTeX Warning: Reference `TileCal' on page 36 undefined on input line 112.
 
 
-LaTeX Warning: Reference `ATLAS' on page 35 undefined on input line 116.
+LaTeX Warning: Reference `ATLAS' on page 36 undefined on input line 116.
 
-[35] [36 <./figures/detector_chapter/TileCal.png>]
+[36] [37 <./figures/detector_chapter/TileCal.png>]
 
-LaTeX Warning: Reference `fig:FCAL' on page 37 undefined on input line 122.
+LaTeX Warning: Reference `fig:FCAL' on page 38 undefined on input line 122.
 
-<figures/detector_chapter/FCAL.png, id=632, 817.0525pt x 539.01375pt>
+<figures/detector_chapter/FCAL.png, id=648, 817.0525pt x 539.01375pt>
 File: figures/detector_chapter/FCAL.png Graphic file (type png)
 <use figures/detector_chapter/FCAL.png>
 Package pdftex.def Info: figures/detector_chapter/FCAL.png  used on input line 
 125.
 (pdftex.def)             Requested size: 469.75502pt x 309.90582pt.
 
-LaTeX Warning: Reference `ECALTDR' on page 37 undefined on input line 126.
+LaTeX Warning: Reference `ECALTDR' on page 38 undefined on input line 126.
 
 
-LaTeX Warning: Reference `ECALTDR' on page 37 undefined on input line 126.
+LaTeX Warning: Reference `ECALTDR' on page 38 undefined on input line 126.
 
 
-LaTeX Warning: Reference `ECALTDR' on page 37 undefined on input line 131.
+LaTeX Warning: Reference `ECALTDR' on page 38 undefined on input line 131.
 
 
 LaTeX Warning: Reference `Cold Mass Integration of the ATLAS Barrel Toroid' on 
-page 37 undefined on input line 137.
+page 38 undefined on input line 137.
 
 
 LaTeX Warning: Reference `Engineering status of the superconducting end cap tor
-oid magnets for the ATLAS experiment at LHC' on page 37 undefined on input line
+oid magnets for the ATLAS experiment at LHC' on page 38 undefined on input line
  137.
 
 
-LaTeX Warning: Reference `Muon Stopping' on page 37 undefined on input line 141
+LaTeX Warning: Reference `Muon Stopping' on page 38 undefined on input line 141
 .
 
-[37] [38 <./figures/detector_chapter/FCAL.png>]
+[38] [39 <./figures/detector_chapter/FCAL.png>]
 
-LaTeX Warning: Reference `PDG' on page 39 undefined on input line 143.
+LaTeX Warning: Reference `PDG' on page 40 undefined on input line 143.
 
 
-LaTeX Warning: Reference `fig:MuSyst' on page 39 undefined on input line 145.
+LaTeX Warning: Reference `fig:MuSyst' on page 40 undefined on input line 145.
 
-<figures/detector_chapter/MuSyst.png, id=643, 1060.96375pt x 750.805pt>
+<figures/detector_chapter/MuSyst.png, id=660, 1060.96375pt x 750.805pt>
 File: figures/detector_chapter/MuSyst.png Graphic file (type png)
 <use figures/detector_chapter/MuSyst.png>
 Package pdftex.def Info: figures/detector_chapter/MuSyst.png  used on input lin
 e 148.
 (pdftex.def)             Requested size: 469.75502pt x 332.42882pt.
 
-LaTeX Warning: Reference `Musyst' on page 39 undefined on input line 149.
+LaTeX Warning: Reference `Musyst' on page 40 undefined on input line 149.
 
 
-LaTeX Warning: Reference `Musyst' on page 39 undefined on input line 149.
+LaTeX Warning: Reference `Musyst' on page 40 undefined on input line 149.
 
 
-LaTeX Warning: Reference `fig:MDT' on page 39 undefined on input line 153.
+LaTeX Warning: Reference `fig:MDT' on page 40 undefined on input line 153.
 
-<figures/detector_chapter/MDT.png, id=644, 640.3925pt x 755.82375pt>
+<figures/detector_chapter/MDT.png, id=661, 640.3925pt x 755.82375pt>
 File: figures/detector_chapter/MDT.png Graphic file (type png)
 <use figures/detector_chapter/MDT.png>
 Package pdftex.def Info: figures/detector_chapter/MDT.png  used on input line 1
 56.
-(pdftex.def)             Requested size: 469.75502pt x 554.43391pt.
+(pdftex.def)             Requested size: 234.8775pt x 277.20543pt.
 
-LaTeX Warning: Reference `MDT' on page 39 undefined on input line 157.
-
-
-LaTeX Warning: Reference `MDT' on page 39 undefined on input line 157.
+LaTeX Warning: Reference `MDT' on page 40 undefined on input line 157.
 
 
-LaTeX Warning: Reference `MDTs' on page 39 undefined on input line 161.
+LaTeX Warning: Reference `MDT' on page 40 undefined on input line 157.
 
-[39] [40 <./figures/detector_chapter/MuSyst.png>] [41 <./figures/detector_chapt
-er/MDT.png>]
-<figures/detector_chapter/MDTChamber.png, id=662, 1493.58pt x 566.115pt>
+
+LaTeX Warning: Reference `MDTs' on page 40 undefined on input line 161.
+
+[40] [41 <./figures/detector_chapter/MuSyst.png>]
+<figures/detector_chapter/MDTChamber.png, id=672, 1493.58pt x 566.115pt>
 File: figures/detector_chapter/MDTChamber.png Graphic file (type png)
 <use figures/detector_chapter/MDTChamber.png>
 Package pdftex.def Info: figures/detector_chapter/MDTChamber.png  used on input
@@ -1854,29 +1853,30 @@ LaTeX Warning: Reference `MDT' on page 42 undefined on input line 165.
 LaTeX Warning: Reference `Boudreau top' on page 42 undefined on input line 169.
 
 
+[42 <./figures/detector_chapter/MDT.png> <./figures/detector_chapter/MDTChamber
+.png>]
 
-LaTeX Warning: Reference `CSC' on page 42 undefined on input line 173.
+LaTeX Warning: Reference `CSC' on page 43 undefined on input line 173.
 
-[42 <./figures/detector_chapter/MDTChamber.png>]
+[43]
 
-LaTeX Warning: Reference `fig:TGCWheel' on page 43 undefined on input line 181.
+LaTeX Warning: Reference `fig:TGCWheel' on page 44 undefined on input line 181.
 
 
-<figures/detector_chapter/TGCWheel.png, id=669, 563.10374pt x 377.41pt>
+<figures/detector_chapter/TGCWheel.png, id=685, 563.10374pt x 377.41pt>
 File: figures/detector_chapter/TGCWheel.png Graphic file (type png)
 <use figures/detector_chapter/TGCWheel.png>
 Package pdftex.def Info: figures/detector_chapter/TGCWheel.png  used on input l
 ine 184.
 (pdftex.def)             Requested size: 469.75502pt x 314.8454pt.
 
-LaTeX Warning: Reference `CERN-EX-0609016' on page 43 undefined on input line 1
+LaTeX Warning: Reference `CERN-EX-0609016' on page 44 undefined on input line 1
 85.
 
 
-LaTeX Warning: Reference `CERN-EX-0609016' on page 43 undefined on input line 1
+LaTeX Warning: Reference `CERN-EX-0609016' on page 44 undefined on input line 1
 85.
 
-[43]
 
 LaTeX Warning: Reference `MBTS' on page 44 undefined on input line 190.
 
@@ -1886,162 +1886,162 @@ LaTeX Warning: Reference `trigger' on page 44 undefined on input line 190.
 
 LaTeX Warning: Reference `sec:Musyst' on page 44 undefined on input line 192.
 
-[44 <./figures/detector_chapter/TGCWheel.png>]
+[44]
 
 LaTeX Warning: Reference `sec:' on page 45 undefined on input line 194.
 
 
 LaTeX Warning: Reference `sec:' on page 45 undefined on input line 194.
 
-) [45]
+[45 <./figures/detector_chapter/TGCWheel.png>]) [46]
 CHAPTER 3.
 (./sections/methods_chapter.tex
 
-LaTeX Warning: Reference `Pythia' on page 46 undefined on input line 11.
+LaTeX Warning: Reference `Pythia' on page 47 undefined on input line 11.
 
 
-LaTeX Warning: Reference `Herwig' on page 46 undefined on input line 11.
+LaTeX Warning: Reference `Herwig' on page 47 undefined on input line 11.
 
 
-LaTeX Warning: Reference `aMCNLO' on page 46 undefined on input line 11.
+LaTeX Warning: Reference `aMCNLO' on page 47 undefined on input line 11.
 
 
-LaTeX Warning: Reference `GEANT4' on page 46 undefined on input line 11.
+LaTeX Warning: Reference `GEANT4' on page 47 undefined on input line 11.
 
-[46
+[47
 
 ]
 
-LaTeX Warning: Reference `1005.4568' on page 47 undefined on input line 13.
+LaTeX Warning: Reference `1005.4568' on page 48 undefined on input line 13.
 
-<figures/methods_chapter/Sigs.jpg, id=688, 766.3029pt x 604.1772pt>
+<figures/methods_chapter/Sigs.jpg, id=705, 766.3029pt x 604.1772pt>
 File: figures/methods_chapter/Sigs.jpg Graphic file (type jpg)
 <use figures/methods_chapter/Sigs.jpg>
 Package pdftex.def Info: figures/methods_chapter/Sigs.jpg  used on input line 2
 0.
 (pdftex.def)             Requested size: 469.75502pt x 370.37291pt.
 
-LaTeX Warning: Reference `CERN-EX-1301009' on page 47 undefined on input line 2
+LaTeX Warning: Reference `CERN-EX-1301009' on page 48 undefined on input line 2
 1.
 
 
-LaTeX Warning: Reference `CERN-EX-1301009' on page 47 undefined on input line 2
+LaTeX Warning: Reference `CERN-EX-1301009' on page 48 undefined on input line 2
 1.
 
 
-LaTeX Warning: Reference `cite:tracker' on page 47 undefined on input line 29.
+LaTeX Warning: Reference `cite:tracker' on page 48 undefined on input line 29.
 
 
-LaTeX Warning: Reference `cite:NEWT' on page 47 undefined on input line 31.
+LaTeX Warning: Reference `cite:NEWT' on page 48 undefined on input line 31.
 
-[47] [48 <./figures/methods_chapter/Sigs.jpg>]
+[48] [49 <./figures/methods_chapter/Sigs.jpg>]
 
-LaTeX Warning: Reference `cite:VertexMeloni' on page 49 undefined on input line
+LaTeX Warning: Reference `cite:VertexMeloni' on page 50 undefined on input line
  33.
 
 
-LaTeX Warning: Reference `sec:Electrons and Photons' on page 49 undefined on in
+LaTeX Warning: Reference `sec:Electrons and Photons' on page 50 undefined on in
 put line 35.
 
 
-LaTeX Warning: Reference `cite:CERN-EP-2019-145' on page 49 undefined on input 
+LaTeX Warning: Reference `cite:CERN-EP-2019-145' on page 50 undefined on input 
 line 40.
 
 
-LaTeX Warning: Reference `cite:CERN-PH-EP-2015-304' on page 49 undefined on inp
+LaTeX Warning: Reference `cite:CERN-PH-EP-2015-304' on page 50 undefined on inp
 ut line 40.
-
-[49]
-
-LaTeX Warning: Reference `cite:CERN-EP-2019-145' on page 50 undefined on input 
-line 50.
-
-
-LaTeX Warning: Reference `cite:ATL-PHYS-PUB-2017-022' on page 50 undefined on i
-nput line 52.
-
-
-LaTeX Warning: Reference `cite:EMcalib' on page 50 undefined on input line 54.
 
 [50]
 
-LaTeX Warning: Reference `cite:gammaID CERN-EP-2018-216' on page 51 undefined o
-n input line 76.
+LaTeX Warning: Reference `cite:CERN-EP-2019-145' on page 51 undefined on input 
+line 50.
+
+
+LaTeX Warning: Reference `cite:ATL-PHYS-PUB-2017-022' on page 51 undefined on i
+nput line 52.
+
+
+LaTeX Warning: Reference `cite:EMcalib' on page 51 undefined on input line 54.
 
 [51]
 
-LaTeX Warning: Reference `cite:elID-CERN-EP-2018-273' on page 52 undefined on i
-nput line 92.
-
-
-LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 52 undefined on input 
-line 92.
-
-
-LaTeX Warning: Reference `ANA-EGAM-2018-01' on page 52 undefined on input line 
-96.
+LaTeX Warning: Reference `cite:gammaID CERN-EP-2018-216' on page 52 undefined o
+n input line 76.
 
 [52]
 
-LaTeX Warning: Reference `cite:CERN-EP-2019-145' on page 53 undefined on input 
+LaTeX Warning: Reference `cite:elID-CERN-EP-2018-273' on page 53 undefined on i
+nput line 92.
+
+
+LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 53 undefined on input 
+line 92.
+
+
+LaTeX Warning: Reference `ANA-EGAM-2018-01' on page 53 undefined on input line 
+96.
+
+[53]
+
+LaTeX Warning: Reference `cite:CERN-EP-2019-145' on page 54 undefined on input 
 line 106.
 
 
-LaTeX Warning: Reference `cite:ATL-COM-PHYS-2020-378' on page 53 undefined on i
+LaTeX Warning: Reference `cite:ATL-COM-PHYS-2020-378' on page 54 undefined on i
 nput line 108.
 
 
-LaTeX Warning: Reference `1408.7084' on page 53 undefined on input line 110.
+LaTeX Warning: Reference `1408.7084' on page 54 undefined on input line 110.
 
 
-LaTeX Warning: Reference `HGAMSTXSINT' on page 53 undefined on input line 110.
+LaTeX Warning: Reference `HGAMSTXSINT' on page 54 undefined on input line 110.
 
-<figures/methods_chapter/Vertexing.png, id=716, 1198.4775pt x 468.75125pt>
+<figures/methods_chapter/Vertexing.png, id=732, 1198.4775pt x 468.75125pt>
 File: figures/methods_chapter/Vertexing.png Graphic file (type png)
 <use figures/methods_chapter/Vertexing.png>
 Package pdftex.def Info: figures/methods_chapter/Vertexing.png  used on input l
 ine 115.
 (pdftex.def)             Requested size: 469.75502pt x 183.72777pt.
 
-LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 53 undefined on input 
+LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 54 undefined on input 
 line 116.
 
 
-LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 53 undefined on input 
+LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 54 undefined on input 
 line 116.
 
-[53]
+[54]
 
-LaTeX Warning: Reference `antikt' on page 54 undefined on input line 133.
-
-
-LaTeX Warning: Reference `sec' on page 54 undefined on input line 135.
+LaTeX Warning: Reference `antikt' on page 55 undefined on input line 133.
 
 
-LaTeX Warning: Reference `PFlow' on page 54 undefined on input line 135.
+LaTeX Warning: Reference `sec' on page 55 undefined on input line 135.
 
 
-LaTeX Warning: Reference `cite:JVT' on page 54 undefined on input line 139.
+LaTeX Warning: Reference `PFlow' on page 55 undefined on input line 135.
 
-[54 <./figures/methods_chapter/Vertexing.png>]
+
+LaTeX Warning: Reference `cite:JVT' on page 55 undefined on input line 139.
+
+[55 <./figures/methods_chapter/Vertexing.png>]
 
 LaTeX Warning: Reference `cite:CERN-EP-2018-047, CERN-PH-EP-2015-216' on page 5
-5 undefined on input line 145.
+6 undefined on input line 145.
 
 
-LaTeX Warning: Reference `cite:ATL-PHYS-PUB-2017-013' on page 55 undefined on i
+LaTeX Warning: Reference `cite:ATL-PHYS-PUB-2017-013' on page 56 undefined on i
 nput line 145.
 
 
-LaTeX Warning: Reference `Hough' on page 55 undefined on input line 151.
+LaTeX Warning: Reference `Hough' on page 56 undefined on input line 151.
 
-[55]
+[56]
 
-LaTeX Warning: Reference `CERN-EP-2016-033' on page 56 undefined on input line 
+LaTeX Warning: Reference `CERN-EP-2016-033' on page 57 undefined on input line 
 163.
 
 
-LaTeX Warning: Reference `ATL-COM-PHYS-2019-177' on page 56 undefined on input 
+LaTeX Warning: Reference `ATL-COM-PHYS-2019-177' on page 57 undefined on input 
 line 165.
 
 
@@ -2052,104 +2052,154 @@ t/12 E[] <
  []
 
 
-LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 56 undefined on input 
+LaTeX Warning: Reference `ATL-COM-PHYS-2020-378' on page 57 undefined on input 
 line 169.
 
 
-LaTeX Warning: Reference `cite:muCalib' on page 56 undefined on input line 169.
+LaTeX Warning: Reference `cite:muCalib' on page 57 undefined on input line 169.
 
 
-[56]
+[57]
 
-LaTeX Warning: Reference `cite:CERN-EP-2017-274' on page 57 undefined on input 
+LaTeX Warning: Reference `cite:CERN-EP-2017-274' on page 58 undefined on input 
 line 190.
 
-) [57]
+[58]
+
+LaTeX Warning: Reference `cite:XGBoost' on page 59 undefined on input line 200.
+
+
+[59] [60]
+
+LaTeX Warning: Reference `fig:sel_topReco_retrain' on page 61 undefined on inpu
+t line 254.
+
+<figures/selection/top_perf/pT_t1.pdf, id=773, 569.12625pt x 410.53375pt>
+File: figures/selection/top_perf/pT_t1.pdf Graphic file (type pdf)
+<use figures/selection/top_perf/pT_t1.pdf>
+Package pdftex.def Info: figures/selection/top_perf/pT_t1.pdf  used on input li
+ne 258.
+(pdftex.def)             Requested size: 145.6229pt x 105.0449pt.
+<figures/selection/top_perf/eta_t1.pdf, id=774, 569.12625pt x 410.53375pt>
+File: figures/selection/top_perf/eta_t1.pdf Graphic file (type pdf)
+<use figures/selection/top_perf/eta_t1.pdf>
+Package pdftex.def Info: figures/selection/top_perf/eta_t1.pdf  used on input l
+ine 259.
+(pdftex.def)             Requested size: 145.6229pt x 105.0449pt.
+<figures/selection/top_perf/phi_t1.pdf, id=775, 569.12625pt x 410.53375pt>
+File: figures/selection/top_perf/phi_t1.pdf Graphic file (type pdf)
+<use figures/selection/top_perf/phi_t1.pdf>
+Package pdftex.def Info: figures/selection/top_perf/phi_t1.pdf  used on input l
+ine 260.
+(pdftex.def)             Requested size: 145.6229pt x 105.0449pt.
+<figures/selection/top_perf/mass_t1.pdf, id=776, 569.12625pt x 410.53375pt>
+File: figures/selection/top_perf/mass_t1.pdf Graphic file (type pdf)
+<use figures/selection/top_perf/mass_t1.pdf>
+Package pdftex.def Info: figures/selection/top_perf/mass_t1.pdf  used on input 
+line 261.
+(pdftex.def)             Requested size: 145.6229pt x 105.0449pt.
+<figures/selection/top_perf/truth_match.pdf, id=777, 569.12625pt x 410.53375pt>
+
+File: figures/selection/top_perf/truth_match.pdf Graphic file (type pdf)
+<use figures/selection/top_perf/truth_match.pdf>
+Package pdftex.def Info: figures/selection/top_perf/truth_match.pdf  used on in
+put line 262.
+(pdftex.def)             Requested size: 145.6229pt x 105.0449pt.
+
+LaTeX Warning: Reference `sec:KLFitter' on page 61 undefined on input line 267.
+
+
+) [61 <./figures/selection/top_perf/pT_t1.pdf, page is rotated 90 degrees> <./f
+igures/selection/top_perf/eta_t1.pdf, page is rotated 90 degrees> <./figures/se
+lection/top_perf/phi_t1.pdf, page is rotated 90 degrees> <./figures/selection/t
+op_perf/mass_t1.pdf, page is rotated 90 degrees> <./figures/selection/top_perf/
+truth_match.pdf, page is rotated 90 degrees>]
 CHAPTER 4.
 (./sections/datamc_chapter.tex
 
-LaTeX Warning: Reference `Jennet106' on page 58 undefined on input line 5.
+LaTeX Warning: Reference `Jennet106' on page 62 undefined on input line 5.
 
 
-LaTeX Warning: Reference `fig:datalumi' on page 58 undefined on input line 5.
+LaTeX Warning: Reference `fig:datalumi' on page 62 undefined on input line 5.
 
 
-LaTeX Warning: Reference `fig:pileup' on page 58 undefined on input line 5.
+LaTeX Warning: Reference `fig:pileup' on page 62 undefined on input line 5.
 
-<figures/datamc_chapter/datalumi.png, id=741, 798.985pt x 574.145pt>
+<figures/datamc_chapter/datalumi.png, id=1000, 798.985pt x 574.145pt>
 File: figures/datamc_chapter/datalumi.png Graphic file (type png)
 <use figures/datamc_chapter/datalumi.png>
 Package pdftex.def Info: figures/datamc_chapter/datalumi.png  used on input lin
 e 8.
-(pdftex.def)             Requested size: 469.75502pt x 337.56868pt.
-<figures/datamc_chapter/pileup.png, id=742, 798.985pt x 574.145pt>
+(pdftex.def)             Requested size: 234.8775pt x 168.78433pt.
+<figures/datamc_chapter/pileup.png, id=1001, 798.985pt x 574.145pt>
 File: figures/datamc_chapter/pileup.png Graphic file (type png)
 <use figures/datamc_chapter/pileup.png>
 Package pdftex.def Info: figures/datamc_chapter/pileup.png  used on input line 
 13.
-(pdftex.def)             Requested size: 469.75502pt x 337.56868pt.
+(pdftex.def)             Requested size: 234.8775pt x 168.78433pt.
 
-LaTeX Warning: Reference `cite:TriggerPerformance' on page 58 undefined on inpu
+LaTeX Warning: Reference `cite:TriggerPerformance' on page 62 undefined on inpu
 t line 17.
 
-<figures/datamc_chapter/trigger.png, id=743, 857.2025pt x 586.19pt>
+[62
+
+ <./figures/datamc_chapter/datalumi.png>]
+<figures/datamc_chapter/trigger.png, id=1007, 857.2025pt x 586.19pt>
 File: figures/datamc_chapter/trigger.png Graphic file (type png)
 <use figures/datamc_chapter/trigger.png>
 Package pdftex.def Info: figures/datamc_chapter/trigger.png  used on input line
  20.
-(pdftex.def)             Requested size: 469.75502pt x 321.23376pt.
-[58
+(pdftex.def)             Requested size: 234.8775pt x 160.61688pt.
+ [63 <./figures/datamc_chapter/pileup.png> <./figures/datamc_chapter/trigger.pn
+g>]
 
-] [59 <./figures/datamc_chapter/datalumi.png>] [60 <./figures/datamc_chapter/pi
-leup.png>] [61 <./figures/datamc_chapter/trigger.png>]
-
-LaTeX Warning: Reference `cite:tunes' on page 62 undefined on input line 45.
+LaTeX Warning: Reference `cite:tunes' on page 64 undefined on input line 45.
 
 
-LaTeX Warning: Reference `Table:MCTools' on page 62 undefined on input line 47.
+LaTeX Warning: Reference `Table:MCTools' on page 64 undefined on input line 47.
 
 
 
-LaTeX Warning: Reference `cite:MG5' on page 62 undefined on input line 54.
+LaTeX Warning: Reference `cite:MG5' on page 64 undefined on input line 54.
 
 
-LaTeX Warning: Reference `cite:aMCNLO' on page 62 undefined on input line 54.
+LaTeX Warning: Reference `cite:aMCNLO' on page 64 undefined on input line 54.
 
 
-LaTeX Warning: Reference `cite:Powheg1' on page 62 undefined on input line 55.
+LaTeX Warning: Reference `cite:Powheg1' on page 64 undefined on input line 55.
 
 
-LaTeX Warning: Reference `cite:Powheg2' on page 62 undefined on input line 55.
+LaTeX Warning: Reference `cite:Powheg2' on page 64 undefined on input line 55.
 
 
-LaTeX Warning: Reference `cite:Powheg3' on page 62 undefined on input line 55.
+LaTeX Warning: Reference `cite:Powheg3' on page 64 undefined on input line 55.
 
 
-LaTeX Warning: Reference `cite:Pythia1' on page 62 undefined on input line 57.
+LaTeX Warning: Reference `cite:Pythia1' on page 64 undefined on input line 57.
 
 
-LaTeX Warning: Reference `cite:Pythia2' on page 62 undefined on input line 57.
+LaTeX Warning: Reference `cite:Pythia2' on page 64 undefined on input line 57.
 
 
-LaTeX Warning: Reference `cite:Herwig1' on page 62 undefined on input line 58.
+LaTeX Warning: Reference `cite:Herwig1' on page 64 undefined on input line 58.
 
 
-LaTeX Warning: Reference `cite:Herwig2' on page 62 undefined on input line 58.
+LaTeX Warning: Reference `cite:Herwig2' on page 64 undefined on input line 58.
 
 
-LaTeX Warning: Reference `cite:EvGen' on page 62 undefined on input line 60.
+LaTeX Warning: Reference `cite:EvGen' on page 64 undefined on input line 60.
 
 
-LaTeX Warning: Reference `cite:Sherpa1' on page 62 undefined on input line 62.
+LaTeX Warning: Reference `cite:Sherpa1' on page 64 undefined on input line 62.
 
 
-LaTeX Warning: Reference `cite:Sherpa2' on page 62 undefined on input line 62.
+LaTeX Warning: Reference `cite:Sherpa2' on page 64 undefined on input line 62.
 
 
-LaTeX Warning: Reference `cite:Sherpa3' on page 62 undefined on input line 62.
+LaTeX Warning: Reference `cite:Sherpa3' on page 64 undefined on input line 62.
 
 
-LaTeX Warning: Reference `cite:Sherpa4' on page 62 undefined on input line 62.
+LaTeX Warning: Reference `cite:Sherpa4' on page 64 undefined on input line 62.
 
 
 Overfull \hbox (3.4615pt too wide) in paragraph at lines 51--64
@@ -2160,97 +2210,100 @@ Overfull \hbox (3.4615pt too wide) in paragraph at lines 51--64
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Geant4' on page 62 undefined on input line 68.
+LaTeX Warning: Reference `Geant4' on page 64 undefined on input line 68.
 
 
-LaTeX Warning: Reference `arXiv: 1005.4568' on page 62 undefined on input line 
+LaTeX Warning: Reference `arXiv: 1005.4568' on page 64 undefined on input line 
 68.
 
 
-LaTeX Warning: Reference `cite:Pythia' on page 62 undefined on input line 68.
+LaTeX Warning: Reference `cite:Pythia' on page 64 undefined on input line 68.
 
 
-LaTeX Warning: Reference `cite:A3' on page 62 undefined on input line 68.
-
-[62]
-
-LaTeX Warning: Reference `cite:HiggsWidth' on page 63 undefined on input line 7
-0.
-
-
-LaTeX Warning: Reference `cite:MadSpin' on page 63 undefined on input line 70.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `cite:NNLOPS' on page 63 undefined on input line 99.
-
-
-LaTeX Warning: Reference `cite:PDF4LHC' on page 63 undefined on input line 99.
-
-
-LaTeX Warning: Reference `cite:AZNLO' on page 63 undefined on input line 99.
-
-
-LaTeX Warning: Reference `cite:CTEQ6' on page 63 undefined on input line 99.
-
-
-LaTeX Warning: Reference `cite:PowhegBox' on page 63 undefined on input line 99
-.
-
-
-LaTeX Warning: Reference `cite:A14' on page 63 undefined on input line 99.
-
-
-LaTeX Warning: Reference `cite:NNPDF23' on page 63 undefined on input line 99.
-
-
-LaTeX Warning: Reference `cite:NNPDF30' on page 63 undefined on input line 99.
-
-
-LaTeX Warning: Reference `cite:DemartintWH' on page 63 undefined on input line 
-99.
-
-
-LaTeX Warning: Reference `cite:subtraction' on page 63 undefined on input line 
-99.
-
-
-LaTeX Warning: Reference `cite:NNPDF30' on page 63 undefined on input line 100.
-
-
-[63]
-
-LaTeX Warning: Reference `cite:H7p1' on page 64 undefined on input line 102.
-
-
-LaTeX Warning: Reference `cite:H7UE' on page 64 undefined on input line 102.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `cite:Yellowreport' on page 64 undefined on input line
- 130.
-
-
-LaTeX Warning: Reference `HDecay' on page 64 undefined on input line 130.
-
-
-LaTeX Warning: Reference `Prophecy' on page 64 undefined on input line 130.
+LaTeX Warning: Reference `cite:A3' on page 64 undefined on input line 68.
 
 [64]
 
-LaTeX Warning: Reference `cite:yellowreport' on page 65 undefined on input line
+LaTeX Warning: Reference `cite:HiggsWidth' on page 65 undefined on input line 7
+0.
+
+
+LaTeX Warning: Reference `cite:MadSpin' on page 65 undefined on input line 70.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `cite:NNLOPS' on page 65 undefined on input line 99.
+
+
+LaTeX Warning: Reference `cite:PDF4LHC' on page 65 undefined on input line 99.
+
+
+LaTeX Warning: Reference `cite:AZNLO' on page 65 undefined on input line 99.
+
+
+LaTeX Warning: Reference `cite:CTEQ6' on page 65 undefined on input line 99.
+
+
+LaTeX Warning: Reference `cite:PowhegBox' on page 65 undefined on input line 99
+.
+
+
+LaTeX Warning: Reference `cite:A14' on page 65 undefined on input line 99.
+
+
+LaTeX Warning: Reference `cite:NNPDF23' on page 65 undefined on input line 99.
+
+
+LaTeX Warning: Reference `cite:NNPDF30' on page 65 undefined on input line 99.
+
+
+LaTeX Warning: Reference `cite:DemartintWH' on page 65 undefined on input line 
+99.
+
+
+LaTeX Warning: Reference `cite:subtraction' on page 65 undefined on input line 
+99.
+
+
+LaTeX Warning: Reference `cite:NNPDF30' on page 65 undefined on input line 100.
+
+
+[65]
+
+LaTeX Warning: Reference `cite:H7p1' on page 66 undefined on input line 102.
+
+
+LaTeX Warning: Reference `cite:H7UE' on page 66 undefined on input line 102.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `cite:Yellowreport' on page 66 undefined on input line
+ 130.
+
+
+LaTeX Warning: Reference `HDecay' on page 66 undefined on input line 130.
+
+
+LaTeX Warning: Reference `Prophecy' on page 66 undefined on input line 130.
+
+
+LaTeX Warning: Reference `cite:yellowreport' on page 66 undefined on input line
  151.
 
 
-LaTeX Warning: Reference `cite:yellowreport' on page 65 undefined on input line
+LaTeX Warning: Reference `cite:yellowreport' on page 66 undefined on input line
  151.
 
 
-LaTeX Warning: Reference `cite:CT10' on page 65 undefined on input line 157.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[66]
+
+LaTeX Warning: Reference `cite:CT10' on page 67 undefined on input line 157.
 
 
 Overfull \hbox (47.29108pt too wide) in paragraph at lines 159--160
@@ -2262,49 +2315,66 @@ s in top-enriched re-gions, is sim-u-lated us-ing Mad-graph5[]aMC@NLO
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `cite: HC' on page 65 undefined on input line 188.
+LaTeX Warning: Reference `cite: HC' on page 67 undefined on input line 188.
 
-[65]
+[67]
 
-LaTeX Warning: Reference `sec:ttHCPresults' on page 66 undefined on input line 
+LaTeX Warning: Reference `sec:ttHCPresults' on page 68 undefined on input line 
 196.
 
 
-LaTeX Warning: Reference `cite:yellowreport' on page 66 undefined on input line
+LaTeX Warning: Reference `cite:yellowreport' on page 68 undefined on input line
  198.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [66] [67]
+) [68] [69] (./appendix/KLFitter.tex
 APPENDIX A.
-(./appendix/appendix_example.tex
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-LaTeX Font Info:    Trying to load font information for OMS+pcr on input line 1
-.
+LaTeX Warning: Reference `cite:KLFitter' on page 70 undefined on input line 5.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
-File: omspcr.fd 
-)
-LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
-) [68
+
+LaTeX Warning: Reference `cite:Minuit' on page 70 undefined on input line 22.
+
+
+LaTeX Warning: Reference `cite:BAT' on page 70 undefined on input line 22.
+
+<figures/KLFitter/KLFittertopmass.png, id=1049, 758.835pt x 513.92pt>
+File: figures/KLFitter/KLFittertopmass.png Graphic file (type png)
+<use figures/KLFitter/KLFittertopmass.png>
+Package pdftex.def Info: figures/KLFitter/KLFittertopmass.png  used on input li
+ne 26.
+(pdftex.def)             Requested size: 145.6229pt x 98.61818pt.
+<figures/KLFitter/KLfitter1.png, id=1050, 758.835pt x 513.92pt>
+File: figures/KLFitter/KLfitter1.png Graphic file (type png)
+<use figures/KLFitter/KLfitter1.png>
+Package pdftex.def Info: figures/KLFitter/KLfitter1.png  used on input line 27.
+
+(pdftex.def)             Requested size: 145.6229pt x 98.61818pt.
+<figures/KLFitter/KLfitter2.png, id=1051, 758.835pt x 513.92pt>
+File: figures/KLFitter/KLfitter2.png Graphic file (type png)
+<use figures/KLFitter/KLfitter2.png>
+Package pdftex.def Info: figures/KLFitter/KLfitter2.png  used on input line 28.
+
+(pdftex.def)             Requested size: 145.6229pt x 98.61818pt.
+[70
 
 
 ]
+
+LaTeX Warning: Reference `cite:topmass' on page 71 undefined on input line 37.
+
+) [71 <./figures/KLFitter/KLFittertopmass.png (PNG copy)> <./figures/KLFitter/K
+Lfitter1.png (PNG copy)> <./figures/KLFitter/KLfitter2.png (PNG copy)>]
 No file thesis.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 421569236B99E87B158D1F54223FE188;3164.
+(rerunfilecheck)             Checksum: 60676E8333DFD671EE89EF69931AF76D;3518.
 
 
 LaTeX Warning: There were undefined references.
@@ -2312,14 +2382,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 26715 strings out of 481239
- 504462 string characters out of 5920376
+ 26746 strings out of 481239
+ 506005 string characters out of 5920376
  760590 words of memory out of 5000000
- 41128 multiletter control sequences out of 15000+600000
- 571579 words of font info for 129 fonts, out of 8000000 for 9000
+ 41137 multiletter control sequences out of 15000+600000
+ 572142 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,22n,79p,1647b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -2338,14 +2408,13 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helv
-etic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (78 pages, 6883391 bytes).
+ype1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (81 pages, 7081080 bytes).
 PDF statistics:
- 908 PDF objects out of 1000 (max. 8388607)
- 670 compressed objects within 7 object streams
- 196 named destinations out of 1000 (max. 500000)
- 634 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1169 PDF objects out of 1200 (max. 8388607)
+ 795 compressed objects within 8 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 698 words of extra memory for PDF output out of 10000 (max. 10000000)
 

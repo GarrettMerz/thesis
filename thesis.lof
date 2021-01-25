@@ -11,24 +11,26 @@
 \contentsline {figure}{\numberline {1.10}{\ignorespaces Stage 1.2 STXS bin definitions for the main production modes.\relax }}{20}{figure.caption.22}%
 \contentsline {figure}{\numberline {1.11}{\ignorespaces Stage 1.2 STXS bin acceptances for all Higgs production modes considered in the Couplings analysis. The FWDH bins target events outside the nominal acceptance, i.e. with $|y_{H}|>2.5$.\relax }}{23}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The infrastructure of the LHC accelerator ring, including the SPS and LINAC2. \ref {LHC}\relax }}{26}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A diagram of the various subsystems of the ATLAS detector. \ref {ATLAS}\relax }}{28}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The coordinate system used to define the ATLAS detector geometry. \ref {cds.cern.ch/record/1699952/plots}\relax }}{29}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces An illustration of the Inner Detector. \ref {ID}\relax }}{31}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces An illustration of the ATLAS calorimeter systems. \ref {Calos}\relax }}{32}{figure.caption.30}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces A cutaway diagram of the barrel ECAL deptcting the "accordion" absorber geometry \ref {ECALdiagram}\relax }}{33}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces A photograph of an ECAL absorber. \ref {KriegerECALphoto}\relax }}{34}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces A diagram of the TileCal geometry \ref {TileCal}\relax }}{36}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces A diagram of the FCAL geometry \ref {ECALTDR}\relax }}{38}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces A diagram of the Muon System \ref {Musyst}\relax }}{40}{figure.caption.35}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces A diagram of a Monitored Drift Tube \ref {MDT}\relax }}{41}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The infrastructure of the LHC accelerator ring, including the SPS and LINAC2. \ref {LHC}\relax }}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A diagram of the various subsystems of the ATLAS detector. \ref {ATLAS}\relax }}{29}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The coordinate system used to define the ATLAS detector geometry. \ref {cds.cern.ch/record/1699952/plots}\relax }}{30}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An illustration of the Inner Detector. \ref {ID}\relax }}{32}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces An illustration of the ATLAS calorimeter systems. \ref {Calos}\relax }}{33}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A cutaway diagram of the barrel ECAL deptcting the "accordion" absorber geometry \ref {ECALdiagram}\relax }}{34}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces A photograph of an ECAL absorber. \ref {KriegerECALphoto}\relax }}{35}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces A diagram of the TileCal geometry \ref {TileCal}\relax }}{37}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces A diagram of the FCAL geometry \ref {ECALTDR}\relax }}{39}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces A diagram of the Muon System \ref {Musyst}\relax }}{41}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces A diagram of a Monitored Drift Tube \ref {MDT}\relax }}{42}{figure.caption.36}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces A diagram of the MDT chamber geometry from two positions, one looking down the beam pipe and one alongside the detector. \ref {MDT}\relax }}{42}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces A photograph of the TGC wheels. \ref {CERN-EX-0609016}\relax }}{44}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces A photograph of the TGC wheels. \ref {CERN-EX-0609016}\relax }}{45}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Shapes and signatures of a variety of objects in the detector \ref {CERN-EX-1301009}\relax }}{48}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Shapes and signatures of a variety of objects in the detector \ref {ATL-COM-PHYS-2020-378}\relax }}{54}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Shapes and signatures of a variety of objects in the detector \ref {CERN-EX-1301009}\relax }}{49}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Shapes and signatures of a variety of objects in the detector \ref {ATL-COM-PHYS-2020-378}\relax }}{55}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Performance of the top reconstruction BDT for the primary top in \ensuremath {\mathrm {t\bar {t}H}}\xspace events. The green "h025" line represents the EMTopo training applied to PFlow reconstructed jets, while the red "h024" line represents the output of the dedicated PFlow training with PFlow jets. The black line represents the truth-matched reco level distribution.\relax }}{61}{figure.caption.44}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Integrated luminosity for the Run-2 ATLAS data-taking period.\relax }}{59}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Pileup for the Run-2 ATLAS data-taking period.\relax }}{60}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Efficiency of the trigger for the different years of the run-2 data taking period as a function of subleading photon $E_{T}$.\relax }}{61}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Integrated luminosity for the Run-2 ATLAS data-taking period.\relax }}{62}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pileup for the Run-2 ATLAS data-taking period.\relax }}{63}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Efficiency of the trigger for the different years of the run-2 data taking period as a function of subleading photon $E_{T}$.\relax }}{63}{figure.caption.47}%
 \addvspace {8pt}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Reconstructed top-mass and top-mass resolution of the KLFitter (using the "unfixed" top-mass setting to illustrate performance).\relax }}{71}{figure.caption.57}%
