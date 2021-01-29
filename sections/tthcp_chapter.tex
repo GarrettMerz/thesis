@@ -60,7 +60,7 @@ The input variables chosen are:
 \item \MET and direction of \MET
 \end{itemize}
 
-Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown in Figure \ref{fig:SBBDTvarslep}. The BDT output distributions are shown in figures \ref{fig:SBBDTout}. Furthermore, we note that the SBBDT performance is independent of $\alpha$; this can be seen in figures \ref{fig:SBBDThadalpha} and \ref{fig:SBBDTlepalpha}.
+Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown in Figure \ref{fig:SBBDTvarslep}. The BDT output distributions are shown in figures \ref{fig:moriondtotal}. We note that the SBBDT performance is independent of $\alpha$.
 
 \begin{figure}
 	\centering
@@ -75,21 +75,35 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
 	\label{fig:SBBDTvarslep}
 \end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11b.pdf}
-	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11c.pdf}
-	\caption{Output distributions for the hadronic background-rejection BDT (left) and the leptonic background-rejection BDT (right).}
-	\label{fig:SBBDTout}
+\ifffalse
+\begin{figure}[htbp]
+  \centering
+        \subfloat[$ttH$ had]{\includegraphics[width=0.3\textwidth]{figures/preselection_and_reconstruction/ttH_had/m_score_wisc.png}}
+        \subfloat[$tHjb$ had]{\includegraphics[width=0.3\textwidth]{figures/preselection_and_reconstruction/tHjb_had/m_score_wisc.png}} \\
+        \subfloat[$tWH$ had]{\includegraphics[width=0.3\textwidth]{figures/preselection_and_reconstruction/tWH_had/m_score_wisc.png}}
+        \subfloat[$ggH$ had]{\includegraphics[width=0.3\textwidth]{figures/preselection_and_reconstruction/ggH_had/m_score_wisc.png}}
+  \caption{SB BDT score for $ttH$, $tHjb$, $tWH$ and $ggH$ in the hadronic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background.  }
+  \label{fig:moriondhad}
 \end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11b.pdf}
-	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11c.pdf}
-	\caption{Output distributions for the hadronic background-rejection BDT (left) and the leptonic background-rejection BDT (right) for a variety of different $\alpha$ parameters. We note that the BDT response appears largely independent of $\alpha$.}
-	\label{fig:SBBDTout}
+\begin{figure}[htbp]
+  \centering
+        \subfloat[$ttH$ lep]{\includegraphics[width=0.3\textwidth]{figures/preselection_and_reconstruction/ttH_lep/m_score_wisc.png}}
+        \subfloat[$tHjb$ lep]{\includegraphics[width=0.3\textwidth]{figures/preselection_and_reconstruction/tHjb_lep/m_score_wisc.png}}
+        \subfloat[$tWH$ lep]{\includegraphics[width=0.3\textwidth]{figures/preselection_and_reconstruction/tWH_lep/m_score_wisc.png}}
+  \caption{SB BDT score for $ttH$, $tHjb$ and $tWH$ in the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background.  }
+  \label{fig:moriondlep}
 \end{figure}
+\fi
+
+\begin{figure}[htbp]
+  \centering
+        \subfloat[Hadronic $ttH+tHjb+tWH$]{\includegraphics[width=0.3\textwidth]{figures/categorization_xgb/had-vbls/m_score_wisc.png}}
+        \subfloat[Leptonic $ttH+tHjb+tWH$]{\includegraphics[width=0.3\textwidth]{figures/categorization_xgb/lep-vbls/m_score_wisc.png}}
+  \caption{SB BDT score for the sum of $ttH$, $tHjb$ and $tWH$, with relative weights according to the predicted cross sections. Shown in (a) for the hadronic channel and (b) for the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background.  }
+  \label{fig:moriondtotal}
+\end{figure}
+
 
 \subsection{CP-Sensitive Observables}
 
