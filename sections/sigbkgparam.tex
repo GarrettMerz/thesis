@@ -1,0 +1,47 @@
+The analyses discussed in this dissertation are perhaps slightly unique among ATLAS analyses, as, rather than performing a binned fit using scaled Monte Carlo templates to model the background, they utilize 
+
+\section{Signal Modelling} \label{sec:example_section} 
+
+In collider physics analyses, one of the most common forms of signal is a "resonance", a bump in a smooth energy spectrum indicating the presence of a particle with mass given by the center of the resonance bump and lifetime given by the width $\Gamma$ of the resonance bump \ref{cite:Peskin}. The "true underlying form" of resonances generally follow the Breit-Wigner distribution described in \ref{SlowNeutrons}; however, due to detector and beam effects, this form does not accurately describe observed data.
+
+Instead, for both analyses discussed in this dissertation, we use a "Double-Sided Crystal Ball" (DSCB) function \ref{cite:CB}\ref{cite:DSCB}. The function has six parameters, two that describe the shape of its Gaussian core $\mu_{CB}$, and $\sigma_{CB}$, and two that describe the shape of each of its exponential tails: $\alpha_{low}$ and $n_{low}$; $\alpha_{high}$ and $n_{high}$. The function is defined as:
+
+\[f_{DSCB}(m_{\gamma \gamma}) = \begin{cases} 
+      e^{\frac{-{\alpha_{low}^{2}}}{2} (\frac{R_{low}-\alpha_{low}-t}{R_{low}})^{n_{low}} & if t < -\alpha_{low} \\
+      e^{\frac{-t^{2}}{2}} & if -\alpha_{low} \leq t \leq \alpha_{high} \\
+      e^{\frac{-{\alpha_{high}^{2}}}{2} (\frac{R_{high}-\alpha_{high}+t}{R_{high}})^{n_{high}} & if t > \alpha_{high} \\
+   \end{cases}
+\]
+
+where $t = \frac{(m_{\gamma \gamma} - \mu_{CB})}{\sigma_{CB}}$ and $R = frac{n}{\alpha}$. 
+
+To parameterize the signal in each analysis category for both analyses discussed in this dissertation, we combine all Monte Carlo for the various Higgs production modes ($VBF$, $VH$, $ggH$, $ttH$, $tWH$, $tHjb$ and $bbH$) generated using a Higgs mass of 125 GeV. We then fit the resulting distribution with a DSCB function, then perform a rigid transformation of 0.09 GeV such that the mean of the fitted DSCB corresponds to the experimentally measured Higgs mass of 125.09 GeV \pm 0.21 GeV(stat) \pm 0.1 GeV(syst) \ref{cite:Higgsmass}.
+
+We note that the DSCB shape does not depend on $\alpha$, so we use the Standard-Model Higgs signal parameterization for all $\alpha$ variations occurring in the CP Analysis.
+
+Because the Double-Sided Crystal Ball function depends strongly on the photon resolution and energy scale, these systematics can be parameterized in the final fit as variations in the DSCB parameters \ref{cite:Rachel5}. Examples of DSCB shapes in two categories of the CP Analysis are shown in figure XXX.
+
+\begin{figure}
+\end{figure}
+
+\section{Background Modelling} \label{sec:background_modelling} 
+
+
+
+
+
+
+
+\subsubsection{Background Templates} \label{sec:bkgtemplates} 
+
+
+
+This is a subsubsection. It will not be included in the table of contents. 
+
+\subsubsection{Spurious Signal} \label{sec:spurious signal}
+
+This is a subsubsection. It will not be included in the table of contents.
+
+\subsubsection{GPR} \label{sec:gpr}
+
+This is a subsubsection. It will not be included in the table of contents.
