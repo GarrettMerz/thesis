@@ -4,7 +4,15 @@ In order to properly measure the dependence of the top Yukawa coupling on the CP
 
 First, we define two sets of regions. The "hadronic" region targets events containing fully-hadronic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as two additional jets with $p_{T} > 25$ GeV and exactly zero electrons or muons. Similarly, the "leptonic" region targets events containing semi-leptonic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as at least one isolated electron or muon.
 
-To perform the categorization in these regions, two multivariate Boosted Decision Trees (BDTs) are used, one to separate Higgs events from background and one to separate CP-odd Higgs events from CP-even Higgs events. Both BDTs are trained on low-level kinematic features using the XGBoost package \ref{cite:XGBoost}. We then define a series of cuts on these BDT scores, defining a total of 20 orthogonal regions, each with differing sensitivity both to the $ttH+tH$ signal and to the CP-odd $ttH+tH$ hypothesis.
+To perform the categorization in these regions, two multivariate Boosted Decision Trees (BDTs) are used, one to separate Higgs events from background and one to separate CP-odd Higgs events from CP-even Higgs events. Both BDTs are trained on low-level kinematic features using the XGBoost package \ref{cite:XGBoost}. We then define a series of cuts on these BDT scores, defining a total of 20 orthogonal regions, each with differing sensitivity both to the $ttH+tH$ signal and to the CP-odd $ttH+tH$ hypothesis. An illustration of the categorization strategy is shown in figure \ref{fig:cartoon}.
+
+\begin{figure}[htbp]
+  \centering
+        \subfloat[Hadronic categories]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/had/grid_had.pdf}}
+        \subfloat[Leptonic categories]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/lep/grid_lep.pdf}}
+  \caption{Diagram of the 2-dimensional categorization scheme in the hadronic (a) and leptonic (b) channels. The $x$-axis indicates the background-rejection BDT (SBBDT) score distribution, and the $y$-axis represents the CP-BDT score distribution. The shaded region indicates rejected events.}
+  \label{fig:cartoon}
+\end{figure}
 
 \subsection{SBBDT}
 
@@ -111,18 +119,86 @@ In order to train a BDT to discriminate between CP-even and CP-odd $ttH+tH$, we 
 
 From these plots, we observe that the strongest variable is the Higgs boson $p_{T}$ : CP-odd $ttH$ and $tH$ have a much more boosted Higgs than CP-even $ttH$ and $tH$, and are more central in $\eta$. Similarly, the angular separation $\Delta \eta$ between the top and anti-top is much larger in CP-odd $ttH$, while the top and anti-top are more back-to-back in azimuthal angle $\Delta \phi$ in CP-even $ttH$ than in CP-odd $ttH$. In $tHjb$ events, we note that the top $p_{T}$ and $\eta$ also have discriminatory power. The mass of the Higgs + leading top system also offers discriminatory power- for $ttH$ and $tWH$ events it increases with $\alpha$, while for $tHjb$ events it decreases with $\alpha$ .
 
-These variables are shown in Figures XXX through XXX.
+These variables are shown in Figures
 
-\begin{figure}
+
+\begin{figure}[!ht] 
+  \begin{center}
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/ttH/c_H_pt.pdf}
+      \includegraphics[width=0.35\textwidth]{figures/observables/ttH/c_H_eta.pdf}
+    }
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/ttH/c_delta_eta_tt.pdf}
+      \includegraphics[width=0.35\textwidth]{figures/observables/ttH/c_delta_phi_tt.pdf}
+    }
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/ttH/c_t_pt.pdf}
+      \includegraphics[width=0.35\textwidth]{figures/observables/ttH/c_t_eta.pdf}
+    }
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/ttH/c_tH_m.pdf}
+    }
+  \end{center}
+  \caption{Truth-level distributions in $t\bar{t}H$ Monte Carlo of the Higgs boson $p_{T}$ and $\eta$ (top), angular separation between top and anti-top quarks (second row), top quark $p_{T}$ and $\eta$ (third row) and invariant mass of the top-Higgs system (bottom) for different values of the CP mixing angle $\alpha$.}
+  \label{fig:ttH_truth}
 \end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[Signed $\Delta\phi(t,\bar{t})$]{\includegraphics[width=0.32\textwidth]{figures/observables/ttH/c_delta_phi_tt_signed.png}}\\
+	\subfloat[Signed $\Delta\phi(t,W)$]{\includegraphics[width=0.32\textwidth]{figures/observables/ttH/c_delta_phi_tW_signed.png}} 
+	\subfloat[Signed $\Delta\phi(t,W)$]{\includegraphics[width=0.32\textwidth]{figures/observables/ttH/c_delta_phi_tj_signed.png}} 
+  \caption{The parton-level signed $\Delta\phi$ between (a) the two top quarks in $ttH$, (b) a top quark and the daughter W of the other top quark, and (c) a top quark and the highest $p_{T}$ light jet from the hadronic decay of the other top's daughter W.}
+  \label{fig:ttH_truth2}
+\end{figure}
+\clearpage
+
+
+\begin{figure}[!ht] 
+  \begin{center}
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/tWH/c_H_pt.pdf}
+      \includegraphics[width=0.35\textwidth]{figures/observables/tWH/c_H_eta.pdf}
+    }
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/tWH/c_t_pt.pdf}
+      \includegraphics[width=0.35\textwidth]{figures/observables/tWH/c_t_eta.pdf}
+    }
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/tWH/c_tH_m.pdf}
+    }
+  \end{center}
+  \caption{Truth-level distributions in $tWH$ Monte Carlo of the Higgs boson $p_{T}$ and $\eta$ (top), top quark $p_{T}$ and $\eta$ (middle) and invariant mass of the top-Higgs system (bottom) for different values of the CP mixing angle $\alpha$.}
+  \label{fig:tWH_truth}
+\end{figure}
+\clearpage
+
+
+\begin{figure}[!ht] 
+  \begin{center}
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/tHjb/c_H_pt.pdf}
+      \includegraphics[width=0.35\textwidth]{figures/observables/tHjb/c_H_eta.pdf}
+    }
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/tHjb/c_t_pt.pdf}
+      \includegraphics[width=0.35\textwidth]{figures/observables/tHjb/c_t_eta.pdf}
+    }
+    \mbox{ 
+      \includegraphics[width=0.35\textwidth]{figures/observables/tHjb/c_tH_m.pdf}
+    }
+  \end{center}
+  \caption{Truth-level distributions in $tHjb$ Monte Carlo of the Higgs boson $p_{T}$ and $\eta$ (top), angular separation between top and anti-top quarks (second row), top quark $p_{T}$ and $\eta$ (third row) and invariant mass of the top-Higgs system (bottom) for different values of the CP mixing angle $\alpha$.}
+  \label{fig:tHjb_truth}
+\end{figure}
+\clearpage
 
 \subsection{CPBDT}
 
 Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \ref{cite:TMVA} and is discussed in Appendix \ref{sec:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables.
 
 The signal samples are the CP-odd $ttH+tWH+tHjb$, added according to their predicted cross-sections, while the background samples are the CP-even $ttH+tWH+tHjb$. 50\% of the signal and background samples are used for training, 25 \% are used for categorization, and 25\% are used for testing and significance evaluation.
-
-\subsubsection{Hadronic Region} \label{sec:CPBDThad} 
 
 For both the hadronic and leptonic CPBDTs, input variables chosen are:
 
@@ -141,9 +217,166 @@ The training variables used in the hadronic CP BDT training are:
 
 The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \cite{skopt}. The integral of the Receiver Operating Curve (ROC AUC) is used as the optimization metric, evaluated on the validation set for each training. The ROC-AUC measures true-positives versus true-negatives, parameterized as a function of classifer threshold cuts: a completely random classifier has a ROC-AUC of 0.5, while a perfect classifier has a ROC-AUC of 1.0 \ref{cite:ROC}. The ROC-AUC for the hadronic CPBDT is 0.7839, while the ROC-AUC for the leptonic BDT is 76.69.
 
-Plots of the CPBDT input variables for the leptonic BDT are shown in figures XXX - XXX, while plots of the CPBDT input variables are shown in figures XXX - XXX.
+Plots of the CPBDT input variables for the leptonic BDT are shown in figures \ref{cite:lepvbls1} -  \ref{cite:lepvbls7}, while plots of the hadronic CPBDT input variables are shown in figures \ref{cite:hadvbls1} -  \ref{cite:hadvbls7}.
 
-Plots of the CPBDT output score for both the hadronic and leptonic CPBDT are shown in figures XXX and XXX, while two-dimensional plots of CPBDT score versus SBBDT score for data in both the hadronic and leptonic regions are shown in figure XXX.
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[Higgs candidate $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/pt_H.png}}
+	\subfloat[Higgs candidate $\eta$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/eta_H.png}} 
+  \caption{Leptonic BDT training variables related to the photons. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:lepvbls1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[Top 1 $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/t1_pt.png}}
+	\subfloat[Top 1 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/t1_eta.png}} \\
+	\subfloat[Top 1 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/t1_phi0.png}} 
+	\subfloat[Top 1 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/t1_score.png}} 
+  \caption{Leptonic BDT training variables related to the first reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:lepvbls2}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[Hybrid top 2 $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/hy_pt.png}}
+	\subfloat[Hybrid top 2 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/hy_eta.png}} \\
+	\subfloat[Hybrid top 2 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/hy_phi0.png}} 
+	\subfloat[Hybrid top 2 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/t2_score.png}} 
+  \caption{Leptonic BDT training variables related to the second reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in $p_{T}$, $\eta$, and $\phi$ represent events where no second (''hybrid'') top is reconstructed . The underflow bin in the Reco BDT score represents events with fewer than 6 jets. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:lepvbls3}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$\Delta\eta_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/delta_eta_t1hy.png}}
+	\subfloat[$\Delta\phi_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/delta_phi_t1hy.png}} 
+  \caption{Leptonic BDT training variables related to angles between the top quarks in the event. The underflow bins represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:lepvbls4}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$m_{t1H}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/m_t1H.png}}
+	\subfloat[$m_{t1hy}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/m_t1hy.png}}
+  \caption{Multi-object invariant masses used as training variables in the leptonic BDT. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:lepvbls5}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$n_\text{jets}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/m_njet.png}}
+	\subfloat[$n_\text{b-jets}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/m_nbjet_fixed80.png}} \\
+	\subfloat[$H_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/m_HT.png}}
+	\subfloat[Missing $E_{T}$ significance]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/m_met_sig.png}}
+  \caption{Leptonic BDT training variables jet multiplicity, b-jet multiplicity, $H_{T}$, and missing $E_{T}$ significance.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:lepvbls6}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$\Delta R_{min}^{\gamma j}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/delta_Rmin_yj.png}}
+  	\subfloat[$\Delta R_{min}^{\gamma j2}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/lep-vbls/delta_Rmin_yj2.png}}
+  \caption{Leptonic BDT training variables $\Delta R_{min}^{\gamma j}$ and $\Delta R_{min}^{\gamma j2}$.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:lepvbls7}
+\end{figure}
+
+\clearpage
+
+The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \cite{skopt}. The area under the ROC curve (ROC AUC) is evaluated on the validation set for each training, and the training that maximizes the ROC AUC is selected as optimal. The values of the optimal leptonic training are shown in Table \ref{tab:lephyp}. Details of each parameter can be found in the XGBoost documentation \cite{xgboost}. Note that the large value of the regularization parameter \texttt{alpha} (compared to default \texttt{alpha}=1) is responsible for the asymmetry between signal and background (red and black) shown in Figures \ref{fig:cplep2} and \ref{fig:cplep3}.
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[Higgs candidate $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/pt_H.png}}
+	\subfloat[Higgs candidate $\eta$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/eta_H.png}} 
+  \caption{Hadronic BDT training variables related to the photons.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:hadvbls1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[Top 1 $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/t1_pt.png}}
+	\subfloat[Top 1 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/t1_eta.png}} \\
+	\subfloat[Top 1 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/t1_phi0.png}} 
+	\subfloat[Top 1 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/t1_score.png}} 
+  \caption{Hadronic BDT training variables related to the first reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:hadvbls2}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[Hybrid top 2 $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/hy_pt.png}}
+	\subfloat[Hybrid top 2 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/hy_eta.png}} \\
+	\subfloat[Hybrid top 2 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/hy_phi0.png}} 
+	\subfloat[Hybrid top 2 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/t2_score.png}} 
+  \caption{Hadronic BDT training variables related to the second reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in $p_{T}$, $\eta$, and $\phi$ represent events where no second (''hybrid'') top is reconstructed. The underflow bin in the Reco BDT score represents events with fewer than 6 jets.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:hadvbls3}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$\Delta\eta_{t1hy}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/delta_eta_t1hy.png}}
+	\subfloat[$\Delta\phi_{t1hy}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/delta_phi_t1hy.png}} 
+  \caption{Hadronic BDT training variables related to angles between the top quarks in the event. The underflow bins represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:hadvbls4}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$m_{t1H}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/m_t1H.png}}
+	\subfloat[$m_{t1hy}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/m_t1hy.png}}
+  \caption{Multi-object invariant masses used as training variables in the hadronic BDT. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:hadvbls5}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$n_\text{jets}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/m_njet.png}}
+	\subfloat[$n_\text{b-jets}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/m_nbjet_fixed80.png}} \\
+	\subfloat[$H_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/m_HT.png}}
+	\subfloat[Missing $E_{T}$ significance]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/m_met_sig.png}}
+  \caption{Hadronic BDT training variables jet multiplicity, b-jet multiplicity, $H_{T}$, and missing $E_{T}$ significance.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:hadvbls6}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat[$\Delta R_{min}^{\gamma j}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/delta_Rmin_yj.png}}
+  	\subfloat[$\Delta R_{min}^{\gamma j2}$]{\includegraphics[width=0.32\textwidth]{figures/categorization_xgb/had-vbls/delta_Rmin_yj2.png}}
+  \caption{Hadronic BDT training variables $\Delta R_{min}^{\gamma j}$ and $\Delta R_{min}^{\gamma j2}$.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \label{fig:hadvbls7}
+\end{figure}
+
+Plots of the CPBDT output score for both the hadronic and leptonic CPBDT are shown in figures \ref{fig:cphad} and \ref{fig:cplep}, while two-dimensional plots of CPBDT score versus SBBDT score for data in both the hadronic and leptonic regions are shown in figure XXX.
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat{\includegraphics[width=0.45\textwidth]{figures/categorization_xgb/had-vbls/BDTG_cp.png}}
+  \caption{Hadronic channel CP BDT score for $ttH$+$tHjb$+$tWH$, with relative weights according to the predicted cross section for various CP mixing scenarios.  The open squares show data in the NTI sideband region. }
+  \label{fig:cphad}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  	\subfloat{\includegraphics[width=0.45\textwidth]{figures/categorization_xgb/lep-vbls/BDTG_cp.png}}
+  \caption{Leptonic channel CP BDT score for $ttH$+$tHjb$+$tWH$, with relative weights according to the predicted cross section for various CP mixing scenarios.  The open squares show data in the NTI sideband region. }
+  \label{fig:cplep}
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering
+  	\includegraphics[width=0.6\textwidth]{figures/categorization_xgb/BDTdist_had_zero.png}
+  \caption{Distribution of events from TI sidebands, CP even signal, and CP odd signal in the 2D background rejection BDT vs. CP BDT plane in the hadronic category are shown in full color, black, and red contours, respectively, along with 1D projections onto each BDT score. Inner (outer) contours contain 25\% (50\%) of signal events.}
+  \label{fig:2dbdthad}
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering
+  	\includegraphics[width=0.6\textwidth]{figures/categorization_xgb/BDTdist_lep_zero.png}
+  \caption{Distribution of events from TI sidebands, CP even signal, and CP odd signal in the 2D background rejection BDT vs. CP BDT plane  in the leptonic category are shown in full color, black, and red contours, respectively, along with 1D projections onto each BDT score. Inner (outer) contours contain 25\% (50\%) of signal events.}
+  \label{fig:2dbdtlep}
+\end{figure}
+
 
 \subsection{Poisson Number-Counting Significance}
 In order to determine the optimal categorization based on BDT score, two Poisson number-counting significance metrics are used.
@@ -198,12 +431,56 @@ In order to ensure that there is sufficient data to perform a likelihood fit, we
 
 \subsection{2D Categorization}
 
-To perform the categorization, we perform a brute-force scan across many different sets of category boundaries, calculating both $Z_{ttH+tH}$ and $Z_{CP}(90)$ on the validation set. Because the same categorization scheme does not optimize both metrics, a compromise scenario is constructed, for which $Z_{ttH+tH}$ is maximized while $Z_{CP}(90)$ is required to be no more than $0.15\sigma$ less than its maximal determined value. The brute-force scan, and this effect, is shown in figure XXX. The categories selected are given in table XXX. The expected yield and purity in each category is given in figure XXX.
+To perform the categorization, we perform a brute-force scan across many different sets of category boundaries, calculating both $Z_{ttH+tH}$ and $Z_{CP}(90)$ on the validation set. Because the same categorization scheme does not optimize both metrics, a compromise scenario is constructed, for which $Z_{ttH+tH}$ is maximized while $Z_{CP}(90)$ is required to be no more than $0.15\sigma$ less than its maximal determined value. The brute-force scan, and this effect, is shown in figure \ref{fig:optimal}. The categories selected are given in table \ref{tab:boundaries}. The expected yield and purity in each category is given in figure .
 
-\begin{figure}
+\begin{figure}[htbp]
+ \centering
+        \subfloat[Hadronic]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/had/Zcomp_had.png}}
+        \subfloat[Leptonic]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/lep/Zcomp_lep.png}}
+  \caption{$Z_{CP}$ vs. $Z_{ttH}$ for all sets of boundaries considered.}
+  \label{fig:optimal}
 \end{figure}
 
-\begin{figure}
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lll}
+Category & Bkg. Rej. BDT score & CP BDT score \\ \hline
+1 & $\left[0 - 0.005\right]$ & $\left[0 - 0.90\right]$ \\
+2 & $\left[0 - 0.005\right]$ & $\left[0.90 - 0.97\right]$ \\
+3 & $\left[0 - 0.005\right]$ & $\left[0.97 - 1 \right]$ \\
+4 & $\left[0.005 - 0.009\right]$ & $\left[0 - 0.88 \right]$ \\
+5 & $\left[0.005 - 0.009\right]$ & $\left[0.88 - 0.96\right]$ \\
+6 & $\left[0.005 - 0.009\right]$ & $\left[0.96 - 1\right]$ \\
+7 & $\left[0.009 - 0.019\right]$ & $\left[0 - 0.84 \right]$ \\
+8 & $\left[0.009 - 0.019\right]$ & $\left[0.84 - 0.96\right]$ \\
+9 & $\left[0.009 - 0.019\right]$ & $\left[0.96 - 1\right]$ \\
+10 & $\left[0.019 - 0.091\right]$ & $\left[0 - 0.61 \right]$ \\
+11 & $\left[0.019 - 0.091 \right]$ & $\left[0.61 - 0.86\right]$ \\
+12 & $\left[0.019 - 0.091 \right]$ & $\left[0.86 - 1\right]$ \\ \hline
+13 & $\left[0 - 0.012\right]$ & $\left[0 - 0.91 \right]$ \\
+14 & $\left[0 - 0.012 \right]$ & $\left[0.91 - 1\right]$ \\
+15 & $\left[0.012 - 0.085\right]$ & $\left[0 - 0.82\right]$ \\
+16 & $\left[0.012 - 0.085\right]$ & $\left[0.82 - 0.93 \right]$ \\
+17 & $\left[0.012 - 0.085\right]$ & $\left[0.93 - 1\right]$ \\
+18 & $\left[0.085 - 0.748\right]$ & $\left[0 - 0.72\right]$ \\
+19 & $\left[0.085 - 0.748\right]$ & $\left[0.72 - 0.86\right]$ \\
+20 & $\left[0.085 - 0.748\right]$ & $\left[0.86 - 1 \right]$ \\  \hline
+\hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+\caption{Category boundaries that optimize the number-counting rejection of the CP odd scenario in the 12 hadronic and 8 leptonic categories.}
+\label{tab:boundaries}
+\end{table}
+
+\begin{figure}[htbp]
+ \centering
+        \subfloat[Event yield (CP even $ttH$)]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/cp_11p8_a0.png}}
+        \subfloat[Purity (CP event $ttH$)]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/cp_11p8_purity_a0.png}} \\
+        \subfloat[Event yield (CP odd $ttH$)]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/cp_11p8_a90.png}}
+        \subfloat[Purity (CP odd $ttH$)]{\includegraphics[width=0.42\textwidth]{figures/categorization_xgb/cp_11p8_purity_a90.png}}
+  \caption{(Left) Event yields in the CP categories at 139 fb$^{-1}$. Shown separately for $\alpha = 0^{\deg}$ and $\alpha = 90^{\deg}$. (Right) purity of the Higgs yield in each category for $\alpha = 0^{\deg}$ and $\alpha = 90^{\deg}$. Yields are calculated in the signal window $m_{\gamma\gamma}=125\pm2$ GeV.}
+  \label{fig:nominalb}
 \end{figure}
 
 The background-only statistical uncertainty in a given category is given by:
@@ -213,8 +490,73 @@ s = \frac{S}{Z_{ttH+tH}}
 \label{eq:statunc}
 \end{align}
 
+We also define:
+
+\begin{equation}
+n_{s}(\alpha) = n_{ttH}^{SM} + n_{tWH}^{SM} + n_{tHjb}^{SM} - n_{ttH}(\alpha) - n_{tWH}(\alpha) - n_{tHjb}(\alpha)
+\end{equation}
+
+as an indication of the "signal" (i.e., difference between Standard-Model and alternative-$\alpha$ yield) in each category. 
+
 \begin{figure}
 \end{figure}
 
-Using this, we can compare the effects of major systematics to ensure they do not need to be accounted for at the categorization stage. This is shown in table XXX- in all categories, it is clear that the statistical uncertainty dominates.
+Using this, we can compare the effects of major systematics to ensure they do not need to be accounted for at the categorization stage. We show the 100\% ggF yield uncertainty and the Parton Shower Uncertainty (calculated by subtracting the yield in each category using the Herwig Monte Carlo samples from the yield using the Pythia samples) in Table \ref{tab:systs}- in all categories, it is clear that the statistical uncertainty dominates. We confirm this by plotting the number-counting rejection for the CP-odd category, $Z_CP(90^{\deg})$, both with and without systematics in figure \ref{fig:ncrej_syst}. 
 
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lllllll}
+Category & $n_{s}(90^\circ)$ & $\delta$ & $n_{ggH}$ &PS (ttH)&PS (tWH)&PS (tHjb) \\ \hline 
+1&-2.226&1.462&0.247&-0.157&0.008&0.01 \\ 
+2&2.038&1.581&0.044&-0.049&-0.007&-0.005 \\ 
+3&1.111&1.136&0.002&0.098&0&0 \\ 
+4&-0.956&1.275&0.208&-0.039&-0.043&-0.038 \\ 
+5&0.57&1.534&0.054&-0.008&-0.02&-0.006 \\ 
+6&1.086&1.554&0.009&0.08&-0.005&-0.007 \\ 
+7&-1.393&1.597&0.448&-0.053&-0.02&-0.014 \\
+8&0.505&2.713&0.186&0.015&-0.01&-0.002 \\ 
+9&1.287&2.623&0.021&0.094&0.007&-0.001 \\ 
+10&-1.09&1.363&0.557&-0.003&0.019&-0.012 \\
+11&-2.365&3.858&1.25&-0.053&-0.038&0.026 \\
+12&2.33&7.86&0.6&0.007&-0.025&0.006 \\ \hline 
+13&-0.835&1.398&0.001&-0.149&-0.024&-0.006 \\
+14&2.542&1.64&0.001&0.156&-0.008&0.001 \\
+15&-1.218&1.168&0.004&-0.089&-0.024&-0.011 \\
+16&0.473&1.643&0&-0.015&-0.012&-0.014 \\
+17&1.32&1.697&0.001&-0.036&0.001&0 \\
+18&-0.899&1.082&0.008&-0.016&0.032&-0.027 \\
+19&-0.284&1.627&0.008&-0.024&0.022&-0.01 \\ 
+20&0.309&1.973&0.003&-0.014&-0.013&0.013 \\ \hline 
+\hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+\caption{Comparison of statistical uncertainty with key systematics and CP-Odd vs. SM separation in each category. PS indicates parton showering uncertainty, calculated by subtracting the yields from the Herwig and the Pythia Monte Carlo samples.}
+\label{tab:systs}
+\end{table}
+
+\begin{figure}
+  \centering
+        \includegraphics[width=0.62\textwidth]{figures/categorization_xgb/cp_11_syst.png}
+  \caption{The impact on the number counting limit as systematic uncertainties are progressively added. There is a small change of $0.3^\circ$ on the number-counting limit. }
+  \label{fig:ncrej_syst}
+\end{figure}
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ll}
+Number-counting $ttH$ significance (if even)& $5.00\sigma$  \\
+Number-counting $ttH$ significance (if odd)& $2.75\sigma$  \\
+Number-counting $tHjb + tWH$ significance (if even)& 0.321$\sigma$  \\
+Number-counting $tHjb+tWH$ significance (if odd)& $2.23\sigma$  \\ \hline
+Number-counting CP-odd rejection & $3.02\sigma$ \\
+Number-counting $\alpha=45^\circ$ rejection & $1.25\sigma$ \\ \hline
+\hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+\caption{Figures of merit for the twenty-category CP BDT categorization, calculated from event yields in the signal $m_{\gamma\gamma}$ region $125\pm2$ GeV.}
+\label{tab:sigs}
+\end{table}
