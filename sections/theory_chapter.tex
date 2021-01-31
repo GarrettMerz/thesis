@@ -219,7 +219,7 @@ As we have seen, the Standard Model Higgs is massive, and couples directly to al
 
 With the discovery of the Higgs, it can be argued that we have now entered an era of precision-measurement in collider physics. By closely studying interactions that are very sensitive to the injection of new physics, we can potentially detect deviations from the Standard Model: in many cases, we may see hints of the existence of new particles through changes to quantities of interest well before we are actually able to produce these particles in colliders directly. Due to the Higgs coupling to all massive particles, Higgs interactions are especially sensitive to new physics, and thus can serve as a useful bellwether for physics beyond the standard model.
 
-The Large Hadron Collider is a proton-proton collider; as such, physics processes that occur in it are almost always initiated by quarks or gluons. The predominant production modes are, in order of frequency, gluon-gluon fusion ($ggF or ggH$), vector boson fusion ($VBF$), vector-boson associated ($VH$) and top-associated ($ttH$). The top-associated Higgs production mode is of particular interest to many experimentalists due to its direct dependence on the Higgs coupling to a fermion- by closely measuring the frequency and properties of the $ttH$ mode, we can better understand the nature of this variety of couplings. Rarer production modes, such as single-top associated Higgs production ($tH$), can shed still more light on the nature of the top-quark/Higgs coupling (called the top quark Yukawa coupling), but are much more difficult to observe. The $tH$ process occurs in two final-state modes, $tWH$ and $tHj$; however, there is some nuance in their definitions which we will come to shortly.
+The Large Hadron Collider is a proton-proton collider; as such, physics processes that occur in it are almost always initiated by quarks or gluons. The predominant production modes are, in order of frequency, gluon-gluon fusion ($ggF$), vector boson fusion ($VBF$), vector-boson associated ($VH$) and top-associated ($ttH$). The top-associated Higgs production mode is of particular interest to many experimentalists due to its direct dependence on the Higgs coupling to a fermion- by closely measuring the frequency and properties of the $ttH$ mode, we can better understand the nature of this variety of couplings. Rarer production modes, such as single-top associated Higgs production ($tH$), can shed still more light on the nature of the top-quark/Higgs coupling (called the top quark Yukawa coupling), but are much more difficult to observe. The $tH$ process occurs in two final-state modes, $tWH$ and $tHj$; however, there is some nuance in their definitions which we will come to shortly.
 
 \begin{figure}[htp]
   \centering
@@ -227,7 +227,7 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
          \centering
          \includegraphics[width=\textwidth]{figures/theory_chapter/ggF.png}
          \caption{ggF}
-         \label{fig:ggH}
+         \label{fig:ggF}
      \end{subfigure}
      \hfill
        \begin{subfigure}[b]{0.3\textwidth}
@@ -453,7 +453,7 @@ In addition to considering which corrections to apply, we must also consider the
 
 This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa g_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa g_{t} \bar{t} (i \gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$. In this dissertation, we refer to this analysis as the "ttHCP Analysis".
 
-The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the ggH, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
+The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the ggF, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
 
 When measuring Higgs couplings in analyses suh as these, it is often most useful to note the ratio of the measured coupling to the Standard Model prediction, rather than the measured coupling itself. For some Higgs coupling to a boson or fermion $i$, we can write
 
@@ -518,7 +518,11 @@ The Couplings Analysis is performed within the Simplified Template Cross Section
 \end{figure}
 
 
-In addition to their nominal production and decay modes, the $ggF$ STXS1.2 truth bins include hadronically-decaying $gg \rightarrow ZH$ events, while the $VBF$ STXS definition includes hadronically-decaying $VH$. Furthermore, truth bins of further production modes like $b\bar{b}H$ and $tH$ are not split into dedicated kinematic regions because of their low production cross sections; in particular, in the Couplings analysis, the $b\bar{b}H$ categories are subsumed into the $ggF$ categorization scheme, while the tH categories are subsumed into the tH categorization scheme. Additionally, it is important to note that the leptonic $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include Z-boson decays both to two charged leptons and to two neutrinos (the latter of which will have a high MET signature). 
+In addition to their nominal production and decay modes, the $ggH$ STXS1.2 truth bins include both $ggF$ and hadronically-decaying $gg \rightarrow ZH$ events, while the $VBF$ STXS definition includes hadronically-decaying $qq \rightarrow VH$. Additionally, it is important to note that the leptonic $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include Z-boson decays both to two charged leptons and to two neutrinos (the latter of which will have a high MET signature). 
+
+In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200 GeV$ bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses. 
+
+Furthermore, truth bins of further production modes like $b\bar{b}H$ and $tH$ are not split into dedicated kinematic regions because of their low production cross sections; in particular, in the Couplings analysis, the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, while the tH categories are subsumed into the tH categorization scheme. 
 
 For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algoritm using radius R=0.4, are required to have $p_{T} > 30 GeV$ (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
 
@@ -697,6 +701,6 @@ Similarly, we can parameterize $\kappa_{g}$ and $\kappa_{\gamma}$ according to t
 \kappa_{\gamma}^{2} = 0.08\kappa_{t}^{2}cos(\alpha)^{2} + 0.18\kappa_{t}^{2}sin(\alpha)^{2} - 0.72\kappa_{t}cos(\alpha) + 1.64
 \end{equation}
 
-Cross-sections as a function of $\alpha$ as implemented in Monte Carlo simulation are given in \ref{tab:MCsamples_XS}. We note that, as $\alpha$ increases from $\alpha = 0^{\deg}$ (CP-even) to $\alpha = 90^{\deg}$ (CP-odd), the $ttH$ cross-section decreases while the $tH$ and $ggH$ cross-sections increase. Similarly, the $H \rightarrow \gamma \gamma$ branching ratio increases as $\alpha$ increases.
+Cross-sections as a function of $\alpha$ as implemented in Monte Carlo simulation are given in \ref{tab:MCsamples_XS}. We note that, as $\alpha$ increases from $\alpha = 0^{\deg}$ (CP-even) to $\alpha = 90^{\deg}$ (CP-odd), the $ttH$ cross-section decreases while the $tH$ and $ggF$ cross-sections increase. Similarly, the $H \rightarrow \gamma \gamma$ branching ratio increases as $\alpha$ increases.
 
 By developing targeted analysis categories and parameterizing the yield in each category as a function of $\alpha$, we can thus perform a likelihood fit to the data and set limits on the true value of $\alpha$. 

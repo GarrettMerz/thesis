@@ -1,10 +1,12 @@
-The analyses discussed in this dissertation are perhaps slightly unique among ATLAS analyses, as, rather than performing a binned fit using scaled Monte Carlo templates to model the background, they utilize 
+In the analyses discussed in this dissertation, smooth functional forms are used to model both the signal and background. This allows an unbinned likelihood fit to be performed, the preferable statistical analysis method in the lower-statistics $ttH$ regime (an alternative to the binned likelihood fit, also common in ATLAS analyses, which offers more statistics per bin, but a general loss of precision). 
+
+Additionally, parameterizing signal and background in this way allows for the relatively straightforward calculation of several key systematics, including "spurious signal" background mismodelling, photon energy scale, and photon energy resolution.
 
 \section{Signal Modelling} \label{sec:example_section} 
 
 In collider physics analyses, one of the most common forms of signal is a "resonance", a bump in a smooth energy spectrum indicating the presence of a particle with mass given by the center of the resonance bump and lifetime given by the width $\Gamma$ of the resonance bump \ref{cite:Peskin}. The "true underlying form" of resonances generally follow the Breit-Wigner distribution described in \ref{SlowNeutrons}; however, due to detector and beam effects, this form does not accurately describe observed data.
 
-Instead, for both analyses discussed in this dissertation, we use a "Double-Sided Crystal Ball" (DSCB) function \ref{cite:CB}\ref{cite:DSCB}. The function has six parameters, two that describe the shape of its Gaussian core $\mu_{CB}$, and $\sigma_{CB}$, and two that describe the shape of each of its exponential tails: $\alpha_{low}$ and $n_{low}$; $\alpha_{high}$ and $n_{high}$. The function is defined as:
+Instead, for both analyses discussed in this dissertation, a "Double-Sided Crystal Ball" (DSCB) function \ref{cite:CB}\ref{cite:DSCB} is used. The function has six parameters, two that describe the shape of its Gaussian core $\mu_{CB}$, and $\sigma_{CB}$, and two that describe the shape of each of its exponential tails: $\alpha_{low}$ and $n_{low}$; $\alpha_{high}$ and $n_{high}$. The function is defined as:
 
 \[f_{DSCB}(m_{\gamma \gamma}) = \begin{cases} 
       e^{\frac{-{\alpha_{low}^{2}}}{2} (\frac{R_{low}-\alpha_{low}-t}{R_{low}})^{n_{low}} & if t < -\alpha_{low} \\
@@ -15,33 +17,100 @@ Instead, for both analyses discussed in this dissertation, we use a "Double-Side
 
 where $t = \frac{(m_{\gamma \gamma} - \mu_{CB})}{\sigma_{CB}}$ and $R = frac{n}{\alpha}$. 
 
-To parameterize the signal in each analysis category for both analyses discussed in this dissertation, we combine all Monte Carlo for the various Higgs production modes ($VBF$, $VH$, $ggH$, $ttH$, $tWH$, $tHjb$ and $bbH$) generated using a Higgs mass of 125 GeV. We then fit the resulting distribution with a DSCB function, then perform a rigid transformation of 0.09 GeV such that the mean of the fitted DSCB corresponds to the experimentally measured Higgs mass of 125.09 GeV \pm 0.21 GeV(stat) \pm 0.1 GeV(syst) \ref{cite:Higgsmass}.
-
-We note that the DSCB shape does not depend on $\alpha$, so we use the Standard-Model Higgs signal parameterization for all $\alpha$ variations occurring in the CP Analysis.
+To parameterize the signal in each analysis category for both analyses discussed in this dissertation, all Monte Carlo for the various Higgs production modes ($VBF$, $VH$, $ggF$, $ttH$, $tWH$, $tHjb$ and $bbH$) generated using a Higgs mass of 125 GeV are combined. The resulting distribution is then fit with a DSCB function, and a rigid transformation of 0.09 GeV is performed such that the mean of the fitted DSCB corresponds to the experimentally measured Higgs mass of 125.09 GeV \pm 0.21 GeV(stat) \pm 0.1 GeV(syst) \ref{cite:Higgsmass}.
 
 Because the Double-Sided Crystal Ball function depends strongly on the photon resolution and energy scale, these systematics can be parameterized in the final fit as variations in the DSCB parameters \ref{cite:Rachel5}. Examples of DSCB shapes in two categories of the CP Analysis are shown in figure XXX.
 
 \begin{figure}
 \end{figure}
 
-\section{Background Modelling} \label{sec:background_modelling} 
+\section{Background Modelling and Spurious Signal} \label{sec:background_modelling} 
+
+Like the signal, the background is also parameterized as a smoothly-falling functional form in each category. This is done in a data-driven manner: first, a functional form is chosen using simulation-derived (or NTI-derived) templates to minimize the "spurious signal" systematic uncertainty. The background normalization and parameters of this functional form are then allowed to float in the final fit to the data, i.e., they are not fixed as a result of the spurious signal test. 
+
+Background templates for the spurious signal test are constructed from Monte Carlo or NTI data to resemble the expected TI data as closely as possible in each category. The construction of the templates is detailed further in section \label{sec:bkgtemplates}.
+
+The spurious signal test is a signal-plus-background functional fit to a background-only distribution. This provides a relatively simple way to measure background mismodelling- the background template contains no true Higgs signal, so the functional form that best models the background is the one for which the extracted "spurious" signal is closest to zero. This is illustrated in figure \ref{fig:SScartoon}. Spurious signal can be positive or negative- if positive, the functional form chosen "undershoots" the true background, while if negative, the functional form chosen "overshoots" the true background.
+
+The spurious signal fit is performed for signal masses from 121 GeV to 129 GeV at intervals of 1 GeV; the number of spurious signal events $N_{sp}$ is defined as the maximum of the absolute value of the number of signal events extracted from this range. The functional form chosen is one of the following functional forms:
+
+\begin{itemize}
+\item Exponential Function: $f(\myy) = e^{c\cdot \myy}$
+\item Exponential Function of $2^{nd}$ Order Polynomial: $f(\myy) = e^{c_1\cdot m^2_{\gamma\gamma}+c_2\cdot \myy}$
+\item Bernstein polynomial of order $N$: $B_{N}(\myy) = \sum_{i=0}^N c_i\cdot b_{i,N}$ with $b_{i,N} = \begin{pmatrix}N\\i\end{pmatrix}\myy^i (1-\myy)^{N-i}$
+\item First-Order Power Law Function: $f(\myy) = \myy^c$
+\end{itemize}
+
+Functional forms chosen are then required to satisfy one of the two following criteria:
+
+\begin{itemize}
+\item $N_{s} < 0.1 \times N_{s,exp}$, where $N_{s,exp}$ is the expected true signal in a given category
+\item $N_{s} < 0.2 \times \sigma_{s,exp}$, where $\sigma_{s,exp}$ is the statistical uncertainty on the expected true signal in a given category
+\end{itemize}
+
+If more than one function passes these criteria, the function with the lower number of degrees of freedom is selected. If there are multiple functions that pass the critera and have the same number of degrees of freedom, the function with the lowest resulting spurious signal is selected.
+
+In low statistics categories, it is not uncommon that no functional form will satisfy the above criteria. In this case, the "relaxed" spurious signal fit is performed, which replaces $N_{s}$ with a new variable $\zeta_{s}$ that is designed to accomodate up to $2\sigma$ fluctuations in the spurious signal:
+
+\[\zeta_{s} = \begin{cases} 
+      N_{s} + 2 \delta_{MC} if  N_{s} + 2 \delta_{MC} < 0\\
+      N_{s} - 2 \delta_{MC} if  N_{s} - 2 \delta_{MC} > 0\\
+      0 otherwise \\
+   \end{cases}
+\]
+
+Though $\zeta_{s}$ is used to define the spurious signal criteria, $N_{s}$ is still used for the final spurious signal uncertainty. 
+
+\begin{figure}
+\end{figure} 
 
 
+An additional requirement that the $\chi^{2}$ probability of the signal-plus-background fit in the spurious signal test is greater than 1\% is applied in the Couplings analysis; while this is not a requirement in the CP analysis, all sprurious signal fits nonetheless satisfy this criterion as well.
 
+In the Couplings analysis, several of the very low-stat categories nevertheless produce unphysical fits using these criteria. Thus, in categories of this analysis containing fewer than 100 events in the data sidebands, a Wald test is performed \ref{cite:Waldtest}: the functional forms are restricted to Exp, ExpPoly2, and ExpPoly3, and their respective maximum-likelihoods $L_{1}$, $L_{2}$, and $L_{3}$ are computed from a fit to the TI data sidebands. The quantities $q_{ij} = -2 ln(\frac{L_{i}}{L_{j}})$ are then calculated and converted into p-values, assuming that  $q_{ij}$ follows a $\chi^{2}$ distribution with one degree of freedom. If the p-value calculated is < 0.05, the function with the larger number of degrees of freedom is chosen. 
 
+An illustration of the Wald test in one of the Couplings categories is shown in figure XXX.
 
+\begin{figure}
+\end{figure} 
 
+These failed fits show the limitations of current spurious signal criteria: in low-statistics categories, the Monte Carlo templates often contain large statistical fluctuations that can be fit as spurious signal. However, because spurious signal is intended to measure the mismodelling due to the choice of functional form, the presence of such fluctuations can artifically inflate the spurious signal. If the functional forms chosen because of these fluctuations have too many degrees of freedom, this can cause disastrous effects when fitting to the true data sidebands, as statistical fluctuations in data will dominate. This is the motivation for introducing Gaussian Process Regression (GPR) smoothing, discussed in appendix \ref{sec:gpr}. At the time of this writing, this novel smoothing procedure is currently being implemented in the Coupling analysis; a discussion of the procedure and the improvements to the spurious signal that result are given in appendix \ref{sec:gpr}, while extensive validation of the smoothing procedure using toy tests is given in appendix \ref{sec:gpr_validation}.
 
 \subsubsection{Background Templates} \label{sec:bkgtemplates} 
 
+The background templates constructed for both analyses discussed in this dissertation are designed to approximate the continuum diphoton background. 
+
+In all categories of the CP analysis, either $tt\gamma\gamma$ Monte Carlo or NTI data is used to model the continuum background, scaled to the TI data sidebands. The statistical uncertainty of both template candidates is checked in each region by taking the integral and sum of errors; the template chosen is the one with the smallest statistical uncertainty. $tt\gamma\gamma$ is ultimately used to construct the template in all CP analysis categories but one. 
+
+Similarly, in the leptonic $VH$ categories of the Coupling analysis, a combination of $\gamma\gamma + V\gamma\gamma$ Monte Carlo, scaled to match the TI sidebands, is used. However, in the other $ggH$ and $VBF$ categories, a more sophisticated data-driven method is used due to the nontrivial presence of fake photons arising from misidentified jets. 
+
+First, the purity fraction, i.e. the fraction of true vs. fake diphoton events in data, is calculated in each category. This is done using a double two-dimensional ABCD method \ref{cite:ABCD}.
+
+For a given choice of photon (either leading or subleading) four regions are constructed in each category:
+
+\begin{itemize}
+\item Region A, in which the photon passes the Tight ID criterion and the Tight isolation criterion
+\item Region B, which the photon passes the Tight ID criterion and fails the Tight isolation criterion
+\item Region C, in which the photon fails the Tight ID criterion (but passes the LoosePrime3 ID criterion) and fail the Tight isolation criterion
+\item Region D, in which the photon fails the Tight ID criterion (but passes the LoosePrime3 ID criterion) and passes the Tight isolation criterion
+\end{itemize} 
+
+Assuming that the ID and isolation cuts are independent with $\epsilon_{ID}$ and $\epsilon_{iso}$, and that the photons in all regions but region A are definitively fakes, it is possible to define the number of fake photons in region A as:
+
+\begin{equation}
+N_{A} = \epsilon_{iso} N_{B} = \epsilon_{ID} N_{D} = \epsilon_{iso} \epsilon_{ID} N_{C}
+\end{equation} 
+
+Extending this to the diphoton pair, eight total regions can be defined in each category, allowing us to quantify the ($\gamma \gamma / \gamma j/jj$) fraction in each category. However, the assumption that the isolation and ID cuts are independent is not strictly valid, so it is not enough to perform a simple counting-experiment to determine the fraction of jets: various correlation terms must be considered, so a fit must be performed. The fit has sixteen equations with nineteen variables, and is performed following the process in \ref{cite:purity}.
+
+After the purity fractions are calculated in each category, the shapes of the $\gamma j$ and $jj$ distributions are derived using NTI data. The $\gamma \gamma$ Monte Carlo is then reweighted to match these shapes, and the $\gamma \gamma$, $\gamma j$, and $jj$ contributions are added according to their purities. As in other categories, the templates are scaled to the TI sidebands. 
+
+\section{Likelihood Fitting and Asimov Data} \label{sec:likelihoodfit} 
 
 
-This is a subsubsection. It will not be included in the table of contents. 
 
-\subsubsection{Spurious Signal} \label{sec:spurious signal}
 
-This is a subsubsection. It will not be included in the table of contents.
 
-\subsubsection{GPR} \label{sec:gpr}
 
-This is a subsubsection. It will not be included in the table of contents.
+
+
