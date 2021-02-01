@@ -2,9 +2,7 @@
 \label{sec:TMVABDTStudies}
 
 \subsection{Four-Vector BDT, ttH only}
-Prior to the generation of alternative CP tH samples, an alternative BDT was developed using the four-vectors of objects in the event in order to check its performance against the Nominal BDT developed using top reconstruction variables. Utilizing four-vectors provides another potential solution to the large underflow of the top reconstruction BDT, and can be seen as an alternative to the "hybrid top" method. The BDT is trained using ROOT's TMVA package \cite{TMVA} using the same aMCnlo+Pythia8 training samples as the nominal BDT, and utilizes the same train/test/significance subsampling scheme. It is reproduced in XGBoost for the significance comparison shown in \ref{tab:appsigs} - a replication of the Nominal BDT in TMVA performs near-identically, confirming that, for this analysis, the choice of MVA package appears to have no effect on BDT performance.
-
-We note that, while this work was performed with DAODs with an incorrect primary vertex reconstruction and is thus not usable for the final BDT, it nonetheless shaped the overall trajectory of the ttHCP analysis.
+Prior to the generation of alternative CP tH samples, an alternative BDT was developed using the four-vectors of objects in the event in order to check its performance against the Nominal BDT developed using top reconstruction variables. Utilizing four-vectors provides another potential solution to the large underflow of the top reconstruction BDT, and can be seen as an alternative to the "hybrid top" method. The BDT is trained using ROOT's TMVA package \cite{TMVA} using the same aMCnlo+Pythia8 training samples as the nominal BDT, and utilizes the same train/test/significance subsampling scheme. It is reproduced in XGBoost for the significance comparison - a replication of the Nominal BDT in TMVA performs near-identically, confirming that, for this analysis, the choice of MVA package appears to have no effect on BDT performance.
 
 \subsubsection{Hadronic Channel}
 

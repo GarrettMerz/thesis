@@ -13,38 +13,45 @@
 \BOOKMARK [1][-]{section.1.3}{The Higgs Mechanism and Electroweak Symmetry Breaking}{chapter.1}% 13
 \BOOKMARK [1][-]{section.1.4}{The Higgs Boson and Its Couplings}{chapter.1}% 14
 \BOOKMARK [2][-]{subsection.1.4.1}{The Kappa Framework, STXS, and EFTs}{section.1.4}% 15
-\BOOKMARK [0][-]{chapter.2}{The ATLAS Detector}{}% 16
-\BOOKMARK [1][-]{section.2.1}{The Large Hadron Collider}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.2}{The ATLAS Detector}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.1}{Inner Detector}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.2}{Solenoid Magnet}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.3}{Calorimeters}{section.2.2}% 21
-\BOOKMARK [3][-]{subsubsection.2.2.3.1}{ECAL}{subsection.2.2.3}% 22
-\BOOKMARK [3][-]{subsubsection.2.2.3.2}{HCAL}{subsection.2.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.2.4}{Toroid Magnets}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.5}{Muon Spectrometer}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.6}{Trigger}{section.2.2}% 26
-\BOOKMARK [0][-]{chapter.3}{Experimental Methods}{}% 27
-\BOOKMARK [1][-]{section.3.1}{Experimental Methods}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.1.1}{Monte Carlo}{section.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.1.2}{Reconstruction and Tagging}{section.3.1}% 30
-\BOOKMARK [2][-]{subsection.3.1.3}{Tracks}{section.3.1}% 31
-\BOOKMARK [2][-]{subsection.3.1.4}{Clusters}{section.3.1}% 32
-\BOOKMARK [3][-]{subsubsection.3.1.4.1}{Electrons and Photons}{subsection.3.1.4}% 33
-\BOOKMARK [3][-]{subsubsection.3.1.4.2}{Jets}{subsection.3.1.4}% 34
-\BOOKMARK [3][-]{subsubsection.3.1.4.3}{b-jets}{subsection.3.1.4}% 35
-\BOOKMARK [3][-]{subsubsection.3.1.4.4}{Muons}{subsection.3.1.4}% 36
-\BOOKMARK [3][-]{subsubsection.3.1.4.5}{Overlap Removal}{subsection.3.1.4}% 37
-\BOOKMARK [3][-]{subsubsection.3.1.4.6}{MET}{subsection.3.1.4}% 38
-\BOOKMARK [3][-]{subsubsection.3.1.4.7}{Tau Leptons}{subsection.3.1.4}% 39
-\BOOKMARK [3][-]{subsubsection.3.1.4.8}{Top reconstruction}{subsection.3.1.4}% 40
-\BOOKMARK [0][-]{chapter.4}{Data and Monte Carlo Samples}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Data, Monte Carlo, and HGam Pre-selection}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.1.1}{Data}{section.4.1}% 43
-\BOOKMARK [2][-]{subsection.4.1.2}{Higgs Preselection and Data CRs}{section.4.1}% 44
-\BOOKMARK [2][-]{subsection.4.1.3}{Nominal and Alternative Monte Carlo Samples}{section.4.1}% 45
-\BOOKMARK [2][-]{subsection.4.1.4}{ttHCP Monte Carlo Samples}{section.4.1}% 46
-\BOOKMARK [0][-]{section*.55}{Appendices}{}% 47
-\BOOKMARK [0][-]{Alternative Top Reconstruction with the KLFitter.0}{Alternative Top Reconstruction with the KLFitter}{}% 48
-\BOOKMARK [1][-]{section.A.1}{The KLFitter}{Alternative Top Reconstruction with the KLFitter.0}% 49
-\BOOKMARK [1][-]{section.A.2}{Comparison}{Alternative Top Reconstruction with the KLFitter.0}% 50
+\BOOKMARK [2][-]{subsection.1.4.2}{CP-Violation in the Top Yukawa Coupling}{section.1.4}% 16
+\BOOKMARK [0][-]{chapter.2}{The ATLAS Detector}{}% 17
+\BOOKMARK [1][-]{section.2.1}{The Large Hadron Collider}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.2}{The ATLAS Detector}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.1}{Inner Detector}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{Solenoid Magnet}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.3}{Calorimeters}{section.2.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{ECAL}{subsection.2.2.3}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{HCAL}{subsection.2.2.3}% 24
+\BOOKMARK [2][-]{subsection.2.2.4}{Toroid Magnets}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.5}{Muon Spectrometer}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.6}{Trigger}{section.2.2}% 27
+\BOOKMARK [0][-]{chapter.3}{Experimental Methods}{}% 28
+\BOOKMARK [1][-]{section.3.1}{Experimental Methods}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.1.1}{Monte Carlo}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.2}{Reconstruction and Tagging}{section.3.1}% 31
+\BOOKMARK [2][-]{subsection.3.1.3}{Tracks}{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.4}{Clusters}{section.3.1}% 33
+\BOOKMARK [3][-]{subsubsection.3.1.4.1}{Electrons and Photons}{subsection.3.1.4}% 34
+\BOOKMARK [3][-]{subsubsection.3.1.4.2}{Jets}{subsection.3.1.4}% 35
+\BOOKMARK [3][-]{subsubsection.3.1.4.3}{b-jets}{subsection.3.1.4}% 36
+\BOOKMARK [3][-]{subsubsection.3.1.4.4}{Muons}{subsection.3.1.4}% 37
+\BOOKMARK [3][-]{subsubsection.3.1.4.5}{Overlap Removal}{subsection.3.1.4}% 38
+\BOOKMARK [3][-]{subsubsection.3.1.4.6}{MET}{subsection.3.1.4}% 39
+\BOOKMARK [3][-]{subsubsection.3.1.4.7}{Tau Leptons}{subsection.3.1.4}% 40
+\BOOKMARK [3][-]{subsubsection.3.1.4.8}{Top reconstruction}{subsection.3.1.4}% 41
+\BOOKMARK [0][-]{chapter.4}{Data and Monte Carlo Samples}{}% 42
+\BOOKMARK [1][-]{section.4.1}{Data, Monte Carlo, and HGam Pre-selection}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.1.1}{Data}{section.4.1}% 44
+\BOOKMARK [2][-]{subsection.4.1.2}{Higgs Preselection and Data CRs}{section.4.1}% 45
+\BOOKMARK [2][-]{subsection.4.1.3}{Nominal and Alternative Monte Carlo Samples}{section.4.1}% 46
+\BOOKMARK [2][-]{subsection.4.1.4}{ttHCP Monte Carlo Samples}{section.4.1}% 47
+\BOOKMARK [0][-]{chapter.5}{Signal Parameterization, Background Parametrization, and Statistical Methods}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Signal Modelling}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.2}{Background Modelling and Spurious Signal}{chapter.5}% 50
+\BOOKMARK [2][-]{subsubsection.5.2.0.1}{Background Templates}{section.5.2}% 51
+\BOOKMARK [1][-]{section.5.3}{Likelihood Fitting and Asimov Data}{chapter.5}% 52
+\BOOKMARK [0][-]{chapter.6}{Study of the CP properties of the top-quark Yukawa interaction in tbartH and tH events wth H }{}% 53
+\BOOKMARK [1][-]{section.6.1}{Study of the CP properties of the top-quark Yukawa interaction in tbartH and tH events wth H : Categorization}{chapter.6}% 54
+\BOOKMARK [2][-]{subsection.6.1.1}{SBBDT}{section.6.1}% 55
+\BOOKMARK [3][-]{subsubsection.6.1.1.1}{Hadronic Region}{subsection.6.1.1}% 56
+\BOOKMARK [
