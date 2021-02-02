@@ -39,17 +39,65 @@ Theory systematic uncertainties are designed to account for the precision (or im
 
 QCD Renormalization Scale and Factorization Scale uncertainties are both calculated by varying the relevant QCD scale up or down by a factor of two in the Monte Carlo generator, while the PDF and strong coupling constant $\alpha_{s}$ uncertainties are calculated by varying the parameters according to the relevant LHAPDF \ref{cite:LHAPDF} or PDF4LHC \ref{cite:PDF4LHC} prescriptions.
 
-Inclusive parametrization of the QCD and PDF uncertainties on a given process can be used when the effects of category migration are expected to be negligible. The inclusive parameterization of the QCD and PDF uncertainties on non-top Standard Model Higgs processes ($VBF$, $WH$, $ZH$ and $bbH$) is taken from \ref{cite:YellowReport}. However, previous analyses (\ref{cite:} \ref{cite:} \ref{cite:}) have shown that  processes containing final-state b-jets are not well-modelled, so we apply a conservative 100\% uncertainty on the yield of $VBF$, $WH$, $ZH$ and $ggF$ in our analysis.
+Inclusive parametrization of the QCD and PDF uncertainties on a given process can be used when the effects of category migration are expected to be negligible. The inclusive parameterization of the QCD and PDF uncertainties on non-top Standard Model Higgs processes ($VBF$, $WH$, $ZH$ and $bbH$) is taken from \ref{cite:YellowReport}. However, previous analyses (\ref{cite:} \ref{cite:} \ref{cite:}) have shown that  processes containing final-state b-jets are poorly-modelled even after applying these yield uncertainties, so we apply a conservative 100\% uncertainty on the yield of $VBF$, $WH$, $ZH$ and $ggF$ in our analysis. This 100\% heavy-flavor uncertainty is not applied to $bbH$ due to its negligible contribution to the overall signal yield in the targeted analysis categories.
 
+Similarly, the underlying event and parton showering uncertainties (UEPS) governed by the choice of MC showering tool are chosen by utilizing the Monte Carlo samples generated with the Herwig7 \ref{cite:Herwig} showering tool rather than the Pythia8 tool \ref{cite:Pythia8}. The uncertainty is given by:
 
+\begin{equation}
+UEPS= \frac{n_{Herwig}-n_{Pythia}}{n_{Pythia}}
+\end{equation}
 
+for each process in each category.
 
+Similarly, a Monte Carlo generator uncertainty is calculated for $ttH$ and $ggH$ by comparing the Madgraph5\_aMC@NLO and Powheg samples.
 
-
-
-
+Finally, an additional nuisance parameter is included to account for the theoretical uncertainty on the $H \rightarrow \gamma \gamma$ branching ratio. The number of nuisance parameters corresponding to each of the theoretical uncertainties and the form of the constraint term for each is given in Table XXX.
 
 \subsubsection{Experimental Systematics}
+
+Due to the complexity of reconstructing physics objects, a large number of experimental systematics must also be calculated.
+These include:
+
+\begin{itemize}
+\item Beam luminosity uncertainty \ref{cite:Lumiunc}
+\item Trigger uncertainty \ref{cite:trigunc}
+\item Pileup reweighting \ref{cite:pileupreweight}
+\item Jet uncertainties: energy scale, energy resolution,  flavor-tagging and flavor composition \ref{cite: jetuncs} \ref{cite: jetuncs} \ref{cite: jetuncs} \ref{cite: jetuncs}
+\item Photon uncertainties: energy scale and resolution (which modify the DSCB parameters as per Section XXX), photon ID, photon isolation \ref{cite: photuncs} \ref{cite: photuncs} \ref{cite: photuncs} \ref{cite: photuncs}
+\item Electron/muon uncertainties: energy scale, energy resolution, electron/muon ID, electron/muon isolation \ref{cite: eleuncs} \ref{cite: eleuncs} \ref{cite: eleuncs} \ref{cite: muuncs}
+\item MET uncertainties: \ref{cite: MET} \ref{cite: MET}
+\item Higgs mass: \ref{cite: Higgsmass}
+\item Background modelling uncertainty: Calculated from spurious signal procedure discussed in section \ref{sec:SS}
+\begin{itemize}
+
+Due to the number of experimental uncertainties considered, a merging scheme is adopted for photon energy scale and resolution systematics to take advantage of similar energy scale and resolution in certain regions of the detector.
+
+The list of theoretical uncertainties and the form of the constraint term for each is given in Table XXX.
+
+XXXX Give values XXXX
+
+\subsection{Results and Interpretations}
+
+The fitted Higgs signal mass in each category is shown in Figures XXX-XXX. We observe that the signal peak is strongest in the more CP-even sensitive categories (3, 6, 9, 12, 14, 17, and 20), rather than the more CP-odd sensitive ones (1, 4, 7, 10, 13, 16, and 19), thus lending credence to the Standard Model prediction. Numerically, we can extract a number of key metrics:
+
+\begin{itemize}
+\item Observed and expected $ttH$ significance
+\item Observed and expected upper limits on $tH$ significance
+\item 2D limits on the ($\kappa_{t} cos(\alpha)$, $\kappa_{t} sin(\alpha)$) plane
+\item 1D limits on $\alpha$, setting $\kappa_{t} = 1$
+\begin{itemize}
+
+Two potential interpretations of the final two metrics are given in order to properly treat the dependence of $ggH$ and $H \rightarrow \gamma \gamma$ on $\alpha$.
+
+In the first interpretation, existing measurements of $kappa_{g}$ and $kappa_{\gamma}$ can be used to constrain 
+
+
+
+
+
+
+
+
 
 
 
