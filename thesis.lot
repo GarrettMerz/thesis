@@ -1,0 +1,25 @@
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Higgs decay modes and branching fractions, for a Standard Model Higgs with mass of 125.09 GeV \ref {cite:2017YellowReport}\relax }}{14}{table.caption.17}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Parameterization of Higgs cross-section dependence on $\kappa $ coefficients, from \ref {cite:Phys. Rev. D 101 (2020) 012002}\relax }}{19}{table.caption.20}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces Parameterization of Higgs branching ratio dependence on $\kappa $ coefficients, from \ref {cite:Phys. Rev. D 101 (2020) 012002}\relax }}{19}{table.caption.21}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Simplified template cross sections times diphoton branching ratio for each of the STXS 1.2 truth bins.\relax }}{22}{table.caption.23}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces Wilson coefficients $c_i$ and corresponding dimension-6 SMEFT operators $\mathcal {O}_i$ used in this analysis.\relax }}{24}{table.caption.25}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tools used for Monte Carlo generation in the analyses detailed in this dissertation.\relax }}{67}{table.caption.48}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Summary of nominal signal samples\relax }}{68}{table.caption.49}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Summary of alternative signal samples\relax }}{69}{table.caption.50}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Cross sections times branching ratio values used to normalize each production mode. The values correspond to the state-of-the-art predictions and are taken from the CERN Yellow Report \ref {cite:yellowreport}.\relax }}{69}{table.caption.51}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Summary of nominal background samples\relax }}{70}{table.caption.52}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Parameters used in the HC model in order to allow for CP-couplings only in the top quark sector while fixing the HWW coupling to its SM value by imposing cos$\alpha \nobreakspace {}\kappa _{SM}$=1. In the first set of samples, $\kappa _{t}$ is fixed to 1 and $\alpha $ is varied. In the second set, $\kappa _{t}$ is set to values different from 1. For $\alpha =90$; due to numerical precision, $\qopname \relax o{cos}\alpha $ strictly equal to 0 can't be generated and thus a value approaching it ($10^{-6}$) and a defined value for kSM ($10^{6}$) are used.\relax }}{71}{table.caption.53}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces NLO cross-sections for the $t\bar {t}H$, $tHjb$, $tWH$, and $ggF$ processes for different CP-scenarios (see parameters in Table\nobreakspace {}\ref {tab:MCsamples_Parameters}). The top part refers to MC samples in which the $\kappa _{t}$ value is fixed to 1 and $\alpha $ is varied, while the bottom part refers to samples with $\kappa _{t}$ different from 1.\relax }}{71}{table.caption.54}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces NLO cross-sections for the $t\bar {t}H$, $tHjb$, $tWH$, and $ggF$ processes for different CP-scenarios normalized with the K-factor and BR$(H\rightarrow \gamma \gamma )$. The top part refers to MC samples in which the $\kappa _{t}$ value is fixed to 1 and $\alpha $ is varied, while the bottom part refers to samples with $\kappa _{t}$ different from 1.\relax }}{72}{table.caption.55}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Category boundaries that optimize the number-counting rejection of the CP odd scenario in the 12 hadronic and 8 leptonic categories.\relax }}{102}{table.caption.83}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of statistical uncertainty with key systematics and CP-Odd vs. SM separation in each category. PS indicates parton showering uncertainty, calculated by subtracting the yields from the Herwig and the Pythia Monte Carlo samples.\relax }}{104}{table.caption.86}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Figures of merit for the twenty-category CP BDT categorization, calculated from event yields in the signal $m_{\gamma \gamma }$ region $125\pm 2$ GeV.\relax }}{104}{table.caption.88}%
+\addvspace {8pt}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Comparison of KLFitter and top-reconstruction BDT.\relax }}{106}{table.caption.92}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Figures of merit for the fifteen-category CP BDT categorization. The right-hand column shows that an alternative setup using four-vector training variables in the CP BDT achieves similar sensitivity.\relax }}{118}{table.caption.107}%

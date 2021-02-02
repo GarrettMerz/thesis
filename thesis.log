@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  1 FEB 2021 02:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  1 FEB 2021 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1049,8 +1049,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 131.
 LaTeX Info: Redefining \pageref on input line 131.
 LaTeX Info: Redefining \nameref on input line 131.
-
-(./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
@@ -2588,41 +2586,22 @@ Overfull \hbox (1.16531pt too wide) in paragraph at lines 7--8
 -ti-vari-ate Boosted De-ci-sion Trees (BDTs)
  []
 
-
-LaTeX Warning: File `figures/categorization_xgb/had/grid_had.pdf' not found on 
-input line 11.
-
-
-! Package pdftex.def Error: File `figures/categorization_xgb/had/grid_had.pdf' 
-not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...ures/categorization_xgb/had/grid_had.pdf}}
-                                                  
-? 
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-1.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-
-LaTeX Warning: File `figures/categorization_xgb/lep/grid_lep.pdf' not found on 
-input line 12.
-
-
-! Package pdftex.def Error: File `figures/categorization_xgb/lep/grid_lep.pdf' 
-not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ...ures/categorization_xgb/lep/grid_lep.pdf}}
-                                                  
-? 
+<figures/tthcp_chapter/categorization_xgb/had/grid_had.pdf, id=947, 722.7pt x 5
+42.025pt>
+File: figures/tthcp_chapter/categorization_xgb/had/grid_had.pdf Graphic file (t
+ype pdf)
+<use figures/tthcp_chapter/categorization_xgb/had/grid_had.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had/grid_had.
+pdf  used on input line 11.
+(pdftex.def)             Requested size: 197.29623pt x 147.96974pt.
+<figures/tthcp_chapter/categorization_xgb/lep/grid_lep.pdf, id=948, 722.7pt x 5
+42.025pt>
+File: figures/tthcp_chapter/categorization_xgb/lep/grid_lep.pdf Graphic file (t
+ype pdf)
+<use figures/tthcp_chapter/categorization_xgb/lep/grid_lep.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep/grid_lep.
+pdf  used on input line 12.
+(pdftex.def)             Requested size: 197.29623pt x 147.96974pt.
 
 LaTeX Warning: Reference `cite:HIGG-2018-13' on page 79 undefined on input line
  19.
@@ -2633,145 +2612,1370 @@ ut line 19.
 
 [79
 
-] [80]
+]
 
-LaTeX Warning: Reference `fig:SBBDTvarshad' on page 81 undefined on input line 
+LaTeX Warning: Reference `fig:SBBDTvarshad' on page 80 undefined on input line 
 35.
 
-<figures/tthcp_chapter/figaux_10a.pdf, id=962, 569.12625pt x 426.59375pt>
+<figures/tthcp_chapter/figaux_10a.pdf, id=956, 569.12625pt x 426.59375pt>
 File: figures/tthcp_chapter/figaux_10a.pdf Graphic file (type pdf)
 <use figures/tthcp_chapter/figaux_10a.pdf>
 Package pdftex.def Info: figures/tthcp_chapter/figaux_10a.pdf  used on input li
 ne 39.
 (pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
-<figures/tthcp_chapter/figaux_10b.pdf, id=963, 569.12625pt x 426.59375pt>
+<figures/tthcp_chapter/figaux_10b.pdf, id=957, 569.12625pt x 426.59375pt>
 File: figures/tthcp_chapter/figaux_10b.pdf Graphic file (type pdf)
 <use figures/tthcp_chapter/figaux_10b.pdf>
 Package pdftex.def Info: figures/tthcp_chapter/figaux_10b.pdf  used on input li
 ne 40.
 (pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
-<figures/tthcp_chapter/figaux_10c.pdf, id=964, 569.12625pt x 426.59375pt>
+<figures/tthcp_chapter/figaux_10c.pdf, id=958, 569.12625pt x 426.59375pt>
 File: figures/tthcp_chapter/figaux_10c.pdf Graphic file (type pdf)
 <use figures/tthcp_chapter/figaux_10c.pdf>
 Package pdftex.def Info: figures/tthcp_chapter/figaux_10c.pdf  used on input li
 ne 41.
 (pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
-<figures/tthcp_chapter/figaux_10d.pdf, id=965, 569.12625pt x 426.59375pt>
+<figures/tthcp_chapter/figaux_10d.pdf, id=959, 569.12625pt x 426.59375pt>
 File: figures/tthcp_chapter/figaux_10d.pdf Graphic file (type pdf)
 <use figures/tthcp_chapter/figaux_10d.pdf>
 Package pdftex.def Info: figures/tthcp_chapter/figaux_10d.pdf  used on input li
 ne 42.
 (pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
-<figures/tthcp_chapter/figaux_10e.pdf, id=966, 569.12625pt x 426.59375pt>
+<figures/tthcp_chapter/figaux_10e.pdf, id=960, 569.12625pt x 426.59375pt>
 File: figures/tthcp_chapter/figaux_10e.pdf Graphic file (type pdf)
 <use figures/tthcp_chapter/figaux_10e.pdf>
 Package pdftex.def Info: figures/tthcp_chapter/figaux_10e.pdf  used on input li
 ne 43.
 (pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.44 ...-1}. Taken from \ref{cite:HIGG-2018-13}. }
-                                                  
-? 
 
-LaTeX Warning: Reference `cite:HIGG-2018-13' on page 81 undefined on input line
+LaTeX Warning: Reference `cite:HIGG-2018-13' on page 80 undefined on input line
  44.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.44 ...-1}. Taken from \ref{cite:HIGG-2018-13}. }
-                                                  
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.44 ...-1}. Taken from \ref{cite:HIGG-2018-13}. }
-                                                  
-? 
 
-LaTeX Warning: Reference `cite:HIGG-2018-13' on page 81 undefined on input line
+LaTeX Warning: Reference `cite:HIGG-2018-13' on page 80 undefined on input line
  44.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.44 ...-1}. Taken from \ref{cite:HIGG-2018-13}. }
-                                                  
-? 
+[80 <./figures/tthcp_chapter/categorization_xgb/had/grid_had.pdf> <./figures/tt
+hcp_chapter/categorization_xgb/lep/grid_lep.pdf>] [81 <./figures/tthcp_chapter/
+figaux_10a.pdf, page is rotated 90 degrees> <./figures/tthcp_chapter/figaux_10b
+.pdf, page is rotated 90 degrees> <./figures/tthcp_chapter/figaux_10c.pdf, page
+ is rotated 90 degrees> <./figures/tthcp_chapter/figaux_10d.pdf, page is rotate
+d 90 degrees> <./figures/tthcp_chapter/figaux_10e.pdf, page is rotated 90 degre
+es>]
+
+LaTeX Warning: Reference `fig:SBBDTvarslep' on page 82 undefined on input line 
+71.
+
+
+LaTeX Warning: Reference `fig:moriondtotal' on page 82 undefined on input line 
+71.
+
+<figures/tthcp_chapter/figaux_11a.pdf, id=1247, 569.12625pt x 426.59375pt>
+File: figures/tthcp_chapter/figaux_11a.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/figaux_11a.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/figaux_11a.pdf  used on input li
+ne 75.
+(pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
+<figures/tthcp_chapter/figaux_11b.pdf, id=1248, 569.12625pt x 426.59375pt>
+File: figures/tthcp_chapter/figaux_11b.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/figaux_11b.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/figaux_11b.pdf  used on input li
+ne 76.
+(pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
+<figures/tthcp_chapter/figaux_11c.pdf, id=1249, 569.12625pt x 426.59375pt>
+File: figures/tthcp_chapter/figaux_11c.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/figaux_11c.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/figaux_11c.pdf  used on input li
+ne 77.
+(pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
+<figures/tthcp_chapter/figaux_11d.pdf, id=1250, 569.12625pt x 426.59375pt>
+File: figures/tthcp_chapter/figaux_11d.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/figaux_11d.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/figaux_11d.pdf  used on input li
+ne 78.
+(pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
+<figures/tthcp_chapter/figaux_11e.pdf, id=1251, 569.12625pt x 426.59375pt>
+File: figures/tthcp_chapter/figaux_11e.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/figaux_11e.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/figaux_11e.pdf  used on input li
+ne 79.
+(pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
+<figures/tthcp_chapter/figaux_11f.pdf, id=1252, 569.12625pt x 426.59375pt>
+File: figures/tthcp_chapter/figaux_11f.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/figaux_11f.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/figaux_11f.pdf  used on input li
+ne 80.
+(pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
+<figures/tthcp_chapter/figaux_11g.pdf, id=1253, 569.12625pt x 426.59375pt>
+File: figures/tthcp_chapter/figaux_11g.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/figaux_11g.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/figaux_11g.pdf  used on input li
+ne 81.
+(pdftex.def)             Requested size: 145.6229pt x 109.15424pt.
+
+LaTeX Warning: Reference `cite:HIGG-2018-13' on page 82 undefined on input line
+ 82.
+
+
+LaTeX Warning: Reference `cite:HIGG-2018-13' on page 82 undefined on input line
+ 82.
+
+<figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png, id=1254, 4
+97.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png Graphi
+c file (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/m_sc
+ore_wisc.png  used on input line 109.
+(pdftex.def)             Requested size: 140.92793pt x 134.10774pt.
+
+Underfull \hbox (badness 1354) in paragraph at lines 109--109
+[]\OT1/ptm/m/n/10.95 (a) |Hadronic $\OML/cmm/m/it/10.95 ttH \OT1/cmr/m/n/10.95 
++ \OML/cmm/m/it/10.95 tHjb \OT1/cmr/m/n/10.95 +
+ []
+
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png, id=1255, 4
+97.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png Graphi
+c file (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_sc
+ore_wisc.png  used on input line 110.
+(pdftex.def)             Requested size: 140.92793pt x 134.10774pt.
+[82 <./figures/tthcp_chapter/figaux_11a.pdf, page is rotated 90 degrees> <./fig
+ures/tthcp_chapter/figaux_11b.pdf, page is rotated 90 degrees> <./figures/tthcp
+_chapter/figaux_11c.pdf, page is rotated 90 degrees> <./figures/tthcp_chapter/f
+igaux_11d.pdf, page is rotated 90 degrees> <./figures/tthcp_chapter/figaux_11e.
+pdf, page is rotated 90 degrees> <./figures/tthcp_chapter/figaux_11f.pdf, page 
+is rotated 90 degrees> <./figures/tthcp_chapter/figaux_11g.pdf, page is rotated
+ 90 degrees>]
+<figures/tthcp_chapter/observables/ttH/c_H_pt.pdf, id=1564, 569.12625pt x 541.0
+2126pt>
+File: figures/tthcp_chapter/observables/ttH/c_H_pt.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/observables/ttH/c_H_pt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_H_pt.pdf  used
+ on input line 130.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/ttH/c_H_eta.pdf, id=1565, 569.12625pt x 541.
+02126pt>
+File: figures/tthcp_chapter/observables/ttH/c_H_eta.pdf Graphic file (type pdf)
+
+<use figures/tthcp_chapter/observables/ttH/c_H_eta.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_H_eta.pdf  use
+d on input line 130.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/ttH/c_delta_eta_tt.pdf, id=1566, 569.12625pt
+ x 541.02126pt>
+File: figures/tthcp_chapter/observables/ttH/c_delta_eta_tt.pdf Graphic file (ty
+pe pdf)
+<use figures/tthcp_chapter/observables/ttH/c_delta_eta_tt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_delta_eta_tt.p
+df  used on input line 134.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/ttH/c_delta_phi_tt.pdf, id=1567, 569.12625pt
+ x 541.02126pt>
+File: figures/tthcp_chapter/observables/ttH/c_delta_phi_tt.pdf Graphic file (ty
+pe pdf)
+<use figures/tthcp_chapter/observables/ttH/c_delta_phi_tt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_delta_phi_tt.p
+df  used on input line 134.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/ttH/c_t_pt.pdf, id=1568, 569.12625pt x 541.0
+2126pt>
+File: figures/tthcp_chapter/observables/ttH/c_t_pt.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/observables/ttH/c_t_pt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_t_pt.pdf  used
+ on input line 138.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/ttH/c_t_eta.pdf, id=1569, 569.12625pt x 541.
+02126pt>
+File: figures/tthcp_chapter/observables/ttH/c_t_eta.pdf Graphic file (type pdf)
+
+<use figures/tthcp_chapter/observables/ttH/c_t_eta.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_t_eta.pdf  use
+d on input line 138.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/ttH/c_tH_m.pdf, id=1570, 569.12625pt x 541.0
+2126pt>
+File: figures/tthcp_chapter/observables/ttH/c_tH_m.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/observables/ttH/c_tH_m.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_tH_m.pdf  used
+ on input line 141.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+
+
+LaTeX Warning: Float too large for page by 44.26102pt on input line 145.
+
+<figures/tthcp_chapter/observables/ttH/c_delta_phi_tt_signed.png, id=1571, 497.
+86pt x 473.77pt>
+File: figures/tthcp_chapter/observables/ttH/c_delta_phi_tt_signed.png Graphic f
+ile (type png)
+<use figures/tthcp_chapter/observables/ttH/c_delta_phi_tt_signed.png>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_delta_phi_tt_s
+igned.png  used on input line 149.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/observables/ttH/c_delta_phi_tW_signed.png, id=1572, 497.
+86pt x 473.77pt>
+File: figures/tthcp_chapter/observables/ttH/c_delta_phi_tW_signed.png Graphic f
+ile (type png)
+<use figures/tthcp_chapter/observables/ttH/c_delta_phi_tW_signed.png>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_delta_phi_tW_s
+igned.png  used on input line 150.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/observables/ttH/c_delta_phi_tj_signed.png, id=1573, 497.
+86pt x 473.77pt>
+File: figures/tthcp_chapter/observables/ttH/c_delta_phi_tj_signed.png Graphic f
+ile (type png)
+<use figures/tthcp_chapter/observables/ttH/c_delta_phi_tj_signed.png>
+Package pdftex.def Info: figures/tthcp_chapter/observables/ttH/c_delta_phi_tj_s
+igned.png  used on input line 151.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+[83 <./figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png> <./f
+igures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png>] [84 <./figu
+res/tthcp_chapter/observables/ttH/c_H_pt.pdf, page is rotated 90 degrees> <./fi
+gures/tthcp_chapter/observables/ttH/c_H_eta.pdf, page is rotated 90 degrees> <.
+/figures/tthcp_chapter/observables/ttH/c_delta_eta_tt.pdf, page is rotated 90 d
+egrees> <./figures/tthcp_chapter/observables/ttH/c_delta_phi_tt.pdf, page is ro
+tated 90 degrees> <./figures/tthcp_chapter/observables/ttH/c_t_pt.pdf, page is 
+rotated 90 degrees> <./figures/tthcp_chapter/observables/ttH/c_t_eta.pdf, page 
+is rotated 90 degrees> <./figures/tthcp_chapter/observables/ttH/c_tH_m.pdf, pag
+e is rotated 90 degrees>] [85 <./figures/tthcp_chapter/observables/ttH/c_delta_
+phi_tt_signed.png> <./figures/tthcp_chapter/observables/ttH/c_delta_phi_tW_sign
+ed.png> <./figures/tthcp_chapter/observables/ttH/c_delta_phi_tj_signed.png>]
+<figures/tthcp_chapter/observables/tWH/c_H_pt.pdf, id=1892, 569.12625pt x 541.0
+2126pt>
+File: figures/tthcp_chapter/observables/tWH/c_H_pt.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/observables/tWH/c_H_pt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tWH/c_H_pt.pdf  used
+ on input line 163.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/tWH/c_H_eta.pdf, id=1893, 569.12625pt x 541.
+02126pt>
+File: figures/tthcp_chapter/observables/tWH/c_H_eta.pdf Graphic file (type pdf)
+
+<use figures/tthcp_chapter/observables/tWH/c_H_eta.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tWH/c_H_eta.pdf  use
+d on input line 163.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/tWH/c_t_pt.pdf, id=1894, 569.12625pt x 541.0
+2126pt>
+File: figures/tthcp_chapter/observables/tWH/c_t_pt.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/observables/tWH/c_t_pt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tWH/c_t_pt.pdf  used
+ on input line 167.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/tWH/c_t_eta.pdf, id=1895, 569.12625pt x 541.
+02126pt>
+File: figures/tthcp_chapter/observables/tWH/c_t_eta.pdf Graphic file (type pdf)
+
+<use figures/tthcp_chapter/observables/tWH/c_t_eta.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tWH/c_t_eta.pdf  use
+d on input line 167.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+<figures/tthcp_chapter/observables/tWH/c_tH_m.pdf, id=1896, 569.12625pt x 541.0
+2126pt>
+File: figures/tthcp_chapter/observables/tWH/c_tH_m.pdf Graphic file (type pdf)
+<use figures/tthcp_chapter/observables/tWH/c_tH_m.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tWH/c_tH_m.pdf  used
+ on input line 170.
+(pdftex.def)             Requested size: 164.41711pt x 156.29776pt.
+
+[86
+
+ <./figures/tthcp_chapter/observables/tWH/c_H_pt.pdf, page is rotated 90 degree
+s> <./figures/tthcp_chapter/observables/tWH/c_H_eta.pdf, page is rotated 90 deg
+rees> <./figures/tthcp_chapter/observables/tWH/c_t_pt.pdf, page is rotated 90 d
+egrees> <./figures/tthcp_chapter/observables/tWH/c_t_eta.pdf, page is rotated 9
+0 degrees> <./figures/tthcp_chapter/observables/tWH/c_tH_m.pdf, page is rotated
+ 90 degrees>]
+<figures/tthcp_chapter/observables/tHjb/c_H_pt.pdf, id=2118, 569.12625pt x 542.
+025pt>
+File: figures/tthcp_chapter/observables/tHjb/c_H_pt.pdf Graphic file (type pdf)
+
+<use figures/tthcp_chapter/observables/tHjb/c_H_pt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tHjb/c_H_pt.pdf  use
+d on input line 183.
+(pdftex.def)             Requested size: 164.41711pt x 156.58774pt.
+<figures/tthcp_chapter/observables/tHjb/c_H_eta.pdf, id=2119, 569.12625pt x 542
+.025pt>
+File: figures/tthcp_chapter/observables/tHjb/c_H_eta.pdf Graphic file (type pdf
 )
-Runaway argument?
-{m_{\gamma \gamma } > 0.35$ for the leading photon and $\frac {p_{T}}\ETC.
-! File ended while scanning use of \frac .
-<inserted text> 
-                \par 
-l.151 	\input{sections/tthcp_chapter}
-                                     
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.152 
-      
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.152 
-      
-? 
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.152 
-      
-? 
-[81 <./figures/tthcp_chapter/figaux_10a.pdf, page is rotated 90 degrees> <./fig
-ures/tthcp_chapter/figaux_10b.pdf, page is rotated 90 degrees> <./figures/tthcp
-_chapter/figaux_10c.pdf, page is rotated 90 degrees> <./figures/tthcp_chapter/f
-igaux_10d.pdf, page is rotated 90 degrees> <./figures/tthcp_chapter/figaux_10e.
-pdf, page is rotated 90 degrees>] (./appendix/KLFitter.tex
+<use figures/tthcp_chapter/observables/tHjb/c_H_eta.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tHjb/c_H_eta.pdf  us
+ed on input line 183.
+(pdftex.def)             Requested size: 164.41711pt x 156.58774pt.
+<figures/tthcp_chapter/observables/tHjb/c_t_pt.pdf, id=2120, 569.12625pt x 542.
+025pt>
+File: figures/tthcp_chapter/observables/tHjb/c_t_pt.pdf Graphic file (type pdf)
+
+<use figures/tthcp_chapter/observables/tHjb/c_t_pt.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tHjb/c_t_pt.pdf  use
+d on input line 187.
+(pdftex.def)             Requested size: 164.41711pt x 156.58774pt.
+<figures/tthcp_chapter/observables/tHjb/c_t_eta.pdf, id=2121, 569.12625pt x 542
+.025pt>
+File: figures/tthcp_chapter/observables/tHjb/c_t_eta.pdf Graphic file (type pdf
+)
+<use figures/tthcp_chapter/observables/tHjb/c_t_eta.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tHjb/c_t_eta.pdf  us
+ed on input line 187.
+(pdftex.def)             Requested size: 164.41711pt x 156.58774pt.
+<figures/tthcp_chapter/observables/tHjb/c_tH_m.pdf, id=2122, 569.12625pt x 542.
+025pt>
+File: figures/tthcp_chapter/observables/tHjb/c_tH_m.pdf Graphic file (type pdf)
+
+<use figures/tthcp_chapter/observables/tHjb/c_tH_m.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/observables/tHjb/c_tH_m.pdf  use
+d on input line 190.
+(pdftex.def)             Requested size: 164.41711pt x 156.58774pt.
+ [87
+
+ <./figures/tthcp_chapter/observables/tHjb/c_H_pt.pdf, page is rotated 90 degre
+es> <./figures/tthcp_chapter/observables/tHjb/c_H_eta.pdf, page is rotated 90 d
+egrees> <./figures/tthcp_chapter/observables/tHjb/c_t_pt.pdf, page is rotated 9
+0 degrees> <./figures/tthcp_chapter/observables/tHjb/c_t_eta.pdf, page is rotat
+ed 90 degrees> <./figures/tthcp_chapter/observables/tHjb/c_tH_m.pdf, page is ro
+tated 90 degrees>]
+
+LaTeX Warning: Reference `cite:TMVA' on page 88 undefined on input line 199.
+
+
+LaTeX Warning: Reference `sec:TMVABDT' on page 88 undefined on input line 199.
+
+
+LaTeX Warning: Citation `skopt' on page 88 undefined on input line 218.
+
+
+LaTeX Warning: Reference `cite:ROC' on page 88 undefined on input line 218.
+
+[88
+
+]
+
+LaTeX Warning: Reference `cite:lepvbls1' on page 89 undefined on input line 220
+.
+
+
+LaTeX Warning: Reference `cite:lepvbls7' on page 89 undefined on input line 220
+.
+
+
+LaTeX Warning: Reference `cite:hadvbls1' on page 89 undefined on input line 220
+.
+
+
+LaTeX Warning: Reference `cite:hadvbls7' on page 89 undefined on input line 220
+.
+
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/pt_H.png, id=2350, 497.86pt 
+x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/pt_H.png Graphic file (
+type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/pt_H.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/pt_H
+.png  used on input line 224.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/eta_H.png, id=2351, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/eta_H.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/eta_H.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/eta_
+H.png  used on input line 225.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_pt.png, id=2352, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_pt.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_pt.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_p
+t.png  used on input line 232.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_eta.png, id=2353, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_eta.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_eta.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_e
+ta.png  used on input line 233.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_phi0.png, id=2354, 497.86
+pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_phi0.png Graphic fil
+e (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_phi0.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_p
+hi0.png  used on input line 234.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_score.png, id=2355, 497.8
+6pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_score.png Graphic fi
+le (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_score.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_s
+core.png  used on input line 235.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_pt.png, id=2356, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_pt.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_pt.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_p
+t.png  used on input line 242.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_eta.png, id=2357, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_eta.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_eta.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_e
+ta.png  used on input line 243.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_phi0.png, id=2358, 497.86
+pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_phi0.png Graphic fil
+e (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_phi0.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_p
+hi0.png  used on input line 244.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/t2_score.png, id=2359, 497.8
+6pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/t2_score.png Graphic fi
+le (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/t2_score.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/t2_s
+core.png  used on input line 245.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_eta_t1hy.png, id=2360,
+ 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_eta_t1hy.png Grap
+hic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_eta_t1hy.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/delt
+a_eta_t1hy.png  used on input line 252.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_phi_t1hy.png, id=2361,
+ 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_phi_t1hy.png Grap
+hic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_phi_t1hy.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/delt
+a_phi_t1hy.png  used on input line 253.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1H.png, id=2362, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1H.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1H.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1
+H.png  used on input line 260.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1hy.png, id=2363, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1hy.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1hy.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1
+hy.png  used on input line 261.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/m_njet.png, id=2364, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_njet.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/m_njet.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_nj
+et.png  used on input line 268.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/m_nbjet_fixed80.png, id=2365
+, 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_nbjet_fixed80.png Gra
+phic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/m_nbjet_fixed80.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_nb
+jet_fixed80.png  used on input line 269.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/m_HT.png, id=2366, 497.86pt 
+x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_HT.png Graphic file (
+type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/m_HT.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_HT
+.png  used on input line 270.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/m_met_sig.png, id=2367, 497.
+86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_met_sig.png Graphic f
+ile (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/m_met_sig.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/m_me
+t_sig.png  used on input line 271.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj.png, id=2368, 
+497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj.png Graph
+ic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/delt
+a_Rmin_yj.png  used on input line 278.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj2.png, id=2369,
+ 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj2.png Grap
+hic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj2.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/delt
+a_Rmin_yj2.png  used on input line 279.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+[89 <./figures/tthcp_chapter/categorization_xgb/lep-vbls/pt_H.png> <./figures/t
+thcp_chapter/categorization_xgb/lep-vbls/eta_H.png>] [90 <./figures/tthcp_chapt
+er/categorization_xgb/lep-vbls/t1_pt.png> <./figures/tthcp_chapter/categorizati
+on_xgb/lep-vbls/t1_eta.png> <./figures/tthcp_chapter/categorization_xgb/lep-vbl
+s/t1_phi0.png> <./figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_score.pn
+g>] [91 <./figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_pt.png> <./figu
+res/tthcp_chapter/categorization_xgb/lep-vbls/hy_eta.png> <./figures/tthcp_chap
+ter/categorization_xgb/lep-vbls/hy_phi0.png> <./figures/tthcp_chapter/categoriz
+ation_xgb/lep-vbls/t2_score.png> <./figures/tthcp_chapter/categorization_xgb/le
+p-vbls/delta_eta_t1hy.png> <./figures/tthcp_chapter/categorization_xgb/lep-vbls
+/delta_phi_t1hy.png>] [92 <./figures/tthcp_chapter/categorization_xgb/lep-vbls/
+m_t1H.png> <./figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1hy.png> <./
+figures/tthcp_chapter/categorization_xgb/lep-vbls/m_njet.png> <./figures/tthcp_
+chapter/categorization_xgb/lep-vbls/m_nbjet_fixed80.png> <./figures/tthcp_chapt
+er/categorization_xgb/lep-vbls/m_HT.png> <./figures/tthcp_chapter/categorizatio
+n_xgb/lep-vbls/m_met_sig.png>] [93 <./figures/tthcp_chapter/categorization_xgb/
+lep-vbls/delta_Rmin_yj.png> <./figures/tthcp_chapter/categorization_xgb/lep-vbl
+s/delta_Rmin_yj2.png>]
+
+LaTeX Warning: Citation `skopt' on page 94 undefined on input line 286.
+
+
+LaTeX Warning: Reference `tab:lephyp' on page 94 undefined on input line 286.
+
+
+LaTeX Warning: Citation `xgboost' on page 94 undefined on input line 286.
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
+86.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+LaTeX Warning: Reference `fig:cplep2' on page 94 undefined on input line 286.
+
+
+LaTeX Warning: Reference `fig:cplep3' on page 94 undefined on input line 286.
+
+<figures/tthcp_chapter/categorization_xgb/had-vbls/pt_H.png, id=2398, 497.86pt 
+x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/pt_H.png Graphic file (
+type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/pt_H.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/pt_H
+.png  used on input line 290.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/eta_H.png, id=2399, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/eta_H.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/eta_H.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/eta_
+H.png  used on input line 291.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/t1_pt.png, id=2400, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_pt.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/t1_pt.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_p
+t.png  used on input line 298.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/t1_eta.png, id=2401, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_eta.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/t1_eta.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_e
+ta.png  used on input line 299.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/t1_phi0.png, id=2402, 497.86
+pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_phi0.png Graphic fil
+e (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/t1_phi0.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_p
+hi0.png  used on input line 300.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/t1_score.png, id=2403, 497.8
+6pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_score.png Graphic fi
+le (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/t1_score.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/t1_s
+core.png  used on input line 301.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/hy_pt.png, id=2404, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/hy_pt.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/hy_pt.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/hy_p
+t.png  used on input line 308.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/hy_eta.png, id=2405, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/hy_eta.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/hy_eta.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/hy_e
+ta.png  used on input line 309.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/hy_phi0.png, id=2406, 497.86
+pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/hy_phi0.png Graphic fil
+e (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/hy_phi0.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/hy_p
+hi0.png  used on input line 310.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/t2_score.png, id=2407, 497.8
+6pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/t2_score.png Graphic fi
+le (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/t2_score.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/t2_s
+core.png  used on input line 311.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/delta_eta_t1hy.png, id=2408,
+ 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/delta_eta_t1hy.png Grap
+hic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/delta_eta_t1hy.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/delt
+a_eta_t1hy.png  used on input line 318.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/delta_phi_t1hy.png, id=2409,
+ 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/delta_phi_t1hy.png Grap
+hic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/delta_phi_t1hy.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/delt
+a_phi_t1hy.png  used on input line 319.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1H.png, id=2410, 497.86pt
+ x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1H.png Graphic file 
+(type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1H.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1
+H.png  used on input line 326.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1hy.png, id=2411, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1hy.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1hy.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1
+hy.png  used on input line 327.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/m_njet.png, id=2412, 497.86p
+t x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/m_njet.png Graphic file
+ (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/m_njet.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/m_nj
+et.png  used on input line 334.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/m_nbjet_fixed80.png, id=2413
+, 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/m_nbjet_fixed80.png Gra
+phic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/m_nbjet_fixed80.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/m_nb
+jet_fixed80.png  used on input line 335.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/m_HT.png, id=2414, 497.86pt 
+x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/m_HT.png Graphic file (
+type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/m_HT.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/m_HT
+.png  used on input line 336.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/m_met_sig.png, id=2415, 497.
+86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/m_met_sig.png Graphic f
+ile (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/m_met_sig.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/m_me
+t_sig.png  used on input line 337.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj.png, id=2416, 
+497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj.png Graph
+ic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/delt
+a_Rmin_yj.png  used on input line 344.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+<figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj2.png, id=2417,
+ 497.86pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj2.png Grap
+hic file (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj2.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/delt
+a_Rmin_yj2.png  used on input line 345.
+(pdftex.def)             Requested size: 150.32504pt x 143.05019pt.
+
+LaTeX Warning: Reference `fig:cphad' on page 94 undefined on input line 350.
+
+
+LaTeX Warning: Reference `fig:cplep' on page 94 undefined on input line 350.
+
+<figures/tthcp_chapter/categorization_xgb/had-vbls/BDTG_cp.png, id=2418, 497.86
+pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/had-vbls/BDTG_cp.png Graphic fil
+e (type png)
+<use figures/tthcp_chapter/categorization_xgb/had-vbls/BDTG_cp.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had-vbls/BDTG
+_cp.png  used on input line 354.
+(pdftex.def)             Requested size: 211.38832pt x 201.16524pt.
+<figures/tthcp_chapter/categorization_xgb/lep-vbls/BDTG_cp.png, id=2419, 497.86
+pt x 473.77pt>
+File: figures/tthcp_chapter/categorization_xgb/lep-vbls/BDTG_cp.png Graphic fil
+e (type png)
+<use figures/tthcp_chapter/categorization_xgb/lep-vbls/BDTG_cp.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep-vbls/BDTG
+_cp.png  used on input line 361.
+(pdftex.def)             Requested size: 211.38832pt x 201.16524pt.
+<figures/tthcp_chapter/categorization_xgb/BDTdist_had_zero.pdf, id=2420, 569.12
+625pt x 327.2225pt>
+File: figures/tthcp_chapter/categorization_xgb/BDTdist_had_zero.pdf Graphic fil
+e (type pdf)
+<use figures/tthcp_chapter/categorization_xgb/BDTdist_had_zero.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/BDTdist_had_z
+ero.pdf  used on input line 368.
+(pdftex.def)             Requested size: 281.85587pt x 162.063pt.
+<figures/tthcp_chapter/categorization_xgb/BDTdist_lep_zero.pdf, id=2421, 569.12
+625pt x 327.2225pt>
+File: figures/tthcp_chapter/categorization_xgb/BDTdist_lep_zero.pdf Graphic fil
+e (type pdf)
+<use figures/tthcp_chapter/categorization_xgb/BDTdist_lep_zero.pdf>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/BDTdist_lep_z
+ero.pdf  used on input line 375.
+(pdftex.def)             Requested size: 281.85587pt x 162.063pt.
+
+Overfull \hbox (1.08424pt too wide) in paragraph at lines 382--383
+\OT1/ptm/m/n/12 In or-der to de-ter-mine the op-ti-mal cat-e-go-riza-tion based
+ on BDT score, two Pois-son number-counting
+ []
+
+[94
+
+ <./figures/tthcp_chapter/categorization_xgb/had-vbls/pt_H.png> <./figures/tthc
+p_chapter/categorization_xgb/had-vbls/eta_H.png>] [95 <./figures/tthcp_chapter/
+categorization_xgb/had-vbls/t1_pt.png> <./figures/tthcp_chapter/categorization_
+xgb/had-vbls/t1_eta.png> <./figures/tthcp_chapter/categorization_xgb/had-vbls/t
+1_phi0.png> <./figures/tthcp_chapter/categorization_xgb/had-vbls/t1_score.png>]
+ [96 <./figures/tthcp_chapter/categorization_xgb/had-vbls/hy_pt.png> <./figures
+/tthcp_chapter/categorization_xgb/had-vbls/hy_eta.png> <./figures/tthcp_chapter
+/categorization_xgb/had-vbls/hy_phi0.png> <./figures/tthcp_chapter/categorizati
+on_xgb/had-vbls/t2_score.png> <./figures/tthcp_chapter/categorization_xgb/had-v
+bls/delta_eta_t1hy.png> <./figures/tthcp_chapter/categorization_xgb/had-vbls/de
+lta_phi_t1hy.png>] [97 <./figures/tthcp_chapter/categorization_xgb/had-vbls/m_t
+1H.png> <./figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1hy.png> <./fig
+ures/tthcp_chapter/categorization_xgb/had-vbls/m_njet.png> <./figures/tthcp_cha
+pter/categorization_xgb/had-vbls/m_nbjet_fixed80.png> <./figures/tthcp_chapter/
+categorization_xgb/had-vbls/m_HT.png> <./figures/tthcp_chapter/categorization_x
+gb/had-vbls/m_met_sig.png>] [98 <./figures/tthcp_chapter/categorization_xgb/had
+-vbls/delta_Rmin_yj.png> <./figures/tthcp_chapter/categorization_xgb/had-vbls/d
+elta_Rmin_yj2.png> <./figures/tthcp_chapter/categorization_xgb/had-vbls/BDTG_cp
+.png>] [99 <./figures/tthcp_chapter/categorization_xgb/lep-vbls/BDTG_cp.png> <.
+/figures/tthcp_chapter/categorization_xgb/BDTdist_had_zero.pdf, page is rotated
+ 90 degrees>] [100 <./figures/tthcp_chapter/categorization_xgb/BDTdist_lep_zero
+.pdf, page is rotated 90 degrees>]
+Overfull \hbox (79.05591pt too wide) detected at line 426
+[]
+ []
+
+
+LaTeX Warning: Reference `fig:optimal' on page 101 undefined on input line 434.
+
+
+
+LaTeX Warning: Reference `tab:boundaries' on page 101 undefined on input line 4
+34.
+
+<figures/tthcp_chapter/categorization_xgb/had/Zcomp_had.png, id=2555, 391.4625p
+t x 266.9975pt>
+File: figures/tthcp_chapter/categorization_xgb/had/Zcomp_had.png Graphic file (
+type png)
+<use figures/tthcp_chapter/categorization_xgb/had/Zcomp_had.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/had/Zcomp_had
+.png  used on input line 438.
+(pdftex.def)             Requested size: 197.29623pt x 134.56581pt.
+<figures/tthcp_chapter/categorization_xgb/lep/Zcomp_lep.png, id=2556, 391.4625p
+t x 266.9975pt>
+File: figures/tthcp_chapter/categorization_xgb/lep/Zcomp_lep.png Graphic file (
+type png)
+<use figures/tthcp_chapter/categorization_xgb/lep/Zcomp_lep.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/lep/Zcomp_lep
+.png  used on input line 439.
+(pdftex.def)             Requested size: 197.29623pt x 134.56581pt.
+<figures/tthcp_chapter/categorization_xgb/cp_11p8_a0.png, id=2557, 468.75125pt 
+x 272.01625pt>
+File: figures/tthcp_chapter/categorization_xgb/cp_11p8_a0.png Graphic file (typ
+e png)
+<use figures/tthcp_chapter/categorization_xgb/cp_11p8_a0.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/cp_11p8_a0.pn
+g  used on input line 478.
+(pdftex.def)             Requested size: 197.29623pt x 114.49092pt.
+<figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a0.png, id=2558, 506.8
+9375pt x 272.01625pt>
+File: figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a0.png Graphic fi
+le (type png)
+<use figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a0.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/cp_11p8_purit
+y_a0.png  used on input line 479.
+(pdftex.def)             Requested size: 197.29623pt x 105.87422pt.
+<figures/tthcp_chapter/categorization_xgb/cp_11p8_a90.png, id=2559, 475.7775pt 
+x 272.01625pt>
+File: figures/tthcp_chapter/categorization_xgb/cp_11p8_a90.png Graphic file (ty
+pe png)
+<use figures/tthcp_chapter/categorization_xgb/cp_11p8_a90.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/cp_11p8_a90.p
+ng  used on input line 480.
+(pdftex.def)             Requested size: 197.29623pt x 112.80162pt.
+<figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a90.png, id=2560, 521.
+95pt x 272.01625pt>
+File: figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a90.png Graphic f
+ile (type png)
+<use figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a90.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/cp_11p8_purit
+y_a90.png  used on input line 481.
+(pdftex.def)             Requested size: 197.29623pt x 102.8235pt.
+[101 <./figures/tthcp_chapter/categorization_xgb/had/Zcomp_had.png> <./figures/
+tthcp_chapter/categorization_xgb/lep/Zcomp_lep.png>]
+
+LaTeX Warning: Reference `tab:systs' on page 102 undefined on input line 504.
+
+
+LaTeX Warning: Reference `fig:ncrej_syst' on page 102 undefined on input line 5
+04.
+
+<figures/tthcp_chapter/categorization_xgb/cp_11_syst.png, id=2571, 400.49625pt 
+x 274.02374pt>
+File: figures/tthcp_chapter/categorization_xgb/cp_11_syst.png Graphic file (typ
+e png)
+<use figures/tthcp_chapter/categorization_xgb/cp_11_syst.png>
+Package pdftex.def Info: figures/tthcp_chapter/categorization_xgb/cp_11_syst.pn
+g  used on input line 541.
+(pdftex.def)             Requested size: 291.2458pt x 199.28304pt.
+) [102] [103 <./figures/tthcp_chapter/categorization_xgb/cp_11p8_a0.png> <./fig
+ures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a0.png> <./figures/tthcp_c
+hapter/categorization_xgb/cp_11p8_a90.png> <./figures/tthcp_chapter/categorizat
+ion_xgb/cp_11p8_purity_a90.png> <./figures/tthcp_chapter/categorization_xgb/cp_
+11_syst.png>] [104] (./appendix/KLFitter.tex
 APPENDIX A.
 
-LaTeX Warning: Reference `cite:KLFitter' on page 82 undefined on input line 5.
+LaTeX Warning: Reference `cite:KLFitter' on page 105 undefined on input line 5.
 
 
-LaTeX Warning: Reference `cite:Minuit' on page 82 undefined on input line 22.
+
+LaTeX Warning: Reference `cite:Minuit' on page 105 undefined on input line 22.
 
 
-LaTeX Warning: Reference `cite:BAT' on page 82 undefined on input line 22.
+LaTeX Warning: Reference `cite:BAT' on page 105 undefined on input line 22.
 
-<figures/KLFitter/KLFittertopmass.png, id=1190, 758.835pt x 513.92pt>
+<figures/KLFitter/KLFittertopmass.png, id=2596, 758.835pt x 513.92pt>
 File: figures/KLFitter/KLFittertopmass.png Graphic file (type png)
 <use figures/KLFitter/KLFittertopmass.png>
 Package pdftex.def Info: figures/KLFitter/KLFittertopmass.png  used on input li
 ne 26.
 (pdftex.def)             Requested size: 145.6229pt x 98.61818pt.
-<figures/KLFitter/KLfitter1.png, id=1191, 758.835pt x 513.92pt>
+<figures/KLFitter/KLfitter1.png, id=2597, 758.835pt x 513.92pt>
 File: figures/KLFitter/KLfitter1.png Graphic file (type png)
 <use figures/KLFitter/KLfitter1.png>
 Package pdftex.def Info: figures/KLFitter/KLfitter1.png  used on input line 27.
 
 (pdftex.def)             Requested size: 145.6229pt x 98.61818pt.
-<figures/KLFitter/KLfitter2.png, id=1192, 758.835pt x 513.92pt>
+<figures/KLFitter/KLfitter2.png, id=2598, 758.835pt x 513.92pt>
 File: figures/KLFitter/KLfitter2.png Graphic file (type png)
 <use figures/KLFitter/KLfitter2.png>
 Package pdftex.def Info: figures/KLFitter/KLfitter2.png  used on input line 28.
 
 (pdftex.def)             Requested size: 145.6229pt x 98.61818pt.
-[82
+[105
 
 
 ]
 
-LaTeX Warning: Reference `cite:topmass' on page 83 undefined on input line 37.
+LaTeX Warning: Reference `cite:topmass' on page 106 undefined on input line 37.
 
-)
 
-! LaTeX Error: File `appendix/TMVABDT.tex' not found.
+) (./appendix/TMVABDTStudies.tex
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
+LaTeX Warning: Citation `TMVA' on page 106 undefined on input line 5.
 
-Enter file name
+[106 <./figures/KLFitter/KLFittertopmass.png (PNG copy)> <./figures/KLFitter/KL
+fitter1.png (PNG copy)> <./figures/KLFitter/KLfitter2.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:hadcorr4vec' on page 107 undefined on input line 
+23.
+
+
+LaTeX Warning: Reference `fig:had4vecvbls1' on page 107 undefined on input line
+ 23.
+
+
+LaTeX Warning: Reference `fig:had4vecvbls6' on page 107 undefined on input line
+ 23.
+
+<figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatEven.png, id=2619, 1857.9412
+5pt x 1003.75pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatEven.png Graphic file (
+type png)
+<use figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatEven.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatEven
+.png  used on input line 27.
+(pdftex.def)             Requested size: 291.2458pt x 157.34097pt.
+<figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatOdd.png, id=2620, 1851.91875
+pt x 996.72375pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatOdd.png Graphic file (t
+ype png)
+<use figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatOdd.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatOdd.
+png  used on input line 28.
+(pdftex.def)             Requested size: 291.2458pt x 156.74149pt.
+<figures/TMVABDTStudies/had-vbls4vec/had4vecvbls1.png, id=2621, 1851.91875pt x 
+1000.73875pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls1.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/had-vbls4vec/had4vecvbls1.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls1.png  
+used on input line 35.
+(pdftex.def)             Requested size: 291.2458pt x 157.37286pt.
+<figures/TMVABDTStudies/had-vbls4vec/had4vecvbls2.png, id=2622, 1860.9525pt x 1
+000.73875pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls2.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/had-vbls4vec/had4vecvbls2.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls2.png  
+used on input line 42.
+(pdftex.def)             Requested size: 291.2458pt x 156.60936pt.
+<figures/TMVABDTStudies/had-vbls4vec/had4vecvbls3.png, id=2623, 1852.9225pt x 1
+000.73875pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls3.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/had-vbls4vec/had4vecvbls3.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls3.png  
+used on input line 49.
+(pdftex.def)             Requested size: 291.2458pt x 157.29651pt.
+<figures/TMVABDTStudies/had-vbls4vec/had4vecvbls4.png, id=2624, 1858.945pt x 10
+02.74625pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls4.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/had-vbls4vec/had4vecvbls4.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls4.png  
+used on input line 56.
+(pdftex.def)             Requested size: 291.2458pt x 157.09183pt.
+<figures/TMVABDTStudies/had-vbls4vec/had4vecvbls5.png, id=2625, 1851.91875pt x 
+1002.74625pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls5.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/had-vbls4vec/had4vecvbls5.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls5.png  
+used on input line 63.
+(pdftex.def)             Requested size: 291.2458pt x 157.68855pt.
+<figures/TMVABDTStudies/had-vbls4vec/had4vecvbls6.png, id=2626, 1854.93pt x 100
+0.73875pt>
+File: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls6.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/had-vbls4vec/had4vecvbls6.png>
+Package pdftex.def Info: figures/TMVABDTStudies/had-vbls4vec/had4vecvbls6.png  
+used on input line 70.
+(pdftex.def)             Requested size: 291.2458pt x 157.12854pt.
+[107] [108 <./figures/TMVABDTStudies/had-vbls4vec/had4veccorrMatEven.png> <./fi
+gures/TMVABDTStudies/had-vbls4vec/had4veccorrMatOdd.png> <./figures/TMVABDTStud
+ies/had-vbls4vec/had4vecvbls1.png>] [109 <./figures/TMVABDTStudies/had-vbls4vec
+/had4vecvbls2.png> <./figures/TMVABDTStudies/had-vbls4vec/had4vecvbls3.png>]
+[110 <./figures/TMVABDTStudies/had-vbls4vec/had4vecvbls4.png> <./figures/TMVABD
+TStudies/had-vbls4vec/had4vecvbls5.png>] [111 <./figures/TMVABDTStudies/had-vbl
+s4vec/had4vecvbls6.png>]
+
+LaTeX Warning: Reference `fig:lepcorr4vec' on page 112 undefined on input line 
+94.
+
+
+LaTeX Warning: Reference `fig:lep4vecvbls1' on page 112 undefined on input line
+ 94.
+
+
+LaTeX Warning: Reference `fig:lep4vecvbls6' on page 112 undefined on input line
+ 94.
+
+<figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatEven.png, id=2665, 1848.9075
+pt x 1000.73875pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatEven.png Graphic file (
+type png)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatEven.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatEven
+.png  used on input line 98.
+(pdftex.def)             Requested size: 291.2458pt x 157.63246pt.
+<figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatOdd.png, id=2666, 1854.93pt 
+x 999.735pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatOdd.png Graphic file (t
+ype png)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatOdd.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatOdd.
+png  used on input line 99.
+(pdftex.def)             Requested size: 291.2458pt x 156.97095pt.
+<figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls1.png, id=2667, 1850.915pt x 99
+6.72375pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls1.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls1.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls1.png  
+used on input line 106.
+(pdftex.def)             Requested size: 291.2458pt x 156.83273pt.
+<figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls2.png, id=2668, 1858.945pt x 99
+8.73125pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls2.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls2.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls2.png  
+used on input line 113.
+(pdftex.def)             Requested size: 291.2458pt x 156.46283pt.
+<figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls3.png, id=2669, 1854.93pt x 100
+0.73875pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls3.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls3.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls3.png  
+used on input line 120.
+(pdftex.def)             Requested size: 291.2458pt x 157.12854pt.
+<figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls4.png, id=2670, 1858.945pt x 99
+0.70125pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls4.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls4.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls4.png  
+used on input line 127.
+(pdftex.def)             Requested size: 291.2458pt x 155.20483pt.
+<figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls5.png, id=2671, 1851.91875pt x 
+1000.73875pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls5.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls5.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls5.png  
+used on input line 134.
+(pdftex.def)             Requested size: 291.2458pt x 157.37286pt.
+<figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls6.png, id=2672, 1857.94125pt x 
+1000.73875pt>
+File: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls6.png Graphic file (type p
+ng)
+<use figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls6.png>
+Package pdftex.def Info: figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls6.png  
+used on input line 141.
+(pdftex.def)             Requested size: 291.2458pt x 156.86896pt.
+[112
+
+] [113 <./figures/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatEven.png> <./figure
+s/TMVABDTStudies/lep-vbls4vec/lep4veccorrMatOdd.png> <./figures/TMVABDTStudies/
+lep-vbls4vec/lep4vecvbls1.png>] [114 <./figures/TMVABDTStudies/lep-vbls4vec/lep
+4vecvbls2.png> <./figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls3.png>]
+[115 <./figures/TMVABDTStudies/lep-vbls4vec/lep4vecvbls4.png> <./figures/TMVABD
+TStudies/lep-vbls4vec/lep4vecvbls5.png>] [116 <./figures/TMVABDTStudies/lep-vbl
+s4vec/lep4vecvbls6.png>]
+
+LaTeX Warning: Reference `sec:topreco' on page 117 undefined on input line 158.
+
+
+
+LaTeX Warning: Reference `sec:topreco' on page 117 undefined on input line 172.
+
+
+[117
+
+]
+
+LaTeX Warning: Reference `tab:appsigs' on page 118 undefined on input line 182.
+
+
+
+LaTeX Warning: Reference `fig:nominalBs' on page 118 undefined on input line 20
+1.
+
+
+LaTeX Warning: Reference `fig:4vecBs' on page 118 undefined on input line 201.
+
+<figures/TMVABDTStudies/nominal_B_e.png, id=2715, 449.68pt x 336.25626pt>
+File: figures/TMVABDTStudies/nominal_B_e.png Graphic file (type png)
+<use figures/TMVABDTStudies/nominal_B_e.png>
+Package pdftex.def Info: figures/TMVABDTStudies/nominal_B_e.png  used on input 
+line 205.
+(pdftex.def)             Requested size: 197.29623pt x 147.53247pt.
+<figures/TMVABDTStudies/nominal_B_pe.png, id=2716, 469.755pt x 336.25626pt>
+File: figures/TMVABDTStudies/nominal_B_pe.png Graphic file (type png)
+<use figures/TMVABDTStudies/nominal_B_pe.png>
+Package pdftex.def Info: figures/TMVABDTStudies/nominal_B_pe.png  used on input
+ line 206.
+(pdftex.def)             Requested size: 197.29623pt x 141.22665pt.
+<figures/TMVABDTStudies/nominal_B_o.png, id=2717, 449.68pt x 336.25626pt>
+File: figures/TMVABDTStudies/nominal_B_o.png Graphic file (type png)
+<use figures/TMVABDTStudies/nominal_B_o.png>
+Package pdftex.def Info: figures/TMVABDTStudies/nominal_B_o.png  used on input 
+line 207.
+(pdftex.def)             Requested size: 197.29623pt x 147.53247pt.
+<figures/TMVABDTStudies/nominal_B_po.png, id=2718, 469.755pt x 336.25626pt>
+File: figures/TMVABDTStudies/nominal_B_po.png Graphic file (type png)
+<use figures/TMVABDTStudies/nominal_B_po.png>
+Package pdftex.def Info: figures/TMVABDTStudies/nominal_B_po.png  used on input
+ line 208.
+(pdftex.def)             Requested size: 197.29623pt x 141.22665pt.
+<figures/TMVABDTStudies/4vec_B_e.png, id=2719, 449.68pt x 336.25626pt>
+File: figures/TMVABDTStudies/4vec_B_e.png Graphic file (type png)
+<use figures/TMVABDTStudies/4vec_B_e.png>
+Package pdftex.def Info: figures/TMVABDTStudies/4vec_B_e.png  used on input lin
+e 215.
+(pdftex.def)             Requested size: 197.29623pt x 147.53247pt.
+<figures/TMVABDTStudies/4vec_B_pe.png, id=2720, 469.755pt x 336.25626pt>
+File: figures/TMVABDTStudies/4vec_B_pe.png Graphic file (type png)
+<use figures/TMVABDTStudies/4vec_B_pe.png>
+Package pdftex.def Info: figures/TMVABDTStudies/4vec_B_pe.png  used on input li
+ne 216.
+(pdftex.def)             Requested size: 197.29623pt x 141.22665pt.
+<figures/TMVABDTStudies/4vec_B_o.png, id=2721, 449.68pt x 336.25626pt>
+File: figures/TMVABDTStudies/4vec_B_o.png Graphic file (type png)
+<use figures/TMVABDTStudies/4vec_B_o.png>
+Package pdftex.def Info: figures/TMVABDTStudies/4vec_B_o.png  used on input lin
+e 217.
+(pdftex.def)             Requested size: 197.29623pt x 147.53247pt.
+<figures/TMVABDTStudies/4vec_B_po.png, id=2722, 469.755pt x 336.25626pt>
+File: figures/TMVABDTStudies/4vec_B_po.png Graphic file (type png)
+<use figures/TMVABDTStudies/4vec_B_po.png>
+Package pdftex.def Info: figures/TMVABDTStudies/4vec_B_po.png  used on input li
+ne 218.
+(pdftex.def)             Requested size: 197.29623pt x 141.22665pt.
+[118] [119 <./figures/TMVABDTStudies/nominal_B_e.png> <./figures/TMVABDTStudies
+/nominal_B_pe.png> <./figures/TMVABDTStudies/nominal_B_o.png> <./figures/TMVABD
+TStudies/nominal_B_po.png>] [120 <./figures/TMVABDTStudies/4vec_B_e.png> <./fig
+ures/TMVABDTStudies/4vec_B_pe.png> <./figures/TMVABDTStudies/4vec_B_o.png> <./f
+igures/TMVABDTStudies/4vec_B_po.png>]
+
+LaTeX Warning: Reference `fig:dilepcorr4vec' on page 121 undefined on input lin
+e 244.
+
+
+LaTeX Warning: Reference `fig:dilep4vecvbls1' on page 121 undefined on input li
+ne 244.
+
+
+LaTeX Warning: Reference `fig:dilep4vecvbls4' on page 121 undefined on input li
+ne 244.
+
+<figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatEven.png, id=2746, 1854.
+93pt x 1002.74625pt>
+File: figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatEven.png Graphic fi
+le (type png)
+<use figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatEven.png>
+Package pdftex.def Info: figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMat
+Even.png  used on input line 248.
+(pdftex.def)             Requested size: 291.2458pt x 157.44374pt.
+<figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatOdd.png, id=2747, 1852.9
+225pt x 998.73125pt>
+File: figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatOdd.png Graphic fil
+e (type png)
+<use figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatOdd.png>
+Package pdftex.def Info: figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMat
+Odd.png  used on input line 249.
+(pdftex.def)             Requested size: 291.2458pt x 156.98097pt.
+<figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls1.png, id=2748, 1860.9525pt
+ x 1001.7425pt>
+File: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls1.png Graphic file (ty
+pe png)
+<use figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls1.png>
+Package pdftex.def Info: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls1.p
+ng  used on input line 255.
+(pdftex.def)             Requested size: 291.2458pt x 156.76643pt.
+<figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls2.png, id=2749, 1853.92625p
+t x 1001.7425pt>
+File: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls2.png Graphic file (ty
+pe png)
+<use figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls2.png>
+Package pdftex.def Info: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls2.p
+ng  used on input line 262.
+(pdftex.def)             Requested size: 291.2458pt x 157.36256pt.
+<figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls3.png, id=2750, 1859.94875p
+t x 1002.74625pt>
+File: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls3.png Graphic file (ty
+pe png)
+<use figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls3.png>
+Package pdftex.def Info: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls3.p
+ng  used on input line 269.
+(pdftex.def)             Requested size: 291.2458pt x 157.01532pt.
+<figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls4.png, id=2751, 1851.91875p
+t x 992.70876pt>
+File: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls4.png Graphic file (ty
+pe png)
+<use figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls4.png>
+Package pdftex.def Info: figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls4.p
+ng  used on input line 276.
+(pdftex.def)             Requested size: 291.2458pt x 156.11009pt.
+[121
+
+] [122 <./figures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatEven.png> <./fi
+gures/TMVABDTStudies/dilep-vbls4vec/dilep4veccorrMatOdd.png> <./figures/TMVABDT
+Studies/dilep-vbls4vec/dilep4vecvbls1.png>] [123 <./figures/TMVABDTStudies/dile
+p-vbls4vec/dilep4vecvbls2.png> <./figures/TMVABDTStudies/dilep-vbls4vec/dilep4v
+ecvbls3.png>]
+
+LaTeX Warning: Reference `fig:semilepcorr4vec' on page 124 undefined on input l
+ine 292.
+
+
+LaTeX Warning: Reference `fig:semilep4vecvbls1' on page 124 undefined on input 
+line 292.
+
+
+LaTeX Warning: Reference `fig:semilep4vecvbls5' on page 124 undefined on input 
+line 292.
+
+<figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccorrMatEven.png, id=2777, 1
+851.91875pt x 994.71625pt>
+File: figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccorrMatEven.png Graphi
+c file (type png)
+<use figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccorrMatEven.png>
+Package pdftex.def Info: figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccor
+rMatEven.png  used on input line 296.
+(pdftex.def)             Requested size: 291.2458pt x 156.42578pt.
+<figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccorrMatOdd.png, id=2778, 18
+57.94125pt x 1002.74625pt>
+File: figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccorrMatOdd.png Graphic
+ file (type png)
+<use figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccorrMatOdd.png>
+Package pdftex.def Info: figures/TMVABDTStudies/semilep-vbls4vec/semilep4veccor
+rMatOdd.png  used on input line 297.
+(pdftex.def)             Requested size: 291.2458pt x 157.18364pt.
+<figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls1.png, id=2779, 1851.91
+875pt x 999.735pt>
+File: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls1.png Graphic file
+ (type png)
+<use figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls1.png>
+Package pdftex.def Info: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbl
+s1.png  used on input line 304.
+(pdftex.def)             Requested size: 291.2458pt x 157.21501pt.
+<figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls2.png, id=2780, 1857.94
+125pt x 1004.75375pt>
+File: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls2.png Graphic file
+ (type png)
+<use figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls2.png>
+Package pdftex.def Info: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbl
+s2.png  used on input line 311.
+(pdftex.def)             Requested size: 291.2458pt x 157.49832pt.
+<figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls4.png, id=2781, 1854.93
+pt x 993.7125pt>
+File: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls4.png Graphic file
+ (type png)
+<use figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls4.png>
+Package pdftex.def Info: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbl
+s4.png  used on input line 318.
+(pdftex.def)             Requested size: 291.2458pt x 156.02533pt.
+<figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls3.png, id=2782, 1851.91
+875pt x 995.72pt>
+File: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls3.png Graphic file
+ (type png)
+<use figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls3.png>
+Package pdftex.def Info: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbl
+s3.png  used on input line 325.
+(pdftex.def)             Requested size: 291.2458pt x 156.58363pt.
+<figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls5.png, id=2783, 1855.93
+375pt x 996.72375pt>
+File: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls5.png Graphic file
+ (type png)
+<use figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls5.png>
+Package pdftex.def Info: figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbl
+s5.png  used on input line 333.
+(pdftex.def)             Requested size: 291.2458pt x 156.40689pt.
+
+LaTeX Warning: Reference `sec:topreco' on page 124 undefined on input line 347.
+
+
+[124 <./figures/TMVABDTStudies/dilep-vbls4vec/dilep4vecvbls4.png>] [125 <./figu
+res/TMVABDTStudies/semilep-vbls4vec/semilep4veccorrMatEven.png> <./figures/TMVA
+BDTStudies/semilep-vbls4vec/semilep4veccorrMatOdd.png> <./figures/TMVABDTStudie
+s/semilep-vbls4vec/semilep4vecvbls1.png>] [126 <./figures/TMVABDTStudies/semile
+p-vbls4vec/semilep4vecvbls2.png> <./figures/TMVABDTStudies/semilep-vbls4vec/sem
+ilep4vecvbls4.png>] [127 <./figures/TMVABDTStudies/semilep-vbls4vec/semilep4vec
+vbls3.png> <./figures/TMVABDTStudies/semilep-vbls4vec/semilep4vecvbls5.png>]
+[128]
+
+LaTeX Warning: Reference `eq:nczcp' on page 129 undefined on input line 379.
+
+
+LaTeX Warning: Reference `eq:ns' on page 129 undefined on input line 379.
+
+
+LaTeX Warning: Reference `sec:topreco' on page 129 undefined on input line 385.
+
+
+) [129] [130]
+No file thesis.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+(./thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  8CD39478117735872A2B1A32937582B5;5695.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
+ ) 
+Here is how much of TeX's memory you used:
+ 27779 strings out of 481239
+ 549548 string characters out of 5920376
+ 764792 words of memory out of 5000000
+ 41891 multiletter control sequences out of 15000+600000
+ 581975 words of font info for 166 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 58i,22n,89p,1647b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
+er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (140 pages, 10715436 bytes).
+PDF statistics:
+ 2978 PDF objects out of 2984 (max. 8388607)
+ 1575 compressed objects within 16 object streams
+ 376 named destinations out of 1000 (max. 500000)
+ 918 words of extra memory for PDF output out of 10000 (max. 10000000)
+

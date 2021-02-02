@@ -1,0 +1,78 @@
+\contentsline {chapter}{Dedication}{ii}{section*.1}%
+\contentsline {chapter}{Acknowledgements}{iii}{section*.2}%
+\contentsline {chapter}{List of Figures}{v}{section*.4}%
+\contentsline {chapter}{List of Tables}{vi}{section*.5}%
+\contentsline {chapter}{List of Appendices}{vii}{section*.6}%
+\contentsline {chapter}{List of Abbreviations}{viii}{section*.8}%
+\contentsline {chapter}{Abstract}{ix}{section*.9}%
+\vspace {1.3ex}\noindent {\bf Chapter}\vspace {1.3ex}
+\contentsline {chapter}{\numberline {1}An Overview of the Standard Model}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}The Standard Model}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Lagrangians, Fields, and Gauge Transformations}{4}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}CP-Symmetry}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}The Higgs Mechanism and Electroweak Symmetry Breaking}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}The Higgs Boson and Its Couplings}{11}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}The Kappa Framework, STXS, and EFTs}{16}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}CP-Violation in the Top Yukawa Coupling}{25}{subsection.1.4.2}%
+\contentsline {chapter}{\numberline {2}The ATLAS Detector}{27}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Large Hadron Collider}{27}{section.2.1}%
+\contentsline {section}{\numberline {2.2}The ATLAS Detector}{29}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Inner Detector}{31}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Solenoid Magnet}{33}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Calorimeters}{33}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}ECAL}{34}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}HCAL}{37}{subsubsection.2.2.3.2}%
+\contentsline {subsection}{\numberline {2.2.4}Toroid Magnets}{39}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Muon Spectrometer}{41}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Trigger}{45}{subsection.2.2.6}%
+\contentsline {chapter}{\numberline {3}Experimental Methods}{48}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Experimental Methods}{48}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Monte Carlo}{48}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Reconstruction and Tagging}{49}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Tracks}{49}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Clusters}{51}{subsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.1}Electrons and Photons}{51}{subsubsection.3.1.4.1}%
+\contentsline {subsubsection}{\numberline {3.1.4.2}Jets}{55}{subsubsection.3.1.4.2}%
+\contentsline {subsubsection}{\numberline {3.1.4.3}b-jets}{57}{subsubsection.3.1.4.3}%
+\contentsline {subsubsection}{\numberline {3.1.4.4}Muons}{57}{subsubsection.3.1.4.4}%
+\contentsline {subsubsection}{\numberline {3.1.4.5}Overlap Removal}{59}{subsubsection.3.1.4.5}%
+\contentsline {subsubsection}{\numberline {3.1.4.6}MET}{59}{subsubsection.3.1.4.6}%
+\contentsline {subsubsection}{\numberline {3.1.4.7}Tau Leptons}{59}{subsubsection.3.1.4.7}%
+\contentsline {subsubsection}{\numberline {3.1.4.8}Top reconstruction}{60}{subsubsection.3.1.4.8}%
+\contentsline {paragraph}{Fully hadronic events}{61}{paragraph*.41}%
+\contentsline {paragraph}{Leptonic events}{61}{paragraph*.42}%
+\contentsline {paragraph}{Retraining with PFlow jets}{62}{paragraph*.43}%
+\contentsline {chapter}{\numberline {4}Data and Monte Carlo Samples}{64}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Data, Monte Carlo, and HGam Pre-selection}{64}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Data}{64}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Higgs Preselection and Data CRs}{65}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Nominal and Alternative Monte Carlo Samples}{66}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}ttHCP Monte Carlo Samples}{70}{subsection.4.1.4}%
+\contentsline {chapter}{\numberline {5}Signal Parameterization, Background Parametrization, and Statistical Methods}{73}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Signal Modelling}{73}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Background Modelling and Spurious Signal}{74}{section.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.0.1}Background Templates}{76}{subsubsection.5.2.0.1}%
+\contentsline {section}{\numberline {5.3}Likelihood Fitting and Asimov Data}{77}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Study of the CP properties of the top-quark Yukawa interaction in $t\bar {t}H$ and $tH$ events wth $H \rightarrow \gamma \gamma $}{79}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Study of the CP properties of the top-quark Yukawa interaction in $t\bar {t}H$ and $tH$ events wth $H \rightarrow \gamma \gamma $: Categorization}{79}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}SBBDT}{80}{subsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.1}Hadronic Region}{80}{subsubsection.6.1.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.2}Leptonic Region}{81}{subsubsection.6.1.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}CP-Sensitive Observables}{83}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}CPBDT}{88}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Poisson Number-Counting Significance}{94}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}2D Categorization}{101}{subsection.6.1.5}%
+\contentsline {chapter}{Appendices}{105}{section*.89}%
+\setcounter {tocdepth}{1}
+\contentsline {section}{\numberline {A.1}The KLFitter}{105}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Comparison}{106}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Additional CP BDT Studies with TMVA}{106}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Four-Vector BDT, ttH only}{106}{subsection.A.3.1}%
+\contentsline {subsubsection}{\numberline {A.3.1.1}Hadronic Channel}{107}{subsubsection.A.3.1.1}%
+\contentsline {subsubsection}{\numberline {A.3.1.2}Leptonic channel}{112}{subsubsection.A.3.1.2}%
+\contentsline {subsubsection}{\numberline {A.3.1.3}Results}{117}{subsubsection.A.3.1.3}%
+\contentsline {subsection}{\numberline {A.3.2}Dilep/Semilep BDT, ttH Only}{121}{subsection.A.3.2}%
+\contentsline {subsubsection}{\numberline {A.3.2.1}Dileptonic BDT}{121}{subsubsection.A.3.2.1}%
+\contentsline {subsubsection}{\numberline {A.3.2.2}Semileptonic BDT}{121}{subsubsection.A.3.2.2}%
+\contentsline {subsection}{\numberline {A.3.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{124}{subsection.A.3.3}%
+\contentsline {subsection}{\numberline {A.3.4}Dedicated CP-45 BDT Training}{129}{subsection.A.3.4}%

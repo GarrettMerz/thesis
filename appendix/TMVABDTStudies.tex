@@ -181,8 +181,23 @@ In the leptonic channel:
 
 The results of this comparison are shown in Table \ref{tab:appsigs}
 
-\input{tables/TMVABDTStudies/sigs.tex}
-
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lll}
+ & Nominal & Alternative \\ \hline
+Hadronic ROC AUC & 0.717 & 0.723 \\
+Leptonic ROC AUC & 0.708 & 0.718 \\ \hline
+$ttH$ significance (if even)& $4.57\sigma$ & $4.60\sigma$ \\
+$ttH$ significance (if odd)& $3.26\sigma$ & $3.33\sigma$ \\ \hline
+CP odd rejection & $3.01\sigma$ & $2.89\sigma$\\
+CP mix rejection & $0.61\sigma$ & $0.59\sigma$ \\ \hline
+\hline
+\end{tabular}
+\end{center}
+\vspace{-0.5cm}
+\caption{Figures of merit for the fifteen-category CP BDT categorization.  The right-hand column shows that an alternative setup using four-vector training variables in the CP BDT achieves similar sensitivity.}
+\label{tab:appsigs}
+\end{table}
 Ultimately, these results show that, even without the presence of CP-alternative $tH$ samples, the top reconstruction-aided "Nominal" BDT is able to produce a higher Number-Counting Significance than the proposed 4-vector only BDT. As is shown in Figures \ref{fig:nominalBs} - \ref{fig:4vecBs}, the difference is primarily due to the Nominal BDT's ability to reduce $ggH$ contamination by relying on top variables.
 
 \begin{figure}[htbp]

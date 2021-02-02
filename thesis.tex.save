@@ -1,0 +1,175 @@
+% Use the University of Michigan thesis class.
+\documentclass[thesis,openany]{./tex/thesis-umich}
+
+\newcommand*{\ATLASLATEXPATH}{latex/}
+\usepackage{\ATLASLATEXPATH atlasphysics}
+\usepackage{ANA-HIGG-2020-16-INT1-defs}
+
+\usepackage{pgffor}
+\usepackage{longfigure}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage[export]{adjustbox}
+\usepackage{mathrsfs}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{amsmath}
+
+\usepackage{rotating}
+\usepackage{etoolbox}
+\usepackage{tikz}
+
+\usepackage{siunitx}
+% High energy physics
+\DeclareSIUnit\micron{\micro\metre}
+\DeclareSIUnit\mrad{\milli\rad}
+\DeclareSIUnit\gauss{G}
+\DeclareSIUnit\eVperc{\eV\per\clight}
+\DeclareSIUnit\nanobarn{\nano\barn}
+\DeclareSIUnit\picobarn{\pico\barn}
+\DeclareSIUnit\femtobarn{\femto\barn}
+\DeclareSIUnit\attobarn{\atto\barn}
+\DeclareSIUnit\zeptobarn{\zepto\barn}
+\DeclareSIUnit\yoctobarn{\yocto\barn}
+\DeclareSIUnit\nb{\nano\barn}
+\DeclareSIUnit\pb{\pico\barn}
+\DeclareSIUnit\fb{\femto\barn}
+\DeclareSIUnit\ab{\atto\barn}
+\DeclareSIUnit\zb{\zepto\barn}
+\DeclareSIUnit\yb{\yocto\barn}
+
+
+
+
+% Title of the thesis
+\title{My Thesis}
+
+% Author name
+\author{Name}
+
+% Department
+\department{Department}
+
+% Year of completion
+\year=2020
+
+% ORCID ID 
+\orcid{My Orcid ID}
+
+% UM Unique Name 
+\umuniquename{name}
+
+% Frontispiece
+%\frontispiece{\includegraphics[width=4in]{./pics/frontispiece.pdf}}
+
+% Default style for front pages
+\frontpagestyle{1}
+
+% Dedication
+\dedication{ “Questing Physicks isn’t like the Quiet and Queer branches. You can’t do it at home in a comfortable chair—you have to be out in the thick of the business, with your tools on your belt and your heart on your sleeve!” - Catherynne Valente, The Girl Who Fell Beneath Fairyland and Led The Revels There \ref{cite:Fairyland}. \\ \\
+
+
+For }
+
+
+% Acknowledgments
+\acknowledgments[6]{
+% The acknowledgements section of this dissertation, perhaps surprisingly, is the hardest for me to write. If left to my own devices, I have no doubt that the list of people I'd want to thank would be as long as the rest of this paper, if not longer. Like the globe held up by the Atlas of myth, my world is perched upon the shoulders of giants. Completing a dissertation at any point is no easy task, let alone in the middle of a pandemic- I could not have done this alone.
+
+%First, to my family- to my parents, Gregg and Gretchen, thank you for working so hard to foster a lifelong sense of curiosity in me, in a world that doesn't always value it. Without the endless stream of NOVA specials, public lectures, and museum trips, I would not be the person I am today.
+
+%To my brother Grant, thank you for 
+
+%To my grandparents, JoAnn and Ray, Ray and Sue, and Bert and Ron- thank you for
+
+%Most of all, of course, thanks to my partner, Abigail Goodhart, who
+
+}
+% This command sets the width of the acknowledgments area as a fraction
+% of the total width of the text area.
+%\acknowledgmentswidth{0.85}
+
+% Preface
+%\preface[2]{ Do I need this?}
+
+% Committee
+\committee{ %
+Thomas Schwarz, Chair \\
+Dante Amidei \\ 
+Junjie Zhu \\ 
+James Liu \\ 
+Eric Bell \\ }
+
+% Chair must be entered separately for formatting reasons.
+\chair{Thomas Schwarz}
+
+% Commands to hide or show lists of figures, tables, etc.
+%\hidelistoftables
+%\showlistofprograms
+\showlistofappendices
+
+% Definition of any abbreviations used.
+\abbreviations{ %
+    \acro{TH}{Thesis}
+    \acrodefplural{TH}{Theses}   
+}
+
+
+
+% Some abstract text
+\abstract{ %
+My Abstract. 
+}
+%\hideabstractpagenumber
+
+%% DOCUMENT AREA
+\usepackage{ amssymb }
+\usepackage{ amsmath }
+\begin{document}
+
+% ----- Introduction ----- %
+
+\chapter{An Overview of the Standard Model} \label{chap:theory_chapter}
+	\input{sections/theory_chapter} 
+
+\chapter{The ATLAS Detector} \label{chap:detector_chapter}
+	\input{sections/detector_chapter} 
+
+\chapter{Experimental Methods} \label{chap:methods_chapter}
+	\input{sections/methods_chapter} 
+
+\chapter{Data and Monte Carlo Samples} \label{chap:datamc_chapter}
+	\input{sections/datamc_chapter} 
+
+\chapter{Signal Parameterization, Background Parametrization, and Statistical Methods} \label{chap:sigbkgparam}
+	\input{sections/sigbkgparam} 
+
+\chapter{Study of the CP properties of the top-quark Yukawa interaction in t\bar{t}H and tH events wth H \rightarrow \gamma \gamma} \label{chap:tthcp_chapter}
+	\input{sections/tthcp_chapter} 
+
+
+% ----- Appendices ----- % 
+
+\appendix
+
+%\chapter{Alternative Top Reconstruction with the KLFitter} \label{app:KLFitter}
+	\input{appendix/KLFitter}
+
+%\chapter{CP-BDT Studies with the Toolkit for Multivariate Analysis} \label{app:TMVABDT}
+	\input{appendix/TMVABDT}
+
+
+
+ 
+% Using AIAA bibliography style 
+\bibliographystyle{aiaa}
+% Give this command the relative path to the .bib file.
+\bibliography{./bib/thesis-bib}
+
+
+\end{document}
+
+
