@@ -1,8 +1,6 @@
-\section{Results} \label{sec:ttHCPResults}
-
 Following the categorization in the previous chapter, a measurement of the CP-mixing term in the top Yukawa coupling is performed. 
 
-\subsection{Yield Dependence on $\alpha$} \label{sec:YieldPar}
+\section{Yield Dependence on $\alpha$} \label{sec:YieldPar}
 
 In order to perform a measurement of the parameters $\alpha$ and $\kappa_{t}$, the yield in each category must be parameterized as a function of these parameters. This takes the same form as cross-section dependence:
 
@@ -22,18 +20,18 @@ These constants are determined by fitting the yield in each category using the M
 
 The $ggF$ cross-section and $H \rightarrow \gamma \gamma$ branching ratio can also be parameterized in terms of $kappa_{t}$ and $\alpha$; this is detailed more in section \ref{subsec:}
 
-\subsection{Signal and Background Parameterization}
+\section{Signal and Background Parameterization}
 
 The signal and background shapes are parameterized according to the prescription in \ref{sec:sigbkgparam}, using a Double-Sided Crystal Ball function for the signal shape and following the spurious signal test procedure for the background parameterization. The DSCB shape does not vary noticeably with $\alpha$, so the Standard-Model Higgs signal DSCB parameterization is used for all $\alpha$ variations occurring in the analysis.
 
 In all categories but one, the $tt\gamma\gamma$ Monte Carlo sample is used for the background template. However, in Hadronic Category 10, a fluctuation in the Monte Carlo causes the spurious signal test to fail- in this category, we choose NTI data as the source of the template due to its lower statistical uncertainty. DSCB parameterizations are given in table XXX, while the spurious signal values, template source, choice of functional forms, and fit $\chi^{2}$ are shown in table XXX.
 
 
-\subsection{Systematic Uncertainty}
+\section{Systematic Uncertainty}
 
 Uncertainties can effect both the overall yield of a given physics process and the migration of events between categories. For non-top Higgs processes (excluding $ggF$), only the uncertainties on the overall yield are calculated; however, for $ttH$, $tWH$, $tHjb$, and $ggF$, several migration uncertainties are accounted for as well.
 
-\subsubsection{Theory Systematics}
+\subsection{Theory Systematics}
 
 Theory systematic uncertainties are designed to account for the precision (or imprecision) of the knowledge with which the models used in the analysis are constructed. These take on a number of different forms, including uncertainties on the parton distribution functions (PDFs), uncertainties on the QCD renormalization and factorization scale, and mismodelling of processes containing final-state b-jets.
 
@@ -53,7 +51,7 @@ Similarly, a Monte Carlo generator uncertainty is calculated for $ttH$ and $ggH$
 
 Finally, an additional nuisance parameter is included to account for the theoretical uncertainty on the $H \rightarrow \gamma \gamma$ branching ratio. The number of nuisance parameters corresponding to each of the theoretical uncertainties and the form of the constraint term for each is given in Table XXX.
 
-\subsubsection{Experimental Systematics}
+\subsection{Experimental Systematics}
 
 Due to the complexity of reconstructing physics objects, a large number of experimental systematics must also be calculated.
 These include:
@@ -76,9 +74,9 @@ The list of theoretical uncertainties and the form of the constraint term for ea
 
 XXXX Give values XXXX
 
-\subsection{Results and Interpretations}
+\section{Results and Interpretations}
 
-The fitted Higgs signal mass in each category is shown in Figures XXX-XXX. We observe that the signal peak is strongest in the more CP-even sensitive categories (3, 6, 9, 12, 14, 17, and 20), rather than the more CP-odd sensitive ones (1, 4, 7, 10, 13, 16, and 19), thus lending credence to the Standard Model prediction. Numerically, we can extract a number of key metrics:
+The fitted diphoton mass spectrum in each category is shown in Figures XXX-XXX. We observe that the Higgs signal peak is strongest in the more CP-even sensitive categories (3, 6, 9, 12, 14, 17, and 20), rather than the more CP-odd sensitive ones (1, 4, 7, 10, 13, 16, and 19), thus lending credence to the Standard Model prediction. Numerically, we can extract a number of key metrics:
 
 \begin{itemize}
 \item Observed and expected $ttH$ significance
@@ -87,23 +85,59 @@ The fitted Higgs signal mass in each category is shown in Figures XXX-XXX. We ob
 \item 1D limits on $\alpha$, setting $\kappa_{t} = 1$
 \begin{itemize}
 
-Two potential interpretations of the final two metrics are given in order to properly treat the dependence of $ggH$ and $H \rightarrow \gamma \gamma$ on $\alpha$.
+Two potential interpretations of the final two metrics are given in order to properly treat the dependence of $ggF$ and $H \rightarrow \gamma \gamma$ on $\alpha$.
 
-In the first interpretation, existing measurements of $kappa_{g}$ and $kappa_{\gamma}$ can be used to constrain 
+In the first interpretation, existing measurements of $kappa_{g}$ and $kappa_{\gamma}$ \ref{cite:CouplingsRun2} can be used to constrain the $ggF$ and $H \rightarrow \gamma \gamma$ terms. 
+
+In the second, $\kappa_{g}$ and $\kappa_{\gamma}$ are parameterized as in \ref{cite:Ellis} in order to allow them to vary in the fit:
+
+\begin{equation}
+\kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha) 
+\kappa_{\gamma}^{2} = 0.08\kappa_{t}^{2}cos(\alpha)^{2} + 0.18\kappa_{t}^{2}sin(\alpha)^{2} - 0.72\kappa_{t}cos(\alpha) + 1.64
+\end{equation}
+
+\subsection{Observed and Expected $ttH$ Significance}
+
+Expected $ttH$ significance is evaluated using post-fit Asimov data for which the yield of all non-$ttH$ processes is set to the Standard Model value and a Standard Model CP-Even Yukawa Coupling is assumed. The expected $ttH$ significance is 4.4$\sigma$, with an expected signal strength of:
+ 
+\begin{equation}
+\mu_{ttH}^exp = 1.00^{+0.32}_{-0.28}
+\end{equation}
+
+The observed $ttH$ significance is 5.2$\sigma$ (5.6$\sigma$ if systematics are neglected), corresponding to a signal strength of:
+
+\begin{equation}
+\mu_{ttH}^obs = 1.43^{+0.39}_{-0.35}(stat)^{+0.20}_{-0.16}(syst)
+\end{equation}
+ 
+
+This analysis thus marks the first ever single-channel observation of $ttH$ in the diphoton channel with ATLAS: while $ttH$ has been observed in a combination of channels on ATLAS \ref{cite:ttH} and has been observed in the diphoton channel with CMS, previous single-channel $ttH$ measurements were below the 5.0$\sigma$ threshold needed to constitute a discovery. 
+ 
+\subsection{Upper Limit on $tH$}
+
+Though the small cross-section of the $tH$ process makes it unlikely to be detected in ATLAS Run-2 data alone, it is nonetheless possible to set an upper limit on how large any deviation from the Standard Model must be, given current analysis sensitivity. This is done using the CLS model, a conservative method of setting such limits \ref{cite:CLS}.
+
+Expected $tH$ significance is evaluated using post-fit Asimov data for which the yield of all non-$tH$ or -$ttH$ processes is set to the Standard Model value and a Standard Model CP-Even Yukawa Coupling is assumed. The signal strength terms $\mu_{ttH}$, $\mu_{tWH}$, and $\mu_{tHjb}$ are then allowed to float in the fit. The expected limit is 11.7 $\times$ SM , and the observed limit is 11.6 $\times$ SM (10.5 $\times$ SM neglecting systematics).
+
+\subsection{2-D Limit on $\kappa_{t}cos(\alpha), \kappa_{t}sin(\alpha)$}
+
+\subsubsection{Constraint Using Previous Measurements}
+
+A fit is performed using the recent Run-2 Couplings combination result \ref{cite:Couplings} to constrain the values of $\kappa_{g}$ and $\kappa_{\gamma}$. Because the dataset used for the CP analysis is a subset of the dataset used for the previous Run-2 Couplings combination result, the $ttH$ and $tH$ categories of the analysis are excluded to ensure orthogonal selection and the constraint terms are re-derived for the CP analysis. The constraint terms are:
+
+\begin{equation}
+\kappa_{g} = 1.034 \pm 0.067
+\kappa_{\gamma} = 0.984 \pm 0.064
+\rho(\kappa_{g}, \kappa_{\gamma}) = -0.47
+\end{equation}
+
+Where the $\rho$ term governs the correlation between the two \ref{cite:kappaFW}. 
+
+The total yields are observed in Figure XXX and Table XXX.  
+
+The two-dimensional 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+\subsubsection{Constraint Using $\kappa_{t}$ Parameterization}
 
 
