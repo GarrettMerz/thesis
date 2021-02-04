@@ -44,26 +44,7 @@ In order to generate Monte Carlo simulated events, several software programs mus
 
 To simulate such a collision, the quantum field-theoretic "matrix element" that governs the dynamics of the hard-scatter process must be calculated, the momentum distributions of the individual partons must be modelled using Parton Distribution Functions (or PDFs), and the decay showers of any final-state hadrons produced in the event must be dynamically modelled. Additionally, the dynamics of proton constituents not contributing to the hard scatter, called the "underlying event", must also be simulated. Because showering and underlying event processes are difficult to accurately model, they are "tuned" on the data using a variety of particular parameter sets \ref{cite:tunes}. 
 
-A list of the versions and purposes of the Monte Carlo generator tools is detailed in Table \ref{Table:MCTools}. 
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{cccc}
-                Purpose & Name & Version & References \\ \hline
-				Matrix Element &&& \\                
-                & MadGraph5\_aMC@NLO & 8.2.12& \ref{cite:MG5} \ref{cite:aMCNLO} \\
-                & Powheg & 7.03 & \ref{cite:Powheg1} \ref{cite:Powheg2} \ref{cite:Powheg3} \\ \hline
-                Showering + Matrix Element &&& \\              
-                & Pythia8 & 2 & \ref{cite:Pythia1} \ref{cite:Pythia2} \\ 
-                & Herwig7 & 2.6.2 & \ref{cite:Herwig1} \ref{cite:Herwig2} \\ \hline
-                Hadronization &&& \\              
-                & EvtGen & 1.1 & \ref{cite:EvGen}  \\ \hline
-                Matrix Element+Showering+Hadronization &&& \\              
-                & Sherpa & 1.2.0 & \ref{cite:Sherpa1} \ref{cite:Sherpa2} \ref{cite:Sherpa3} \ref{cite:Sherpa4} \\ \hline
-    \end{tabular}
-    \caption{Tools used for Monte Carlo generation in the analyses detailed in this dissertation.}
-    \label{MCTools}
-\end{table}
+The Monte Carlo samples used in this dissertation are constructed using either the $MadGraph5\_aMC@NLO 8.2.12$ \ref{cite:MG5} \ref{cite:aMCNLO} or Powheg 7.03 \ref{cite:Powheg1} \ref{cite:Powheg2} \ref{cite:Powheg3} generators for matrix element calculation, Pythia8v2 \ref{cite:Pythia1} \ref{cite:Pythia2} or Herwig7v2.6.2 \ref{cite:Herwig1} \ref{cite:Herwig2} for showering, EvtGen 1.1 for hadronization of final-state jets \ref{cite:EvGen}, and Sherpa 1.2.0 \ref{cite:Sherpa1} \ref{cite:Sherpa2} \ref{cite:Sherpa3} \ref{cite:Sherpa4} for the matrix element calculation, showering, and hadronization of certain high-statistics samples.
 
 After generation, Monte Carlo simulations are then passed through the Geant4 software package \ref{Geant4} to simulate the detector response. After this, the events are passed through the same object-reconstruction software used for data events \ref{arXiv: 1005.4568}. All Monte Carlo samples used in this dissertation are generated using the Geant4 full simulation, with the exception of the QCD continuum diphoton samples used for background modelling, which were treated using the GEANT4 fast simulation settings due to the number of events generated. For all MC samples, pile-up interactions were simulated by overlaying each Monte Carlo event with a different number of minimum-bias events simulated using Pythia 8.186 \ref{cite:Pythia} with the ATLAS "A3" tune \ref{cite:A3}.
 

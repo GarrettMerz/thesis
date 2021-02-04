@@ -54,15 +54,15 @@
 \contentsline {subsubsection}{\numberline {5.2.0.1}Background Templates}{76}{subsubsection.5.2.0.1}%
 \contentsline {section}{\numberline {5.3}Likelihood Fitting and Asimov Data}{77}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Study of the CP properties of the top-quark Yukawa interaction in $t\bar {t}H$ and $tH$ events wth $H \rightarrow \gamma \gamma $}{79}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Study of the CP properties of the top-quark Yukawa interaction in $t\bar {t}H$ and $tH$ events wth $H \rightarrow \gamma \gamma $: Categorization}{79}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}SBBDT}{80}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.1}Categorization}{79}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}SBBDT}{79}{subsection.6.1.1}%
 \contentsline {subsubsection}{\numberline {6.1.1.1}Hadronic Region}{80}{subsubsection.6.1.1.1}%
 \contentsline {subsubsection}{\numberline {6.1.1.2}Leptonic Region}{81}{subsubsection.6.1.1.2}%
-\contentsline {subsection}{\numberline {6.1.2}CP-Sensitive Observables}{83}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.2}CP-Sensitive Observables}{82}{subsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.1.3}CPBDT}{88}{subsection.6.1.3}%
 \contentsline {subsection}{\numberline {6.1.4}Poisson Number-Counting Significance}{94}{subsection.6.1.4}%
 \contentsline {subsection}{\numberline {6.1.5}2D Categorization}{101}{subsection.6.1.5}%
-\contentsline {chapter}{Appendices}{105}{section*.89}%
+\contentsline {chapter}{Appendices}{105}{section*.88}%
 \setcounter {tocdepth}{1}
 \contentsline {section}{\numberline {A.1}The KLFitter}{105}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Comparison}{106}{section.A.2}%
@@ -73,6 +73,14 @@
 \contentsline {subsubsection}{\numberline {A.3.1.3}Results}{117}{subsubsection.A.3.1.3}%
 \contentsline {subsection}{\numberline {A.3.2}Dilep/Semilep BDT, ttH Only}{121}{subsection.A.3.2}%
 \contentsline {subsubsection}{\numberline {A.3.2.1}Dileptonic BDT}{121}{subsubsection.A.3.2.1}%
-\contentsline {subsubsection}{\numberline {A.3.2.2}Semileptonic BDT}{121}{subsubsection.A.3.2.2}%
+\contentsline {subsubsection}{\numberline {A.3.2.2}Semileptonic BDT}{124}{subsubsection.A.3.2.2}%
 \contentsline {subsection}{\numberline {A.3.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{124}{subsection.A.3.3}%
 \contentsline {subsection}{\numberline {A.3.4}Dedicated CP-45 BDT Training}{129}{subsection.A.3.4}%
+\contentsline {section}{\numberline {A.4}Gaussian Processes smoothed background templates}{132}{section.A.4}%
+\contentsline {subsection}{\numberline {A.4.1}Spurious Signal GPR-smoothed templates}{132}{subsection.A.4.1}%
+\contentsline {section}{\numberline {A.5}Validation of Gaussian Process Smoothing}{132}{section.A.5}%
+\contentsline {subsection}{\numberline {A.5.1}Nominal Bias Study}{146}{subsection.A.5.1}%
+\contentsline {subsection}{\numberline {A.5.2}Extended Templates}{184}{subsection.A.5.2}%
+\contentsline {subsection}{\numberline {A.5.3}Extended Templates, Linear Error Kernel}{231}{subsection.A.5.3}%
+\contentsline {subsection}{\numberline {A.5.4}Feature Injection Study}{323}{subsection.A.5.4}%
+\contentsline {subsection}{\numberline {A.5.5}Results}{388}{subsection.A.5.5}%

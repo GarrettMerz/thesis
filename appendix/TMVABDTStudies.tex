@@ -2,17 +2,17 @@
 \label{sec:TMVABDTStudies}
 
 \subsection{Four-Vector BDT, ttH only}
-Prior to the generation of alternative CP tH samples, an alternative BDT was developed using the four-vectors of objects in the event in order to check its performance against the Nominal BDT developed using top reconstruction variables. Utilizing four-vectors provides another potential solution to the large underflow of the top reconstruction BDT, and can be seen as an alternative to the "hybrid top" method. The BDT is trained using ROOT's TMVA package \cite{TMVA} using the same aMCnlo+Pythia8 training samples as the nominal BDT, and utilizes the same train/test/significance subsampling scheme. It is reproduced in XGBoost for the significance comparison - a replication of the Nominal BDT in TMVA performs near-identically, confirming that, for this analysis, the choice of MVA package appears to have no effect on BDT performance.
+Prior to the generation of alternative-CP $tH$ samples, an alternative $ttH$-only CP-BDT was developed using only the four-vectors of objects in the event in order to check its performance against the nominal $ttH$-only CPBDT developed using the top reconstruction variables. Utilizing four-vectors provides another potential solution to the large underflow of the top reconstruction BDT, and can be seen as an alternative to the "hybrid top" method. The BDT is trained using ROOT's TMVA package \cite{TMVA} using the same aMCnlo+Pythia8 training samples as the nominal CP-BDT, and utilizes the same train/test/significance subsampling scheme. It is reproduced in XGBoost for the significance comparison - a replication of the Nominal CP-BDT in TMVA performs near-identically, confirming that, for this analysis, the choice of MVA package appears to have no effect on BDT performance.
 
 \subsubsection{Hadronic Channel}
 
-Similar to the Nominal BDT, the hadronic CP BDT is trained to separate $ttH$ CP even and CP odd aMCnlo+Pythia8 Monte Carlo passing the hadronic pre-selection (0 leptons, $\ge1$ b-jet at 77\% working point).
+Similar to the nominal BDT, the hadronic four-vector CP BDT is trained to separate $ttH$ CP even and CP odd aMCnlo+Pythia8 Monte Carlo passing the hadronic pre-selection (0 leptons, $\ge1$ b-jet at 77\% working point).
 
 The training variables used in the four-vector CP BDT training are:
 \begin{itemize}
 \item $p_{T}$, $\eta$, $\phi$, and pseudocontinuous b-tag score of the leading 6 jets in the event
 \item The $p_{T}$ of the Higgs candidate (scaled by mass)
-\item  $\cos$($\theta^{*}$)
+\item  $\cos$($\theta^{*}$) (the cosine of the angle between the photons in the Collins-Soper frame \ref{cite:thetastar})
 \item The $\eta$ and $\phi$ of the two leading photons in the event
 \item The magnitude and $\phi$ of the missing transverse energy in the event
 \item The summed invariant mass of all jets in the event
@@ -77,13 +77,13 @@ The linear correlations between these variables in $ttH$ CP even and CP odd aMCn
 
 \subsubsection{Leptonic channel}
 
-Likewise, the leptonic CP BDT is trained to separate $ttH$ CP even and CP odd aMCnlo+Pythia8 Monte Carlo passing the leptonic pre-selection (>0 leptons, $\ge1$ b-jet at 77\% working point).
+Likewise, the leptonic  four-vector CP BDT is trained to separate $ttH$ CP even and CP odd aMCnlo+Pythia8 Monte Carlo passing the leptonic pre-selection (>0 leptons, $\ge1$ b-jet at 77\% working point).
 
 \begin{itemize}
 \item $p_{T}$, $\eta$, $\phi$, and pseudocontinuous b-tag score of the leading 4 jets in the event
 \item $p_{T}$, $\eta$, $\phi$, and pseudocontinuous b-tag score of the leading 2 leptons in the event
 \item The $p_{T}$ of the Higgs candidate (scaled by mass)
-\item  $\cos$($\theta^{*}$)
+\item  $\cos$($\theta^{*}$) (the cosine of the angle between the photons in the Collins-Soper frame \ref{cite:thetastar})
 \item The $\eta$ and $\phi$ of the two leading photons in the event
 \item The magnitude and $\phi$ of the missing transverse energy in the event
 \item The summed invariant mass of all jets in the event
@@ -147,7 +147,7 @@ The linear correlations between these variables in $ttH$ CP even and CP odd aMCn
 
 \subsubsection{Results}
 
-We perform a significance comparison between the four-vector and an iteration of the Nominal CP-BDT, recreating the four-vector CP-BDT in xgboost so as to compare both on the same footing. For this study, we use a modified definition of number-counting significance, treating SM $tHjb$ and $tWH$ as background processes and neglecting the modified top Yukawa coupling's effects on $ggH$.
+We perform a significance comparison between the four-vector and an early iteration of the nominal CP-BDT, recreating the four-vector CP-BDT in xgboost so as to compare both with similar hyperparameter setups. For this study, we use a modified definition of number-counting significance, treating SM $tHjb$ and $tWH$ as background processes and neglecting the modified top Yukawa coupling's effects on $ggH$.
 
 We compare to a Nominal BDT with the following architecture:
 
@@ -198,7 +198,7 @@ CP mix rejection & $0.61\sigma$ & $0.59\sigma$ \\ \hline
 \caption{Figures of merit for the fifteen-category CP BDT categorization.  The right-hand column shows that an alternative setup using four-vector training variables in the CP BDT achieves similar sensitivity.}
 \label{tab:appsigs}
 \end{table}
-Ultimately, these results show that, even without the presence of CP-alternative $tH$ samples, the top reconstruction-aided "Nominal" BDT is able to produce a higher Number-Counting Significance than the proposed 4-vector only BDT. As is shown in Figures \ref{fig:nominalBs} - \ref{fig:4vecBs}, the difference is primarily due to the Nominal BDT's ability to reduce $ggH$ contamination by relying on top variables.
+Ultimately, these results show that, even without the presence of CP-alternative $tH$ samples, the top reconstruction-aided "Nominal" BDT is able to produce a higher Number-Counting Significance than the proposed 4-vector only BDT. As is shown in Figures \ref{fig:nominalBs} - \ref{fig:4vecBs}, the difference is primarily due to the Nominal BDT's ability to reduce $ggH$ contamination by relying on top variables. 
 
 \begin{figure}[htbp]
  \centering
@@ -224,10 +224,10 @@ Ultimately, these results show that, even without the presence of CP-alternative
 
 \subsection{Dilep/Semilep BDT, ttH Only}
 
-An additional pair of BDTs are developed with the goal of subdividing the leptonic channel into a dedicated semileptonic and dileptonic channel. In order to fully exploit the effectiveness of this technique, a dedicated SBBDT would need to be trained for dileptonic and semileptonic channels as well; however, this is outside the scope of the analysis at this time. Additionally, low event yields in TI sidebands in the dileptonic channel (~8 events passing preselection) call the feasibility of a multi-category fit using this method into question; however, this is a pedagogical exercise that may prove useful if this study is performed again at the HL-LHC.
+An additional pair of BDTs are developed with the goal of subdividing the leptonic channel into a dedicated semileptonic and dileptonic channel. In order to fully exploit the effectiveness of this technique, a dedicated SBBDT would need to be trained for dileptonic and semileptonic channels as well; however, this is outside the scope of the analysis at this time. Additionally, low event yields in TI sidebands in the dileptonic channel (~8 events passing preselection) call the feasibility of a multi-category fit using this method into question; however, this study may prove useful if this analysis is performed again at the HL-LHC. Dileptonic $ttH$ offers special sensitivity to the top Yukawa coupling due to spin-correlations between the leptonic top decay products, so performing such a category division in the future is well-motivated \cite{Ellis}. 
 
 \subsubsection{Dileptonic BDT}
-For the dedicated dileptonic BDT, trained and tested on events which pass the leptonic preselection in addition to requiring that the event contain > 1 lepton, we use the following inputs:
+For the dedicated dileptonic BDT, trained and tested on events which pass the leptonic preselection in addition to requiring that the event contain at least two leptons, we use the following inputs:
 
 \begin{itemize}
 \item $p_{T}$, $\eta$, $\phi$, and pseudocontinuous b-tag score of the leading jet in the event
@@ -338,9 +338,9 @@ The linear correlations between these variables in $ttH$ CP even and CP odd aMCn
   
 \subsection{Variable Optimization Studies, Nominal BDT, ttH and tH}
 
-We use TMVA in order to perform a number of studies to investigate possible modifications to the Nominal BDT. For each study, we construct a different "Baseline" BDT, starting with the Nominal BDT, then observe whether or not adding or altering a given variable will substantially impact the BDT performance (deeming a "substantial" impact to be one that increases $ttH$ + $tH$ Number-Counting Significance by at least 0.1$\sigma$, as gains below this threshold are likely to be noise).
+We use TMVA in order to perform a number of studies to investigate possible modifications to the nominal CPBDT, using CP-Odd $ttH+tH$ as signal and CP-Even $ttH+tH$ as background. For each study, we construct a different "Baseline" BDT, starting with the nominal CPBDT, then observe whether or not adding or altering a given variable will substantially impact the CPBDT performance (deeming a "substantial" impact to be one that increases $ttH$ + $tH$ Number-Counting Significance by at least 0.1$\sigma$, as gains below this threshold are likely to be noise).
 
-We begin with a Nominal BDT consisting of the following input variables and modify it in an iterative process, adding or removing variables depending on performance:
+We begin with a nominal BDT consisting of the following input variables and modify it in an iterative process, adding or removing variables depending on performance:
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
@@ -370,15 +370,15 @@ We come to the following conclusions:
 \item Adding the minimum or second-smallest $\Delta$R between a photon and a jet in the event to the BDT does substantially impact the significance (the largest significance gain from their inclusion was 0.105$\sigma$ in the hadronic channel)
 \end{itemize} 
 
-We also recommend that, due to its potential dependence on $M_{H}$, $\cos$($\theta^{*}$) should not be included in the final CP-BDT.
+We also recommend that, due to its potential dependence on $m_{H}$, $\cos$($\theta^{*}$) should not be included in the final CP-BDT.
 
 \subsection{Dedicated CP-45 BDT Training}
 
 We use TMVA to investigate the performance of a CP-BDT trained against the $\alpha = 45^{\circ}$ maximal-mixing CP signal sample, rather than the $\alpha = 90^{\circ}$ CP-odd signal sample used for the Nominal BDT.
 
-As in the previous section, we begin with a different "Baseline" set of BDT variables, starting with the Nominal BDT, then observe whether or not adding or altering a given variable will substantially impact the BDT performance (deeming a "substantial" impact to be one that increases the $ttH$ + $tH$ Number-Counting Significance by at least 0.1$\sigma$, as gains below this threshold are likely to be noise). Now, however, we use the Number-Counting Significance at $\alpha = 45^{\circ}$, rather than at $\alpha = 90^{\circ}$, as defined in Equation \ref{eq:nczcp} and Equation \ref{eq:ns}.
+As in the previous section, we begin with a different "Baseline" set of BDT variables, starting with the nominal CPBDT, then observe whether or not adding or altering a given variable will substantially impact the BDT performance (deeming a "substantial" impact to be one that increases the $ttH$ + $tH$ Number-Counting Significance by at least 0.1$\sigma$, as gains below this threshold are likely to be noise). Now, however, we use the Number-Counting Significance at $\alpha = 45^{\circ}$, rather than at $\alpha = 90^{\circ}$, as defined in Equation \ref{eq:nczcp} and Equation \ref{eq:ns}.
 
-As in the previous section, we begin with a Nominal BDT consisting of the following input variables and modify it in an iterative process, adding or removing variables depending on performance:
+As in the previous section, we begin with a nominal $ttH+tH$ CPBDT consisting of the following input variables and modify it in an iterative process, adding or removing variables depending on performance:
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
@@ -388,8 +388,8 @@ As in the previous section, we begin with a Nominal BDT consisting of the follow
 \item The minimum $\Delta$R between a photon and a jet in the event
 \end{itemize}
 
-We repeat the same set of tests as in the prior section and come to the same conclusions, namely, that we see no significant variations in the CP-45 significance by deviating from the Nominal BDT architecture.
+We repeat the same set of tests as in the prior section and come to the same conclusions, namely, that we see no significant variations in the CP-45 significance by deviating from the nominal CPBDT architecture.
 
 Using the BDT trained against the $\alpha = 45^{\circ}$ maximal-mixing CP signal sample, we observe an inclusive CP-Odd significance of 2.38 and a CP-45 Significance of 1.00 in the hadronic channel, as well as a CP-Odd significance of 1.79 and a CP-45 Significance of 0.78 in the leptonic channel.
 This can be compared to the TMVA instantiation of the Nominal BDT trained against the CP-Odd signal sample, for which we observe an inclusive CP-Odd significance of 2.50 and a CP-45 Significance of 1.03 in the hadronic channel, as well as a CP-Odd significance of 1.85 and a CP-45 Significance of 0.77 in the leptonic channel.
-For all four of these significance metrics, we find that the BDT trained against the CP-Odd signal sample performs comparably to the BDT trained against the $\alpha = 45^{\circ}$ maximal-mixing CP signal sample, if not slightly better.
+For all four of these significance metrics, we find that the BDT trained against the CP-Odd signal sample performs comparably to the BDT trained against the $\alpha = 45^{\circ}$ maximal-mixing CP signal sample. Thus, using only only one $\alpha$-point as the BDT signal model rather than many is determined to be a robust choice for the analysis.
