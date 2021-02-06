@@ -449,11 +449,9 @@ In addition to considering which corrections to apply, we must also consider the
   \caption{Feynman diagrams depicting the leading-order terms for $tHjb$. These diagrams are calculated using the four-flavor PDF scheme. Note that additional diagrams can be created by reversing the direction of the upper fermion "circuit" (the final-state top and bottom must be opposite sign, but $tHj\bar{b}$ and $\bar{t}Hjb$ are equally likely to occur).}  
 \end{figure}
 
-\subsection{The Kappa Framework, STXS, and EFTs} \label{sec:kappaFW}
+\subsection{The Kappa Framework} \label{sec:kappaFW}
 
 This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa g_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa g_{t} \bar{t} (i \gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$. In this dissertation, we refer to this analysis as the "ttHCP Analysis".
-
-The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the ggF, VBF, VH, ttH, and tH processes; by doing this, we can extract limits on the individual Higgs couplings $\kappa$.
 
 When measuring Higgs couplings in analyses suh as these, it is often most useful to note the ratio of the measured coupling to the Standard Model prediction, rather than the measured coupling itself. For some Higgs coupling to a boson or fermion $i$, we can write
 
@@ -504,7 +502,48 @@ The parameterization of various production cross-sections and decay widths (divi
     \caption{Parameterization of Higgs branching ratio dependence on $\kappa$ coefficients, from \ref{cite:Phys. Rev. D 101 (2020) 012002}}
     \label{BRskappa}
 \end{table}
-    
+
+\subsection{CP-Violation in the Top Yukawa Coupling} \label{sec:CP-yukawa}
+
+According to the Standard Model, the Higgs boson is a CP-even scalar boson: it is predicted to have spin-zero, with all its interactions CP-even. Previous analyses from both ATLAS and CMS have placed limits on the existence of anomalous CP-violating Higgs couplings to the gauge bosons (\ref{cite: } \ref{cite: } and \ref{cite: }); however, any such couplings would be suppressed by a factor of 1/$(\Lambda)^2$ (where $\Lambda$ indicates the energy scale of the new CP-violating physics), so these studies are thus somewhat limited in their sensitivity. Similarly, indirect measurements of the CP-nature of the Higgs coupling to fermions in loop-diagram mediated processes have been performed \ref{cite: }; however, these measurements are highly dependent on the choice of BSM model that induces CP violation.
+
+The CP-analysis detailed in this dissertation marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner \ref{cite:constraint}, but such constraints are indirect.
+
+Because of its combined direct and indirect sensitivity to the top Yukawa coupling, we thus find that the $ttH$ and $tH$ processes with $H \rightarrow \gamma \gamma $ provide a well-motivated channel for probing the CP-structure of the top-Higgs interaction. In addition, the presence of two photons in the event final state provides a clean signal, further motivating the use of this channel. 
+
+Using the Higgs Characterization (HC) model \ref{cite:HC}, we can parameterize the top-Higgs interaction in the presence of CP-violation as $\mathcal{L} = -frac{m_{t}}{v} \kappa_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$
+
+for mixing angle $\alpha \in (-180^{\deg}, 180^{\deg})$ and $\kappa_{t} >= 0$.
+
+With the coupling formulated in such a way, the $ttH$ cross-section can be parameterized as
+
+\begin{equation}
+\sigma_{ttH} =  A\kappa_{t}^{2} (cos(\alpha)^{2}) + B\kappa_{t}^{2} (sin(\alpha)^{2}) + E \kappa_{t}^{2} cos(\alpha)sin(\alpha)
+\end{equation}
+
+for some constants A, B, and E (with E expected to be zero for $ttH$), while the $tWH$ and $tHjb$ cross-sections can be parameterized as:
+
+\begin{equation}
+\sigma_{tH} =  A\kappa_{t}^{2} (cos(\alpha)^{2}) + B\kappa_{t}^{2} (sin(\alpha)^{2}) + C\kappa_{t} (cos(\alpha))+ D\kappa_{t} (sin(\alpha)) + E \kappa_{t}^{2} cos(\alpha)sin(\alpha) + F
+\end{equation}
+
+The C and D terms originate from destructive interference: because the $tH$ process contains diagrams where the Higgs couples to the top as well as diagrams where the Higgs couples to the W-boson, holding the W-Higgs coupling fixed while varying the top-Higgs coupling can alter the total cross-section of the process. Likewise, the F term indicates the contribution only from the diagrams that do not involve the top Yukawa coupling \ref{cite:tWHEllisCitation}. Furthermore, we note that the $ttH$ cross-section is the same for $\alpha = 0^{\deg}$ and $\alpha = 180^{\deg}$ while the $tH$ cross-section is not- thus, measuring the $tH$ interaction allows us to eliminate this degeneracy and determine the sign of the top Yukawa coupling.
+
+Similarly, we can parameterize $\kappa_{g}$ and $\kappa_{\gamma}$ according to the parameterizations in \ref{cite:Ellis}:
+
+\begin{equation}
+\kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha) 
+\kappa_{\gamma}^{2} = 0.08\kappa_{t}^{2}cos(\alpha)^{2} + 0.18\kappa_{t}^{2}sin(\alpha)^{2} - 0.72\kappa_{t}cos(\alpha) + 1.64
+\end{equation}
+
+Cross-sections as a function of $\alpha$ as implemented in Monte Carlo simulation are given in \ref{tab:MCsamples_XS}. We note that, as $\alpha$ increases from $\alpha = 0^{\deg}$ (CP-even) to $\alpha = 90^{\deg}$ (CP-odd), the $ttH$ cross-section decreases while the $tH$ and $ggF$ cross-sections increase. Similarly, the $H \rightarrow \gamma \gamma$ branching ratio increases as $\alpha$ increases.
+
+By developing targeted analysis categories and parameterizing the yield in each category as a function of $\alpha$, we can thus perform a likelihood fit to the data and set limits on the true value of $\alpha$. 
+
+\subsection{Simplified Template Cross-Sections} \label{sec:STXS}
+
+The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the $ggF$, $VBF$, $VH$, $ttH$, and $tH$ processes; by doing this, we can extract limits on the individual Higgs production cross-sections in targeted regions of phase space.
+
 The Couplings Analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework, where different regions of phase space, called "truth bins", are probed according to their production modes and kinematic properties. A visual guide to the different STXS1.2 bins is shown in figure \ref{fig:STXS_scheme}. The categorization is designed such that all events passing the $H \rightarrow \gamma \gamma$ selection criteria will fall into one of the STXS1.2 categories.
 
 \begin{figure}[tbp]
@@ -520,13 +559,11 @@ The Couplings Analysis is performed within the Simplified Template Cross Section
 
 In addition to their nominal production and decay modes, the $ggH$ STXS1.2 truth bins include both $ggF$ and hadronically-decaying $gg \rightarrow ZH$ events, while the $VBF$ STXS definition includes hadronically-decaying $qq \rightarrow VH$. Additionally, it is important to note that the leptonic $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include Z-boson decays both to two charged leptons and to two neutrinos (the latter of which will have a high MET signature). 
 
-In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200 GeV$ bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses. 
-
-Furthermore, truth bins of further production modes like $b\bar{b}H$ and $tH$ are not split into dedicated kinematic regions because of their low production cross sections; in particular, in the Couplings analysis, the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, while the tH categories are subsumed into the tH categorization scheme. 
+In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200 GeV$ bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses. A total of 44 STXS truth regions are defined.
 
 For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algoritm using radius R=0.4, are required to have $p_{T} > 30 GeV$ (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
 
-Using the Monte Carlo simulated samples described in section \ref{cite: DataMC}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \ref{cite:STXS_cross_sections}, and show the acceptance for each production mode in Figure . Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{sec:CouplingsChapter}.
+Using the Monte Carlo simulated samples described in section \ref{cite: DataMC}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \ref{cite:STXS_cross_sections}, and show the acceptance for each production mode in Figure . Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{sec:CouplingsChapter}. By measuring the cross-sections in each of these bins, a number of different values are able to be extracted, including the various Higgs couplings $\kappa$ and limits on effective field theories (EFTs) parameterizing physics beyond the standard model.
 
 \begin{table}[htbp]
         \centering
@@ -597,6 +634,8 @@ Using the Monte Carlo simulated samples described in section \ref{cite: DataMC},
         \label{fig:STXS_acceptances}
 \end{figure}
 
+
+\iffalse
 In addition to the kappa-framework, the Couplings Analysis also makes use of an Effective Field Theory (EFT) approach to parameterize potential Higgs Couplings beyond the Standard Model. Effective Field Theories offer a model-independent way to parameterize new physics that may not be directly accessible at LHC energies. Using the Standard Model Effective Field Theory parameterization (SMEFT) \ref{cite:SMEFT}, we can write the Lagrangian for new physics that exists at some energy scale $\Lambda >> v$ (where $v$ denotes the Higgs field vacuum expectation value of 246 GeV) as
 
 \begin{equation}
@@ -666,42 +705,5 @@ Similarly, the Higgs partial decay width to diphotons (a measure of how often th
 \Gamma_{\gamma \gamma} = 1 + \sum_{i} A_{i}^{\Gamma_{\gamma \gamma}} c_{i} + \sum_{i} B_{ij}^{\Gamma_{\gamma \gamma}} c_{i} c_{j}
 \end{equation}
 
-Combining these, we can parameterize the event 
- in each STXS bin in terms of the Wilson coefficients, using Monte Carlo simulated events to determine the $A_{i}$ and $B_{ij}$ coefficients. This is detailed further in Section \ref{sec:CouplingsChapter}.
-
-\subsection{CP-Violation in the Top Yukawa Coupling} \label{sec:CP-yukawa}
-
-According to the Standard Model, the Higgs boson is a CP-even scalar boson: it is predicted to have spin-zero, with all its interactions CP-even. Previous analyses from both ATLAS and CMS have placed limits on the existence of anomalous CP-violating Higgs couplings to the gauge bosons (\ref{cite: } \ref{cite: } and \ref{cite: }); however, any such couplings would be suppressed by a factor of 1/$(\Lambda)^2$ (where $\Lambda$ indicates the energy scale of the new CP-violating physics), so these studies are thus somewhat limited in their sensitivity. Similarly, indirect measurements of the CP-nature of the Higgs coupling to fermions in loop-diagram mediated processes have been performed \ref{cite: }; however, these measurements are highly dependent on the choice of BSM model that induces CP violation.
-
-The CP-analysis detailed in this dissertation marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner \ref{cite:constraint}, but such constraints are indirect.
-
-Because of its combined direct and indirect sensitivity to the top Yukawa coupling, we thus find that the $ttH$ and $tH$ processes with $H \rightarrow \gamma \gamma $ provide a well-motivated channel for probing the CP-structure of the top-Higgs interaction. In addition, the presence of two photons in the event final state provides a clean signal, further motivating the use of this channel. 
-
-Using the Higgs Characterization (HC) model \ref{cite:HC}, we can parameterize the top-Higgs interaction in the presence of CP-violation as $\mathcal{L} = -frac{m_{t}}{v} \kappa_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$
-
-for mixing angle $\alpha \in (-180^{\deg}, 180^{\deg})$ and $\kappa_{t} >= 0$.
-
-With the coupling formulated in such a way, the $ttH$ cross-section can be parameterized as
-
-\begin{equation}
-\sigma_{ttH} =  A\kappa_{t}^{2} (cos(\alpha)^{2}) + B\kappa_{t}^{2} (sin(\alpha)^{2}) + E \kappa_{t}^{2} cos(\alpha)sin(\alpha)
-\end{equation}
-
-for some constants A, B, and E (with E expected to be zero for $ttH$), while the $tWH$ and $tHjb$ cross-sections can be parameterized as:
-
-\begin{equation}
-\sigma_{tH} =  A\kappa_{t}^{2} (cos(\alpha)^{2}) + B\kappa_{t}^{2} (sin(\alpha)^{2}) + C\kappa_{t} (cos(\alpha))+ D\kappa_{t} (sin(\alpha)) + E \kappa_{t}^{2} cos(\alpha)sin(\alpha) + F
-\end{equation}
-
-The C and D terms originate from destructive interference: because the $tH$ process contains diagrams where the Higgs couples to the top as well as diagrams where the Higgs couples to the W-boson, holding the W-Higgs coupling fixed while varying the top-Higgs coupling can alter the total cross-section of the process. Likewise, the F term indicates the contribution only from the diagrams that do not involve the top Yukawa coupling \ref{cite:tWHEllisCitation}. Furthermore, we note that the $ttH$ cross-section is the same for $\alpha = 0^{\deg}$ and $\alpha = 180^{\deg}$ while the $tH$ cross-section is not- thus, measuring the $tH$ interaction allows us to eliminate this degeneracy and determine the sign of the top Yukawa coupling.
-
-Similarly, we can parameterize $\kappa_{g}$ and $\kappa_{\gamma}$ according to the parameterizations in \ref{cite:Ellis}:
-
-\begin{equation}
-\kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha) 
-\kappa_{\gamma}^{2} = 0.08\kappa_{t}^{2}cos(\alpha)^{2} + 0.18\kappa_{t}^{2}sin(\alpha)^{2} - 0.72\kappa_{t}cos(\alpha) + 1.64
-\end{equation}
-
-Cross-sections as a function of $\alpha$ as implemented in Monte Carlo simulation are given in \ref{tab:MCsamples_XS}. We note that, as $\alpha$ increases from $\alpha = 0^{\deg}$ (CP-even) to $\alpha = 90^{\deg}$ (CP-odd), the $ttH$ cross-section decreases while the $tH$ and $ggF$ cross-sections increase. Similarly, the $H \rightarrow \gamma \gamma$ branching ratio increases as $\alpha$ increases.
-
-By developing targeted analysis categories and parameterizing the yield in each category as a function of $\alpha$, we can thus perform a likelihood fit to the data and set limits on the true value of $\alpha$. 
+Combining these, we can parameterize the event yield in each STXS bin in terms of the Wilson coefficients, using Monte Carlo simulated events to determine the $A_{i}$ and $B_{ij}$ coefficients. This is detailed further in Section \ref{sec:CouplingsChapter}.
+\fi

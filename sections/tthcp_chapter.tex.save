@@ -396,7 +396,7 @@ Z^{2} = -2 ln(\frac{P(S + B, S_{H} + B)}{P(S + B, S + B)}) \\
 \end{aligned}
 \end{flalign}
 
-Where S and B are the Standard-Model predicted signal and background and $S_{H}$ is the predicted signal under hypothesis H.
+Where S and B are the Standard-Model predicted signal and background and $S_{h1}$ is the predicted signal under hypothesis H.
 
 Thus, the $ttH+tH$ Standard-Model number-counting significance (that is, the significance of observing the amount of $ttH+tWH+tHjb$ in analysis categories that predicted by the Standard Model if in fact the signal process does not exist and the background-only "null hypothesis" is true) can be defined as:
 
@@ -420,8 +420,8 @@ To estimate the number of continuum background events B in the diphoton mass sig
 
 \begin{flalign}
 \begin{aligned}
-N(TI,sig) = N(NTI, SBs)\times \frac{N(TI, SBs)}{N(NTI, SBs)} \times \frac{N(NTI, sig)}{N(NTI, SBs)} \\
-= N(NTI, mass sidebands) \times f_{1} \times f_{2}
+N(TI,sig) = N(NTI, sideband)\times \frac{N(TI, SBs)}{N(NTI, SBs)} \times \frac{N(NTI, sig)}{N(NTI, SBs)} \\
+= N(NTI, SBs) \times f_{1} \times f_{2}
 \end{aligned}
 \end{flalign}
 

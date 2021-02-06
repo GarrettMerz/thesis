@@ -1,18 +1,48 @@
 
-This is a chapter. It includes examples of a section, a subsection, and a subsubsection. You can reference chapters, sections, subsections, and subsubsections with the \texttt{ \textbackslash ref} command: Chapter~\ref{chap:example_chapter}, Section~\ref{sec:example_section}, Subsection~\ref{sec:example_subsection}, Subsubsection~\ref{sec:example_subsubsection}. Your chapters, sections, and subsections will all appear in the table of contents. Subsubsections will not appear. 
+As high-energy physics enters the era of Higgs precision measurement, targeting the $H \rightarrow \gamma \gamma$ decay channel offers a valuable avenue for probing Higgs couplings and production modes. Though its branching ratio is rather small (0.227\% \ref{cite:HiggsBR}), the ATLAS detector's excellent photon reconstruction and energy resolution capabilities provide a very clean avenue for signal and background reconstruction in this channel, leading to high purity compared to other channels.
 
-This thesis package will generate a list of tables and figures. You can also generate a list of acronyms using the \texttt{ \textbackslash ac} command. To do so, include the acronym definition in the \texttt{ \textbackslash abbreviations} section in the \texttt{thesis.tex} file. The acronym should be called using the \texttt{ \textbackslash ac} command within the body of the document. For example, an abbreviation for the word \ac{TH} has been defined in \texttt{thesis.tex} using the command \texttt{ \textbackslash acro\{TH\}\{Thesis\}}. The first instance of this abbreviated word will be spelled in full, while following instances will be shown as \ac{TH}. By default, Latex will add an ``s'' to the abbreviation in order to make it plural, as in ``Thesiss.'' In order to use a more complicated plural form, the pluralization needs to be defined explicitly in the \texttt{ \textbackslash abbreviations} section as follows: \texttt{ \textbackslash acrodefplural\{TH\}\{Theses\} }. To use the plural form of the abbreviation, use the \texttt{ \textbackslash ac\{TH\} } command in the body. Note that only abbreviations which are used in the body of the document will be included in the table of abbreviations. 
+The Couplings analysis is optimized to measure the cross-sections in a number of STXS regions. While an interpretation using the kappa-framework and EFT methods is currently under development at the time of this writing, the cross-sections in each of the STXS categories are reported as a targeted observable.
+
+The preselection at both object and event level is detailed in sections \ref{sec:methods_chapter} and \ref{sec:datamc_chapter}.
+
+\section{Categorization} \label{sec:Categorization} 
+
+A categorization scheme is developed to target the STXS truth bins. The categorization is an improvement over that of the previous $80 fb^{-1}$ Coupling analysis, which sorted events into categories based on a "greedy" sequential approach \ref{cite:couplings80fb}. In the new analysis, which uses the full $139 fb^{-1}$ of data gathered by ATLAS, events are instead sorted into categories based on a unified technique that considers a number of their properties simultaneously to determine the optimal categorization scheme.
+
+Categorization proceeds in two primary steps. First, a multiclassifier Boosted Decision Tree (BDT) is trained to target STXS truth bins. A multiclassifier BDT differs from a binary BDT in that it outputs a vector discriminant corresponding to the probability that an event falls into one of a number of different regions, rather than a binary discriminant simply classifying an event as signal or background. After events are assigned into different classes targeting the STXS truth bins, they are subdivided into categories using a second binary BDT trained in each class, designed to separate Higgs signal from continuum background. The process of the BDT categorization scheme is shown in the cartoon in figure XXX.
+
+The inputs to all BDTs are kinematic variables for the various objects in an event. In order to avoid sculpting of the shapes used in the statistical analysis, any variable found to be linearly correlated by 5\% or more with $m_{\gamma \gamma}$ in the signal or background training samples is removed from the list of inputs. The list of all variables used as input to both the multiclassifier BDT and the binary BDTs is given in Table XXX.
+
+To train the multiclassifier BDT, all signal samples are merged ($ggF$, $VH$, $VBF$, $ttH$, $tH$). A weight is then applied to each event such that all processes have equal yields in the training sample (that is, so processes such as $tH$ with a small cross-section are not underrepresented). The output of the multiclassifier BDT is a 44-dimensional vector discriminant with an index $y_{i}$ for each truth bin; these indices are then converted into class probabilities $z_{i}$ using a softmax function: $z_{i} = e^{y_{i}}/{\Sigma_{j}e^{y_{j}}}$. The BDT training is performed by minimizing the cross-entropy of the $z_{i}$ using the LightGBM package \ref{cite:LightGBM}.
+
+After this, a per-class weight is calculated for each category using a so-called 'D-optimality' procedure. This is done iteratively: first, weights are initialized to $w_{i} = 1$. Second, events are classified based on the value of $w_{i}z_{i}$. An Asimov dataset \ref{cite:Asimov} is then created using the signal samples in each category, normalized to their Standard Model cross-sections and simulated continuum background ($\gamma\gamma$, $V\gamma\gamma$, and $tt\gamma\gamma$) scaled to the TI sidebands in the region $95 GeV < m_{\gamma \gamma} < 105 GeV$. A simplified version of the overall fit is then performed, using an exponential function if the total scaled background yield is determined to be less than 400 events and an ExpPoly2 function otherwise. This Asimov dataset is then fitted, leading to a covariance matrix C of the event yields in each region. The weights are then iteratively updated using the Powell algorithm \ref{cite:Powell1}, \ref{cite:Powell2} until the determinant of the covariance matrix is minimized. By minimizing the determinant of this covariance matrix, the information gain from a particular classification scheme is maximized \ref{cite:Linley}. In an experimental sense, this corresponds to higher signal purity in the classes corresponding to rare processes such as $ttH$ and $tH$. These final weights are multiplied by the softmax function output; events are classified based on their maximum value of $w_{i}z_{i}$. This produces 44 classes, one for each STXS region. The multiclassifier output for four representative classes is shown in figure XXX.
 
 
-\section{A Section} \label{sec:example_section} 
+After being sorted into a multiclass region, events are then passed through a binary signal-or-background BDT that is trained independently for each category. For classes targeting $ggH$ and $qq' \rightarrow Hqq'$ (that is, $VBF$ and hadronic $VH$), a binary BDT is trained for each class, using the targeted process as signal and the other Higgs processes and continuum diphoton production as background. However, a single binary BDT is trained for all leptonic $VH$ classes and another is trained for all $ttH+tH$ classes due to a lack of training statistics if no merging is applied. For the leptonic $VH$ and the $ttH+tH$ binary BDTs, NTI data is used to model the background.
 
-This is a section. 
+In each class, events are then sorted into a final set of 88 total categories based on the binary BDT scores. Each of the initial 44 classes is subdivided into one, two, or three categories, depending on the targeted process. The category boundaries are found by scanning all possible sets of boundaries in binary BDT score and choosing the set that maximizes the Poisson Number-Counting Significance, defined as $\sqrt{2((S+B)\ln(1+S/B)-S)}$ as in section \ref{sec:ttHCP_chapter}. The signal S for this significance metric is the yield of the targeted STXS bin, while the background is comprised of both a continuum diphoton contribution calculated from Sherpa Monte Carlo events scaled to the TI sidebands in the region $95 GeV < m_{\gamma \gamma} < 105 GeV$ and Higgs events from other STXS bins. A class is split into two categories if it able to achieve a significance gain of more than 5\% over the single-category case, and a further third category if it able to achieve an additional 5\% significance gain over the two-category case by doing so. Some events may have binary BDT scores causing them to fall outside the subdivided regions; for these events, three 'unselected' categories (one for $qq \rightarrow H l \nu$, one for $qq \rightarrow ZH$, and one for $ttH+tH$) are created. The binary BDT output for four representative categories is shown in figure XXX.
 
-\subsection{A Subsection} \label{sec:example_subsection} 
 
-This is a subsection. It will be included in the table of contents. 
+The expected yield, purity ($S/(S+B)$), and significance for each category is given in table XXX. The correspondence between the reconstructed categories and the STXS truth bins is given in Figure XXX.
 
-\subsubsection{A Subsubsection} \label{sec:example_subsubsection} 
+\section{Signal and Background Modelling} \label{sec:Categorization} 
 
-This is a subsubsection. It will not be included in the table of contents. 
+Signal in each category is modelled using a Double-Sided Crystal Ball function, fit to Higgs-signal Monte Carlo. The list of all fitted Double-Sided Crystal Ball parameters is given in table XXX.
+
+Similarly, background is modelled using the spurious signal test. 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
