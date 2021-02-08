@@ -25,20 +25,20 @@ In each class, events are then sorted into a final set of 88 total categories ba
 
 The expected yield, purity ($S/(S+B)$), and significance for each category is given in table XXX. The correspondence between the reconstructed categories and the STXS truth bins is given in Figure XXX.
 
-\section{Signal and Background Modelling} \label{sec:Categorization} 
+\section{Signal and Background Modelling} \label{sec:SignalBackground} 
 
-Signal in each category is modelled using a Double-Sided Crystal Ball function, fit to Higgs-signal Monte Carlo. The list of all fitted Double-Sided Crystal Ball parameters is given in table XXX.
+As in the CP analysis, a profile likelihood ratio fit is conducted simultaneously in all categories and a signal strength parameter is extracted.
 
-Similarly, background is modelled using the spurious signal test. 
+Signal in each category is modelled using a Double-Sided Crystal Ball function, fit to Higgs-signal Monte Carlo. The list of all fitted Double-Sided Crystal Ball parameters is given in table XXX. The Higgs mass is fixed to the run-1 measured value of $125.09 GeV \pm 0.21 GeV(stat) \pm 0.1 GeV(syst)$ \ref{cite:HiggsMass}.
 
+Similarly, background is modelled using the spurious signal test. As detailed in section \ref{sec:sigbkgparam}, in the $ggH$ and $qq
+ \rightarrow Hqq'$ categories, the templates for the spurious signal study are conducted from Sherpa diphoton samples reweighted to model the proportional contributions of $\gamma \gamma$, $\gamma j$ and $jj$ events consisting of both true and fake photons in each category. In the leptonic $VH$ and $ttH+tH$ regions, however, the $\gamma j$ and $jj$ contributions are small enough to be neglected, so $V\gamma\gamma$ and $tt\gamma\gamma$ Monte Carlo respectively are used for the templates. In the low-stat categories, a Wald test is used to select the functional form. The spurious signal values and the choice of function are given in table XXX.
 
- 
+A novel Gaussian Process Regression procedure is implemented to smooth the templates and reduce the spurious signal uncertainty, as expanded upon in Appendix \ref{app:GPR} and validated in Appendix \ref{app:gpr_validation}. This process is not implemented in the results quoted in this chapter, but is in preparation for an iteration of this analysis with an updated categorization scheme that is currently being prepared for publication. Sample background templates in two representative categories are shown in Figure XXX; an expanded set of templates both with and without the GPR procedure applied are shown in Appendix \ref{app:GPR}.
 
+\section{Systematic Uncertainties} \label{sec:Systematics} 
 
-
-
-
-
+Systematics follow a similar prescription as in the CP analysis. They can be broadly split up into two sources, experimental and theoretical, and can influence overall yield and distribution shapes, or cause migration between STXS bins.
 
 
 
