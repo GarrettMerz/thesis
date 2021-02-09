@@ -38,11 +38,49 @@ A novel Gaussian Process Regression procedure is implemented to smooth the templ
 
 \section{Systematic Uncertainties} \label{sec:Systematics} 
 
-Systematics follow a similar prescription as in the CP analysis. They can be broadly split up into two sources, experimental and theoretical, and can influence overall yield and distribution shapes, or cause migration between STXS bins.
+Systematics follow a similar prescription as in the CP analysis. They can be broadly split up into two sources, experimental and theoretical, and can influence the overall yield and distribution shapes for different processes, or cause migration between STXS bins. 
+
+Due to the large number of nuisance parameters, a nuisance parameter is removed from consideration if it has an effect of $< 0.3\%$ when varied up or down by one standard deviation.
+
+\subsection{Theory Systematics} \label{subsec:Theorysysts}
+
+Theory systematics can broadly be broken down into perturbative QCD scale uncertainties, PDF + $\alpha_{S}$ uncertainties, uncertainty on the $H \rightarrow \gamma \gamma$ branching ratio, QCD effects in the soft (low-energy) regime, and final state heavy-flavor jet uncertainty.
+
+Because the $ggF$ process is being measured specifically in fine STXS bins and not being selected against as in the CP analysis, and because the final-state jet multiplicity may vary, it is not enough to simply vary the QCD renormalization and factorization scales to account for QCD effects in $ggF$, as in the CP analysis. Thus, for $ggF$, the QCD uncertainty is broken up into 14 individual nuisance parameters, including QCD resummation and factorization scale uncertainties, migration uncertainties across different jet-multiplicity regimes, and migration between STXS bins with differing values of $p_{T}^{Hjj}$ and $m_{jj}$. Additionally, a comparison of acceptance and efficiency factors between the nominal $ggF$ sample and the alternative MadGraph5\_aMC@NLO sample is made, and the differences are considered asadditional $ggF$ modeling uncertainties.
+
+Additional QCD uncertainties on $VH$ processes are modelled, for similar reasons as for $ggH$: for each of $WH$, $qq/qg /rightarrow ZH$, and $gg \rightarrow ZH$, one source of overall yield uncertainty, four sources of $p_{T}^{V}$ modeling uncertainty, and two sources of jet multiplicity modeling uncertainty are accounted for. For $qq' \rightarrow H qq'$ processes, a similar set of uncertainty sources are identified: one for overall yield variation, two for modeling of the jet multiplicity and $p_{T}^{Hjj}$ distributions, one for migration between $p_{T}^{H} < 200$ GeV and $p_{T}^{H} > 200$ GeV, and six for the modeling of the $m_{jj}$ distribution.
+
+For $ttH$ and $tH$, one nuisance parameter is introduced for the yield and six are introduced for the $p_{T}^{H}$ distribution.
+
+The value of the various QCD scale uncertainties varies between categories, but is found to have an effect of between 5\% and 25\%.
+
+Parton showering uncertainty is evaluated by comparing the Pythia8 and Herwig7 Monte Carlo samples. Doing so leads to six nuisance parameters in each category; the effect of each of these is found to be less than 10\%.
+
+The PDF and $\alpha_{S}$ uncertainties are evaluated using the PDF4LHC15 \ref{cite:PDF4LHC15} prescription, using a matrix method designed to facilitate easier combination with other Higgs decay channels. Effects are typically very small compared to other sources of theory uncertainty.
+
+As in the CP analysis, in categories targeting $ttH$ and $tH$, we apply a 100\% yield uncertainty on the $ggF$, $VBF$, and $VH$ processes, due to poor modelling of these processes in events containing final-state hadrons. This is supported by measurements in $H \rightarrow ZZ^{*}\rightarrow 4l$ \ref{cite:HZZ4l}, $t\bar{t}b\bar{b}$ \ref{cite:ttbb}, and $Vb$ \ref{cite:Vb}.
+
+The theoretical uncertainties on the Higgs boson production cross section and the $H \rightarrow \gamma \gamma$ decay branching ratio are not used in the measurements. However, the $H \rightarrow \gamma \gamma$ decay branching ratio has an uncertainty of 1.6\%, according to the HDECAY and PROPHECY4F programs.
+
+\subsection{Experimental Systematics} \label{subsec:Experimentalsysts}
+
+Experimental systematics can broadly be broken up into two categories, those influencing or resulting from the shape of functional forms used in the fit (photon energy scale, photon energy resolution) and those influencing the overall yield (due to object reconstruction effects, luminosity, Higgs mass mismeasurement, and pileup reweighting).
+
+The photon energy scale and resolution are included as response functions on \mu_{CB} and \sigma_{CB}, respectively. They are extracted for each individual category from Monte Carlo samples with these parameters varied and are treated as uncorrelated variations across categories. For the photon energy scale, the nominal mean is compared with that of the varied sample, while for the photon energy resolution, the inter-quartile range is compared across samples. A fully-decorrelated model is used for photon energy resolution and a merged scheme is used for photon energy scale, due to the minimal sensitivity of the analysis to scale variations. Scale uncertainties are treated with a Gaussian constraint, while resolution uncertainties are treated with asymmetric constraints.
+
+85 additional nuisance parameters are introduced to model yield variations. These include jet reconstruction uncertainties such as jet flavor composition, flavor response, jet modelling, jet topology, and jet energy resolution as well as photon isolation and identification efficiency uncertainties. Spurious signal, trigger efficiency, and luminosity uncertainty are also parameterized in this way. These systematics are treated as correlated, and are treated with either asymmetric or log-normal constraints.
+
+
+\section{Results} \label{sec:Results}
+
+Three primary results are reported: First, an overall production cross-section; second, cross-sections for each of the five main individual production modes ($ggH+bbH$, $VBF$, $WH$, $ZH$, and $ttH+tH$); and third, cross-sections in each of the STXS bins. At the time of this writing, further work is being performed in order to prepare additional results that will interpret these cross-sections in terms of both the Kappa-Framework and in terms of constraints on Effective Field Theory (EFT) observables.
+
+\subsection{Cross-Sections} \label{sec:Xsecs}
 
 
 
 
+\subsection{STXS} \label{sec:STXS}
 
 
 
