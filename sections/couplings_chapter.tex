@@ -22,7 +22,6 @@ After being sorted into a multiclass region, events are then passed through a bi
 
 In each class, events are then sorted into a final set of 88 total categories based on the binary BDT scores. Each of the initial 44 classes is subdivided into one, two, or three categories, depending on the targeted process. The category boundaries are found by scanning all possible sets of boundaries in binary BDT score and choosing the set that maximizes the Poisson Number-Counting Significance, defined as $\sqrt{2((S+B)\ln(1+S/B)-S)}$ as in section \ref{sec:ttHCP_chapter}. The signal S for this significance metric is the yield of the targeted STXS bin, while the background is comprised of both a continuum diphoton contribution calculated from Sherpa Monte Carlo events scaled to the TI sidebands in the region $95 GeV < m_{\gamma \gamma} < 105 GeV$ and Higgs events from other STXS bins. A class is split into two categories if it able to achieve a significance gain of more than 5\% over the single-category case, and a further third category if it able to achieve an additional 5\% significance gain over the two-category case by doing so. Some events may have binary BDT scores causing them to fall outside the subdivided regions; for these events, three 'unselected' categories (one for $qq \rightarrow H l \nu$, one for $qq \rightarrow ZH$, and one for $ttH+tH$) are created. The binary BDT output for four representative categories is shown in figure XXX.
 
-
 The expected yield, purity ($S/(S+B)$), and significance for each category is given in table XXX. The correspondence between the reconstructed categories and the STXS truth bins is given in Figure XXX.
 
 \section{Signal and Background Modelling} \label{sec:SignalBackground} 
@@ -54,7 +53,7 @@ For $ttH$ and $tH$, one nuisance parameter is introduced for the yield and six a
 
 The value of the various QCD scale uncertainties varies between categories, but is found to have an effect of between 5\% and 25\%.
 
-Parton showering uncertainty is evaluated by comparing the Pythia8 and Herwig7 Monte Carlo samples. Doing so leads to six nuisance parameters in each category; the effect of each of these is found to be less than 10\%.
+Parton showering uncertainty is evaluated by comparing the Pythia8 and Herwig7 Monte Carlo samples. Doing so leads to six nuisance parameters in each category; the effect of each of these is found to be approximately 10\% or less.
 
 The PDF and $\alpha_{S}$ uncertainties are evaluated using the PDF4LHC15 \ref{cite:PDF4LHC15} prescription, using a matrix method designed to facilitate easier combination with other Higgs decay channels. Effects are typically very small compared to other sources of theory uncertainty.
 
@@ -62,25 +61,55 @@ As in the CP analysis, in categories targeting $ttH$ and $tH$, we apply a 100\% 
 
 The theoretical uncertainties on the Higgs boson production cross section and the $H \rightarrow \gamma \gamma$ decay branching ratio are not used in the measurements. However, the $H \rightarrow \gamma \gamma$ decay branching ratio has an uncertainty of 1.6\%, according to the HDECAY and PROPHECY4F programs.
 
+The largest theoretical systematic is the parton showering and underlying event modelling, and its impact on the measured cross sections can be up to 11\% in some $VBF$ categories. 
+
 \subsection{Experimental Systematics} \label{subsec:Experimentalsysts}
 
 Experimental systematics can broadly be broken up into two categories, those influencing or resulting from the shape of functional forms used in the fit (photon energy scale, photon energy resolution) and those influencing the overall yield (due to object reconstruction effects, luminosity, Higgs mass mismeasurement, and pileup reweighting).
 
-The photon energy scale and resolution are included as response functions on \mu_{CB} and \sigma_{CB}, respectively. They are extracted for each individual category from Monte Carlo samples with these parameters varied and are treated as uncorrelated variations across categories. For the photon energy scale, the nominal mean is compared with that of the varied sample, while for the photon energy resolution, the inter-quartile range is compared across samples. A fully-decorrelated model is used for photon energy resolution and a merged scheme is used for photon energy scale, due to the minimal sensitivity of the analysis to scale variations. Scale uncertainties are treated with a Gaussian constraint, while resolution uncertainties are treated with asymmetric constraints.
+The photon energy scale and resolution are included as response functions on \mu_{CB} and \sigma_{CB}, respectively. They are extracted for each individual category from Monte Carlo samples with these parameters varied and are treated as uncorrelated variations across categories. For the photon energy scale, the nominal mean is compared with that of the varied sample, while for the photon energy resolution, the inter-quartile range is compared across samples. A fully-decorrelated model is used for photon energy resolution and a merged scheme is used for photon energy scale, due to the minimal sensitivity of the analysis to scale variations. Scale uncertainties are treated with a Gaussian constraint, while resolution uncertainties are treated with asymmetric constraints. Their impact is between 1\% and 8\%, depending on the category.
 
-85 additional nuisance parameters are introduced to model yield variations. These include jet reconstruction uncertainties such as jet flavor composition, flavor response, jet modelling, jet topology, and jet energy resolution as well as photon isolation and identification efficiency uncertainties. Spurious signal, trigger efficiency, and luminosity uncertainty are also parameterized in this way. These systematics are treated as correlated, and are treated with either asymmetric or log-normal constraints.
+85 additional nuisance parameters are introduced to model yield variations. These include jet reconstruction uncertainties such as jet flavor composition, flavor response, jet modelling, jet topology, and jet energy resolution \ref{cite:coups127} as well as b-tagging efficiency \ref{cite:coups130}. Photon isolation and identification efficiency uncertainties \ref{cite:coups116}, spurious signal, trigger efficiency \ref{cite:coups27}, and luminosity uncertainty (obtained using the LUCID-2 detector) \ref{cite:LUCID} are also parameterized in this way. These systematics are treated as correlated, and are treated with either asymmetric or log-normal constraints.
 
+Spurious signal uncertainty ranges from 10\% to 99\% of the statistical uncertainty in categories, depending on statistics. It is considered to be uncorrelated across categories.
+
+Pileup uncertainty is modelled by varying the cross-section used to reweight pileup interactions from Monte Carlo to the data up or down by 9\%. 
+
+For $ggH$ and $VH$ categories, the leading experimental systematic uncertainty arises from the spurious signal, with an impact of around 4\% on the cross-section. For the $VBF$ and $ttH+tH$, the leading experimental uncertainty is jet modelling, and with an impact that can rise to as large as 6\%.
+
+The table of all systematics in the five-production-mode fit (combining STXS bins) is given in table XXX. 
 
 \section{Results} \label{sec:Results}
 
-Three primary results are reported: First, an overall production cross-section; second, cross-sections for each of the five main individual production modes ($ggH+bbH$, $VBF$, $WH$, $ZH$, and $ttH+tH$); and third, cross-sections in each of the STXS bins. At the time of this writing, further work is being performed in order to prepare additional results that will interpret these cross-sections in terms of both the Kappa-Framework and in terms of constraints on Effective Field Theory (EFT) observables.
+Three primary results are reported: First, an overall production cross-section; second, cross-sections for each of the five main individual production modes ($ggF+bbH$, $VBF$, $WH$, $ZH$, and $ttH+tH$); and third, cross-sections in each of the STXS bins. At the time of this writing, further work is being performed in order to prepare additional results that will interpret these cross-sections in terms of both the Kappa-Framework and in terms of constraints on Effective Field Theory (EFT) observables.
 
 \subsection{Cross-Sections} \label{sec:Xsecs}
 
+The overall cross-section is measured by profiling a single parameter, the cross-section times branching ratio ($\sigma \times B_{\gamma \gamma}$), which scales with the yield in each category. All 88 categories are fit simultaneously. The requirement $|y_{H}|<2.5$ is applied on both the 
 
+Figure XXX shoes the $m_{\gamma\gamma}$ distribution across categories, weighted by the ratio $ln(1+\frac{S}{B})$ where S and B are the signal and background yields in the smallest $m_{\gamma\gamma}$ window measured to contain 90\% of signal events. The choice of this weight is designed to illustrate the impact of more signal-dominated categories in a manner similar to how they enter into the likelihood fit. 
+The overall cross-section is measured to be:
 
+\begin{equation}
+(\sigma \times B_{\gamma \gamma})_{obs} =127 \pm 10 fb=127 \pm 7(stat.) \pm 7(syst.)fb
+\end{equation}
+
+with an expectation measured using post-fit Asimov data of:
+
+\begin{equation}
+(\sigma \times B_{\gamma \gamma})_{exp} =115 \pm 5 fb
+\end{equation}
+
+For the five-production mode model, $(\sigma \times B_{\gamma \gamma})$ is measured separately for each production mode: $ggF+bbH$, $VBF$, $ZH$, $WH$, and $ttH+tH$. The $m_{\gamma\gamma}$ distribution in these categories, weighted by the ratio $ln(1+\frac{S}{B})$, are shown in Figure XXX. The measured cross-sections times the diphoton branching ratio are depicted in Table XXX and Figure XXX. The full correlations (and stat-only correlations) between categories are depicted in Figure XXX. The observed (expected) significance values for the $VBF$, $WH$, and $ttH+tH$ processes are 7.5 (6.1) $\sigma$, 5.6 (2.8) $\sigma$, and 4.7 (5.0) $\sigma$, respectively. The expected significance for the $ZH$ process is 1.7 $\sigma$, and no excess over the background is observed in data. Together, these correspond to a roughly 1.9 $\sigma$ deviation from the SM.
+
+The reason for this discrepancy is the strong anticorrelation observed between the $WH$ and $ZH$ processes: if these are combined into one $VH$ production mode, the cross-section becomes $(\sigma_{VH})_{obs} = 5.9 \pm 1.4fb = 5.9 \pm 1.4(stat.) \pm 0.4(syst.)fb$ compared to the SM expectation of $(\sigma_{VH})_{exp}=4.53 \pm 0.12fb$. This corresponds to no excess with respect to the SM result.
+
+The anticorrelation is because the leptonic $ZH$ categories suffer from substantial $WH$ contamination and an excess is observed in the leptonic $WH$ categories, so when $\mu_{WH}$ is higher, in order to converge, the fit must overestimate the contribution of $WH$ and underestimate the contribution of $ZH$. In order to rectify this, at the time of this writing, a new categorization scheme is being devised that will introduce a high-purity leptonic $ZH$ region by splitting on lepton multiplicity that should help this to decorrelate further.
+
+A limit is also placed on the $tH$ cross-section using the $CL_{s}$ method (\ref{cite:CLs}). The limit is found to be 8.2 times the Standard Model expectation. 
 
 \subsection{STXS} \label{sec:STXS}
+
 
 
 
