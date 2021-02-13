@@ -121,3 +121,73 @@
 \let\qqHqq\qqtoHqq
 \let\ggHll\ggtoHll
 \let\qqHll\qqtoHll
+
+
+% 5XS
+\newcommand{\XSggF}{48.5\,\pm 5.8}
+\newcommand{\XSVBF}{3.52\,\pm 1.4}
+\newcommand{\XSWH}{1.37\,\pm 1.56}
+\newcommand{\XSZH}{0.88\,\pm 1.33}
+\newcommand{\XSttH}{0.51\,\pm 0.34}
+
+\newcommand{\XSggFSM}{44.5\pm 2.3}
+\newcommand{\XSVBFSM}{3.52\pm 0.07}
+\newcommand{\XSWHSM}{1.37\pm 0.03}
+\newcommand{\XSZHSM}{0.88\pm 0.02}
+\newcommand{\XSttHSM}{0.51\pm 0.06}
+
+% For table spacing
+\newcommand{\0}{\phantom{0}}
+\newcommand{\dpt}{\phantom{.}}
+
+\newcommand{\expfunc}{\texttt{Exp}}
+\newcommand{\epoly}[1]{\ifthenelse{\equal{#1}{1}}{\expfunc}{\texttt{ExpPoly#1}}}
+
+% STXS
+\newcommand{\catsuffix}[1]{\ifthenelse{\isempty{#1}}{}{, #1-purity}}
+\newcommand{\jetspec}[1]{\ifthenelse{\equal{#1}{0}}{0-jet}{\ifthenelse{\equal{#1}{1}}{1-jet}{\ifthenelse{\equal{#1}{2}}{$\ge 2$-jets}{\ifthenelse{\equal{#1}{01}}{$\le 1$-jet}{invalid jets}}}}}
+\newcommand{\kinspec}[3]{\ensuremath{\ifthenelse{\isempty{#1}}{#2 < #3\,\GeV}{\ifthenelse{\isempty{#3}}{#2 \ge #1\,\GeV}{#1 \le #2 < #3\,\GeV}}}}
+\newcommand{\pHjjspec}[1]{\ifthenelse{\isempty{#1}}{\kinspec{}{\ptHjj}{25}}{\kinspec{25}{\ptHjj}{}}}
+\newcommand{\ggHj}  [2]{\ggtoH\ (\jetspec{#1})\catsuffix{#2}}
+\newcommand{\ggHPt} [3]{\ggtoH\ (\kinspec{#1}{\ptH}{#2})\catsuffix{#3}}
+\newcommand{\ggHjPt}[4]{\ggtoH\ (\jetspec{#1}, \kinspec{#2}{\ptH}{#3})\catsuffix{#4}}
+\newcommand{\ggHmPt}[5]{\ggtoH\ (\jetspec {2}, \kinspec{#1}{\mjj}{#2}, \kinspec{#3}{\ptH}{#4})\catsuffix{#5}}
+\newcommand{\ggHm}  [4]{\ggtoH\ (\jetspec{#1}, \kinspec{#2}{\mjj}{#3})\catsuffix{#4}}
+\newcommand{\ggHmj} [4]{\ggtoH\ (\jetspec {2}, \kinspec{#1}{\mjj}{#2}, \pHjjspec{#3})\catsuffix{#4}}
+
+\newcommand{\Hqqj}  [2]{\qqtoHqq\ (\jetspec{#1})\catsuffix{#2}}
+\newcommand{\Hqqm}  [3]{\qqtoHqq\ (\jetspec {2}, \kinspec{#1}{\mjj}{#2})\catsuffix{#3}}
+\newcommand{\Hqqmj} [4]{\qqtoHqq\ (\jetspec {2}, \kinspec{#1}{\mjj}{#2}, \pHjjspec{#3})\catsuffix{#4}}
+\newcommand{\HqqmPt}[5]{\qqtoHqq\ (\jetspec {2}, \kinspec{#1}{\mjj}{#2}, \kinspec{#3}{\ptH}{#4})\catsuffix{#5}}
+
+\newcommand{\HlnPt}  [3]{\qqtoHln\ (\kinspec{#1}{\ptV}{#2})\catsuffix{#3}}
+\newcommand{\HllPt}  [3]{\qqtoHll\ (\kinspec{#1}{\ptV}{#2})\catsuffix{#3}}
+\newcommand{\HlnPtj} [4]{\qqtoHln\ (\kinspec{#1}{\ptV}{#2}, \jetspec{#3})\catsuffix{#4}}
+\newcommand{\HllPtj} [4]{\qqtoHll\ (\kinspec{#1}{\ptV}{#2}, \jetspec{#3})\catsuffix{#4}}
+\newcommand{\ttHPt} [3]{\ttH\ (\kinspec{#1}{\ptH}{#2})\catsuffix{#3}}
+
+\newcommand{\pdflhc}{PDF4LHC15}
+
+\newcommand{\tocheck}{\textcolor{red}{to be checked}}
+
+
+
+%new commands for table
+
+\newcommand{\tabggHj}  [2]{     \jetspec{#1}   \catsuffix{#2}}
+\newcommand{\tabggHPt} [3]{     \kinspec{#1}{\ptH}{#2}   \catsuffix{#3}}
+\newcommand{\tabggHjPt}[4]{     \jetspec{#1}, \kinspec{#2}{\ptH}{#3}   \catsuffix{#4}}
+\newcommand{\tabggHmPt}[5]{     \jetspec {2}, \kinspec{#1}{\mjj}{#2}, \kinspec{#3}{\ptH}{#4}   \catsuffix{#5}}
+\newcommand{\tabggHm}  [4]{     \jetspec{#1}, \kinspec{#2}{\mjj}{#3}   \catsuffix{#4}}
+\newcommand{\tabggHmj} [4]{     \jetspec {2}, \kinspec{#1}{\mjj}{#2}, \pHjjspec{#3}   \catsuffix{#4}}
+
+\newcommand{\tabHqqj}  [2]{  \jetspec{#1}   \catsuffix{#2}}
+\newcommand{\tabHqqm}  [3]{  \jetspec {2}, \kinspec{#1}{\mjj}{#2}   \catsuffix{#3}}
+\newcommand{\tabHqqmj} [4]{  \jetspec {2}, \kinspec{#1}{\mjj}{#2}, \pHjjspec{#3}   \catsuffix{#4}}
+\newcommand{\tabHqqmPt}[5]{  \jetspec {2}, \kinspec{#1}{\mjj}{#2}, \kinspec{#3}{\ptH}{#4}   \catsuffix{#5}}
+
+\newcommand{\tabHlnPt}  [3]{   \kinspec{#1}{\ptV}{#2}   \catsuffix{#3}}
+\newcommand{\tabHllPt}  [3]{\kinspec{#1}{\ptV}{#2}   \catsuffix{#3}}
+\newcommand{\tabHlnPtj} [4]{   \kinspec{#1}{\ptV}{#2}, \jetspec{#3}   \catsuffix{#4}}
+\newcommand{\tabHllPtj} [4]{\kinspec{#1}{\ptV}{#2}, \jetspec{#3}   \catsuffix{#4}}
+\newcommand{\tabttHPt} [3]{\kinspec{#1}{\ptH}{#2}   \catsuffix{#3}}
