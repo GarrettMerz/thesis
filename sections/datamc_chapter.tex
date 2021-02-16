@@ -46,7 +46,7 @@ To simulate such a collision, the quantum field-theoretic "matrix element" that 
 
 The Monte Carlo samples used in this dissertation are constructed using either the $MadGraph5\_aMC@NLO 8.2.12$ \ref{cite:MG5} \ref{cite:aMCNLO} or Powheg 7.03 \ref{cite:Powheg1} \ref{cite:Powheg2} \ref{cite:Powheg3} generators for matrix element calculation, Pythia8v2 \ref{cite:Pythia1} \ref{cite:Pythia2} or Herwig7v2.6.2 \ref{cite:Herwig1} \ref{cite:Herwig2} for showering, EvtGen 1.1 for hadronization of final-state jets \ref{cite:EvGen}, and Sherpa 1.2.0 \ref{cite:Sherpa1} \ref{cite:Sherpa2} \ref{cite:Sherpa3} \ref{cite:Sherpa4} for the matrix element calculation, showering, and hadronization of certain high-statistics samples.
 
-After generation, Monte Carlo simulations are then passed through the Geant4 software package \ref{Geant4} to simulate the detector response. After this, the events are passed through the same object-reconstruction software used for data events \ref{arXiv: 1005.4568}. All Monte Carlo samples used in this dissertation are generated using the Geant4 full simulation, with the exception of the QCD continuum diphoton samples used for background modelling, which were treated using the GEANT4 fast simulation settings due to the number of events generated. For all MC samples, pile-up interactions were simulated by overlaying each Monte Carlo event with a different number of minimum-bias events simulated using Pythia 8.186 \ref{cite:Pythia} with the ATLAS "A3" tune \ref{cite:A3}.
+After generation, Monte Carlo simulations are then passed through the Geant4 software package \ref{Geant4} to simulate the detector response. After this, the events are passed through the same object-reconstruction software used for data events \ref{cite:arXiv.1005.4568}. All Monte Carlo samples used in this dissertation are generated using the Geant4 full simulation, with the exception of the QCD continuum diphoton samples used for background modelling, which were treated using the GEANT4 fast simulation settings due to the number of events generated. For all MC samples, pile-up interactions were simulated by overlaying each Monte Carlo event with a different number of minimum-bias events simulated using Pythia 8.186 \ref{cite:Pythia} with the ATLAS "A3" tune \ref{cite:A3}.
 
 In all Monte Carlo simulations, the Higgs mass was set to 125 GeV and the decay width was set to 4.07MeV \ref{cite:HiggsWidth}. All samples described include the small contribution from Dalitz decays (that is, decays in which one photon converts into two real final-state leptons), which is accounted for in the normalization of the samples. For all Monte Carlo samples generated using Madgraph5\_aMC@NLO, the renormalization ($\mu_{R}$) and factorization ($\mu_{F}$) scales are defined as the scalar sum of the transverse masses of all final-state particles divided by two (i.e. $H_{T}/2$), and the top and W boson decays are handled by MadSpin \ref{cite:MadSpin} in order to ensure the correct treatment of the spin correlations of the decay products.
 
@@ -108,7 +108,7 @@ Additionally, a supplementary $ggF$ sample is generated using Madgraph5\_aMC@NLO
   \label{tab:signal_samples_herwig}
 \end{table}  
 
-The cross-sections for all Higgs processes are normalized to the state-of-the-art precision measurements discussed in \ref{cite:Yellowreport} using K-factor scaling factors. The accuracy of the cross-sections is N3LO QCD $+$ NLO Electroweak for $ggF$, NNLO $QCD$ $+$ NLO Electroweak for $VBF$ and $VH$, and NLO QCD $+$ NLO Electroweak for $ttH$, while $tHjb$ and $tWH$ are produced at NLO QCD with no electroweak correction. Additionally, samples are normalized to account for the $H \rightarrow \gamma \gamma$ branching ratio of $2.270 \times 10^{-3}$ calculated with HDECAY \ref{HDecay} and PROPHECY4F \ref{Prophecy}.
+The cross-sections for all Higgs processes are normalized to the state-of-the-art precision measurements discussed in \ref{cite:YellowReport4} using K-factor scaling factors. The accuracy of the cross-sections is N3LO QCD $+$ NLO Electroweak for $ggF$, NNLO $QCD$ $+$ NLO Electroweak for $VBF$ and $VH$, and NLO QCD $+$ NLO Electroweak for $ttH$, while $tHjb$ and $tWH$ are produced at NLO QCD with no electroweak correction. Additionally, samples are normalized to account for the $H \rightarrow \gamma \gamma$ branching ratio of $2.270 \times 10^{-3}$ calculated with HDECAY \ref{cite:HDecay} and PROPHECY4F \ref{cite:Prophecy}.
 
 \begin{table}[h!]
   \centering
@@ -129,7 +129,7 @@ The cross-sections for all Higgs processes are normalized to the state-of-the-ar
     	\hline
     \end{tabular}
   }
-  \caption{Cross sections times branching ratio values used to normalize each production mode. The values correspond to the state-of-the-art predictions and are taken from the CERN Yellow Report \ref{cite:yellowreport}.}
+  \caption{Cross sections times branching ratio values used to normalize each production mode. The values correspond to the state-of-the-art predictions and are taken from the CERN Yellow Report \ref{cite:YellowReport4}.}
   \label{tab:signal_samples_norm}
 \end{table}  
 

@@ -1,6 +1,6 @@
 \section{Experimental Methods} \label{sec:methods} 
 
-It is not possible to induce a particular interaction in a particle collider: every physics process that $can$ occur from the collision of two protons at $13 TeV$ $will$ occur in the ATLAS detector. Thus, the process of studying rare Higgs interactions is not one of determining how to produce them in a laboratory setting, but of determining whether or not they are being produced in our detector at all. Because physics 'signal' processes are fundamentally indistinguishable from unwanted 'background' processes, ATLAS studies are statistical counting experiments which test the compatibility of the observed numbers of events with different detector signatures against the event counts that are predicted to occur under different physics hypotheses. 
+It is not possible to induce a particular interaction in a particle collider: every physics process that can occur from the collision of two protons at $13 TeV$ will occur in the ATLAS detector. Thus, the process of studying rare Higgs interactions is not one of determining how to produce them in a laboratory setting, but of determining whether or not they are being produced in the detector at all. Because physics 'signal' processes are fundamentally indistinguishable from unwanted 'background' processes, ATLAS studies are statistical counting experiments which test the compatibility of the observed numbers of events with different detector signatures against the event counts that are predicted to occur under different physics hypotheses. 
 
 Performing these experiments effectively in the data-rich environment of the LHC requires many clever statistical and computational tools, which vary from analysis to analysis. However, in all analyses, it is vitally important both to accurately model what the physics processes of interest may look like in the ATLAS detector and to translate observed detector signals into high-level physics objects. The Monte Carlo simulation method is used for the former, while the latter is performed by the variety of identification and reconstruction techniques detailed in this chapter.
 
@@ -8,9 +8,9 @@ Performing these experiments effectively in the data-rich environment of the LHC
 
 The Monte Carlo simulation method is a way of modelling how a given physics process that may occur at the point of collision may translates into signatures in the ATLAS detector. For a given physics process, say, $gg \rightarrow t \bar{t} H$, we must model both the initial process (i.e., what is the likelihood two gluons will interact to make a $ttH$ event? What properties of the gluons make this more or less likely to occur? How will the top quarks and Higgs boson decay, and what might their decay products look like?), and the detector stage (how will the hadronic jets produced by decaying top quarks and the photons produced by a decaying Higgs look in the ATLAS detector?).
 
-In order to make this problem computationally tractable, each stage is performed separately. In the first stage, the $generator$ stage, physics events for a given process are generated according to their cross-sections $\sigma$ (a measure of how likely they are to occur that is calculated using perturbation theory). A variety of different generator packages are used to produce events for different processes; common generator packages include PYTHIA \ref{Pythia}, HERWIG \ref{Herwig}, and aMCatNLO \ref{aMCNLO}. In many cases, intermediate decays are also performed by the generator software. Meanwhile, detector-level simulation is performed using the GEANT4 (GEometry ANd Tracking 4) package \ref{GEANT4}, which models the signatures of different particles produced in a collision as they pass through detector material.
+In order to make this problem computationally tractable, each stage is performed separately. In the first stage, the $generator$ stage, physics events for a given process are generated according to their cross-sections $\sigma$ (a measure of how likely they are to occur that is calculated using perturbation theory). A variety of different generator packages are used to produce events for different processes; common generator packages include PYTHIA \ref{cite:Pythia}, HERWIG \ref{cite:Herwig}, and aMCatNLO \ref{cite:aMCNLO}. In many cases, intermediate decays are also performed by the generator software. Meanwhile, detector-level simulation is performed using the GEANT4 (GEometry ANd Tracking 4) package \ref{cite:GEANT4}, which models the signatures of different particles produced in a collision as they pass through detector material.
 
-Simulated events are then reconstructed in the same manner as real events. Because, unlike data events, Monte Carlo events include a "truth record" of what particles they contain, Monte Carlo simulations enable us to perform a number of useful tasks, including training machine learning algorithms to search for specific processes, model the relative contributions of various signal and background processes, and calculate various statistical and systematic uncertainties on our measurements \ref{1005.4568}.
+Simulated events are then reconstructed in the same manner as real events. Because, unlike data events, Monte Carlo events include a "truth record" of what particles they contain, Monte Carlo simulations enable us to perform a number of useful tasks, including training machine learning algorithms to search for specific processes, model the relative contributions of various signal and background processes, and calculate various statistical and systematic uncertainties on our measurements \ref{cite:1005.4568}.
 
 \subsection{Reconstruction and Tagging} \label{sec:Reco} 
 
@@ -18,7 +18,7 @@ Objects produced in the ATLAS detector produce a wide variety of signatures, man
 
 \begin{figure}
   \includegraphics[width=\linewidth]{figures/methods_chapter/Sigs.jpg}
-  \caption{Shapes and signatures of a variety of objects in the detector \ref{CERN-EX-1301009}}
+  \caption{Shapes and signatures of a variety of objects in the detector \ref{cite:CERN-EX-1301009}}
   \label{fig:Signatures}
 \end{figure}
 
@@ -89,11 +89,11 @@ For electrons, the identification process proceeds similarly: working-points are
 \item $E/p$: ratio of the cluster energy to the track momentum (used for $E_{T} > 150 GeV$ only) 
 \end{itemize}
 
-However, the photon identification is a cut-based process, while the electron identification process relies on a likelihood-based discriminant. For the analyses discussed in subsequent chapters, we utilize the $Medium$ electron working point, with an efficiency of approximately 88$\%$ \ref{cite:elID-CERN-EP-2018-273}. Electrons are also required to satisfy $p_{T} > 10 GeV$, $|\eta| < 2.47$ (excluding the calorimeter crack at ($1.37<|\eta|<1.52$), have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 5$, and satisfy $z_{0} \times sin(\theta) < 0.5 mm$ with respect to the primary vertex \ref{ATL-COM-PHYS-2020-378}.
+However, the photon identification is a cut-based process, while the electron identification process relies on a likelihood-based discriminant. For the analyses discussed in subsequent chapters, we utilize the $Medium$ electron working point, with an efficiency of approximately 88$\%$ \ref{cite:elID-CERN-EP-2018-273}. Electrons are also required to satisfy $p_{T} > 10 GeV$, $|\eta| < 2.47$ (excluding the calorimeter crack at ($1.37<|\eta|<1.52$), have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 5$, and satisfy $z_{0} \times sin(\theta) < 0.5 mm$ with respect to the primary vertex \ref{cite:ATL-COM-PHYS-2020-378}.
 
 In addition, for the analyses discussed in this dissertation, all photon candidates must have $p_{T} > 25 GeV$ and $|\eta| < 2.37$, with the region $1.37 < |\eta| < 1.52$ vetoed. 
 
-To aid in background modelling, additional photon ID working points are created. These "LoosePrimeN" working points involve photons that pass the 'loose' identification criteria, but fail one or more of N 'tight' identification criteria. The CP Analysis uses the LoosePrime4 working point, which is defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$, and $E_{ratio}$ criteria, while the Couplings analysis uses the LoosePrime3 working point (defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$ criteria) \ref{ANA-EGAM-2018-01}.
+To aid in background modelling, additional photon ID working points are created. These "LoosePrimeN" working points involve photons that pass the 'loose' identification criteria, but fail one or more of N 'tight' identification criteria. The CP Analysis uses the LoosePrime4 working point, which is defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$, and $E_{ratio}$ criteria, while the Couplings analysis uses the LoosePrime3 working point (defined as photons passing the Loose identification but failing one or more of the $w_{s3}, f_{side}, \Delta E_{s}$ criteria) \ref{cite:ANA-EGAM-2018-01}.
 
 To distinguish between photons originating from the hard scatter (i.e., the process of interest in an event) and photons radiated off of other final-state objects, we consider the relative isolation of identified photons. Photons near large amounts of calorimeter activity are likely to be radiative photons ('non-prompt') radiated from final-state particles after the hard-scatter event, while photons that are isolated are more likely to originate from the hard-scatter.
 
@@ -109,11 +109,11 @@ Unlike in Run 1, photon isolation cut thresholds are defined as a function of ph
 
 In analyses discussed in this dissertation, the diphoton vertex originating from the Higgs decay is often not the hardest vertex. This is because, in processes such as gluon-gluon fusion ($ggF$), many events contain a low final-state track multiplicity \ref{1408.7084}. The diphoton vertex is therefore identified using a Neural Network, trained on variables including the "photon pointing" (that is, the vertex position in $z$ most compatible with the shower-shapes observed in the ECAL), the $\Delta \phi$ between the vector sum of the track momenta and the diphoton system (as determined by the ECAL), and the scalar momentum sums $p_{T}$ and $p_{T}^2$ for the tracks in each diphoton vertex candidate \ref{HGAMSTXSINT}. Photon energies and pseudorapidities are corrected to reflect this new vertexing procedure.
 
-The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS bins") for the full Run-2 Couplings analysis is shown in Figure .
+The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS bins") for the full Run-2 Couplings analysis is shown in Figure \ref{fig:Vertexing}.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{figures/methods_chapter/Vertexing.png}
-  \caption{Shapes and signatures of a variety of objects in the detector \ref{ATL-COM-PHYS-2020-378}}
+  \caption{Shapes and signatures of a variety of objects in the detector \ref{cite:ATL-COM-PHYS-2020-378}}
   \label{fig:Vertexing}
 \end{figure}
 
@@ -132,7 +132,7 @@ After calculating these metrics, combine the two cluster objects that are the sm
 
 The algorithm is both infrared safe, meaning that very-low-$p_{T}$ objects do not appreciably impact the jet-finding algorithm results, and collinear safe, meaning that splitting one high-$p_{T}$ object into two collinear ones does not impact the results. Compared to other jet-finding algorithms, the anti-$k_{T}$ algorithm is more robust to the effects of low-energy radiation \ref{antikt}.
 
-For the Run-2 Couplings analysis detailed in section \ref{sec:Couplings}, the ParticleFlow algorithm detailed in ref \ref{PFlow} is implemented. This helps to provide clearer pictures of the individual constituents of a jet. The ParticleFlow algorithm is an intermediate step in jet reconstruction, which subtracts off energy deposits not associated with the primary vertex and replaces energy deposits that are associated with the primary vertex with the momenta of the relevant tracks. This is done using the modified diphoton vertex discussed previously.
+For the Run-2 Couplings analysis detailed in section \ref{sec:Couplings}, the ParticleFlow algorithm detailed in ref \ref{cite:PFlow} is implemented. This helps to provide clearer pictures of the individual constituents of a jet. The ParticleFlow algorithm is an intermediate step in jet reconstruction, which subtracts off energy deposits not associated with the primary vertex and replaces energy deposits that are associated with the primary vertex with the momenta of the relevant tracks. This is done using the modified diphoton vertex discussed previously.
 
 The collection of jets is "cleaned" to remove jets that have signatures consistent with calorimeter noise, and jets that do not satisfy $|y| < 4.4$ and $p_{T} > 25 GeV$ are rejected as well. 
 
@@ -166,7 +166,7 @@ Like other objects, we require isolated muons. Muon isolation variables are defi
 
 For the standard isolation, we use the $FixedCutLoose$ working point, corresponding to $E_{T}^{cone20}<0.30 \times p_{T}^{\mu}$ and $p_{T}^{varcone30}<0.15 \times p_{T}^{\mu}$. For the ParticleFlow isolation, we use $(ptvarcone30+ 0.4\times neflowisol20) <0.16 \times p_{T}$ for muons with $p_{T} < 50GeV$ and $(ptvarcone20+ 0.4\times neflowisol20) < 0.16 \times p_{T}$ for muons with $p_{T} > 50GeV$.
 
-Additionally, muons are required to satisfy $p_{T} > 10 GeV$, $|\eta| < 2.7$, have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 3$, and satisfy $z_{0} \times sin(\theta) < 0.5 mm$ with respect to the primary vertex \ref{ATL-COM-PHYS-2020-378}. Muon momentum and energy scale and resolution calibrations are determined using $J/\psi \rightarrow \mu \mu$ and $Z \rightarrow \mu \mu$ decays \ref{cite:muCalib}. A charge-dependent sagitta bias calibration is also applied to correct for a slight observed misalignment of the muon system and inner detector.
+Additionally, muons are required to satisfy $p_{T} > 10 GeV$, $|\eta| < 2.7$, have track impact parameter significance $|d_{0} / \sigma(d_{0})| < 3$, and satisfy $z_{0} \times sin(\theta) < 0.5 mm$ with respect to the primary vertex \ref{cite:ATL-COM-PHYS-2020-378}. Muon momentum and energy scale and resolution calibrations are determined using $J/\psi \rightarrow \mu \mu$ and $Z \rightarrow \mu \mu$ decays \ref{cite:muCalib}. A charge-dependent sagitta bias calibration is also applied to correct for a slight observed misalignment of the muon system and inner detector.
 
 For the analyses discussed in this dissertation, all muon candidates must have $p_{T} > 15 GeV$ and $|\eta| < 2.37$.
  

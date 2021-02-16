@@ -215,9 +215,9 @@ The training variables used in the hadronic CP BDT training are:
 \item Missing $E_{T}$ significance = $E_{T}^\text{miss}/\sqrt{H_{T}}$
 \end{itemize}
 
-The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \cite{skopt}. The integral of the Receiver Operating Curve (ROC AUC) is used as the optimization metric, evaluated on the validation set for each training. The ROC-AUC measures true-positives versus true-negatives, parameterized as a function of classifer threshold cuts: a completely random classifier has a ROC-AUC of 0.5, while a perfect classifier has a ROC-AUC of 1.0 \ref{cite:ROC}. The ROC-AUC for the hadronic CPBDT is 0.7839, while the ROC-AUC for the leptonic BDT is 76.69.
+The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \ref{cite:skopt}. The integral of the Receiver Operating Curve (ROC AUC) is used as the optimization metric, evaluated on the validation set for each training. The ROC-AUC measures true-positives versus true-negatives, parameterized as a function of classifer threshold cuts: a completely random classifier has a ROC-AUC of 0.5, while a perfect classifier has a ROC-AUC of 1.0 \ref{cite:ROC}. The ROC-AUC for the hadronic CPBDT is 0.7839, while the ROC-AUC for the leptonic BDT is 76.69.
 
-Plots of the CPBDT input variables for the leptonic BDT are shown in figures \ref{cite:lepvbls1} -  \ref{cite:lepvbls7}, while plots of the hadronic CPBDT input variables are shown in figures \ref{cite:hadvbls1} -  \ref{cite:hadvbls7}.
+Plots of the CPBDT input variables for the leptonic BDT are shown in figures \ref{fig:lepvbls1} -  \ref{fig:lepvbls7}, while plots of the hadronic CPBDT input variables are shown in figures \ref{fig:hadvbls1} -  \ref{fig:hadvbls7}.
 
 \begin{figure}[htbp]
   \centering
@@ -283,7 +283,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
 
 \clearpage
 
-The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \cite{skopt}. The area under the ROC curve (ROC AUC) is evaluated on the validation set for each training, and the training that maximizes the ROC AUC is selected as optimal. The values of the optimal leptonic training are shown in Table \ref{tab:lephyp}. Details of each parameter can be found in the XGBoost documentation \cite{xgboost}. Note that the large value of the regularization parameter \texttt{alpha} (compared to default \texttt{alpha}=1) is responsible for the asymmetry between signal and background (red and black) shown in Figures \ref{fig:cplep2} and \ref{fig:cplep3}.
+The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \ref{cite:skopt}. The area under the ROC curve (ROC AUC) is evaluated on the validation set for each training, and the training that maximizes the ROC AUC is selected as optimal.
 
 \begin{figure}[htbp]
   \centering
@@ -539,7 +539,7 @@ Category & $n_{s}(90^\circ)$ & $\delta$ & $n_{ggF}$ &PS (ttH)&PS (tWH)&PS (tHjb)
 \begin{figure}
   \centering
         \includegraphics[width=0.62\textwidth]{figures/tthcp_chapter/categorization_xgb/cp_11_syst.png}
-  \caption{The impact on the number counting limit as systematic uncertainties are progressively added. There is a small change of $0.3^\circ$ on the number-counting limit. }
+  \caption{The impact of systematic uncertainties on the number counting limit. There is a small change of $0.3^\circ$ on the number-counting limit.}
   \label{fig:ncrej_syst}
 \end{figure}
 
