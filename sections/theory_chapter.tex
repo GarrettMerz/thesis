@@ -1,6 +1,6 @@
 \section{The Standard Model} \label{sec:SM} 
 
-The Standard Model of Particle Physics is arguably one of the crowning achievements of the last century of physics research. Though it is doubtless incomplete (it does not, for instance, explain the dark energy or dark matter observed in cosmological experiments, nor does it provide a satisfactory quantum-mechanical model of gravity), all predictions it has made have yet to be falsified \ref{cite:Peskin}, \ref{cite:kane_2017}, \ref{cite:Griffiths}.
+The Standard Model of Particle Physics is arguably one of the crowning achievements of the last century of physics research. Though it is doubtless incomplete (it does not, for instance, explain the dark energy or dark matter observed in cosmological experiments, nor does it provide a satisfactory quantum-mechanical model of gravity), all predictions it has made have yet to be falsified \cite{Peskin}, \cite{kane_2017}, \cite{Griffiths}.
 
 The Standard Model is a quantum field theory, meaning that it describes the behavior of fields (physical quantities that are defined at all points in spacetime; common examples of fields include electric and magnetic fields) and their discrete, quantized excitations, referred to as particles (common examples of particles are the electron and the photon, which are excitations of the "electron field" and the electromagnetic field respectively). More about the mathematics of field dynamics will be discussed in section \ref{sec:Lagrangians}.
 
@@ -14,13 +14,13 @@ In addition to these 12 fermion species, each fermion species has a correspondin
 
 The bosons of the standard model are the "messengers" through which the fundamental forces operate (with the exception of the Higgs boson, which is detailed at length in section \ref{sec:EWSB}). The photon and the gluons are massless, while the two W-bosons, the Z-boson, and the Higgs boson are all massive. The photon is the mediator of the electromagnetic force and couples to charged particles; the gluon is the mediator of the strong nuclear force and couples to particles with "color charge", and the W and Z bosons are the mediators of the weak nuclear interaction, coupling to all fermions with left-handed parity and antifermions with right-handed parity. In addition, the three weak bosons ($W^{+}$, $W^{-}$, and $Z$) can all couple to each other, as can the gluons.
 
-The strong nuclear interaction binds quarks together, while the weak interaction governs the decay of one species of fermion into another. Weak interactions operate primarily on fermion doublets, coupling each up-type quark to its corresponding down-type quark and each charged lepton to its corresponding neutrino. However, some intergenerational coupling does occur, the rarity of which is governed by a matrix of coefficients called the Cabibbo-Kobayashi-Masakawa (or CKM) matrix \ref{cite:CKM}. 
+The strong nuclear interaction binds quarks together, while the weak interaction governs the decay of one species of fermion into another. Weak interactions operate primarily on fermion doublets, coupling each up-type quark to its corresponding down-type quark and each charged lepton to its corresponding neutrino. However, some intergenerational coupling does occur, the rarity of which is governed by a matrix of coefficients called the Cabibbo-Kobayashi-Masakawa (or CKM) matrix \cite{CKM}. 
 
 The Higgs boson is the only scalar (spin-0) boson in the Standard Model. Though it does not mediate any force directly, its existence is a consequence of the unification of the electromagnetic and weak nuclear interactions into one "electroweak" interaction at high energy scales. Without the role of the Higgs boson in this process, the fermions, the W-bosons, and the Z-boson would all be massless; thus, the Higgs can be said to "give mass" to the particles of the Standard Model. It couples to all massive particles in the Standard Model, namely, the fermions and the W and Z bosons.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/SM.png}
-\caption{The "periodic table" of the Standard Model, depicting the three generations of fermions, the gauge bosons, and the Higgs \ref{cite:WikipediaSM}.}
+\caption{The "periodic table" of the Standard Model, depicting the three generations of fermions, the gauge bosons, and the Higgs \cite{WikipediaSM}.}
 \end{figure}
 
 \subsection{Lagrangians, Fields, and Gauge Transformations}\label{sec:Lagrangians}
@@ -123,17 +123,17 @@ A time-reversal is equivalent to "running a process backward". For example, a sw
 
 A charge conjugation is a reversal of all charges (electric charge, weak hypercharge, and strong-nuclear color charge). For a fermion field $\psi(t,x)$, a charge conjugation transform C takes $\psi$ to $\bar{psi}$, and looks like $C \psi C = -i (\bar{\psi} \gamma^{0} \gamma^{2})^{T}$ (where T here denotes the matrix transpose). Given this, we find that the expression $C \bar{\psi}\psi C = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under charge conjugtion, as is the expression $iC \bar{\psi}\gamma^{5}\psi C = i\bar{\psi}\gamma^{5}\psi$ is as well. Thus, Lagrangians containing terms of the form $i\bar{\psi}\gamma^{5}\psi$ are invariant under C and CPT, but not P, T or CP.
 
-Applying C and P together is equivalent to switching particles and antiparticles. However, we also know that our universe is composed almost entirely of matter, and not equal parts matter and antimatter (living in a universe in which matter and antimatter are equally abundant would be very unpleasant, as the two would be constantly annhilating each other, bathing us in a near-constant shower of gamma rays) \ref{cite:Sakharov}. Thus, some physics process that occurs in the high-energy regime near the Big Bang must violate CP in a substantial way. The CP-invariance that occurs through the CKM mixing is not enough to account for the matter-antimatter asymmetry, so searching for this source of CP violation is of pressing interest to experimental physicists \ref{cite:CKM}.
+Applying C and P together is equivalent to switching particles and antiparticles. However, we also know that our universe is composed almost entirely of matter, and not equal parts matter and antimatter (living in a universe in which matter and antimatter are equally abundant would be very unpleasant, as the two would be constantly annhilating each other, bathing us in a near-constant shower of gamma rays) \cite{Sakharov}. Thus, some physics process that occurs in the high-energy regime near the Big Bang must violate CP in a substantial way. The CP-invariance that occurs through the CKM mixing is not enough to account for the matter-antimatter asymmetry, so searching for this source of CP violation is of pressing interest to experimental physicists \cite{CKM}.
 
 \section{The Higgs Mechanism and Electroweak Symmetry Breaking} \label{sec:EWSB} 
 
-Given the results of previous sections, it should be clear that the Higgs field is important not simply because it "gives particles mass" (an often-made claim which is, in a sense, true), but because it is a vital missing piece of the Standard Model that is necessary to reconcile the elegant mathematical language of the fundamental interactions with the particles we observe in real-world experiments \ref{cite:Higgs}.
+Given the results of previous sections, it should be clear that the Higgs field is important not simply because it "gives particles mass" (an often-made claim which is, in a sense, true), but because it is a vital missing piece of the Standard Model that is necessary to reconcile the elegant mathematical language of the fundamental interactions with the particles we observe in real-world experiments \cite{Higgs}.
 
 To understand the Higgs mechanism, we must first devote a brief detour to the concept of spontaneous symmetry breaking. This occurs when an unstable, continuous symmetric state spontaneously changes into a more stable, asymmetric one. Consider, for example, the "wine-bottle" potential shape depicted in figure \ref{fig:potential}.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/higgspotential.png}
-\caption{The "wine bottle" Higgs potential hill, from reference \ref{cite:EllisHiggs}}
+\caption{The "wine bottle" Higgs potential hill, from reference \cite{EllisHiggs}}
 \label{fig:potential}
 \end{figure}
 
@@ -246,7 +246,7 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
          \label{fig:VH}
      \end{subfigure}
   \label{fig:Higgsmodes}
-  \caption{Feynman diagrams depicting the three leading Higgs production modes. Made with \ref{cite:FeynmanMaker}}  
+  \caption{Feynman diagrams depicting the three leading Higgs production modes. Made with \cite{FeynmanMaker}}  
 \end{figure}
 
 \begin{figure}[htp]
@@ -273,7 +273,7 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
      \end{subfigure}
      \hfill
   \label{fig:loopmodes}
-  \caption{Feynman diagrams depicting relevant less-common Higgs production modes.Made with \ref{cite:FeynmanMaker}}  
+  \caption{Feynman diagrams depicting relevant less-common Higgs production modes.Made with \cite{FeynmanMaker}}  
 \end{figure}
 
 \begin{figure}[htp]
@@ -303,7 +303,7 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
      \end{subfigure}
      \hfill 
   \label{fig:loopmodes}
-  \caption{Feynman diagrams depicting ttH production modes.Made with \ref{cite:FeynmanMaker}}  
+  \caption{Feynman diagrams depicting ttH production modes.Made with \cite{FeynmanMaker}}  
 \end{figure}
 
 \begin{figure}[htp]
@@ -330,7 +330,7 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
      \end{subfigure}
      \hfill
   \label{fig:loopmodes}
-  \caption{Feynman diagrams depicting the leading-order processes contributing to the Higgs diphoton decay. Made with \ref{cite:FeynmanMaker}}  
+  \caption{Feynman diagrams depicting the leading-order processes contributing to the Higgs diphoton decay. Made with \cite{FeynmanMaker}}  
 \end{figure}
 
 Similarly, the dominant decay mode of the Higgs is to bottom quarks ($H \rightarrow bb$), followed by to W bosons ($H \rightarrow WW$), gluons ($H \rightarrow WW$), tau leptons ($H \rightarrow \tau \tau$), charm quarks ($H \rightarrow bb$), Z bosons ($H \rightarrow ZZ$), photons ($H \rightarrow \gamma \gamma$), and a Z boson and a photon ($H \rightarrow Z \gamma$). Because the Higgs does not couple to massless particles directly, the decays to gg and $\gamma \gamma$ are mediated by loop diagrams, most often involving top quarks.
@@ -347,7 +347,7 @@ Br(H \rightarrow XX) = \frac{\Gamma(H \rightarrow XX)}{\Gamma_{H}}
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/HiggsBR.png}
-\caption{The branching ratio of the Higgs to various final state particles as a function of its mass (now known to be ~125 GeV), from reference \ref{cite:YellowReport1}.}
+\caption{The branching ratio of the Higgs to various final state particles as a function of its mass (now known to be ~125 GeV), from reference \cite{YellowReport1}.}
 \end{figure}
 
 \begin{table}[h]
@@ -364,13 +364,13 @@ Br(H \rightarrow XX) = \frac{\Gamma(H \rightarrow XX)}{\Gamma_{H}}
 			$H \rightarrow Z \gamma $ & $ 0.155 \pm 0.014 $ \\
 			$H \rightarrow \mu \mu $ & $ 0.022 \pm 0.001 $ \\
     \end{tabular}
-    \caption{Higgs decay modes and branching fractions, for a Standard Model Higgs with mass of 125.09 GeV \ref{cite:YellowReport4}}
+    \caption{Higgs decay modes and branching fractions, for a Standard Model Higgs with mass of 125.09 GeV \cite{YellowReport4}}
     \label{mytable}
 \end{table}
 
 Cross-sections are calculated at a given perturbation-theoretic "order", indicating how many additional correction terms (often indicated by Feynman diagrams with internal loops and vertices) are accounted for in the calculation- for a given process, leading-order (or "LO"), next-to-leading order ("NLO"), and next-to-next-to-leading order ("NNLO") indicate increasing numbers of correction terms. Calculating and simulating to higher orders is more accurate, but is often much more computationally expensive. These correction terms can be applied for both electroweak (EW) and quantum-chromodynamical (QCD) effects.
 
-In addition to considering which corrections to apply, we must also consider the flavor scheme of the Monte Carlo generator. Physics processes can be initiated by real quarks or gluons that are present in the initial scattering protons, as well as virtual quarks that are present in the primordial soup of energy that binds each proton together. In the five-flavor Parton Distribution Function (PDF) scheme, we consider massless virtual bottom quarks to be constituents of the proton that are capable of initiating physics processes, while in the four-flavor PDF scheme, we do not. These schemes differ primarily in which diagrams they treat as corrections and which they do not- thus, if we perform QCD corrections at all orders (that is, NN...NNLO), we find that these two schemes produce identical results \ref{cite:FedericotH}. Diagrams from the five-flavor PDF scheme that are initiated by a bottom quark can be mapped into the four-flavor scheme by adding an additional bottom-quark to the final state; however, for $ttH$, $tt\gamma\gamma$ and $tWH$ processes, this presents a number of nontrivial modelling issues \ref{cite:FedericotWH}. While the five-flavor scheme offers easier calculation and the ability to model more processes, the four-flavor scheme is better at modelling Higgs kinematics, such as $p_{T}$ and bottom-quark  $p_{T}$. For these reasons, we use the four-flavor scheme to model the $tHj$ process only (henceforth called $tHjb$ due to the presence of the additional final-state b-jet) and the five-flavor scheme for all other top-quark-based processes. 
+In addition to considering which corrections to apply, we must also consider the flavor scheme of the Monte Carlo generator. Physics processes can be initiated by real quarks or gluons that are present in the initial scattering protons, as well as virtual quarks that are present in the primordial soup of energy that binds each proton together. In the five-flavor Parton Distribution Function (PDF) scheme, we consider massless virtual bottom quarks to be constituents of the proton that are capable of initiating physics processes, while in the four-flavor PDF scheme, we do not. These schemes differ primarily in which diagrams they treat as corrections and which they do not- thus, if we perform QCD corrections at all orders (that is, NN...NNLO), we find that these two schemes produce identical results \cite{FedericotH}. Diagrams from the five-flavor PDF scheme that are initiated by a bottom quark can be mapped into the four-flavor scheme by adding an additional bottom-quark to the final state; however, for $ttH$, $tt\gamma\gamma$ and $tWH$ processes, this presents a number of nontrivial modelling issues \cite{FedericotWH}. While the five-flavor scheme offers easier calculation and the ability to model more processes, the four-flavor scheme is better at modelling Higgs kinematics, such as $p_{T}$ and bottom-quark  $p_{T}$. For these reasons, we use the four-flavor scheme to model the $tHj$ process only (henceforth called $tHjb$ due to the presence of the additional final-state b-jet) and the five-flavor scheme for all other top-quark-based processes. 
 
 \begin{figure}[htp]
   \centering
@@ -409,7 +409,7 @@ In addition to considering which corrections to apply, we must also consider the
          \label{fig:tWH5}
      \end{subfigure}
   \label{fig:tWHmodes}
-  \caption{Feynman diagrams depicting the leading-order terms for $tWH$. Because all diagrams contain initial b-quarks, all of these processes can only occur in the five-flavor PDF scheme. Made with \ref{cite:FeynmanMaker}}  
+  \caption{Feynman diagrams depicting the leading-order terms for $tWH$. Because all diagrams contain initial b-quarks, all of these processes can only occur in the five-flavor PDF scheme. Made with \cite{FeynmanMaker}}  
 \end{figure}
 
 \begin{figure}[htp]
@@ -449,7 +449,7 @@ In addition to considering which corrections to apply, we must also consider the
          \label{fig:tHjb5}
      \end{subfigure}
   \label{fig:tHjbmodes}
-  \caption{Feynman diagrams depicting the leading-order terms for $tHjb$, made with \ref{cite:FeynmanMaker}. These diagrams are calculated using the four-flavor PDF scheme. Note that additional diagrams can be created by reversing the direction of the upper fermion "circuit" (the final-state top and bottom must be opposite sign, but $tHj\bar{b}$ and $\bar{t}Hjb$ are equally likely to occur).}  
+  \caption{Feynman diagrams depicting the leading-order terms for $tHjb$, made with \cite{FeynmanMaker}. These diagrams are calculated using the four-flavor PDF scheme. Note that additional diagrams can be created by reversing the direction of the upper fermion "circuit" (the final-state top and bottom must be opposite sign, but $tHj\bar{b}$ and $\bar{t}Hjb$ are equally likely to occur).}  
 \end{figure}
 
 \subsection{The Kappa Framework} \label{sec:kappaFW}
@@ -462,9 +462,9 @@ When measuring Higgs couplings in analyses suh as these, it is often most useful
 \kappa_{i} = \frac{y_{i}^{meas}}{y_{i}^{SM}}
 \end{equation}
 
-This $\kappa$ parameter is called the "coupling strength"-- if $kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \ref{cite:LHCHiggsCrossSectionWorkingGroup}.
+This $\kappa$ parameter is called the "coupling strength"-- if $kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \cite{LHCHiggsCrossSectionWorkingGroup}.
 
-The parameterization of various production cross-sections and decay widths (divided by their Standard Model values) in terms of the $\kappa$ framework is shown in Tables \ref{tab:Xsecskappa}-\ref{tab:BRskappa} \ref{cite:PhysRevD.101.012002}. The "resolved" column assumes that only the particles of the Standard Model exist. However, it can also be useful to develop "effective" coupling terms that allows for the existence of additional particles that may influence the loop diagrams. These can be modeled by mutiplying the resolved coupling terms by the indicated factors:
+The parameterization of various production cross-sections and decay widths (divided by their Standard Model values) in terms of the $\kappa$ framework is shown in Tables \ref{tab:Xsecskappa}-\ref{tab:BRskappa} \cite{PhysRevD.101.012002}. The "resolved" column assumes that only the particles of the Standard Model exist. However, it can also be useful to develop "effective" coupling terms that allows for the existence of additional particles that may influence the loop diagrams. These can be modeled by mutiplying the resolved coupling terms by the indicated factors:
 
 \begin{equation}
 \kappa_{g}^{2} = \frac{\sigma_{ggF}^{meas}}{\sigma_{ggF}^{SM}}, \kappa_{\gamma}^{2} = \frac{\Gamma{\gamma \gamma}^{meas}}{\Gamma_{\gamma \gamma}^{SM}}, \kappa_{Z \gamma}^{2} = \frac{\Gamma{Z \gamma}^{meas}}{\Gamma_{Z \gamma}^{SM}}
@@ -484,7 +484,7 @@ The parameterization of various production cross-sections and decay widths (divi
 	$\sigma(tHjb)$ && $2.63 \kappa_{t}^{2} + 3.58 \kappa_{W}^2 - 5.21 \kappa_{t} \kappa_{W}$ \\
 	$\sigma(tWH)$ && $2.91 \kappa_{t}^{2} + 2.31 \kappa_{W}^2 - 4.22 \kappa_{t} \kappa_{W}$ \\
     \end{tabular}
-    \caption{Parameterization of Higgs cross-section dependence on $\kappa$ coefficients, from \ref{cite:PhysRevD.101.012002}}
+    \caption{Parameterization of Higgs cross-section dependence on $\kappa$ coefficients, from \cite{PhysRevD.101.012002}}
     \label{Xsecskappa}
 \end{table}
 
@@ -502,19 +502,19 @@ The parameterization of various production cross-sections and decay widths (divi
 	$H \rightarrow Z \gamma$ & $\kappa_{z \gamma}^{2}$ & $1.12 \kappa_{W}^{2} + 0.12 \kappa_{t} \kappa_{W}$ \\
 	$H \rightarrow \mu \mu$ && $\kappa_{\mu}^{2}$ \\
     \end{tabular}
-    \caption{Parameterization of Higgs branching ratio dependence on $\kappa$ coefficients, from \ref{cite:PhysRevD.101.012002}}
+    \caption{Parameterization of Higgs branching ratio dependence on $\kappa$ coefficients, from \cite{PhysRevD.101.012002}}
     \label{BRskappa}
 \end{table}
 
 \subsection{CP-Violation in the Top Yukawa Coupling} \label{sec:CP-yukawa}
 
-According to the Standard Model, the Higgs boson is a CP-even scalar boson: it is predicted to have spin-zero, with all its interactions CP-even. Previous analyses from both ATLAS and CMS have placed limits on the existence of anomalous CP-violating Higgs couplings to the gauge bosons (\ref{cite:Aad_2016} \ref{cite:Khachatryan_2016} and \ref{cite: Sirunyan_2019}); however, any such couplings would be suppressed by a factor of 1/$(\Lambda)^2$ (where $\Lambda$ indicates the energy scale of the new CP-violating physics) \ref{cite:Zhang_2011}, so these studies are thus somewhat limited in their sensitivity. Similarly, indirect measurements of the CP-nature of the Higgs coupling to fermions in loop-diagram mediated processes have been performed \ref{cite:Ellis} \ref{cite:Brod_2013}; however, these measurements are highly dependent on the choice of BSM model that induces CP violation.
+According to the Standard Model, the Higgs boson is a CP-even scalar boson: it is predicted to have spin-zero, with all its interactions CP-even. Previous analyses from both ATLAS and CMS have placed limits on the existence of anomalous CP-violating Higgs couplings to the gauge bosons (\cite{Aad_2016} \cite{Khachatryan_2016} and \cite{ Sirunyan_2019}); however, any such couplings would be suppressed by a factor of 1/$(\Lambda)^2$ (where $\Lambda$ indicates the energy scale of the new CP-violating physics) \cite{Zhang_2011}, so these studies are thus somewhat limited in their sensitivity. Similarly, indirect measurements of the CP-nature of the Higgs coupling to fermions in loop-diagram mediated processes have been performed \cite{Ellis} \cite{Brod_2013}; however, these measurements are highly dependent on the choice of BSM model that induces CP violation.
 
-The CP-analysis detailed in this dissertation marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner, but such constraints are indirect \ref{cite:Aaboud_2018}.
+The CP-analysis detailed in this dissertation marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner, but such constraints are indirect \cite{Aaboud_2018}.
 
 Because of its combined direct and indirect sensitivity to the top Yukawa coupling, we thus find that the $ttH$ and $tH$ processes with $H \rightarrow \gamma \gamma $ provide a well-motivated channel for probing the CP-structure of the top-Higgs interaction. In addition, the presence of two photons in the event final state provides a clean signal, further motivating the use of this channel. 
 
-Using the Higgs Characterization (HC) model \ref{cite:HC}, we can parameterize the top-Higgs interaction in the presence of CP-violation as $\mathcal{L} = -frac{m_{t}}{v} \kappa_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$
+Using the Higgs Characterization (HC) model \cite{HC}, we can parameterize the top-Higgs interaction in the presence of CP-violation as $\mathcal{L} = -frac{m_{t}}{v} \kappa_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$
 
 for mixing angle $\alpha \in (-180^{\deg}, 180^{\deg})$ and $\kappa_{t} >= 0$.
 
@@ -530,9 +530,9 @@ for some constants A, B, and E (with E expected to be zero for $ttH$), while the
 \sigma_{tH} =  A\kappa_{t}^{2} (cos(\alpha)^{2}) + B\kappa_{t}^{2} (sin(\alpha)^{2}) + C\kappa_{t} (cos(\alpha))+ D\kappa_{t} (sin(\alpha)) + E \kappa_{t}^{2} cos(\alpha)sin(\alpha) + F
 \end{equation}
 
-The C and D terms originate from destructive interference: because the $tH$ process contains diagrams where the Higgs couples to the top as well as diagrams where the Higgs couples to the W-boson, holding the W-Higgs coupling fixed while varying the top-Higgs coupling can alter the total cross-section of the process. Likewise, the F term indicates the contribution only from the diagrams that do not involve the top Yukawa coupling \ref{cite:Maltoni_2001}. Furthermore, we note that the $ttH$ cross-section is the same for $\alpha = 0^{\deg}$ and $\alpha = 180^{\deg}$ while the $tH$ cross-section is not- thus, measuring the $tH$ interaction allows us to eliminate this degeneracy and determine the sign of the top Yukawa coupling.
+The C and D terms originate from destructive interference: because the $tH$ process contains diagrams where the Higgs couples to the top as well as diagrams where the Higgs couples to the W-boson, holding the W-Higgs coupling fixed while varying the top-Higgs coupling can alter the total cross-section of the process. Likewise, the F term indicates the contribution only from the diagrams that do not involve the top Yukawa coupling \cite{Maltoni_2001}. Furthermore, we note that the $ttH$ cross-section is the same for $\alpha = 0^{\deg}$ and $\alpha = 180^{\deg}$ while the $tH$ cross-section is not- thus, measuring the $tH$ interaction allows us to eliminate this degeneracy and determine the sign of the top Yukawa coupling.
 
-Similarly, we can parameterize $\kappa_{g}$ and $\kappa_{\gamma}$ according to the parameterizations in \ref{cite:Ellis}:
+Similarly, we can parameterize $\kappa_{g}$ and $\kappa_{\gamma}$ according to the parameterizations in \cite{Ellis}:
 
 \begin{equation}
 \kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha) 
@@ -547,7 +547,7 @@ By developing targeted analysis categories and parameterizing the yield in each 
 
 The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the $ggF$, $VBF$, $VH$, $ttH$, and $tH$ processes; by doing this, we can extract limits on the individual Higgs production cross-sections in targeted regions of phase space.
 
-The Couplings Analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework \ref{cite:YellowReport4}, where different regions of phase space, called "truth bins", are probed according to their production modes and kinematic properties. A visual guide to the different STXS1.2 bins is shown in figure \ref{fig:STXS_scheme}. The categorization is designed such that all events passing the $H \rightarrow \gamma \gamma$ selection criteria will fall into one of the STXS1.2 categories.
+The Couplings Analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework \cite{YellowReport4}, where different regions of phase space, called "truth bins", are probed according to their production modes and kinematic properties. A visual guide to the different STXS1.2 bins is shown in figure \ref{fig:STXS_scheme}. The categorization is designed such that all events passing the $H \rightarrow \gamma \gamma$ selection criteria will fall into one of the STXS1.2 categories.
 
 \begin{figure}[tbp]
   \centering
@@ -564,9 +564,9 @@ In addition to their nominal production and decay modes, the $ggH$ STXS1.2 truth
 
 In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200 GeV$ bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses (where $p_{T}^{H}$ denotes the transverse momentum of the Higgs, that is, the component of the Higgs momentum perpendicular to the beamline). A total of 44 STXS truth regions are defined.
 
-For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algorithm \ref{cite:Cacciari_2008} using radius R=0.4, are required to have $p_{T} > 30 GeV$ (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
+For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algorithm \cite{Cacciari_2008} using radius R=0.4, are required to have $p_{T} > 30 GeV$ (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
 
-Using the Monte Carlo simulated samples described in section \ref{chap:DataMC}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \ref{cite:STXS_cross_sections}, and show the acceptance for each production mode in Figure \ref{fig:STXS_acceptances}. Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{chap:CouplingsChapter}. By measuring the cross-sections in each of these bins, a number of different values are able to be extracted, including the various Higgs couplings $\kappa$ and limits on effective field theories (EFTs) parameterizing physics beyond the standard model.
+Using the Monte Carlo simulated samples described in section \ref{chap:DataMC}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \cite{STXS_cross_sections}, and show the acceptance for each production mode in Figure \ref{fig:STXS_acceptances}. Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{chap:CouplingsChapter}. By measuring the cross-sections in each of these bins, a number of different values are able to be extracted, including the various Higgs couplings $\kappa$ and limits on effective field theories (EFTs) parameterizing physics beyond the standard model.
 
 \begin{table}[htbp]
         \centering
@@ -639,7 +639,7 @@ Using the Monte Carlo simulated samples described in section \ref{chap:DataMC}, 
 
 
 \iffalse
-In addition to the kappa-framework, the Couplings Analysis also makes use of an Effective Field Theory (EFT) approach to parameterize potential Higgs Couplings beyond the Standard Model. Effective Field Theories offer a model-independent way to parameterize new physics that may not be directly accessible at LHC energies. Using the Standard Model Effective Field Theory parameterization (SMEFT) \ref{cite:SMEFT}, we can write the Lagrangian for new physics that exists at some energy scale $\Lambda >> v$ (where $v$ denotes the Higgs field vacuum expectation value of 246 GeV) as
+In addition to the kappa-framework, the Couplings Analysis also makes use of an Effective Field Theory (EFT) approach to parameterize potential Higgs Couplings beyond the Standard Model. Effective Field Theories offer a model-independent way to parameterize new physics that may not be directly accessible at LHC energies. Using the Standard Model Effective Field Theory parameterization (SMEFT) \cite{SMEFT}, we can write the Lagrangian for new physics that exists at some energy scale $\Lambda >> v$ (where $v$ denotes the Higgs field vacuum expectation value of 246 GeV) as
 
 \begin{equation}
 \mathcal{L}_{SMEFT} = \mathcal{L}_{SM} + (\frac{v}{\Lambda})\mathcal{L}_{5} + (\frac{v}{\Lambda})^2 \mathcal{L}_{6}
@@ -653,7 +653,7 @@ The dimension-6 Lagrangian term can be expanded as a linear combination of all a
 \mathcal{L}_{6} = \sum_{i} c_{i}^6 O_{i}^{6}
 \end{equation}
 
-In the Couplings Analysis, the operators are chosen using the so-called "Warsaw Basis" \ref{cite:Warsaw}; the $c_{i}$ terms are the free parameters to be determined by the final likelihood fit, called "Wilson Coefficients". A list of all allowed dimension-6 operators and their corresponding coefficients is given in \ref{tab:EFT}.
+In the Couplings Analysis, the operators are chosen using the so-called "Warsaw Basis" \cite{Warsaw}; the $c_{i}$ terms are the free parameters to be determined by the final likelihood fit, called "Wilson Coefficients". A list of all allowed dimension-6 operators and their corresponding coefficients is given in \ref{tab:EFT}.
 
 \begin{table}
   \centering
