@@ -18,7 +18,7 @@ Categorization proceeds in two primary steps. First, a multiclassifier Boosted D
   \caption{Overview of the categorization approach. The STXS names reported in the cartoon are related to the old STXS 1.0 scheme, but are closely related to the current STXS 1.2 categories.}
 \end{figure}
 
-The inputs to all BDTs are kinematic variables for the various objects in an event. In order to avoid sculpting of the shapes used in the statistical analysis, any variable found to be linearly correlated by 5\% or more with $m_{\gamma \gamma}$ in the signal or background training samples is removed from the list of inputs. The list of all variables used as input to both the multiclassifier BDT and the binary BDTs is given in Table \ref{tab:design:trainingvariables}.
+The inputs to all BDTs are kinematic variables for the various objects in an event. In order to avoid sculpting of the shapes used in the statistical analysis, any variable found to be linearly correlated with $m_{\gamma \gamma}$ in the signal or background training samples by 5\% or more is removed from the list of inputs. The list of all variables used as input to both the multiclassifier BDT and the binary BDTs is given in Table \ref{tab:design:trainingvariables}.
 
 \begin{landscape}
 
@@ -29,8 +29,8 @@ The inputs to all BDTs are kinematic variables for the various objects in an eve
 \hline
 STXS regions & Multi-class BDT & STXS regions  & Binary BDT  \\ \hline
 \multirowcell{11}{$gg\rightarrow H$} &  \multirowcell {45}{di-photon $p_\mathrm{T}$ and absolute rapidity; \\\\ di-jet $p_\mathrm{T}$, mass, $\Delta y$, $\Delta\phi$, $\Delta\eta$ between the 2 jets; \\\\  $p_\mathrm{T}$, mass of $\gamma\gamma+j$ and $\gamma\gamma+jj$, \\\\ $\Delta y$, $\Delta\phi$ between $\gamma\gamma$ and $jj$, \\\\ minimum $\Delta R$ between jets and photons,\\\\ mass of the sum of all jets; \\\\ di-lepton $p_\mathrm{T}$, di-e or di-$\mu$ mass, \\\\ $E^{miss}_\mathrm{T}$, $p_\mathrm{T}$ of lepton + $E^{miss}_\mathrm{T}$; \\\\ $p_T$, $\eta$, $\phi$, mass of top candidates; \\\\ Number of jets, barrel jets ($|\eta|<2.5$), b-jets and leptons; \\\\ leading jet $p_T$, sum $p_\mathrm{T}$ of all jets \\\\ $\sum E^\mathrm{T}$, $E^{miss}_\mathrm{T}$ significance; \\\\ Average interaction per crossing, number of primary vertices} & \multirowcell {22}{individual \\ STXS regions from \\ $gg\rightarrow H$ or \\ $qq'\rightarrow Hqq'$} &  \multirowcell {22}{Multi-class BDT variables, and \\\\ $\Delta\phi$, $\Delta \eta$ between the 2 photons ($\Delta\phi_{\gamma\gamma}$, $\Delta\eta_{\gamma\gamma}$); \\\\ Number of electrons and muons; \\\\  $E^{miss}_\mathrm{T}$, $\sum E^\mathrm{T}$, $E^{miss}_\mathrm{T}$ significance, and \\\\ ${E^{miss}_\mathrm{T}}$ azimuthal angle computed from hardest vertex;
-\\\\ $\gamma\gamma \vec{p}_\mathrm{T}$ projected to its thrust axis ($p_\mathrm{Tt}^{\gamma\gamma}$);
-\\\\ Half difference between di-photon $\eta$ and sum $\eta$ of leading 2 jets ($\eta^{Zepp}$);
+\\\\ ($p_\mathrm{Tt}^{\gamma\gamma}$), the component of $\gamma\gamma \vec{p}_\mathrm{T}$ orthogonal to the diphoton thrust axis (unit $\vec{n}$ for which \max_{\hat{n}}\frac{\sum_{i}|\hat{p^{\gamma}_{i}}\dot\hat{n}|}{\sum_{i}|\hat{p^{\gamma}_{i}}|});
+\\\\ Half of the difference between di-photon $\eta$ and sum $\eta$ of leading 2 jets ($\eta^{Zepp}$);
 \\\\ $\phi^{*}_{\gamma\gamma} = \tan(\frac{\pi-|\Delta\phi_{\gamma\gamma}|}{2}) \sqrt{1-\tanh^{2}(\frac{\Delta\eta_{\gamma\gamma}}{2})}$
 \\\\ $\cos\theta^{*}_{\gamma\gamma}= |\frac{(E^{\gamma_1} + p_z^{\gamma_1}) \cdot (E^{\gamma_2} - p_z^{\gamma_2}) -  (E^{\gamma_1} - p_z^{\gamma_1}) \cdot (E^{\gamma_2} + p_z^{\gamma_2})} { m_{\gamma\gamma} + \sqrt{(m_{\gamma\gamma}^2 + (p_\mathrm{T}^{\gamma\gamma})^2)} }|$} \\
  & & & \\
@@ -95,7 +95,7 @@ STXS regions & Multi-class BDT & STXS regions  & Binary BDT  \\ \hline
 \end{table}
 \end{landscape}
 
-To train the multiclassifier BDT, all signal samples are merged ($ggF$, $VH$, $VBF$, $ttH$, $tH$). A weight is then applied to each event such that all processes have equal yields in the training sample (that is, so processes such as $tH$ with a small cross-section are not underrepresented). The output of the multiclassifier BDT is a 44-dimensional vector discriminant with an index $y_{i}$ for each truth bin; these indices are then converted into class probabilities $z_{i}$ using a softmax function: $z_{i} = e^{y_{i}}/{\Sigma_{j}e^{y_{j}}}$. The BDT training is performed by minimizing the cross-entropy of the $z_{i}$ using the LightGBM package \ref{cite:LightGBM}.
+To train the multiclassifier BDT, all signal samples are merged ($ggF$, $VH$, $VBF$, $ttH$, $tH$). A weight is then applied to each event such that all processes have equal yields in the training sample (that is, so processes such as $tH$ with a small cross-section are not underrepresented). The output of the multiclassifier BDT is a 44-dimensional vector discriminant with an index $y_{i}$ for each truth bin; these indices are then converted into class probabilities $z_{i}$ using a softmax function: $z_{i} = e^{y_{i}}/{\Sigma_{j}e^{y_{j}}}$. The BDT is trained by minimizing the cross-entropy of the softmax $z_{i}$ using the LightGBM package \ref{cite:LightGBM}.
 
 After this, a per-class weight is calculated for each category using a so-called 'D-optimality' procedure. This is done iteratively: first, weights are initialized to $w_{i} = 1$. Second, events are classified based on the value of $w_{i}z_{i}$. An Asimov dataset \ref{cite:Asimov} is then created using the signal samples in each category, normalized to their Standard Model cross-sections and simulated continuum background ($\gamma\gamma$, $V\gamma\gamma$, and $tt\gamma\gamma$) scaled to the TI sidebands in the region $95 GeV < m_{\gamma \gamma} < 105 GeV$. A simplified version of the overall fit is then performed, using an exponential function if the total scaled background yield is determined to be less than 400 events and an ExpPoly2 function otherwise. This Asimov dataset is then fitted, leading to a covariance matrix C of the event yields in each region. The weights are then iteratively updated using the Powell algorithm \ref{cite:Powell1}, \ref{cite:Powell2} until the determinant of the covariance matrix is minimized. By minimizing the determinant of this covariance matrix, the information gain from a particular classification scheme is maximized \ref{cite:Linley}. In an experimental sense, this corresponds to higher signal purity in the classes corresponding to rare processes such as $ttH$ and $tH$. These final weights are multiplied by the softmax function output; events are classified based on their maximum value of $w_{i}z_{i}$. This produces 44 classes, one for each STXS region. The multiclassifier output for four representative classes is shown in Figure \ref{fig:design:BDT_outputs_multiclass}.
 
@@ -106,7 +106,7 @@ After this, a per-class weight is calculated for each category using a so-called
 \subfloat[\qqtoHqq\ ($\ge 2$-jets, $\mjj > 700\,\GeV$, $\ptHjj > 25\,\GeV$)]{\includegraphics[width=0.49\linewidth]{figures/couplings_chapter/multiclass_QQ2HQQ_GE2J_MJJ_GT700_PTH_0_200_PTHJJ_0_25}\label{fig:design:BDT_VBF:multiclass}}\\
 \subfloat[\qqtoHln\ ($75 \le \ptH < 150\,\GeV$)]{\includegraphics[width=0.49\linewidth]{figures/couplings_chapter/multiclass_QQ2HLNU_PTV_75_150} \label{fig:design:BDT_VH:multiclass}}
 \subfloat[\ttH\ ($60 \le \ptH < 120\,\GeV$)  ]{\includegraphics[width=0.49\linewidth]{figures/couplings_chapter/multiclass_TTH_PTH_60_120}\label{fig:design:BDT_ttH:multiclass}}
-\caption{Multiclass discriminant output distributions for four representative STXS classes. In each plot, the multiclass discriminant distribution is shown separately for events corresponding to the target STXS region (solid) and events in other STXS regions (long-dashed). The target region is further broken down into the subset of events passing the multiclass selection at detector level (orange), and the subset of events that fail this selection (green).}
+\caption{Multiclassifier output distributions for four STXS classes. In each plot, the multiclassifier output distribution is shown for events corresponding to the target STXS truth bin (solid) and events in other STXS truth bins (dashed). The target STXS bin is further broken down into the subset of events passing the multiclassifier selection (orange), and the subset of events that fail it (green).}
 \label{fig:design:BDT_outputs_multiclass}
 \end{figure}
 
@@ -121,7 +121,7 @@ In each class, events are then sorted into a final set of 88 total categories ba
 \subfloat[\qqtoHqq\ ($\ge 2$-jets, $\mjj > 700\,\GeV$, $\ptHjj > 25\,\GeV$)]{\includegraphics[width=0.49\linewidth]{figures/couplings_chapter/BDT2score_QQ2HQQ_GE2J_MJJ_GT700_PTH_0_200_PTHJJ_0_25}\label{fig:design:BDT_VBF:binary}}	\\
 \subfloat[\qqtoHln\ ($75 \le \ptH < 150\,\GeV$)]{\includegraphics[width=0.49\linewidth]{figures/couplings_chapter/BDT2score_QQ2HLNU_PTV_75_150}\label{fig:design:BDT_VH:binary}}
 \subfloat[\ttH\ ($60 \le \ptH < 120\,\GeV$)]{\includegraphics[width=0.49\linewidth]{figures/couplings_chapter/BDT2score_TTH_PTH_60_120}\label{fig:design:BDT_ttH:binary}}
-\caption{Binary BDT discriminant distributions in four representative STXS classes. For each class, the binary BDT discriminant distribution is shown for the target STXS region (solid), other STXS regions (dashed), and background (dots) represented by the events in the diphoton mass sidebands (105 $<~m_{\gamma \gamma}~<~$ 120 GeV or 130 $<~m_{\gamma \gamma}~<~$ 160 GeV). The vertical lines indicate the categories used in the analysis for each class. }
+\caption{Binary BDT distributions in four STXS classes. For each class, the binary BDT output distribution is shown for the target STXS truth bin (solid), other STXS truth bins (dashed), and background (dots) represented by the events in the diphoton mass sidebands (105 $<~m_{\gamma \gamma}~<~$ 120 GeV or 130 $<~m_{\gamma \gamma}~<~$ 160 GeV). The vertical lines indicate the boundaries of the analysis categories. }
 \label{fig:design:BDT_outputs_binary}
 \end{figure}
 
@@ -237,7 +237,7 @@ Other (including \tH)             &        11  &   120  &  0.08  &   1.0  \\
 $tWH$                            &      0.80  &   2.4  &  0.25  &   0.5  \\
 $tHjb$                           &      0.88  &   2.7  &  0.24  &   0.5  \\
 \end{tabular}}}
-    \caption{For each event category, values of the expected Higgs signal ($S$) and background ($B$) yields within the smallest mass window containing 90\% of signal events, and corresponding estimates of the signal purity $f = S/(S + B)$ and the expected significance $Z = \sqrt{2( (S+B) \log(1 + S/B) - S)}$.}
+    \caption{For each category, values of the expected Higgs signal ($S$) and background ($B$) within the smallest mass window containing 90\% of signal events, as well as corresponding estimates of the signal purity $f = S/(S + B)$ and the expected significance $Z = \sqrt{2( (S+B) \log(1 + S/B) - S)}$.}
     \label{tab:design:yields}
 \end{table}
 
@@ -245,7 +245,7 @@ $tHjb$                           &      0.88  &   2.7  &  0.24  &   0.5  \\
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.5\textwidth]{figures/couplings_chapter/purity_2D.pdf}
-\caption{Contribution of STXS regions in the expected event yields to each reconstruction category. The top row corresponds to the value of $S_{90}/(S_{90} + B_{90})$ in each category, where $S_{90}$ and $B_{90}$ are respectively the total number of signal (including all STXS regions) and background events expected in the smallest $m_{\gamma \gamma}$ range containing 90\% of the signal yield. Other entries correspond to the percentage fraction for the contribution of a given STXS truth bin to the Higgs signal yield in each analysis category. Entries for the STXS regions targeted by each analysis category are outlined in black if this value is above 15\%. }
+\caption{Contribution of STXS truth bins to each analysis category in total event yield. The top row corresponds to the value of $S_{90}/(S_{90} + B_{90})$ in each category, where $S_{90}$ and $B_{90}$ are respectively the total number of signal (including all STXS regions) and background events expected in the smallest $m_{\gamma \gamma}$ range containing 90\% of the signal yield. Other entries correspond to the percentage contribution of a given STXS truth bin to the Higgs signal yield in each analysis category. Entries for the STXS regions targeted by each analysis category are outlined in black if this value is above 15\%. }
 \label{fig:design:yields}
 \end{figure}
 \end{landscape}
@@ -393,7 +393,7 @@ A novel Gaussian Process Regression procedure is implemented to smooth the templ
 \subfloat[\qqtoHqq\ ($\ge 2$-jets, $350 \le \mjj < 700\,\GeV$, $\ptH < 200\,\GeV$, $\ptHjj < 25\,\GeV$)]{\includegraphics[width=0.49\textwidth]{figures/couplings_chapter/c52.pdf}\label{fig:design:bkg_VBF}}    \\
 \subfloat[\qqtoHln\ ($75 \le \ptH < 150\,\GeV$)]{\includegraphics[width=0.49\textwidth]{figures/couplings_chapter/c67.pdf} \label{fig:design:bkg_VH}}
 \subfloat[\ttH\ ($60 \le \ptH < 120\,\GeV$)]{\includegraphics[width=0.49\textwidth]{figures/couplings_chapter/c80.pdf}\label{fig:design:bkg_ttH}}
-\caption{Distribution of the diphoton invariant mass $m_{\gamma \gamma}$ in four representative STXS categories both in Monte Carlo background templates (histograms) and in data (black points). The data are shown excluding the region $120 < m_{\gamma \gamma} < 130\,\GeV$ containing the signal. In categories~\ref{fig:design:bkg_ggH} and~\ref{fig:design:bkg_VBF}, the $\gamma \gamma$, $\gamma j$ (green) and $jj$ (magenta) background contributions are shown stacked on top of each other. }
+\caption{Distribution of the diphoton invariant mass $m_{\gamma \gamma}$ in four STXS categories. Monte Carlo background templates are shown in histogram, and data is shown using black points. The signal region, $120 < m_{\gamma \gamma} < 130 \GeV$, is excluded in data. In categories~\ref{fig:design:bkg_ggH} and~\ref{fig:design:bkg_VBF}, the $\gamma \gamma$, $\gamma j$ (green) and $jj$ (magenta) components of the background used to build the template are shown stacked on top of each other. }
 \label{fig:design:bkg}
 \end{figure}
 
@@ -409,7 +409,7 @@ Theory systematics can broadly be broken down into perturbative QCD scale uncert
 
 Because the $ggF$ process is being measured specifically in fine STXS bins and not being selected against as in the CP analysis, and because the final-state jet multiplicity may vary, it is not enough to simply vary the QCD renormalization and factorization scales to account for QCD effects in $ggF$, as in the CP analysis. Thus, for $ggF$, the QCD uncertainty is broken up into 14 individual nuisance parameters, including QCD resummation and factorization scale uncertainties, migration uncertainties across different jet-multiplicity regimes, and migration between STXS bins with differing values of $p_{T}^{Hjj}$ and $m_{jj}$. Additionally, a comparison of acceptance and efficiency factors between the nominal $ggF$ sample and the alternative MadGraph5\_aMC@NLO sample is made, and the differences are considered asadditional $ggF$ modeling uncertainties.
 
-Additional QCD uncertainties on $VH$ processes are modelled, for similar reasons as for $ggH$: for each of $WH$, $qq/qg /rightarrow ZH$, and $gg \rightarrow ZH$, one source of overall yield uncertainty, four sources of $p_{T}^{V}$ modeling uncertainty, and two sources of jet multiplicity modeling uncertainty are accounted for. For $qq' \rightarrow H qq'$ processes, a similar set of uncertainty sources are identified: one for overall yield variation, two for modeling of the jet multiplicity and $p_{T}^{Hjj}$ distributions, one for migration between $p_{T}^{H} < 200$ GeV and $p_{T}^{H} > 200$ GeV, and six for the modeling of the $m_{jj}$ distribution.
+Additional QCD uncertainties on $VH$ processes are modelled, for similar reasons as for $ggH$: for each of $WH$, $qq/qg /rightarrow ZH$, and $gg \rightarrow ZH$, one source of overall yield uncertainty, four sources of $p_{T}^{V}$ modeling uncertainty, and two sources of jet multiplicity modeling uncertainty are accounted for. For $qq' \rightarrow H qq'$ processes, one uncertainty source is identified for overall yield variation, two for modeling of the jet multiplicity and $p_{T}^{Hjj}$ distributions, one for migration between $p_{T}^{H} < 200$ GeV and $p_{T}^{H} > 200$ GeV categories, and six for the modeling of the $m_{jj}$ distribution.
 
 For $ttH$ and $tH$, one nuisance parameter is introduced for the yield and six are introduced for the $p_{T}^{H}$ distribution.
 
@@ -469,7 +469,7 @@ Uncertainty source & $\Delta\sigma$[\%] & $\Delta\sigma$[\%] & $\Delta\sigma$[\%
 \hline
 \end{tabular}
 }
-  \caption{The impact of groups of systematic uncertainties to the total error on the observed cross section times branching ratio. This is shown as the uncertainty due to each group of systematic uncertainties ($\Delta \sigma$), as a fraction of the total observed cross section ($\sigma$). For each group of uncertainties, asymmetric errors are used.}
+  \caption{The impact of groups of systematic uncertainties on the total error on the measured cross section times branching ratio. This is shown as the uncertainty due to each group of uncertainties ($\Delta \sigma$), as a fraction of the total measured cross section ($\sigma$).}
 \label{tab:result:systematic}
 \end{center}
 \end{table}
@@ -495,9 +495,9 @@ with an expectation measured using post-fit Asimov data of:
 (\sigma \times B_{\gamma \gamma})_{exp} =115 \pm 5 fb
 \end{equation}
 
-For the five-production mode model, $(\sigma \times B_{\gamma \gamma})$ is measured separately for each production mode: $ggF+bbH$, $VBF$, $ZH$, $WH$, and $ttH+tH$. The $m_{\gamma\gamma}$ distribution in these categories, weighted by the ratio $ln(1+\frac{S}{B})$, are shown in Figure \ref{fig:results:prodXS_spectra}. The measured cross-sections times the diphoton branching ratio are depicted in Table \ref{tab:results:prodXS} and Figure \ref{fig:results:prodXS}. The correlations between categories are depicted in Figure \ref{fig:results:prodXS_corr}. The observed (expected) significance values for the $VBF$, $WH$, and $ttH+tH$ processes are 7.5 (6.1) $\sigma$, 5.6 (2.8) $\sigma$, and 4.7 (5.0) $\sigma$, respectively. The expected significance for the $ZH$ process is 1.7 $\sigma$, and no excess over the background is observed in data. Together, these correspond to a roughly 1.9 $\sigma$ deviation from the SM.
+For the five-production mode model, $(\sigma \times B_{\gamma \gamma})$ is measured separately for each production mode: $ggF+bbH$, $VBF$, $ZH$, $WH$, and $ttH+tH$. The $m_{\gamma\gamma}$ distribution in these categories, weighted by the ratio $ln(1+\frac{S}{B})$, are shown in Figure \ref{fig:results:prodXS_spectra}. The measured cross-sections times the diphoton branching ratio are depicted in Table \ref{tab:results:prodXS} and Figure \ref{fig:results:prodXS}. The correlations between categories are depicted in Figure \ref{fig:results:prodXS_corr}. The observed (expected) significance values for the $VBF$, $WH$, and $ttH+tH$ processes are 7.5 (6.1) $\sigma$, 5.6 (2.8) $\sigma$, and 4.7 (5.0) $\sigma$, respectively. The expected significance for the $ZH$ process is 1.7 $\sigma$; however, no excess over the background is observed. Together, these correspond to a roughly 1.9 $\sigma$ deviation from the SM.
 
-The reason for this discrepancy is the strong anticorrelation observed between the $WH$ and $ZH$ processes: if these are combined into one $VH$ production mode, the cross-section becomes $(\sigma_{VH})_{obs} = 5.9 \pm 1.4fb = 5.9 \pm 1.4(stat.) \pm 0.4(syst.)fb$ compared to the SM expectation of $(\sigma_{VH})_{exp}=4.53 \pm 0.12fb$. This corresponds to no excess with respect to the SM result.
+A possible source of this discrepancy is the strong anticorrelation observed between the $WH$ and $ZH$ processes: if these are combined into one $VH$ production mode, the cross-section becomes $(\sigma_{VH})_{obs} = 5.9 \pm 1.4fb = 5.9 \pm 1.4(stat.) \pm 0.4(syst.)fb$ compared to the SM expectation of $(\sigma_{VH})_{exp}=4.53 \pm 0.12fb$. This corresponds to no excess with respect to the SM result.
 
 The anticorrelation is because the leptonic $ZH$ categories suffer from substantial $WH$ contamination and an excess is observed in the leptonic $WH$ categories, so when $\mu_{WH}$ is higher, in order to converge, the fit must overestimate the contribution of $WH$ and underestimate the contribution of $ZH$. In order to rectify this, at the time of this writing, a new categorization scheme is being devised that will introduce a high-purity leptonic $ZH$ region by splitting on lepton multiplicity that should help this to decorrelate further.
 
@@ -507,7 +507,7 @@ A limit is also placed on the $tH$ cross-section using the $CL_{s}$ method (\ref
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{figures/couplings_chapter/weighted_coupling2020_all.pdf}
-    \caption{The inclusive diphoton invariant mass distribution of events from all analysis categories. The events in each category are weighted by $\ln(1+S/B)$, where $S$ and $B$ are the expected signal and background yields in this category within the smallest $m_{\gamma \gamma}$ window containing 90\% of the signal events. The weighted sum of the signal plus background fits is represented by the solid line, while the blue dotted line represents the weighted sum of the background functional forms. }
+    \caption{The inclusive diphoton invariant mass distribution of events from all analysis categories. The events in each category are weighted by $\ln(1+S/B)$, where $S$ and $B$ are the expected signal and background yields in this category within the smallest $m_{\gamma \gamma}$ window containing 90\% of the signal events. The weighted sum of the signal plus background fits is represented by the solid line, while the blue dotted line indicates the weighted sum of the background functional forms. }
     \label{fig:result:inclusivemgg}
 \end{figure}
 
@@ -518,14 +518,14 @@ A limit is also placed on the $tH$ cross-section using the $CL_{s}$ method (\ref
 \subfloat[\WH]{\includegraphics[width=.475\textwidth]{figures/couplings_chapter/weighted_coupling2020_all_WH.pdf}}
 \subfloat[\ZH]{\includegraphics[width=.475\textwidth]{figures/couplings_chapter/weighted_coupling2020_all_ZH.pdf}}\\
 \subfloat[\ttH+~\tH]{\includegraphics[width=.475\textwidth]{figures/couplings_chapter/weighted_coupling2020_all_ttHtH.pdf}}
-\caption{Combined diphoton invariant mass distributions for categories targeting the same production processes. The events in each category are weighted by $\ln(1+S/B)$, where $S$ and $B$ are the expected signal and background yields in this category within the smallest $m_{\gamma \gamma}$ window containing 90\% of the signal events. The weighted sum of the signal plus background fits is represented by the solid line, while the blue dotted line represents the weighted sum of the background functional forms. Only Higgs boson events from the targeted production processes in each category are considered as signal events in these plots; Higgs boson events from other processes are treated as part of the background.}
+\caption{Combined diphoton invariant mass distributions for the five-production-mode fit. The events in each category are weighted by $\ln(1+S/B)$, where $S$ and $B$ are the expected signal and background yields in this category within the smallest $m_{\gamma \gamma}$ window containing 90\% of the signal events. The weighted sum of the signal plus background fits is represented by the solid line, while the blue dotted line represents the weighted sum of the background functional forms. Only Higgs boson events from the targeted production processes in each category are considered as signal events in these plots; Higgs boson events from other processes are treated as part of the background.}
 \label{fig:results:prodXS_spectra}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9\textwidth]{figures/couplings_chapter/summary_5XS}
-  \caption{Measured cross sections times branching fraction for \ggF+~\bbH, \VBF, \VH\ and \ttH+~\tH\ production. The values are obtained from a simultaneous fit to all categories.   The black error bars, blue boxes and yellow boxes show the total, systematic, and statistical uncertainties, while the gray bands show the theory uncertainties. }
+  \caption{Measured cross sections times branching fraction for \ggF+~\bbH, \VBF, \VH\ and \ttH+~\tH\ production. The values are obtained from a simultaneous fit to all categories. The black error bars, blue boxes and yellow boxes show the total, systematic, and statistical uncertainties, while the gray bands show the theory uncertainties. }
   \label{fig:results:prodXS}
 \end{figure}
 
@@ -546,7 +546,7 @@ Process       & \multicolumn{1}{c}{Value} & \multicolumn{3}{c|}{Uncertainty [fb]
 \hline \hline
 \end{tabular}
 \end{center}
-\caption{Best-fit values and uncertainties for the production cross sections of the Higgs boson times the $H \rightarrow \gamma\gamma$ branching ratio. The total uncertainties are decomposed into components for data statistics (Stat.), and systematic uncertainties (Syst.). SM predictions are shown for the cross section of each production process.}
+\caption{Best-fit values and uncertainties for $\sigma \times Br_{\gamma \gamma}$ in each of the five major production modes. The total uncertainties are decomposed into statistical and systematic components. Expected values are also shown for the cross-section of each process.}
 \label{tab:results:prodXS}
 \end{table}
 
@@ -631,3 +631,6 @@ Hqqm{0}{60}{} +               & \multirow{2}{*}{$5.2$}      & \multirow{2}{*}{$^
 }
 \label{fig:results:STXS_corr}
 \end{figure}
+
+
+
