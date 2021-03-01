@@ -163,7 +163,7 @@ Theory systematic uncertainties are designed to account for the precision (or im
 
 QCD Renormalization Scale and Factorization Scale uncertainties are both calculated by varying the relevant QCD scale up or down by a factor of two in the Monte Carlo generator, while the PDF and strong coupling constant $\alpha_{s}$ uncertainties are calculated by varying the parameters according to the relevant LHAPDF \ref{cite:LHAPDF} or PDF4LHC \ref{cite:PDF4LHC} prescriptions.
 
-Inclusive parametrization of the QCD and PDF uncertainties on a given process can be used when the effects of category migration are expected to be negligible. The inclusive parameterization of the QCD and PDF uncertainties on non-top Standard Model Higgs processes ($VBF$, $WH$, $ZH$ and $bbH$) is taken from \ref{cite:YellowReport4}. However, previous analyses (\ref{:} \ref{cite:} \ref{cite:}) have shown that  processes containing final-state b-jets are poorly-modelled even after applying these yield uncertainties, so we apply a conservative 100\% uncertainty on the yield of $VBF$, $WH$, $ZH$ and $ggF$ in our analysis. This 100\% heavy-flavor uncertainty is not applied to $bbH$ due to its negligible contribution to the overall signal yield in the targeted analysis categories.
+Inclusive parametrization of the QCD and PDF uncertainties on a given process can be used when the effects of category migration are expected to be negligible. The inclusive parameterization of the QCD and PDF uncertainties on non-top Standard Model Higgs processes ($VBF$, $WH$, $ZH$ and $bbH$) is taken from \ref{cite:YellowReport4}. However, previous analyses (\ref{cite:HFunc1} \ref{cite:HFunc2} \ref{cite:HFunc3}) have shown that  processes containing final-state b-jets are poorly-modelled even after applying these yield uncertainties, so we apply a conservative 100\% uncertainty on the yield of $VBF$, $WH$, $ZH$ and $ggF$ in our analysis. This 100\% heavy-flavor uncertainty is not applied to $bbH$ due to its negligible contribution to the overall signal yield in the targeted analysis categories.
 
 Similarly, the underlying event and parton showering uncertainties (UEPS) governed by the choice of MC showering tool are chosen by utilizing the Monte Carlo samples generated with the Herwig7 \ref{cite:Herwig} showering tool rather than the Pythia8 tool \ref{cite:Pythia8}. The uncertainty is given by:
 
@@ -212,13 +212,13 @@ Due to the complexity of reconstructing physics objects, a large number of exper
 These include:
 
 \begin{itemize}
-\item Beam luminosity uncertainty \ref{cite:Lumiunc}
-\item Trigger uncertainty \ref{cite:trigunc}
-\item Pileup reweighting \ref{cite:pileupreweight}
+\item Beam luminosity uncertainty \ref{cite:ATLAS-CONF-2019-021}
+\item Trigger uncertainty \ref{cite:trigger} \ref{cite:triggerperformance}
+\item Pileup reweighting
 \item Jet uncertainties: energy scale, energy resolution,  flavor-tagging and flavor composition \ref{cite: jetuncs} \ref{cite: jetuncs} \ref{cite: jetuncs} \ref{cite: jetuncs}
-\item Photon uncertainties: energy scale and resolution (which modify the DSCB parameters as per Chapter \ref{chap:sigbkgparam}), photon ID, photon isolation \ref{cite: photuncs} \ref{cite: photuncs} \ref{cite: photuncs} \ref{cite: photuncs}
-\item Electron/muon uncertainties: energy scale, energy resolution, electron/muon ID, electron/muon isolation \ref{cite: eleuncs} \ref{cite: eleuncs} \ref{cite: eleuncs} \ref{cite: muuncs}
-\item MET uncertainties: \ref{cite: MET} \ref{cite: MET}
+\item Photon uncertainties: energy scale and resolution (which modify the DSCB parameters as per Chapter \ref{chap:sigbkgparam}), photon ID, photon isolation \ref{cite: CERN-EP-2019-145} \ref{cite: photuncs}
+\item Electron/muon uncertainties: energy scale, energy resolution, electron/muon ID, electron/muon isolation \ref{cite: CERN-EP-2019-145} \ref{cite: photuncs} \ref{cite: elID-CERN-EP-2018-273} \ref{cite: muuncs}
+\item MET uncertainties: \ref{cite: MET1} \ref{cite: MET2}
 \item Higgs mass: \ref{cite: Higgsmass}
 \item Background modelling uncertainty: Calculated from spurious signal procedure discussed in Chapter \ref{chap:sigbkgparam}
 \end{itemize}
@@ -552,11 +552,11 @@ The observed $ttH$ significance is 5.2$\sigma$ (5.6$\sigma$ if systematics are n
 \end{equation}
  
 
-This analysis thus marks the first ever single-channel observation of $ttH$ in the diphoton channel with ATLAS: while $ttH$ has been observed in a combination of channels on ATLAS \ref{cite:ttH} and has been observed in the diphoton channel with CMS, previous single-channel $ttH$ measurements were below the 5.0$\sigma$ threshold needed to constitute a discovery. 
+This analysis thus marks the first ever single-channel observation of $ttH$ in the diphoton channel with ATLAS: while $ttH$ has been observed in a combination of channels on ATLAS \ref{cite:ttH} and has been observed in the diphoton channel with CMS \ref{cite:ttHCMS}, previous single-channel $ttH$ ATLAS measurements were below the 5.0$\sigma$ threshold needed to constitute a discovery. 
  
 \subsection{Upper Limit on $tH$}
 
-Though the small cross-section of the $tH$ process makes it unlikely to be detected in ATLAS Run-2 data alone, it is nonetheless possible to set an upper limit on how large any deviation from the Standard Model must be, given current analysis sensitivity. This is done using the CLS model, a conservative method of setting such limits \ref{cite:CLS}.
+Though the small cross-section of the $tH$ process makes it unlikely to be detected in ATLAS Run-2 data alone, it is nonetheless possible to set an upper limit on how large any deviation from the Standard Model must be, given current analysis sensitivity. This is done using the CLs model, a conservative method of setting such limits \ref{cite:CLs}.
 
 Expected $tH$ significance is evaluated using post-fit Asimov data for which the yield of all non-$tH$ or -$ttH$ processes is set to the Standard Model value and a Standard Model CP-Even Yukawa Coupling is assumed. The signal strength terms $\mu_{ttH}$, $\mu_{tWH}$, and $\mu_{tHjb}$ are then allowed to float in the fit. The expected limit is 11.7 $\times$ SM , and the observed limit is 11.6 $\times$ SM (10.5 $\times$ SM neglecting systematics).
 
@@ -564,7 +564,7 @@ Expected $tH$ significance is evaluated using post-fit Asimov data for which the
 
 \subsubsection{2-D Constraint Using Previous Measurements}
 
-A fit is performed using the recent Run-2 Couplings combination result \ref{cite:Couplings} to constrain the values of $\kappa_{g}$ and $\kappa_{\gamma}$. Because the dataset used for the CP analysis is a subset of the dataset used for the previous Run-2 Couplings combination result, the $ttH$ and $tH$ categories of the analysis are excluded to ensure orthogonal selection and the constraint terms are re-derived for the CP analysis. The constraint terms are:
+A fit is performed using the recent Run-2 Couplings combination result \ref{cite:Couplingscomb} to constrain the values of $\kappa_{g}$ and $\kappa_{\gamma}$. Because the dataset used for the CP analysis is a subset of the dataset used for the previous Run-2 Couplings combination result, the $ttH$ and $tH$ categories of the analysis are excluded to ensure orthogonal selection and the constraint terms are re-derived for the CP analysis. The constraint terms are:
 
 \begin{equation}
 \kappa_{g} = 1.034 \pm 0.067
