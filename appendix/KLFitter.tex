@@ -1,6 +1,6 @@
 \section{The KLFitter} \label{sec:KLFitter} 
 
-In order to validate the effectiveness of the top reconstruction BDT, we test its performance against that of the Kinematic Likelihood Fitter (KLFitter) \ref{cite:KLFitter}. 
+In order to validate the effectiveness of the top reconstruction BDT, we test its performance against that of the Kinematic Likelihood Fitter (KLFitter) \cite{KLFitter}. 
 
 The KLFitter is a likelihood-based framework that, like the BDT, attempts to solve the top reconstruction combinatorial jet-matching problem. To correctly identify the jet triplet originating from the top, the KLFitter maximizes a likelihood function that depends on the kinematics of each of the final-state jets for each possible jet permutation. Based on this likelihood-maximization, an event probability is calculated that allows us to identify the best potential top candidate from the jet permutations.
 
@@ -17,7 +17,7 @@ C_{miss}(E_{x}^{miss}|p_{x}^{\nu}) \times C_{miss}(E_{y}^{miss}|p_{y}^{\nu})
 
 where the $\mathcal{B}$s denote Breit-Wigner functions (similar to Gaussians, dependent on both mass and decay width) and the C terms indicate transfer functions, designed to model the difference between measured kinematics and their true values due to detector effects. At the time of this study, transfer functions for the ATLAS detector were defined only for jets with $|\eta|< 4.5$, so we restrict our study to this range.
 
-The log-likelihood algorithm is minimized using the Minuit algorithm \ref{cite:Minuit} as implemented in the Bayesian Analysis Toolkit (BAT) \ref{cite:BAT}.
+The log-likelihood algorithm is minimized using the Minuit algorithm \cite{Minuit} as implemented in the Bayesian Analysis Toolkit (BAT) \cite{BAT}.
 
 \begin{figure}
 	\centering
@@ -32,7 +32,7 @@ The log-likelihood algorithm is minimized using the Minuit algorithm \ref{cite:M
 
 In order to compare the KLFitter and BDT methods, we construct a validation set of truth-tagged semileptonic top events. We use the "mc16a" (2015-like pileup profile) PowhegPy8 $ttH$ sample, and select only events which contain at least four jets and exactly one lepton, all with $|\eta|< 4.5$.
 
-We find that KLFitter performs optimally when we fix the top mass to its measured value of 172.5 GeV \ref{cite:PDG} and use the 'kWorkingPoint' b-tag handling method, which adds an additional multiplier to the event probability to account for the b-tagging efficiency and light-jet rejection. 
+We find that KLFitter performs optimally when we fix the top mass to its measured value of 172.5 GeV \cite{PDG} and use the 'kWorkingPoint' b-tag handling method, which adds an additional multiplier to the event probability to account for the b-tagging efficiency and light-jet rejection. 
 
 \begin{table}[h]
     \centering

@@ -4,7 +4,7 @@ In order to properly measure the dependence of the top Yukawa coupling on the CP
 
 First, two sets of regions are defined. The "hadronic" region targets events containing fully-hadronic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as two additional jets with $p_{T} > 25$ GeV and exactly zero electrons or muons. Similarly, the "leptonic" region targets events containing semi-leptonic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as at least one isolated electron or muon.
 
-To perform the categorization in these regions, two multivariate Boosted Decision Trees (BDTs) are used, one to separate Higgs events from background and one to separate CP-odd Higgs events from CP-even Higgs events. Both BDTs are trained on low-level kinematic features using the XGBoost package \ref{cite:XGBoost}. A series of cuts on these BDT scores are then defined, delineating a total of 20 orthogonal regions, each with differing sensitivity both to the $ttH+tH$ signal and to the CP-odd $ttH+tH$ hypothesis. An illustration of the categorization strategy is shown in figure \ref{fig:cartoon}.
+To perform the categorization in these regions, two multivariate Boosted Decision Trees (BDTs) are used, one to separate Higgs events from background and one to separate CP-odd Higgs events from CP-even Higgs events. Both BDTs are trained on low-level kinematic features using the XGBoost package \cite{XGBoost}. A series of cuts on these BDT scores are then defined, delineating a total of 20 orthogonal regions, each with differing sensitivity both to the $ttH+tH$ signal and to the CP-odd $ttH+tH$ hypothesis. An illustration of the categorization strategy is shown in figure \ref{fig:cartoon}.
 
 \begin{figure}[htbp]
   \centering
@@ -16,7 +16,7 @@ To perform the categorization in these regions, two multivariate Boosted Decisio
 
 \subsection{SBBDT}
 
-The signal-versus-background BDT (SBBDT) developed for use in the CP Analysis is identical to that developed first in the $79.8 fb^{-1}$ measurements of $ttH$ in the diphoton channel \ref{cite:ttH} in and later retrained for $139 fb^{-1}$ measurements of $ttH$ in the diphoton channel \ref{cite:ATLAS-CONF-2019-004}. It is trained separately for both the hadronic and leptonic regions.
+The signal-versus-background BDT (SBBDT) developed for use in the CP Analysis is identical to that developed first in the $79.8 fb^{-1}$ measurements of $ttH$ in the diphoton channel \cite{ttH} in and later retrained for $139 fb^{-1}$ measurements of $ttH$ in the diphoton channel \cite{ATLAS-CONF-2019-004}. It is trained separately for both the hadronic and leptonic regions.
 
 Both the hadronic and leptonic BDTs are trained using a Standard-Model Powheg $ttH$ Monte Carlo sample to model the signal and NTI data control events to model the continuum diphoton background.
 
@@ -41,7 +41,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_10c.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_10d.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_10e.pdf}
-	\caption{Distributions of training variables for the hadronic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \ref{cite:HIGG-2018-13}. }
+	\caption{Distributions of training variables for the hadronic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \cite{HIGG-2018-13}. }
 	\label{fig:SBBDTvarshad}
 \end{figure}
 
@@ -79,7 +79,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11e.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11f.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11g.pdf}
-	\caption{Distributions of training variables for the leptonic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \ref{cite:HIGG-2018-13}.}
+	\caption{Distributions of training variables for the leptonic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \cite{HIGG-2018-13}.}
 	\label{fig:SBBDTvarslep}
 \end{figure}
 
@@ -196,7 +196,7 @@ These variables are shown in Figures
 
 \subsection{CPBDT}
 
-Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \ref{cite:TMVA} and is discussed in Appendix \ref{sec:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables.
+Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \cite{TMVA} and is discussed in Appendix \ref{sec:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables.
 
 The signal samples are the CP-odd $ttH+tWH+tHjb$, added according to their predicted cross-sections, while the background samples are the CP-even $ttH+tWH+tHjb$. 50\% of the signal and background samples are used for training, 25 \% are used for categorization, and 25\% are used for testing and significance evaluation.
 
@@ -215,7 +215,7 @@ The training variables used in the hadronic CP BDT training are:
 \item Missing $E_{T}$ significance = $E_{T}^\text{miss}/\sqrt{H_{T}}$
 \end{itemize}
 
-The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \ref{cite:skopt}. The integral of the Receiver Operating Curve (ROC AUC) is used as the optimization metric, evaluated on the validation set for each training. The ROC-AUC measures true-positives versus true-negatives, parameterized as a function of classifer threshold cuts: a completely random classifier has a ROC-AUC of 0.5, while a perfect classifier has a ROC-AUC of 1.0 \ref{cite:ROC}. The ROC-AUC for the hadronic CPBDT is 0.7839, while the ROC-AUC for the leptonic BDT is 76.69.
+The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \cite{skopt}. The integral of the Receiver Operating Curve (ROC AUC) is used as the optimization metric, evaluated on the validation set for each training. The ROC-AUC measures true-positives versus true-negatives, parameterized as a function of classifer threshold cuts: a completely random classifier has a ROC-AUC of 0.5, while a perfect classifier has a ROC-AUC of 1.0 \cite{ROC}. The ROC-AUC for the hadronic CPBDT is 0.7839, while the ROC-AUC for the leptonic BDT is 76.69.
 
 Plots of the CPBDT input variables for the leptonic BDT are shown in figures \ref{fig:lepvbls1} -  \ref{fig:lepvbls7}, while plots of the hadronic CPBDT input variables are shown in figures \ref{fig:hadvbls1} -  \ref{fig:hadvbls7}.
 
@@ -283,7 +283,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
 
 \clearpage
 
-The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \ref{cite:skopt}. The area under the ROC curve (ROC AUC) is evaluated on the validation set for each training, and the training that maximizes the ROC AUC is selected as optimal.
+The XGBoost BDT parameters are optimized by running the training 100 times with hyper-parameters selected according to a Bayesian minimization procedure \cite{skopt}. The area under the ROC curve (ROC AUC) is evaluated on the validation set for each training, and the training that maximizes the ROC AUC is selected as optimal.
 
 \begin{figure}[htbp]
   \centering
