@@ -1,139 +1,45 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-White space in argument---line 295 of file thesis.aux
- : \citation{Engineering
- :                       status of the superconducting end cap toroid magnets for the ATLAS experiment at LHC}
-I'm skipping whatever remains of this command
 Case mismatch error between cite keys Geant4 and GEANT4
----line 439 of file thesis.aux
+---line 409 of file thesis.aux
  : \citation{Geant4
  :                 }
 I'm skipping whatever remains of this command
-Case mismatch error between cite keys triggerperformance and TriggerPerformance
----line 647 of file thesis.aux
- : \citation{triggerperformance
- :                             }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys HiggsMass and Higgsmass
----line 755 of file thesis.aux
- : \citation{HiggsMass
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys triggerperformance and TriggerPerformance
----line 787 of file thesis.aux
- : \citation{triggerperformance
- :                             }
-I'm skipping whatever remains of this command
 The style file: aiaa.bst
 Database file #1: ./bib/thesis-bib.bib
-I was expecting a `,' or a `}'---line 51 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 73 of file ./bib/thesis-bib.bib
  :    
- :    year={2012},
+ :    volume={565},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 66 of file ./bib/thesis-bib.bib
- :    
- :    year={2012},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 143 of file ./bib/thesis-bib.bib
- :       
- :       title         = "{Handbook of LHC Higgs Cross Sections: 4. Deciphering the
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 216 of file ./bib/thesis-bib.bib
- :       
- :       title         = "{LHC Design Report}",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 342 of file ./bib/thesis-bib.bib
- :       
- :       title         = "{The ATLAS Experiment at the CERN Large Hadron Collider}",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 448 of file ./bib/thesis-bib.bib
- :    
- :    year={2017},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 509 of file ./bib/thesis-bib.bib
- :    
- :    year={2017},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 540 of file ./bib/thesis-bib.bib
- :   
- :   journal={IEEE Transactions on Applied Superconductivity},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 551 of file ./bib/thesis-bib.bib
- :   
- :   journal={IEEE Transactions on Applied Superconductivity},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 603 of file ./bib/thesis-bib.bib
- :       
- :       month         = "Sep",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 635 of file ./bib/thesis-bib.bib
- : @techreport{ATLAS-CONF-2019-021
- :                                ,
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 672 of file ./bib/thesis-bib.bib
- :    
- :    year={2014},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 744 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 732 of file ./bib/thesis-bib.bib
  :    
  :    year={2008},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 759 of file ./bib/thesis-bib.bib
- :    
- :    year={2016},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 766 of file ./bib/thesis-bib.bib
- :       
- :       year={2017},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 908 of file ./bib/thesis-bib.bib
- :    
- :    year={2016},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 978 of file ./bib/thesis-bib.bib
- :    
- :    year={2013},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1084 of file ./bib/thesis-bib.bib
- :    
- :    year={2014},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1312 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 1300 of file ./bib/thesis-bib.bib
  :       
  :       title         = "{Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector. Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector}",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1508 of file ./bib/thesis-bib.bib
+ : 
+ : @article{purity2,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--entry type for "skopt" isn't style-file defined
---line 1589 of file ./bib/thesis-bib.bib
-Repeated entry---line 1787 of file ./bib/thesis-bib.bib
+--line 1577 of file ./bib/thesis-bib.bib
+Repeated entry---line 1773 of file ./bib/thesis-bib.bib
  : @article{Higgsmass
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "Hyneman" isn't style-file defined
---line 1946 of file ./bib/thesis-bib.bib
-Warning--I didn't find a database entry for "YellowReport1"
-Warning--I didn't find a database entry for "HIGG-2018-13"
+--line 1932 of file ./bib/thesis-bib.bib
 Warning--I didn't find a database entry for "CKM"
 Warning--I didn't find a database entry for "Sakharov"
 Warning--I didn't find a database entry for "Higgs"
+Warning--I didn't find a database entry for "YellowReport1"
 Warning--I didn't find a database entry for "Aad_2016"
 Warning--I didn't find a database entry for "Khachatryan_2016"
 Warning--I didn't find a database entry for "Sirunyan_2019"
@@ -150,6 +56,7 @@ Warning--I didn't find a database entry for "Pythia"
 Warning--I didn't find a database entry for "CERN-PH-EP-2015-304"
 Warning--I didn't find a database entry for "EMcalib"
 Warning--I didn't find a database entry for "DemartintWH"
+Warning--I didn't find a database entry for "HIGG-2018-13"
 Warning--I didn't find a database entry for "LHAPDF"
 Warning--I didn't find a database entry for "HFunc1"
 Warning--I didn't find a database entry for "HFunc2"
@@ -159,39 +66,28 @@ Warning--I didn't find a database entry for "jetuncs"
 Warning--I didn't find a database entry for "CouplingsRun2"
 Warning--I didn't find a database entry for "Asimov"
 Warning--I didn't find a database entry for "GPprior"
-Warning--empty journal in LHCRing
-Warning--empty title in ATLAS_Jinst
-Warning--empty journal in ATLAS_Jinst
-Warning--empty year in ATLAS_Jinst
-Warning--empty note in TGCWheel
-Warning--empty note in CERN-EX-1301009
-Warning--empty title in YellowReport4
-Warning--empty publisher in YellowReport4
-Warning--empty year in YellowReport4
-Warning--empty year in HiggsATLAS
-Warning--empty year in HiggsCMS
 Warning--empty author in LEPExperiments
-Warning--empty title in LEPExperiments
+Warning--empty journal in LEPExperiments
+Warning--empty year in LEPExperiments
 Warning--empty author in Couplingsanalysis
+Warning--empty publisher in YellowReport4
 Warning--empty journal in LHCHiggsCrossSectionWorkingGroup
 Warning--can't use both author and editor fields in SPS
 Warning--empty publisher in SPS
+Warning--empty journal in LHCRing
 Warning--empty author in ATLAS-CONF-2019-021
 Warning--empty author and editor in muonsTDR
 Warning--empty author and editor in ID
 Warning--empty institution in IBL_TDR
 Warning--empty author in Pixel
-Warning--empty year in TRT
 Name 1 in "Livan, Michele, and Wigmans, Richard" has a comma at the end for entry misconceptions
 while executing---line 1245 of file aiaa.bst
 Warning--empty author in LAr_TDR
 Warning--empty journal in LAr_TDR
-Warning--empty title in Coldmass
-Warning--empty journal in Coldmass
-Warning--empty year in Coldmass
 Warning--empty title in CSCs
-Warning--empty year in MG5
+Warning--empty note in TGCWheel
 Warning--empty year in Herwig
+Warning--empty note in CERN-EX-1301009
 Warning--empty author in ATL-PHYS-PUB-2017-022
 Warning--empty title in CERN-PH-EP-2015-216
 Warning--empty journal in CERN-PH-EP-2015-216
@@ -199,57 +95,56 @@ Warning--empty year in CERN-PH-EP-2015-216
 Warning--empty author in ATL-PHYS-PUB-2017-013
 Warning--empty pages in LightGBM
 Warning--empty author in Pythia8.2
-Warning--empty year in Herwig7
 Warning--empty author in A3
-Warning--empty year in PDF4LHC
 Warning--empty author in A14
-Warning--empty year in NNPDF23
-Warning--empty year in CT10
+Warning--empty author in purity1
+Warning--empty journal in purity1
+Warning--empty year in purity1
 Warning--empty journal in JSConway
 Warning--there's a number but no volume in JSConway
 Warning--empty author in ATLAS-CONF-2019-004
 Warning--empty author in MET2
 Warning--empty journal in kappaFW
 Warning--empty author in couplings80fb
-You've used 142 entries,
+You've used 143 entries,
             2292 wiz_defined-function locations,
-            1401 strings with 25864 characters,
-and the built_in function-call counts, 27826 in all, are:
-= -- 1990
-> -- 1087
-< -- 99
-+ -- 441
-- -- 299
-* -- 3075
-:= -- 4018
-add.period$ -- 268
-call.type$ -- 142
+            1417 strings with 26627 characters,
+and the built_in function-call counts, 28515 in all, are:
+= -- 2087
+> -- 1057
+< -- 100
++ -- 432
+- -- 289
+* -- 3160
+:= -- 4094
+add.period$ -- 273
+call.type$ -- 143
 change.case$ -- 2
 chr.to.int$ -- 3
-cite$ -- 192
-duplicate$ -- 1415
-empty$ -- 3011
-format.name$ -- 299
-if$ -- 5909
+cite$ -- 181
+duplicate$ -- 1435
+empty$ -- 3105
+format.name$ -- 289
+if$ -- 6084
 int.to.chr$ -- 0
-int.to.str$ -- 142
-missing$ -- 123
-newline$ -- 430
+int.to.str$ -- 143
+missing$ -- 124
+newline$ -- 433
 num.names$ -- 128
-pop$ -- 304
+pop$ -- 290
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 512
+skip$ -- 504
 stack$ -- 0
-substring$ -- 1695
-swap$ -- 510
-text.length$ -- 98
+substring$ -- 1888
+swap$ -- 517
+text.length$ -- 99
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 50
-while$ -- 204
-width$ -- 145
-write$ -- 1234
-(There were 26 error messages)
+warning$ -- 38
+while$ -- 211
+width$ -- 146
+write$ -- 1259
+(There were 7 error messages)

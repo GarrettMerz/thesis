@@ -2,19 +2,23 @@
 
 \subsection{Data} \label{sec:Data}
 
-In both Run-2 HGam analyses discussed in this dissertation, we use the full LHC Run-2 dataset, consisting of $139.0 \pm 2.4 fb^{-1}$ of proton-proton collisions with a center of mass energy $\sqrt{s} = 13 TeV$ recorded by the ATLAS detector between 2015 and 2018 \cite{ATLAS-CONF-2019-021}. Figure \ref{fig:datalumi} shows the instantaneous luminosity gathered by the detector as a function of time; figure \ref{fig:pileup} shows the number of pileup events per bunch-crossing as a function of time. 
+In both Run-2 HGam analyses discussed in this dissertation, we use the full LHC Run-2 dataset, consisting of $139.0 \pm 2.4 fb^{-1}$ of proton-proton collisions with a center of mass energy $\sqrt{s} = 13 TeV$ recorded by the ATLAS detector between 2015 and 2018 \cite{ATLAS-CONF-2019-021}. Figure \ref{fig:datalumi} shows the instantaneous luminosity gathered by the detector as a function of time; Figure \ref{fig:pileup} shows the number of pileup events per bunch-crossing as a function of time. 
 
 \begin{figure}
+\centering
 \includegraphics[width=0.5\linewidth]{figures/datamc_chapter/datalumi.png}
 \caption{Integrated luminosity for the Run-2 ATLAS data-taking period.}
+\label{fig:datalumi}
 \end{figure}
 
 \begin{figure}
+\centering
 \includegraphics[width=0.5\linewidth]{figures/datamc_chapter/pileup.png}
 \caption{Pileup for the Run-2 ATLAS data-taking period.}
+\label{fig:pileup}
 \end{figure}
 
-The trigger used to select events is the diphoton trigger HLT\_g35\_loose\_g25\_loose (for 2015-2016 data) and HLT\_g35\_medium\_g25\_medium (for 2017-2018 data). Both triggers require two photon candidates, one with a transverse energy $E_{T}$ of at least 35 GeV and the other with transverse energy of at least 25 GeV. The 2015-2016 trigger requires two photons that pass the "loose" ID requirement, while the 2017-2018 trigger requires two photons that pass the "medium" ID requirement (the cut was tightened due to increased luminosity and pileup). The trigger was calibrated using radiative Z decays, and is observed to be greater than 95\% efficient for each photon as long as it is 5 GeV above the trigger threshold \cite{TriggerPerformance}.
+The trigger used to select events is the diphoton trigger HLT\_g35\_loose\_g25\_loose (for 2015-2016 data) and HLT\_g35\_medium\_g25\_medium (for 2017-2018 data). Both triggers require two photon candidates, one with a transverse energy $E_{T}$ of at least 35 GeV and the other with transverse energy of at least 25 GeV. The 2015-2016 trigger requires two photons that pass the "loose" ID requirement, while the 2017-2018 trigger requires two photons that pass the "medium" ID requirement (the cut was tightened due to increased luminosity and pileup). The trigger was calibrated using radiative Z decays, and is observed to be greater than 95\% efficient for each photon as long as it is 5 GeV above the trigger threshold \cite{triggerperformance}.
 
 \begin{figure}
 \includegraphics[width=0.5\linewidth]{figures/datamc_chapter/trigger.png}
@@ -26,12 +30,12 @@ The trigger used to select events is the diphoton trigger HLT\_g35\_loose\_g25\_
 In both analyses discussed in this dissertation, we use the following preselection to define the $H \rightarrow \gamma \gamma$ signal region. These requirements are applied for both data and Monte Carlo simulation. 
 
 \begin{itemize}
-\item $\gamma\gamma Preselection$: The event is required to contain two photons passing the loose isolation and ID requirements.
-\item $PV$: At least one primary vertex is required to be identified in the event.
-\item $Trigger-Matching$: The leading two photons observed are required to match those identified by the trigger.
-\item $Relative p_{T}$: The leading and subleading photons are required to have $p_{T}/m\gamma\gamma$ larger than 0.35 and 0.25, respectively.
+\item $\gamma\gamma$ preselection: The event is required to contain two photons passing the loose isolation and ID requirements.
+\item At least one primary vertex is required to be identified in the event.
+\item The leading two photons observed are required to match those identified by the trigger (i.e., be trigger-matched).
+\item Relative $p_{T}$ cuts: The leading and subleading photons are required to have $p_{T}/m\gamma\gamma$ larger than 0.35 and 0.25, respectively.
 \item $TI$: For events in the signal-region, we require both photons to pass the "Tight" Photon ID and Isolation requirements (for events in the 'NTI' data control region, this selection criterion is ignored). 
-\item $Invariant Mass$: The invariant mass of the diphoton system must satisfy $105 GeV < m_{\gamma\gamma} < 160 GeV$
+\item The invariant mass of the diphoton system must satisfy $105 GeV < m_{\gamma\gamma} < 160 GeV$
 \end{itemize}
 
 In order to accurately model the continuum diphoton background, it is often useful to invert the $TI$ requirement- that is, we construct a data sample consisting of those events passing all other preselections, but for which one or more photons does not pass either or both of the "tight" isolation and ID requirements. Data control samples in this not-tight-isolated "$NTI$" region allow us to model the kinematic properties of objects in the event other than the diphoton system, such as top quark jet variables, with some amount of accuracy.
@@ -44,9 +48,9 @@ In order to generate Monte Carlo simulated events, several software programs mus
 
 To simulate such a collision, the quantum field-theoretic "matrix element" that governs the dynamics of the hard-scatter process must be calculated, the momentum distributions of the individual partons must be modelled using Parton Distribution Functions (or PDFs), and the decay showers of any final-state hadrons produced in the event must be dynamically modelled. Additionally, the dynamics of proton constituents not contributing to the hard scatter, called the "underlying event", must also be simulated. Because showering and underlying event processes are difficult to accurately model, they are "tuned" on the data using a variety of particular parameter sets. 
 
-The Monte Carlo samples used in this dissertation are constructed using either the $MadGraph5\_aMC@NLO v2.6.2$ \cite{MG5} or Powheg v2 \cite{Powheg} \cite{PowhegBox} generators for matrix element calculation, Pythia 8.2.12 \cite{Pythia8.1} \cite{Pythia8.2} or Herwig 7.03 (or 7.04 or 7.13, depending on the sample) \cite{Herwig} \cite{Herwig7} \cite{Herwig7.1} for showering, EvtGen 1.2.0 for hadronization of final-state jets \cite{EvGen}, and Sherpa 1.1 \cite{Sherpa1} \cite{Sherpa2} \cite{Comix} for the matrix element calculation, showering, and hadronization of certain high-statistics samples.
+The Monte Carlo samples used in this dissertation are constructed using either the MadGraph5\_aMC@NLO v2.6.2 \cite{MG5} or Powheg v2 \cite{Powheg} \cite{PowhegBox} generators for matrix element calculation, Pythia 8.2.12 \cite{Pythia8.1} \cite{Pythia8.2} or Herwig 7.03 (or 7.04 or 7.13, depending on the sample) \cite{Herwig} \cite{Herwig7} \cite{Herwig7.1} for showering, EvtGen 1.2.0 for hadronization of final-state jets \cite{EvGen}, and Sherpa 1.1 \cite{Sherpa1} \cite{Sherpa2} \cite{Comix} for the matrix element calculation, showering, and hadronization of certain high-statistics samples.
 
-After generation, Monte Carlo simulations are then passed through the Geant4 software package \cite{Geant4} to simulate the detector response. After this, the events are passed through the same object-reconstruction software used for data events \cite{Aad_2010}. All Monte Carlo samples used in this dissertation are generated using the Geant4 full simulation, with the exception of the QCD continuum diphoton samples used for background modelling, which were treated using the GEANT4 fast simulation settings due to the number of events generated. For all MC samples, pile-up interactions were simulated by overlaying each Monte Carlo event with a different number of minimum-bias events simulated using Pythia 8.186 \cite{Pythia8.1} with the ATLAS "A3" tune \cite{A3}.
+After generation, Monte Carlo simulations are then passed through the Geant4 software package \cite{GEANT4} to simulate the detector response. After this, the events are passed through the same object-reconstruction software used for data events \cite{Aad_2010}. All Monte Carlo samples used in this dissertation are generated using the Geant4 full simulation, with the exception of the QCD continuum diphoton samples used for background modelling, which were treated using the GEANT4 fast simulation settings due to the number of events generated. For all MC samples, pile-up interactions were simulated by overlaying each Monte Carlo event with a different number of minimum-bias events simulated using Pythia 8.186 \cite{Pythia8.1} with the ATLAS "A3" tune \cite{A3}.
 
 In all Monte Carlo simulations, the Higgs mass was set to 125 GeV and the decay width was set to 4.07MeV \cite{YellowReport4}. All samples described include the small contribution from Dalitz decays (that is, decays in which one photon converts into two real final-state leptons), which is accounted for in the normalization of the samples. For all Monte Carlo samples generated using Madgraph5\_aMC@NLO, the renormalization ($\mu_{R}$) and factorization ($\mu_{F}$) scales are defined as the scalar sum of the transverse masses of all final-state particles divided by two (i.e. $H_{T}/2$), and the top and W boson decays are handled by MadSpin \cite{MadSpin} in order to ensure the correct treatment of the spin correlations of the decay products.
 
@@ -136,7 +140,8 @@ The background for $H \rightarrow \gamma \gamma$ events is generally treated as 
 
 Both QCD continuum $\gamma\gamma$ +jets production and the various $V\gamma\gamma \rightarrow ll\gamma\gamma$ samples are simulated at leading order in QCD using the Sherpa event generator with the CT10 PDF set \cite{CT10}. Showering is performed using the default Sherpa showering tool. 
 
-$t\bar{t}\gamma\gamma$, one of the leading backgrounds in top-enriched regions, is simulated using Madgraph5\_aMC@NLO with the NNPDF30 PDF set. It is showered using Pythia and tuned using the A14 tune.
+$t\bar{t}\gamma\gamma$, one of the leading backgrounds in top-enriched regions, is simulated using 
+Madgraph5\_aMC@NLO with the NNPDF30 PDF set. It is showered using Pythia and tuned using the A14 tune.
 
 
 \begin{table}[h!]
@@ -173,7 +178,7 @@ As previously mentioned, the top-Higgs interaction term of the Lagrangian in the
 \mathcal{L} = \kappa_{t} g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th
 \end{equation}
 
-where $g_{t} = \frac{-m_{t}}{v} = \frac{-173.26 GeV}{246 GeV} = -0.703$ , $\kappa_{t}$ is the dimensionless coupling-strength term ($\kappa_{t}= 1$ in the Standard Model), and $\alpha$ is an angle that parameterizes the CP-mixing strength ($\alpha = 0$ in the Standard Model, $\alpha = \frac{\pi}{2}$ in the fully CP-odd case). The interpretation of the $H \rightarrow \gamma \gamma$ and $ggF$ dependence on $\alpha$ is handled in several different ways, as discussed in \ref{sec:ttHCPresults}.
+where $g_{t} = \frac{-m_{t}}{v} = \frac{-173.26 GeV}{246 GeV} = -0.703$ , $\kappa_{t}$ is the dimensionless coupling-strength term ($\kappa_{t}= 1$ in the Standard Model), and $\alpha$ is an angle that parameterizes the CP-mixing strength ($\alpha = 0$ in the Standard Model, $\alpha = \frac{\pi}{2}$ in the fully CP-odd case). The interpretation of the $H \rightarrow \gamma \gamma$ and $ggF$ dependence on $\alpha$ is handled in several different ways, as discussed in \ref{chap:tthcp_results}.
 
 As in the nominal case, $t\bar{t}H$ and $tWH$ samples are generated using the five-flavor scheme, while the four-flavor scheme is used for the $tHjb$ process. The Standard Model cross-sections and branching ratios for all process are normalized to those given in the CERN Higgs Yellow Report 4 \cite{YellowReport4}, in which fixed scales and the five-flavor scheme are used. Those cross-sections are calculated at NLO QCD accuracy (without electroweak correction) for the $tHjb$ and $tWH$ processes, while $t\bar{t}H$ is calculated at both NLO QCD and NLO Electroweak accuracies. $ggF+ 2 jets$ samples are also generated using the MadGraph5\_aMC@NLO generator as the $ggF$ cross-section varies with $\alpha$ and $\kappa_{t}$. To ensure that the W-boson Higgs Coupling is kept constant, $tWH$ samples are generated by treating cos$\alpha \times \kappa_{SM}$=1.
 

@@ -38,6 +38,7 @@ Background templates for the spurious signal test are constructed from Monte Car
 The spurious signal test is a signal-plus-background functional fit to a background-only distribution. This provides a relatively simple way to measure background mismodelling- the background template contains no true Higgs signal, so the functional form that best models the background is the one for which the extracted "spurious" signal is closest to zero. This is illustrated in figure \ref{fig:SScartoon}. Spurious signal can be positive or negative- if positive, the functional form chosen "undershoots" the true background, while if negative, the functional form chosen "overshoots" the true background.
 
 \begin{figure}
+\centering
 \includegraphics[width=0.49\textwidth]{figures/sigbkgparam/SSCartoon.png}
 \caption{A cartoon depicting the spurious signal procedure. The true background shape in red is modeled by an analytic function in blue. The spurious signal resulting from this mismodelling is the maximum signal yield extracted from the blue "spurious signal" bump, fit over a window of $120 GeV < m_{\gamma \gamma}<130 GeV$.}
 \label{fig:SScartoon}
@@ -48,7 +49,7 @@ The spurious signal fit is performed for signal masses from 121 GeV to 129 GeV a
 \begin{itemize}
 \item Exponential Function: $f(\myy) = e^{c\cdot \myy}$
 \item Exponential Function of $2^{nd}$ Order Polynomial: $f(\myy) = e^{c_1\cdot m^2_{\gamma\gamma}+c_2\cdot \myy}$
-\item Bernstein polynomial of order $N$: $B_{N}(\myy) = \sum_{i=0}^N c_i\cdot b_{i,N}$ with $b_{i,N} = \begin{pmatrix}N\\i\end{pmatrix}\myy^i (1-\myy)^{N-i}$
+\item Bernstein polynomial of order $N$: $B_{N}(\myy) = \sum_{i=0}^N c_i\cdot b_{i,N}$ with ${b_{i,N} = \begin{pmatrix}N\\i\end{pmatrix}\myy^i (1-\myy)^{N-i}}$
 \item First-Order Power Law Function: $f(\myy) = \myy^c$
 \end{itemize}
 
@@ -73,7 +74,7 @@ In low statistics categories, it is not uncommon that no functional form will sa
 Though $\zeta_{s}$ is used to define the spurious signal criteria, $N_{s}$ is still used for the final spurious signal uncertainty. 
 
 \begin{figure}
-\includegraphics[width=\linewidth]{figures/sigbkgparam/SSRelaxed.png}
+\includegraphics[width=0.49\textwidth]{figures/sigbkgparam/SSRelaxed.png}
 \caption{A cartoon depicting the "relaxed" spurious signal procedure. Two-sigma fluctuations of the background are incorporated into the spurious signal procedure in order to select a functional form.}
 \label{fig:SSrelaxed}
 \end{figure} 
@@ -158,4 +159,4 @@ When performing a likelihood fit, it is often useful to construct a representati
 
 Pre-fit Asimov data is constructed by performing an unbinned, background-only profile likelihood ratio fit to the TI sidebands. The nuisance parameters are then set to the values extracted from this fit, and a Standard Model signal with significance $\mu = 1$ (that is, exactly corresponding to the predicted signal yield) is then superimposed atop the background shape. Similarly, after unblinding the signal region, post-fit Asimov data is constructed by fitting to the entire dataset, extracting the values for the nuisance parameters, and again superimposing a Standard Model signal with significance $\mu = 1$ atop the background. The reason for constructing both pre-fit and post-fit Asimov is to evaluate the "pull" of various nuisance parameters based on the data in the signal region: if the fit after including signal-region data causes a nuisance parameter to deviate substantially from the norm, it is possible that one or more systematics are not well-modelled.
 
-The list of systematic uncertainties and the expected significances derived from pre- and post- fit Asimov data for both analyses discussed in this dissertation are given in Chapters \ref{chap:tthcpresults} and \ref{chap:couplingsresults}.
+The list of systematic uncertainties and the expected significances derived from pre- and post- fit Asimov data for both analyses discussed in this dissertation are given in Chapters \ref{chap:tthcp_results} and \ref{chap:couplings_chapter}.
