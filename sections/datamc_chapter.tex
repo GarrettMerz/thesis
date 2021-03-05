@@ -52,7 +52,7 @@ The Monte Carlo samples used in this dissertation are constructed using either t
 
 After generation, Monte Carlo simulations are then passed through the Geant4 software package \cite{GEANT4} to simulate the detector response. After this, the events are passed through the same object-reconstruction software used for data events \cite{Aad_2010}. All Monte Carlo samples used in this dissertation are generated using the Geant4 full simulation, with the exception of the QCD continuum diphoton samples used for background modelling, which were treated using the GEANT4 fast simulation settings due to the number of events generated. For all MC samples, pile-up interactions were simulated by overlaying each Monte Carlo event with a different number of minimum-bias events simulated using Pythia 8.186 \cite{Pythia8.1} with the ATLAS "A3" tune \cite{A3}.
 
-In all Monte Carlo simulations, the Higgs mass was set to 125 GeV and the decay width was set to 4.07MeV \cite{YellowReport4}. All samples described include the small contribution from Dalitz decays (that is, decays in which one photon converts into two real final-state leptons), which is accounted for in the normalization of the samples. For all Monte Carlo samples generated using Madgraph5\_aMC@NLO, the renormalization ($\mu_{R}$) and factorization ($\mu_{F}$) scales are defined as the scalar sum of the transverse masses of all final-state particles divided by two (i.e. $H_{T}/2$), and the top and W boson decays are handled by MadSpin \cite{MadSpin} in order to ensure the correct treatment of the spin correlations of the decay products.
+In all Monte Carlo simulations, the Higgs mass was set to 125 GeV and the decay width was set to 4.07MeV \cite{YellowReport4}. All samples described include the small contribution from Dalitz decays (that is, decays in which one photon converts into two real final-state leptons), which is accounted for in the normalization of the samples. For all Monte Carlo samples generated using Madgraph5\_aMC@NLO, the renormalization ($\mu_{R}$) and factorization ($\mu_{F}$) scales are defined as one-half of the scalar sum of the transverse masses of all final-state particles (i.e. $H_{T}/2$), and the top and W boson decays are handled by MadSpin \cite{MadSpin} in order to ensure the correct treatment of the spin correlations of the decay products.
 
 For all simulated samples, several corrections are applied to ensure the simulated samples correspond to data, including a beam-spot width correction, photon shower-shape and calorimetric isolation corrections, energy scale and resolution corrections, photon identification and isolation corrections, jet selection efficiency corrections, and electron and muon identification, reconstruction and isolation corrections.
 
@@ -205,7 +205,7 @@ $\kappa_{t}$ & $\alpha$\ & cos$\alpha$ & $\kappa_{SM}$\\
  2 & 45 & 0.707107 & 1.414214 \\
 \hline
 \end{tabular}
-\caption{Parameters used in the HC model in order to allow for CP-couplings only in the top quark sector while fixing the HWW coupling to its SM value by imposing cos$\alpha~\kappa_{SM}$=1. In the first set of samples, $\kappa_{t}$ is fixed to 1 and $\alpha$ is varied. In the second set, $\kappa_{t}$ is set to values different from 1. For $\alpha=90$; due to numerical precision, $\cos\alpha$ strictly equal to 0 can't be generated and thus a value approaching it ($10^{-6}$) and a defined value for kSM ($10^{6}$) are used.}
+\caption{Parameters used in the Higgs Characterization model in order to allow for a CP-variant Higgs coupling only to the top quark. The HWW coupling is fixed to its SM value by imposing cos$\alpha~\kappa_{SM}$=1. In the set of samples above the line, $\kappa_{t}$ is fixed to 1 and $\alpha$ is varied, while in those below, $\kappa_{t}$ is set to values not equal to 1. Pure CP-odd samples with $\cos\alpha$ strictly equal to 0 cannot be generated due to numerical precision concerns, and thus a value approaching it ($10^{-6}$) and a corresponding value for kSM ($10^{6}$) are used.}
 \label{tab:MCsamples_Parameters}
 \end{table}
 
@@ -231,7 +231,7 @@ $\kappa_{t}$ & $\alpha$\ & cos$\alpha$ & $\kappa_{SM}$\\
     2 & 45 & -- & 0.2055 & 0.1095 & -- \\
     \hline
   \end{tabular}
-  \caption{NLO cross-sections for the $t\bar{t}H$, $tHjb$, $tWH$, and $ggF$ processes for different CP-scenarios (see parameters in Table~\ref{tab:MCsamples_Parameters}). The top part refers to MC samples in which the $\kappa_{t}$ value is fixed to 1 and $\alpha$ is varied, while the bottom part refers to samples with $\kappa_{t}$ different from 1.}
+  \caption{NLO cross-sections for the $t\bar{t}H$, $tHjb$, $tWH$, and $ggF$ processes for the different CP-scenarios (see parameters in Table~\ref{tab:MCsamples_Parameters}). In the samples above the line, $\kappa_{t}$ is fixed to 1 and $\alpha$ is varied, while in the samples below the line, $\kappa_{t}$ is not equal to 1.}
   \label{tab:MCsamples_XS}
 \end{table}
 
@@ -257,6 +257,6 @@ $\kappa_{t}$ & $\alpha$\ & cos$\alpha$ & $\kappa_{SM}$\\
     2 & 45    & -- & 0.570 & 0.226 & -- \\
     \hline
   \end{tabular}
-  \caption{NLO cross-sections for the $t\bar{t}H$, $tHjb$, $tWH$, and $ggF$ processes for different CP-scenarios normalized with the K-factor and BR$(H\rightarrow\gamma\gamma)$. The top part refers to MC samples in which the $\kappa_{t}$ value is fixed to 1 and $\alpha$ is varied, while the bottom part refers to samples with $\kappa_{t}$ different from 1.}
+  \caption{Normalized NLO cross-sections for the $t\bar{t}H$, $tHjb$, $tWH$, and $ggF$ processes for the different CP-scenarios, scaled using the K-factors and the value of BR$(H\rightarrow\gamma\gamma)$. In the samples above the line, $\kappa_{t}$ is fixed to 1 and $\alpha$ is varied, while in the samples below the line, $\kappa_{t}$ is not equal to 1.}
   \label{tab:MCsamples_XS_norm}
 \end{table}

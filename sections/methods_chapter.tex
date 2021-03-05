@@ -228,7 +228,7 @@ This trained BDT is then applied to both fully hadronic (i.e., events containing
 
 
 \paragraph{Fully hadronic events}
-For events passing hadronic-top pre-selection (0 leptons, 3 jets, 1 b-jet), the triplet with the highest Top Reco BDT score is taken as the primary top candidate. In hadronic events with six or more jets, a second top is reconstructed by selecting the triplet with highest score from the remaining jets. In events with four or five jets, the second top is taken as the sum of the jets remaining after reconstructing the primary top. In events with exactly three jets, only the primary top is reconstructed.
+For events passing the fully hadronic pre-selection (0 leptons, 3 jets, 1 b-jet), the primary top candidate is chosen to be the triplet with the highest Top Reco BDT score. In hadronic events with six or more jets, the jet triplet with highest score out of the set of remaining jets is chosen as a second hadronic top. In events with four or five jets, the second top is taken as the sum of all jets remaining after reconstructing the primary hadronic top. In hadronic events with exactly three jets, only the primary top is reconstructed.
 
 
 \paragraph{Leptonic events}
@@ -241,16 +241,16 @@ The W candidate four-momentum is derived using a dedicated leptonic-top reconstr
 m_W^2 = \left[E_\ell + \sqrt{p_{\nu,x}^2 + p_{\nu,y}^2 + p_{\nu,z}^2}\right]^2 - \left[\vec{p_\ell} + (p_{\nu,x},p_{\nu,y},p_{\nu,z})\right]^2.
 \end{equation}
 
-This returns two solutions for $p_{\nu,z}$, and therefore two solutions for $\vec{p}_{W}$; the solution with smaller $|p_{\nu,z}|$ is selected. In the event that the $p_{\nu,z}$ solutions obtained are imaginary numbers (a scenario that occurs roughly 50\% of the time), a constraint is applied requiring
+This has two possible solutions for $p_{\nu,z}$, and in turn two solutions for $\vec{p}_{W}$; the solution with smaller $|p_{\nu,z}|$ is selected. In the event that the $p_{\nu,z}$ solutions obtained are imaginary numbers (a scenario that occurs roughly 50\% of the time), a constraint is applied requiring
 
 \begin{equation}
 m_{T} = m_{W}
 \end{equation}
 where $m_{T}$ is the total transverse mass of the W candidate. This forces $p_{\nu,z}$ to assume a real value. In addition to this constraint, the values of $p_{\nu,x}$ and  $p_{\nu,y}$ are chosen so that the Euclidean distance from ($p_{\text{MET},x},p_{\text{MET},y}$) is minimized.
 
-Once a leptonic W candidate has been constructed, the BDT score is evaluated for every (W, jet) combination in a similar manner as the fully-hadronic scenario. To handle this correctly, the pseudo-continuous b-tag scores for the W candidates are set to the minimum value and the angle between the W daughters is set to 0. The top is then reconstructed from the leptonic W and the jet giving the highest BDT score.
+Once a leptonic W candidate has been constructed, the BDT score is evaluated for every (W, jet) combination in a similar manner as the fully-hadronic scenario. To handle this correctly, the pseudo-continuous b-tag scores for the (nonexistent) W-boson constituent jets are set to the minimum and the angle between them is set to zero. The top is then reconstructed from the leptonic W and the jet that produces the highest BDT score.
 
-In single-lepton events with four or more jets, a second top is reconstructed by selecting the jet triplet with highest BDT score, excluding the jet associated to the primary top. In events with two or three jets, the second top is taken as the sum of the jets left over after reconstructing the primary top. In events with exactly one jet, only the primary top is reconstructed.
+In single-lepton events with four or more jets, a second hadronic top is reconstructed by selecting the jet triplet with highest BDT score, excluding the jet associated with the primary top.  In events with two or three jets, the second top is taken as the sum of all jets remaining after reconstructing the primary leptonic top. In hadronic events with exactly one jet, only the primary top is reconstructed.
 
 No top reconstruction is performed in dileptonic events since using \MET to solve for the kinematics of two neutrinos cannot easily be done.
 

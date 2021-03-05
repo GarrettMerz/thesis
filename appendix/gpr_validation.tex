@@ -2,7 +2,7 @@
 \label{sec:GPR_validation}
 A series of tests was performed to determine whether or not the GPR technique induces a bias on the spurious signal, expanding on some of the methodology of \cite{Hyneman}.
 
-Two sets of bias tests are performed: the first is a measurement of the bias using toy templates pulled from smooth functions (i.e., the bias measure relevant to the Couplings analysis), and the second is a measure of the bias using toy templates with a signal-like feature injected (i.e., understanding the GPR's tendency to smooth away true underlying features- this does not apply to the Couplings analysis, but provides an important academic estimate of GPR's limitations in other scenarios). Because it is assumed the underlying distribution of the data is not perfectly modelled by any existing function, a different closely-related function is used as the best-fit template function to perform the spurious signal measurement (Exponential for templates generated with ExpPoly2, PowerLaw1 for templates generated with an Exponential, ExpPoly2 for templates generated with ExpPoly3). This induces a "true" spurious signal- if there were no such functional mismatch, the "true" spurious signal would be zero.
+Two sets of bias tests are performed: the first is a measurement of the bias using toy templates pulled from smooth functions (i.e., the bias measure relevant to the Couplings analysis), and the second is a measure of the bias using toy templates with a signal-like feature injected (an attempt to understand the GPR's tendency to smooth away true underlying features- this does not apply to either of the analyses described in this dissertation, but provides an important academic estimate of GPR's limitations in other scenarios). Because it is assumed the underlying distribution of the data is not perfectly modelled by any existing function, a different closely-related function is used as the best-fit template function to perform the spurious signal measurement (Exponential for templates generated with ExpPoly2, PowerLaw1 for templates generated with an Exponential, ExpPoly2 for templates generated with ExpPoly3). This induces a "true" spurious signal- if there were no such functional mismatch, the "true" spurious signal would be zero.
 
 First, a smoothly-falling template is produced. For all but the initial feature-width check in the injection study, we use the full Run-2 \SHERPA diphoton sample, weighted by the mass of the diphoton system to produce a variety of shapes.
 
@@ -28,173 +28,75 @@ At this stage, the bias is shown to be consistently less than 40\% of the statis
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template. Each toy in this test has 10 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_10_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_10_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_10_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template. Each toy in this test has 10 events.}
 \label{fig:lowpt_10_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template. Each toy in this test has 10 events.}
-\label{fig:medpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template. Each toy in this test has 10 events.}
-\label{fig:highpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template. Each toy in this test has 100 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_100_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_100_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_100_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template. Each toy in this test has 100 events.}
 \label{fig:lowpt_100_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template. Each toy in this test has 100 events.}
-\label{fig:medpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template. Each toy in this test has 100 events.}
-\label{fig:highpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template. Each toy in this test has 1000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_1000_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_1000_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_1000_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template. Each toy in this test has 1000 events.}
 \label{fig:lowpt_1000_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template. Each toy in this test has 1000 events.}
-\label{fig:medpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template. Each toy in this test has 1000 events.}
-\label{fig:highpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template. Each toy in this test has 10k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_10k_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_10k_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_10k_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template. Each toy in this test has 10k events.}
 \label{fig:lowpt_10k_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template. Each toy in this test has 10k events.}
-\label{fig:medpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template. Each toy in this test has 10k events.}
-\label{fig:highpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template. Each toy in this test has 100k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_100k_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_100k_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_100k_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template. Each toy in this test has 100k events.}
 \label{fig:lowpt_100k_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template. Each toy in this test has 100k events.}
-\label{fig:medpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template. Each toy in this test has 100k events.}
-\label{fig:highpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template. Each toy in this test has 1,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_1M_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_1M_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_1M_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template. Each toy in this test has 1M events.}
 \label{fig:lowpt_1M_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template. Each toy in this test has 1,000,000 events.}
-\label{fig:medpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template. Each toy in this test has 1,000,000 events.}
-\label{fig:highpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template. Each toy in this test has 10,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_lowpT_10M_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_10M_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_10M_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template. Each toy in this test has 10M events.}
 \label{fig:lowpt_10M_noSig}
 \end{center}
 \end{figure}
 
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_medpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template. Each toy in this test has 10,000,000 events.}
-\label{fig:medpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigVals_highpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template. Each toy in this test has 10,000,000 events.}
-\label{fig:highpt_10M_noSig}
-\end{center}
-\end{figure}
-
-We report the results of the nominal bias study for all categories in the \Tab{\ref{tab:NoSigSS}}. Additionally, we plot the per-toy bias (that is, GP\_SS - Raw\_SS for each toy) for each shape and stat regime.
+We report the results of the nominal bias study for all categories in the \Tab{\ref{tab:NoSigSS}}.
 
 \begin{landscape}
 	\begin{table}
@@ -247,175 +149,6 @@ We report the results of the nominal bias study for all categories in the \Tab{\
 	\end{table}	
 \end{landscape}
 
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_lowpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template. Each toy in this test has 10 events.}
-\label{fig:bias_lowpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_medpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template. Each toy in this test has 10 events.}
-\label{fig:bias_medpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_highpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template. Each toy in this test has 10 events.}
-\label{fig:bias_highpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_lowpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template. Each toy in this test has 100 events.}
-\label{fig:bias_lowpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_medpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template. Each toy in this test has 100 events.}
-\label{fig:bias_medpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_highpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template. Each toy in this test has 100 events.}
-\label{fig:bias_highpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_lowpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template. Each toy in this test has 1000 events.}
-\label{fig:bias_lowpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_medpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template. Each toy in this test has 1000 events.}
-\label{fig:bias_medpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_highpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template. Each toy in this test has 1000 events.}
-\label{fig:bias_highpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_lowpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template. Each toy in this test has 10k events.}
-\label{fig:bias_lowpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_medpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template. Each toy in this test has 10k events.}
-\label{fig:bias_medpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_highpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template. Each toy in this test has 10k events.}
-\label{fig:bias_highpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_lowpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template. Each toy in this test has 100k events.}
-\label{fig:bias_lowpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_medpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template. Each toy in this test has 100k events.}
-\label{fig:bias_medpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_highpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template. Each toy in this test has 100k events.}
-\label{fig:bias_highpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_lowpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_lowpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_medpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_medpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_highpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_highpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_lowpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_lowpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_medpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_medpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/nominal/ToyTest_FitSigBiases_highpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_highpt_10M_noSig}
-\end{center}
-\end{figure}
-
 To determine how to reduce the bias further, we note a further set of tests performed in an earlier iteration of this method \cite{Hyneman}, evaluating the difference in GP fit bias when different functional priors were used as the GP mean. The Exponential function, Linear function, and a flat line were all tested. These tests were performed using templates constructed from Power Law (Fig.~\ref{fig:prior_bias_powerlaw}), ExpPoly2 (Fig.~\ref{fig:prior_bias_exppoly2}), and Bernstein 5 (Fig.~\ref{fig:prior_bias_bern5}) functions. Again, different levels of statistics in the templates were tested. Overall, the choice of GP mean does not seem to affect the GP fit behavior significantly, other than for templates with less than 10 effective MC events per bin. The unit of the y-axis in these plots is the percentage disagreement between the smoothed and the unsmoothed template, similar to a ratio plot.
 
 In the lower statistics templates, most of the differences in fitting bias are again confined to the extremities of the template range, as expected, and can be reduced by padding the template with dummy bins. Furthermore, the use of the $\chi^2$ method to automatically select the flat prior in lower-statistics regions means that, in regions where the choice of prior matters, we are automatically choosing the one that best fits the data. Thus, the choice of prior does not appear to introduce a significant bias in the fit result. 
@@ -423,7 +156,7 @@ In the lower statistics templates, most of the differences in fitting bias are a
 \begin{figure} 
 \begin{center}
   \includegraphics[width=\textwidth]{figures/background/gpr/checkBiasFromPriorChoice/Plots_GPR_PriorBiases_PowerLaw_crop}   
-  \caption{Comparisons of the average bias induced by the choice of GP mean when fitting toy templates constructed from the analytic Power Law function. The yellow shape shows the results using the default Exponential mean, the blue shape shows the result using a flat line as the mean, and the red shape shows the result using a linear fit as the mean. The top left subplot shows the results using templates containing 1000 events, the top middle shows the results using templates containing 5000 events, and the top right shows the results using templates containing 10,000 events. The bottom left subplot shows the results using templates containing 100,000 events, while the bottom middle shows the results using templates containing one million events.}
+  \caption{The per-bin percent deviation of the smoothed template from the unsmoothed template for a variety of different choices of GP mean, using a Power Law function as the toy basis. The yellow shape shows the results using an Exponential mean, the blue shape shows the result uses a flat mean, and the red shape uses a linear mean. Templates contain, from left to right and top to bottom, 1000 events, 5,000 events, 10,000 events, 100,000 events, and one million events.}
 \label{fig:prior_bias_powerlaw}
 \end{center}
 \end{figure}
@@ -431,7 +164,7 @@ In the lower statistics templates, most of the differences in fitting bias are a
 \begin{figure} 
 \begin{center}
   \includegraphics[width=\textwidth]{figures/background/gpr/checkBiasFromPriorChoice/Plots_GPR_PriorBiases_ExpPoly2_crop}   
-   \caption{Comparisons of the average bias induced by the choice of GP mean when fitting toy templates constructed from the analytic ExpPoly2 function. The yellow shape shows the results using the default Exponential mean, the blue shape shows the result using a flat line as the mean, and the red shape shows the result using a linear fit as the mean. The top left subplot shows the results using templates containing 1000 events, the top middle shows the results using templates containing 5000 events, and the top right shows the results using templates containing 10,000 events. The bottom left subplot shows the results using templates containing 100,000 events, while the bottom middle shows the results using templates containing one million events.}
+   \caption{The per-bin percent deviation of the smoothed template from the unsmoothed template for a variety of different choices of GP mean, using an ExpPoly2 function as the toy basis. The yellow shape shows the results using an Exponential mean, the blue shape shows the result uses a flat mean, and the red shape uses a linear mean. Templates contain, from left to right and top to bottom, 1000 events, 5,000 events, 10,000 events, 100,000 events, and one million events.}
 \label{fig:prior_bias_exppoly2}
 \end{center}
 \end{figure}
@@ -439,186 +172,89 @@ In the lower statistics templates, most of the differences in fitting bias are a
 \begin{figure} 
 \begin{center}
   \includegraphics[width=\textwidth]{figures/background/gpr/checkBiasFromPriorChoice/Plots_GPR_PriorBiases_Bern5_crop}   
-   \caption{Comparisons of the average bias induced by the choice of GP mean when fitting toy templates constructed from the analytic Bernstein 5 function. The yellow shape shows the results using the default Exponential mean, the blue shape shows the result using a flat line as the mean, and the red shape shows the result using a linear fit as the mean. The top left subplot shows the results using templates containing 1000 events, the top middle shows the results using templates containing 5000 events, and the top right shows the results using templates containing 10,000 events. The bottom left subplot shows the results using templates containing 100,000 events, while the bottom middle shows the results using templates containing one million events.}
+   \caption{The per-bin percent deviation of the smoothed template from the unsmoothed template for a variety of different choices of GP mean, using a Bernstein5 function as the toy basis. The yellow shape shows the results using an Exponential mean, the blue shape shows the result uses a flat mean, and the red shape uses a linear mean. Templates contain, from left to right and top to bottom, 1000 events, 5,000 events, 10,000 events, 100,000 events, and one million events.}
 \label{fig:prior_bias_bern5}
 \end{center}
 \end{figure}
 
 \subsection{Extended Templates}
 
-Some disagreement between the nominal template and the GP template is observed at the edges of the plots. To reduce this, larger templates can be provided to the GP- that is, we perform the GP fit on templates in the mass range 100-165 GeV, but perform the spurious signal test on the smoothed and unsmoothed template in the range 105-160 GeV, thus relegating the edge effects to the outer 5 bins. We show that extending the templates in this manner reduces the bias observed from 40\% to 25\% of the statistical uncertainty on the spurious signal.
+Some disagreement between the nominal template and the GP template is observed at the edges of the plots. To reduce this, larger templates can be provided to the GP- that is, we perform the GP fit on templates in the mass range 100-165 GeV, but perform the spurious signal test on the smoothed and unsmoothed template in the range 105-160 GeV, thus relegating the edge effects to the outer bins. We show that extending the templates in this manner reduces the bias observed from 40\% to 25\% of the statistical uncertainty on the spurious signal.
 
-To approximate this extension, we can also perform a linear fit padding on the templates, extending the templates by 5 bins on either side based on the slope of the first and last 5 bins. 
+To approximate this extension, we can also perform a linear fit padding on the templates, extending the templates by 5 GeV on either side based on the slope of the first and last 10 bins. 
+
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 bins on either side. Each toy in this test has 10 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_10_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_10_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_10_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side. Each toy in this test has 10 events.}
 \label{fig:padded_lowpt_10_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10 events.}
-\label{fig:padded_medpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10 events.}
-\label{fig:padded_highpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 100 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_100_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_100_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_100_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side. Each toy in this test has 100 events.}
 \label{fig:padded_lowpt_100_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100 events.}
-\label{fig:padded_medpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100 events.}
-\label{fig:padded_highpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 1000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_1000_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_1000_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_1000_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side. Each toy in this test has 1000 events.}
 \label{fig:padded_lowpt_1000_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1000 events.}
-\label{fig:padded_medpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1000 events.}
-\label{fig:padded_highpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 10k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_10k_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_10k_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_10k_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side. Each toy in this test has 10k events.}
 \label{fig:padded_lowpt_10k_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10k events.}
-\label{fig:padded_medpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10k events.}
-\label{fig:padded_highpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 100k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_100k_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_100k_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_100k_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side. Each toy in this test has 100k events.}
 \label{fig:padded_lowpt_100k_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100k events.}
-\label{fig:padded_medpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100k events.}
-\label{fig:padded_highpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 1,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_1M_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_1M_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_1M_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side. Each toy in this test has 1M events.}
 \label{fig:padded_lowpt_1M_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1,000,000 events.}
-\label{fig:padded_medpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1,000,000 events.}
-\label{fig:padded_highpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 10,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_lowpT_10M_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_10M_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_10M_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side. Each toy in this test has 10M events.}
 \label{fig:padded_lowpt_10M_noSig}
 \end{center}
 \end{figure}
 
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_medpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10,000,000 events.}
-\label{fig:padded_medpt_10M_noSig}
-\end{center}
-\end{figure}
 
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigVals_highpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10,000,000 events.}
-\label{fig:padded_highpt_10M_noSig}
-\end{center}
-\end{figure}
-
-
-We report the results of the padded-template bias study for all categories in the \Tab{\ref{tab:NoSigSSpadded}}. Additionally, we plot the per-toy bias (that is, GP\_SS - Raw\_SS for each toy) for each shape and stat regime.
+We report the results of the padded-template bias study for all categories in the \Tab{\ref{tab:NoSigSSpadded}}.
 
 \begin{landscape}
 	\begin{table}
@@ -669,174 +305,6 @@ We report the results of the padded-template bias study for all categories in th
 	\end{table}	
 \end{landscape}
 
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_lowpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 10 events.}
-\label{fig:bias_padded_lowpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_medpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10 events.}
-\label{fig:bias_padded_medpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_highpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10 events.}
-\label{fig:bias_padded_highpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_lowpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 100 events.}
-\label{fig:bias_padded_lowpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_medpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100 events.}
-\label{fig:bias_padded_medpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_highpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100 events.}
-\label{fig:bias_padded_highpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_lowpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 1000 events.}
-\label{fig:bias_padded_lowpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_medpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1000 events.}
-\label{fig:bias_padded_medpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_highpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1000 events.}
-\label{fig:bias_padded_highpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_lowpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 10k events.}
-\label{fig:bias_padded_lowpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_medpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10k events.}
-\label{fig:bias_padded_medpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_highpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10k events.}
-\label{fig:bias_padded_highpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_lowpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 100k events.}
-\label{fig:bias_padded_lowpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_medpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100k events.}
-\label{fig:bias_padded_medpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_highpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 100k events.}
-\label{fig:bias_padded_highpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_lowpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_padded_lowpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_medpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_padded_medpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_highpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_padded_highpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_lowpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_padded_lowpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_medpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_padded_medpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/padded/ToyTest_FitSigBiases_highpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_padded_highpt_10M_noSig}
-\end{center}
-\end{figure}
-
 \subsection{Extended Templates, Linear Error Kernel}
 
 For the stage in which we condition the Gaussian Process on the template, we can model the expected noise in a number of ways. The nominal approach performed in the previous study treats the noise level as being defined by the error bands of the original input template. However, the known physics of the template (smoothly-falling) suggests it is reasonable to implement a linear error kernel to model the noise. In this step, rather than fixing the variance at each training point to the value given by the errors on the templates, we can treat the variance as a hyperparameter that is optimized in the GP fit- a "white" kernel uses one hyperparameter (the constant noise value) and a linear error kernel uses two (the initial value and rate-of-decrease of the variance on the training points).
@@ -847,174 +315,75 @@ We note that the seeming lack of bias far below the 20 effective Monte-Carlo eve
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
 \label{fig:linearkernel_lowpt_10_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:linearkernel_medpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:linearkernel_highpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
 \label{fig:linearkernel_lowpt_100_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:linearkernel_medpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:linearkernel_highpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1000_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1000_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1000_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
 \label{fig:linearkernel_lowpt_1000_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:linearkernel_medpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1000_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:linearkernel_highpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
 \label{fig:linearkernel_lowpt_10k_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:linearkernel_medpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:linearkernel_highpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100k_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100k_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100k_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
 \label{fig:linearkernel_lowpt_100k_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:linearkernel_medpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100k_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:linearkernel_highpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1M_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1M_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1M_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1M events.}
 \label{fig:linearkernel_lowpt_1M_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_medpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_highpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10M_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10M_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10M_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10M events.}
 \label{fig:linearkernel_lowpt_10M_noSig}
 \end{center}
 \end{figure}
 
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:linearkernel_medpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10M_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:linearkernel_highpt_10M_noSig}
-\end{center}
-\end{figure}
-
-
-We report the results of the padded-template, linear-error kernel bias study for all categories in the \Tab{\ref{tab:NoSigSSlinear}}. Additionally, we plot the per-toy bias (that is, GP\_SS - Raw\_SS for each toy) for each shape and stat regime.
+We report the results of the padded-template, linear-error kernel bias study for all categories in the \Tab{\ref{tab:NoSigSSlinear}}. 
 
 \begin{landscape}
 	\begin{table}
@@ -1066,178 +435,6 @@ We report the results of the padded-template, linear-error kernel bias study for
 		\label{tab:NoSigSSlinear}
 	\end{table}	
 \end{landscape}
-
-\clearpage
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_lowpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:bias_linearkernel_lowpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_medpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:bias_linearkernel_medpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_highpT_10_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:bias_linearkernel_highpt_10_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_lowpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:bias_linearkernel_lowpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_medpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:bias_linearkernel_medpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_highpT_100_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:bias_linearkernel_highpt_100_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_lowpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:bias_linearkernel_lowpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_medpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:bias_linearkernel_medpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_highpT_1000_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:bias_linearkernel_highpt_1000_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_lowpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:bias_linearkernel_lowpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_medpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:bias_linearkernel_medpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_highpT_10k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:bias_linearkernel_highpt_10k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_lowpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:bias_linearkernel_lowpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_medpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:bias_linearkernel_medpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_highpT_100k_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:bias_linearkernel_highpt_100k_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_lowpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_linearkernel_lowpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_medpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_linearkernel_medpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_highpT_1M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:bias_linearkernel_highpt_1M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_lowpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_linearkernel_lowpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_medpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_linearkernel_medpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigBiases_highpT_10M_noSig}   
-\caption{The per-toy bias (GP Spurious Signal - Raw Spurious Signal), using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:bias_linearkernel_highpt_10M_noSig}
-\end{center}
-\end{figure}
-
-\clearpage
 
 To further validate the choice of 20 effective events per bin as the cutoff, we investigate some edge cases. Since the templates have 130 bins (due to the 10 bin padding on either side), we note that the 1000-event templates have just over 7 effective events per bin, while the 10000 event templates have just over 76 events per bin. We test templates with exactly 10 effective events per bin (1300 total events), slightly more than 10 effective events per bin (1400 total events), exactly 20 effective events per bin (2600 total events), and slightly more than 21 effective events per bin (2800 total events).
 
@@ -1344,195 +541,44 @@ High2800&0&2800&21.5384615384615&-0.005217646454879&0.015515164923075&-0.0207328
 	\end{table}	
 \end{landscape}
 
+
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1300_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1300 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1300_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1300_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1300_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1300 events.}
 \label{fig:linearkernel_lowpt_1300_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1300_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1300 events.}
-\label{fig:linearkernel_medpt_1300_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1300_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1300 events.}
-\label{fig:linearkernel_highpt_1300_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1400_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1400 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1400_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1400_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1400_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1400 events.}
 \label{fig:linearkernel_lowpt_1400_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1400_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1400 events.}
-\label{fig:linearkernel_medpt_1400_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1400_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1400 events.}
-\label{fig:linearkernel_highpt_1400_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_2600_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2600 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_2600_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_2600_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_2600_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2600 events.}
 \label{fig:linearkernel_lowpt_2600_noSig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_2600_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2600 events.}
-\label{fig:linearkernel_medpt_2600_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_2600_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2600 events.}
-\label{fig:linearkernel_highpt_2600_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_2800_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2800 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_2800_noSig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_2800_noSig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_2800_noSig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2800 events.}
 \label{fig:linearkernel_lowpt_2800_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_2800_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2800 events.}
-\label{fig:linearkernel_medpt_2800_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_2800_noSig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2800 events.}
-\label{fig:linearkernel_highpt_2800_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_lowpT_1300_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1300 events.}
-\label{fig:linearkernel_lowpt_1300_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_medpT_1300_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1300 events.}
-\label{fig:linearkernel_medpt_1300_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_highpT_1300_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1300 events.}
-\label{fig:linearkernel_highpt_1300_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_lowpT_1400_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1400 events.}
-\label{fig:linearkernel_lowpt_1400_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_medpT_1400_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1400 events.}
-\label{fig:linearkernel_medpt_1400_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_highpT_1400_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1400 events.}
-\label{fig:linearkernel_highpt_1400_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_lowpT_2600_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2600 events.}
-\label{fig:linearkernel_lowpt_2600_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_medpT_2600_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2600 events.}
-\label{fig:linearkernel_medpt_2600_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_highpT_2600_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2600 events.}
-\label{fig:linearkernel_highpt_2600_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_lowpT_2800_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly2-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2800 events.}
-\label{fig:linearkernel_lowpt_2800_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_medpT_2800_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using an expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2800 events.}
-\label{fig:linearkernel_medpt_2800_noSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_AvgFitShape_highpT_2800_noSig}   
-\caption{The average toy distribution for both the GPR and raw template, using a different expPoly3-derived template extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 2800 events.}
-\label{fig:linearkernel_highpt_2800_noSig}
 \end{center}
 \end{figure}
 
@@ -1551,33 +597,12 @@ For this initial study, the error passed to the GP fit is the input error of the
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c1NoSig.eps}   
-   \caption{The distribution of spurious signal for various functions for both the GPR and raw template, using the c1 template as a basis.}
+  \subfloat[c1, NoSig]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c1NoSig.eps}
+  \subfloat[c31, NoSig]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c31NoSig.eps}
+  \subfloat[c1, Sig]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c1Sig.eps}
+  \subfloat[c31, Sig]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c31Sig.eps}  
+   \caption{The distribution of spurious signal for various functions for both the GPR and raw template with and without a Standard-Model expectation-sized signal injected, using the c1 and c31 templates as a basis.}
 \label{fig:c1NoSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c31NoSig.eps}  
- \caption{The distribution of spurious signal for various functions for both the GPR and raw template, using the c31 template as a basis.}
-  \label{fig:c31NoSig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-    \includegraphics[width=\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c1Sig.eps}
-     \caption{The distribution of spurious signal for various functions for both the GPR and raw template, using the c1 template with a 1GeV wide feature injected as a basis.}
-\label{fig:c1Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/ToyTest_FitSigVals_Merged_Category_c31Sig.eps}  
-    \caption{The distribution of spurious signal for various functions for both the GPR and raw template, using the c31 template with a 1GeV-wide feature injected as a basis.}
-\label{fig:c31Sig}
 \end{center}
 \end{figure}
 
@@ -1605,174 +630,76 @@ For this initial study, the error passed to the GP fit is the input error of the
 \end{table}	
 
 Following this, we set the size of a feature as 3 times the standard-model signal width (i.e., approximately 3 GeV). Additionally, we fix the size of the feature injected as 1\% of the number of events in the toy template (except for toys with 10 events, for which we inject a one-event feature). We show the spurious signal extracted for 10 event through 10M event toys for the three shapes, and record the bias. The results are reported in \Tab{\ref{tab:SigSS}}
-\begin{figure}  
+
+\begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10_Sig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10_Sig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10_Sig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 10 events.}
 \label{fig:linearkernel_lowpt_10_Sig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:linearkernel_medpt_10_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:linearkernel_highpt_10_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_Sig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_Sig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_Sig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 100 events.}
 \label{fig:linearkernel_lowpt_100_Sig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:linearkernel_medpt_100_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:linearkernel_highpt_100_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1000_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1000_Sig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1000_Sig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1000_Sig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 1000 events.}
 \label{fig:linearkernel_lowpt_1000_Sig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1000_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:linearkernel_medpt_1000_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1000_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:linearkernel_highpt_1000_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_Sig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_Sig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_Sig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 10k events.}
 \label{fig:linearkernel_lowpt_10k_Sig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:linearkernel_medpt_10k_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:linearkernel_highpt_10k_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100k_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100k_Sig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100k_Sig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100k_Sig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 100k events.}
 \label{fig:linearkernel_lowpt_100k_Sig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100k_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:linearkernel_medpt_100k_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100k_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:linearkernel_highpt_100k_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1M_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1M_Sig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1M_Sig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1M_Sig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 1M events.}
 \label{fig:linearkernel_lowpt_1M_Sig}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1M_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_medpt_1M_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1M_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_highpt_1M_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10M_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10M_Sig}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10M_Sig}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10M_Sig}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 10M events.}
 \label{fig:linearkernel_lowpt_10M_Sig}
 \end{center}
 \end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10M_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:linearkernel_medpt_10M_Sig}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10M_Sig}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:linearkernel_highpt_10M_Sig}
-\end{center}
-\end{figure}
-
 
 \begin{landscape}
 	\begin{table}
@@ -1822,106 +749,47 @@ Following this, we set the size of a feature as 3 times the standard-model signa
 	\end{table}
 \end{landscape}
 
-
 The feature-injection bias for a three-sigma feature does not change appreciably with template shape (that is, for a given statistics level, the bias is approximately the same for all three templates). However, at high stats, the bias / feature size drops off as a function of template statistics. This makes sense, as the presence of true underlying features in high statistics templates is not compatible with the assumption that our true templates are smoothly falling functions. However, for templates containing greater than 20 effective background MC events per bin prior to feature injection (that is, those in the statistics range we conclude that it is safe to use GPR in), the measured bias is less than 18\% of the injected feature size. 
-
-
 
 As a further check, we investigate the bias when the number of background events is fixed, but the size of the injected 3 GeV wide feature is allowed to vary. We see that, if the feature is very small or very large, the bias is small- the feature is either completely smoothed out (if it is small) or completely preserved (if it is large). In the intermediate range (feature integral >= 0.1\% of the total template integral), the bias varies, but is consistently less than 18\% of the expected integral of the feature. We fix the toy template size at 1,000,000 events. 
 
-\begin{figure}  
+\begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature that is 0.01\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10_Siginj}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10_Siginj}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10_Siginj}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected that is 0.01\% of the template integral, and fit using a linear error kernel. Each toy in this test has one million events.}
+\label{fig:linearkernel_lowpt_10_Siginj}
+\end{center}
+\end{figure}
+
+\begin{figure} 
+\begin{center}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_Siginj}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_Siginj}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_Siginj}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected that is 0.1\% of the template integral, and fit using a linear error kernel. Each toy in this test has one million events.}
 \label{fig:linearkernel_lowpt_100_Siginj}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature that is 0.01\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_medpt_100_Siginj}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1000_Siginj}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1000_Siginj}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1000_Siginj}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature that is 1\% of the template integral injected, and fit using a linear error kernel. Each toy in this test has one million events.}
+\label{fig:linearkernel_lowpt_1000_Siginj}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature that is 0.01\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_highpt_100_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure}  
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature that is 0.1\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_lowpt_1k_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature that is 0.1\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_medpt_1k_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature that is 0.1\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_highpt_1k_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure}  
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature that is 1\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_Siginj}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_Siginj}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_Siginj}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature that is 10\% of the template integral injected, and fit using a linear error kernel. Each toy in this test has one million events.}
 \label{fig:linearkernel_lowpt_10k_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature that is 1\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_medpt_10_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature that is 1\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_highpt_10k_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure}  
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 3 GeV wide feature that is 10\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_lowpt_100k_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 3 GeV wide feature that is 10\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_medpt_100k_Siginj}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100k_Siginj}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 3 GeV wide feature that is 10\% of the template integral injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_highpt_100k_Siginj}
 \end{center}
 \end{figure}
 
@@ -1967,174 +835,75 @@ high100k&4000&1e6&4e4&1078.98190239696&1076.93856262147&2.04333977548163&19.1476
 
 As a final check, we investigate the bias when a standard-model-signal like feature is injected (~1 GeV wide). As expected, we see that the bias is larger- narrow features are more smoothed by the Gaussian Process fit, but are still present in the templates.
 
-\begin{figure}  
+\begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10_Sig_1s}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10_Sig_1s}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10_Sig_1s}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 10 events.}
 \label{fig:linearkernel_lowpt_10_Sig_1s}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:linearkernel_medpt_10_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10 events.}
-\label{fig:linearkernel_highpt_10_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100_Sig_1s}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_Sig_1s}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_Sig_1s}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 100 events.}
 \label{fig:linearkernel_lowpt_100_Sig_1s}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:linearkernel_medpt_100_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100 events.}
-\label{fig:linearkernel_highpt_100_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1000_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1000_Sig_1s}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1000_Sig_1s}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1000_Sig_1s}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 1000 events.}
 \label{fig:linearkernel_lowpt_1000_Sig_1s}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1000_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:linearkernel_medpt_1000_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1000_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1000 events.}
-\label{fig:linearkernel_highpt_1000_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10k_Sig_1s}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_Sig_1s}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_Sig_1s}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 10k events.}
 \label{fig:linearkernel_lowpt_10k_Sig_1s}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10k_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:linearkernel_medpt_10k_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10k_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10k events.}
-\label{fig:linearkernel_highpt_10k_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100k_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_100k_Sig_1s}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100k_Sig_1s}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100k_Sig_1s}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 100k events.}
 \label{fig:linearkernel_lowpt_100k_Sig_1s}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_100k_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:linearkernel_medpt_100k_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_100k_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 100k events.}
-\label{fig:linearkernel_highpt_100k_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1M_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_1M_Sig_1s}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1M_Sig_1s}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1M_Sig_1s}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 1M events.}
 \label{fig:linearkernel_lowpt_1M_Sig_1s}
 \end{center}
 \end{figure}
 
 \begin{figure} 
 \begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_1M_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_medpt_1M_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1M_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 1,000,000 events.}
-\label{fig:linearkernel_highpt_1M_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10M_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly2-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
+  \subfloat['low' Template (ExpPoly2)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_lowpT_10M_Sig_1s}   
+  \subfloat['med' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10M_Sig_1s}   
+  \subfloat['high' Template (ExpPoly3)]\includegraphics[width=0.4\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10M_Sig_1s}   
+\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using (a) the expPoly2-derived 'low', (b) the expPoly3-derived 'med' template, (c) the expPoly3-derived 'high' template, extended by 5 GeV on either side and with a 3 GeV wide feature injected, and fit using a linear error kernel. Each toy in this test has 10M events.}
 \label{fig:linearkernel_lowpt_10M_Sig_1s}
 \end{center}
 \end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT_10M_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using an expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:linearkernel_medpt_10M_Sig_1s}
-\end{center}
-\end{figure}
-
-\begin{figure} 
-\begin{center}
-  \includegraphics[width=\textwidth]{figures/background/gpr/validation/linear/ToyTest_FitSigVals_highpT_10M_Sig_1s}   
-\caption{The distribution of spurious signal for various functions for both the GPR and raw template, using a different expPoly3-derived template with a 1 GeV wide feature injected, extended by 5 GeV on either side, and fit using a linear error kernel. Each toy in this test has 10,000,000 events.}
-\label{fig:linearkernel_highpt_10M_Sig_1s}
-\end{center}
-\end{figure}
-
 				
 \begin{landscape}
 	\begin{table}
@@ -2192,4 +961,4 @@ From these studies, we conclude that, for the purposes of the Couplings analysis
 
 If we did expect true, significantly-sized underlying features in the templates (i.e., our templates were not assumed to be smoothly falling), we can also conclude that we could conservatively model the bias due to GPR as approximately 18\% of the expected integral of the feature, so long as the feature was larger than .01\% of the expected template integral. However, the unbinned fitting method used in the analyses discussed in this dissertation assumes the templates can be modelled by smoothly falling functions, so as a result, we can safely neglect the feature-injection bias on the spurious signal numbers.
 
-These validation tests prove the robustness of the Gaussian Process method. In addition to the Coupling analysis, GPR has shown promising results in XXX, XXX, and XXX. By reducing problematic statistical fluctuations, the spurious signal systematic is reduced substantially, and may be able to significantly increase the precision of $H \rightarrow \gamma \gamma$ analyses in the future. 
+These validation tests prove the robustness of the Gaussian Process method. By reducing problematic statistical fluctuations, the spurious signal systematic is reduced substantially, and may be able to significantly increase the precision of $H \rightarrow \gamma \gamma$ analyses in the future. 

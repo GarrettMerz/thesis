@@ -90,7 +90,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
         \subfloat[$tHjb$ had]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/preselection_and_reconstruction/tHjb_had/m_score_wisc.png}} \\
         \subfloat[$tWH$ had]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/preselection_and_reconstruction/tWH_had/m_score_wisc.png}}
         \subfloat[$ggF$ had]{\includegraphics[width=0.3\textwidth]{figures/tthp_chapter/preselection_and_reconstruction/ggH_had/m_score_wisc.png}}
-  \caption{SB BDT score for $ttH$, $tHjb$, $tWH$ and $ggF$ in the hadronic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background.  }
+  \caption{SB BDT score for $ttH$, $tHjb$, $tWH$ and $ggF$ in the hadronic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, which approximates the shape of the continuum background.  }
   \label{fig:moriondhad}
 \end{figure}
 
@@ -99,7 +99,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
         \subfloat[$ttH$ lep]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/preselection_and_reconstruction/ttH_lep/m_score_wisc.png}}
         \subfloat[$tHjb$ lep]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/preselection_and_reconstruction/tHjb_lep/m_score_wisc.png}}
         \subfloat[$tWH$ lep]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/preselection_and_reconstruction/tWH_lep/m_score_wisc.png}}
-  \caption{SB BDT score for $ttH$, $tHjb$ and $tWH$ in the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background.  }
+  \caption{SB BDT score for $ttH$, $tHjb$ and $tWH$ in the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, which approximates the shape of the continuum background.  }
   \label{fig:moriondlep}
 \end{figure}
 \fi
@@ -108,7 +108,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
   \centering
         \subfloat[Hadronic $ttH+tHjb+tWH$]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png}}
         \subfloat[Leptonic $ttH+tHjb+tWH$]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png}}
-  \caption{SB BDT score for the sum of $ttH$, $tHjb$ and $tWH$, with relative weights according to the predicted cross sections. Shown in (a) for the hadronic channel and (b) for the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background.  }
+  \caption{SB BDT score for the sum of $ttH$, $tHjb$ and $tWH$, with relative weights according to the predicted cross sections. Shown in (a) for the hadronic channel and (b) for the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, which approximates the shape of the continuum background.  }
   \label{fig:moriondtotal}
 \end{figure}
 
@@ -202,16 +202,15 @@ The signal samples are the CP-odd $ttH+tWH+tHjb$, added according to their predi
 
 For both the hadronic and leptonic CPBDTs, input variables chosen are:
 
-The training variables used in the hadronic CP BDT training are:
 \begin{itemize}
 \item $p_{T}$ and $\eta$ of the Higgs candidate
 \item $p_{T}$, $\eta$, $\phi$ (with respect to the Higgs candidate), and BDT score of the first and second reconstructed tops. Due to its potential to be composed of fewer than three jets, the second top is referred to as the 'hybrid' top. In the case where no hybrid top is reconstructed, a dummy value is passed to XGBoost.
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top candidates. In the case where no hybrid top is reconstructed, a dummy value is passed to XGBoost.
-\item Two-object invariant masses $m_{t1H}$, and $m_{t1hy}$. In the case where no second hybrid top is reconstructed, a dummy value is passed to XGBoost.
+\item The invariant mass of the top-Higgs system ($m_{t1H}$), and the invariant mass of the two-top system ($m_{t1hy}$). In the case where no second hybrid top is reconstructed, a dummy value is passed to XGBoost.
 \item $H_{T} = \sum_\text{jet j} p^{j}_{T}$
-\item The minimum $\Delta$R between a photon and a jet in the event (out of all photon-jet combinations)
-\item The second-smallest $\Delta$R between a photon and a jet in the event (out of all photon-jet combinations)
-\item Jet multiplicity and $b$-jet multiplicity (77\% working point)
+\item The minimum $\Delta$R between a photon and a jet (out of all possible photon-jet pairs in the event)
+\item The second-smallest $\Delta$R between a photon and a jet (out of all possible photon-jet pairs in the event)
+\item Number of jets and number of $b$-jets in the event
 \item Missing $E_{T}$ significance = $E_{T}^\text{miss}/\sqrt{H_{T}}$
 \end{itemize}
 
@@ -223,7 +222,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
   \centering
   	\subfloat[Higgs candidate $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/pt_H.png}}
 	\subfloat[Higgs candidate $\eta$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/eta_H.png}} 
-  \caption{Leptonic BDT training variables related to the photons. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Leptonic BDT training variables. The open squares represent data in the NTI sideband region, which approximates the shape of the continuum background. }
   \label{fig:lepvbls1}
 \end{figure}
 
@@ -233,7 +232,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
 	\subfloat[Top 1 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_eta.png}} \\
 	\subfloat[Top 1 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_phi0.png}} 
 	\subfloat[Top 1 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/t1_score.png}} 
-  \caption{Leptonic BDT training variables related to the first reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Leptonic BDT training variables. The top $\phi$ is calculated with respect to the Higgs candidate.  The open squares represent data in the NTI sideband region, which approximates the shape of the continuum background. }
   \label{fig:lepvbls2}
 \end{figure}
 
@@ -243,7 +242,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
 	\subfloat[Hybrid top 2 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_eta.png}} \\
 	\subfloat[Hybrid top 2 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/hy_phi0.png}} 
 	\subfloat[Hybrid top 2 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/t2_score.png}} 
-  \caption{Leptonic BDT training variables related to the second reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in $p_{T}$, $\eta$, and $\phi$ represent events where no second (''hybrid'') top is reconstructed . The underflow bin in the Reco BDT score represents events with fewer than 6 jets. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Leptonic BDT training variables. The top $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in $p_{T}$, $\eta$, and $\phi$ contain events where no second ('hybrid') top is reconstructed, while the underflow bin in the BDT score contains events with fewer than six jets (i.e., events with either no hybrid top or a hybrid top that is reconstructed using the remaining-jets method). The open squares indicate data in the NTI sideband region, which approximates the shape of the continuum background. }
   \label{fig:lepvbls3}
 \end{figure}
 
@@ -251,7 +250,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
   \centering
   	\subfloat[$\Delta\eta_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_eta_t1hy.png}}
 	\subfloat[$\Delta\phi_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_phi_t1hy.png}} 
-  \caption{Leptonic BDT training variables related to angles between the top quarks in the event. The underflow bins represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Leptonic BDT training variables. The underflow bins represent events where no second (''hybrid'') top is reconstructed. The open squares indicare data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:lepvbls4}
 \end{figure}
 
@@ -259,7 +258,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
   \centering
   	\subfloat[$m_{t1H}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1H.png}}
 	\subfloat[$m_{t1hy}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_t1hy.png}}
-  \caption{Multi-object invariant masses used as training variables in the leptonic BDT. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Leptonic BDT training variables. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ contain events where no second ('hybrid') top is reconstructed. The open squares indicate data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:lepvbls5}
 \end{figure}
 
@@ -269,7 +268,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
 	\subfloat[$n_\text{b-jets}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_nbjet_fixed80.png}} \\
 	\subfloat[$H_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_HT.png}}
 	\subfloat[Missing $E_{T}$ significance]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_met_sig.png}}
-  \caption{Leptonic BDT training variables jet multiplicity, b-jet multiplicity, $H_{T}$, and missing $E_{T}$ significance.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Leptonic BDT training variables jet multiplicity, b-jet multiplicity, $H_{T}$, and missing $E_{T}$ significance.  The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:lepvbls6}
 \end{figure}
 
@@ -277,7 +276,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
   \centering
   	\subfloat[$\Delta R_{min}^{\gamma j}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj.png}}
   	\subfloat[$\Delta R_{min}^{\gamma j2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj2.png}}
-  \caption{Leptonic BDT training variables $\Delta R_{min}^{\gamma j}$ and $\Delta R_{min}^{\gamma j2}$.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Leptonic BDT training variables $\Delta R_{min}^{\gamma j}$ and $\Delta R_{min}^{\gamma j2}$.  The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:lepvbls7}
 \end{figure}
 
@@ -289,7 +288,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
   \centering
   	\subfloat[Higgs candidate $p_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/pt_H.png}}
 	\subfloat[Higgs candidate $\eta$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/eta_H.png}} 
-  \caption{Hadronic BDT training variables related to the photons.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Hadronic BDT training variables.  The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:hadvbls1}
 \end{figure}
 
@@ -299,7 +298,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
 	\subfloat[Top 1 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/t1_eta.png}} \\
 	\subfloat[Top 1 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/t1_phi0.png}} 
 	\subfloat[Top 1 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/t1_score.png}} 
-  \caption{Hadronic BDT training variables related to the first reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Hadronic BDT training variables. The $\phi$ is calculated with respect to the Higgs candidate.  The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:hadvbls2}
 \end{figure}
 
@@ -309,7 +308,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
 	\subfloat[Hybrid top 2 $\eta$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/hy_eta.png}} \\
 	\subfloat[Hybrid top 2 $\phi$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/hy_phi0.png}} 
 	\subfloat[Hybrid top 2 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/t2_score.png}} 
-  \caption{Hadronic BDT training variables related to the second reconstructed top quark. The $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in $p_{T}$, $\eta$, and $\phi$ represent events where no second (''hybrid'') top is reconstructed. The underflow bin in the Reco BDT score represents events with fewer than 6 jets.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Hadronic BDT training variables. The $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in $p_{T}$, $\eta$, and $\phi$ represent events where no second (''hybrid'') top is reconstructed. The underflow bin in the Reco BDT score represents events with fewer than 6 jets.  The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:hadvbls3}
 \end{figure}
 
@@ -317,7 +316,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
   \centering
   	\subfloat[$\Delta\eta_{t1hy}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_eta_t1hy.png}}
 	\subfloat[$\Delta\phi_{t1hy}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_phi_t1hy.png}} 
-  \caption{Hadronic BDT training variables related to angles between the top quarks in the event. The underflow bins represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Hadronic BDT training variables. The underflow bins represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:hadvbls4}
 \end{figure}
 
@@ -325,7 +324,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
   \centering
   	\subfloat[$m_{t1H}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1H.png}}
 	\subfloat[$m_{t1hy}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_t1hy.png}}
-  \caption{Multi-object invariant masses used as training variables in the hadronic BDT. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Multi-object invariant masses used as training variables in the hadronic BDT. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ represent events where no second (''hybrid'') top is reconstructed. The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:hadvbls5}
 \end{figure}
 
@@ -335,7 +334,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
 	\subfloat[$n_\text{b-jets}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_nbjet_fixed80.png}} \\
 	\subfloat[$H_{T}$ (GeV)]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_HT.png}}
 	\subfloat[Missing $E_{T}$ significance]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_met_sig.png}}
-  \caption{Hadronic BDT training variables jet multiplicity, b-jet multiplicity, $H_{T}$, and missing $E_{T}$ significance.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Hadronic BDT training variables jet multiplicity, b-jet multiplicity, $H_{T}$, and missing $E_{T}$ significance.  The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:hadvbls6}
 \end{figure}
 
@@ -343,7 +342,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
   \centering
   	\subfloat[$\Delta R_{min}^{\gamma j}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj.png}}
   	\subfloat[$\Delta R_{min}^{\gamma j2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj2.png}}
-  \caption{Hadronic BDT training variables $\Delta R_{min}^{\gamma j}$ and $\Delta R_{min}^{\gamma j2}$.  The open squares show data in the NTI sideband region, giving an approximation of the shape of the continuum background. }
+  \caption{Hadronic BDT training variables $\Delta R_{min}^{\gamma j}$ and $\Delta R_{min}^{\gamma j2}$.  The open squares show data in the NTI sideband region, which approximates the continuum background shape. }
   \label{fig:hadvbls7}
 \end{figure}
 
@@ -469,7 +468,7 @@ Category & Bkg. Rej. BDT score & CP BDT score \\ \hline
 \end{tabular}
 \end{center}
 \vspace{-0.5cm}
-\caption{Category boundaries that optimize the number-counting rejection of the CP odd scenario in the 12 hadronic and 8 leptonic categories.}
+\caption{Category boundaries which optimize the Poisson number-counting rejection significance of the CP odd scenario in the 12 hadronic and 8 leptonic categories.}
 \label{tab:boundaries}
 \end{table}
 
@@ -479,7 +478,7 @@ Category & Bkg. Rej. BDT score & CP BDT score \\ \hline
         \subfloat[Purity (CP event $ttH$)]{\includegraphics[width=0.42\textwidth]{figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a0.png}} \\
         \subfloat[Event yield (CP odd $ttH$)]{\includegraphics[width=0.42\textwidth]{figures/tthcp_chapter/categorization_xgb/cp_11p8_a90.png}}
         \subfloat[Purity (CP odd $ttH$)]{\includegraphics[width=0.42\textwidth]{figures/tthcp_chapter/categorization_xgb/cp_11p8_purity_a90.png}}
-  \caption{(Left) Event yields in the CP categories at 139 fb$^{-1}$. Shown separately for $\alpha = 0^{\circ}$ and $\alpha = 90^{\circ}$. (Right) purity of the Higgs yield in each category for $\alpha = 0^{\circ}$ and $\alpha = 90^{\circ}$. Yields are calculated in the signal window $m_{\gamma\gamma}=125\pm2$ GeV.}
+  \caption{(Left) Event yields in the CP categories. Shown separately for $\alpha = 0^{\circ}$ and $\alpha = 90^{\circ}$. (Right) purity of the Higgs yield in each category for $\alpha = 0^{\circ}$ and $\alpha = 90^{\circ}$. Yields are calculated in the signal window $m_{\gamma\gamma}=125\pm2$ GeV.}
   \label{fig:nominalb}
 \end{figure}
 
@@ -557,6 +556,6 @@ Number-counting $\alpha=45^\circ$ rejection & $1.25\sigma$ \\ \hline
 \end{tabular}
 \end{center}
 \vspace{-0.5cm}
-\caption{Figures of merit for the twenty-category CP BDT categorization, calculated from event yields in the signal $m_{\gamma\gamma}$ region $125\pm2$ GeV.}
+\caption{Significance metrics for the full twenty-category CP BDT categorization, calculated using event yields in the signal $m_{\gamma\gamma}$ region $125\pm2$ GeV.}
 \label{tab:sigs}
 \end{table}
