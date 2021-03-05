@@ -1,6 +1,6 @@
 \section{Validation of Gaussian Process Smoothing}
 \label{sec:GPR_validation}
-A series of tests was performed to determine whether or not the GPR technique induces a bias on the spurious signal, expanding on some of the methodology of \ref{Hyneman}.
+A series of tests was performed to determine whether or not the GPR technique induces a bias on the spurious signal, expanding on some of the methodology of \cite{Hyneman}.
 
 Two sets of bias tests are performed: the first is a measurement of the bias using toy templates pulled from smooth functions (i.e., the bias measure relevant to the Couplings analysis), and the second is a measure of the bias using toy templates with a signal-like feature injected (i.e., understanding the GPR's tendency to smooth away true underlying features- this does not apply to the Couplings analysis, but provides an important academic estimate of GPR's limitations in other scenarios). Because it is assumed the underlying distribution of the data is not perfectly modelled by any existing function, a different closely-related function is used as the best-fit template function to perform the spurious signal measurement (Exponential for templates generated with ExpPoly2, PowerLaw1 for templates generated with an Exponential, ExpPoly2 for templates generated with ExpPoly3). This induces a "true" spurious signal- if there were no such functional mismatch, the "true" spurious signal would be zero.
 

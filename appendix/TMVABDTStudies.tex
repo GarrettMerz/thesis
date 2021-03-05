@@ -91,7 +91,7 @@ Likewise, the leptonic  four-vector CP BDT is trained to separate $ttH$ CP even 
 \item The second-smallest $\Delta$R between a photon and a jet in the event
 \end{itemize} 
 
-The linear correlations between these variables in $ttH$ CP even and CP odd aMCnlo+Pythiya8 Monte Carlo are shown in Figure \ref{fig:lepcorr4vec}.  Figures \ref{fig:lep4vecvbls1} - \ref{fig:lep4vecvbls6} compare the distribution of each training variable in $ttH$ CP even and CP odd Monte Carlo.
+The linear correlations between these variables in $ttH$ CP even and CP odd MadGraph5\_aMC@NLO+Pythia8 Monte Carlo are shown in Figure \ref{fig:lepcorr4vec}.  Figures \ref{fig:lep4vecvbls1} - \ref{fig:lep4vecvbls6} compare the distribution of each training variable in $ttH$ CP even and CP odd Monte Carlo.
 
 \begin{figure}[htbp]
   \centering
@@ -155,7 +155,7 @@ In the hadronic channel:
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops (see Section \ref{sec:topreco}). In the case where no second top is reconstructed, a missing value is passed to XGBoost.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case where no second top is reconstructed, a missing value is passed to XGBoost.
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top candidates. In the case where no second top is reconstructed, a missing value is passed to XGBoost.
 \item Two-object invariant masses $m_{t1H}$, $m_{t2H}$, and $m_{t1t2}$. In the case where no second top is reconstructed, a missing value is passed to XGBoost.
 \item Three-object invariant mass $m_{t1t2H}$. In the case where no second top is reconstructed, $m_{t1t2H} = m_{t1H}$.
@@ -169,7 +169,7 @@ In the leptonic channel:
 
 \begin{itemize} 
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops (see Section \ref{sec:topreco}). In the case of dilepton events, or if no second top is reconstructed, a missing value is passed to XGBoost.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case of dilepton events, or if no second top is reconstructed, a missing value is passed to XGBoost.
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top candidates. In the case of dilepton events, or if no second top is reconstructed, a missing value is passed to XGBoost.
 \item Two-object invariant masses $m_{t1H}$ $m_{t2H}$, and $m_{t1t2}$. In the case of dilepton events, or if no second top is reconstructed, a missing value is passed to XGBoost.
 \item Three-object invariant mass $m_{t1t2H}$. In the case of dilepton events, a missing value is passed to XGBoost. If no second top is reconstructed, $m_{t1t2H} = m_{t1H}$.
@@ -344,7 +344,7 @@ We begin with a nominal BDT consisting of the following input variables and modi
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops (see Section \ref{sec:topreco}). In the case where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top.
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top and the "hybrid" top.
 \item Two-object invariant masses $m_{t1H}$, $m_{Hhy}$, and $m_{t1hy}$
 \item The minimum $\Delta$R between a photon and a jet in the event
@@ -376,13 +376,13 @@ We also recommend that, due to its potential dependence on $m_{H}$, $\cos$($\the
 
 We use TMVA to investigate the performance of a CP-BDT trained against the $\alpha = 45^{\circ}$ maximal-mixing CP signal sample, rather than the $\alpha = 90^{\circ}$ CP-odd signal sample used for the Nominal BDT.
 
-As in the previous section, we begin with a different "Baseline" set of BDT variables, starting with the nominal CPBDT, then observe whether or not adding or altering a given variable will substantially impact the BDT performance (deeming a "substantial" impact to be one that increases the $ttH$ + $tH$ Number-Counting Significance by at least 0.1$\sigma$, as gains below this threshold are likely to be noise). Now, however, we use the Number-Counting Significance at $\alpha = 45^{\circ}$, rather than at $\alpha = 90^{\circ}$, as defined in Equation \ref{eq:nczcp} and Equation \ref{eq:ns}.
+As in the previous section, we begin with a different "Baseline" set of BDT variables, starting with the nominal CPBDT, then observe whether or not adding or altering a given variable will substantially impact the BDT performance (deeming a "substantial" impact to be one that increases the $ttH$ + $tH$ Number-Counting Significance by at least 0.1$\sigma$, as gains below this threshold are likely to be noise). Now, however, we use the Number-Counting Significance at $\alpha = 45^{\circ}$, rather than at $\alpha = 90^{\circ}$, as defined in Equation \ref{eq:nczcp}.
 
 As in the previous section, we begin with a nominal $ttH+tH$ CPBDT consisting of the following input variables and modify it in an iterative process, adding or removing variables depending on performance:
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops (see Section \ref{sec:topreco}). In the case where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top.
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top and the "hybrid" top.
 \item Two-object invariant masses $m_{t1H}$, $m_{Hhy}$, and $m_{t1hy}$
 \item The minimum $\Delta$R between a photon and a jet in the event

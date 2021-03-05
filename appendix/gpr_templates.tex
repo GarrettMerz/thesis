@@ -23,13 +23,13 @@ The background templates used in the spurious signal test for the analysis categ
 
 The hyperparameters (initial length scale and length scale slope) are allowed to vary over a range specified by the user; the optimal hyperparameters within this range are determined by the Gaussian Process fitting procedure.
 
-A GP is fit to the background template in each category. This can be modelled in a Bayesian manner: the GP is a distribution with a given prior mean that is then conditioned on the template histogram; the smoothed template is the mean of the posterior distribution \cite{GPprior}. Due to the expected shape of the templates, the prior is defined as an exponential function with parameters obtained by a fit to the template. However, in cases where the input template has very few statistics, large errors on the data points are compatible with a steep exponential prior though the "true" underlying shape is approximately flat, which can confound the fitter and cause it to simply output the prior distribution. Therefore, a "switch" has been added to re-perform the GP fit using a flat prior in cases where the resulting GP shape and the prior exponential shape disagree with a $\chi^2/DoF < 0.1$.
+A GP is fit to the background template in each category. This can be modelled in a Bayesian manner: the GP is a distribution with a given prior mean that is then conditioned on the template histogram; the smoothed template is the mean of the posterior distribution \cite{3569}. Due to the expected shape of the templates, the prior is defined as an exponential function with parameters obtained by a fit to the template. However, in cases where the input template has very few statistics, large errors on the data points are compatible with a steep exponential prior though the "true" underlying shape is approximately flat, which can confound the fitter and cause it to simply output the prior distribution. Therefore, a "switch" has been added to re-perform the GP fit using a flat prior in cases where the resulting GP shape and the prior exponential shape disagree with a $\chi^2/DoF < 0.1$.
 
 The mean of the GP posterior is then saved as the new template (with bin-by-bin errors corresponding to the bin-by-bin errors of the original template). The spurious signal test is then performed with these new distributions.
 
 Validation tests were performed with the GP smoothing technique in order to quantify whether or not GPR induces a bias (that is, artifically reduces the spurious signal beyond just smoothing out statistical fluctuations). These tests primarily use “toy” templates- randomly-generated background templates constructed using a known analytic function as a probability density. One of the goals of these validation studies is to determine a safe statistical regime in which to apply GPR, as in the very low-statistics regime, the distribution of events in each bin follows a Poisson distribution rather than a Gaussian distribution.
 
-We find that GPR remains effectively unbiased for smoothly-falling templates containing more than an average of 20 Monte Carlo events/ bin. The procedures to validate the GPR smoothing are reported in \App{\ref{sec:gpr_validation}}.
+We find that GPR remains effectively unbiased for smoothly-falling templates containing more than an average of 20 Monte Carlo events/ bin. The procedures to validate the GPR smoothing are reported in Appendix \ref{app:gpr_validation}.
 
 \section{Gaussian Processes smoothed background templates}
 \label{sec:GPR_templates}
@@ -637,11 +637,13 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 \label{ssec:GPR_SS}
 
 The SS test was completely re-run with the templates reported in \Figrange{\ref{fig:gpr_coupcat_1}}{\ref{fig:gpr_coupcat_22}}. 
-We report two sets of results - first, we record the spurious signal extracted from the smoothed templates using the functional form chosen from performing the relaxed spurious signal test on the unsmoothed templates. The results are reported in \Tab{\ref{tab:spurious_sig_gp}} and \Tab{\ref{tab:spurious_sig_gp2}}. A comparison with the nominal un-smoothed SS test {reported in \Sect{\ref{ssec:bck_results}}} is presented in \Tab{\ref{tab:comp_smooth_unsmooth1}} and \Tab{\ref{tab:comp_smooth_unsmooth2}}.
+We report two sets of results - first, we record the spurious signal extracted from the smoothed templates using the functional form chosen from performing the relaxed spurious signal test on the unsmoothed templates. The results are reported in Table \ref{tab:spurious_sig_gp} and Table \ref{tab:spurious_sig_gp2}. A comparison with the nominal un-smoothed SS test is presented in \Tab{\ref{tab:comp_smooth_unsmooth1}} and \Tab{\ref{tab:comp_smooth_unsmooth2}}.
 
-Second, we record the spurious signal from the smoothed templates using the functional form chosen from performing a non-relaxed spurious signal test on the smoothed templates only (that is, removing the potential two-sigma fluctuation). The results are reported in \Tab{\ref{tab:spurious_sig_gp_tight}} and \Tab{\ref{tab:spurious_sig_gptight2}}. A comparison with the nominal un-smoothed SS test {reported in \Sect{\ref{ssec:bck_results}}} showing the choice of functional form and extracted SS is presented in \Tab{\ref{tab:comp_smooth_unsmoothtight1}} and \Tab{\ref{tab:comp_smooth_unsmoothtight2}}.
+Second, we record the spurious signal from the smoothed templates using the functional form chosen from performing a non-relaxed spurious signal test on the smoothed templates only (that is, removing the potential two-sigma fluctuation). The results are reported in \Tab{\ref{tab:spurious_sig_gptight}} and \Tab{\ref{tab:spurious_sig_gptight2}}. A comparison with the nominal un-smoothed SS test showing the choice of functional form and extracted SS is presented in \Tab{\ref{tab:comp_smooth_unsmoothtight1}} and \Tab{\ref{tab:comp_smooth_unsmoothtight2}}.
 
 In categories where GPR is deemed unreliable due to low statistics, we put an N/A rather than numerical values. 
+
+In these tables, in the mass range 120 GeV to 130 GeV, $S$ is the maximum fitted spurious signal yield, $\delta S$ is the associated uncertainty on the data, and $S_{ref}$ is the expected size of Higgs signal events. $\zeta$ is the maximum fitted spurious signal yield when relaxed to accomodate $2\sigma$ statistical fluctuation of the background templates. The "*" in the function name indicates for which categories the "low-statistics" configuration of the SS fits (different in range and initial values, but with no physical impact on the spurious signal) was run. As in the nominal case, we require $P(\chi^2) > 1\%$. The stat uncertainty quoted is the uncertainty on the template due to Monte Carlo statistics. 
 
 \begin{table}[!h]
    \centering  \scriptsize
@@ -691,11 +693,7 @@ GG2H\_GE2J\_MJJ\_0\_350\_PTH\_120\_200\_\_0 & ExpPoly2 &100&0.222&1.29&0&0.555&0
       \end{tabular}
 }
       \caption{
-The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}.
-   In the mass range 120 GeV to 130 GeV, $S$ is the maximum fitted spurious signal yield, $\delta S$ is the associated uncertainty on the data, and $S_{ref}$ is the expected size of Higgs signal events.
-   The $\zeta$ is the maximum fitted spurious signal yield which is accommodate to $2\sigma$ statistical fluctuation of the background templates.
-   The "*" in the function name indicates for which categories the "low-statistic" configuration of the SS fits (different in range and initial values) was run. Like the nominal case, we require $P(\chi^2) > 1\%$. The stat uncertainty quoted is the uncertainty on the template due to Monte Carlo statistics. The functional form is chosen using a relaxed spurious signal test applied to the unsmoothed templates.
-      \label{tab:spurious_sig_gp} }
+The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}. The functional form is chosen using a relaxed spurious signal test applied to the unsmoothed templates. \label{tab:spurious_sig_gp} }
 \end{table}
 
 
@@ -764,12 +762,7 @@ QQ2HQQ\_0J\_\_0 &N/A&N/A&N/A&N/A&N/A&N/A&N/A&1.33966217711132\\
       \end{tabular}
 }
       \caption{
-The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}.
-   In the mass range 120 GeV to 130 GeV, $S$ is the maximum fitted spurious signal yield, $\delta S$ is the associated uncertainty on the data, and $S_{ref}$ is the expected size of Higgs signal events.
-   The $\zeta$ is the maximum fitted spurious signal yield which is accommodate to $2\sigma$ statistical fluctuation of the background templates.
-   The "*" in the function name indicates for which categories the "low-statistic" configuration of the SS fits (different in range and initial values) was run.
-   Like the nominal case, we require $P(\chi^2) > 1\%$. The stat uncertainty quoted is the uncertainty on the template due to Monte Carlo statistics. The functional form is chosen using a relaxed spurious signal test applied to the unsmoothed templates. 
-   \label{tab:spurious_sig_gp2}   }   
+The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}. The functional form is chosen using a relaxed spurious signal test applied to the unsmoothed templates. \label{tab:spurious_sig_gp2}   }   
 \end{table}
 
 \begin{table}[!h]
@@ -943,11 +936,7 @@ GG2H\_GE2J\_MJJ\_0\_350\_PTH\_120\_200\_\_0 &ExpPoly2&100&0.222&1.29&0.555&0.455
       \end{tabular}
 }
       \caption{
-The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}.
-   In the mass range 120 GeV to 130 GeV, $S$ is the maximum fitted spurious signal yield, $\delta S$ is the associated uncertainty on the data, and $S_{ref}$ is the expected size of Higgs signal events.
-   The $\zeta$ is the maximum fitted spurious signal yield which is accommodate to $2\sigma$ statistical fluctuation of the background templates.
-   The "*" in the function name indicates for which categories the "low-statistic" configuration of the SS fits (different in range and initial values) was run. Like the nominal case, we require $P(\chi^2) > 1\%$. The stat uncertainty quoted is the uncertainty on the template due to Monte Carlo statistics. The functional form is chosen using a non-relaxed spurious signal test applied to the smoothed templates.
-      \label{tab:spurious_sig_gptight} }
+The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}. The functional form is chosen using a non-relaxed spurious signal test applied to the smoothed templates. \label{tab:spurious_sig_gptight} }
 \end{table}
 
 
@@ -1016,12 +1005,8 @@ The final background modelling decision and the size of spurious signal uncertai
       \end{tabular}
 }
       \caption{
-The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}.
-   In the mass range 120 GeV to 130 GeV, $S$ is the maximum fitted spurious signal yield, $\delta S$ is the associated uncertainty on the data, and $S_{ref}$ is the expected size of Higgs signal events.
-   The $\zeta$ is the maximum fitted spurious signal yield which is accommodate to $2\sigma$ statistical fluctuation of the background templates.
-   The "*" in the function name indicates for which categories the "low-statistic" configuration of the SS fits (different in range and initial values) was run.
-   Like the nominal case, we require $P(\chi^2) > 1\%$. The stat uncertainty quoted is the uncertainty on the template due to Monte Carlo statistics. The functional form is chosen using a non-relaxed spurious signal test applied to the smoothed templates. 
-   \label{tab:spurious_sig_gp2}   }   
+The final background modelling decision and the size of spurious signal uncertainties. The reported number here is the base SS yield, without the bias uncertainty applied; the spurious signal with the bias is used in \ref{tab:comp_smooth_unsmooth1} and \ref{tab:comp_smooth_unsmooth2}. The functional form is chosen using a non-relaxed spurious signal test applied to the smoothed templates.
+   \label{tab:spurious_sig_gptight2}   }   
 \end{table}
 
 \begin{table}[!h]

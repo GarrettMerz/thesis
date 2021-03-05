@@ -1,58 +1,32 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-Case mismatch error between cite keys Geant4 and GEANT4
----line 409 of file thesis.aux
- : \citation{Geant4
- :                 }
-I'm skipping whatever remains of this command
 The style file: aiaa.bst
 Database file #1: ./bib/thesis-bib.bib
-I was expecting a `,' or a `}'---line 73 of file ./bib/thesis-bib.bib
- :    
- :    volume={565},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 732 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 806 of file ./bib/thesis-bib.bib
  :    
  :    year={2008},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1300 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 1517 of file ./bib/thesis-bib.bib
  :       
  :       title         = "{Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector. Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector}",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1508 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 1725 of file ./bib/thesis-bib.bib
  : 
  : @article{purity2,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "skopt" isn't style-file defined
---line 1577 of file ./bib/thesis-bib.bib
-Repeated entry---line 1773 of file ./bib/thesis-bib.bib
+--line 1794 of file ./bib/thesis-bib.bib
+Repeated entry---line 1990 of file ./bib/thesis-bib.bib
  : @article{Higgsmass
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "Hyneman" isn't style-file defined
---line 1932 of file ./bib/thesis-bib.bib
-Warning--I didn't find a database entry for "CKM"
-Warning--I didn't find a database entry for "Sakharov"
-Warning--I didn't find a database entry for "Higgs"
-Warning--I didn't find a database entry for "YellowReport1"
-Warning--I didn't find a database entry for "Aad_2016"
-Warning--I didn't find a database entry for "Khachatryan_2016"
-Warning--I didn't find a database entry for "Sirunyan_2019"
-Warning--I didn't find a database entry for "Zhang_2011"
-Warning--I didn't find a database entry for "Ellis"
-Warning--I didn't find a database entry for "Brod_2013"
-Warning--I didn't find a database entry for "Aaboud_2018"
-Warning--I didn't find a database entry for "Maltoni_2001"
-Warning--I didn't find a database entry for "Cacciari_2008"
-Warning--I didn't find a database entry for "STXS_cross_sections"
-Warning--I didn't find a database entry for "Stopping"
+--line 2136 of file ./bib/thesis-bib.bib
 Warning--I didn't find a database entry for "Boudreau"
-Warning--I didn't find a database entry for "Pythia"
 Warning--I didn't find a database entry for "CERN-PH-EP-2015-304"
 Warning--I didn't find a database entry for "EMcalib"
 Warning--I didn't find a database entry for "DemartintWH"
@@ -67,11 +41,10 @@ Warning--I didn't find a database entry for "CouplingsRun2"
 Warning--I didn't find a database entry for "Asimov"
 Warning--I didn't find a database entry for "GPprior"
 Warning--empty author in LEPExperiments
-Warning--empty journal in LEPExperiments
-Warning--empty year in LEPExperiments
 Warning--empty author in Couplingsanalysis
 Warning--empty publisher in YellowReport4
 Warning--empty journal in LHCHiggsCrossSectionWorkingGroup
+Warning--empty author in couplings80fb
 Warning--can't use both author and editor fields in SPS
 Warning--empty publisher in SPS
 Warning--empty journal in LHCRing
@@ -86,6 +59,7 @@ Warning--empty author in LAr_TDR
 Warning--empty journal in LAr_TDR
 Warning--empty title in CSCs
 Warning--empty note in TGCWheel
+Warning--empty author in Pythia8.2
 Warning--empty year in Herwig
 Warning--empty note in CERN-EX-1301009
 Warning--empty author in ATL-PHYS-PUB-2017-022
@@ -94,7 +68,6 @@ Warning--empty journal in CERN-PH-EP-2015-216
 Warning--empty year in CERN-PH-EP-2015-216
 Warning--empty author in ATL-PHYS-PUB-2017-013
 Warning--empty pages in LightGBM
-Warning--empty author in Pythia8.2
 Warning--empty author in A3
 Warning--empty author in A14
 Warning--empty author in purity1
@@ -105,46 +78,45 @@ Warning--there's a number but no volume in JSConway
 Warning--empty author in ATLAS-CONF-2019-004
 Warning--empty author in MET2
 Warning--empty journal in kappaFW
-Warning--empty author in couplings80fb
-You've used 143 entries,
+You've used 159 entries,
             2292 wiz_defined-function locations,
-            1417 strings with 26627 characters,
-and the built_in function-call counts, 28515 in all, are:
-= -- 2087
-> -- 1057
-< -- 100
-+ -- 432
-- -- 289
-* -- 3160
-:= -- 4094
-add.period$ -- 273
-call.type$ -- 143
+            1466 strings with 28392 characters,
+and the built_in function-call counts, 31587 in all, are:
+= -- 2314
+> -- 1166
+< -- 111
++ -- 477
+- -- 318
+* -- 3507
+:= -- 4540
+add.period$ -- 304
+call.type$ -- 159
 change.case$ -- 2
 chr.to.int$ -- 3
-cite$ -- 181
-duplicate$ -- 1435
-empty$ -- 3105
-format.name$ -- 289
-if$ -- 6084
+cite$ -- 195
+duplicate$ -- 1597
+empty$ -- 3444
+format.name$ -- 318
+if$ -- 6738
 int.to.chr$ -- 0
-int.to.str$ -- 143
-missing$ -- 124
-newline$ -- 433
-num.names$ -- 128
-pop$ -- 290
+int.to.str$ -- 159
+missing$ -- 141
+newline$ -- 481
+num.names$ -- 144
+pop$ -- 312
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 504
+skip$ -- 562
 stack$ -- 0
-substring$ -- 1888
-swap$ -- 517
-text.length$ -- 99
+substring$ -- 2068
+swap$ -- 581
+text.length$ -- 110
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 38
-while$ -- 211
-width$ -- 146
-write$ -- 1259
-(There were 7 error messages)
+warning$ -- 36
+while$ -- 237
+width$ -- 162
+write$ -- 1400
+(There were 5 error messages)

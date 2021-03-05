@@ -12,7 +12,8 @@ Chatrchyan, S. e.~a., \enquote{Observation of a new boson at a mass of 125 GeV
   No.~1, Sep 2012, pp.~30–61.
 
 \bibitem{LEPExperiments}
-\enquote{Search for the Standard Model Higgs boson at LEP,} .
+\enquote{Search for the Standard Model Higgs boson at LEP,} {\em Physics
+  Letters B\/}, Vol.~565, Jul 2003, pp.~61–75.
 
 \bibitem{ttH}
 Aaboud, M., Aad, G., Abbott, B., Abdinov, O., Abeloos, B., Abhayasinghe, D.,
@@ -34,8 +35,8 @@ Aad, G. e.~a., \enquote{CP Properties of Higgs Boson Interactions with Top
   ATLAS-CONF-2020-026, CERN, Geneva, Aug 2020.
 
 \bibitem{Peskin}
-Peskin, M.~E. and Schroeder, D.~V., {\em {An introduction to quantum field
-  theory}\/}, Westview, Boulder, CO, 1995, Includes exercises.
+Peskin, M.~E. and Schroeder, D.~V., {\em {An Introduction to Quantum field
+  Theory}\/}, Westview, Boulder, CO, 1995.
 
 \bibitem{kane_2017}
 Kane, G., {\em Modern Elementary Particle Physics: Explaining and Extending the
@@ -45,9 +46,28 @@ Kane, G., {\em Modern Elementary Particle Physics: Explaining and Extending the
 Griffiths, D.~J., {\em {Introduction to elementary particles; 2nd rev.
   version}\/}, Physics textbook, Wiley, New York, NY, 2008.
 
+\bibitem{CKM1}
+Cabibbo, N., \enquote{Unitary Symmetry and Leptonic Decays,} {\em Phys. Rev.
+  Lett.\/}, Vol.~10, Jun 1963, pp.~531--533.
+
+\bibitem{CKM2}
+Kobayashi, M. and Maskawa, T., \enquote{{CP-Violation in the Renormalizable
+  Theory of Weak Interaction},} {\em Progress of Theoretical Physics\/},
+  Vol.~49, No.~2, 02 1973, pp.~652--657.
+
 \bibitem{WikipediaSM}
-{Wikipedia Contributors}, \enquote{Standard Model,} 2021, [Accessed 15 February
+{Wikipedia Contributors}, \enquote{Standard Model,} 2021,
+  https:\/\/en.wikipedia.org\/wiki\/Standard\_Model. [Accessed 15 February
   2021].
+
+\bibitem{Sakharov}
+Sakharov, A.~D., \enquote{Violation of CP invariance, C asymmetry, and baryon
+  asymmetry of the universe,} {\em Soviet Physics Uspekhi\/}, Vol.~34, No.~5,
+  may 1991, pp.~392--393.
+
+\bibitem{Higgs}
+Higgs, P.~W., \enquote{Broken Symmetries and the Masses of Gauge Bosons,} {\em
+  Phys. Rev. Lett.\/}, Vol.~13, Oct 1964, pp.~508--509.
 
 \bibitem{EllisHiggs}
 Ellis, J., Gaillard, M.~K., and Nanopoulos, D.~V., \enquote{A Historical
@@ -55,15 +75,17 @@ Ellis, J., Gaillard, M.~K., and Nanopoulos, D.~V., \enquote{A Historical
   Aug 2016, pp.~255–274.
 
 \bibitem{FeynmanMaker}
-{Randle-Conde, Aidan}, \enquote{Feynman Diagram Maker,} 2015, [Accessed 15
-  February 2021].
+{Randle-Conde, Aidan}, \enquote{Feynman Diagram Maker,} 2015,
+  https:\/\/www.aidansean.com\/feynman\/. [Accessed 15 February 2021].
+
+\bibitem{YellowReport1}
+Dittmaier, S. e.~a., \enquote{{Handbook of LHC Higgs Cross Sections: 1.
+  Inclusive Observables},} {\em CERN-2011-002\/}, CERN, Geneva, 2011.
 
 \bibitem{YellowReport4}
 de~Florian, D., e.~a., {\em {Handbook of LHC Higgs Cross Sections: 4.
   Deciphering the Nature of the Higgs Sector}\/}, CERN Yellow Reports:
-  Monographs, Oct 2016, 869 pages, 295 figures, 248 tables and 1645 citations.
-  Working Group web page:
-  https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCHXSWG.
+  Monographs, Oct 2016.
 
 \bibitem{FedericotH}
 Demartin, F., Maltoni, F., Mawatari, K., and Zaro, M., \enquote{{Higgs
@@ -85,16 +107,72 @@ Aad, G. e.~a., \enquote{Combined measurements of Higgs boson production and
   $\sqrt{s}=13$ TeV collected with the ATLAS experiment,} {\em Phys. Rev. D\/},
   Vol.~101, Jan 2020, pp.~012002.
 
+\bibitem{Aad_2016}
+Aad, G. e.~a., \enquote{Test of CP invariance in vector-boson fusion production
+  of the Higgs boson using the Optimal Observable method in the ditau decay
+  channel with the ATLAS detector,} {\em The European Physical Journal C\/},
+  Vol.~76, No.~12, Nov 2016.
+
+\bibitem{Khachatryan_2016}
+Khachatryan, V. e.~a., \enquote{Combined search for anomalous pseudoscalar
+  $HVV$ couplings in $VH(H \rightarrow b\bar{b})$ production and $H \rightarrow
+  VV$ decay,} {\em Physics Letters B\/}, Vol.~759, Aug 2016, pp.~672–696.
+
+\bibitem{Sirunyan_2019}
+Sirunyan, A. M. e.~a., \enquote{Measurements of the Higgs boson width and
+  anomalous $HVV$ couplings from on-shell and off-shell production in the
+  four-lepton final state,} {\em Physical Review D\/}, Vol.~99, No.~11, Jun
+  2019.
+
+\bibitem{Zhang_2011}
+Zhang, C. and Willenbrock, S., \enquote{Effective-field-theory approach to
+  top-quark production and decay,} {\em Physical Review D\/}, Vol.~83, No.~3,
+  Feb 2011.
+
+\bibitem{Ellis}
+Ellis, J., Hwang, D.~S., Sakurai, K., and Takeuchi, M., \enquote{Disentangling
+  Higgs-top couplings in associated production,} {\em Journal of High Energy
+  Physics\/}, Vol.~2014, No.~4, Apr 2014.
+
+\bibitem{Brod_2013}
+Brod, J., Haisch, U., and Zupan, J., \enquote{Constraints on CP-violating Higgs
+  couplings to the third generation,} {\em Journal of High Energy Physics\/},
+  Vol.~2013, No.~11, Nov 2013.
+
+\bibitem{Aaboud_2018}
+Aaboud, M. e.~a., \enquote{Measurements of Higgs boson properties in the
+  diphoton decay channel with $36 fb^{-1}$ of $pp$ collision data at $\sqrt{s}
+  = 13$ TeV with the ATLAS detector,} {\em Physical Review D\/}, Vol.~98,
+  No.~5, Sep 2018.
+
+\bibitem{couplings80fb}
+\enquote{{Measurements of Higgs boson properties in the diphoton decay channel
+  using $80 fb^{-1}$ of $pp$ collision data at $\sqrt{s} = 13$ TeV with the
+  ATLAS detector},} Tech. Rep. ATLAS-CONF-2018-028, CERN, Geneva, Jul 2018.
+
 \bibitem{HC}
 Demartin, F., Maltoni, F., Mawatari, K., Page, B., and Zaro, M., \enquote{Higgs
   characterisation at NLO in QCD: CP properties of the top-quark Yukawa
   interaction,} {\em The European Physical Journal C\/}, Vol.~74, No.~9, Sep
   2014.
 
+\bibitem{Maltoni_2001}
+Maltoni, F., Paul, K., Stelzer, T., and Willenbrock, S., \enquote{Associated
+  production of the Higgs boson and a single top quark at hadron colliders,}
+  {\em Physical Review D\/}, Vol.~64, No.~9, Oct 2001.
+
+\bibitem{antikt}
+Cacciari, M., Salam, G.~P., and Soyez, G., \enquote{The anti-kt jet clustering
+  algorithm,} {\em Journal of High Energy Physics\/}, Vol.~2008, No.~04, Apr
+  2008, pp.~063–063.
+
+\bibitem{LHCTDR}
+Brüning, O. S. e.~a., {\em {LHC Design Report}\/}, CERN Yellow Reports:
+  Monographs, CERN, Geneva, 2004.
+
 \bibitem{SPS}
 Gilardoni, Simone, e.~a., {\em {Fifty years of the CERN Proton Synchrotron:
-  Volume 2}\/}, CERN Yellow Reports: Monographs, Sep 2013, Comments: 58 pages,
-  published as CERN Yellow Report https://cds.cern.ch/record/1597087?ln=en.
+  Volume 2}\/}, CERN Yellow Reports: Monographs, Sep 2013.
 
 \bibitem{LHCRing}
 Mobs, E., \enquote{{The CERN accelerator complex - 2019},} Jul 2019, General
@@ -138,14 +216,12 @@ Diehl, E., \enquote{Calibration and Performance of the Precision Chambers of
 
 \bibitem{ATLAS_Jinst}
 Aad, G., e.~a., \enquote{{The ATLAS Experiment at the CERN Large Hadron
-  Collider},} {\em JINST\/}, Vol.~3, 2008, pp.~S08003. 437 p, Also published by
-  CERN Geneva in 2010.
+  Collider},} {\em JINST\/}, Vol.~3, 2008, pp.~S08003. 437 p.
 
 \bibitem{coords}
 Schott, M. and Dunford, M., \enquote{{Review of single vector boson production
   in $pp$ collisions at $\sqrt{s} = 7$ TeV},} {\em Eur. Phys. J. C\/}, Vol.~74,
-  No. arXiv:1405.1160, May 2014, pp.~60 p, Comments: 60 pages, 64 figures, For
-  Eur. Phys. J. C.
+  No. arXiv:1405.1160, May 2014, pp.~60 p.
 
 \bibitem{ID}
 {\em {ATLAS inner detector: Technical Design Report, 1}\/}, Technical design
@@ -210,6 +286,11 @@ D.~E.~{Baynham}, e.~a., \enquote{Engineering status of the superconducting end
   2008, pp.~2137--2142, Proceedings of the 20th International Symposium on
   Superconductivity (ISS 2007).
 
+\bibitem{Stopping}
+Groom, D.~E., Mokhov, N.~V., and Striganov, S.~I., \enquote{Muon stopping power
+  and range tables 10 MeV–100 TeV,} {\em Atomic Data and Nuclear Data
+  Tables\/}, Vol.~78, No.~2, 2001, pp.~183--356.
+
 \bibitem{PDG}
 Zyla, P. e.~a., \enquote{{Review of Particle Physics},} {\em PTEP\/},
   Vol.~2020, No.~8, 2020, pp.~083C01.
@@ -240,6 +321,15 @@ Alwall, J. e.~a., \enquote{The automated computation of tree-level and
   next-to-leading order differential cross sections, and their matching to
   parton shower simulations,} {\em Journal of High Energy Physics\/},
   Vol.~2014, No.~7, Jul 2014.
+
+\bibitem{Pythia8.1}
+Sjöstrand, T., Mrenna, S., and Skands, P., \enquote{A brief introduction to
+  PYTHIA 8.1,} {\em Computer Physics Communications\/}, Vol.~178, No.~11, Jun
+  2008, pp.~852–867.
+
+\bibitem{Pythia8.2}
+\enquote{An introduction to PYTHIA 8.2,} {\em Computer Physics
+  Communications\/}, Vol.~191, Jun 2015, pp.~159–177.
 
 \bibitem{Herwig}
 Bähr, M. e.~a., \enquote{Herwig++ physics and manual,} {\em The European
@@ -302,6 +392,13 @@ Nomidis, I., \enquote{{Event selection, performance and background estimation
   in the $H \rightarrow \gamma\gamma$ channel with Run-2 data},} Tech. Rep.
   ATL-COM-PHYS-2020-378, CERN, Geneva, May 2020.
 
+\bibitem{1408.7084}
+Aad, G., Abbott, B., Abdallah, J., Abdel~Khalek, S., Abdinov, O., Aben, R.,
+  Abi, B., Abolins, M., AbouZeid, O.~S., Abramowicz, H., and et~al.,
+  \enquote{Measurement of Higgs boson production in the diphoton decay channel
+  inppcollisions at center-of-mass energies of 7 and 8 TeV with the ATLAS
+  detector,} {\em Physical Review D\/}, Vol.~90, No.~11, Dec 2014.
+
 \bibitem{kt}
 Ellis, S.~D. and Soper, D.~E., \enquote{Successive combination jet algorithm
   for hadron collisions,} {\em Physical Review D\/}, Vol.~48, No.~7, Oct 1993,
@@ -311,11 +408,6 @@ Ellis, S.~D. and Soper, D.~E., \enquote{Successive combination jet algorithm
 Dokshitzer, Y., Leder, G., Moretti, S., and Webber, B., \enquote{Better jet
   clustering algorithms,} {\em Journal of High Energy Physics\/}, Vol.~1997,
   No.~08, Aug 1997, pp.~001–001.
-
-\bibitem{antikt}
-Cacciari, M., Salam, G.~P., and Soyez, G., \enquote{The anti-kt jet clustering
-  algorithm,} {\em Journal of High Energy Physics\/}, Vol.~2008, No.~04, Apr
-  2008, pp.~063–063.
 
 \bibitem{PFlow}
 Aaboud, M. e.~a., \enquote{Jet reconstruction and performance using particle
@@ -395,15 +487,6 @@ Aad, G. e.~a., \enquote{Performance of electron and photon triggers in ATLAS
 Alioli, S., Nason, P., Oleari, C., and Re, E., \enquote{A general framework for
   implementing NLO calculations in shower Monte Carlo programs: the POWHEG
   BOX,} {\em Journal of High Energy Physics\/}, Vol.~2010, No.~6, Jun 2010.
-
-\bibitem{Pythia8.1}
-Sjöstrand, T., Mrenna, S., and Skands, P., \enquote{A brief introduction to
-  PYTHIA 8.1,} {\em Computer Physics Communications\/}, Vol.~178, No.~11, Jun
-  2008, pp.~852–867.
-
-\bibitem{Pythia8.2}
-\enquote{An introduction to PYTHIA 8.2,} {\em Computer Physics
-  Communications\/}, Vol.~191, Jun 2015, pp.~159–177.
 
 \bibitem{Herwig7}
 Bellm, J. e.~a., \enquote{Herwig 7.0/Herwig++ 3.0 release note,} {\em The
@@ -611,11 +694,6 @@ Read, A.~L., \enquote{{Presentation of search results: The CL(s) technique},}
 David, A. e.~a., \enquote{{LHC HXSWG interim recommendations to explore the
   coupling structure of a Higgs-like particle},} 9 2012.
 
-\bibitem{couplings80fb}
-\enquote{{Measurements of Higgs boson properties in the diphoton decay channel
-  using $80 fb^{-1}$ of $pp$ collision data at $\sqrt{s} = 13$ TeV with the
-  ATLAS detector},} Tech. Rep. ATLAS-CONF-2018-028, CERN, Geneva, Jul 2018.
-
 \bibitem{Powell}
 Powell, M. J.~D., \enquote{{An efficient method for finding the minimum of a
   function of several variables without calculating derivatives},} {\em The
@@ -658,11 +736,9 @@ Collaboration, A., \enquote{Jet energy scale and resolution measured in
   proton-proton collisions at $\sqrt{s}=13$ TeV with the ATLAS detector,} 2020.
 
 \bibitem{jetuncs4}
-Aad, G., Abbott, B., Abbott, D.~C., Abud, A.~A., Abeling, K., Abhayasinghe,
-  D.~K., Abidi, S.~H., AbouZeid, O.~S., Abraham, N.~L., and et~al.,
-  \enquote{ATLAS b-jet identification performance and efficiency measurement
-  with $t{\bar{t}}$ events in pp collisions at $\sqrt{s}=13$ TeV,} {\em The
-  European Physical Journal C\/}, Vol.~79, No.~11, Nov 2019.
+Aad, G. e.~a., \enquote{ATLAS b-jet identification performance and efficiency
+  measurement with $t{\bar{t}}$ events in pp collisions at $\sqrt{s}=13$ TeV,}
+  {\em The European Physical Journal C\/}, Vol.~79, No.~11, Nov 2019.
 
 \bibitem{LUCID}
 et~al., G.~A., \enquote{The new {LUCID}-2 detector for luminosity measurement

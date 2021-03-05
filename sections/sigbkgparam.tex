@@ -4,7 +4,7 @@ Additionally, parameterizing signal and background in this way allows for the re
 
 \section{Signal Modelling} \label{sec:example_section} 
 
-In collider physics analyses, one of the most common forms of signal is a "resonance", a bump in a smooth energy spectrum indicating the presence of a particle with mass given by the center of the resonance bump and lifetime given by the width $\Gamma$ of the resonance bump \cite{Peskin}. The "true underlying form" of resonances generally follow the Breit-Wigner distribution described in \ref{SlowNeutrons}; however, due to detector and beam effects, this form does not accurately describe observed data.
+In collider physics analyses, one of the most common forms of signal is a "resonance", a bump in a smooth energy spectrum indicating the presence of a particle with mass given by the center of the resonance bump and lifetime given by the width $\Gamma$ of the resonance bump \cite{Peskin}. The "true underlying form" of resonances generally follow the Breit-Wigner distribution described in \cite{SlowNeutrons}; however, due to detector and beam effects, this form does not accurately describe observed data.
 
 Instead, for both analyses discussed in this dissertation, a "Double-Sided Crystal Ball" (DSCB) function \cite{CB}\cite{DSCB} is used. The function has six parameters, two that describe the shape of its Gaussian core $\mu_{CB}$, and $\sigma_{CB}$, and two that describe the shape of each of its exponential tails: $\alpha_{low}$ and $n_{low}$; $\alpha_{high}$ and $n_{high}$. The function is defined as:
 
@@ -25,7 +25,7 @@ Because the Double-Sided Crystal Ball function depends strongly on the photon re
 \centering
 \subfloat[$gg \rightarrow H$ ( 1-jet, $120 GeV \le p_{T}^{H} < 200 GeV$)] { \includegraphics[width=0.49\textwidth]{figures/sigbkgparam/ggH_1J_120_200.pdf}\label{fig:DSCBgg2H}}
 \subfloat[\ttH]{\includegraphics[width=0.49\textwidth]{figures/sigbkgparam/ttH.pdf}\label{fig:DSCBttH}}
-\caption{DSCB shapes for two groups of categories. \ref{fig:modeling:signal:gg2H} depicts the signal shapes for two categories targeting the same STXS truth bin, one low-purity and one high-purity. \ref{fig:modeling:signal:ttH} depicts the signal shapes for three high-purity categories targeting different $p_{T}^{H}$ regions of the $ttH$ process.}
+\caption{DSCB shapes for two groups of categories. \ref{fig:DSCBgg2H} depicts the signal shapes for two categories targeting the same STXS $ggH$ truth bin, one low-purity and one high-purity. \ref{fig:DSCBttH} depicts the signal shapes for three high-purity categories targeting different $p_{T}^{H}$ regions of the $ttH$ process.}
 \label{fig:DSCB}
 \end{figure}
 
@@ -92,7 +92,7 @@ An illustration of the Wald test in two of the Couplings categories is shown in 
 \label{fig:WaldTest}
 \end{figure} 
 
-These failed fits show the limitations of current spurious signal criteria: in low-statistics categories, the Monte Carlo templates often contain large statistical fluctuations that can be fit as spurious signal. However, because spurious signal is intended to measure the mismodelling due to the choice of functional form, the presence of such fluctuations can artifically inflate the spurious signal. If the functional forms chosen because of these fluctuations have too many degrees of freedom, this can cause disastrous effects when fitting to the true data sidebands, as statistical fluctuations in data will dominate. This is the motivation for introducing Gaussian Process Regression (GPR) smoothing, discussed in appendix \ref{sec:gpr}. At the time of this writing, this novel smoothing procedure is currently being implemented in the Coupling analysis; a discussion of the procedure and the improvements to the spurious signal that result are given in appendix \ref{sec:gpr}, while extensive validation of the smoothing procedure using toy tests is given in appendix \ref{sec:gpr_validation}.
+These failed fits show the limitations of current spurious signal criteria: in low-statistics categories, the Monte Carlo templates often contain large statistical fluctuations that can be fit as spurious signal. However, because spurious signal is intended to measure the mismodelling due to the choice of functional form, the presence of such fluctuations can artifically inflate the spurious signal. If the functional forms chosen because of these fluctuations have too many degrees of freedom, this can cause disastrous effects when fitting to the true data sidebands, as statistical fluctuations in data will dominate. This is the motivation for introducing Gaussian Process Regression (GPR) smoothing, discussed in appendix \ref{app:gpr_templates}. At the time of this writing, this novel smoothing procedure is currently being implemented in the Couplings analysis; a discussion of the procedure and the improvements to the spurious signal that result are given in appendix \ref{app:gpr_templates}, while extensive validation of the smoothing procedure using toy tests is given in appendix \ref{app:gpr_validation}.
 
 \subsubsection{Background Templates} \label{sec:bkgtemplates} 
 
@@ -125,12 +125,12 @@ After the purity fractions are calculated in each category, the shapes of the $\
 
 \section{Likelihood Fitting and Asimov Data} \label{sec:likelihoodfit} 
 
-The fits performed in all analyses discussed in this dissertation use a test statistic called a Profile Likelihood Ratio. The likelihood ratio  is a Bayesian variable that is simply defined as $\mathcal{L}(\vec{x},\vec{\theta}) = P(\vec{x} | vec{\theta})$  for a set of observed data points $\vec{x}$ and a set of additional nuisance-parameter variables $\vec{theta}$ such as background normalization, shape, and systematic uncertainties \cite{Cowan}.
+The fits performed in all analyses discussed in this dissertation use a test statistic called a Profile Likelihood Ratio. The likelihood ratio  is a Bayesian variable that is simply defined as $\mathcal{L}(\vec{x},\vec{\theta}) = P(\vec{x} | \vec{\theta})$  for a set of observed data points $\vec{x}$ and a set of additional nuisance-parameter variables $\vec{\theta}$ such as background normalization, shape, and systematic uncertainties \cite{Cowan}.
 
 For independent, identically distributed Poisson variables (i.e., the number of signal and background events in a given histogram bin $i$), we can parameterize the likelihood as:
 
 \begin{equation}
-\mathcal{L}(\mu, N_{b}, \vec{zeta}) = \prod_{i}^{N}{\frac{(\mu \times s_{i}+ N_{b} \times b_{i}(\vec(\zeta)))^{n_{i}} \times e^{-(\mu \times s_{i}+ N_{b} \times b_{i}(\vec(\zeta))) }}{n_{i}!}}
+\mathcal{L}(\mu, N_{b}, \vec{\zeta}) = \prod_{i}^{N}{\frac{(\mu \times s_{i}+ N_{b} \times b_{i}(\vec(\zeta)))^{n_{i}} \times e^{-(\mu \times s_{i}+ N_{b} \times b_{i}(\vec(\zeta))) }}{n_{i}!}}
 \end{equation}
 
 for signal strength $\mu$, expected signal and background probability distributions $s_{i}$ and $b_{i}$ in each bin, nuisance parameters $\vec{\theta} = (N_{b}, \vec{\zeta})$ governing the total background normalization and shape, and $n_{i}$ observed number of events in bin i. Likelihoods can also be constructed in an unbinned manner by taking the continuous form of $s_{i}$ and $b_{i}$ as a function of $m_{\gamma\gamma}$. For a multi-category analysis, the total likelihood is taken as the product of the likelihood in each category.
@@ -140,9 +140,9 @@ Using this, we can construct the Profile Likelihood Ratio as:
 \lambda(\mu) = \frac{\mathcal{L}(\mu, \hat{\hat{\theta}}(\mu))} {\mathcal{L}(\hat{\mu}, \hat{\theta}}
 \end{equation}
 
-where $\hat{\hat{\theta}}(\mu)$ is the set of values of $\vec{theta}$ that conditionally maximize $\mathcal{L}$ for each given $\mu$, and $\hat{\theta}, \hat{\mu}$ are the values of $\vec{theta}$ and $\mu$ that maximize $\mathcal{L}$ globally.
+where $\hat{\hat{\theta}}(\mu)$ is the set of values of $\vec{\theta}$ that conditionally maximize $\mathcal{L}$ for each given $\mu$, and $\hat{\theta}, \hat{\mu}$ are the values of $\vec{\theta}$ and $\mu$ that maximize $\mathcal{L}$ globally.
 
-By maximizing $\lambda$, or, more commonly, by minimizing $-2ln(\lambda)$ (due to its comparative ease of computation) it is possible to extract a best-fit value for $\mu$ given a set of data. By definition, $\mu$ is the ratio of the observed signal yield to the one expected in the SM; however, it is also possible to parameterize $\mu$ in terms of other variables, such as the various $\kappa$ couplings. This parameterization is performed in both analyses dicussed in this dissertation, and is detailed further in \ref{chap:tthcpresults} and \ref{chap:couplingsresults}.
+By maximizing $\lambda$, or, more commonly, by minimizing $-2ln(\lambda)$ (due to its comparative ease of computation) it is possible to extract a best-fit value for $\mu$ given a set of data. By definition, $\mu$ is the ratio of the observed signal yield to the one expected in the SM; however, it is also possible to parameterize $\mu$ in terms of other variables, such as the various $\kappa$ couplings. This parameterization is performed in both analyses dicussed in this dissertation, and is detailed further in \ref{chap:tthcp_results} and \ref{chap:couplings_chapter}.
 
 Systematic uncertainties enter into the fit as nuisance parameters. In order to treat additional systematic uncertainties on the signal shape and yield in a manner similar to the treatment of the systematic uncertainties on the background, the Double-Sided Crystal Ball parameters $\mu_{CB}$ and $\sigma_{CB}$ that enter into the parameterization of $s_{i}$ are modified by energy scale and resolution shifts of magnitude $\sigma$ and sign $\theta$:
 

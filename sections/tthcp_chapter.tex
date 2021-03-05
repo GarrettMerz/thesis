@@ -41,7 +41,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_10c.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_10d.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_10e.pdf}
-	\caption{Distributions of training variables for the hadronic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \cite{HIGG-2018-13}. }
+	\caption{Distributions of training variables for the hadronic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \cite{ttH}. }
 	\label{fig:SBBDTvarshad}
 \end{figure}
 
@@ -79,7 +79,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11e.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11f.pdf}
 	\includegraphics[width=0.31\linewidth]{figures/tthcp_chapter/figaux_11g.pdf}
-	\caption{Distributions of training variables for the leptonic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \cite{HIGG-2018-13}.}
+	\caption{Distributions of training variables for the leptonic background-rejection BDT, trained at $79.8 fb^{-1}$. Taken from \cite{ttH}.}
 	\label{fig:SBBDTvarslep}
 \end{figure}
 
@@ -196,7 +196,7 @@ These variables are shown in Figures
 
 \subsection{CPBDT}
 
-Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \cite{TMVA} and is discussed in Appendix \ref{sec:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables.
+Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \cite{TMVA} and is discussed in Appendix \ref{app:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables.
 
 The signal samples are the CP-odd $ttH+tWH+tHjb$, added according to their predicted cross-sections, while the background samples are the CP-even $ttH+tWH+tHjb$. 50\% of the signal and background samples are used for training, 25 \% are used for categorization, and 25\% are used for testing and significance evaluation.
 
