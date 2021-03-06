@@ -714,6 +714,26 @@ Aad, G. e.~a., \enquote{{Measurements of the Higgs boson inclusive and
   $\sqrt{s} = 13 $TeV},} {\em Eur. Phys. J. C\/}, Vol.~80, No.
   arXiv:2004.03969. 10, Apr 2020, pp.~942. 92 p.
 
+\bibitem{jetuncs1}
+\enquote{{Early Inner Detector Tracking Performance in the 2015 data at
+  $\sqrt{s} = 13$ TeV},} Tech. Rep. ATL-PHYS-PUB-2015-051, CERN, Geneva, Dec
+  2015.
+
+\bibitem{jetuncs2}
+Aaboud, M. e.~a., \enquote{Reconstruction of primary vertices at the ATLAS
+  experiment in Run 1 proton–proton collisions at the LHC,} {\em The European
+  Physical Journal C\/}, Vol.~77, No.~5, May 2017.
+
+\bibitem{jetuncs3}
+Aaboud, M. e.~a., \enquote{Jet energy scale measurements and their systematic
+  uncertainties in proton-proton collisions at $\sqrt{s} = 13$ TeV with the
+  ATLAS detector,} {\em Physical Review D\/}, Vol.~96, No.~7, Oct 2017.
+
+\bibitem{jetuncs4}
+Aad, G. e.~a., \enquote{ATLAS b-jet identification performance and efficiency
+  measurement with $t{\bar{t}}$ events in pp collisions at $\sqrt{s}=13$ TeV,}
+  {\em The European Physical Journal C\/}, Vol.~79, No.~11, Nov 2019.
+
 \bibitem{MET1}
 Aaboud, M. e.~a., \enquote{Performance of missing transverse momentum
   reconstruction with the ATLAS detector using proton–proton collisions at
@@ -752,11 +772,6 @@ Lindley, D.~V., \enquote{On a Measure of the Information Provided by an
 \bibitem{coups127}
 Collaboration, A., \enquote{Jet energy scale and resolution measured in
   proton-proton collisions at $\sqrt{s}=13$ TeV with the ATLAS detector,} 2020.
-
-\bibitem{jetuncs4}
-Aad, G. e.~a., \enquote{ATLAS b-jet identification performance and efficiency
-  measurement with $t{\bar{t}}$ events in pp collisions at $\sqrt{s}=13$ TeV,}
-  {\em The European Physical Journal C\/}, Vol.~79, No.~11, Nov 2019.
 
 \bibitem{LUCID}
 et~al., G.~A., \enquote{The new {LUCID}-2 detector for luminosity measurement

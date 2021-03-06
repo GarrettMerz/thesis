@@ -21,6 +21,7 @@ In both Run-2 HGam analyses discussed in this dissertation, we use the full LHC 
 The trigger used to select events is the diphoton trigger HLT\_g35\_loose\_g25\_loose (for 2015-2016 data) and HLT\_g35\_medium\_g25\_medium (for 2017-2018 data). Both triggers require two photon candidates, one with a transverse energy $E_{T}$ of at least 35 GeV and the other with transverse energy of at least 25 GeV. The 2015-2016 trigger requires two photons that pass the "loose" ID requirement, while the 2017-2018 trigger requires two photons that pass the "medium" ID requirement (the cut was tightened due to increased luminosity and pileup). The trigger was calibrated using radiative Z decays, and is observed to be greater than 95\% efficient for each photon as long as it is 5 GeV above the trigger threshold \cite{triggerperformance}.
 
 \begin{figure}
+\centering
 \includegraphics[width=0.5\linewidth]{figures/datamc_chapter/trigger.png}
 \caption{Efficiency of the trigger for the different years of the run-2 data taking period as a function of subleading photon $E_{T}$.}
 \end{figure}
@@ -140,9 +141,10 @@ The background for $H \rightarrow \gamma \gamma$ events is generally treated as 
 
 Both QCD continuum $\gamma\gamma$ +jets production and the various $V\gamma\gamma \rightarrow ll\gamma\gamma$ samples are simulated at leading order in QCD using the Sherpa event generator with the CT10 PDF set \cite{CT10}. Showering is performed using the default Sherpa showering tool. 
 
+\begin{sloppypar}
 $t\bar{t}\gamma\gamma$, one of the leading backgrounds in top-enriched regions, is simulated using 
 Madgraph5\_aMC@NLO with the NNPDF30 PDF set. It is showered using Pythia and tuned using the A14 tune.
-
+\end{sloppypar}
 
 \begin{table}[h!]
   \centering

@@ -106,8 +106,8 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
 
 \begin{figure}[htbp]
   \centering
-        \subfloat[Hadronic $ttH+tHjb+tWH$]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png}}
-        \subfloat[Leptonic $ttH+tHjb+tWH$]{\includegraphics[width=0.3\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png}}
+        \subfloat[Hadronic]{\includegraphics[width=0.4\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png}}
+        \subfloat[Leptonic]{\includegraphics[width=0.4\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png}}
   \caption{SB BDT score for the sum of $ttH$, $tHjb$ and $tWH$, with relative weights according to the predicted cross sections. Shown in (a) for the hadronic channel and (b) for the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, which approximates the shape of the continuum background.  }
   \label{fig:moriondtotal}
 \end{figure}
@@ -119,7 +119,7 @@ To construct a BDT to discriminate between CP-even and CP-odd $ttH+tH$, a number
 
 From these plots, it is observed that the strongest variable is the Higgs boson $p_{T}$ : CP-odd $ttH$ and $tH$ have a much more boosted Higgs than CP-even $ttH$ and $tH$, and are more central in $\eta$. Similarly, the angular separation $\Delta \eta$ between the top and anti-top is much larger in CP-odd $ttH$, while the top and anti-top are more back-to-back in azimuthal angle $\Delta \phi$ in CP-even $ttH$ than in CP-odd $ttH$. In $tHjb$ events, it is apparent that the top $p_{T}$ and $\eta$ also have discriminatory power. The mass of the Higgs + leading top system also offers discriminatory power- for $ttH$ and $tWH$ events it increases with $\alpha$, while for $tHjb$ events it decreases with $\alpha$ .
 
-These variables are shown in Figures
+These variables are shown in Figures \ref{fig:ttH_truth1} - \ref{fig:tHjb_truth}.
 
 
 \begin{figure}[!ht] 
@@ -132,6 +132,13 @@ These variables are shown in Figures
       \includegraphics[width=0.35\textwidth]{figures/tthcp_chapter/observables/ttH/c_delta_eta_tt.pdf}
       \includegraphics[width=0.35\textwidth]{figures/tthcp_chapter/observables/ttH/c_delta_phi_tt.pdf}
     }
+  \end{center}
+  \caption{Truth-level distributions in $t\bar{t}H$ Monte Carlo of the Higgs boson $p_{T}$ and $\eta$ (top row) and angular separation between top and anti-top quarks (bottom row) for different values of the CP mixing angle $\alpha$.}
+  \label{fig:ttH_truth1}
+\end{figure}
+
+\begin{figure}[!ht] 
+  \begin{center}
     \mbox{ 
       \includegraphics[width=0.35\textwidth]{figures/tthcp_chapter/observables/ttH/c_t_pt.pdf}
       \includegraphics[width=0.35\textwidth]{figures/tthcp_chapter/observables/ttH/c_t_eta.pdf}
@@ -140,8 +147,8 @@ These variables are shown in Figures
       \includegraphics[width=0.35\textwidth]{figures/tthcp_chapter/observables/ttH/c_tH_m.pdf}
     }
   \end{center}
-  \caption{Truth-level distributions in $t\bar{t}H$ Monte Carlo of the Higgs boson $p_{T}$ and $\eta$ (top), angular separation between top and anti-top quarks (second row), top quark $p_{T}$ and $\eta$ (third row) and invariant mass of the top-Higgs system (bottom) for different values of the CP mixing angle $\alpha$.}
-  \label{fig:ttH_truth}
+  \caption{Truth-level distributions in $t\bar{t}H$ Monte Carlo of the top quark $p_{T}$ and $\eta$ (top row) and invariant mass of the top-Higgs system (bottom row) for different values of the CP mixing angle $\alpha$.}
+  \label{fig:ttH_truth2}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -150,7 +157,7 @@ These variables are shown in Figures
 	\subfloat[Signed $\Delta\phi(t,W)$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/observables/ttH/c_delta_phi_tW_signed.png}} 
 	\subfloat[Signed $\Delta\phi(t,W)$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/observables/ttH/c_delta_phi_tj_signed.png}} 
   \caption{The parton-level signed $\Delta\phi$ between (a) the two top quarks in $ttH$, (b) a top quark and the daughter W of the other top quark, and (c) a top quark and the highest $p_{T}$ light jet from the hadronic decay of the other top's daughter W.}
-  \label{fig:ttH_truth2}
+  \label{fig:ttH_truth3}
 \end{figure}
 \clearpage
 
@@ -388,12 +395,12 @@ P(k, \lambda) = \frac{\lambda^{k}e^{-\lambda}}{k!}
 
 To determine the compatibility of the observed number of events with a given signal hypothesis H vs the Standard Model, it is useful to define a test statistic called the Poisson Number-Counting Significance:
 
-\begin{flalign}
+\begin{align}
 \begin{aligned}
 Z^{2} = -2 ln(\frac{P(S + B, S_{H} + B)}{P(S + B, S + B)}) \\
 = 2(S + B) ln(\frac{(S + B)}{(S_{H} + B)} -2(S + B) + 2(S_{H} + B)
 \end{aligned}
-\end{flalign}
+\end{align}
 
 Where S and B are the Standard-Model predicted signal and background and $S_{H}$ is the predicted signal under hypothesis H.
 
@@ -417,12 +424,12 @@ To determine the total significance for either of these metrics across a number 
 
 To estimate the number of continuum background events B in the diphoton mass signal region in each category (that is, $123 GeV < m_{\gamma\gamma} < 127 GeV$), a scaling method is applied to the NTI data control region in the mass sidebands (that is, $105 GeV < m_{\gamma\gamma} < 123 GeV$ or $127 GeV < m_{\gamma\gamma} < 160 GeV$):
 
-\begin{flalign}
+\begin{align}
 \begin{aligned}
 N(TI,sig) = N(NTI, SBs)\times \frac{N(TI, SBs)}{N(NTI, SBs)} \times \frac{N(NTI, sig)}{N(NTI, SBs)} \\
 = N(NTI, mass sidebands) \times f_{1} \times f_{2}
 \end{aligned}
-\end{flalign}
+\end{align}
 
 Where the scale-factors $f_{1}$ and $f_{2}$ are calculated separately using the hadronic and leptonic preselection regions. The combined scale factor, $f_{1} \times f_{2}$, is found to be 0.013 for the hadronic region and 0.016 for the leptonic region. 
 
@@ -500,7 +507,7 @@ as an indication of the "signal" (i.e., difference between Standard-Model and al
 \begin{figure}
 \end{figure}
 
-Using this, the effects of major systematics can be computed, ensuring they do not need to be accounted for at the categorization stage.The 100\% ggF yield uncertainty and the Parton Shower Uncertainty (calculated by subtracting the yield in each category using the Herwig Monte Carlo samples from the yield using the Pythia samples) are shown in Table \ref{tab:systs}- in all categories, it is clear that the statistical uncertainty dominates. This can be confirmed by plotting the number-counting rejection for the CP-odd category, $Z_CP(90^{\circ})$, both with and without systematics in figure \ref{fig:ncrej_syst}. 
+Using this, the effects of major systematics can be computed, ensuring they do not need to be accounted for at the categorization stage.The 100\% ggF yield uncertainty and the Parton Shower Uncertainty (calculated by subtracting the yield in each category using the Herwig Monte Carlo samples from the yield using the Pythia samples) are shown in Table \ref{tab:systs}- in all categories, it is clear that the statistical uncertainty dominates. This can be confirmed by plotting the number-counting rejection for the CP-odd category, $Z_{CP}(90^{\circ})$, both with and without systematics in figure \ref{fig:ncrej_syst}. 
 
 
 \begin{table}[ht]

@@ -9,13 +9,13 @@ The preselection at both object and event level is detailed in Chapters \ref{cha
 
 A categorization scheme is developed to target the STXS truth bins. The categorization is an improvement over that of the previous $80 fb^{-1}$ Coupling analysis, which sorted events into categories based on a "greedy" sequential approach \cite{couplings80fb}. In the new analysis, which uses the full $139 fb^{-1}$ of data gathered by ATLAS, events are instead sorted into categories based on a unified technique that considers a number of their properties simultaneously to determine the optimal categorization scheme.
 
-Categorization proceeds in two primary steps. First, a multiclassifier Boosted Decision Tree (BDT) is trained to target STXS truth bins. A multiclassifier BDT differs from a binary BDT in that it outputs a vector discriminant corresponding to the probability that an event falls into one of a number of different regions, rather than a binary discriminant simply classifying an event as signal or background. After events are assigned into different classes targeting the STXS truth bins, they are subdivided into categories using a second binary BDT trained in each class, designed to separate Higgs signal from continuum background. The process of the BDT categorization scheme is shown in the cartoon in Figure \ref{fig:global_cat_sketch}.
+Categorization proceeds in two primary steps. First, a multiclassifier Boosted Decision Tree (BDT) is trained to target STXS truth bins. A multiclassifier BDT differs from a binary BDT in that it outputs a vector discriminant corresponding to the probability that an event falls into one of a number of different regions, rather than a binary discriminant simply classifying an event as signal or background. After events are assigned into different classes targeting the STXS truth bins, they are subdivided into categories using a second binary BDT trained in each class, designed to separate Higgs signal from continuum background. The process of the BDT categorization is shown in the cartoon in Figure \ref{fig:global_cat_sketch}.
 
 \begin{figure}[tbp]
   \centering
   \includegraphics[width=0.7\linewidth]{figures/couplings_chapter/sketch_Dopt.pdf}
+  \caption{Overview of the categorization approach. The STXS names shown in the cartoon are those of the old STXS 1.0 scheme, but are closely related to the current STXS 1.2 categories.}
   \label{fig:global_cat_sketch}
-  \caption{Overview of the categorization approach. The STXS names reported in the cartoon are related to the old STXS 1.0 scheme, but are closely related to the current STXS 1.2 categories.}
 \end{figure}
 
 The inputs to all BDTs are kinematic variables for the various objects in an event. In order to avoid sculpting of the shapes used in the statistical analysis, any variable found to be linearly correlated with $m_{\gamma \gamma}$ in the signal or background training samples by 5\% or more is removed from the list of inputs. The list of all variables used as input to both the multiclassifier BDT and the binary BDTs is given in Table \ref{tab:design:trainingvariables}.
@@ -261,7 +261,7 @@ Signal in each category is modelled using a Double-Sided Crystal Ball function, 
                 \includegraphics[width=0.3\linewidth]{figures/couplings_chapter/plot_singleRes_m125_c\i}
         }
         \begin{figure}[h]
-                \caption{Fitted Double Sided Crystal ball shapes for all the reconstructed categories of the analysis.}
+                \caption{Fitted Double Sided Crystal ball shapes for all analysis categories.}
                 \label{fig:signal_shapes}
         \end{figure}
 \end{center}

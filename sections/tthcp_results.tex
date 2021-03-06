@@ -50,7 +50,7 @@ The $ggF$ cross-section and $H \rightarrow \gamma \gamma$ branching ratio can al
 
 \section{Signal and Background Parameterization}
 
-The signal and background shapes are parameterized according to the prescription in Chapter \ref{chapter:sigbkgparam}, using a Double-Sided Crystal Ball function for the signal shape and following the spurious signal test procedure for the background parameterization. The DSCB shape does not vary noticeably with $\alpha$, so the Standard-Model Higgs signal DSCB parameterization is used for all $\alpha$ variations occurring in the analysis.
+The signal and background shapes are parameterized according to the prescription in Chapter \ref{chap:sigbkgparam}, using a Double-Sided Crystal Ball function for the signal shape and following the spurious signal test procedure for the background parameterization. The DSCB shape does not vary noticeably with $\alpha$, so the Standard-Model Higgs signal DSCB parameterization is used for all $\alpha$ variations occurring in the analysis.
 
 In all categories but one, the $tt\gamma\gamma$ Monte Carlo sample is used for the background template. However, in Hadronic Category 10, a fluctuation in the Monte Carlo causes the spurious signal test to fail- in this category, we choose NTI data as the source of the template due to its lower statistical uncertainty. DSCB parameterizations are given in Tables \ref{tab:sig_param1}-\ref{tab:sig_param2} , while the spurious signal values, template source, choice of functional forms, and fit $\chi^{2}$ probability are shown in Table \ref{tab:spuriousSignal_1}. $Z_{sp}$ denotes the max spurious signal over the statistical uncertainty on the background, while $\mu_{sp}$ denotes the max spurious signal over the expected signal yield in that category.
 
@@ -215,7 +215,7 @@ These include:
 \item Beam luminosity uncertainty \cite{ATLAS-CONF-2019-021}
 \item Trigger uncertainty \cite{trigger} \cite{triggerperformance}
 \item Pileup reweighting
-\item Jet uncertainties: energy scale, energy resolution,  flavor-tagging and flavor composition \cite{jetuncs} \cite{jetuncs} \cite{jetuncs} \cite{jetuncs}
+\item Jet uncertainties: energy scale, energy resolution,  flavor-tagging and flavor composition \cite{jetuncs1} \cite{jetuncs2} \cite{jetuncs3} \cite{jetuncs4}
 \item Photon uncertainties: energy scale and resolution (which modify the DSCB parameters as per Chapter \ref{chap:sigbkgparam}), photon ID, photon isolation \cite{CERN-EP-2019-145} \cite{photuncs}
 \item Electron/muon uncertainties: energy scale, energy resolution, electron/muon ID, electron/muon isolation \cite{CERN-EP-2019-145} \cite{photuncs} \cite{elID-CERN-EP-2018-273} \cite{CERN-EP-2016-033}
 \item MET uncertainties: \cite{MET1} \cite{MET2}
@@ -415,7 +415,7 @@ Category & $ggF$ & $ttH$ \\ \hline
 \end{tabular}
 \end{center}
 \vspace{-0.5cm}
-\caption{Generator uncertainties on $ggF$ (aMCnloPy8 $ggF+2j$ - PowhegPy8 $ggF$)/(PowhegPy8 $ggF$) and $ttH$ (PowhegPy8 $ttH$ - aMCnloPy8 $ttH$)/(aMCnloPy8 $ttH$) in each analysis category. }
+\caption{Generator uncertainties on $ggF$ (aMCnloPy8 $ggF$ - PowhegPy8 $ggF$)/(PowhegPy8 $ggF$) and $ttH$ (PowhegPy8 $ttH$ - aMCnloPy8 $ttH$)/(aMCnloPy8 $ttH$) in each analysis category. }
 \label{tab:mcgen}
 \end{table}
 
@@ -436,13 +436,12 @@ In the first interpretation, existing measurements of $\kappa_{g}$ and $\kappa_{
 
 In the second, $\kappa_{g}$ and $\kappa_{\gamma}$ are parameterized as in \cite{Ellis} in order to allow them to vary in the fit:
 
-\begin{equation}
-\kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha) 
-\end{equation}
-
-\begin{equation}
+\begin{align}
+\begin{aligned}
+\kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha) \\
 \kappa_{\gamma}^{2} = 0.08\kappa_{t}^{2}cos(\alpha)^{2} + 0.18\kappa_{t}^{2}sin(\alpha)^{2} - 0.72\kappa_{t}cos(\alpha) + 1.64
-\end{equation}
+\end{aligned}
+\end{align}
 
 The total yields are observed in Figure \ref{fig:yields} and Table \ref{tab:yields}.  
 

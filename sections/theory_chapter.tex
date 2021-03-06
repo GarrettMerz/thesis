@@ -31,13 +31,13 @@ A variety of types of fields exist, but we will discuss three at length: Klein-G
 
 Klein-Gordon fields, one of the simplest examples of a field, are real scalar-valued quantities often denoted using the symbol $\phi$. A non-interacting "free" Klein-Gordon field evolves according to the Lagrangian:
 
-\begin{flalign}
+\begin{align}
   \begin{aligned}
 \mathcal{L} = T - V \\
 =\frac{1}{2} \frac{\partial^{2} \phi}{\partial t^{2}} - \frac{1}{2} (\nabla \phi)^{2} - \frac{1}{2} m^{2} \phi^{2} \\
 =-\frac{1}{2}(\partial^{\mu}\phi)(\partial_{\mu}\phi)- \frac{1}{2} m^{2} \phi^{2}
   \end{aligned}&&&
-\end{flalign}
+\end{align}
 
 where we utilize Einstein sum notation in the last line to compress the four derivatives in the preceding expression into a single shorthand symbol. The Lagrangian of an interacting Klein-Gordon field would look similar, but would possess additional $V$ potential terms depending on the nature of the interaction. As the only scalar in the Standard Model, the observable Higgs boson is the only elementary particle to follow an interacting Klein-Gordon field equation.
 
@@ -62,47 +62,47 @@ A four-component Dirac vector field can be written in a variety of representatio
 
 In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a single Dirac vector field described by equation \ref{eq:Dirac}. We transform the field by rotating it by a constant phase $\alpha$:  $\psi \rightarrow e^{i \alpha} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha} \bar{\psi} $.
 
-\begin{flalign}
+\begin{align}
   \begin{aligned}
 \mathcal{L} = - (e^{-i \alpha} \bar{\psi})(i \gamma^{\mu} \partial_{\mu} - m) (e^{i \alpha} \psi) \\
 = - (e^{-i \alpha} e^{i \alpha})\bar{\psi} (i \gamma^{\mu} \partial_{\mu} - m)\psi \\
 = -\bar{\psi}(i \gamma^{\mu} \partial_{\mu} - m) \psi 
   \end{aligned}&&&
-\end{flalign}
+\end{align}
 
 We see that we recover the original Dirac Lagrangian. Thus, the lagrangian is invariant under a constant phase rotation. A transformation of this charater is called a global gauge transformation. A one-dimensional rotation is a unitary transformation, so we call this a global $U(1)$ gauge symmetry.
 
 We next consider the concept of a local gauge transformation, that is, one in which the phase $\alpha$ may vary with position. The field transforms, as before, like  $\psi \rightarrow e^{i \alpha (x)} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha (x)} \bar{\psi} $. However, we note that the dependence on position means that we can no longer factor out the exponentials, and we thus have
 
-\begin{flalign}
+\begin{align}
   \begin{aligned}
 \mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{\mu} \partial_{\mu} - m) (e^{i \alpha (x)} \psi) \\
 =-i e^{-i \alpha (x)} \bar{\psi} \gamma^{\mu} (e^{i \alpha (x)} \partial_{\mu} \psi  + i e^{i \alpha (x)} \psi \partial_{\mu} \alpha -m \bar{\psi}\psi \\
 =-\bar{\psi}(i \gamma^{\mu} \partial_{\mu} + \gamma^{\mu} \partial_{\mu} \alpha - m) \psi
   \end{aligned}&&&
-\end{flalign}
+\end{align}
 
 i.e., the Lagrangian is not invariant under this sort of transformation. However, local gauge invariance is an important physical symmetry, so in order to attempt to preserve it, we add an additional term to the original Lagrangian: an extra vector field $A_\mu$ that transforms like $A_\mu \rightarrow A_\mu - \frac{1}{q} \partial_{\mu} \alpha(x) $ for a constant q. We also define a new operator, called the covariant derivative: $D_{\mu} = \partial_{\mu}+ iqA_{\mu} $. Given how $A_{\mu}$ transforms, we see that $D_{\mu}$ transforms like
 
-\begin{flalign}
+\begin{align}
   \begin{aligned}
 D_{\mu} = \partial_\mu + iqA_{\mu} \\
 \rightarrow \partial_\mu + iq(A_{\mu}-\frac{1}{q}\partial_{\mu}\alpha(x)) \\
 = \partial_\mu + iqA_{\mu}-i\partial_{\mu}\alpha(x) \\
 =D_{\mu}-i\partial_{\mu}\alpha(x)
   \end{aligned}&&&
-\end{flalign}
+\end{align}
 
 Let us replace the $\partial_{\mu}\phi$ terms in the initial Lagrangian with $D_{\mu}\phi$ and transform.
 
-\begin{flalign}
+\begin{align}
   \begin{aligned}
 \mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{\mu} (D_{\mu}-i\partial_{\mu}\alpha(x)) - m) (e^{i \alpha (x)} \psi) \\
 =-(e^{-i \alpha (x)} \bar{\psi})(i \gamma^{\mu} (\partial_\mu + iqA_{\mu}-i\partial_{\mu}\alpha(x))-m)(e^{i \alpha (x)} \psi) \\
 =-\bar{\psi}(i \gamma^{\mu} D_{\mu} + \gamma^{\mu} \partial_{\mu} \alpha - \gamma^{\mu} \partial_{\mu} \alpha - m) \psi \\
 =-\bar{\psi}(i \gamma^{\mu} D_{\mu} - m) \psi
   \end{aligned}&&&
-\end{flalign}
+\end{align}
 
 Thus, by introducing an additional vector field that corresponds to the local U(1) gauge symmetry, we have restored the invariance of our lagrangian. Physically, this field is analogous to the introduction of electromagnetism to our single Dirac fermion model, with the $A_\mu$ field playing the role of the photon: it is a vector quantity and so has spin-1, it must be massless (as adding an $A_\mu$ mass term to the Lagrangian would violate the symmetry again), and couples to the fermion fields according to their electromagnetic charge. We note that we can also still preserve invariance if we add an additional term $L_{kin} = -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}$ to the Lagrangian, where $F_{\mu \nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}$: this corresponds to the energy inherent in electromagnetic fields themselves. 
 
@@ -179,14 +179,14 @@ We can expand the kinetic term in the Lagrangian as
 
 Which, using the definitions of the three tau matrices, and putting Y = I = 1, becomes
 
-\begin{flalign}
+\begin{align}
   \begin{aligned}
 \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8} |\begin{bmatrix} g_{1}B_{\mu}+g_{2}W_{\mu}^{3} & g_{2}(W_{\mu}^{1}-iW_{\mu}^{2}) \\ g_{2}(W_{\mu}^{1}+iW_{\mu}^{2}) & g_{1}B_{\mu}+g_{2}W_{\mu}^{3} \end{bmatrix} \begin{bmatrix} 0 \\ v \end{bmatrix}|^{2} \\
 = \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8}v^{2}g_{2}^{2}((W_{\mu}^{1})^{2}+(W_{\mu}^{2})^{2})) + \frac{1}{8}v^{2}(g_{1} B{\mu}-g_{2}W_{\mu}^{3})^{2}
   \end{aligned}&&&
-\end{flalign}
+\end{align}
 
-If we again define some new field combinations here: $W_{\mu}^{+} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}-iW_{\mu}^{2})$, $W_{\mu}^{-} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}+iW_{\mu}^{2})$, $Z_{\mu} = \frac{g_{1}B{\mu}+g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}$ and $A_{\mu} = \frac{g_{1}B{\mu}-g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}$,
+If we again define some new field combinations here: ${W_{\mu}^{+} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}-iW_{\mu}^{2})}$, ${W_{\mu}^{-} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}+iW_{\mu}^{2})}$, ${Z_{\mu} = \frac{g_{1}B{\mu}+g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}$ and ${A_{\mu} = \frac{g_{1}B{\mu}-g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}$,
 
 then we get: 
 \begin{equation}
@@ -202,13 +202,13 @@ $\frac{g_{f}v}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L}) + \frac{g_{f}}{\sq
 
 Finally, we note that if we expand the potential term in the complex Klein-Gordon Lagrangian for the Higgs field about the minimum, that is, 
 
-\begin{flalign}
+\begin{align}
   \begin{aligned}
 V = {\mu}^2\phi^{\dag}\phi + \lambda(\phi^{\dag}\phi)^{2} = \frac{1}{2}{\mu}^2(v+h)^{2} + \frac{1}{4}\lambda(v+h)^{4} \\
 = -\frac{1}{2}{\lambda v^{2}}(v+h)^{2} + \frac{1}{4}\lambda(v+h)^{4} \\
 = -\frac{1}{2}\lambda(v^{4} + 2v^{3}h + v^{2}h^{2}) + \frac{1}{4}\lambda(v^{4}+4vh^{3}+6v^{2}h^{2} + 4v^{3}h + h^{4})
   \end{aligned}&&&
-\end{flalign}
+\end{align}
 
 we see a mass term of the form $(\frac{M_{h}^{2}}{2})h^{2} = \frac{6}{4}\lambda v^{2} h^{2} - \frac{1}{2}\lambda v^{2} h^{2} = \lambda v^{2} h^{2}$;
 That is, $M_{h} = v \sqrt{2 \lambda}$.
@@ -225,23 +225,23 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
 
 \begin{figure}[htp]
   \centering
-         \begin{subfigure}[b]{0.3\textwidth}
+         \begin{subfigure}[b]{0.5\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/ggF.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/ggF.png}
          \caption{ggF}
          \label{fig:ggF}
      \end{subfigure}
      \hfill
        \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/VBF.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/VBF.png}
          \caption{VBF}
          \label{fig:VBF}
      \end{subfigure}
      \hfill 
      \\
-        \begin{subfigure}[b]{0.3\textwidth}
          \centering
+         \begin{subfigure}[b]{0.5\textwidth}
          \includegraphics[width=\textwidth]{figures/theory_chapter/VH.png}
          \caption{VH}
          \label{fig:VH}
@@ -254,21 +254,21 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
   \centering
        \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/bbH.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/bbH.png}
          \caption{bbH}
          \label{fig:bbH}
      \end{subfigure}
      \hfill
          \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/ggZH.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/ggZH.png}
          \caption{gg $\rightarrow ZH$ }
          \label{fig:ggZH}
      \end{subfigure}
      \hfill
          \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/ggZH2.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/ggZH2.png}
          \caption{Additional gg $\rightarrow ZH$ }
          \label{fig:ggZH}
      \end{subfigure}
@@ -297,8 +297,8 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
          \label{fig:ttH3}
      \end{subfigure}
      \hfill
-         \begin{subfigure}[b]{0.3\textwidth}
          \centering
+         \begin{subfigure}[b]{0.3\textwidth}
          \includegraphics[width=\textwidth]{figures/theory_chapter/ttH4.png}
          \label{fig:ttH4}
      \end{subfigure}
@@ -311,21 +311,21 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
   \centering
        \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/toploop.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/toploop.png}
          \caption{Top-mediated}
          \label{fig:toploop}
      \end{subfigure}
      \hfill
-         \begin{subfigure}[b]{0.3\textwidth}
+         \begin{subfigure}[b]{0.5\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/Wloop1.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/Wloop1.png}
          \caption{W $\rightarrow \gamma$ }
          \label{fig:Wloop1}
      \end{subfigure}
      \hfill 
         \begin{subfigure}[b]{0.3\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{figures/theory_chapter/Wloop2.png}
+         \includegraphics[width=\textwidth,valign=m]{figures/theory_chapter/Wloop2.png}
          \caption{W $\rightarrow \gamma \gamma$}
          \label{fig:Wloop2}
      \end{subfigure}
@@ -463,7 +463,7 @@ When measuring Higgs couplings in analyses suh as these, it is often most useful
 \kappa_{i} = \frac{y_{i}^{meas}}{y_{i}^{SM}}
 \end{equation}
 
-This $\kappa$ parameter is called the "coupling strength"-- if $kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \cite{LHCHiggsCrossSectionWorkingGroup}.
+This $\kappa$ parameter is called the "coupling strength"-- if $\kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $\kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \cite{LHCHiggsCrossSectionWorkingGroup}.
 
 The parameterization of various production cross-sections and decay widths (divided by their Standard Model values) in terms of the $\kappa$ framework is shown in Tables \ref{tab:Xsecskappa}-\ref{tab:BRskappa} \cite{PhysRevD.101.012002}. The "resolved" column assumes that only the particles of the Standard Model exist. However, it can also be useful to develop "effective" coupling terms that allows for the existence of additional particles that may influence the loop diagrams. These can be modeled by mutiplying the resolved coupling terms by the indicated factors:
 
@@ -535,10 +535,12 @@ The C and D terms originate from destructive interference: because the $tH$ proc
 
 Similarly, we can parameterize $\kappa_{g}$ and $\kappa_{\gamma}$ according to the parameterizations in \cite{Ellis}:
 
-\begin{equation}
-\kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha) 
+\begin{align}
+\begin{aligned}
+\kappa_{g}^{2} = 1.11\kappa_{t}^{2}cos(\alpha)^{2} + 2.6\kappa_{t}^{2}sin(\alpha)^{2} - 0.11\kappa_{t}cos(\alpha)\\ 
 \kappa_{\gamma}^{2} = 0.08\kappa_{t}^{2}cos(\alpha)^{2} + 0.18\kappa_{t}^{2}sin(\alpha)^{2} - 0.72\kappa_{t}cos(\alpha) + 1.64
-\end{equation}
+\end{aligned}
+\end{align}
 
 Cross-sections as a function of $\alpha$ as implemented in Monte Carlo simulation are given in \ref{tab:MCsamples_XS}. We note that, as $\alpha$ increases from $\alpha = 0^{\circ}$ (CP-even) to $\alpha = 90^{\circ}$ (CP-odd), the $ttH$ cross-section decreases while the $tH$ and $ggF$ cross-sections increase. Similarly, the $H \rightarrow \gamma \gamma$ branching ratio increases as $\alpha$ increases.
 
@@ -563,9 +565,9 @@ The Couplings Analysis is performed within the Simplified Template Cross Section
 
 In addition to their nominal production and decay modes, the $ggH$ STXS1.2 truth bins include both $ggF$ and hadronically-decaying $gg \rightarrow ZH$ events, while the $VBF$ STXS definition includes hadronically-decaying $qq \rightarrow VH$. Additionally, it is important to note that the leptonic $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include Z-boson decays both to two charged leptons and to two neutrinos (the latter of which will have a high MET signature). For nomenclature purposes, throughout this dissertation, $ggF$ is used to refer to the $gg \rightarrow H$ production mode, while $ggH$ is used to refer to the regions of phase space targeting the combination of $gg \rightarrow H$ and $gg \rightarrow ZH$.
 
-In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200 GeV$ bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses (where $p_{T}^{H}$ denotes the transverse momentum of the Higgs, that is, the component of the Higgs momentum perpendicular to the beamline). A total of 44 STXS truth regions are defined.
+In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200$ GeV bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses (where $p_{T}^{H}$ denotes the transverse momentum of the Higgs, that is, the component of the Higgs momentum perpendicular to the beamline). A total of 44 STXS truth regions are defined.
 
-For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algorithm \cite{antikt} using radius R=0.4, are required to have $p_{T} > 30 GeV$ (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
+For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algorithm \cite{antikt} using radius R=0.4, are required to have $p_{T} > 30$ GeV (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
 
 Using the Monte Carlo simulated samples described in section \ref{chap:datamc_chapter}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \ref{tab:STXS_cross_sections}, and show the acceptance for each production mode in Figure \ref{fig:STXS_acceptances}. Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{chap:couplings_chapter}. By measuring the cross-sections in each of these bins, a number of different values are able to be extracted, including the various Higgs couplings $\kappa$ and limits on effective field theories (EFTs) parameterizing physics beyond the standard model.
 

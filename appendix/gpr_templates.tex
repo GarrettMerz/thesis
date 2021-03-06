@@ -4,7 +4,7 @@ In order to resolve this, a technique known as Gaussian Process Regression is im
 
 A Gaussian Process (GP) is defined as a set of random processes of which all finite subsets have a multivariate normal distribution \cite{ebden2015gaussian}. Provided statistics in each bin are high enough, a histogram encoding some underlying smooth distribution is an example of such a finite subset: each bin contains a normally-distributed number of events about some true mean, and the bins are correlated according to their covariance. Thus, a Gaussian process can be defined over such a histogram. The mean of the fitted Gaussian Process corresponds to the smooth underlying shape, while the elements of the GP covariance matrix correspond to the error in each bin and the correlation between bins.
 
-The covariance matrix can be simplified using a kernel, which determines the form of the correlation between points (i.e., the length scales in X at which points are expected to influence one another in Y). Two useful kernels are the Radial Basis Function (RBF) kernel and the Gibbs kernel \cite{3569} \cite{Gibbs}. 
+The covariance matrix can be simplified using a kernel, which determines the form of the correlation between points. Useful kernel functions parameterize the dependence between two such points in terms of one or more "length scale" hyparameters, which determine the distance in X at which two points are expected to influence one another in Y. Two such kernels are the constant-length-scale Radial Basis Function (RBF) kernel \cite{3569} and the variable-length-scale Gibbs kernel \cite{Gibbs}. 
 
 The RBF kernel has one hyperparameter, the constant length scale $l$, and it is defined as
 
@@ -12,16 +12,16 @@ The RBF kernel has one hyperparameter, the constant length scale $l$, and it is 
 K_\text{RBF}(x,x') = exp\left(\frac{-(x-x')^2}{2l^2}\right)
 \end{equation}
 
-The RBF kernel is useful for mostly-flat functions. However, for smoothly-falling functions, it is likely that nearby points will be more correlated in some regions than in others, so a constant length scale is a suboptimal model. The Gibbs kernel allows the length scale $l(x)$ to vary linearly as a function of $x$, and thus has two hyperparameters: the initial length scale and the length scale slope. The Gibbs kernel function is: 
+The RBF kernel performs optimally on linear functions. However, for smoothly-falling functions that are not necessarily linear, it is likely that nearby points will be more correlated in some regimes than in others, so a constant length scale is likely a suboptimal model for nonlinear functions. The Gibbs kernel allows the length scale to vary linearly as a function of $x$, that is, ${l(x)=l_{0}+l_{1}(x)}$. It has two hyperparameters: the initial length scale $l_{0}$ and the length scale slope $l_{1}$. The Gibbs kernel function is: 
 
 \begin{equation}
 K_\text{Gibbs}(x, x') = \frac{\sqrt{2l(x)l(x')}}{l(x)^2 + l(x')^2 } \cdot exp\left( \frac{-(x-x')^2}{l(x)^2 + l(x')^2} \right)
 \end{equation}
 
 
-The background templates used in the spurious signal test for the analysis categories are all smoothly falling distributions with statistical fluctuations. By utilizing a Gaussian Process Regression fit and then taking the mean of the Gaussian Process as the "true" template shape, it is possible to smooth out some amount of statistical noise, thus decreasing the spurious signal systematic. The GP smoothing technique makes no assumption on the form of the underlying distribution other than that it is smooth and falling, so the choice of functional form from the spurious signal test will not be biased.
+It is assumed that the "true" underlying functional form of the background in each category is a smoothly falling function; the background templates used in the Couplings analysis are all smoothly falling distributions with statistical fluctuations. By utilizing a Gaussian Process Regression fit and then taking the mean of the Gaussian Process as the "true" template shape, it is possible to reduce the statistical noise, thus decreasing the spurious signal systematic. The GP smoothing technique assumes nothing about the form of the underlying distribution other than that it is smooth and falling, so the smoothing procedure should not bias the spurious signal test toward a particular functional shape.
 
-The hyperparameters (initial length scale and length scale slope) are allowed to vary over a range specified by the user; the optimal hyperparameters within this range are determined by the Gaussian Process fitting procedure.
+The hyperparameters (initial length scale and length scale slope) are allowed to vary over a user-specified range; the optimal hyperparameters within this range are then determined as part of the Gaussian Process fit.
 
 A GP is fit to the background template in each category. This can be modelled in a Bayesian manner: the GP is a distribution with a given prior mean that is then conditioned on the template histogram; the smoothed template is the mean of the posterior distribution \cite{3569}. Due to the expected shape of the templates, the prior is defined as an exponential function with parameters obtained by a fit to the template. However, in cases where the input template has very few statistics, large errors on the data points are compatible with a steep exponential prior though the "true" underlying shape is approximately flat, which can confound the fitter and cause it to simply output the prior distribution. Therefore, a "switch" has been added to re-perform the GP fit using a flat prior in cases where the resulting GP shape and the prior exponential shape disagree with a $\chi^2/DoF < 0.1$.
 
@@ -88,7 +88,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c9.eps}
 	\caption{GG2H\_GE2J\_MJJ\_0\_350\_PTH\_0\_60\_\_1}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
 \label{fig:gpr_coupcat_2}
 \end{center}
 \end{figure}
@@ -115,7 +115,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c13.eps}
 	\caption{GG2H\_GE2J\_MJJ\_0\_350\_PTH\_60\_120\_\_2}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
 \label{fig:gpr_coupcat_3}
 \end{center}
 \end{figure}
@@ -142,7 +142,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c17.eps}
 	\caption{\tiny{GG2H\_GE2J\_MJJ\_350\_700\_PTH\_0\_200\_PTHJJ\_0\_25\_\_1}}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_4}
  \end{center}
 \end{figure}
@@ -169,7 +169,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c21.eps}
 	\caption{\tiny{GG2H\_GE2J\_MJJ\_350\_700\_PTH\_0\_200\_PTHJJ\_GT25\_\_2}}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_5}
  \end{center}
 \end{figure}
@@ -196,7 +196,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c25.eps}
 	\caption{\tiny{GG2H\_GE2J\_MJJ\_GT700\_PTH\_0\_200\_PTHJJ\_GT25\_\_0}}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
 \label{fig:gpr_coupcat_6}
 \end{center}
 \end{figure}
@@ -223,7 +223,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c29.eps}
 	\caption{GG2H\_PTH\_200\_300\_\_1}
 \end{subfigure}
-	\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+	\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_7}
  \end{center}
 \end{figure}
@@ -250,7 +250,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c33.eps}
 	\caption{GG2H\_PTH\_300\_450\_\_2}
 \end{subfigure}
-	\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+	\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_8}
  \end{center}
 \end{figure}
@@ -277,7 +277,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 %	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c37.eps}
 %	\caption{GG2H\_PTH\_GT650\_\_1}
 %\end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_9}
  \end{center}
 \end{figure}
@@ -304,7 +304,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c41.eps}
 	\caption{QQ2HQQ\_1J\_\_1}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_10}
  \end{center}
 \end{figure}
@@ -331,7 +331,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c45.eps}
 	\caption{QQ2HQQ\_GE2J\_MJJ\_0\_60\_\_2}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
 \label{fig:gpr_coupcat_11}
 \end{center}
 \end{figure}
@@ -358,7 +358,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c49.eps}
 	\caption{QQ2HQQ\_GE2J\_MJJ\_120\_350\_\_1}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_12}
  \end{center}
 \end{figure}
@@ -385,7 +385,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 %	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c53.eps}
 %	\caption{\tiny{QQ2HQQ\_GE2J\_MJJ\_350\_700\_PTH\_0\_200\_PTHJJ\_GT25\_\_0}}
 %\end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_13}
  \end{center}
 \end{figure}
@@ -412,7 +412,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 %	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c57.eps}
 %	\caption{\tiny{QQ2HQQ\_GE2J\_MJJ\_GT700\_PTH\_0\_200\_PTHJJ\_GT25\_\_0}}
 %\end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_14}
  \end{center}
 \end{figure}
@@ -439,7 +439,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 %	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c61.eps}
 %	\caption{\tiny{QQ2HQQ\_GE2J\_MJJ\_350\_700\_PTH\_GT200\_\_1}}
 %\end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_15}
  \end{center}
 \end{figure}
@@ -466,7 +466,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c65.eps}
 	\caption{QQ2HLNU\_PTV\_0\_75\_\_0}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
 \label{fig:gpr_coupcat_16}
 \end{center}
 \end{figure}
@@ -493,7 +493,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c69.eps}
 	\caption{QQ2HLNU\_PTV\_150\_250\_0J\_\_0}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_17}
  \end{center}
 \end{figure}
@@ -520,7 +520,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c73.eps}
 	\caption{HLL\_PTV\_0\_75\_\_0}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_18}
  \end{center}
 \end{figure}
@@ -547,7 +547,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c77.eps}
 	\caption{HLL\_PTV\_150\_250\_GE1J\_\_0}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_19}
  \end{center}
 \end{figure}
@@ -574,7 +574,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c81.eps}
 	\caption{TTH\_PTH\_0\_60\_\_1}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_20}
  \end{center}
 \end{figure}
@@ -601,7 +601,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c85.eps}
 	\caption{TTH\_PTH\_120\_200\_\_1}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
 \label{fig:gpr_coupcat_21}
 \end{center}
 \end{figure}
@@ -628,7 +628,7 @@ As detailed in \ref{sec:GPR_validation}, the GPR method chosen for use in the Co
 	\includegraphics[width=\linewidth]{figures/background/gpr/coupCatTemplates/GPR_Smoothed_Plot_hmgg_c89.eps}
 	\caption{TWH\_\_0}
 \end{subfigure}
-\caption{The full Run~2 background templates of the labelled categories. The red shape shows the original background template, the blue shape shows the smoothed background template, and the black points show the data sidebands (for reference). The bottom panel shows the fractional difference between the smoothed and un-smoothed templates and the data sidebands. }
+\caption{The Couplings-Analysis background templates in the indicated categories. The red histogram is the unsmoothed background template, the blue histogram is the smoothed background template, and the black points show the data sidebands. The bottom panel shows the per-bin percent deviation of both the smoothed and unsmoothed templates from the data sidebands. }
  \label{fig:gpr_coupcat_22}
  \end{center}
 \end{figure}

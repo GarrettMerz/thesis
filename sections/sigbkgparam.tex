@@ -65,15 +65,16 @@ If more than one function passes these criteria, the function with the lower num
 In low statistics categories, it is not uncommon that no functional form will satisfy the above criteria. In this case, the "relaxed" spurious signal fit is performed, which replaces $N_{s}$ with a new variable $\zeta_{s}$ that is designed to accomodate up to $2\sigma$ fluctuations in the spurious signal:
 
 \[\zeta_{s} = \begin{cases} 
-      N_{s} + 2 \delta_{MC} if  N_{s} + 2 \delta_{MC} < 0\\
-      N_{s} - 2 \delta_{MC} if  N_{s} - 2 \delta_{MC} > 0\\
-      0 otherwise \\
+      N_{s} + 2 \delta_{MC} & \mbox{if }  N_{s} + 2 \delta_{MC} < 0\\
+      N_{s} - 2 \delta_{MC} & \mbox{if }  N_{s} - 2 \delta_{MC} > 0\\
+      0 & \mbox{otherwise } \\
    \end{cases}
 \]
 
 Though $\zeta_{s}$ is used to define the spurious signal criteria, $N_{s}$ is still used for the final spurious signal uncertainty. 
 
 \begin{figure}
+\centering
 \includegraphics[width=0.49\textwidth]{figures/sigbkgparam/SSRelaxed.png}
 \caption{A cartoon depicting the "relaxed" spurious signal procedure. Two-sigma fluctuations of the background are incorporated into the spurious signal procedure in order to select a functional form.}
 \label{fig:SSrelaxed}
