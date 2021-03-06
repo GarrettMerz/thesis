@@ -3,43 +3,30 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: aiaa.bst
 Database file #1: ./bib/thesis-bib.bib
-I was expecting a `,' or a `}'---line 806 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 817 of file ./bib/thesis-bib.bib
  :    
  :    year={2008},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1517 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 1543 of file ./bib/thesis-bib.bib
  :       
  :       title         = "{Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector. Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector}",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1725 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 1751 of file ./bib/thesis-bib.bib
  : 
  : @article{purity2,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "skopt" isn't style-file defined
---line 1794 of file ./bib/thesis-bib.bib
-Repeated entry---line 1990 of file ./bib/thesis-bib.bib
+--line 1820 of file ./bib/thesis-bib.bib
+Repeated entry---line 2001 of file ./bib/thesis-bib.bib
  : @article{Higgsmass
  :                   ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "Hyneman" isn't style-file defined
---line 2136 of file ./bib/thesis-bib.bib
-Warning--I didn't find a database entry for "Boudreau"
-Warning--I didn't find a database entry for "CERN-PH-EP-2015-304"
-Warning--I didn't find a database entry for "EMcalib"
-Warning--I didn't find a database entry for "DemartintWH"
-Warning--I didn't find a database entry for "HIGG-2018-13"
-Warning--I didn't find a database entry for "LHAPDF"
-Warning--I didn't find a database entry for "HFunc1"
-Warning--I didn't find a database entry for "HFunc2"
-Warning--I didn't find a database entry for "HFunc3"
-Warning--I didn't find a database entry for "Pythia8"
+--line 2147 of file ./bib/thesis-bib.bib
 Warning--I didn't find a database entry for "jetuncs"
-Warning--I didn't find a database entry for "CouplingsRun2"
-Warning--I didn't find a database entry for "Asimov"
-Warning--I didn't find a database entry for "GPprior"
 Warning--empty author in LEPExperiments
 Warning--empty author in Couplingsanalysis
 Warning--empty publisher in YellowReport4
@@ -78,45 +65,45 @@ Warning--there's a number but no volume in JSConway
 Warning--empty author in ATLAS-CONF-2019-004
 Warning--empty author in MET2
 Warning--empty journal in kappaFW
-You've used 159 entries,
+You've used 163 entries,
             2292 wiz_defined-function locations,
-            1466 strings with 28392 characters,
-and the built_in function-call counts, 31587 in all, are:
-= -- 2314
-> -- 1166
-< -- 111
-+ -- 477
-- -- 318
-* -- 3507
-:= -- 4540
-add.period$ -- 304
-call.type$ -- 159
+            1460 strings with 28569 characters,
+and the built_in function-call counts, 32324 in all, are:
+= -- 2372
+> -- 1186
+< -- 113
++ -- 486
+- -- 323
+* -- 3589
+:= -- 4647
+add.period$ -- 312
+call.type$ -- 163
 change.case$ -- 2
 chr.to.int$ -- 3
-cite$ -- 195
-duplicate$ -- 1597
-empty$ -- 3444
-format.name$ -- 318
-if$ -- 6738
+cite$ -- 199
+duplicate$ -- 1637
+empty$ -- 3527
+format.name$ -- 323
+if$ -- 6894
 int.to.chr$ -- 0
-int.to.str$ -- 159
-missing$ -- 141
-newline$ -- 481
-num.names$ -- 144
-pop$ -- 312
+int.to.str$ -- 163
+missing$ -- 145
+newline$ -- 493
+num.names$ -- 148
+pop$ -- 316
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 562
+skip$ -- 577
 stack$ -- 0
-substring$ -- 2068
-swap$ -- 581
-text.length$ -- 110
+substring$ -- 2115
+swap$ -- 596
+text.length$ -- 112
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 36
-while$ -- 237
-width$ -- 162
-write$ -- 1400
+while$ -- 244
+width$ -- 166
+write$ -- 1436
 (There were 5 error messages)

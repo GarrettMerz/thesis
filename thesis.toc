@@ -1,10 +1,10 @@
 \contentsline {chapter}{Dedication}{ii}{section*.1}%
 \contentsline {chapter}{Acknowledgements}{iii}{section*.2}%
 \contentsline {chapter}{List of Figures}{vii}{section*.4}%
-\contentsline {chapter}{List of Tables}{xxxiv}{section*.5}%
-\contentsline {chapter}{List of Appendices}{xxxviii}{section*.6}%
-\contentsline {chapter}{List of Abbreviations}{xxxix}{section*.8}%
-\contentsline {chapter}{Abstract}{xl}{section*.9}%
+\contentsline {chapter}{List of Tables}{xxiv}{section*.5}%
+\contentsline {chapter}{List of Appendices}{xxviii}{section*.6}%
+\contentsline {chapter}{List of Abbreviations}{xxix}{section*.8}%
+\contentsline {chapter}{Abstract}{xxx}{section*.9}%
 \vspace {1.3ex}\noindent {\bf Chapter}\vspace {1.3ex}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}An Overview of the Standard Model}{3}{chapter.2}%
@@ -76,8 +76,8 @@
 \contentsline {subsection}{\numberline {8.4.3}Limits on $\kappa _{t} and \alpha )$}{120}{subsection.8.4.3}%
 \contentsline {subsubsection}{\numberline {8.4.3.1}2-D Constraint Using Previous Measurements}{120}{subsubsection.8.4.3.1}%
 \contentsline {subsubsection}{\numberline {8.4.3.2}1-D Constraint Using Previous Measurements}{121}{subsubsection.8.4.3.2}%
-\contentsline {subsubsection}{\numberline {8.4.3.3}2-D Constraint Using $\kappa _{t}$ Parameterization}{121}{subsubsection.8.4.3.3}%
-\contentsline {subsubsection}{\numberline {8.4.3.4}1-D Constraint Using $\kappa _{t}$ Parameterization}{122}{subsubsection.8.4.3.4}%
+\contentsline {subsubsection}{\numberline {8.4.3.3}2-D Constraint Using $\kappa _{t}$ Parameterization}{122}{subsubsection.8.4.3.3}%
+\contentsline {subsubsection}{\numberline {8.4.3.4}1-D Constraint Using $\kappa _{t}$ Parameterization}{123}{subsubsection.8.4.3.4}%
 \contentsline {chapter}{\numberline {9}Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma $}{129}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Categorization}{129}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Signal and Background Modelling}{137}{section.9.2}%
@@ -106,8 +106,8 @@
 \contentsline {subsection}{\numberline {C.1.1}Spurious Signal GPR-smoothed templates}{189}{subsection.C.1.1}%
 \contentsline {section}{\numberline {D.1}Validation of Gaussian Process Smoothing}{219}{section.D.1}%
 \contentsline {subsection}{\numberline {D.1.1}Nominal Bias Study}{220}{subsection.D.1.1}%
-\contentsline {subsection}{\numberline {D.1.2}Extended Templates}{243}{subsection.D.1.2}%
-\contentsline {subsection}{\numberline {D.1.3}Extended Templates, Linear Error Kernel}{290}{subsection.D.1.3}%
-\contentsline {subsection}{\numberline {D.1.4}Feature Injection Study}{382}{subsection.D.1.4}%
-\contentsline {subsection}{\numberline {D.1.5}Results}{447}{subsection.D.1.5}%
-\contentsline {chapter}{Bibliography}{448}{section*.417}%
+\contentsline {subsection}{\numberline {D.1.2}Extended Templates}{229}{subsection.D.1.2}%
+\contentsline {subsection}{\numberline {D.1.3}Extended Templates, Linear Error Kernel}{241}{subsection.D.1.3}%
+\contentsline {subsection}{\numberline {D.1.4}Feature Injection Study}{257}{subsection.D.1.4}%
+\contentsline {subsection}{\numberline {D.1.5}Results}{283}{subsection.D.1.5}%
+\contentsline {chapter}{Bibliography}{284}{section*.253}%
