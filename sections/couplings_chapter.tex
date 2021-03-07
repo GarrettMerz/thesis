@@ -271,6 +271,7 @@ Similarly, background is modelled using the spurious signal test. As detailed in
 
 \begin{table}[!h]
    \centering  \scriptsize
+    \begin{adjustbox}{width={\textwidth},totalheight={\textheight},keepaspectratio}
     \begin{tabular}{llcccccc}
     \hline
     \hline
@@ -315,12 +316,14 @@ GG2H\_GE2J\_MJJ\_0\_350\_PTH\_0\_60\_\_1 & ExpPoly2 & 9.35 & 21.4 & -23.9 & 0 & 
     \hline
       \hline
       \end{tabular}
+      \end{adjustbox}
       \caption{The choice of background function and the size of spurious signal uncertainties in the mass range 120 GeV to 130 GeV. $S$ is the maximum fitted spurious signal, $\delta S$ is its associated uncertainty, and $S_{ref}$ is the expected size of Higgs signal events. The $\zeta$ is the maximum fitted spurious signal yield when expanded to accomodate $2\sigma$ statistical fluctuations of the background templates. The "*" in the function name means the function decision is made using the Wald Test because there are fewer than 100 events in the sidebands.
    \label{tab:spurious_sig}   }
 \end{table}
 
 \begin{table}[!h]
    \centering  \scriptsize
+    \begin{adjustbox}{width={\textwidth},totalheight={\textheight},keepaspectratio}
     \begin{tabular}{llcccccc}
     \hline
     \hline
@@ -381,6 +384,7 @@ GG2H\_GE2J\_MJJ\_0\_350\_PTH\_0\_60\_\_1 & ExpPoly2 & 9.35 & 21.4 & -23.9 & 0 & 
        \hline
       \hline
       \end{tabular}
+      \end{adjustbox}
       \caption{The choice of background function and the size of spurious signal uncertainties in the mass range 120 GeV to 130 GeV. $S$ is the maximum fitted spurious signal, $\delta S$ is its associated uncertainty, and $S_{ref}$ is the expected size of Higgs signal events. The $\zeta$ is the maximum fitted spurious signal yield when expanded to accomodate $2\sigma$ statistical fluctuations of the background templates. The "*" in the function name means the function decision is made using the Wald Test because there are fewer than 100 events in the sidebands.
    \label{tab:spurious_sig2}   }
 \end{table}
@@ -503,6 +507,7 @@ The anticorrelation is because the leptonic $ZH$ categories suffer from substant
 
 A limit is also placed on the $tH$ cross-section using the $CL_{s}$ method (\cite{CLs}). The limit is found to be 8.2 times the Standard Model expectation, stronger than the limit placed in the CP analysis. 
 
+"Pull plots" showing the effects of various systematics on each of the five production mode fits, as well as how they change from their pre- to post-fit values are shown in Figures \ref{fig:ranking_ggF}-\ref{fig:ranking_top}.
 
 \begin{figure}
     \centering
@@ -532,10 +537,10 @@ A limit is also placed on the $tH$ cross-section using the $CL_{s}$ method (\cit
 \begin{table}
 \begin{center}
 \renewcommand{\arraystretch}{1.3}
-\begin{tabular}{|cr|crclclcl|cl|crcr}
+\begin{tabular}{|cr|crclclcl|cl|crcr|}
 \hline \hline
-Process       & \multicolumn{1}{c}{Value} & \multicolumn{3}{c|}{Uncertainty [fb] } & \multicolumn{1}{c|}{SM pred.} \\
- & \multicolumn{1}{c}{[fb]}  & Total  & \small{Stat.}      & \small{Syst.}        & \multicolumn{1}{c|}{[fb]} \\
+Process       & \multicolumn{1}{c}{Value} & \multicolumn{3}{c|}{Uncertainty [fb] } & \multicolumn{1}{c}{SM pred.} \\
+ & \multicolumn{1}{c}{[fb]}  & Total  & \small{Stat.}      & \small{Syst.}        & \multicolumn{1}{c}{[fb]} \\
 \hline
 \ggF + \bbH &	104	& $^{+	11	}_{	-11	}$ & $^{+	8	}_{	-8	}$ & $^{+	7	}_{	-6	}$ & 	$102 \pm 5$	\\
 \VBF        &	10.7	& $^{+	2.1	}_{	-1.9	}$ & $\pm 1.4$ & $^{+	1.4	}_{	-1.3	}$ & 	$8.0 \pm 0.2$	\\
@@ -558,6 +563,42 @@ Process       & \multicolumn{1}{c}{Value} & \multicolumn{3}{c|}{Uncertainty [fb]
 \label{fig:results:prodXS_corr}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/couplings_chapter/pulls_mu_ggF}
+  \caption{Nuisance parameter "pull plots" for the $ggH$ cross-section in the five-production-mode fit. The nuisance parameters are ranked by their impact on the cross-section measurement. These show the pre-fit and post-fit impact of various nuisance parameters on the cross-section measurement (colored and shaded boxes, corresponding to the top x-axis), as well as the "pull" (change in mean and spread between pre- and post-fit nuisance parameters, corresponding to the bottom x-axis).}
+  \label{fig:ranking_ggF}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/couplings_chapter/pulls_mu_VBF}
+  \caption{Nuisance parameter "pull plots" for the $VBF$ cross-section in the five-production-mode fit. The nuisance parameters are ranked by their impact on the cross-section measurement. These show the pre-fit and post-fit impact of various nuisance parameters on the cross-section measurement (colored and shaded boxes, corresponding to the top x-axis), as well as the "pull" (change in mean and spread between pre- and post-fit nuisance parameters, corresponding to the bottom x-axis).}
+  \label{fig:ranking_VBF}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/couplings_chapter/pulls_mu_WH}
+  \caption{Nuisance parameter "pull plots" for the $WH$ cross-section in the five-production-mode fit. The nuisance parameters are ranked by their impact on the cross-section measurement. These show the pre-fit and post-fit impact of various nuisance parameters on the cross-section measurement (colored and shaded boxes, corresponding to the top x-axis), as well as the "pull" (change in mean and spread between pre- and post-fit nuisance parameters, corresponding to the bottom x-axis).}
+  \label{fig:ranking_WH}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/couplings_chapter/pulls_mu_ZH}
+  \caption{Nuisance parameter "pull plots" for the $ZH$ cross-section in the five-production-mode fit. The nuisance parameters are ranked by their impact on the cross-section measurement. These show the pre-fit and post-fit impact of various nuisance parameters on the cross-section measurement (colored and shaded boxes, corresponding to the top x-axis), as well as the "pull" (change in mean and spread between pre- and post-fit nuisance parameters, corresponding to the bottom x-axis).}
+  \label{fig:ranking_ZH}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\linewidth]{figures/couplings_chapter/pulls_mu_top}
+  \caption{Nuisance parameter "pull plots" for the $ttH$+$tH$ cross-section in the five-production-mode fit. The nuisance parameters are ranked by their impact on the cross-section measurement. These show the pre-fit and post-fit impact of various nuisance parameters on the cross-section measurement (colored and shaded boxes, corresponding to the top x-axis), as well as the "pull" (change in mean and spread between pre- and post-fit nuisance parameters, corresponding to the bottom x-axis).}
+  \label{fig:ranking_top}
+\end{figure}
+
+
 \subsection{STXS} \label{sec:STXS}
 
 In order to avoid large uncertainties and correlations (computed from SM expectation using post-fit Asimov), several of the 44 STXS truth bins are merged in a so-called "strong merging scheme" resulting in 27 truth bins being targeted. The merging is as follows:
@@ -570,12 +611,62 @@ In order to avoid large uncertainties and correlations (computed from SM expecta
 \item The $tWH$ and $tHjb$ regions are merged into a single $tH$ region.
 \end{itemize}
 
-As in the other schemes, $(\sigma \times Br_{\gamma \gamma})$ is measured for each of the 27 truth regions. Results are shown in Table \ref{tab:results:STXS} and Figure \ref{fig:results:STXS}. The correlation matrix is shown in Figure \ref{fig:results:STXS_corr}. All categories are statistically limited, and no substantial deviation from the Standard Model is observed.
+As in the other schemes, $(\sigma \times Br_{\gamma \gamma})$ is measured for each of the 27 truth regions. The correspondence between the analysis categories and the STXS truth bins are shown in Figures \ref{fig:yields_1} - \ref{fig:yields_6}.
+
+Results of the fit are shown in Table \ref{tab:results:STXS} and Figure \ref{fig:results:STXS}. The yield in each category is shown in Figure \ref{fig:STXSfit}. The full correlation matrix is shown in Figure \ref{fig:results:STXS_corr}; two zoomed-in correlation matrices (one for \ggtoH\ and $qq^\prime\to H qq^\prime$ categories and one for the others) are shown in Figures  \ref{fig:correlationggFqqHqq}-\ref{fig:correlationVHttH}. All categories are statistically limited, and no substantial deviation from the Standard Model is observed.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_1}
+\caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \ggtoH\ categories and truth bins. Entries with a value below $1\%$ are omitted.}
+\label{fig:yields_1}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_2}
+\caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \qqtoHqq\ categories and truth bins. Entries with a value below $1\%$ are omitted.}
+\label{fig:yields_2}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_3}
+\caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \qqtoHll\ and \qqtoHln\ categories and truth bins. Entries with a value below $1\%$ are omitted.}
+\label{fig:yields_3}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_4}
+\caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \ttH\, $tWH$, and $tHjb$ categories and truth bins. Entries with a value below $1\%$ are omitted.}
+\label{fig:yields_4}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.5\textwidth]{figures/couplings_chapter/purity_2D_subplots_5}
+\caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \qqtoHqq\ STXS truth bins and \ggtoH\ analysis categories. Entries with a value below $1\%$ are omitted.}
+\label{fig:yields_5}
+\end{figure}
+\end{landscape}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_6}
+\caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \ggtoH\ STXS truth bins and \qqtoHqq\ analysis categories. Entries with a value below $1\%$ are omitted.}
+\label{fig:yields_6}
+\end{figure}
 
 \begin{table}[!htp]
   \begin{center}
   \small
    \renewcommand{\arraystretch}{1.35}
+    \begin{adjustbox}{width={\textwidth},totalheight={\textheight},keepaspectratio}
     \begin{tabular}{l|rlll@{ }|l@{ }}
       \hline \hline
       \multirow{2}{*}{STXS region $(\sigma_i \times Br_{\gamma\gamma})$} & \multicolumn{1}{c}{Value} & \multicolumn{3}{c|}{ Uncertainty [fb]} & \multicolumn{1}{c}{SM prediction} \\
@@ -595,7 +686,7 @@ As in the other schemes, $(\sigma \times Br_{\gamma \gamma})$ is measured for ea
 \ggHPt{300}{450}{}             & $0.05$  & $^{+ 0.14}_{-0.12}$  & $^{+0.13}_{-0.12}$  & $^{+0.03}_{-0.02}$  & $0.24 \pm 0.08$          \\
 \ggHPt{450}{}{}                & $0.07$  & $^{+ 0.06}_{-0.05}$  & $^{+0.06}_{-0.05}$  & $^{+0.01}_{-0.00}$  & $0.04 \pm 0.02$          \\
 \Hqqj{01}{}                    & $7.4$   & $^{+ 5.9}_{-5.2}$  & $^{+5.5}_{-4.9}$  & $^{+2.1}_{-1.8}$  & $4.8  ^{+0.1}_{-0.1}$   \\
-Hqqm{0}{60}{} +               & \multirow{2}{*}{$5.2$}      & \multirow{2}{*}{$^{+ 3.0}_{-2.8}$}  & \multirow{2}{*}{$^{+2.8}_{-2.7}$}  & \multirow{2}{*}{$^{+1.2}_{-0.9}$}  & \multirow{2}{*}{$1.65 \pm 0.05$}          \\ \Hqqm{120}{350}{}              & & & & & \\
+\Hqqm{0}{60}{} +               & \multirow{2}{*}{$5.2$}      & \multirow{2}{*}{$^{+ 3.0}_{-2.8}$}  & \multirow{2}{*}{$^{+2.8}_{-2.7}$}  & \multirow{2}{*}{$^{+1.2}_{-0.9}$}  & \multirow{2}{*}{$1.65 \pm 0.05$}          \\ \Hqqm{120}{350}{}              & & & & & \\
 \Hqqm{60}{120}{}               & $0.9$    & $^{+ 1.1}_{-1.0}$  & $^{+1.1}_{-1.0}$  & $^{+0.3}_{-0.3}$  & $1.20 \pm 0.04$          \\
 \HqqmPt{350}{700}{}{200}{}     & $1.0$   & $^{+ 0.9}_{-0.8}$  & $^{+0.8}_{-0.7}$  & $^{+0.5}_{-0.4}$ & $1.24  \pm 0.04$         \\
 \HqqmPt{700}{}{}{200}{}        & $1.8$   & $^{+ 0.6}_{-0.5}$  & $^{+0.5}_{-0.4}$  & $^{+0.4}_{-0.3}$  & $1.67  \pm 0.05$         \\
@@ -611,6 +702,7 @@ Hqqm{0}{60}{} +               & \multirow{2}{*}{$5.2$}      & \multirow{2}{*}{$^
 \tH                            & $0.2$   & $^{+ 0.6}_{-0.5}$  & $^{+0.6}_{-0.4}$  & $^{+0.2}_{-0.2}$  & $0.19 ^{+0.01}_{-0.02}$ \\
 \hline
     \end{tabular}
+    \end{adjustbox}
   \end{center}
   \caption{ Best-fit values and uncertainties for the cross-section times \Hyy\ branching ratio $(\sigma_i \times Br_{\gamma\gamma})$ in each STXS region. The total uncertainties are decomposed into statistical and systematic components. SM predictions are also shown for each quantity.}  
   \label{tab:results:STXS}
@@ -627,10 +719,29 @@ Hqqm{0}{60}{} +               & \multirow{2}{*}{$5.2$}      & \multirow{2}{*}{$^
 \begin{figure}[!tpb]
 \centering
 \includegraphics[width=.995\textwidth]{figures/couplings_chapter/corrmat_STXS_obs.pdf}
-\caption{Correlation matrix for the STXS measurement.
+\caption{Correlation matrix for the full STXS measurement.
 }
 \label{fig:results:STXS_corr}
 \end{figure}
 
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/couplings_chapter/STXSfitvisualization.pdf}
+    \caption{Event yields in the diphoton mass range containing $90\%$ of the signal events for all 88 categories. In each category, the fitted targeted STXS-bin signal yield is shown in red, the yield of other Higgs boson processes is shown in green, and the fitted continuum background is shown in blue. The 27 STXS cross-sections are parameters of interest profiled in the fit. The vertical lines separate the \ggF, \VBF, \WH, \ZH, and \ttH\ and \tH\ categories. In the top panel, the signal and backgrounds are stacked, while in the bottom panel, the background is subtracted from the data yield and only the fitted and expected signal is shown.}
+    \label{fig:STXSfit}
+\end{figure}
 
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/couplings_chapter/corrmat_STXS_obs_ggH_VBF.pdf}
+    \caption{The subset of the correlation matrix of the STXS measurements shown in Figure~\ref{fig:results:STXS_corr} corresponding to the \ggtoH\ and $qq^\prime\to H qq^\prime$ STXS regions.}
+    \label{fig:correlationggFqqHqq}
+\end{figure}
+
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[width=0.95\textwidth]{figures/couplings_chapter/corrmat_STXS_obs_VH_ttH.pdf}
+    \caption{The subset of the correlation matrix of the STXS measurements shown in Figure~\ref{fig:results:STXS_corr} corresponding to the \qqtoHll, \qqtoHln, \ttH, $tWH$, and $tHjb$ STXS regions.}
+    \label{fig:correlationVHttH}
+\end{figure}
 

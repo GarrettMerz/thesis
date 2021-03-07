@@ -121,10 +121,12 @@ The efficiency of the Neural Network diphoton vertex compared to the hardest ver
 
 Hadronic jets are identified from topo-clusters using the $anti-k_{t}$ algorithm. Clustering algorithms iteratively follow the following procedure: for each topo-cluster $i$, calculate the distance between both the topo-cluster and every other topo-cluster $j$ and between the topo-cluster and the beam $B$: 
 
-\begin{equation} 
-d_{i,j} = min(p_{T,i}^{2k}, p_{T,j}^{2k})\frac{((y_{i}-y_{j})^{2}-(\phi_{i}-\phi_{j})^{2})}{R^2}
+\begin{align} 
+\begin{aligned} 
+d_{i,j} = min(p_{T,i}^{2k}, p_{T,j}^{2k})\frac{((y_{i}-y_{j})^{2}-(\phi_{i}-\phi_{j})^{2})}{R^2}\\
 d_{i,B} = p_{T,i}^{2k}
-\end{equation} 
+\end{aligned} 
+\end{align} 
 
 Where $y_{i}$ is the rapidity of particle $i$, defined as $y=\frac{1}{2} ln(\frac{ E + p_{L}}{ E - p_{L}})$ (where $p_{L}$ is the particle's momentum in the beam direction), $R = 0.4$ (the jet radius), and k is some constant. For the anti-$k_{t}$ algorithm, $k = -1$; other common clustering algorithms use $k=1$ ($k_{t}$) \cite{kt} or $k=0$ (Cambridge-Aachen) \cite{CambridgeAachen}. 
 

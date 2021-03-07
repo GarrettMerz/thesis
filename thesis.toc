@@ -1,10 +1,10 @@
 \contentsline {chapter}{Dedication}{ii}{section*.1}%
 \contentsline {chapter}{Acknowledgements}{iii}{section*.2}%
 \contentsline {chapter}{List of Figures}{vii}{section*.4}%
-\contentsline {chapter}{List of Tables}{xxiv}{section*.5}%
-\contentsline {chapter}{List of Appendices}{xxviii}{section*.6}%
-\contentsline {chapter}{List of Abbreviations}{xxix}{section*.8}%
-\contentsline {chapter}{Abstract}{xxx}{section*.9}%
+\contentsline {chapter}{List of Tables}{xxvi}{section*.5}%
+\contentsline {chapter}{List of Appendices}{xxx}{section*.6}%
+\contentsline {chapter}{List of Abbreviations}{xxxi}{section*.8}%
+\contentsline {chapter}{Abstract}{xxxii}{section*.9}%
 \vspace {1.3ex}\noindent {\bf Chapter}\vspace {1.3ex}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}An Overview of the Standard Model}{3}{chapter.2}%
@@ -81,33 +81,33 @@
 \contentsline {chapter}{\numberline {9}Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma $}{130}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Categorization}{130}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Signal and Background Modelling}{138}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{149}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{146}{section.9.3}%
 \contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{149}{subsection.9.3.1}%
 \contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{150}{subsection.9.3.2}%
 \contentsline {section}{\numberline {9.4}Results}{151}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{152}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}STXS}{155}{subsection.9.4.2}%
-\contentsline {chapter}{\numberline {10}Conclusion}{160}{chapter.10}%
-\contentsline {chapter}{Appendices}{162}{section*.133}%
+\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{151}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}STXS}{152}{subsection.9.4.2}%
+\contentsline {chapter}{\numberline {10}Conclusion}{174}{chapter.10}%
+\contentsline {chapter}{Appendices}{176}{section*.147}%
 \setcounter {tocdepth}{1}
-\contentsline {section}{\numberline {A.1}The KLFitter}{162}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Comparison}{163}{section.A.2}%
-\contentsline {section}{\numberline {B.1}Additional CP BDT Studies with TMVA}{164}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Four-Vector BDT, ttH only}{164}{subsection.B.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.1}Hadronic Channel}{164}{subsubsection.B.1.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.2}Leptonic channel}{169}{subsubsection.B.1.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.1.3}Results}{174}{subsubsection.B.1.1.3}%
-\contentsline {subsection}{\numberline {B.1.2}Dilep/Semilep BDT, ttH Only}{178}{subsection.B.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.2.1}Dileptonic BDT}{178}{subsubsection.B.1.2.1}%
-\contentsline {subsubsection}{\numberline {B.1.2.2}Semileptonic BDT}{181}{subsubsection.B.1.2.2}%
-\contentsline {subsection}{\numberline {B.1.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{181}{subsection.B.1.3}%
-\contentsline {subsection}{\numberline {B.1.4}Dedicated CP-45 BDT Training}{186}{subsection.B.1.4}%
-\contentsline {section}{\numberline {C.1}Gaussian Processes smoothed background templates}{190}{section.C.1}%
-\contentsline {subsection}{\numberline {C.1.1}Spurious Signal GPR-smoothed templates}{190}{subsection.C.1.1}%
-\contentsline {section}{\numberline {D.1}Validation of Gaussian Process Smoothing}{220}{section.D.1}%
-\contentsline {subsection}{\numberline {D.1.1}Nominal Bias Study}{221}{subsection.D.1.1}%
-\contentsline {subsection}{\numberline {D.1.2}Extended Templates}{230}{subsection.D.1.2}%
-\contentsline {subsection}{\numberline {D.1.3}Extended Templates, Linear Error Kernel}{242}{subsection.D.1.3}%
-\contentsline {subsection}{\numberline {D.1.4}Feature Injection Study}{258}{subsection.D.1.4}%
-\contentsline {subsection}{\numberline {D.1.5}Results}{284}{subsection.D.1.5}%
-\contentsline {chapter}{Bibliography}{285}{section*.254}%
+\contentsline {section}{\numberline {A.1}The KLFitter}{176}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Comparison}{177}{section.A.2}%
+\contentsline {section}{\numberline {B.1}Additional CP BDT Studies with TMVA}{178}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Four-Vector BDT, ttH only}{178}{subsection.B.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.1}Hadronic Channel}{178}{subsubsection.B.1.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.2}Leptonic channel}{183}{subsubsection.B.1.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.1.3}Results}{188}{subsubsection.B.1.1.3}%
+\contentsline {subsection}{\numberline {B.1.2}Dilep/Semilep BDT, ttH Only}{192}{subsection.B.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.2.1}Dileptonic BDT}{192}{subsubsection.B.1.2.1}%
+\contentsline {subsubsection}{\numberline {B.1.2.2}Semileptonic BDT}{195}{subsubsection.B.1.2.2}%
+\contentsline {subsection}{\numberline {B.1.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{195}{subsection.B.1.3}%
+\contentsline {subsection}{\numberline {B.1.4}Dedicated CP-45 BDT Training}{200}{subsection.B.1.4}%
+\contentsline {section}{\numberline {C.1}Gaussian Processes smoothed background templates}{204}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Spurious Signal GPR-smoothed templates}{204}{subsection.C.1.1}%
+\contentsline {section}{\numberline {D.1}Validation of Gaussian Process Smoothing}{234}{section.D.1}%
+\contentsline {subsection}{\numberline {D.1.1}Nominal Bias Study}{235}{subsection.D.1.1}%
+\contentsline {subsection}{\numberline {D.1.2}Extended Templates}{244}{subsection.D.1.2}%
+\contentsline {subsection}{\numberline {D.1.3}Extended Templates, Linear Error Kernel}{256}{subsection.D.1.3}%
+\contentsline {subsection}{\numberline {D.1.4}Feature Injection Study}{272}{subsection.D.1.4}%
+\contentsline {subsection}{\numberline {D.1.5}Results}{298}{subsection.D.1.5}%
+\contentsline {chapter}{Bibliography}{299}{section*.268}%
