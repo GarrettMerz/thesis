@@ -26,9 +26,9 @@ In the hadronic region, 60\% of the $ttH$ Monte Carlo signal events are used for
 The input variables chosen are: 
 
 \begin{itemize}
-\item $p_T/m_{\gamma \gamma}$, $\eta$ and $\phi$ of the two photons. Photon $p_{T}$ is scaled by $m_{\gamma \gamma}$ to reduce unwanted sculpting of the diphoton mass spectrum. 
-\item $p_T$, $\eta$, $\phi$ and E of the six jets with highest $p_{T}$
-\item Boolean b-tag flag (77\% working point) for each of the six jets with highest $p_{T}$
+\item $p_{T}/m_{\gamma \gamma}$, $\eta$ and $\phi$ of the two photons. Photon $p_{T}$ is scaled by $m_{\gamma \gamma}$ to reduce unwanted sculpting of the diphoton mass spectrum. 
+\item $p_T$, $\eta$, $\phi$ and E of the six highest-$p_{T}$ jets
+\item Boolean b-tag value for each of the six highest-$p_{T}$ jets (77\% working point)
 \item \MET and direction of \MET
 \end{itemize}
 
@@ -108,7 +108,7 @@ Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown 
   \centering
         \subfloat[Hadronic]{\includegraphics[width=0.4\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_score_wisc.png}}
         \subfloat[Leptonic]{\includegraphics[width=0.4\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_score_wisc.png}}
-  \caption{SB BDT score for the sum of $ttH$, $tHjb$ and $tWH$, with relative weights according to the predicted cross sections. Shown in (a) for the hadronic channel and (b) for the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, which approximates the shape of the continuum background.  }
+  \caption{SB BDT score for the sum of $ttH$, $tHjb$ and $tWH$, with relative weights according to their expected cross sections. Shown in (a) for the hadronic channel and (b) for the leptonic channel, for various CP mixing scenarios. The open squares show data in the NTI sideband region, which approximates the shape of the continuum background.  }
   \label{fig:moriondtotal}
 \end{figure}
 
@@ -205,14 +205,14 @@ These variables are shown in Figures \ref{fig:ttH_truth1} - \ref{fig:tHjb_truth}
 
 Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \cite{TMVA} and is discussed in Appendix \ref{app:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables.
 
-The signal samples are the CP-odd $ttH+tWH+tHjb$, added according to their predicted cross-sections, while the background samples are the CP-even $ttH+tWH+tHjb$. 50\% of the signal and background samples are used for training, 25 \% are used for categorization, and 25\% are used for testing and significance evaluation.
+The signal samples are the CP-odd $ttH+tWH+tHjb$, added according to their expected cross-sections, while the background samples are the CP-even $ttH+tWH+tHjb$. 50\% of the signal and background samples are used for training, 25 \% are used for categorization, and 25\% are used for testing and significance evaluation.
 
 For both the hadronic and leptonic CPBDTs, input variables chosen are:
 
 \begin{itemize}
-\item $p_{T}$ and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (with respect to the Higgs candidate), and BDT score of the first and second reconstructed tops. Due to its potential to be composed of fewer than three jets, the second top is referred to as the 'hybrid' top. In the case where no hybrid top is reconstructed, a dummy value is passed to XGBoost.
-\item Angles $\Delta\eta$ and $\Delta\phi$ between the top candidates. In the case where no hybrid top is reconstructed, a dummy value is passed to XGBoost.
+\item $p_{T}$ (again scaled by $m_{\gamma \gamma}$) and $\eta$ of the Higgs candidate
+\item $p_{T}$, $\eta$, $\phi$ (with respect to the Higgs candidate), and BDT score of the first and second reconstructed tops. Due to its potential to be composed of fewer than three jets, the second top is referred to as the 'hybrid' top. In events where no hybrid top is reconstructed, a dummy value is passed to XGBoost.
+\item Angles $\Delta\eta$ and $\Delta\phi$ between the two top candidates. If no second ('hybrid') top is reconstructed, a dummy value is passed to XGBoost.
 \item The invariant mass of the top-Higgs system ($m_{t1H}$), and the invariant mass of the two-top system ($m_{t1hy}$). In the case where no second hybrid top is reconstructed, a dummy value is passed to XGBoost.
 \item $H_{T} = \sum_\text{jet j} p^{j}_{T}$
 \item The minimum $\Delta$R between a photon and a jet (out of all possible photon-jet pairs in the event)
@@ -358,14 +358,14 @@ Plots of the CPBDT output score for both the hadronic and leptonic CPBDT are sho
 \begin{figure}[htbp]
   \centering
   	\subfloat{\includegraphics[width=0.45\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/BDTG_cp.png}}
-  \caption{Hadronic channel CP BDT score for $ttH$+$tHjb$+$tWH$, with relative weights according to the predicted cross section for various CP mixing scenarios.  The open squares show data in the NTI sideband region. }
+  \caption{Hadronic channel CP BDT score for $ttH$+$tHjb$+$tWH$, with relative weights according to their expected cross sections under various CP mixing scenarios.  The open squares show data in the NTI sideband region. }
   \label{fig:cphad}
 \end{figure}
 
 \begin{figure}[htbp]
   \centering
   	\subfloat{\includegraphics[width=0.45\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/BDTG_cp.png}}
-  \caption{Leptonic channel CP BDT score for $ttH$+$tHjb$+$tWH$, with relative weights according to the predicted cross section for various CP mixing scenarios.  The open squares show data in the NTI sideband region. }
+  \caption{Leptonic channel CP BDT score for $ttH$+$tHjb$+$tWH$, with relative weights according to their expected cross sections under various CP mixing scenarios.  The open squares show data in the NTI sideband region. }
   \label{fig:cplep}
 \end{figure}
 
@@ -402,9 +402,9 @@ Z^{2} = -2 ln(\frac{P(S + B, S_{H} + B)}{P(S + B, S + B)}) \\
 \end{aligned}
 \end{align}
 
-Where S and B are the Standard-Model predicted signal and background and $S_{H}$ is the predicted signal under hypothesis H.
+Where S and B are the Standard-Model expected signal and background and $S_{H}$ is the expected signal under hypothesis H.
 
-Thus, the $ttH+tH$ Standard-Model number-counting significance (that is, the significance of observing the amount of $ttH+tWH+tHjb$ in analysis categories that predicted by the Standard Model if in fact the signal process does not exist and the background-only "null hypothesis" is true) can be defined as:
+Thus, the $ttH+tH$ Standard-Model number-counting significance (that is, the significance of observing the amount of $ttH+tWH+tHjb$ in analysis categories that is predicted by the Standard Model if, in fact, the signal process does not exist and the background-only "null hypothesis" is true) can be defined as:
 
 \begin{align}
 Z_{ttH+tH} = \sqrt{2((S+B)\ln(1+S/B)-S)}

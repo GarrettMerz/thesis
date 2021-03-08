@@ -155,10 +155,10 @@ In the hadronic channel:
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case where no second top is reconstructed, a missing value is passed to XGBoost.
-\item Angles $\Delta\eta$ and $\Delta\phi$ between the top candidates. In the case where no second top is reconstructed, a missing value is passed to XGBoost.
-\item Two-object invariant masses $m_{t1H}$, $m_{t2H}$, and $m_{t1t2}$. In the case where no second top is reconstructed, a missing value is passed to XGBoost.
-\item Three-object invariant mass $m_{t1t2H}$. In the case where no second top is reconstructed, $m_{t1t2H} = m_{t1H}$.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In events where no second top is reconstructed, dummy values are passed to XGBoost (no hybrid top is implemented).
+\item Angles $\Delta\eta$ and $\Delta\phi$ between the top candidates. In events where no second top is reconstructed, dummy values are passed to XGBoost.
+\item Two-object invariant masses $m_{t1H}$, $m_{t2H}$, and $m_{t1t2}$. In events where no second top is reconstructed, dummy values are passed to XGBoost.
+\item Three-object invariant mass $m_{t1t2H}$. In events where no second top is reconstructed, we instead pass $m_{t1t2H} = m_{t1H}$.
 \item Jet multiplicity and b-jet multiplicity (77\% working point)
 \item $H_{T} = \sum_\text{jet j} p^{j}_{T}$
 \item $\cos\theta^{*}$
@@ -169,7 +169,7 @@ In the leptonic channel:
 
 \begin{itemize} 
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case of dilepton events, or if no second top is reconstructed, a missing value is passed to XGBoost.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In events where no second top is reconstructed, dummy values are passed to XGBoost (no hybrid top is implemented).
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top candidates. In the case of dilepton events, or if no second top is reconstructed, a missing value is passed to XGBoost.
 \item Two-object invariant masses $m_{t1H}$ $m_{t2H}$, and $m_{t1t2}$. In the case of dilepton events, or if no second top is reconstructed, a missing value is passed to XGBoost.
 \item Three-object invariant mass $m_{t1t2H}$. In the case of dilepton events, a missing value is passed to XGBoost. If no second top is reconstructed, $m_{t1t2H} = m_{t1H}$.
@@ -344,7 +344,7 @@ We begin with a nominal BDT consisting of the following input variables and modi
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and top-reco BDT score of the first and second reconstructed hadronic tops. In events where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top, and the top-reco BDT score is set to a dummy value.
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top and the "hybrid" top.
 \item Two-object invariant masses $m_{t1H}$, $m_{Hhy}$, and $m_{t1hy}$
 \item The minimum $\Delta$R between a photon and a jet in the event
@@ -382,7 +382,7 @@ As in the previous section, we begin with a nominal $ttH+tH$ CPBDT consisting of
 
 \begin{itemize}
 \item $p_{T}$ (scaled by mass) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and BDT score of the first and second reconstructed hadronic tops. In the case where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top.
+\item $p_{T}$, $\eta$, $\phi$ (wrt. Higgs candidate), and top-reco BDT score of the first and second reconstructed hadronic tops. In events where no second top is reconstructed, we use the $p_{T}$, $\eta$, and $\phi$ of the "hybrid" top, and the top-reco BDT score is set to a dummy value.
 \item Angles $\Delta\eta$ and $\Delta\phi$ between the top and the "hybrid" top.
 \item Two-object invariant masses $m_{t1H}$, $m_{Hhy}$, and $m_{t1hy}$
 \item The minimum $\Delta$R between a photon and a jet in the event
