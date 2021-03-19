@@ -27,7 +27,7 @@ The Higgs boson is the only scalar (spin-0) boson in the Standard Model. Though 
 
 In order to fully explain the Higgs mechanism, we must first discuss the mathematical language of quantum field theory. Both quantum and classical field theories are often discussed using Lagrangian dynamics, where the Lagrangian is defined as  $\mathcal{L} = T - V$, the difference of the kinetic and the potential energy. Physical properties will always evolve in such a way that the integral of this property with respect to time, $\mathcal{S} = \int \mathcal{L} dt$, called the action, is a constant. Lagrangians are also incredibly useful in that they give rise to conservation laws: Noether's Theorem states that operations performed on a system that do not change the Lagrangian are each associated to conserved quantities of a system (i.e., systems with translationally invariant Lagrangians must respect conservation of momentum, systems with temporally-invariant Lagrangians must respect conservation of energy, etc.).
 
-A variety of types of fields exist, but we will discuss three at length: Klein-Gordon fields, which are scalar fields (single quantities defined everywhere), Dirac spinor fields (vector quantities defined everywhere), and gauge fields (additional vector fields that must be introduced in order to preserve certain physical symmetries. We begin with the Klein-Gordon field.
+A variety of types of fields exist, but we will discuss three at length: Klein-Gordon fields, which are scalar fields, Dirac spinor (vector) fields, and gauge fields (additional vector fields that must be introduced in order to preserve certain physical symmetries. We begin with the Klein-Gordon field.
 
 Klein-Gordon fields, one of the simplest examples of a field, are real scalar-valued quantities often denoted using the symbol $\phi$. A non-interacting "free" Klein-Gordon field evolves according to the Lagrangian:
 
@@ -108,7 +108,7 @@ Thus, by introducing an additional vector field that corresponds to the local U(
 
 Each of the fundamental forces in the Standard Model can be understood in terms of these sorts of gauge symmetries. The photon is the particle excitiation of the electromagnetic field, which corresponds to a one-dimensional rotation "U(1)" transformation. In order to be invariant under three dimensional transformations of the type "SU(3)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 3D vector space), we must add eight new vector fields (these are the eight gluons), leading to the incorporation of the strong interaction into the Standard Model.
 
-Similarly, in order to be invariant under two-dimensional transformations of the type "SU(2)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 2D vector space), we must add three new vector fields. However, these cannot be the observed weak-interaction bosons, the $W^{+}, W^{-} and Z$: as mentioned before, the new fields must be massless, as adding a mass term for these bosons would violate the local gauge symmetry. How, then, can the masses of the weak bosons fit into the Standard Model? The answer lies in the introduction of yet another field, called the Higgs field, the particle excitation of which is the much-lauded Higgs boson.
+Similarly, in order to be invariant under two-dimensional transformations of the type "SU(2)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 2D vector space), we must add three new vector fields. However, these cannot be the observed weak-interaction bosons, the $W^{+}, W^{-}$ and $Z$: as mentioned before, the new fields must be massless, as adding a mass term for these bosons would violate the local gauge symmetry. How, then, can the masses of the weak bosons fit into the Standard Model? The answer lies in the introduction of yet another field, called the Higgs field, the particle excitation of which is the much-lauded Higgs boson.
 
 \section{CP-Symmetry}\label{sec:CPT}
 
@@ -140,7 +140,7 @@ To understand the Higgs mechanism, we must first devote a brief detour to the co
 
 When the ball is balanced at the top of the potential "hill", the configuration is spatially symmetric: that is, no direction is privileged over any other. However, when this delicate balance is even slightly disturbed, the ball will roll down the hill in some direction, resulting in a final state that is $\emph{not}$ symmetrical. This is the phenomenon known as "spontaneous symmetry breaking".
 
-Using the language of quantum field theory, we can easily add spontaneously-breakable symmetric potential terms to a Lagrangian. If we do so, the phenomenon of symmetry breaking allows us to rewrite these terms as a combination of massless fields (one for each "choice" the symmetry breaking must make) and massive fields (corresponding to the leftover degrees of freedom). If we rewrite the "wine-bottle" potential in this way, for example, the one new massless field corresponds to the ball's angular position along the circle at the base, while the massive field corresponds to the ball's  radial position "up" or "down" the hill. The massless particles that arise from these massless fields are known as Goldstone bosons.
+Using the language of quantum field theory, we can add spontaneously-breakable symmetric potential terms to a Lagrangian. If we do so, the phenomenon of symmetry breaking allows us to rewrite these terms as a combination of massless fields (one for each "choice" the symmetry breaking must make) and massive fields (corresponding to the leftover degrees of freedom). If we rewrite the "wine-bottle" potential in this way, for example, the one new massless field corresponds to the ball's angular position along the circle at the base, while the massive field corresponds to the ball's  radial position "up" or "down" the hill. The massless particles that arise from these massless fields are known as Goldstone bosons.
 
 We are now ready to discuss the Higgs mechanism. We can combine the electromagnetic and weak nuclear forces as different manifestations of the same force, called the electroweak force, that transforms like $U(1) \times SU(2)$. We write the terms of the Standard Model electroweak Lagrangian, noting that, since the weak interaction is observed to be chiral, it couples differently to left- and right-handed fermions.
 
@@ -148,9 +148,19 @@ In this case, the generator of the U(1) symmetry ($\alpha(x)$) is not the electr
 
 $L = \begin{pmatrix} \psi_{L} \\ \psi'_{L} \end{pmatrix}$, $R = \begin{pmatrix}\psi_{R} \end{pmatrix}$.
 
-Similarly, the generators of the SU(2) symmetry are the three matrices $\tau_{i}$, one corresponding to each weak boson $W^{\mu}_{i}$. The self-interaction term for the weak interaction is $L_{kin} = -\frac{1}{4}G^{\mu \nu}G_{\mu \nu}$, where $G_{\mu \nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}+\frac{g}{2} W_{\mu}\times W_{\nu}$.
+Similarly, the generators of the SU(2) symmetry are the three matrices $\tau_{i}$, one corresponding to each weak boson $W^{\mu}_{i}$. The self-interaction term for the weak interaction is $L_{kin} = -\frac{1}{4}G^{\mu \nu}G_{\mu \nu}$, where:
 
-We can define a new covariant derivative capturing the weak interaction terms as well: $D^{\mu} = \partial^{\mu}- \frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i I g_2 \Sigma \tau_{i}W_{i}^\mu$ Thus, the full electroweak $SU(2)_L \times U(1)$ Lagrangian is:
+\begin{equation}
+G_{\mu \nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}+\frac{g}{2} W_{\mu}\times W_{\nu}
+\end{equation}
+
+We can define a new covariant derivative capturing the weak interaction terms as well:
+
+\begin{equation}
+D^{\mu} = \partial^{\mu}- \frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i I g_2 \Sigma \tau_{i}W_{i}^\mu
+\end{equation}
+
+Thus, the full electroweak $SU(2)_L \times U(1)$ Lagrangian is:
 
 \begin{equation}
 \mathcal{L} = i\bar{R}\gamma^{\mu}D_{\mu}R + i\bar{L}\gamma^{\mu}D_{\mu}L -\frac{1}{4}G^{\mu \nu}G_{\mu \nu} -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}
@@ -158,7 +168,12 @@ We can define a new covariant derivative capturing the weak interaction terms as
 
 However, we note that this Lagrangian does not allow for gauge boson mass or fermion mass, as a fermion mass term $m\bar{\psi}\psi = m(\bar{\psi_{R}}\psi_{L}+\bar{\psi_{L}}\psi_{R})$ is not an SU(2) singlet and would thus not be invariant under the SU(2) symmetry. 
 
-To rectify this, we can introduce a new complex SU(2) doublet scalar field $\phi = \begin{pmatrix} \phi^{+} \\ \phi^{0} \end{pmatrix} = \begin{pmatrix} \phi_{1} + i\phi_{2}  \\ \phi_{3} + i\phi_{4} \end{pmatrix}$ called the $\emph{Higgs field}$. It follows the Lagrangian
+To rectify this, we can introduce a new complex SU(2) doublet scalar field:
+\begin{equation}
+\phi = \begin{pmatrix} \phi^{+} \\ \phi^{0} \end{pmatrix} = \begin{pmatrix} \phi_{1} + i\phi_{2}  \\ \phi_{3} + i\phi_{4} \end{pmatrix}
+\end{equation}
+
+called the $\emph{Higgs field}$. It follows the Lagrangian
 
 \begin{equation}
 \mathcal{L} = T-V = (D^{\mu}\phi)^{\dag}(D_{\mu}\phi) - {\mu}^2\phi^{\dag}\phi - \lambda(\phi^{\dag}\phi)^{2}
@@ -169,7 +184,19 @@ which, if $\mu^{2} < 0$ has a minimum at
 \phi^{\dag}\phi = \frac{-\mu^{2}}{2 \lambda} = \frac{v^{2}}{2}
 \end{equation}
 
-We note that the potential is symmetric, so we can pick a direction to "break the symmetry" in. Let us define the vacuum as $\phi_0 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}$. Then, for any arbitrary configuration of the field, we can expand the potential about the minimum as $\phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ (v + h(x)) \end{pmatrix}$.
+We note that the potential is symmetric, so we can pick a direction to "break the symmetry" in. Let us define the vacuum as:
+
+\begin{equation}
+\phi_0 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}
+\end{equation}
+
+
+Then, for any arbitrary configuration of the field, we can expand the potential about the minimum as
+
+\begin{equation}
+\phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ (v + h(x)) \end{pmatrix}
+\label{eq:min}
+\end{equation}
 
 We can expand the kinetic term in the Lagrangian as
 
@@ -186,19 +213,40 @@ Which, using the definitions of the three tau matrices, and putting Y = I = 1, b
   \end{aligned}&&&
 \end{align}
 
-If we again define some new field combinations here: ${W_{\mu}^{+} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}-iW_{\mu}^{2})}$, ${W_{\mu}^{-} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}+iW_{\mu}^{2})}$, ${Z_{\mu} = \frac{g_{1}B{\mu}+g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}$ and ${A_{\mu} = \frac{g_{1}B{\mu}-g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}$,
+If we again define some new field combinations here:
+
+\begin{align}
+  \begin{aligned}
+{W_{\mu}^{+} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}-iW_{\mu}^{2})}\\
+{W_{\mu}^{-} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}+iW_{\mu}^{2})}\\
+{Z_{\mu} = \frac{g_{1}B{\mu}+g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}\\ 
+{A_{\mu} = \frac{g_{1}B{\mu}-g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}
+  \end{aligned}&&&
+\end{align}
 
 then we get: 
+
 \begin{equation}
 \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + (\frac{1}{2}vg_{2})^{2}W_\mu^{+}W_\mu^{-}+(\frac{1}{2}v(\sqrt{{g_1}^2+{g_2}^2}))^{2}Z_{\mu}
 \end{equation}
 
 And we see that Z field and the two W fields have acquired mass terms, while the A field has remained massless. This corresponds to what we observe in the real world: the W bosons and the Z boson are massive, while the photon remains massless!
 
-For fermions, the coupling to the Higgs field looks like $g_{f}(\bar{f}_{L}\phi f_{R} + \phi^{\dag}\bar{f}_{R} f_{L})$ (for some constant $g_{f}$).
+For fermions, the coupling to the Higgs field looks like (for some constant $g_{f}$):
 
-We note that, if we expand $\phi(x) = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ (v + h(x)) \end{pmatrix}$ as before, we find that the coupling term now looks like 
-$\frac{g_{f}v}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L}) + \frac{g_{f}}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L})$. Thus, the presence of the Higgs field allows us to have fermion mass terms in our Lagrangians, where the masses are $m_{f} = \frac{g_{f}v}{\sqrt{2}}$. However, we note that, at the current time, there is no way to derive the $g_{f}$ coupling theoretically: thus, while the Higgs mechanism now allows us to have massive fermions in our theory, it does not actually determine what the masses of these fermions are.
+\begin{equation}
+g_{f}(\bar{f}_{L}\phi f_{R} + \phi^{\dag}\bar{f}_{R} f_{L})
+\end{equation}
+
+
+We note that, if we expand $\phi(x)$ about the minimum as in \ref{eq:min}, we find that the coupling term now looks like:
+
+\begin{equation}
+\frac{g_{f}v}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L}) + \frac{g_{f}}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L})
+\end{equation}
+
+
+Thus, the presence of the Higgs field allows us to have fermion mass terms in our Lagrangians, where the masses are $m_{f} = \frac{g_{f}v}{\sqrt{2}}$. However, we note that, at the current time, there is no way to derive the $g_{f}$ coupling theoretically: thus, while the Higgs mechanism now allows us to have massive fermions in our theory, it does not actually determine what the masses of these fermions are.
 
 Finally, we note that if we expand the potential term in the complex Klein-Gordon Lagrangian for the Higgs field about the minimum, that is, 
 
@@ -210,10 +258,15 @@ V = {\mu}^2\phi^{\dag}\phi + \lambda(\phi^{\dag}\phi)^{2} = \frac{1}{2}{\mu}^2(v
   \end{aligned}&&&
 \end{align}
 
-we see a mass term of the form $(\frac{M_{h}^{2}}{2})h^{2} = \frac{6}{4}\lambda v^{2} h^{2} - \frac{1}{2}\lambda v^{2} h^{2} = \lambda v^{2} h^{2}$;
+we see a mass term of the form
+
+\begin{equation}
+(\frac{M_{h}^{2}}{2})h^{2} = \frac{6}{4}\lambda v^{2} h^{2} - \frac{1}{2}\lambda v^{2} h^{2} = \lambda v^{2} h^{2}
+\end{equation}
+
 That is, $M_{h} = v \sqrt{2 \lambda}$.
 
-In sum: without a Higgs field, in order for the Standard Model electroweak Lagrangian to preserve $SU(2)_L \times U(1)$ symmetry, we are forbidden from including mass terms for the fermions or the gauge bosons. However, by adding this additional field to the model and breaking its symmetry, we find that we can include fermion mass terms that do not violate the $SU(2)_L \times U(1)$ symmetry, and that the electroweak gauge bosons now acquire mass terms by default. Furthermore, this new field also has a mass. This is a remarkable result: by simply adding one extra field to the model, we have solved several different problems in one fell swoop!
+In sum: without a Higgs field, in order for the Standard Model electroweak Lagrangian to preserve $SU(2)_L \times U(1)$ symmetry, we are forbidden from including mass terms for the fermions or the gauge bosons. However, by adding this additional field to the model and breaking its symmetry, we find that we can include fermion mass terms that do not violate the $SU(2)_L \times U(1)$ symmetry, and that the electroweak gauge bosons now acquire mass terms by default. Furthermore, this new field also has a mass. This is a remarkable result: by adding one extra field to the model, we have solved several different problems in one fell swoop!
 
 \section{The Higgs Boson and Its Couplings} \label{sec:Higgs Couplings} 
 
@@ -346,6 +399,8 @@ The rate of a particular physics production mode or scattering process is parame
 Br(H \rightarrow XX) = \frac{\Gamma(H \rightarrow XX)}{\Gamma_{H}}
 \end{equation}
 
+The second of the two analyses discussed in this dissertation is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the $ggF$, $VBF$, $VH$, $ttH$, and $tH$ processes; by doing this, we can extract limits on the individual Higgs production cross-sections in targeted regions of phase space.
+
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/HiggsBR.png}
 \caption{The branching ratio of the Higgs to various final state particles as a function of its mass (now known to be ~125 GeV), from reference \cite{YellowReport1}.}
@@ -453,69 +508,21 @@ In addition to considering which corrections to apply, we must also consider the
   \caption{Feynman diagrams depicting the leading-order terms for $tHjb$, made with \cite{FeynmanMaker}. These diagrams are calculated using the four-flavor PDF scheme. Note that additional diagrams can be created by reversing the direction of the upper fermion "circuit" (the final-state top and bottom must be opposite sign, but $tHj\bar{b}$ and $\bar{t}Hjb$ are equally likely to occur).}  
 \end{figure}
 
-\subsection{The Kappa Framework} \label{sec:kappaFW}
-
-This dissertation features two physics analyses from the ATLAS experiment. The first is a targeted attempt to measure whether the top quark Yukawa coupling is CP-even (respects CP symmetry) or CP-odd (violates it) by closely studying the $ttH$ process. In the Standard Model Lagrangian, the top Yukawa coupling is purely CP-even, and can be written in the form $\kappa g_{t} \bar{t}th$. Adding a CP-odd component to the coupling adds an additional $\kappa g_{t} \bar{t} (i \gamma^{5})th$ term to the Lagrangian; the total coupling can thus be parameterized as $\kappa g_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$ for a "CP-mixing angle" $\alpha$ that governs the relative magnitude of the CP-even and CP-odd terms. Introducing this CP-odd term changes the kinematics of the process, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By performing a fit on these variables to determine the relative agreement or disagreement with the standard model, we can extract a value for $\alpha$. In this dissertation, we refer to this analysis as the "ttHCP Analysis".
-
-When measuring Higgs couplings in analyses suh as these, it is often most useful to note the ratio of the measured coupling to the Standard Model prediction, rather than the measured coupling itself. For some Higgs coupling to a boson or fermion $i$, we can write
-
-\begin{equation}
-\kappa_{i} = \frac{y_{i}^{meas}}{y_{i}^{SM}}
-\end{equation}
-
-This $\kappa$ parameter is called the "coupling strength"-- if $\kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $\kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \cite{LHCHiggsCrossSectionWorkingGroup}.
-
-The parameterization of various production cross-sections and decay widths (divided by their Standard Model values) in terms of the $\kappa$ framework is shown in Tables \ref{tab:Xsecskappa}-\ref{tab:BRskappa} \cite{PhysRevD.101.012002}. The "resolved" column assumes that only the particles of the Standard Model exist. However, it can also be useful to develop "effective" coupling terms that allows for the existence of additional particles that may influence the loop diagrams. These can be modeled by mutiplying the resolved coupling terms by the indicated factors:
-
-\begin{equation}
-\kappa_{g}^{2} = \frac{\sigma_{ggF}^{meas}}{\sigma_{ggF}^{SM}}, \kappa_{\gamma}^{2} = \frac{\Gamma{\gamma \gamma}^{meas}}{\Gamma_{\gamma \gamma}^{SM}}, \kappa_{Z \gamma}^{2} = \frac{\Gamma{Z \gamma}^{meas}}{\Gamma_{Z \gamma}^{SM}}
-\end{equation}
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{ccc}
-	Production Mode & Effective Modifier & Resolved Modifier \\ \hline
-	$\sigma(ggF)$ & $\kappa_{g}^{2}$ & $1.04 \kappa_{t}^{2} + 0.002 \kappa_{b}^2 - 0.04 \kappa_{t} \kappa_{b}$ \\
-	$\sigma(VBF)$ & & $0.73 \kappa_{W}^{2} + 0.27 \kappa_{Z}^2$ \\
-	$\sigma(qq/qg \rightarrow W H)$ & & $\kappa_{W}^{2}$ \\
-	$\sigma(qq/qg \rightarrow ZH)$ & & $\kappa_{Z}^{2}$\\
-	$\sigma(ggZH)$ && $2.46 \kappa_{Z}^{2} + 0.46 \kappa_{t}^2 - 1.90 \kappa_{t} \kappa_{Z}$ \\
-	$\sigma(t\bar{t}H)$ && $\kappa_{t}^{2}$ \\
-	$\sigma(b\bar{b}H)$ && $\kappa_{b}^{2}$ \\
-	$\sigma(tHjb)$ && $2.63 \kappa_{t}^{2} + 3.58 \kappa_{W}^2 - 5.21 \kappa_{t} \kappa_{W}$ \\
-	$\sigma(tWH)$ && $2.91 \kappa_{t}^{2} + 2.31 \kappa_{W}^2 - 4.22 \kappa_{t} \kappa_{W}$ \\
-    \end{tabular}
-    \caption{Parameterization of Higgs cross-section dependence on $\kappa$ coefficients, from \cite{PhysRevD.101.012002}}
-    \label{tab:Xsecskappa}
-\end{table}
-
-\begin{table}[h]
-    \centering
-    \begin{tabular}{ccc}
-	Production Mode & Effective Modifier & Resolved Modifier \\ \hline
-	$H \rightarrow bb$ & & $\kappa_{b}^2$ \\
-	$H \rightarrow WW$ & & $\kappa_{W}^{2}$ \\
-	$H \rightarrow gg$ & $\kappa_{g}^{2}$ & $1.11 \kappa_{t}^{2} + 0.01 \kappa_{b}^2 - 0.12 \kappa_{t} \kappa_{b}$ \\
-	$H \rightarrow \tau \tau$ & & $\kappa_{\tau}^{2}$ \\
-	$H \rightarrow cc$ && $2.46 \kappa_{c}^{2}$ \\
-	$H \rightarrow ZZ$ && $\kappa_{Z}^{2}$ \\
-	$H \rightarrow \gamma \gamma$ & $\kappa_{\gamma}^{2}$ & $1.59 \kappa_{W}^{2} + 0.07 \kappa_{t}^2 - 0.67 \kappa_{t} \kappa_{W}$ \\
-	$H \rightarrow Z \gamma$ & $\kappa_{z \gamma}^{2}$ & $1.12 \kappa_{W}^{2} + 0.12 \kappa_{t} \kappa_{W}$ \\
-	$H \rightarrow \mu \mu$ && $\kappa_{\mu}^{2}$ \\
-    \end{tabular}
-    \caption{Parameterization of Higgs branching ratio dependence on $\kappa$ coefficients, from \cite{PhysRevD.101.012002}}
-    \label{tab:BRskappa}
-\end{table}
 
 \subsection{CP-Violation in the Top Yukawa Coupling} \label{sec:CP-yukawa}
 
+
 According to the Standard Model, the Higgs boson is a CP-even scalar boson: it is predicted to have spin-zero, with all its interactions CP-even. Previous analyses from both ATLAS and CMS have placed limits on the existence of anomalous CP-violating Higgs couplings to the gauge bosons (\cite{Aad_2016} \cite{Khachatryan_2016} and \cite{Sirunyan_2019}); however, any such couplings would be suppressed by a factor of 1/$(\Lambda)^2$ (where $\Lambda$ indicates the energy scale of the new CP-violating physics) \cite{Zhang_2011}, so these studies are thus somewhat limited in their sensitivity. Similarly, indirect measurements of the CP-nature of the Higgs coupling to fermions in loop-diagram mediated processes have been performed \cite{Ellis} \cite{Brod_2013}; however, these measurements are highly dependent on the choice of BSM model that induces CP violation.
 
-The CP-analysis detailed in this dissertation marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner, but such constraints are indirect \cite{Aaboud_2018} \cite{couplings80fb}.
+The first of the two analyses detailed in this dissertation, referred to as the "ttHCP Analysis", marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner, but such constraints are indirect \cite{Aaboud_2018} \cite{couplings80fb}.
 
 Because of its combined direct and indirect sensitivity to the top Yukawa coupling, we thus find that the $ttH$ and $tH$ processes with $H \rightarrow \gamma \gamma $ provide a well-motivated channel for probing the CP-structure of the top-Higgs interaction. In addition, the presence of two photons in the event final state provides a clean signal, further motivating the use of this channel. 
 
-Using the Higgs Characterization (HC) model \cite{HC}, we can parameterize the top-Higgs interaction in the presence of CP-violation as $\mathcal{L} = -\frac{m_{t}}{v} \kappa_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th$
+Using the Higgs Characterization (HC) model \cite{HC}, we can parameterize the top-Higgs interaction in the presence of CP-violation as:
+
+\begin{equation}
+\mathcal{L} = -\frac{m_{t}}{v} \kappa_{t} \bar{t} (cos(\alpha)+ sin(\alpha) i \gamma^{5} )th
+\end{equation}
 
 for mixing angle $\alpha \in (-180^{\circ}, 180^{\circ})$ and $\kappa_{t} >= 0$.
 
@@ -542,103 +549,15 @@ Similarly, we can parameterize $\kappa_{g}$ and $\kappa_{\gamma}$ according to t
 \end{aligned}
 \end{align}
 
-Cross-sections as a function of $\alpha$ as implemented in Monte Carlo simulation are given in \ref{tab:MCsamples_XS}. We note that, as $\alpha$ increases from $\alpha = 0^{\circ}$ (CP-even) to $\alpha = 90^{\circ}$ (CP-odd), the $ttH$ cross-section decreases while the $tH$ and $ggF$ cross-sections increase. Similarly, the $H \rightarrow \gamma \gamma$ branching ratio increases as $\alpha$ increases.
-
-By developing targeted analysis categories and parameterizing the yield in each category as a function of $\alpha$, we can thus perform a likelihood fit to the data and set limits on the true value of $\alpha$. 
-
-\subsection{Simplified Template Cross-Sections} \label{sec:STXS}
-
-The second analysis discussed here is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the $ggF$, $VBF$, $VH$, $ttH$, and $tH$ processes; by doing this, we can extract limits on the individual Higgs production cross-sections in targeted regions of phase space.
-
-The Couplings Analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework \cite{YellowReport4}, where different regions of phase space, called "truth bins", are probed according to their production modes and kinematic properties. A visual guide to the different STXS1.2 bins is shown in figure \ref{fig:STXS_scheme}. The categorization is designed such that all events passing the $H \rightarrow \gamma \gamma$ selection criteria will fall into one of the STXS1.2 categories.
-
-\begin{figure}[tbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{figures/theory_chapter/simplifiedXS_ggF_1_2} \\[3mm]
-  \includegraphics[width=0.8\textwidth]{figures/theory_chapter/simplifiedXS_VBF_1_2} \\[3mm]
-  \includegraphics[width=0.6\textwidth]{figures/theory_chapter/simplifiedXS_VH_1_2}
-  \includegraphics[width=0.25\textwidth]{figures/theory_chapter/simplifiedXS_ttH_1_2}
-  \caption{Stage 1.2 STXS bin definitions for the main production modes.}
-  \label{fig:STXS_scheme}
-\end{figure}
+Cross-sections as a function of $\alpha$ as implemented in Monte Carlo simulation are given in \ref{tab:MCsamples_XS}. We note that, as $\alpha$ increases from $\alpha = 0^{\circ}$ (CP-even) to $\alpha = 90^{\circ}$ (CP-odd), the $ttH$ cross-section decreases while the $tH$ and $ggF$ cross-sections increase. Similarly, the $H \rightarrow \gamma \gamma$ branching ratio increases as $\alpha$ increases. Furthermore, introducing a CP-odd term changes the kinematics of the $ttH$ and $tH$ processes, and leads to events with different angular variable values (such as the angle between the two tops) as well as changing the energies and momenta of some decay products. By developing targeted analysis categories using these kinematic variables and parameterizing the yield in each category as a function of $\alpha$, we can thus perform a likelihood fit to the data and set limits on the true value of $\alpha$. 
 
 
-In addition to their nominal production and decay modes, the $ggH$ STXS1.2 truth bins include both $ggF$ and hadronically-decaying $gg \rightarrow ZH$ events, while the $VBF$ STXS definition includes hadronically-decaying $qq \rightarrow VH$. Additionally, it is important to note that the leptonic $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include Z-boson decays both to two charged leptons and to two neutrinos (the latter of which will have a high MET signature). For nomenclature purposes, throughout this dissertation, $ggF$ is used to refer to the $gg \rightarrow H$ production mode, while $ggH$ is used to refer to the regions of phase space targeting the combination of $gg \rightarrow H$ and $gg \rightarrow ZH$.
 
-In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200$ GeV bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses (where $p_{T}^{H}$ denotes the transverse momentum of the Higgs, that is, the component of the Higgs momentum perpendicular to the beamline). A total of 44 STXS truth regions are defined.
 
-For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algorithm \cite{antikt} using radius R=0.4, are required to have $p_{T} > 30$ GeV (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
 
-Using the Monte Carlo simulated samples described in section \ref{chap:datamc_chapter}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \ref{tab:STXS_cross_sections}, and show the acceptance for each production mode in Figure \ref{fig:STXS_acceptances}. Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{chap:couplings_chapter}. By measuring the cross-sections in each of these bins, a number of different values are able to be extracted, including the various Higgs couplings $\kappa$ and limits on effective field theories (EFTs) parameterizing physics beyond the standard model.
 
-\begin{table}[htbp]
-        \centering
-        {\footnotesize
-        \begin{tabular}{lS}
-                STXS 1.2 Truth Bin                                     & {$\sigma\times BR_{\gamma \gamma} [\si{\fb}]$} \\
-                \hline
-                gg2H\_0J\_ptH\_0\_10                                   & 15.038147                                    \\
-                gg2H\_0J\_ptH\_gt10                                    & 46.799419                                    \\
-                gg2H\_1J\_ptH\_0\_60                                   & 14.742653                                    \\
-                gg2H\_1J\_ptH\_60\_120                                 & 10.223149                                    \\
-                gg2H\_1J\_ptH\_120\_200                                & 1.692748                                     \\
-                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_0\_60                    & 2.639954                                     \\
-                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_60\_120                  & 4.058768                                     \\
-                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_120\_200                 & 2.133361                                     \\
-                gg2H\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_0\_25   & 0.569488                                     \\
-                gg2H\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_gt25    & 0.818394                                     \\
-                gg2H\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_0\_25      & 0.241653                                     \\
-                gg2H\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_gt25       & 0.363737                                     \\
-                gg2H\_ptH\_200\_300                                    & 1.036991                                     \\
-                gg2H\_ptH\_300\_450                                    & 0.239097                                     \\
-                gg2H\_ptH\_450\_650                                    & 0.035624                                     \\
-                gg2H\_ptH\_gt650                                       & 0.004947                                     \\
-                qq2Hqq\_0J                                             & 0.816245                                     \\
-                qq2Hqq\_1J                                             & 3.956656                                     \\
-                qq2Hqq\_ge2J\_MJJ\_0\_60                               & 0.224649                                     \\
-                qq2Hqq\_ge2J\_MJJ\_60\_120                             & 1.200933                                     \\
-                qq2Hqq\_ge2J\_MJJ\_120\_350                            & 1.426903                                     \\
-                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_0\_25 & 0.897833                                     \\
-                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_gt25  & 0.337811                                     \\
-                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_0\_25    & 1.356668                                     \\
-                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_gt25     & 0.314044                                     \\
-                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_gt200                & 0.104740                                     \\
-                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_gt200                   & 0.258838                                     \\
-                qq2Hlnu\_ptV\_0\_75                                    & 0.466795                                     \\
-                qq2Hlnu\_ptV\_75\_150                                  & 0.297442                                     \\
-                qq2Hlnu\_ptV\_150\_250\_0J                             & 0.051545                                     \\
-                qq2Hlnu\_ptV\_150\_250\_ge1J                           & 0.042651                                     \\
-                qq2Hlnu\_ptV\_gt250                                    & 0.030152                                     \\
-                qq2Hll\_ptV\_0\_75                                     & 0.236572                                     \\
-                qq2Hll\_ptV\_75\_150                                   & 0.157167                                     \\
-                qq2Hll\_ptV\_150\_250\_0J                              & 0.027476                                     \\
-                qq2Hll\_ptV\_150\_250\_ge1J                            & 0.022523                                     \\
-                qq2Hll\_ptV\_gt250                                     & 0.015076                                     \\
-                gg2Hll\_ptV\_0\_75                                     & 0.014989                                     \\
-                gg2Hll\_ptV\_75\_150                                   & 0.038219                                     \\
-                gg2Hll\_ptV\_150\_250\_0J                              & 0.007812                                     \\
-                gg2Hll\_ptV\_150\_250\_ge1J                            & 0.014855                                     \\
-                gg2Hll\_ptV\_gt250                                     & 0.004465                                     \\
-                ttH\_ptH\_0\_60                                        & 0.267960                                     \\
-                ttH\_ptH\_60\_120                                      & 0.404152                                     \\
-                ttH\_ptH\_120\_200                                     & 0.287483                                     \\
-                ttH\_ptH\_200\_300                                     & 0.119454                                     \\
-                ttH\_ptH\_gt300                                        & 0.055617                                     \\
-                bbH                                                    & 1.044426                                     \\
-                tH                                                     & 0.187064                                     \\
-                \hline
-        \end{tabular}
-        }
-        \caption{Simplified template cross sections times diphoton branching ratio for each of the STXS 1.2 truth bins.}
-        \label{tab:STXS_cross_sections}
-\end{table}
 
-\begin{figure}[tbp]
-        \centering
-        \includegraphics[width=\linewidth]{figures/theory_chapter/STXS_acceptances.pdf}
-        \caption{Stage 1.2 STXS bin acceptances for all Higgs production modes considered in the Couplings analysis. The FWDH bins target events outside the nominal acceptance, i.e. with $|y_{H}|>2.5$.}
-        \label{fig:STXS_acceptances}
-\end{figure}
+
 
 
 \iffalse

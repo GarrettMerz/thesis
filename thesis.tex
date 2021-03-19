@@ -6,6 +6,8 @@
 \usepackage{\ATLASLATEXPATH atlasphysics}
 \usepackage{ANA-HIGG-2020-16-INT1-defs}
 
+\RequirePackage{doi}
+\usepackage{hyperref}
 \usepackage{pgffor}
 \usepackage{longfigure}
 \usepackage{mathtools}
@@ -110,9 +112,81 @@ Eric Bell \\ }
 \showlistofappendices
 
 % Definition of any abbreviations used.
-\abbreviations{ %
-    \acro{TH}{Thesis}
-    \acrodefplural{TH}{Theses}   
+\abbreviations{ 
+    \acro{CERN}{Center for European Nuclear Research}
+    \acro{ATLAS}{A Toroidal LHC ApparatuS}
+    \acro{CMS}{Compact Muon Solenoid}
+    \acro{LHC}{Large Hadron Collider}
+    \acro{LEP}{Large Electron-Positron Collider}
+    \acro{CP}{Charge-Parity}
+    \acro{CPT}{Charge-Parity-Time}
+    \acro{BDT}{Boosted Decision Tree}
+    \acro{QCD}{Quantum Chromodynamics}
+    \acro{STXS}{Simplified Template Cross-Section}
+    \acro{CKM}{Cabbibo-Kobayashi-Masakawa}
+    \acro{LO}{Leading Order}
+    \acro{NLO}{Next-to-Leading Order}
+    \acro{NNLO}{Next-to-Next-to-Leading Order}
+    \acro{PDF}{Parton Distribution Function}
+    \acro{SM}{Standard Model}
+    \acro{BSM}{Beyond the Standard Model}
+    \acro{HC}{Higgs Characterization}
+    \acro{RF}{Radiofrequency}
+    \acro{SPS}{Super Proton Synchrotron}
+    \acro{LINAC}{Linear Accelerator}
+    \acro{PSB}{Proton Synchrotron Booster}
+    \acro{LHCb}{Large Hadron Collider Beauty}
+    \acro{ALICE}{A Large Ion Collider Experiment}
+    \acro{HL-LHC}{High-Luminosity Large Hadron Collider}
+    \acro{ECAL}{Electronic Calorimeter}
+    \acro{HCAL}{Hadronic Calorimeter}
+    \acro{IBL}{}
+    \acro{SCT}{}
+    \acro{TRT}{}
+    \acro{MBTS}{}
+    \acro{EM}{}
+    \acro{LAr}{}
+    \acro{PTP}{}
+    \acro{POPOP}{}
+    \acro{HEC}{}
+    \acro{FCAL}{}
+    \acro{MDT}{}
+    \acro{CSC}{}
+    \acro{RPC}{}
+    \acro{TGC}{}
+    \acro{L1}{}
+    \acro{CTP}{}
+    \acro{L2}{}
+    \acro{HLT}{}
+    \acro{GEANT4}{}
+    \acro{ID}{Identification}
+    \acro{JVT}{}
+    \acro{PFlow}{}
+    \acro{XGBoost}{}
+    \acro{TMVA}{}
+    \acro{TI}{}
+    \acro{NTI}{}
+    \acro{NNLOPS}{}
+    \acro{EFT}{}
+    \acro{CB}{}
+    \acro{DSCB}{}
+    \acro{SS}{}
+    \acro{GPR}{}
+    \acro{SBBDT}{}
+    \acro{CPBDT}{}
+    \acro{ROC-AUC}{}
+    \acro{LHAPDF}{}
+    \acro{PDF4LHC}{}
+    \acro{UEPS}{}
+    \acro{CLs}{}
+    \acro{LUCID}{}
+    \acro{KLFitter}{}
+    \acro{BAT}{}
+    \acro{GaSBaG}{}
+    \acro{RBF}{}
+    \acro{GP}{}
+    \acro{DoF}{}
+
 }
 
 
@@ -124,6 +198,10 @@ My Abstract.
 %\hideabstractpagenumber
 
 %% DOCUMENT AREA
+
+
+
+
 \usepackage{ amssymb }
 \usepackage{ amsmath }
 \begin{document}
@@ -148,10 +226,10 @@ My Abstract.
 \chapter{Signal Parameterization, Background Parametrization, and Statistical Methods} \label{chap:sigbkgparam}
 	\input{sections/sigbkgparam} 
 
-\chapter{Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar{t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma$} \label{chap:tthcp_chapter}
+\chapter{Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar{t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma$: Selection and Categorization} \label{chap:tthcp_chapter}
 	\input{sections/tthcp_chapter} 
 
-\chapter{Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar{t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma$} \label{chap:tthcp_results}
+\chapter{Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar{t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma$: Results} \label{chap:tthcp_results}
 	\input{sections/tthcp_results} 
 
 \chapter{Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma$} \label{chap:couplings_chapter}

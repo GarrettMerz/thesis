@@ -3,107 +3,105 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: aiaa.bst
 Database file #1: ./bib/thesis-bib.bib
-I was expecting a `,' or a `}'---line 826 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 838 of file ./bib/thesis-bib.bib
  :    
  :    year={2008},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1552 of file ./bib/thesis-bib.bib
- :       
- :       title         = "{Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector. Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector}",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1760 of file ./bib/thesis-bib.bib
- : 
- : @article{purity2,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--entry type for "skopt" isn't style-file defined
---line 1829 of file ./bib/thesis-bib.bib
-Repeated entry---line 2010 of file ./bib/thesis-bib.bib
+--line 1847 of file ./bib/thesis-bib.bib
+Repeated entry---line 2029 of file ./bib/thesis-bib.bib
  : @article{Higgsmass
  :                   ,
 I'm skipping whatever remains of this entry
-Warning--entry type for "Hyneman" isn't style-file defined
---line 2156 of file ./bib/thesis-bib.bib
-Warning--empty author in LEPExperiments
-Warning--empty author in Couplingsanalysis
+Name 1 in "de Florian, D., and others." has a comma at the end for entry YellowReport4
+while executing---line 1245 of file aiaa.bst
 Warning--empty publisher in YellowReport4
-Warning--empty journal in LHCHiggsCrossSectionWorkingGroup
-Warning--empty author in couplings80fb
+Name 1 in "Gilardoni, Simone, and others." has a comma at the end for entry SPS
+while executing---line 1245 of file aiaa.bst
 Warning--can't use both author and editor fields in SPS
 Warning--empty publisher in SPS
+Name 1 in "G. Aad, and others." has a comma at the end for entry ATLAS_TDR
+while executing---line 1245 of file aiaa.bst
+Name 1 in "S Chatrchyan, and others." has a comma at the end for entry CMS_TDR
+while executing---line 1245 of file aiaa.bst
+Warning--empty author in LHCb_TDR
 Warning--empty journal in LHCRing
-Warning--empty author in ATLAS-CONF-2019-021
-Warning--empty author and editor in muonsTDR
-Warning--empty author and editor in ID
+Name 1 in "Aad, G., and others" has a comma at the end for entry muonsTDR
+while executing---line 1245 of file aiaa.bst
+Name 1 in "Aad, G., and others." has a comma at the end for entry ATLAS_Jinst
+while executing---line 1245 of file aiaa.bst
+Name 1 in "Aad, G., and others" has a comma at the end for entry ID
+while executing---line 1245 of file aiaa.bst
 Warning--empty institution in IBL_TDR
-Warning--empty author in Pixel
 Name 1 in "Livan, Michele, and Wigmans, Richard" has a comma at the end for entry misconceptions
 while executing---line 1245 of file aiaa.bst
-Warning--empty author in LAr_TDR
-Warning--empty journal in LAr_TDR
+Name 1 in "J. -. {Rey}, and others." has a comma at the end for entry Coldmass
+while executing---line 1245 of file aiaa.bst
+Name 1 in "D. E. {Baynham}, and others." has a comma at the end for entry Toroid
+while executing---line 1245 of file aiaa.bst
 Warning--empty title in CSCs
 Warning--empty note in TGCWheel
-Warning--empty author in Pythia8.2
 Warning--empty year in Herwig
 Warning--empty note in CERN-EX-1301009
-Warning--empty author in ATL-PHYS-PUB-2017-022
-Warning--empty title in CERN-PH-EP-2015-216
-Warning--empty journal in CERN-PH-EP-2015-216
-Warning--empty year in CERN-PH-EP-2015-216
-Warning--empty author in ATL-PHYS-PUB-2017-013
+Name 1 in "Aaboud, M., and others" has a comma at the end for entry ATL-PHYS-PUB-2017-022
+while executing---line 1245 of file aiaa.bst
+Name 1 in "Aad, Georges, and others." has a comma at the end for entry CERN-PH-EP-2015-216
+while executing---line 1245 of file aiaa.bst
 Warning--empty pages in LightGBM
-Warning--empty author in A3
-Warning--empty author in A14
-Warning--empty author in purity1
-Warning--empty journal in purity1
-Warning--empty year in purity1
+Name 1 in "Aaboud, M., and others" has a comma at the end for entry A3
+while executing---line 1245 of file aiaa.bst
+Name 1 in "Aad, G., and others" has a comma at the end for entry A14
+while executing---line 1245 of file aiaa.bst
+Warning--empty journal in LHCHiggsCrossSectionWorkingGroup
 Warning--empty journal in JSConway
 Warning--there's a number but no volume in JSConway
-Warning--empty author in ATLAS-CONF-2019-004
-Warning--empty author in jetuncs1
+Name 1 in "Aaboud, M., and others" has a comma at the end for entry ATLAS-CONF-2019-004
+while executing---line 1245 of file aiaa.bst
 Warning--empty author in MET2
 Warning--empty journal in kappaFW
-You've used 167 entries,
+Name 1 in "Aad, G, and others." has a comma at the end for entry coups127
+while executing---line 1245 of file aiaa.bst
+Warning--empty journal in coups127
+You've used 166 entries,
             2292 wiz_defined-function locations,
-            1473 strings with 29075 characters,
-and the built_in function-call counts, 32870 in all, are:
-= -- 2409
-> -- 1199
-< -- 116
-+ -- 493
-- -- 326
-* -- 3643
-:= -- 4724
-add.period$ -- 319
-call.type$ -- 167
+            1470 strings with 28006 characters,
+and the built_in function-call counts, 33829 in all, are:
+= -- 2514
+> -- 1355
+< -- 117
++ -- 517
+- -- 351
+* -- 3739
+:= -- 4878
+add.period$ -- 316
+call.type$ -- 166
 change.case$ -- 2
 chr.to.int$ -- 3
-cite$ -- 204
-duplicate$ -- 1674
-empty$ -- 3597
-format.name$ -- 326
-if$ -- 7015
+cite$ -- 183
+duplicate$ -- 1672
+empty$ -- 3599
+format.name$ -- 351
+if$ -- 7244
 int.to.chr$ -- 0
-int.to.str$ -- 167
-missing$ -- 149
-newline$ -- 505
-num.names$ -- 151
-pop$ -- 326
+int.to.str$ -- 166
+missing$ -- 153
+newline$ -- 502
+num.names$ -- 165
+pop$ -- 295
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 588
+skip$ -- 675
 stack$ -- 0
-substring$ -- 2118
-swap$ -- 607
-text.length$ -- 115
+substring$ -- 2143
+swap$ -- 670
+text.length$ -- 116
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 37
-while$ -- 247
-width$ -- 170
-write$ -- 1472
-(There were 5 error messages)
+warning$ -- 17
+while$ -- 262
+width$ -- 169
+write$ -- 1488
+(There were 18 error messages)

@@ -29,7 +29,7 @@ The input variables chosen are:
 \item $p_{T}/m_{\gamma \gamma}$, $\eta$ and $\phi$ of the two photons. Photon $p_{T}$ is scaled by $m_{\gamma \gamma}$ to reduce unwanted sculpting of the diphoton mass spectrum. 
 \item $p_T$, $\eta$, $\phi$ and E of the six highest-$p_{T}$ jets
 \item Boolean b-tag value for each of the six highest-$p_{T}$ jets (77\% working point)
-\item \MET and direction of \MET
+\item $E_T^{miss}$ and direction of $E_T^{miss}$
 \end{itemize}
 
 Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown in Figure \ref{fig:SBBDTvarshad}.
@@ -53,7 +53,7 @@ However, due to lower statistics in the leptonic top decay channel due to the sm
 
 \begin{itemize}
 \item The relative $p_{T}$ cuts are loosened from $\frac{p_{T}}{m_{\gamma\gamma}} > 0.35$ for the leading photon and $\frac{p_{T}}{m_{\gamma\gamma}} > 0.25$ for the subleading photon to a flat $p_{T} > 35$ GeV for the leading photon and $p_{T} > 25$ GeV for the subleading photon.
-\item The diphoton invariant mass window is extended from $105 GeV < m_{\gamma \gamma} < 160 GeV$ to $80 GeV < m_{\gamma \gamma} < 250 GeV$.
+\item The diphoton invariant mass window is extended from $105$ GeV $< m_{\gamma \gamma} < 160$ GeV to $80$ GeV $< m_{\gamma \gamma} < 250$ GeV.
 \end{itemize}
 
 The cuts are again tightened to define the signal region after BDT training is complete- that is, the loosening of these cuts is only utilized to increase BDT training statistics, and does not carry through to other stages of the analysis.
@@ -65,7 +65,7 @@ The input variables chosen are:
 \item $p_T$, $\eta$ and $\phi$ of up to two leptons. 
 \item $p_T$, $\eta$, $\phi$ and E of the four jets with highest $p_{T}$
 \item Boolean b-tag flag (77\% working point) for each of the four jets with highest $p_{T}$
-\item \MET and direction of \MET
+\item $E_T^{miss}$ and direction of $E_T^{miss}$
 \end{itemize}
 
 Distributions of the BDT input variables using $79.8 fb^{-1}$ of data are shown in Figure \ref{fig:SBBDTvarslep}. The BDT output distributions are shown in figures \ref{fig:moriondtotal}. The SBBDT performance is independent of $\alpha$.
@@ -422,7 +422,7 @@ where $S_{e}$ is the amount of signal expected if $\alpha = 0^{\circ}$ and $S_{o
 
 To determine the total significance for either of these metrics across a number of categories, the number-counting significances for each category are added in quadrature.
 
-To estimate the number of continuum background events B in the diphoton mass signal region in each category (that is, $123 GeV < m_{\gamma\gamma} < 127 GeV$), a scaling method is applied to the NTI data control region in the mass sidebands (that is, $105 GeV < m_{\gamma\gamma} < 123 GeV$ or $127 GeV < m_{\gamma\gamma} < 160 GeV$):
+To estimate the number of continuum background events B in the diphoton mass signal region in each category (that is, $123$ GeV $< m_{\gamma\gamma} < 127$ GeV), a scaling method is applied to the NTI data control region in the mass sidebands (that is, $105$ GeV $< m_{\gamma\gamma} < 123$ GeV or $127$ GeV $< m_{\gamma\gamma} < 160$ GeV):
 
 \begin{align}
 \begin{aligned}
@@ -433,7 +433,7 @@ N(TI,sig) = N(NTI, SBs)\times \frac{N(TI, SBs)}{N(NTI, SBs)} \times \frac{N(NTI,
 
 Where the scale-factors $f_{1}$ and $f_{2}$ are calculated separately using the hadronic and leptonic preselection regions. The combined scale factor, $f_{1} \times f_{2}$, is found to be 0.013 for the hadronic region and 0.016 for the leptonic region. 
 
-In order to ensure that there is sufficient data to perform a likelihood fit, at least 0.8 continuum events (as modelled by scaled NTI sidebands) ar required in the $123 GeV < m_{\gamma\gamma} < 127 GeV$ signal window in each category.
+In order to ensure that there is sufficient data to perform a likelihood fit, at least 0.8 continuum events (as modelled by scaled NTI sidebands) ar required in the $123$ GeV $< m_{\gamma\gamma} < 127$ GeV signal window in each category.
 
 \subsection{2D Categorization}
 

@@ -6,36 +6,34 @@ Valente, C.~M., {\em The Girl Who Fell Beneath Fairyland and Led the Revels
   There\/}, Feiwel and Friends, New York, NY, 2013, Cited with permission.
 
 \bibitem{HiggsATLAS}
-Aad, G. e.~a., \enquote{Observation of a new particle in the search for the
-  Standard Model Higgs boson with the ATLAS detector at the LHC,} {\em Physics
-  Letters B\/}, Vol.~716, No.~1, Sep 2012, pp.~1–29.
+Aad, G. and others., \enquote{Observation of a new particle in the search for
+  the Standard Model Higgs boson with the ATLAS detector at the LHC,} {\em
+  Physics Letters B\/}, Vol.~716, No.~1, Sep 2012, pp.~1–29.
 
 \bibitem{HiggsCMS}
-Chatrchyan, S. e.~a., \enquote{Observation of a new boson at a mass of 125 GeV
-  with the CMS experiment at the LHC,} {\em Physics Letters B\/}, Vol.~716,
-  No.~1, Sep 2012, pp.~30–61.
+Chatrchyan, S. and others., \enquote{Observation of a new boson at a mass of
+  125 GeV with the CMS experiment at the LHC,} {\em Physics Letters B\/},
+  Vol.~716, No.~1, Sep 2012, pp.~30–61.
 
 \bibitem{LEPExperiments}
-\enquote{Search for the Standard Model Higgs boson at LEP,} {\em Physics
-  Letters B\/}, Vol.~565, Jul 2003, pp.~61–75.
+Abbiendi, G. et~al., \enquote{Search for the Standard Model Higgs boson at
+  LEP,} {\em Physics Letters B\/}, Vol.~565, Jul 2003, pp.~61–75.
 
 \bibitem{ttH}
-Aaboud, M., Aad, G., Abbott, B., Abdinov, O., Abeloos, B., Abhayasinghe, D.,
-  Abidi, S., AbouZeid, O., Abraham, N., Abramowicz, H., and et~al.,
-  \enquote{Observation of Higgs boson production in association with a top
-  quark pair at the LHC with the ATLAS detector,} {\em Physics Letters B\/},
-  Vol.~784, Sep 2018, pp.~173–191.
+Aaboud, M. et~al., \enquote{Observation of Higgs boson production in
+  association with a top quark pair at the LHC with the ATLAS detector,} {\em
+  Physics Letters B\/}, Vol.~784, Sep 2018, pp.~173–191.
 
 \bibitem{CPanalysis}
-Aad, G. e.~a., \enquote{CP Properties of Higgs Boson Interactions with Top
-  Quarks in the $t\bar{t}H$ and $tH$ Processes Using $H \rightarrow \gamma
+Aad, G. and others., \enquote{CP Properties of Higgs Boson Interactions with
+  Top Quarks in the $t\bar{t}H$ and $tH$ Processes Using $H \rightarrow \gamma
   \gamma$ with the ATLAS Detector,} {\em Physical Review Letters\/}, Vol.~125,
   No.~6, Aug 2020.
 
 \bibitem{Couplingsanalysis}
-\enquote{{Measurement of the properties of Higgs boson production at
-  $\sqrt{s}=13 TeV$ in the $H\to \gamma\gamma$ channel using $139 fb^{-1}$ of
-  $pp$ collision data with the ATLAS experiment},} Tech. Rep.
+Aad, G. et~al., \enquote{{Measurement of the properties of Higgs boson
+  production at $\sqrt{s}=13 TeV$ in the $H\to \gamma\gamma$ channel using $139
+  fb^{-1}$ of $pp$ collision data with the ATLAS experiment},} Tech. Rep.
   ATLAS-CONF-2020-026, CERN, Geneva, Aug 2020.
 
 \bibitem{Peskin}
@@ -83,11 +81,11 @@ Ellis, J., Gaillard, M.~K., and Nanopoulos, D.~V., \enquote{A Historical
   https:\/\/www.aidansean.com\/feynman\/. [Accessed 15 February 2021].
 
 \bibitem{YellowReport1}
-Dittmaier, S. e.~a., \enquote{{Handbook of LHC Higgs Cross Sections: 1.
+Dittmaier, S. and others., \enquote{{Handbook of LHC Higgs Cross Sections: 1.
   Inclusive Observables},} {\em CERN-2011-002\/}, CERN, Geneva, 2011.
 
 \bibitem{YellowReport4}
-de~Florian, D., e.~a., {\em {Handbook of LHC Higgs Cross Sections: 4.
+de~Florian, D. and others., {\em {Handbook of LHC Higgs Cross Sections: 4.
   Deciphering the Nature of the Higgs Sector}\/}, CERN Yellow Reports:
   Monographs, Oct 2016.
 
@@ -101,29 +99,20 @@ Demartin, F., Maier, B., Maltoni, F., Mawatari, K., and Zaro, M., \enquote{tWH
   associated production at the LHC,} {\em The European Physical Journal C\/},
   Vol.~77, No.~1, Jan 2017.
 
-\bibitem{LHCHiggsCrossSectionWorkingGroup}
-David, A. e.~a., \enquote{{LHC HXSWG interim recommendations to explore the
-  coupling structure of a Higgs-like particle},} 9 2012.
-
-\bibitem{PhysRevD.101.012002}
-Aad, G. e.~a., \enquote{Combined measurements of Higgs boson production and
-  decay using up to $80 {fb}^{-1}$ of proton-proton collision data at
-  $\sqrt{s}=13$ TeV collected with the ATLAS experiment,} {\em Phys. Rev. D\/},
-  Vol.~101, Jan 2020, pp.~012002.
-
 \bibitem{Aad_2016}
-Aad, G. e.~a., \enquote{Test of CP invariance in vector-boson fusion production
-  of the Higgs boson using the Optimal Observable method in the ditau decay
-  channel with the ATLAS detector,} {\em The European Physical Journal C\/},
-  Vol.~76, No.~12, Nov 2016.
+Aad, G. and others., \enquote{Test of CP invariance in vector-boson fusion
+  production of the Higgs boson using the Optimal Observable method in the
+  ditau decay channel with the ATLAS detector,} {\em The European Physical
+  Journal C\/}, Vol.~76, No.~12, Nov 2016.
 
 \bibitem{Khachatryan_2016}
-Khachatryan, V. e.~a., \enquote{Combined search for anomalous pseudoscalar
-  $HVV$ couplings in $VH(H \rightarrow b\bar{b})$ production and $H \rightarrow
-  VV$ decay,} {\em Physics Letters B\/}, Vol.~759, Aug 2016, pp.~672–696.
+Khachatryan, V. and others., \enquote{Combined search for anomalous
+  pseudoscalar $HVV$ couplings in $VH(H \rightarrow b\bar{b})$ production and
+  $H \rightarrow VV$ decay,} {\em Physics Letters B\/}, Vol.~759, Aug 2016,
+  pp.~672–696.
 
 \bibitem{Sirunyan_2019}
-Sirunyan, A. M. e.~a., \enquote{Measurements of the Higgs boson width and
+Sirunyan, A.~M. and others., \enquote{Measurements of the Higgs boson width and
   anomalous $HVV$ couplings from on-shell and off-shell production in the
   four-lepton final state,} {\em Physical Review D\/}, Vol.~99, No.~11, Jun
   2019.
@@ -144,15 +133,16 @@ Brod, J., Haisch, U., and Zupan, J., \enquote{Constraints on CP-violating Higgs
   Vol.~2013, No.~11, Nov 2013.
 
 \bibitem{Aaboud_2018}
-Aaboud, M. e.~a., \enquote{Measurements of Higgs boson properties in the
+Aaboud, M. and others., \enquote{Measurements of Higgs boson properties in the
   diphoton decay channel with $36 fb^{-1}$ of $pp$ collision data at $\sqrt{s}
   = 13$ TeV with the ATLAS detector,} {\em Physical Review D\/}, Vol.~98,
   No.~5, Sep 2018.
 
 \bibitem{couplings80fb}
-\enquote{{Measurements of Higgs boson properties in the diphoton decay channel
-  using $80 fb^{-1}$ of $pp$ collision data at $\sqrt{s} = 13$ TeV with the
-  ATLAS detector},} Tech. Rep. ATLAS-CONF-2018-028, CERN, Geneva, Jul 2018.
+Aaboud, M. et~al., \enquote{{Measurements of Higgs boson properties in the
+  diphoton decay channel using $80 fb^{-1}$ of $pp$ collision data at $\sqrt{s}
+  = 13$ TeV with the ATLAS detector},} Tech. Rep. ATLAS-CONF-2018-028, CERN,
+  Geneva, Jul 2018.
 
 \bibitem{HC}
 Demartin, F., Maltoni, F., Mawatari, K., Page, B., and Zaro, M., \enquote{Higgs
@@ -165,53 +155,49 @@ Maltoni, F., Paul, K., Stelzer, T., and Willenbrock, S., \enquote{Associated
   production of the Higgs boson and a single top quark at hadron colliders,}
   {\em Physical Review D\/}, Vol.~64, No.~9, Oct 2001.
 
-\bibitem{antikt}
-Cacciari, M., Salam, G.~P., and Soyez, G., \enquote{The anti-kt jet clustering
-  algorithm,} {\em Journal of High Energy Physics\/}, Vol.~2008, No.~04, Apr
-  2008, pp.~063–063.
-
 \bibitem{LHCTDR}
-Brüning, O. S. e.~a., {\em {LHC Design Report}\/}, CERN Yellow Reports:
+Brüning, O.~S. and others., {\em {LHC Design Report}\/}, CERN Yellow Reports:
   Monographs, CERN, Geneva, 2004.
 
 \bibitem{SPS}
-Gilardoni, Simone, e.~a., {\em {Fifty years of the CERN Proton Synchrotron:
+Gilardoni, S. and others., {\em {Fifty years of the CERN Proton Synchrotron:
   Volume 2}\/}, CERN Yellow Reports: Monographs, Sep 2013.
+
+\bibitem{ATLAS_TDR}
+Aad, G. and others., \enquote{The {ATLAS} Experiment at the {CERN} Large Hadron
+  Collider,} {\em Journal of Instrumentation\/}, Vol.~3, No.~08, aug 2008,
+  pp.~S08003--S08003.
+
+\bibitem{CMS_TDR}
+Chatrchyan, S. and others., \enquote{The {CMS} experiment at the {CERN} {LHC},}
+  {\em Journal of Instrumentation\/}, Vol.~3, No.~08, aug 2008,
+  pp.~S08004--S08004.
+
+\bibitem{LHCb_TDR}
+\enquote{The {LHCb} Detector at the {LHC},} {\em Journal of Instrumentation\/},
+  Vol.~3, No.~08, aug 2008, pp.~S08005--S08005.
+
+\bibitem{ALICE_TDR}
+Aamodt, K. et~al., \enquote{The {LHCb} Detector at the {LHC},} {\em Journal of
+  Instrumentation\/}, Vol.~3, No.~08, aug 2008, pp.~S08002--S08002.
 
 \bibitem{LHCRing}
 Mobs, E., \enquote{{The CERN accelerator complex - 2019},} Jul 2019, General
   Photo.
 
 \bibitem{ATLAS-CONF-2019-021}
-\enquote{{Luminosity determination in $pp$ collisions at $\sqrt{s}=13$ TeV
-  using the ATLAS detector at the LHC},} Tech. Rep. ATLAS-CONF-2019-021, CERN,
-  Geneva, Jun 2019.
+Aaboud, M. and others., \enquote{{Luminosity determination in $pp$ collisions
+  at $\sqrt{s}=13$ TeV using the ATLAS detector at the LHC},} Tech. Rep.
+  ATLAS-CONF-2019-021, CERN, Geneva, Jun 2019.
 
 \bibitem{HLLHC}
-et~al., A.~G., {\em {High-Luminosity Large Hadron Collider (HL-LHC): Technical
-  Design Report V. 0.1}\/}, CERN Yellow Reports: Monographs, CERN, Geneva,
-  2017.
-
-\bibitem{ATLAS_TDR}
-G.~Aad, e.~a., \enquote{The {ATLAS} Experiment at the {CERN} Large Hadron
-  Collider,} {\em Journal of Instrumentation\/}, Vol.~3, No.~08, aug 2008,
-  pp.~S08003--S08003.
-
-\bibitem{CMS_TDR}
-S~Chatrchyan, e.~a., \enquote{The {CMS} experiment at the {CERN} {LHC},} {\em
-  Journal of Instrumentation\/}, Vol.~3, No.~08, aug 2008, pp.~S08004--S08004.
-
-\bibitem{LHCb_TDR}
-Collaboration, T.~L., \enquote{The {LHCb} Detector at the {LHC},} {\em Journal
-  of Instrumentation\/}, Vol.~3, No.~08, aug 2008, pp.~S08005--S08005.
-
-\bibitem{ALICE_TDR}
-Aamodt, K. e.~a., \enquote{The {LHCb} Detector at the {LHC},} {\em Journal of
-  Instrumentation\/}, Vol.~3, No.~08, aug 2008, pp.~S08002--S08002.
+Apollinari, G. and others., {\em {High-Luminosity Large Hadron Collider
+  (HL-LHC): Technical Design Report V. 0.1}\/}, CERN Yellow Reports:
+  Monographs, CERN, Geneva, 2017.
 
 \bibitem{muonsTDR}
-{\em {ATLAS muon spectrometer: Technical Design Report}\/}, Technical design
-  report. ATLAS, CERN, Geneva, 1997.
+Aad, G. et~al., {\em {ATLAS Muon Spectrometer: Technical Design Report}\/},
+  Technical design report. ATLAS, CERN, Geneva, 1997.
 
 \bibitem{DiehlMuons}
 Diehl, E., \enquote{Calibration and Performance of the Precision Chambers of
@@ -219,7 +205,7 @@ Diehl, E., \enquote{Calibration and Performance of the Precision Chambers of
   pp.~543--548.
 
 \bibitem{ATLAS_Jinst}
-Aad, G., e.~a., \enquote{{The ATLAS Experiment at the CERN Large Hadron
+Aad, G. and others., \enquote{{The ATLAS Experiment at the CERN Large Hadron
   Collider},} {\em JINST\/}, Vol.~3, 2008, pp.~S08003. 437 p.
 
 \bibitem{coords}
@@ -228,11 +214,11 @@ Schott, M. and Dunford, M., \enquote{{Review of single vector boson production
   No. arXiv:1405.1160, May 2014, pp.~60 p.
 
 \bibitem{ID}
-{\em {ATLAS inner detector: Technical Design Report, 1}\/}, Technical design
-  report. ATLAS, CERN, Geneva, 1997.
+Aad, G. et~al., {\em {ATLAS inner detector: Technical Design Report, 1}\/},
+  Technical design report. ATLAS, CERN, Geneva, 1997.
 
 \bibitem{IBL_TDR}
-Capeans, M. e.~a., \enquote{{ATLAS Insertable B-Layer Technical Design
+Capeans, M. and others., \enquote{{ATLAS Insertable B-Layer Technical Design
   Report},} Tech. Rep. CERN-LHCC-2010-013. ATLAS-TDR-19, Sep 2010.
 
 \bibitem{Knoll}
@@ -240,15 +226,12 @@ Knoll, G.~F., {\em {Radiation detection and measurement; 4th ed.}\/}, Wiley,
   New York, NY, 2010.
 
 \bibitem{Pixel}
-\enquote{{Technical Design Report for the ATLAS Inner Tracker Pixel Detector},}
-  Tech. Rep. CERN-LHCC-2017-021. ATLAS-TDR-030, CERN, Geneva, Sep 2017.
-
-\bibitem{SCT}
-Barlow, N., \enquote{{Operation and Performance of the ATLAS Semiconductor
-  Tracker},} Tech. Rep. ATL-INDET-PROC-2013-007, CERN, Geneva, Jun 2013.
+Aaboud, M. et~al., \enquote{{Technical Design Report for the ATLAS Inner
+  Tracker Pixel Detector},} Tech. Rep. CERN-LHCC-2017-021. ATLAS-TDR-030, CERN,
+  Geneva, Sep 2017.
 
 \bibitem{TRT}
-Aaboud, M. e.~a., \enquote{Performance of the ATLAS Transition Radiation
+Aaboud, M. and others., \enquote{Performance of the ATLAS Transition Radiation
   Tracker in Run 1 of the LHC: tracker properties,} {\em Journal of
   Instrumentation\/}, Vol.~12, No.~05, May 2017, pp.~P05002–P05002.
 
@@ -257,7 +240,8 @@ Livan, M. and Wigmans, R., \enquote{Misconceptions about Calorimetry,} {\em
   Instruments\/}, Vol.~1, No.~1, 2017.
 
 \bibitem{LAr_TDR}
-\enquote{{ATLAS liquid argon calorimeter: Technical design report},} 12 1996.
+Aad, G. et~al., {\em {ATLAS liquid-argon calorimeter: Technical Design
+  Report}\/}, Technical design report. ATLAS, CERN, Geneva, 1996.
 
 \bibitem{KriegerECALphoto}
 {Krieger}, P., \enquote{The ATLAS liquid argon calorimeter: construction,
@@ -275,14 +259,15 @@ Ferrari, A., \enquote{{A study of the ATLAS barrel presampler performance},}
   Tech. Rep. ATL-LARG-99-016, CERN, Geneva, Aug 1999.
 
 \bibitem{Coldmass}
-J.~.~{Rey}, e.~a., \enquote{Cold Mass Integration of the ATLAS Barrel Toroid
-  Magnets at CERN,} {\em IEEE Transactions on Applied Superconductivity\/},
-  Vol.~16, No.~2, 2006, pp.~553--556.
+{Rey}, J.~. and others., \enquote{Cold Mass Integration of the ATLAS Barrel
+  Toroid Magnets at CERN,} {\em IEEE Transactions on Applied
+  Superconductivity\/}, Vol.~16, No.~2, 2006, pp.~553--556.
 
 \bibitem{Toroid}
-D.~E.~{Baynham}, e.~a., \enquote{Engineering status of the superconducting end
-  cap toroid magnets for the ATLAS experiment at LHC,} {\em IEEE Transactions
-  on Applied Superconductivity\/}, Vol.~10, No.~1, 2000, pp.~357--360.
+{Baynham}, D.~E. and others., \enquote{Engineering status of the
+  superconducting end cap toroid magnets for the ATLAS experiment at LHC,} {\em
+  IEEE Transactions on Applied Superconductivity\/}, Vol.~10, No.~1, 2000,
+  pp.~357--360.
 
 \bibitem{Magnets}
 {ten Kate}, H., \enquote{The ATLAS superconducting magnet system at the Large
@@ -296,7 +281,7 @@ Groom, D.~E., Mokhov, N.~V., and Striganov, S.~I., \enquote{Muon stopping power
   Tables\/}, Vol.~78, No.~2, 2001, pp.~183--356.
 
 \bibitem{PDG}
-Zyla, P. e.~a., \enquote{{Review of Particle Physics},} {\em PTEP\/},
+Zyla, P. and others., \enquote{{Review of Particle Physics},} {\em PTEP\/},
   Vol.~2020, No.~8, 2020, pp.~083C01.
 
 \bibitem{Boudreau}
@@ -305,8 +290,8 @@ Boudreau, J., \enquote{Instrumental Backgrounds to t and Single Top Production
   Vol.~452, 07 2013, pp.~012013.
 
 \bibitem{CSCs}
-et~al., R.~B., {\em Journal of Instrumentation\/}, Vol.~11, No.~01, jan 2016,
-  pp.~C01059--C01059.
+Bartoldus, R. and others., {\em Journal of Instrumentation\/}, Vol.~11, No.~01,
+  jan 2016, pp.~C01059--C01059.
 
 \bibitem{TGCWheel}
 Marcelloni, C., \enquote{{Installation of the first of the big wheels of the
@@ -317,16 +302,16 @@ Sidoti, A., \enquote{{Minimum Bias Trigger Scintillators in ATLAS Run II},}
   {\em JINST\/}, Vol.~9, No.~10, 2014, pp.~C10020.
 
 \bibitem{trigger}
-Aaboud, M. e.~a., \enquote{Performance of the ATLAS trigger system in 2015,}
-  {\em The European Physical Journal C\/}, Vol.~77, No.~5, May 2017.
+Aaboud, M. and others., \enquote{Performance of the ATLAS trigger system in
+  2015,} {\em The European Physical Journal C\/}, Vol.~77, No.~5, May 2017.
 
 \bibitem{Powheg}
-Frixione, Stefano et al.and~Nason, P. and Oleari, C., \enquote{Matching NLO QCD
+Frixione, S., others.and Nason, P., and Oleari, C., \enquote{Matching NLO QCD
   computations with parton shower simulations: the POWHEG method,} {\em Journal
   of High Energy Physics\/}, Vol.~2007, No.~11, Nov 2007, pp.~070–070.
 
 \bibitem{MG5}
-Alwall, J. e.~a., \enquote{The automated computation of tree-level and
+Alwall, J. and others., \enquote{The automated computation of tree-level and
   next-to-leading order differential cross sections, and their matching to
   parton shower simulations,} {\em Journal of High Energy Physics\/},
   Vol.~2014, No.~7, Jul 2014.
@@ -337,36 +322,36 @@ Sjöstrand, T., Mrenna, S., and Skands, P., \enquote{A brief introduction to
   2008, pp.~852–867.
 
 \bibitem{Pythia8.2}
-\enquote{An introduction to PYTHIA 8.2,} {\em Computer Physics
-  Communications\/}, Vol.~191, Jun 2015, pp.~159–177.
+Sjöstrand, T. et~al., \enquote{An introduction to PYTHIA 8.2,} {\em Computer
+  Physics Communications\/}, Vol.~191, Jun 2015, pp.~159–177.
 
 \bibitem{Herwig}
-Bähr, M. e.~a., \enquote{Herwig++ physics and manual,} {\em The European
+Bähr, M. and others., \enquote{Herwig++ physics and manual,} {\em The European
   Physical Journal C\/}, Vol.~58, No.~4.
 
 \bibitem{GEANT4}
-et~al., S.~A., \enquote{Geant4- a simulation toolkit,} {\em Nuclear Instruments
-  and Methods in Physics Research Section A: Accelerators, Spectrometers,
-  Detectors and Associated Equipment\/}, Vol.~506, No.~3, 2003, pp.~250--303.
+Agostinelli, S. and others., \enquote{Geant4- a simulation toolkit,} {\em
+  Nuclear Instruments and Methods in Physics Research Section A: Accelerators,
+  Spectrometers, Detectors and Associated Equipment\/}, Vol.~506, No.~3, 2003,
+  pp.~250--303.
 
 \bibitem{Aad_2010}
-Aad, G. e.~a., \enquote{The ATLAS Simulation Infrastructure,} {\em The European
-  Physical Journal C\/}, Vol.~70, No.~3, Sep 2010, pp.~823–874.
+Aad, G. and others., \enquote{The ATLAS Simulation Infrastructure,} {\em The
+  European Physical Journal C\/}, Vol.~70, No.~3, Sep 2010, pp.~823–874.
 
 \bibitem{CERN-EX-1301009}
 Pequenao, J. and Schaffner, P., \enquote{{How ATLAS detects particles: diagram
   of particle paths in the detector},} .
 
 \bibitem{tracker}
-Aaboud, M. e.~a., \enquote{Performance of the ATLAS track reconstruction
+Aaboud, M. and others., \enquote{Performance of the ATLAS track reconstruction
   algorithms in dense environments in LHC Run 2,} {\em The European Physical
   Journal C\/}, Vol.~77, No.~10, Oct 2017.
 
 \bibitem{NEWT}
-Cornelissen, T., Elsing, M., Gavrilenko, I., Liebig, W., Moyse, E., and
-  Salzburger, A., \enquote{The new {ATLAS} track reconstruction ({NEWT}),} {\em
-  Journal of Physics: Conference Series\/}, Vol.~119, No.~3, jul 2008,
-  pp.~032014.
+Cornelissen, T. et~al., \enquote{The new {ATLAS} track reconstruction
+  ({NEWT}),} {\em Journal of Physics: Conference Series\/}, Vol.~119, No.~3,
+  jul 2008, pp.~032014.
 
 \bibitem{VertexMeloni}
 Meloni, F., \enquote{Primary vertex reconstruction with the {ATLAS} detector,}
@@ -374,38 +359,37 @@ Meloni, F., \enquote{Primary vertex reconstruction with the {ATLAS} detector,}
   pp.~C12060--C12060.
 
 \bibitem{CERN-EP-2019-145}
-Aad, G., Abbott, B., Abbott, D., Abud, A.~A., Abeling, K., Abhayasinghe, D.,
-  Abidi, S., AbouZeid, O., Abraham, N., Abramowicz, H., and et~al.,
-  \enquote{Electron and photon performance measurements with the ATLAS detector
-  using the 2015–2017 LHC proton-proton collision data,} {\em Journal of
-  Instrumentation\/}, Vol.~14, No.~12, Dec 2019, pp.~P12006–P12006.
+Aad, G. et~al., \enquote{Electron and photon performance measurements with the
+  ATLAS detector using the 2015–2017 LHC proton-proton collision data,} {\em
+  Journal of Instrumentation\/}, Vol.~14, No.~12, Dec 2019,
+  pp.~P12006–P12006.
 
 \bibitem{ECALdiagram}
-Aad, G. e.~a., \enquote{Topological cell clustering in the ATLAS calorimeters
-  and its performance in LHC Run 1,} {\em The European Physical Journal C\/},
-  Vol.~77, No.~7, Jul 2017.
+Aad, G. and others., \enquote{Topological cell clustering in the ATLAS
+  calorimeters and its performance in LHC Run 1,} {\em The European Physical
+  Journal C\/}, Vol.~77, No.~7, Jul 2017.
 
 \bibitem{ATL-PHYS-PUB-2017-022}
-\enquote{{Electron and photon reconstruction and performance in ATLAS using a
-  dynamical, topological cell clustering-based approach},} Tech. Rep.
-  ATL-PHYS-PUB-2017-022, CERN, Geneva, Dec 2017.
+Aaboud, M. et~al., \enquote{{Electron and photon reconstruction and performance
+  in ATLAS using a dynamical, topological cell clustering-based approach},}
+  Tech. Rep. ATL-PHYS-PUB-2017-022, CERN, Geneva, Dec 2017.
 
 \bibitem{photuncs}
-Aaboud, M. e.~a., \enquote{Electron and photon energy calibration with the
-  ATLAS detector using 2015–2016 LHC proton-proton collision data,} {\em
+Aaboud, M. and others., \enquote{Electron and photon energy calibration with
+  the ATLAS detector using 2015–2016 LHC proton-proton collision data,} {\em
   Journal of Instrumentation\/}, Vol.~14, No.~03, Mar 2019,
   pp.~P03017–P03017.
 
 \bibitem{gammaID}
-Aaboud, M. e.~a., \enquote{Measurement of the photon identification
+Aaboud, M. and others., \enquote{Measurement of the photon identification
   efficiencies with the ATLAS detector using LHC Run 2 data collected in 2015
   and 2016,} {\em The European Physical Journal C\/}, Vol.~79, No.~3, Mar 2019.
 
 \bibitem{elID-CERN-EP-2018-273}
-Aaboud, M. e.~a., \enquote{Electron reconstruction and identification in the
-  ATLAS experiment using the 2015 and 2016 LHC proton–proton collision data
-  at $\sqrt{s} = 13$ TeV,} {\em The European Physical Journal C\/}, Vol.~79,
-  No.~8, Aug 2019.
+Aaboud, M. and others., \enquote{Electron reconstruction and identification in
+  the ATLAS experiment using the 2015 and 2016 LHC proton–proton collision
+  data at $\sqrt{s} = 13$ TeV,} {\em The European Physical Journal C\/},
+  Vol.~79, No.~8, Aug 2019.
 
 \bibitem{ATL-COM-PHYS-2020-378}
 Nomidis, I., \enquote{{Event selection, performance and background estimation
@@ -413,44 +397,52 @@ Nomidis, I., \enquote{{Event selection, performance and background estimation
   ATL-COM-PHYS-2020-378, CERN, Geneva, May 2020.
 
 \bibitem{1408.7084}
-Aad, G., Abbott, B., Abdallah, J., Abdel~Khalek, S., Abdinov, O., Aben, R.,
-  Abi, B., Abolins, M., AbouZeid, O.~S., Abramowicz, H., and et~al.,
-  \enquote{Measurement of Higgs boson production in the diphoton decay channel
-  inppcollisions at center-of-mass energies of 7 and 8 TeV with the ATLAS
-  detector,} {\em Physical Review D\/}, Vol.~90, No.~11, Dec 2014.
+Aad, G. et~al., \enquote{Measurement of Higgs boson production in the diphoton
+  decay channel inppcollisions at center-of-mass energies of 7 and 8 TeV with
+  the ATLAS detector,} {\em Physical Review D\/}, Vol.~90, No.~11, Dec 2014.
 
 \bibitem{kt}
-Ellis, S.~D. and Soper, D.~E., \enquote{Successive combination jet algorithm
-  for hadron collisions,} {\em Physical Review D\/}, Vol.~48, No.~7, Oct 1993,
-  pp.~3160–3166.
+Ellis, S.~D. and Soper, D.~E., \enquote{Successive combination jand
+  othersgorithm for hadron collisions,} {\em Physical Review D\/}, Vol.~48,
+  No.~7, Oct 1993, pp.~3160–3166.
 
 \bibitem{CambridgeAachen}
 Dokshitzer, Y., Leder, G., Moretti, S., and Webber, B., \enquote{Better jet
   clustering algorithms,} {\em Journal of High Energy Physics\/}, Vol.~1997,
   No.~08, Aug 1997, pp.~001–001.
 
+\bibitem{antikt}
+Cacciari, M., Salam, G.~P., and Soyez, G., \enquote{The anti-kt jet clustering
+  algorithm,} {\em Journal of High Energy Physics\/}, Vol.~2008, No.~04, Apr
+  2008, pp.~063–063.
+
 \bibitem{PFlow}
-Aaboud, M. e.~a., \enquote{Jet reconstruction and performance using particle
-  flow with the ATLAS Detector,} {\em The European Physical Journal C\/},
-  Vol.~77, No.~7, Jul 2017.
+Aaboud, M. and others., \enquote{Jet reconstruction and performance using
+  particle flow with the ATLAS Detector,} {\em The European Physical Journal
+  C\/}, Vol.~77, No.~7, Jul 2017.
 
 \bibitem{JVT}
-Aad, G. e.~a., \enquote{Performance of pile-up mitigation techniques for jets
-  in $pp$ collisions at $\sqrt{s}=8$ TeV using the ATLAS detector,} {\em The
-  European Physical Journal C\/}, Vol.~76, No.~11, Oct 2016.
+Aad, G. and others., \enquote{Performance of pile-up mitigation techniques for
+  jets in $pp$ collisions at $\sqrt{s}=8$ TeV using the ATLAS detector,} {\em
+  The European Physical Journal C\/}, Vol.~76, No.~11, Oct 2016.
 
 \bibitem{CERN-EP-2018-047}
-Aaboud, M. e.~a., \enquote{Measurements of b-jet tagging efficiency with the
-  ATLAS detector using $t\bar{t}$ events at $\sqrt{s}=13$ TeV,} {\em Journal of
-  High Energy Physics\/}, Vol.~2018, No.~8, Aug 2018.
+Aaboud, M. and others., \enquote{Measurements of b-jet tagging efficiency with
+  the ATLAS detector using $t\bar{t}$ events at $\sqrt{s}=13$ TeV,} {\em
+  Journal of High Energy Physics\/}, Vol.~2018, No.~8, Aug 2018.
 
 \bibitem{CERN-PH-EP-2015-216}
-Aad, Georges, e.~a.
+Aad, G. and others., \enquote{{Performance of pile-up mitigation techniques for
+  jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector.
+  Performance of pile-up mitigation techniques for jets in $pp$ collisions at
+  $\sqrt{s} = 8$ TeV using the ATLAS detector},} {\em Eur. Phys. J. C\/},
+  Vol.~76, No. CERN-PH-EP-2015-206. CERN-PH-EP-2015-206, Oct 2015, pp.~581. 54
+  p.
 
 \bibitem{ATL-PHYS-PUB-2017-013}
-\enquote{{Optimisation and performance studies of the ATLAS $b$-tagging
-  algorithms for the 2017-18 LHC run},} Tech. Rep. ATL-PHYS-PUB-2017-013, CERN,
-  Geneva, Jul 2017.
+Aaboud, M. et~al., \enquote{{Optimisation and performance studies of the ATLAS
+  $b$-tagging algorithms for the 2017-18 LHC run},} Tech. Rep.
+  ATL-PHYS-PUB-2017-013, CERN, Geneva, Jul 2017.
 
 \bibitem{Hough}
 Illingworth, J. and Kittler, J., \enquote{A survey of the Hough transform,}
@@ -458,16 +450,16 @@ Illingworth, J. and Kittler, J., \enquote{A survey of the Hough transform,}
   1988, pp.~87--116.
 
 \bibitem{CERN-EP-2016-033}
-Aad, G. e.~a., \enquote{Muon reconstruction performance of the ATLAS detector
-  in proton–proton collision data at $\sqrt{s} = 13$ TeV,} {\em The European
-  Physical Journal C\/}, Vol.~76, No.~5, May 2016.
+Aad, G. and others., \enquote{Muon reconstruction performance of the ATLAS
+  detector in proton–proton collision data at $\sqrt{s} = 13$ TeV,} {\em The
+  European Physical Journal C\/}, Vol.~76, No.~5, May 2016.
 
 \bibitem{ATL-COM-PHYS-2019-177}
-Klein, M. H. e.~a., \enquote{{Muon Isolation Studies on Full Run 2 Dataset},}
-  Tech. Rep. ATL-COM-PHYS-2019-177, CERN, Geneva, Mar 2019.
+Klein, M.~H. and others., \enquote{{Muon Isolation Studies on Full Run 2
+  Dataset},} Tech. Rep. ATL-COM-PHYS-2019-177, CERN, Geneva, Mar 2019.
 
 \bibitem{CERN-EP-2017-274}
-Aaboud, M. e.~a., \enquote{Performance of missing transverse momentum
+Aaboud, M. and others., \enquote{Performance of missing transverse momentum
   reconstruction with the ATLAS detector using proton–proton collisions at
   $\sqrt{s}=13 TeV$,} {\em The European Physical Journal C\/}, Vol.~78, No.~11,
   Nov 2018.
@@ -494,14 +486,14 @@ Hoecker, A., Speckmayer, P., Stelzer, J., Therhaag, J., von Toerne, E., and
   PoS\/}, Vol.~ACAT, 2007, pp.~040.
 
 \bibitem{LightGBM}
-Ke, G. e.~a., \enquote{LightGBM: A Highly Efficient Gradient Boosting Decision
-  Tree,} {\em Advances in Neural Information Processing Systems\/}, edited by
-  I.~G. et~al., Vol.~30, Curran Associates, Inc., 2017.
+Ke, G. and others., \enquote{LightGBM: A Highly Efficient Gradient Boosting
+  Decision Tree,} {\em Advances in Neural Information Processing Systems\/},
+  edited by I.~Guyon and others., Vol.~30, Curran Associates, Inc., 2017.
 
 \bibitem{triggerperformance}
-Aad, G. e.~a., \enquote{Performance of electron and photon triggers in ATLAS
-  during LHC Run 2,} {\em The European Physical Journal C\/}, Vol.~80, No.~1,
-  Jan 2020.
+Aad, G. and others., \enquote{Performance of electron and photon triggers in
+  ATLAS during LHC Run 2,} {\em The European Physical Journal C\/}, Vol.~80,
+  No.~1, Jan 2020.
 
 \bibitem{PowhegBox}
 Alioli, S., Nason, P., Oleari, C., and Re, E., \enquote{A general framework for
@@ -509,19 +501,20 @@ Alioli, S., Nason, P., Oleari, C., and Re, E., \enquote{A general framework for
   BOX,} {\em Journal of High Energy Physics\/}, Vol.~2010, No.~6, Jun 2010.
 
 \bibitem{Herwig7}
-Bellm, J. e.~a., \enquote{Herwig 7.0/Herwig++ 3.0 release note,} {\em The
+Bellm, J. and others., \enquote{Herwig 7.0/Herwig++ 3.0 release note,} {\em The
   European Physical Journal C\/}, Vol.~76, No.~4, Apr 2016.
 
 \bibitem{Herwig7.1}
-et~al., J.~B., \enquote{Herwig 7.1 Release Note,} 2017.
+Bellm, J. and others., \enquote{Herwig 7.1 Release Note,} 2017.
 
 \bibitem{EvGen}
 Lange, D.~J., \enquote{{The EvtGen particle decay simulation package},} {\em
   Nucl. Instrum. Meth. A\/}, Vol.~462, 2001, pp.~152--155.
 
 \bibitem{Sherpa1}
-Gleisberg, T. e.~a., \enquote{Event generation with SHERPA 1.1,} {\em Journal
-  of High Energy Physics\/}, Vol.~2009, No.~02, Feb 2009, pp.~007–007.
+Gleisberg, T. and others., \enquote{Event generation with SHERPA 1.1,} {\em
+  Journal of High Energy Physics\/}, Vol.~2009, No.~02, Feb 2009,
+  pp.~007–007.
 
 \bibitem{Sherpa2}
 Schumann, S. and Krauss, F., \enquote{A parton shower algorithm based on
@@ -534,9 +527,10 @@ Gleisberg, T. and Höche, S., \enquote{Comix, a new matrix element generator,}
   pp.~039–039.
 
 \bibitem{A3}
-\enquote{{The Pythia 8 A3 tune description of ATLAS minimum bias and inelastic
-  measurements incorporating the Donnachie-Landshoff diffractive model},} Tech.
-  Rep. ATL-PHYS-PUB-2016-017, CERN, Geneva, Aug 2016.
+Aaboud, M. et~al., \enquote{{The Pythia 8 A3 tune description of ATLAS minimum
+  bias and inelastic measurements incorporating the Donnachie-Landshoff
+  diffractive model},} Tech. Rep. ATL-PHYS-PUB-2016-017, CERN, Geneva, Aug
+  2016.
 
 \bibitem{MadSpin}
 Artoisenet, P., Frederix, R., Mattelaer, O., and Rietkerk, R.,
@@ -550,16 +544,15 @@ Hamilton, K., Nason, P., Re, E., and Zanderighi, G., \enquote{NNLOPS simulation
   Vol.~2013, No.~10, Oct 2013.
 
 \bibitem{PDF4LHC}
-Butterworth, J. e.~a., \enquote{PDF4LHC recommendations for LHC Run II,} {\em
-  Journal of Physics G: Nuclear and Particle Physics\/}, Vol.~43, No.~2, Jan
-  2016, pp.~023001.
+Butterworth, J. and others., \enquote{PDF4LHC recommendations for LHC Run II,}
+  {\em Journal of Physics G: Nuclear and Particle Physics\/}, Vol.~43, No.~2,
+  Jan 2016, pp.~023001.
 
 \bibitem{AZNLO}
-Aad, G., Abbott, B., Abdallah, J., Abdel~Khalek, S., Abdinov, O., Aben, R.,
-  Abi, B., Abolins, M., AbouZeid, O.~S., and et~al., \enquote{Measurement of
-  the $Z/\gamma^{*}$ boson transverse momentum distribution in $pp$ collisions
-  at $ \sqrt{s} = 7 $ TeV with the ATLAS detector,} {\em Journal of High Energy
-  Physics\/}, Vol.~2014, No.~9, Sep 2014.
+Aad, G. et~al., \enquote{Measurement of the $Z/\gamma^{*}$ boson transverse
+  momentum distribution in $pp$ collisions at $ \sqrt{s} = 7 $ TeV with the
+  ATLAS detector,} {\em Journal of High Energy Physics\/}, Vol.~2014, No.~9,
+  Sep 2014.
 
 \bibitem{CTEQ6}
 Pumplin, J., Stump, D.~R., Huston, J., Lai, H.-L., Nadolsky, P., and Tung,
@@ -568,16 +561,16 @@ Pumplin, J., Stump, D.~R., Huston, J., Lai, H.-L., Nadolsky, P., and Tung,
   No.~07, Jul 2002, pp.~012–012.
 
 \bibitem{A14}
-\enquote{{ATLAS Pythia 8 tunes to 7 TeV data},} Tech. Rep.
+Aad, G. et~al., \enquote{{ATLAS Pythia 8 tunes to 7 TeV data},} Tech. Rep.
   ATL-PHYS-PUB-2014-021, CERN, Geneva, Nov 2014.
 
 \bibitem{NNPDF23}
-Ball, R. D. e.~a., \enquote{Parton distributions with LHC data,} {\em Nuclear
-  Physics B\/}, Vol.~867, No.~2, Feb 2013, pp.~244–289.
+Ball, R.~D. and others., \enquote{Parton distributions with LHC data,} {\em
+  Nuclear Physics B\/}, Vol.~867, No.~2, Feb 2013, pp.~244–289.
 
 \bibitem{NNPDF30}
-Ball, R. D. e.~a., \enquote{Parton distributions for the LHC run II,} {\em
-  Journal of High Energy Physics\/}, Vol.~2015, No.~4, Apr 2015.
+Ball, R.~D. and others., \enquote{Parton distributions for the LHC run II,}
+  {\em Journal of High Energy Physics\/}, Vol.~2015, No.~4, Apr 2015.
 
 \bibitem{subtraction}
 Frixione, S., Laenen, E., Motylinski, P., White, C., and Webber, B.~R.,
@@ -618,8 +611,8 @@ Bredenstein, A., Denner, A., Dittmaier, S., and Weber, M., \enquote{Precision
   2006, pp.~131–135.
 
 \bibitem{CT10}
-Gao, J. e.~a., \enquote{CT10 next-to-next-to-leading order global analysis of
-  QCD,} {\em Physical Review D\/}, Vol.~89, No.~3, Feb 2014.
+Gao, J. and others., \enquote{CT10 next-to-next-to-leading order global
+  analysis of QCD,} {\em Physical Review D\/}, Vol.~89, No.~3, Feb 2014.
 
 \bibitem{SlowNeutrons}
 Breit, G. and Wigner, E., \enquote{Capture of Slow Neutrons,} {\em Phys.
@@ -631,32 +624,35 @@ Oreglia, M. et~al., \enquote{{A Study of the Reaction $\psi^{\prime}
   pp.~2259.
 
 \bibitem{DSCB}
-Aad, G. e.~a., \enquote{Search for Scalar Diphoton Resonances in the Mass Range
-  65–600 GeV with the ATLAS Detector in $pp$ Collision Data at $\sqrt{s} = 8$
-  TeV,} {\em Physical Review Letters\/}, Vol.~113, No.~17, Oct 2014.
+Aad, G. and others., \enquote{Search for Scalar Diphoton Resonances in the Mass
+  Range 65–600 GeV with the ATLAS Detector in $pp$ Collision Data at
+  $\sqrt{s} = 8$ TeV,} {\em Physical Review Letters\/}, Vol.~113, No.~17, Oct
+  2014.
 
 \bibitem{Higgsmass}
-Aad, G. e.~a., \enquote{Combined Measurement of the Higgs Boson Mass in $pp$
-  Collisions at $\sqrt{s} = 7$ and $8$ TeV with the ATLAS and CMS Experiments,}
-  {\em Physical Review Letters\/}, Vol.~114, No.~19, May 2015.
+Aad, G. and others., \enquote{Combined Measurement of the Higgs Boson Mass in
+  $pp$ Collisions at $\sqrt{s} = 7$ and $8$ TeV with the ATLAS and CMS
+  Experiments,} {\em Physical Review Letters\/}, Vol.~114, No.~19, May 2015.
 
 \bibitem{purity1}
-\enquote{Measurement of the inclusive isolated prompt photons cross section in
-  $pp$ collisions at $\sqrt{s}=7$ TeV with the ATLAS detector using 4.6
-  $fb^{-1}$, volume={89}, ISSN={1550-2368},
-  url={http://dx.doi.org/10.1103/PhysRevD.89.052004},
-  DOI={10.1103/physrevd.89.052004}, number={5}, journal={Physical Review D},
-  publisher={American Physical Society (APS)}, author={Aad, G. and Abajyan, T.
-  and Abbott, B. and Abdallah, J. and Abdel Khalek, S. and Abdelalim, A. A. and
-  Abdinov, O. and Aben, R. and Abi, B. and Abolins, M. and et al.},
-  year={2014}, month={Mar},} .
+Aad, G. et~al., \enquote{Measurement of the inclusive isolated prompt photons
+  cross section in $pp$ collisions at $\sqrt{s}=7$ TeV with the ATLAS detector
+  using 4.6 $fb^{-1}$,} {\em Physical Review D\/}, Vol.~89, No.~5, Mar 2014.
 
 \bibitem{purity2}
-Aad, G., Abbott, B., Abdallah, J., Abdelalim, A.~A., Abdesselam, A., Abdinov,
-  O., Abi, B., Abolins, M., Abramowicz, H., Abreu, H., and et~al.,
-  \enquote{Measurement of the isolated diphoton cross section in $pp$
-  collisions at $\sqrt{s} = 7$ TeV with the ATLAS detector,} {\em Physical
+Aad, G. et~al., \enquote{Measurement of the isolated diphoton cross section in
+  $pp$ collisions at $\sqrt{s} = 7$ TeV with the ATLAS detector,} {\em Physical
   Review D\/}, Vol.~85, No.~1, Jan 2012.
+
+\bibitem{LHCHiggsCrossSectionWorkingGroup}
+David, A. and others., \enquote{{LHC HXSWG interim recommendations to explore
+  the coupling structure of a Higgs-like particle},} 9 2012.
+
+\bibitem{PhysRevD.101.012002}
+Aad, G. and others., \enquote{Combined measurements of Higgs boson production
+  and decay using up to $80 {fb}^{-1}$ of proton-proton collision data at
+  $\sqrt{s}=13$ TeV collected with the ATLAS experiment,} {\em Phys. Rev. D\/},
+  Vol.~101, Jan 2020, pp.~012002.
 
 \bibitem{Cowan}
 Cowan, G., Cranmer, K., Gross, E., and Vitells, O., \enquote{Asymptotic
@@ -674,13 +670,14 @@ Conway, J., \enquote{{Incorporating Nuisance Parameters in Likelihoods for
   Multisource Spectra},} , No. arXiv:1103.0354, Mar 2011, pp.~115--120. 6 p.
 
 \bibitem{ATLAS-CONF-2019-004}
-\enquote{{Measurement of Higgs boson production in association with a $t
-  \bar{t}$ pair in the diphoton decay channel using 139 $fb^{-1}$ of LHC data
-  collected at $\sqrt{s} = 13$ TeV by the ATLAS experiment},} Tech. Rep.
-  ATLAS-CONF-2019-004, CERN, Geneva, Mar 2019.
+Aaboud, M. et~al., \enquote{{Measurement of Higgs boson production in
+  association with a $t \bar{t}$ pair in the diphoton decay channel using 139
+  $fb^{-1}$ of LHC data collected at $\sqrt{s} = 13$ TeV by the ATLAS
+  experiment},} Tech. Rep. ATLAS-CONF-2019-004, CERN, Geneva, Mar 2019.
 
 \bibitem{skopt}
-et~al., T.~H., \enquote{scikit-optimize/scikit-optimize: v0.5.2,} March 2018.
+Head, T. and others., \enquote{scikit-optimize/scikit-optimize: v0.5.2,} March
+  2018.
 
 \bibitem{ROC}
 Bradley, A.~P., \enquote{The use of the area under the ROC curve in the
@@ -688,58 +685,58 @@ Bradley, A.~P., \enquote{The use of the area under the ROC curve in the
   Vol.~30, No.~7, 1997, pp.~1145--1159.
 
 \bibitem{LHAPDF}
-Buckley, A. e.~a., \enquote{LHAPDF6: parton density access in the LHC precision
-  era,} {\em The European Physical Journal C\/}, Vol.~75, No.~3, Mar 2015.
+Buckley, A. and others., \enquote{LHAPDF6: parton density access in the LHC
+  precision era,} {\em The European Physical Journal C\/}, Vol.~75, No.~3, Mar
+  2015.
 
 \bibitem{Wb}
-Aad, G., Abajyan, T., Abbott, B., Abdallah, J., Abdel~Khalek, S., Abdelalim,
-  A.~A., Abdinov, O., Aben, R., Abi, B., and et~al., \enquote{Measurement of
-  the cross-section for W boson production in association with b-jets in pp
-  collisions at $ \sqrt{s}=7 $ TeV with the ATLAS detector,} {\em Journal of
-  High Energy Physics\/}, Vol.~2013, No.~6, Jun 2013.
+Aad, G. et~al., \enquote{Measurement of the cross-section for W boson
+  production in association with b-jets in pp collisions at $ \sqrt{s}=7 $ TeV
+  with the ATLAS detector,} {\em Journal of High Energy Physics\/}, Vol.~2013,
+  No.~6, Jun 2013.
 
 \bibitem{Zb}
-Aad, G., Abbott, B., Abdallah, J., Abdel~Khalek, S., Abdinov, O., Aben, R.,
-  Abi, B., Abolins, M., AbouZeid, O.~S., and et~al., \enquote{Measurement of
-  differential production cross-sections for a Z boson in association with
-  b-jets in 7 TeV proton-proton collisions with the ATLAS detector,} {\em
-  Journal of High Energy Physics\/}, Vol.~2014, No.~10, Oct 2014.
+Aad, G. et~al., \enquote{Measurement of differential production cross-sections
+  for a Z boson in association with b-jets in 7 TeV proton-proton collisions
+  with the ATLAS detector,} {\em Journal of High Energy Physics\/}, Vol.~2014,
+  No.~10, Oct 2014.
 
 \bibitem{ttbb}
-Aad, G., Abbott, B., Abdallah, J., Abdinov, O., Aben, R., Abolins, M.,
-  AbouZeid, O.~S., Abramowicz, H., Abreu, H., and et~al., \enquote{Measurements
-  of fiducial cross-sections for $t\bar{t}$ production with one or two
-  additional b-jets in pp collisions at $\sqrt{s} = 8$ TeV using the ATLAS
-  detector,} {\em The European Physical Journal C\/}, Vol.~76, No.~1, Jan 2016.
+Aad, G. et~al., \enquote{Measurements of fiducial cross-sections for $t\bar{t}$
+  production with one or two additional b-jets in pp collisions at $\sqrt{s} =
+  8$ TeV using the ATLAS detector,} {\em The European Physical Journal C\/},
+  Vol.~76, No.~1, Jan 2016.
 
 \bibitem{HZZ4l}
-Aad, G. e.~a., \enquote{{Measurements of the Higgs boson inclusive and
+Aad, G. and others., \enquote{{Measurements of the Higgs boson inclusive and
   differential fiducial cross sections in the 4$\ell$ decay channel at
   $\sqrt{s} = 13 $TeV},} {\em Eur. Phys. J. C\/}, Vol.~80, No.
   arXiv:2004.03969. 10, Apr 2020, pp.~942. 92 p.
 
 \bibitem{jetuncs1}
-\enquote{{Early Inner Detector Tracking Performance in the 2015 data at
-  $\sqrt{s} = 13$ TeV},} Tech. Rep. ATL-PHYS-PUB-2015-051, CERN, Geneva, Dec
-  2015.
+Aaboud, M. and others., \enquote{{Early Inner Detector Tracking Performance in
+  the 2015 data at $\sqrt{s} = 13$ TeV},} Tech. Rep. ATL-PHYS-PUB-2015-051,
+  CERN, Geneva, Dec 2015.
 
 \bibitem{jetuncs2}
-Aaboud, M. e.~a., \enquote{Reconstruction of primary vertices at the ATLAS
-  experiment in Run 1 proton–proton collisions at the LHC,} {\em The European
-  Physical Journal C\/}, Vol.~77, No.~5, May 2017.
+Aaboud, M. and others., \enquote{Reconstruction of primary vertices at the
+  ATLAS experiment in Run 1 proton–proton collisions at the LHC,} {\em The
+  European Physical Journal C\/}, Vol.~77, No.~5, May 2017.
 
 \bibitem{jetuncs3}
-Aaboud, M. e.~a., \enquote{Jet energy scale measurements and their systematic
-  uncertainties in proton-proton collisions at $\sqrt{s} = 13$ TeV with the
-  ATLAS detector,} {\em Physical Review D\/}, Vol.~96, No.~7, Oct 2017.
+Aaboud, M. and others., \enquote{Jet energy scale measurements and their
+  systematic uncertainties in proton-proton collisions at $\sqrt{s} = 13$ TeV
+  with the ATLAS detector,} {\em Physical Review D\/}, Vol.~96, No.~7, Oct
+  2017.
 
 \bibitem{jetuncs4}
-Aad, G. e.~a., \enquote{ATLAS b-jet identification performance and efficiency
-  measurement with $t{\bar{t}}$ events in pp collisions at $\sqrt{s}=13$ TeV,}
-  {\em The European Physical Journal C\/}, Vol.~79, No.~11, Nov 2019.
+Aad, G. and others., \enquote{ATLAS b-jet identification performance and
+  efficiency measurement with $t{\bar{t}}$ events in pp collisions at
+  $\sqrt{s}=13$ TeV,} {\em The European Physical Journal C\/}, Vol.~79, No.~11,
+  Nov 2019.
 
 \bibitem{MET1}
-Aaboud, M. e.~a., \enquote{Performance of missing transverse momentum
+Aaboud, M. and others., \enquote{Performance of missing transverse momentum
   reconstruction with the ATLAS detector using proton–proton collisions at
   $\sqrt{s}=13$ TeV,} {\em The European Physical Journal C\/}, Vol.~78, No.~11,
   Nov 2018.
@@ -750,18 +747,18 @@ Aaboud, M. e.~a., \enquote{Performance of missing transverse momentum
   Jun 2018.
 
 \bibitem{ttHCMS}
-Sirunyan, A. M. e.~a., \enquote{Measurements of $t\bar{t}H$ Production and the
-  CP Structure of the Yukawa Interaction between the Higgs Boson and Top Quark
-  in the Diphoton Decay Channel,} {\em Physical Review Letters\/}, Vol.~125,
-  No.~6, Aug 2020.
+Sirunyan, A.~M. and others., \enquote{Measurements of $t\bar{t}H$ Production
+  and the CP Structure of the Yukawa Interaction between the Higgs Boson and
+  Top Quark in the Diphoton Decay Channel,} {\em Physical Review Letters\/},
+  Vol.~125, No.~6, Aug 2020.
 
 \bibitem{CLs}
 Read, A.~L., \enquote{{Presentation of search results: The CL(s) technique},}
   {\em J. Phys. G\/}, Vol.~28, 2002, pp.~2693--2704.
 
 \bibitem{kappaFW}
-David, A. e.~a., \enquote{{LHC HXSWG interim recommendations to explore the
-  coupling structure of a Higgs-like particle},} 9 2012.
+David, A. and others., \enquote{{LHC HXSWG interim recommendations to explore
+  the coupling structure of a Higgs-like particle},} 9 2012.
 
 \bibitem{Powell}
 Powell, M. J.~D., \enquote{{An efficient method for finding the minimum of a
@@ -774,17 +771,17 @@ Lindley, D.~V., \enquote{On a Measure of the Information Provided by an
   1956, pp.~986--1005.
 
 \bibitem{coups127}
-Collaboration, A., \enquote{Jet energy scale and resolution measured in
+Aad, G. and others., \enquote{Jet energy scale and resolution measured in
   proton-proton collisions at $\sqrt{s}=13$ TeV with the ATLAS detector,} 2020.
 
 \bibitem{LUCID}
-et~al., G.~A., \enquote{The new {LUCID}-2 detector for luminosity measurement
-  and monitoring in {ATLAS},} {\em Journal of Instrumentation\/}, Vol.~13,
-  No.~07, jul 2018, pp.~P07017--P07017.
+Avoni, G. and others., \enquote{The new {LUCID}-2 detector for luminosity
+  measurement and monitoring in {ATLAS},} {\em Journal of Instrumentation\/},
+  Vol.~13, No.~07, jul 2018, pp.~P07017--P07017.
 
 \bibitem{KLFitter}
-Erdmann, J. e.~a., \enquote{A likelihood-based reconstruction algorithm for
-  top-quark pairs and the KLFitter framework,} {\em Nuclear Instruments and
+Erdmann, J. and others., \enquote{A likelihood-based reconstruction algorithm
+  for top-quark pairs and the KLFitter framework,} {\em Nuclear Instruments and
   Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors
   and Associated Equipment\/}, Vol.~748, Jun 2014, pp.~18–25.
 
@@ -804,13 +801,15 @@ Collins, J.~C. and Soper, D.~E., \enquote{Angular distribution of dileptons in
   pp.~2219--2225.
 
 \bibitem{Hyneman}
-Hyneman, R.~J., \enquote{{Measuring Higgs Boson Couplings, including to the Top
+Hyneman, R.~J., {\em {Measuring Higgs Boson Couplings, including to the Top
   Quark, in the Diphoton Decay Channel with Run 2 Data Collected by the ATLAS
-  Detector},} 2020, Presented 04 Feb 2020.
+  Detector}\/}, Ph.D. thesis, University of Cambridge, 2020, Presented 04 Feb
+  2020.
 
 \bibitem{scikit-learn}
-Pedregosa, F. e.~a., \enquote{Scikit-learn: Machine Learning in {P}ython,} {\em
-  Journal of Machine Learning Research\/}, Vol.~12, 2011, pp.~2825--2830.
+Pedregosa, F. and others., \enquote{Scikit-learn: Machine Learning in
+  {P}ython,} {\em Journal of Machine Learning Research\/}, Vol.~12, 2011,
+  pp.~2825--2830.
 
 \bibitem{ebden2015gaussian}
 Ebden, M., \enquote{Gaussian Processes: A Quick Introduction,} 2015.

@@ -25,7 +25,7 @@ Because the Double-Sided Crystal Ball function depends strongly on the photon re
 \centering
 \subfloat[$gg \rightarrow H$ ( 1-jet, $120 GeV \le p_{T}^{H} < 200 GeV$)] { \includegraphics[width=0.49\textwidth]{figures/sigbkgparam/ggH_1J_120_200.pdf}\label{fig:DSCBgg2H}}
 \subfloat[\ttH]{\includegraphics[width=0.49\textwidth]{figures/sigbkgparam/ttH.pdf}\label{fig:DSCBttH}}
-\caption{DSCB shapes for two groups of categories. \ref{fig:DSCBgg2H} depicts the signal shapes for two categories targeting the same STXS $ggH$ truth bin, one low-purity and one high-purity. \ref{fig:DSCBttH} depicts the signal shapes for three high-purity categories targeting different $p_{T}^{H}$ regions of the $ttH$ process.}
+\caption{DSCB shapes for two groups of categories. \ref{fig:DSCBgg2H} depicts the signal shapes for two categories targeting the same $ggH$ STXS truth bin, one low-purity and one high-purity. \ref{fig:DSCBttH} depicts the signal shapes for three high-purity categories targeting different $p_{T}^{H}$ regions of the $ttH$ process.}
 \label{fig:DSCB}
 \end{figure}
 
@@ -123,6 +123,150 @@ N_{A} = \epsilon_{iso} N_{B} = \epsilon_{ID} N_{D} = \epsilon_{iso} \epsilon_{ID
 Extending this to the diphoton pair, eight total regions can be defined in each category, allowing us to quantify the ($\gamma \gamma / \gamma j/jj$) fraction in each category. However, the assumption that the isolation and ID cuts are independent is not strictly valid, so it is not enough to perform a simple counting-experiment to determine the fraction of jets: various correlation terms must be considered, so a fit must be performed. The fit has sixteen equations with nineteen variables, and is performed following the process in \cite{purity1} and \cite{purity2}.
 
 After the purity fractions are calculated in each category, the shapes of the $\gamma j$ and $jj$ distributions are derived using NTI data. The $\gamma \gamma$ Monte Carlo is then reweighted to match these shapes, and the $\gamma \gamma$, $\gamma j$, and $jj$ contributions are added according to their purities. As in other categories, the templates are scaled to the TI sidebands. 
+
+\subsection{The Kappa Framework} \label{sec:kappaFW}
+
+When measuring Higgs couplings in ATLAS, it is often more useful to note the ratio of the measured coupling to the Standard Model prediction rather than the measured coupling alone. For some Higgs coupling to a boson or fermion $i$, we can write
+
+\begin{equation}
+\kappa_{i} = \frac{y_{i}^{meas}}{y_{i}^{SM}}
+\end{equation}
+
+This $\kappa$ parameter is called the "coupling strength"-- if $\kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $\kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \cite{LHCHiggsCrossSectionWorkingGroup}.
+
+The parameterization of various production cross-sections and decay widths (divided by their Standard Model values) in terms of the $\kappa$ framework is shown in Tables \ref{tab:Xsecskappa}-\ref{tab:BRskappa} \cite{PhysRevD.101.012002}. The "resolved" column assumes that only the particles of the Standard Model exist. However, it can also be useful to develop "effective" coupling terms that allows for the existence of additional particles that may influence the loop diagrams. These can be modeled by mutiplying the resolved coupling terms by the indicated factors:
+
+\begin{equation}
+\kappa_{g}^{2} = \frac{\sigma_{ggF}^{meas}}{\sigma_{ggF}^{SM}}, \kappa_{\gamma}^{2} = \frac{\Gamma{\gamma \gamma}^{meas}}{\Gamma_{\gamma \gamma}^{SM}}, \kappa_{Z \gamma}^{2} = \frac{\Gamma{Z \gamma}^{meas}}{\Gamma_{Z \gamma}^{SM}}
+\end{equation}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ccc}
+	Production Mode & Effective Modifier & Resolved Modifier \\ \hline
+	$\sigma(ggF)$ & $\kappa_{g}^{2}$ & $1.04 \kappa_{t}^{2} + 0.002 \kappa_{b}^2 - 0.04 \kappa_{t} \kappa_{b}$ \\
+	$\sigma(VBF)$ & & $0.73 \kappa_{W}^{2} + 0.27 \kappa_{Z}^2$ \\
+	$\sigma(qq/qg \rightarrow W H)$ & & $\kappa_{W}^{2}$ \\
+	$\sigma(qq/qg \rightarrow ZH)$ & & $\kappa_{Z}^{2}$\\
+	$\sigma(ggZH)$ && $2.46 \kappa_{Z}^{2} + 0.46 \kappa_{t}^2 - 1.90 \kappa_{t} \kappa_{Z}$ \\
+	$\sigma(t\bar{t}H)$ && $\kappa_{t}^{2}$ \\
+	$\sigma(b\bar{b}H)$ && $\kappa_{b}^{2}$ \\
+	$\sigma(tHjb)$ && $2.63 \kappa_{t}^{2} + 3.58 \kappa_{W}^2 - 5.21 \kappa_{t} \kappa_{W}$ \\
+	$\sigma(tWH)$ && $2.91 \kappa_{t}^{2} + 2.31 \kappa_{W}^2 - 4.22 \kappa_{t} \kappa_{W}$ \\
+    \end{tabular}
+    \caption{Parameterization of Higgs cross-section dependence on $\kappa$ coefficients, from \cite{PhysRevD.101.012002}}
+    \label{tab:Xsecskappa}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ccc}
+	Production Mode & Effective Modifier & Resolved Modifier \\ \hline
+	$H \rightarrow bb$ & & $\kappa_{b}^2$ \\
+	$H \rightarrow WW$ & & $\kappa_{W}^{2}$ \\
+	$H \rightarrow gg$ & $\kappa_{g}^{2}$ & $1.11 \kappa_{t}^{2} + 0.01 \kappa_{b}^2 - 0.12 \kappa_{t} \kappa_{b}$ \\
+	$H \rightarrow \tau \tau$ & & $\kappa_{\tau}^{2}$ \\
+	$H \rightarrow cc$ && $2.46 \kappa_{c}^{2}$ \\
+	$H \rightarrow ZZ$ && $\kappa_{Z}^{2}$ \\
+	$H \rightarrow \gamma \gamma$ & $\kappa_{\gamma}^{2}$ & $1.59 \kappa_{W}^{2} + 0.07 \kappa_{t}^2 - 0.67 \kappa_{t} \kappa_{W}$ \\
+	$H \rightarrow Z \gamma$ & $\kappa_{z \gamma}^{2}$ & $1.12 \kappa_{W}^{2} + 0.12 \kappa_{t} \kappa_{W}$ \\
+	$H \rightarrow \mu \mu$ && $\kappa_{\mu}^{2}$ \\
+    \end{tabular}
+    \caption{Parameterization of Higgs branching ratio dependence on $\kappa$ coefficients, from \cite{PhysRevD.101.012002}}
+    \label{tab:BRskappa}
+\end{table}
+
+\subsection{Simplified Template Cross-Sections} \label{sec:STXS}
+
+The Couplings Analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework \cite{YellowReport4}, where different regions of phase space called "truth bins" are probed according to their production modes and kinematic properties. A visual guide to the different STXS1.2 bins is shown in figure \ref{fig:STXS_scheme}. The categorization is designed such that all events passing the $H \rightarrow \gamma \gamma$ selection criteria will fall into one of the STXS1.2 categories.
+
+\begin{figure}[tbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/theory_chapter/simplifiedXS_ggF_1_2} \\[3mm]
+  \includegraphics[width=0.8\textwidth]{figures/theory_chapter/simplifiedXS_VBF_1_2} \\[3mm]
+  \includegraphics[width=0.6\textwidth]{figures/theory_chapter/simplifiedXS_VH_1_2}
+  \includegraphics[width=0.25\textwidth]{figures/theory_chapter/simplifiedXS_ttH_1_2}
+  \caption{Stage 1.2 STXS bin definitions for the main production modes.}
+  \label{fig:STXS_scheme}
+\end{figure}
+
+
+In addition to their nominal production and decay modes, the $ggH$ STXS1.2 truth bins include both $ggF$ and hadronically-decaying $gg \rightarrow ZH$ events, while the $VBF$ STXS definition includes hadronically-decaying $qq \rightarrow VH$. Additionally, it is important to note that the leptonic $qq \rightarrow ZH$ and $gg \rightarrow ZH$ truth bins include Z-boson decays both to two charged leptons and to two neutrinos (the latter of which will have a high $E_T^{miss}$ signature). For nomenclature purposes, throughout this dissertation, $ggF$ is used to refer to the $gg \rightarrow H$ production mode, while $ggH$ is used to refer to the regions of phase space targeting the combination of $gg \rightarrow H$ and $gg \rightarrow ZH$.
+
+In the Couplings analysis, the experimental bins targeted are modified somewhat from the truth bins due to the inability to separate some processes: the $b\bar{b}H$ categories are subsumed into the $ggH$ categorization scheme, the leptonic $qq \rightarrow VH$ and $gg \rightarrow VH$ processes are combined into a series of $VHLep$ regions, $tH$ is split into $tWH$ and $tHjb$, and the $p_{T}^H > 200$ GeV bin of the hadronic $qq \rightarrow VH$ truth category is split into two bins based on jet kinematics to aid in statistical combination with other analyses (where $p_{T}^{H}$ denotes the transverse momentum of the Higgs, that is, the component of the Higgs momentum perpendicular to the beamline). A total of 44 STXS truth regions are defined.
+
+For all Monte Carlo simulated samples used to construct the STXS truth bins, the absolute value of the rapidity of the Higgs boson is required to satisfy $|y_{H}| < 2.5$ while jets, built with the anti-kT algorithm \cite{antikt} using radius R=0.4, are required to have $p_{T} > 30$ GeV (with the exception of the bins labelled FWDH, which target forward Higgs events with $|y_{H}| > 2.5$.
+
+Using the Monte Carlo simulated samples described in section \ref{chap:datamc_chapter}, we report the cross-section times branching ratio and acceptances (in terms of percentage of events of each production-mode) that fall into each STXS1.2 truth bin in Table \ref{tab:STXS_cross_sections}, and show the acceptance for each production mode in Figure \ref{fig:STXS_acceptances}. Several of the STXS truth bins are merged in the Couplings analysis to account for effects such as the inability of the event classifier to discriminate between $qq \rightarrow ZH$ and $gg \rightarrow ZH$; this is detailed in section \ref{chap:couplings_chapter}. By measuring the cross-sections in each of these bins, a number of different values are able to be extracted, including the various Higgs couplings $\kappa$ and limits on effective field theories (EFTs) parameterizing physics beyond the standard model.
+
+\begin{table}[htbp]
+        \centering
+        {\footnotesize
+        \begin{tabular}{lS}
+                STXS 1.2 Truth Bin                                     & {$\sigma\times BR_{\gamma \gamma} [\si{\fb}]$} \\
+                \hline
+                gg2H\_0J\_ptH\_0\_10                                   & 15.038147                                    \\
+                gg2H\_0J\_ptH\_gt10                                    & 46.799419                                    \\
+                gg2H\_1J\_ptH\_0\_60                                   & 14.742653                                    \\
+                gg2H\_1J\_ptH\_60\_120                                 & 10.223149                                    \\
+                gg2H\_1J\_ptH\_120\_200                                & 1.692748                                     \\
+                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_0\_60                    & 2.639954                                     \\
+                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_60\_120                  & 4.058768                                     \\
+                gg2H\_ge2J\_MJJ\_0\_350\_ptH\_120\_200                 & 2.133361                                     \\
+                gg2H\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_0\_25   & 0.569488                                     \\
+                gg2H\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_gt25    & 0.818394                                     \\
+                gg2H\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_0\_25      & 0.241653                                     \\
+                gg2H\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_gt25       & 0.363737                                     \\
+                gg2H\_ptH\_200\_300                                    & 1.036991                                     \\
+                gg2H\_ptH\_300\_450                                    & 0.239097                                     \\
+                gg2H\_ptH\_450\_650                                    & 0.035624                                     \\
+                gg2H\_ptH\_gt650                                       & 0.004947                                     \\
+                qq2Hqq\_0J                                             & 0.816245                                     \\
+                qq2Hqq\_1J                                             & 3.956656                                     \\
+                qq2Hqq\_ge2J\_MJJ\_0\_60                               & 0.224649                                     \\
+                qq2Hqq\_ge2J\_MJJ\_60\_120                             & 1.200933                                     \\
+                qq2Hqq\_ge2J\_MJJ\_120\_350                            & 1.426903                                     \\
+                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_0\_25 & 0.897833                                     \\
+                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_0\_200\_ptHJJ\_gt25  & 0.337811                                     \\
+                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_0\_25    & 1.356668                                     \\
+                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_0\_200\_ptHJJ\_gt25     & 0.314044                                     \\
+                qq2Hqq\_ge2J\_MJJ\_350\_700\_ptH\_gt200                & 0.104740                                     \\
+                qq2Hqq\_ge2J\_MJJ\_gt700\_ptH\_gt200                   & 0.258838                                     \\
+                qq2Hlnu\_ptV\_0\_75                                    & 0.466795                                     \\
+                qq2Hlnu\_ptV\_75\_150                                  & 0.297442                                     \\
+                qq2Hlnu\_ptV\_150\_250\_0J                             & 0.051545                                     \\
+                qq2Hlnu\_ptV\_150\_250\_ge1J                           & 0.042651                                     \\
+                qq2Hlnu\_ptV\_gt250                                    & 0.030152                                     \\
+                qq2Hll\_ptV\_0\_75                                     & 0.236572                                     \\
+                qq2Hll\_ptV\_75\_150                                   & 0.157167                                     \\
+                qq2Hll\_ptV\_150\_250\_0J                              & 0.027476                                     \\
+                qq2Hll\_ptV\_150\_250\_ge1J                            & 0.022523                                     \\
+                qq2Hll\_ptV\_gt250                                     & 0.015076                                     \\
+                gg2Hll\_ptV\_0\_75                                     & 0.014989                                     \\
+                gg2Hll\_ptV\_75\_150                                   & 0.038219                                     \\
+                gg2Hll\_ptV\_150\_250\_0J                              & 0.007812                                     \\
+                gg2Hll\_ptV\_150\_250\_ge1J                            & 0.014855                                     \\
+                gg2Hll\_ptV\_gt250                                     & 0.004465                                     \\
+                ttH\_ptH\_0\_60                                        & 0.267960                                     \\
+                ttH\_ptH\_60\_120                                      & 0.404152                                     \\
+                ttH\_ptH\_120\_200                                     & 0.287483                                     \\
+                ttH\_ptH\_200\_300                                     & 0.119454                                     \\
+                ttH\_ptH\_gt300                                        & 0.055617                                     \\
+                bbH                                                    & 1.044426                                     \\
+                tH                                                     & 0.187064                                     \\
+                \hline
+        \end{tabular}
+        }
+        \caption{Simplified template cross sections times diphoton branching ratio for each of the STXS 1.2 truth bins.}
+        \label{tab:STXS_cross_sections}
+\end{table}
+
+\begin{figure}[tbp]
+        \centering
+        \includegraphics[width=\linewidth]{figures/theory_chapter/STXS_acceptances.pdf}
+        \caption{Stage 1.2 STXS bin acceptances for all Higgs production modes considered in the Couplings analysis. The FWDH bins target events outside the nominal acceptance, i.e. with $|y_{H}|>2.5$.}
+        \label{fig:STXS_acceptances}
+\end{figure}
 
 \section{Likelihood Fitting and Asimov Data} \label{sec:likelihoodfit} 
 

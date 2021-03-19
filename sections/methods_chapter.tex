@@ -1,6 +1,6 @@
 \section{Experimental Methods} \label{sec:methods} 
 
-It is not possible to induce a particular interaction in a particle collider: every physics process that can occur from the collision of two protons at $13 TeV$ will occur in the ATLAS detector. Thus, the process of studying rare Higgs interactions is not one of determining how to produce them in a laboratory setting, but of determining whether or not they are being produced in the detector at all. Because physics 'signal' processes are fundamentally indistinguishable from unwanted 'background' processes, ATLAS studies are statistical counting experiments which test the compatibility of the observed numbers of events with different detector signatures against the event counts that are predicted to occur under different physics hypotheses. 
+It is not possible to induce a particular interaction in a particle collider: every physics process that can occur from the collision of two protons at $13$ TeV will occur in the ATLAS detector. Thus, the process of studying rare Higgs interactions is not one of determining how to produce them in a laboratory setting, but of determining whether or not they are being produced in the detector at all. Because physics 'signal' processes are fundamentally indistinguishable from unwanted 'background' processes, ATLAS studies are statistical counting experiments which test the compatibility of the observed numbers of events with different detector signatures against the event counts that are predicted to occur under different physics hypotheses. 
 
 Performing these experiments effectively in the data-rich environment of the LHC requires many clever statistical and computational tools, which vary from analysis to analysis. However, in all analyses, it is vitally important both to accurately model what the physics processes of interest may look like in the ATLAS detector and to translate observed detector signals into high-level physics objects. The Monte Carlo simulation method is used for the former, while the latter is performed by the variety of identification and reconstruction techniques detailed in this chapter.
 
@@ -43,11 +43,11 @@ After the identification of seed cells, calorimeter cells neighboring the seed c
 
 \subsubsection{Electrons and Photons} \label{sec:Electrons} 
 
-Electrons and photons are defined using tracks that are matched to topo-clusters in the ECAL. Topo-clusters compatible with EM showers are selected and used to define Regions of Interest; those Regions of Interest are then matched to tracks in the ID. Track candidates are extrapolated into the Regions of Interest using both the measured track momentum and the rescaled momentum measured in the relevant topo-cluster (the latter of which allows for accounting of radiative energy loss in the calorimeter). 
+Electrons and photons are defined using tracks that are matched to topo-clusters in the ECAL. Topo-clusters compatible with EM showers are selected and used to define Regions of Interest; those Regions of Interest are then matched to tracks in the Inner Detector. Track candidates are extrapolated into the Regions of Interest using both the measured track momentum and the rescaled momentum measured in the relevant topo-cluster (the latter of which allows for accounting of radiative energy loss in the calorimeter). 
 
 For a track to be considered matched to a topo-cluster, under either momentum-definition-extrapolation, it must fall within $|\Delta \eta| < 0.05$ of its relevant topo-cluster and satisfy $-0.10 < q \times (\phi_{track}-\phi_{cluster}) < 0.05$, where q is the charge of the incident particle. 
 
-Topo-clusters matched to a single charged track are considered to be electron candidates, topo-clusters matched to two oppositely-charged tracks forming a vertex consistent with a photon are considered to be "converted" photon candidates (i.e., clusters resulting from a photon converting into and electron-positron pair in the ID), and topo-clusters matched to no tracks are considered to be "unconverted" photon candidates. In addition, single tracks that have no hits in the innermost layers of the ID are also considered as potential converted photon candidates\cite{CERN-EP-2019-145}. 
+Topo-clusters matched to a single charged track are considered to be electron candidates, topo-clusters matched to two oppositely-charged tracks forming a vertex consistent with a photon are considered to be "converted" photon candidates (i.e., clusters resulting from a photon converting into and electron-positron pair in the Inner Detector), and topo-clusters matched to no tracks are considered to be "unconverted" photon candidates. In addition, single tracks that have no hits in the innermost layers of the Inner Detector are also considered as potential converted photon candidates\cite{CERN-EP-2019-145}. 
 
 Since the start of Run 2, combined topo-clusters called "superclusters" have been implemented in the EM clustering process in order to capture bremsstralung photons and other energy lost in the calorimeter \cite{ATL-PHYS-PUB-2017-022}. For electrons, a supercluster seed must be a cluster with momentum $p_{T} > 1$ GeV matched to a track with at least four hits, while for photons, a supercluster seed must be a cluster with momentum $p_{T} > 1.5$ GeV. Satellite clusters are then added to the seed to form a supercluster if they fall into a window $\Delta |\eta| \times \Delta\phi = 0.075 \times 0.125$ around the center of the seed cluster. For electrons, an additional satellite cluster search is performed, adding clusters that fall into the window $\Delta |\eta| \times \Delta\phi = 0.075 \times 0.125$ that are matched to the same track as the seed. For converted photons, the $\eta-\phi$ window is not used: all satellite clusters matched to one of the tracks of the converted photon vertex are added to the supercluster.
 
@@ -75,11 +75,11 @@ The $tight$ photon ID threshold is determined based on passage of the medium ID 
 
 Each working-point threshold varies in bins of $\eta$. For loose and medium working points, converted and unconverted photons are not treated differently, but for tight working points, they are determined separately \cite{gammaID}.
 
-For electrons, the identification process proceeds similarly: working-points are defined using shower-shape variables $f_{1}, E_{ratio}, w_{s tot}, R_{eta}, w_{eta2}, f_{3}, R_{had}, and R_{had1},$ as well as $R_{phi}$ (the ratio of the energy deposited in the ECAL in a $3 \times 3$ rectangle in the $\eta \times \phi$ plane to the energy deposited in the ECAL in a $3 \times 7$ rectangle in the $\eta \times \phi$ plane, both centered on the calorimeter cell with the most deposited energy). Electron ID working-points also include the following track variables:
+For electrons, the identification process proceeds similarly: working-points are defined using shower-shape variables $f_{1}, E_{ratio}, w_{s tot}, R_{eta}, w_{eta2}, f_{3}, R_{had}$, and $R_{had1}$, as well as $R_{phi}$ (the ratio of the energy deposited in the ECAL in a $3 \times 3$ rectangle in the $\eta \times \phi$ plane to the energy deposited in the ECAL in a $3 \times 7$ rectangle in the $\eta \times \phi$ plane, both centered on the calorimeter cell with the most deposited energy). Electron ID working-points also include the following track variables:
 \begin{itemize}
 \item $n_{Blayer}$: Number of hits in the B-layer
 \item $n_{Pixel}$: Number of hits in the Pixel
-\item $n_{Si}$: Number of hits in the silicon detectors (ID and SCT)
+\item $n_{Si}$: Number of hits in the silicon detectors (Inner Detector and SCT)
 \item $d_{0}$: the transverse impact parameter relative to the beamline
 \item $|d_{0} / \sigma(d_{0})|$: the impact parameter significance relative to its uncertainty
 \item $\Delta(p)/p = (p-p_{last})/p$: the momentum difference between the track perigee and its endpoint, divided by the momentum at the track perigee
@@ -109,7 +109,7 @@ Unlike in Run 1, photon isolation cut thresholds are defined as a function of ph
 
 In analyses discussed in this dissertation, the diphoton vertex originating from the Higgs decay is often not the hardest vertex. This is because, in processes such as gluon-gluon fusion ($ggF$), many events contain a low final-state track multiplicity \cite{1408.7084}. The diphoton vertex is therefore identified using a Neural Network, trained on variables including the "photon pointing" (that is, the vertex position in $z$ most compatible with the shower-shapes observed in the ECAL), the $\Delta \phi$ between the vector sum of the track momenta and the diphoton system (as determined by the ECAL), and the scalar momentum sums $p_{T}$ and $p_{T}^2$ for the tracks in each diphoton vertex candidate \cite{ATL-COM-PHYS-2020-378}. Photon energies and pseudorapidities are corrected to reflect this new vertexing procedure.
 
-The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS bins") for the full Run-2 Couplings analysis is shown in Figure \ref{fig:Vertexing}.
+The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS truth bins") for the full Run-2 Couplings analysis is shown in Figure \ref{fig:Vertexing}.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{figures/methods_chapter/Vertexing.png}
@@ -152,13 +152,13 @@ Muons are reconstructed using tracks from either the muon spectrometer and inner
 
 In the muon spectrometer, segments of hits along the bending plane in the MDT chambers are identified using a Hough transform \cite{Hough}, an image-processing technique from the field of edge-detection that maps observed line segments into a polar-coordinate feature space. The coordinate orthogonal to the bending plane is found using TGC and RPC hits, while segments in the CSC detectors are reconstructed using a separate combinatorial algorithm. Muon tracks are then reconstructed from the segments using a $\chi^{2}$ algorithm- a track must contain at least two segments, except in the barrel-endcap transition region, where one segment is sufficient to build a track. 
 
-Tracks are used to define four types of muons: Combined Muons, for which a track is fitted using both the Inner Detector and Muon Spectrometer, Segment-Tagged, for which a track in the ID is matched to a segment (but not a full track) in the Muon Spectrometer, Calorimeter-Tagged for which a track in the ID is matched to a calorimeter deposit compatible with a muon, and Extrapolated Muons, reconstructed using segments in the Muon Spectrometer that are not associated with any ID tracks but are compatible with the primary vertex. For all muons using the ID, criteria on the number of hits in each ID subsystem are employed to ensure track quality.
+Tracks are used to define four types of muons: Combined Muons, for which a track is fitted using both the Inner Detector and Muon Spectrometer, Segment-Tagged, for which a track in the Inner Detector is matched to a segment (but not a full track) in the Muon Spectrometer, Calorimeter-Tagged for which a track in the Inner Detector is matched to a calorimeter deposit compatible with a muon, and Extrapolated Muons, reconstructed using segments in the Muon Spectrometer that are not associated with any Inner Detector tracks but are compatible with the primary vertex. For all muons using the Inner Detector, criteria on the number of hits in each Inner Detector subsystem are employed to ensure track quality.
 
 Muons must also pass identification criteria to distinguish them from potential fake muons (usually pions or kaons). Three main criteria are used:
 
 \begin{itemize}
-\item The charge-to-momentum ratio significance, defined as the absolute value of the difference between the ratio of the charge and momentum of the muons measured in the ID and MS divided by the sum in quadrature of thecorresponding uncertainties
-\item $\rho'$, defined as the absolute value of the difference between the transverse momentum measurements in the ID and MS divided by the $p_{T}$ of the combined track
+\item The charge-to-momentum ratio significance, defined as the absolute value of the difference between the ratio of the charge and momentum of the muons measured in the Inner Detector and MS divided by the sum in quadrature of thecorresponding uncertainties
+\item $\rho'$, defined as the absolute value of the difference between the transverse momentum measurements in the Inner Detector and MS divided by the $p_{T}$ of the combined track
 \item the normalized $\chi^{2}$ of the combined track fit
 \end{itemize}
 
@@ -185,11 +185,11 @@ An overlap removal procedure is employed to avoid double-counting objects. It pr
 \item Remove muons within $\Delta R=0.4$ of any jet
 \end{itemize}
 
-\subsubsection{MET} \label{sec:MET}
+\subsubsection{Missing Transverse Energy} \label{sec:MET}
 
-The initial momentum of protons approaching the collision point is almost entirely in the beam direction, that is, there is no appreciable momentum component in the transverse direction. Thus, by conservation of momentum, we expect that, when we sum the momenta of all particles produced in the event, we should not see an appreciable momentum excess in the transverse direction. However, often such an excess does occur, indicating the presence of undetected particles that have caused the visible transverse momentum imbalance. Missing Transverse Energy, or MET, is something of a misnomer, as it is missing momentum, not energy, but it is one of the most valuable tools for studying rarely-interacting particles such as neutrinos in the ATLAS detector.
+The initial momentum of protons approaching the collision point is almost entirely in the beam direction, that is, there is no appreciable momentum component in the transverse direction. Thus, by conservation of momentum, we expect that, when we sum the momenta of all particles produced in the event, we should not see an appreciable momentum excess in the transverse direction. However, often such an excess does occur, indicating the presence of undetected particles that have caused the visible transverse momentum imbalance. Missing Transverse Energy, or $E_T^{miss}$, is something of a misnomer, as it is missing momentum, not energy, but it is one of the most valuable tools for studying rarely-interacting particles such as neutrinos in the ATLAS detector.
 
-The MET is defined as the negative vector sum of the transverse  momenta of all objects associated with the diphoton vertex, including electrons, photons, muons, jets, and any additional low-$p_{T}$ tracks. For the purpose of MET reconstruction in $H \rightarrow \gamma \gamma$ events, $\tau$ leptons are treated as jets; this is allowable because they occur rarely in the parameter spaces studied and decay dominantly to hadrons \cite{CERN-EP-2017-274}.
+The $E_T^{miss}$ is defined as the negative vector sum of the transverse momenta of all objects associated with the diphoton vertex, including electrons, photons, muons, jets, and any additional low-$p_{T}$ tracks. For the purpose of $E_T^{miss}$ reconstruction in $H \rightarrow \gamma \gamma$ events, $\tau$ leptons are treated as jets; this is allowable because they occur rarely in the parameter spaces studied and decay dominantly to hadrons \cite{CERN-EP-2017-274}.
 
 \subsubsection{Tau Leptons} \label{sec:taus}
 We note that, though many physics analyses use $\tau$ leptons, they are not considered in any of the event signatures discussed in this thesis, so we refrain from discussing their reconstruction at length. However, we note that tau leptons can decay both hadronically and leptonically; as a result of this, their reconstruction depends on the reconstruction of electrons, muons, and jets.
@@ -234,10 +234,10 @@ For events passing the fully hadronic pre-selection (0 leptons, 3 jets, 1 b-jet)
 
 
 \paragraph{Leptonic events}
-In single-lepton events passing leptonic-top pre-selection (1 lepton, 1 b-jet), the primary top candidate is reconstructed from a leptonic W candidate and a jet. The W candidate is constructed from a lepton and \MET, which is assumed to originate from a neutrino.
+In single-lepton events passing leptonic-top pre-selection (1 lepton, 1 b-jet), the primary top candidate is reconstructed from a leptonic W candidate and a jet. The W candidate is constructed from a lepton and $E_T^{miss}$, which is assumed to originate from a neutrino.
 
 
-The W candidate four-momentum is derived using a dedicated leptonic-top reconstruction algorithm. First, the combined lepton + \MET system is assigned the mass of a W boson, which constrains the $z$-component of the neutrino momentum:
+The W candidate four-momentum is derived using a dedicated leptonic-top reconstruction algorithm. First, the combined lepton + $E_T^{miss}$ system is assigned the mass of a W boson, which constrains the $z$-component of the neutrino momentum:
 
 \begin{equation}
 m_W^2 = \left[E_\ell + \sqrt{p_{\nu,x}^2 + p_{\nu,y}^2 + p_{\nu,z}^2}\right]^2 - \left[\vec{p_\ell} + (p_{\nu,x},p_{\nu,y},p_{\nu,z})\right]^2.
@@ -248,13 +248,13 @@ This has two possible solutions for $p_{\nu,z}$, and in turn two solutions for $
 \begin{equation}
 m_{T} = m_{W}
 \end{equation}
-where $m_{T}$ is the total transverse mass of the W candidate. This forces $p_{\nu,z}$ to assume a real value. In addition to this constraint, the values of $p_{\nu,x}$ and  $p_{\nu,y}$ are chosen so that the Euclidean distance from ($p_{\text{MET},x},p_{\text{MET},y}$) is minimized.
+where $m_{T}$ is the total transverse mass of the W candidate. This forces $p_{\nu,z}$ to assume a real value. In addition to this constraint, the values of $p_{\nu,x}$ and  $p_{\nu,y}$ are chosen so that the Euclidean distance from ($p_{E_T^{miss},x},p_{E_T^{miss},y}$) is minimized.
 
 Once a leptonic W candidate has been constructed, the BDT score is evaluated for every (W, jet) combination in a similar manner as the fully-hadronic scenario. To handle this correctly, the pseudo-continuous b-tag scores for the (nonexistent) W-boson constituent jets are set to the minimum and the angle between them is set to zero. The top is then reconstructed from the leptonic W and the jet that produces the highest BDT score.
 
 In single-lepton events with four or more jets, a second hadronic top is reconstructed by selecting the jet triplet with highest BDT score, excluding the jet associated with the primary top.  In events with two or three jets, the second top is taken as the sum of all jets remaining after reconstructing the primary leptonic top. In hadronic events with exactly one jet, only the primary top is reconstructed.
 
-No top reconstruction is performed in dileptonic events since using \MET to solve for the kinematics of two neutrinos cannot easily be done.
+No top reconstruction is performed in dileptonic events since using $E_T^{miss}$ to solve for the kinematics of two neutrinos cannot easily be done.
 
 \paragraph{Retraining with PFlow jets}
 Two distinct trainings of the top reconstruction BDT were performed. In the CP Analysis, the BDT was trained using EMTopo jets, while for the Coupling analysis, PFlowJets are used. Figure \ref{fig:sel_topReco_retrain} reports the primary top four-momenta components reconstructed using the same set of PFlow jets for both trainings. From these results, we conclude that the re-training provides a better description of the truth level distribution for PFlow jets, but that in both cases, the BDT trainings accurately model the truth top kinematics distributions.
