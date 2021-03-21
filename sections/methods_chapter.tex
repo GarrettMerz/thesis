@@ -1,14 +1,14 @@
 \section{Experimental Methods} \label{sec:methods} 
 
-It is not possible to induce a particular interaction in a particle collider: every physics process that can occur from the collision of two protons at $13$ TeV will occur in the ATLAS detector. Thus, the process of studying rare Higgs interactions is not one of determining how to produce them in a laboratory setting, but of determining whether or not they are being produced in the detector at all. Because physics 'signal' processes are fundamentally indistinguishable from unwanted 'background' processes, ATLAS studies are statistical counting experiments which test the compatibility of the observed numbers of events with different detector signatures against the event counts that are predicted to occur under different physics hypotheses. 
+	The collision of protons at a particular center-of-mass energy can result in a vast number of different physics interactions occurring. Because it is not possible to control which of these interactions occur, the ATLAS detector is designed to gather large amounts of data resulting from the proton collisions that happen within it- the experimentalist must then observe events in kinematic regions of interest in this data in order to determine whether a particular process has happened within the detector. However, because interesting physics 'signal' processes are almost always fundamentally indistinguishable from unwanted 'background' processes, ATLAS studies are statistical counting experiments which test the compatibility of the observed numbers of events in a given kinematic region against the event counts that are predicted to occur under different physics scenarios. 
 
 Performing these experiments effectively in the data-rich environment of the LHC requires many clever statistical and computational tools, which vary from analysis to analysis. However, in all analyses, it is vitally important both to accurately model what the physics processes of interest may look like in the ATLAS detector and to translate observed detector signals into high-level physics objects. The Monte Carlo simulation method is used for the former, while the latter is performed by the variety of identification and reconstruction techniques detailed in this chapter.
 
 \subsection{Monte Carlo} \label{sec:MC} 
 
-The Monte Carlo simulation method is a way of modelling how a given physics process that may occur at the point of collision may translates into signatures in the ATLAS detector. For a given physics process, say, $gg \rightarrow t \bar{t} H$, we must model both the initial process (i.e., what is the likelihood two gluons will interact to make a $ttH$ event? What properties of the gluons make this more or less likely to occur? How will the top quarks and Higgs boson decay, and what might their decay products look like?), and the detector stage (how will the hadronic jets produced by decaying top quarks and the photons produced by a decaying Higgs look in the ATLAS detector?).
+The Monte Carlo simulation method is a way of modelling how a given physics process that may occur at the point of collision may translates into signatures in the ATLAS detector. For a given physics process, say, $gg \rightarrow t \bar{t} H$, we must model both the initial hard-scatter process (i.e., what is the likelihood two initial-state gluons with particular properties will interact to make a $ttH$ event that then decays in a particular way?), and the detector stage (how will the hadronic jets produced by decaying top quarks and the photons produced by a decaying Higgs look in the ATLAS detector?).
 
-In order to make this problem computationally tractable, each stage is performed separately. In the first stage, the $generator$ stage, physics events for a given process are generated according to their cross-sections $\sigma$ (a measure of how likely they are to occur that is calculated using perturbation theory). A variety of different generator packages are used to produce events for different processes; common generator packages include Powheg \cite{Powheg}, and {MadGraph5\_aMC@NLO} \cite{MG5}. In some cases, intermediate decays are also performed by the generator software; in other cases they are performed by separate packages such as Pythia \cite{Pythia8.1} \cite{Pythia8.2}, and Herwig \cite{Herwig}. Meanwhile, detector-level simulation is performed using the GEANT4 (GEometry ANd Tracking 4) package \cite{GEANT4}, which models the signatures of different particles produced in a collision as they pass through detector material.
+Different stages of a physics event are modeled using different dedicated Monte Carlo sotware packages. In the first stage, the $generator$ stage, physics events for a given process are generated according to their cross-sections $\sigma$ (a measure of how likely they are to occur that is calculated using perturbation theory). A variety of different generator packages are used to produce events for different processes; common generator packages include Powheg \cite{Powheg}, and {MadGraph5\_aMC@NLO} \cite{MG5}. In the second stage, quantum-chromodynamical decays called parton showers are simulated- for some processes, this is done by the generator program, while in other cases the parton-showering process is performed by separate packages such as Pythia \cite{Pythia8.1} \cite{Pythia8.2}, and Herwig \cite{Herwig}. Finally, detector-level simulation is performed using the GEANT4 (GEometry ANd Tracking 4) package \cite{GEANT4}, which models the signatures of different final-state particles as they pass through detector material. 
 
 Simulated events are then reconstructed in the same manner as real events. Because, unlike data events, Monte Carlo events include a "truth record" of what particles they contain, Monte Carlo simulations enable us to perform a number of useful tasks, including training machine learning algorithms to search for specific processes, model the relative contributions of various signal and background processes, and calculate various statistical and systematic uncertainties on our measurements \cite{Aad_2010}.
 
@@ -39,9 +39,9 @@ However, we note that, for $H \rightarrow \gamma \gamma$ events, a potential lac
 
 Photons, electrons and jets are reconstructed using topological clusters of hits ("topo-clusters") in the electromagnetic and hadronic calorimeters. Clusters are reconstructed using a "seed-and-collect" method, where cluster-initiating "seeds" are defined as calorimeter cells with an energy four times greater than the expected noise threshold for that cell  \cite{CERN-EP-2019-145}, \cite{ECALdiagram}.
 
-After the identification of seed cells, calorimeter cells neighboring the seed cell with recorded energy greater than twice their noise threshold are added to the proto-cluster. If proto-clusters contain more than two local maxima with energy greater than 500 GeV in a single cell, the proto-cluster is split into two in order to account for potential overlap. Initally, seed cells in these split clusters may reside only in the ECAL sampling layers EMB2, EMB3, EME2 and EME3, or the forward calorimeter module FCAL0, after this splitting, clusters are then iteratively split again, with maxima now allowed in the other HCAL and FCAL layers (The first layer of the ECAL is not used to seed topo-clusters in order to reduce the likelihood of producing clusters of noise). In the case of overlap between multiple clusters, cells are assigned to the two cluster candidates with the largest maxima.
+After the identification of seed cells, calorimeter cells neighboring the seed cell with recorded energy greater than twice their noise threshold are added to the proto-cluster. If proto-clusters contain more than two local maxima with energy greater than 500 GeV in a single cell, the proto-cluster is split into two in order to account for potential overlap. Initally, seed cells in these split clusters may reside only in the first FCAL module or the second- or third-layer ECAL modules; after this splitting, clusters are then iteratively split again, with maxima now allowed in the other ECAL, HCAL and FCAL layers (The first layer of the ECAL is not used to seed topo-clusters in order to reduce the likelihood of producing clusters of noise). In the case of overlap between multiple clusters, cells are assigned to the two cluster candidates with the largest maxima.
 
-\subsubsection{Electrons and Photons} \label{sec:Electrons} 
+\subsection{Electrons and Photons} \label{sec:Electrons} 
 
 Electrons and photons are defined using tracks that are matched to topo-clusters in the ECAL. Topo-clusters compatible with EM showers are selected and used to define Regions of Interest; those Regions of Interest are then matched to tracks in the Inner Detector. Track candidates are extrapolated into the Regions of Interest using both the measured track momentum and the rescaled momentum measured in the relevant topo-cluster (the latter of which allows for accounting of radiative energy loss in the calorimeter). 
 
@@ -69,7 +69,7 @@ The $tight$ photon ID threshold is determined based on passage of the medium ID 
   \item Lateral Shower Width:$w_{s3} = \sqrt{\frac{\sigma E_{i}(i-i_{max})^{2}}{\sigma E_{i}}}$ (where E is the energy of a strip, '$i_{max}$' is the index of the highest-energy strip, and 'i' is the index of each strip with respect to $i_{max}$ calculated in a $3 \times 2 \eta-\phi$  rectangle centered around the strip containing the maximum energy deposit)
   \item Total Lateral Shower Width:$w_{s tot} = \sqrt{\frac{\sigma E_{i}(i-i_{max})^{2}}{\sigma E_{i}}}$ (where E is the energy of a strip, '$i_{max}$' is the index of the highest-energy strip, and 'i' is the index of each strip with respect to $i_{max}$ calculated in a $20 \times 2 \eta-\phi$  rectangle centered around the strip containing the maximum energy deposit
   \item $\Delta E_{s}$: the difference between the second-largest strip energy and the minimum energy in the strips that lie between the largest- and second-largest strip energies
-  \item $f_{1}$: The ratio of the energy in the first layer to the energy in the whole EM cluster.
+  \item $f_{i}$: The ratio of the energy in the $i^{th}$ layer to the energy in the whole EM cluster.
   \item $f_{side}$: the total energy outside the three central strips but within seven strips, divided by the energy of the three central strips 
 \end{itemize}
 
@@ -107,9 +107,9 @@ The electron track isolation variable considered is $p_{T}^{varcone20}$, identic
 
 Unlike in Run 1, photon isolation cut thresholds are defined as a function of photon energy rather than being fixed. The isolation thresholds used are $FixedCutLoose$ ($E_{T}^{cone20}< 0.065 E_{T}^{\gamma}$ and $p_{T}^{cone20} < 0.05 E_{T}^{\gamma}$) and $FixedCutTight$ ($E_{T}^{cone40}< 0.022 E_{T}^{\gamma} + 2.45$ GeV and $p_{T}^{cone20} < 0.05 E_{T}^{\gamma}$) for photons and $FCLoose$ ($E_{T}^{cone20}< 0.2 p_{T}$ and $p_{T}^{cone20} < 0.15 p_{T}$) for electrons \cite{ATL-COM-PHYS-2020-378}.
 
-In analyses discussed in this dissertation, the diphoton vertex originating from the Higgs decay is often not the hardest vertex. This is because, in processes such as gluon-gluon fusion ($ggF$), many events contain a low final-state track multiplicity \cite{1408.7084}. The diphoton vertex is therefore identified using a Neural Network, trained on variables including the "photon pointing" (that is, the vertex position in $z$ most compatible with the shower-shapes observed in the ECAL), the $\Delta \phi$ between the vector sum of the track momenta and the diphoton system (as determined by the ECAL), and the scalar momentum sums $p_{T}$ and $p_{T}^2$ for the tracks in each diphoton vertex candidate \cite{ATL-COM-PHYS-2020-378}. Photon energies and pseudorapidities are corrected to reflect this new vertexing procedure.
+In analyses discussed in this dissertation, the diphoton vertex originating from the Higgs decay is often not the hardest vertex. This is because, in processes such as gluon-gluon fusion ($ggF$), many events contain a low final-state track multiplicity \cite{1408.7084}. The diphoton vertex is therefore identified using a neural network, trained on variables including the "photon pointing" (that is, the vertex position in $z$ most compatible with the shower-shapes observed in the ECAL), the $\Delta \phi$ between the vector sum of the track momenta and the diphoton system (as determined by the ECAL), and the scalar momentum sums $p_{T}$ and $p_{T}^2$ for the tracks in each diphoton vertex candidate \cite{ATL-COM-PHYS-2020-378}. Photon energies and pseudorapidities are corrected to reflect this new vertexing procedure.
 
-The efficiency of the Neural Network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS truth bins") for the full Run-2 Couplings analysis is shown in Figure \ref{fig:Vertexing}.
+The efficiency of the neural network diphoton vertex compared to the hardest vertex for a number of targeted physics processes ("STXS truth bins") for the full Run-2 Couplings analysis is shown in Figure \ref{fig:Vertexing}.
 
 \begin{figure}
   \includegraphics[width=\linewidth]{figures/methods_chapter/Vertexing.png}
@@ -117,7 +117,7 @@ The efficiency of the Neural Network diphoton vertex compared to the hardest ver
   \label{fig:Vertexing}
 \end{figure}
 
-\subsubsection{Jets} \label{sec:Jets} 
+\subsection{Jets} \label{sec:Jets} 
 
 Hadronic jets are identified from topo-clusters using the $anti-k_{t}$ algorithm. Clustering algorithms iteratively follow the following procedure: for each topo-cluster $i$, calculate the distance between both the topo-cluster and every other topo-cluster $j$ and between the topo-cluster and the beam $B$: 
 
@@ -144,9 +144,9 @@ A Jet Vertex Tagger (JVT) multivariate discriminant is also used to reject pileu
 
 While in general it is very difficult to identify thetype of particle that seeded a hadronic jet, jets originating from hadrons containing bottom quarks are often identifiable with some degree of accuracy. This is due to their long lifetimes compared to other hadrons, meaning that they will travel a short distance in the inner detector (~$450 \mu m$) before hadronizing into jets. 
 
-For EMTopo jets, the Boosted Decision Tree-based Mv2c10 algorithm is used, while for ParticleFlow jets, the Neural Network-based DL1r algorithm is used. The Mv2c10 algorithm is based on a Boosted Decision Tree trained on variables such as impact parameter significance, the presence ad properties of a secondary vertex, and jet kinematic variables such as $p_{T}$ and $\eta$ \cite{CERN-EP-2018-047} \cite{CERN-PH-EP-2015-216}; the DL1r algorithm is based on a Deep Neural Network \cite{ATL-PHYS-PUB-2017-013} trained on the same input variables as the Mv2c10 tagger, with additional vertex variables included to allow for charm-quark jet discrimination. The DL1r tagger also features a recurrent neural network trained to take advantage of correlations between track impact parameters in discrimination. The Mv2c10 tagger working point chosen for the CP analysis has an efficiency of approximately 77$\%$, while the DL1r working point chosen for the Couplings analysis has an efficiency of approximately 70$\%$.  
+For EMTopo jets, the Boosted Decision Tree-based Mv2c10 algorithm is used, while for ParticleFlow jets, the neural network-based DL1r algorithm is used. The Mv2c10 algorithm is based on a Boosted Decision Tree trained on variables such as impact parameter significance, the presence ad properties of a secondary vertex, and jet kinematic variables such as $p_{T}$ and $\eta$ \cite{CERN-EP-2018-047} \cite{CERN-PH-EP-2015-216}; the DL1r algorithm is based on a deep neural network \cite{ATL-PHYS-PUB-2017-013} trained on the same input variables as the Mv2c10 tagger, with additional vertex variables included to allow for charm-quark jet discrimination. The DL1r tagger also features a recurrent neural network trained to take advantage of correlations between track impact parameters in discrimination. The Mv2c10 tagger working point chosen for the CP analysis has an efficiency of approximately 77$\%$, while the DL1r working point chosen for the Couplings analysis has an efficiency of approximately 70$\%$.  
 
-\subsubsection{Muons} \label{sec:Muons} 
+\subsection{Muons} \label{sec:Muons} 
 
 Muons are reconstructed using tracks from either the muon spectrometer and inner detector or the muon spectrometer only.
 
@@ -172,9 +172,9 @@ Additionally, muons are required to satisfy $p_{T} > 10$ GeV, $|\eta| < 2.7$, ha
 
 For the analyses discussed in this dissertation, all muon candidates must have $p_{T} > 15$ GeV and $|\eta| < 2.37$.
  
-\subsubsection{Overlap Removal} \label{sec:Overlap}
+\subsection{Overlap Removal} \label{sec:Overlap}
 
-An overlap removal procedure is employed to avoid double-counting objects. It proceeds in the following order:
+An overlap removal procedure is employed to avoid double-counting objects (in particular, to avoid reconstructing electron or photon candidates as jets or vice versa, since jets can also deposit a substantial fraction of their energy in the ECAL). The procedure proceeds in the following order:
 
 \begin{itemize}
 \item Remove electrons within $\Delta R=0.4$ of any photon
@@ -185,16 +185,16 @@ An overlap removal procedure is employed to avoid double-counting objects. It pr
 \item Remove muons within $\Delta R=0.4$ of any jet
 \end{itemize}
 
-\subsubsection{Missing Transverse Energy} \label{sec:MET}
+\subsection{Missing Transverse Energy} \label{sec:MET}
 
 The initial momentum of protons approaching the collision point is almost entirely in the beam direction, that is, there is no appreciable momentum component in the transverse direction. Thus, by conservation of momentum, we expect that, when we sum the momenta of all particles produced in the event, we should not see an appreciable momentum excess in the transverse direction. However, often such an excess does occur, indicating the presence of undetected particles that have caused the visible transverse momentum imbalance. Missing Transverse Energy, or $E_T^{miss}$, is something of a misnomer, as it is missing momentum, not energy, but it is one of the most valuable tools for studying rarely-interacting particles such as neutrinos in the ATLAS detector.
 
 The $E_T^{miss}$ is defined as the negative vector sum of the transverse momenta of all objects associated with the diphoton vertex, including electrons, photons, muons, jets, and any additional low-$p_{T}$ tracks. For the purpose of $E_T^{miss}$ reconstruction in $H \rightarrow \gamma \gamma$ events, $\tau$ leptons are treated as jets; this is allowable because they occur rarely in the parameter spaces studied and decay dominantly to hadrons \cite{CERN-EP-2017-274}.
 
-\subsubsection{Tau Leptons} \label{sec:taus}
+\subsection{Tau Leptons} \label{sec:taus}
 We note that, though many physics analyses use $\tau$ leptons, they are not considered in any of the event signatures discussed in this thesis, so we refrain from discussing their reconstruction at length. However, we note that tau leptons can decay both hadronically and leptonically; as a result of this, their reconstruction depends on the reconstruction of electrons, muons, and jets.
 
-\subsubsection{Top reconstruction}
+\subsection{Top reconstruction}
 \label{sssec:ttbar_reco}
 
 In order to properly discriminate between CP-even and CP-odd \ttH and \tH processes, it is essential to reconstruct top quark kinematics from their decay products with some degree of accuracy.
@@ -210,32 +210,31 @@ The goal of the top reconstruction BDT is to correctly identify the jet triplets
 The training events come from the \ttH Monte Carlo sample requiring 0 leptons, 3 jets and 1 b-tagged jet, identified using the criteria discussed in this chapter. From this sample, we denote "signal" events as the set of jet triplets truth-matched to a top quark, while the set of all non-truth-matched triplets in this sample is taken as background. The truth matching is done as follows:
 
 \begin{enumerate}
-	\item Starting from the truth top, identify W and b candidate daughter jets
-	\item Match the W candidates to 2 truth jets (and b candidates to 1 truth jet) by identifying the jets containing the most descendants of the truth particle weighted by $p_{T}$
+	\item Starting from the truth top, identify W and b candidate daughter truth particles
+	\item Match the W candidates to 2 truth jets (and b candidates to 1 truth jet) by identifying the truth jets containing the greatest number of daughter particles of the truth W or b, weighted by $p_{T}$
 	\item Match each truth jet to the closest reconstructed jet in $\Delta R$;
-	\item If the 3 jets obtained this way are distinct, this top is considered as truth-matched and marked as a signal triplet. All other sets of 3 jets are considered background.
+	\item If the 3 jets obtained this way are distinct, the jet triplet is considered truth-matched and marked as a "signal" triplet. All other sets of 3 jets are considered "background".
 \end{enumerate}
 
 The input variables used for the top reconstruction BDT are:
 \begin{itemize}
-	\item The four-vector information of the W boson candidate constructed from the W decays
-	\item The four-vector information of the b quark candidate (matched to a truth b-quark)
+	\item The four-vector information of the reconstructed W boson candidate
+	\item The four-vector information of the b quark candidate
 	\item $\Delta R$ between the W and b candidates
 	\item $\Delta R$ between the two jets comprising the W candidate
 	\item The pseudo-continuous b-tag score of all three jets
 	\item The tri-jet mass, i.e. mass of the top candidate
 \end{itemize}
 
-This trained BDT is then applied to both fully hadronic (i.e., events containing two hadronic tops) and semi-leptonic events (i.e., events containing only one hadronic top); the algorithm has been shown to be able to perform accurately in both cases.
+This trained BDT is then applied to both fully hadronic (i.e., events containing two hadronic tops) and semi-leptonic events (i.e., events containing only one hadronic top); the algorithm has been shown to have good performance in both cases.
 
 
 \paragraph{Fully hadronic events}
-For events passing the fully hadronic pre-selection (0 leptons, 3 jets, 1 b-jet), the primary top candidate is chosen to be the triplet with the highest Top Reco BDT score. In hadronic events with six or more jets, the jet triplet with highest score out of the set of remaining jets is chosen as a second hadronic top. In events with four or five jets, the second top is taken as the sum of all jets remaining after reconstructing the primary hadronic top. In hadronic events with exactly three jets, only the primary top is reconstructed.
+For events passing the fully hadronic pre-selection (0 leptons, 3 jets, 1 b-jet), the primary top candidate is chosen as the triplet with the highest Top Reco BDT score. In hadronic events with six or more jets, the jet triplet with highest score out of the set of remaining jets is chosen as a second hadronic top. In events with four or five jets, the second top is taken as the sum of all jets remaining after reconstructing the primary hadronic top. In hadronic events with exactly three jets, only the primary top is reconstructed.
 
 
 \paragraph{Leptonic events}
 In single-lepton events passing leptonic-top pre-selection (1 lepton, 1 b-jet), the primary top candidate is reconstructed from a leptonic W candidate and a jet. The W candidate is constructed from a lepton and $E_T^{miss}$, which is assumed to originate from a neutrino.
-
 
 The W candidate four-momentum is derived using a dedicated leptonic-top reconstruction algorithm. First, the combined lepton + $E_T^{miss}$ system is assigned the mass of a W boson, which constrains the $z$-component of the neutrino momentum:
 
@@ -243,21 +242,22 @@ The W candidate four-momentum is derived using a dedicated leptonic-top reconstr
 m_W^2 = \left[E_\ell + \sqrt{p_{\nu,x}^2 + p_{\nu,y}^2 + p_{\nu,z}^2}\right]^2 - \left[\vec{p_\ell} + (p_{\nu,x},p_{\nu,y},p_{\nu,z})\right]^2.
 \end{equation}
 
-This has two possible solutions for $p_{\nu,z}$, and in turn two solutions for $\vec{p}_{W}$; the solution with smaller $|p_{\nu,z}|$ is selected. In the event that the $p_{\nu,z}$ solutions obtained are imaginary numbers (a scenario that occurs roughly 50\% of the time), a constraint is applied requiring
+
+The values of ($p_{\nu,x}$, $p_{\nu,y}$) are chosen to be ($p_{E_T^{miss},x},p_{E_T^{miss},y}$). This gives two possible solutions for $p_{\nu,z}$, and in turn two solutions for $\vec{p}_{W}$; the solution with smaller $|p_{\nu,z}|$ is selected as the correct one. In the event that the $p_{\nu,z}$ solutions obtained are imaginary numbers (a scenario that occurs roughly 50\% of the time, when the total transverse mass of the W candidate is reconstructed to be greater than the W-boson mass), a constraint is applied requiring
 
 \begin{equation}
 m_{T} = m_{W}
 \end{equation}
-where $m_{T}$ is the total transverse mass of the W candidate. This forces $p_{\nu,z}$ to assume a real value. In addition to this constraint, the values of $p_{\nu,x}$ and  $p_{\nu,y}$ are chosen so that the Euclidean distance from ($p_{E_T^{miss},x},p_{E_T^{miss},y}$) is minimized.
+where $m_{T}$ is the total transverse mass of the W candidate. This forces $p_{\nu,z}$ to assume a real value.
 
 Once a leptonic W candidate has been constructed, the BDT score is evaluated for every (W, jet) combination in a similar manner as the fully-hadronic scenario. To handle this correctly, the pseudo-continuous b-tag scores for the (nonexistent) W-boson constituent jets are set to the minimum and the angle between them is set to zero. The top is then reconstructed from the leptonic W and the jet that produces the highest BDT score.
 
 In single-lepton events with four or more jets, a second hadronic top is reconstructed by selecting the jet triplet with highest BDT score, excluding the jet associated with the primary top.  In events with two or three jets, the second top is taken as the sum of all jets remaining after reconstructing the primary leptonic top. In hadronic events with exactly one jet, only the primary top is reconstructed.
 
-No top reconstruction is performed in dileptonic events since using $E_T^{miss}$ to solve for the kinematics of two neutrinos cannot easily be done.
+No top reconstruction is performed in dileptonic events, since using $E_T^{miss}$ to solve for the kinematics of two neutrinos cannot easily be done.
 
-\paragraph{Retraining with PFlow jets}
-Two distinct trainings of the top reconstruction BDT were performed. In the CP Analysis, the BDT was trained using EMTopo jets, while for the Coupling analysis, PFlowJets are used. Figure \ref{fig:sel_topReco_retrain} reports the primary top four-momenta components reconstructed using the same set of PFlow jets for both trainings. From these results, we conclude that the re-training provides a better description of the truth level distribution for PFlow jets, but that in both cases, the BDT trainings accurately model the truth top kinematics distributions.
+\paragraph{Retraining with PFlow Jets}
+Two distinct trainings of the top reconstruction BDT were performed. In the CP Analysis, the BDT was trained using EMTopo jets, while for the Coupling analysis, PFlowJets are used. Figure \ref{fig:sel_topReco_retrain} reports the primary top four-momenta components reconstructed using the same set of PFlow jets for both trainings. From these results, we conclude that the re-training provides a better description of the truth level distribution for PFlow jets, but that in both cases, the BDT accurately models the truth top kinematics distributions.
 
 \begin{figure}
 	\centering

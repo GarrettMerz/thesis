@@ -3,105 +3,102 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: aiaa.bst
 Database file #1: ./bib/thesis-bib.bib
-I was expecting a `,' or a `}'---line 838 of file ./bib/thesis-bib.bib
+I was expecting a `,' or a `}'---line 826 of file ./bib/thesis-bib.bib
  :    
  :    year={2008},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "skopt" isn't style-file defined
---line 1847 of file ./bib/thesis-bib.bib
-Repeated entry---line 2029 of file ./bib/thesis-bib.bib
+--line 1835 of file ./bib/thesis-bib.bib
+Repeated entry---line 2017 of file ./bib/thesis-bib.bib
  : @article{Higgsmass
  :                   ,
 I'm skipping whatever remains of this entry
-Name 1 in "de Florian, D., and others." has a comma at the end for entry YellowReport4
+Name 1 in "de Florian, D., and others" has a comma at the end for entry YellowReport4
 while executing---line 1245 of file aiaa.bst
 Warning--empty publisher in YellowReport4
-Name 1 in "Gilardoni, Simone, and others." has a comma at the end for entry SPS
+Name 1 in "Gilardoni, Simone, and others" has a comma at the end for entry SPS
 while executing---line 1245 of file aiaa.bst
 Warning--can't use both author and editor fields in SPS
 Warning--empty publisher in SPS
-Name 1 in "G. Aad, and others." has a comma at the end for entry ATLAS_TDR
+Name 1 in "G. Aad, and others" has a comma at the end for entry ATLAS_TDR
 while executing---line 1245 of file aiaa.bst
-Name 1 in "S Chatrchyan, and others." has a comma at the end for entry CMS_TDR
+Name 1 in "S Chatrchyan, and others" has a comma at the end for entry CMS_TDR
 while executing---line 1245 of file aiaa.bst
 Warning--empty author in LHCb_TDR
 Warning--empty journal in LHCRing
 Name 1 in "Aad, G., and others" has a comma at the end for entry muonsTDR
 while executing---line 1245 of file aiaa.bst
-Name 1 in "Aad, G., and others." has a comma at the end for entry ATLAS_Jinst
+Name 1 in "Aad, G., and others" has a comma at the end for entry ATLAS_Jinst
 while executing---line 1245 of file aiaa.bst
 Name 1 in "Aad, G., and others" has a comma at the end for entry ID
 while executing---line 1245 of file aiaa.bst
 Warning--empty institution in IBL_TDR
 Name 1 in "Livan, Michele, and Wigmans, Richard" has a comma at the end for entry misconceptions
 while executing---line 1245 of file aiaa.bst
-Name 1 in "J. -. {Rey}, and others." has a comma at the end for entry Coldmass
+Name 1 in "J. -. {Rey}, and others" has a comma at the end for entry Coldmass
 while executing---line 1245 of file aiaa.bst
-Name 1 in "D. E. {Baynham}, and others." has a comma at the end for entry Toroid
+Name 1 in "D. E. {Baynham}, and others" has a comma at the end for entry Toroid
 while executing---line 1245 of file aiaa.bst
 Warning--empty title in CSCs
-Warning--empty note in TGCWheel
 Warning--empty year in Herwig
-Warning--empty note in CERN-EX-1301009
 Name 1 in "Aaboud, M., and others" has a comma at the end for entry ATL-PHYS-PUB-2017-022
 while executing---line 1245 of file aiaa.bst
-Name 1 in "Aad, Georges, and others." has a comma at the end for entry CERN-PH-EP-2015-216
+Name 1 in "Aad, Georges, and others" has a comma at the end for entry CERN-PH-EP-2015-216
 while executing---line 1245 of file aiaa.bst
 Warning--empty pages in LightGBM
 Name 1 in "Aaboud, M., and others" has a comma at the end for entry A3
 while executing---line 1245 of file aiaa.bst
 Name 1 in "Aad, G., and others" has a comma at the end for entry A14
 while executing---line 1245 of file aiaa.bst
-Warning--empty journal in LHCHiggsCrossSectionWorkingGroup
+Warning--empty journal in kappaFW
 Warning--empty journal in JSConway
 Warning--there's a number but no volume in JSConway
 Name 1 in "Aaboud, M., and others" has a comma at the end for entry ATLAS-CONF-2019-004
 while executing---line 1245 of file aiaa.bst
 Warning--empty author in MET2
-Warning--empty journal in kappaFW
-Name 1 in "Aad, G, and others." has a comma at the end for entry coups127
+Name 1 in "Aad, G, and others" has a comma at the end for entry coups127
 while executing---line 1245 of file aiaa.bst
 Warning--empty journal in coups127
-You've used 166 entries,
+You've used 165 entries,
             2292 wiz_defined-function locations,
-            1470 strings with 28006 characters,
-and the built_in function-call counts, 33829 in all, are:
-= -- 2514
-> -- 1355
+            1477 strings with 28120 characters,
+and the built_in function-call counts, 33457 in all, are:
+= -- 2520
+> -- 1347
 < -- 117
-+ -- 517
-- -- 351
-* -- 3739
-:= -- 4878
-add.period$ -- 316
-call.type$ -- 166
++ -- 514
+- -- 349
+* -- 3531
+:= -- 4868
+add.period$ -- 314
+call.type$ -- 165
 change.case$ -- 2
 chr.to.int$ -- 3
-cite$ -- 183
-duplicate$ -- 1672
-empty$ -- 3599
-format.name$ -- 351
-if$ -- 7244
+cite$ -- 179
+duplicate$ -- 1663
+empty$ -- 3583
+format.name$ -- 349
+if$ -- 7228
 int.to.chr$ -- 0
-int.to.str$ -- 166
-missing$ -- 153
-newline$ -- 502
-num.names$ -- 165
-pop$ -- 295
+int.to.str$ -- 165
+missing$ -- 152
+newline$ -- 499
+num.names$ -- 164
+pop$ -- 282
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 675
+skip$ -- 667
 stack$ -- 0
-substring$ -- 2143
-swap$ -- 670
+substring$ -- 2142
+swap$ -- 602
 text.length$ -- 116
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 17
-while$ -- 262
-width$ -- 169
-write$ -- 1488
+warning$ -- 14
+while$ -- 261
+width$ -- 168
+write$ -- 1492
 (There were 18 error messages)

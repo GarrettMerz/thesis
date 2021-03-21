@@ -26,23 +26,6 @@ The trigger used to select events is the diphoton trigger HLT\_g35\_loose\_g25\_
 \caption{Efficiency of the trigger for the different years of the run-2 data taking period as a function of subleading photon $E_{T}$.}
 \end{figure}
 
-\subsection{Higgs Preselection and Data CRs} \label{sec:Preselection} 
-
-In both analyses discussed in this dissertation, we use the following preselection to define the $H \rightarrow \gamma \gamma$ signal region. These requirements are applied for both data and Monte Carlo simulation. 
-
-\begin{itemize}
-\item $\gamma\gamma$ preselection: The event is required to contain two photons passing the loose isolation and ID requirements.
-\item At least one primary vertex is required to be identified in the event.
-\item The leading two photons observed are required to match those identified by the trigger (i.e., be trigger-matched).
-\item Relative $p_{T}$ cuts: The leading and subleading photons are required to have $p_{T}/m\gamma\gamma$ larger than 0.35 and 0.25, respectively.
-\item TI: For events in the signal-region, we require both photons to pass the "Tight" Photon ID and Isolation requirements (for events in the 'NTI' data control region, this selection criterion is ignored). 
-\item The invariant mass of the diphoton system must satisfy $105$ GeV $< m_{\gamma\gamma} < 160$ GeV
-\end{itemize}
-
-In order to accurately model the continuum diphoton background, it is often useful to invert the TI requirement- that is, we construct a data sample consisting of those events passing all other preselections, but for which one or more photons does not pass either or both of the "tight" isolation and ID requirements. Data control samples in this not-tight-isolated "NTI" region allow us to model the kinematic properties of objects in the event other than the diphoton system, such as top quark jet variables, with some amount of accuracy.
-
-Additionally, it is useful to consider the TI or NTI data sidebands- this consists of the set of events passing either TI or NTI selection in the region $105$ GeV $< m_{\gamma\gamma} < 160$ GeV but outside the signal region ($123$ GeV $< m_{\gamma\gamma} < 127$ GeV for the CP analysis, $120$ GeV $< m_{\gamma\gamma} < 130$ GeV for the Couplings analysis). This allows us to model the shape of the background while safely away from the Higgs signal peak near 125 GeV. This is detailed further in the subsequent analysis-specific chapters.
-
 \subsection{Nominal and Alternative Monte Carlo Samples} \label{sec:NominalMC} 
 
 In order to generate Monte Carlo simulated events, several software programs must work in concert. In a real physics event, different proton constituents (usually gluons or quarks, often called "partons"), interact with one another in a process called a hard scatter to produce new particles. 
@@ -264,3 +247,21 @@ $\kappa_{t}$ & $\alpha$\ & cos$\alpha$ & $\kappa_{SM}$\\
   \caption{Normalized NLO cross-sections for the $t\bar{t}H$, $tHjb$, $tWH$, and $ggF$ processes for the different CP-scenarios, scaled using the K-factors and the value of BR$(H\rightarrow\gamma\gamma)$. In the samples above the line, $\kappa_{t}$ is fixed to 1 and $\alpha$ is varied, while in the samples below the line, $\kappa_{t}$ is not equal to 1.}
   \label{tab:MCsamples_XS_norm}
 \end{table}
+
+
+\subsection{Higgs Preselection and Data CRs} \label{sec:Preselection} 
+
+In both analyses discussed in this dissertation, we use the following preselection to define the $H \rightarrow \gamma \gamma$ signal region. These requirements are applied for both data and Monte Carlo simulation. 
+
+\begin{itemize}
+\item $\gamma\gamma$ preselection: The event is required to contain two photons passing the loose isolation and ID requirements.
+\item At least one primary vertex is required to be identified in the event.
+\item The leading two photons observed are required to match those identified by the trigger (i.e., be trigger-matched).
+\item Relative $p_{T}$ cuts: The leading and subleading photons are required to have $p_{T}/m\gamma\gamma$ larger than 0.35 and 0.25, respectively.
+\item TI: For events in the signal-region, we require both photons to pass the "Tight" Photon ID and Isolation requirements (for events in the 'NTI' data control region, this selection criterion is ignored). 
+\item The invariant mass of the diphoton system must satisfy $105$ GeV $< m_{\gamma\gamma} < 160$ GeV
+\end{itemize}
+
+In order to accurately model the continuum diphoton background, it is often useful to invert the TI requirement- that is, we construct a data sample consisting of those events passing all other preselections, but for which one or more photons does not pass either or both of the "tight" isolation and ID requirements. Data control samples in this not-tight-isolated "NTI" region allow us to model the kinematic properties of objects in the event other than the diphoton system, such as top quark jet variables, with some amount of accuracy.
+
+Additionally, it is useful to consider the TI or NTI data sidebands- this consists of the set of events passing either TI or NTI selection in the region $105$ GeV $< m_{\gamma\gamma} < 160$ GeV but outside the signal region ($123$ GeV $< m_{\gamma\gamma} < 127$ GeV for the CP analysis, $120$ GeV $< m_{\gamma\gamma} < 130$ GeV for the Couplings analysis). This allows us to model the shape of the background while safely away from the Higgs signal peak near 125 GeV. This is detailed further in the subsequent analysis-specific chapters.

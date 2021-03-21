@@ -1,12 +1,12 @@
-In the analyses discussed in this dissertation, smooth functional forms are used to model both the signal and background. This allows an unbinned likelihood fit to be performed, the preferable statistical analysis method in the lower-statistics $ttH$ regime (an alternative to the binned likelihood fit, also common in ATLAS analyses, which offers more statistics per bin, but a general loss of precision). 
+In the majority of ATLAS $H \rightarrow \gamma \gamma$ analyses, smooth functional forms are used to model both the signal and background. This allows an unbinned likelihood fit to be performed, the preferable statistical analysis method in the lower-statistics $ttH$ regime (an alternative to the binned likelihood fit, also common in ATLAS analyses, which offers more statistics per bin, but a general loss of precision). 
 
 Additionally, parameterizing signal and background in this way allows for the relatively straightforward calculation of several key systematics, including "spurious signal" background mismodelling, photon energy scale, and photon energy resolution.
 
 \section{Signal Modelling} \label{sec:example_section} 
 
-In collider physics analyses, one of the most common forms of signal is a "resonance", a bump in a smooth energy spectrum indicating the presence of a particle with mass given by the center of the resonance bump and lifetime given by the width $\Gamma$ of the resonance bump \cite{Peskin}. The "true underlying form" of resonances generally follow the Breit-Wigner distribution described in \cite{SlowNeutrons}; however, due to detector and beam effects, this form does not accurately describe observed data.
+In collider physics analyses, the production of a particle in a particular region of phase space is often observable as a resonance peak, centered at the particle's mass and with width $\Gamma$ governed by the particle's lifetime. \cite{Peskin}. The "true underlying form" of resonances generally follow the Breit-Wigner distribution described in \cite{SlowNeutrons}; however, due to detector and beam effects, this form does not accurately describe observed data.
 
-Instead, for both analyses discussed in this dissertation, a "Double-Sided Crystal Ball" (DSCB) function \cite{CB}\cite{DSCB} is used. The function has six parameters, two that describe the shape of its Gaussian core $\mu_{CB}$, and $\sigma_{CB}$, and two that describe the shape of each of its exponential tails: $\alpha_{low}$ and $n_{low}$; $\alpha_{high}$ and $n_{high}$. The function is defined as:
+For both analyses discussed in this dissertation, a "Double-Sided Crystal Ball" (DSCB) function \cite{CB}\cite{DSCB} is used. The function has six parameters, two that describe the shape of its Gaussian core $\mu_{CB}$, and $\sigma_{CB}$, and two that describe the shape of each of its exponential tails: $\alpha_{low}$ and $n_{low}$; $\alpha_{high}$ and $n_{high}$. The function is defined as:
 
 \[f_{DSCB}(m_{\gamma \gamma}) = \begin{cases} 
       e^{\frac{-{\alpha_{low}^{2}}}{2}} (\frac{R_{low}-\alpha_{low}-t}{R_{low}})^{n_{low}} & \mbox{if } t < -\alpha_{low} \\
@@ -17,7 +17,7 @@ Instead, for both analyses discussed in this dissertation, a "Double-Sided Cryst
 
 where $t = \frac{(m_{\gamma \gamma} - \mu_{CB})}{\sigma_{CB}}$ and $R = \frac{n}{\alpha}$. 
 
-To parameterize the signal in each analysis category for both analyses discussed in this dissertation, all Monte Carlo for the various Higgs production modes ($VBF$, $VH$, $ggF$, $ttH$, $tWH$, $tHjb$ and $bbH$) generated using a Higgs mass of 125 GeV are combined. The resulting distribution is then fit with a DSCB function, and a rigid transformation of 0.09 GeV is performed such that the mean of the fitted DSCB corresponds to the experimentally measured Higgs mass of $125.09 GeV \pm 0.21 GeV(stat) \pm 0.1 GeV(syst)$ \cite{Higgsmass}.
+To parameterize the signal in each analysis category for both analyses discussed in this dissertation, all Monte Carlo for the various Higgs production modes ($VBF$, $VH$, $ggF$, $ttH$, $tWH$, $tHjb$ and $bbH$) generated using a Higgs mass of 125 GeV are combined. The resulting distribution is then fit with a DSCB function, and a rigid transformation of 0.09 GeV is performed such that the mean of the fitted DSCB corresponds to the experimentally measured Higgs mass of $125.09$ GeV $\pm 0.21$ GeV(stat) $\pm 0.1$ GeV(syst) \cite{Higgsmass}.
 
 Because the Double-Sided Crystal Ball function depends strongly on the photon resolution and energy scale, these systematics can be straightforwardly parameterized in the final fit as variations on $\mu_{CB}$ and $\sigma_{CB}$ \cite{gammaID}. This is one of the primary motivations for using this functional form, rather than a Gaussian or other distribution. Examples of DSCB shapes in five categories targeting two STXS truth bins of the Couplings Analysis are shown in Figure \ref{fig:DSCB}.
 
@@ -40,7 +40,7 @@ The spurious signal test is a signal-plus-background functional fit to a backgro
 \begin{figure}
 \centering
 \includegraphics[width=0.49\textwidth]{figures/sigbkgparam/SSCartoon.png}
-\caption{A cartoon depicting the spurious signal procedure. The true background shape in red is modeled by an analytic function in blue. The spurious signal resulting from this mismodelling is the maximum signal yield extracted from the blue "spurious signal" bump, fit over a window of $120 GeV < m_{\gamma \gamma}<130 GeV$.}
+\caption{A cartoon depicting the spurious signal procedure. The true background shape in red is modeled by an analytic function in blue. The spurious signal resulting from this mismodelling is the maximum signal yield extracted from the blue "spurious signal" bump, fit over a window of $120$ GeV $< m_{\gamma \gamma}<130$ GeV.}
 \label{fig:SScartoon}
 \end{figure} 
 
@@ -95,9 +95,9 @@ An illustration of the Wald test in two of the Couplings categories is shown in 
 
 These failed fits show the limitations of current spurious signal criteria: in low-statistics categories, the Monte Carlo templates often contain large statistical fluctuations that can be fit as spurious signal. However, because spurious signal is intended to measure the mismodelling due to the choice of functional form, the presence of such fluctuations can artifically inflate the spurious signal. If the functional forms chosen because of these fluctuations have too many degrees of freedom, this can cause disastrous effects when fitting to the true data sidebands, as statistical fluctuations in data will dominate. This is the motivation for introducing Gaussian Process Regression (GPR) smoothing, discussed in appendix \ref{app:gpr_templates}. At the time of this writing, this novel smoothing procedure is currently being implemented in the Couplings analysis; a discussion of the procedure and the improvements to the spurious signal that result are given in appendix \ref{app:gpr_templates}, while extensive validation of the smoothing procedure using toy tests is given in appendix \ref{app:gpr_validation}.
 
-\subsubsection{Background Templates} \label{sec:bkgtemplates} 
+\subsection{Background Templates} \label{sec:bkgtemplates} 
 
-The background templates constructed for both analyses discussed in this dissertation are designed to approximate the continuum diphoton background. 
+The templates constructed for both analyses discussed in this dissertation are designed to approximate the continuum diphoton background. 
 
 In all categories of the CP analysis, either $tt\gamma\gamma$ Monte Carlo or NTI data is used to model the continuum background, scaled to the TI data sidebands. The statistical uncertainty of both template candidates is checked in each region by taking the integral and sum of errors; the template chosen is the one with the smallest statistical uncertainty. $tt\gamma\gamma$ is ultimately used to construct the template in all CP analysis categories but one. 
 
@@ -124,7 +124,7 @@ Extending this to the diphoton pair, eight total regions can be defined in each 
 
 After the purity fractions are calculated in each category, the shapes of the $\gamma j$ and $jj$ distributions are derived using NTI data. The $\gamma \gamma$ Monte Carlo is then reweighted to match these shapes, and the $\gamma \gamma$, $\gamma j$, and $jj$ contributions are added according to their purities. As in other categories, the templates are scaled to the TI sidebands. 
 
-\subsection{The Kappa Framework} \label{sec:kappaFW}
+\section{The Kappa Framework} \label{sec:kappaFW}
 
 When measuring Higgs couplings in ATLAS, it is often more useful to note the ratio of the measured coupling to the Standard Model prediction rather than the measured coupling alone. For some Higgs coupling to a boson or fermion $i$, we can write
 
@@ -132,7 +132,7 @@ When measuring Higgs couplings in ATLAS, it is often more useful to note the rat
 \kappa_{i} = \frac{y_{i}^{meas}}{y_{i}^{SM}}
 \end{equation}
 
-This $\kappa$ parameter is called the "coupling strength"-- if $\kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $\kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \cite{LHCHiggsCrossSectionWorkingGroup}.
+This $\kappa$ parameter is called the "coupling strength"-- if $\kappa_{i} = 1$, the Higgs couples to particle $i$ exactly as predicted by the Standard Model, while if $\kappa_{i} = 0$, the Higgs does not couple to particle $i$ at all. Measuring the Higgs couplings and interactions in this manner is referred to as the "Kappa Framework" \cite{kappaFW}.
 
 The parameterization of various production cross-sections and decay widths (divided by their Standard Model values) in terms of the $\kappa$ framework is shown in Tables \ref{tab:Xsecskappa}-\ref{tab:BRskappa} \cite{PhysRevD.101.012002}. The "resolved" column assumes that only the particles of the Standard Model exist. However, it can also be useful to develop "effective" coupling terms that allows for the existence of additional particles that may influence the loop diagrams. These can be modeled by mutiplying the resolved coupling terms by the indicated factors:
 
@@ -176,7 +176,7 @@ The parameterization of various production cross-sections and decay widths (divi
     \label{tab:BRskappa}
 \end{table}
 
-\subsection{Simplified Template Cross-Sections} \label{sec:STXS}
+\section{Simplified Template Cross-Sections} \label{sec:STXS}
 
 The Couplings Analysis is performed within the Simplified Template Cross Sections (STXS 1.2) framework \cite{YellowReport4}, where different regions of phase space called "truth bins" are probed according to their production modes and kinematic properties. A visual guide to the different STXS1.2 bins is shown in figure \ref{fig:STXS_scheme}. The categorization is designed such that all events passing the $H \rightarrow \gamma \gamma$ selection criteria will fall into one of the STXS1.2 categories.
 
