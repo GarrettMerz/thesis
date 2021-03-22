@@ -191,7 +191,8 @@
 \RequirePackage{float}
 
 % This package is used for the list of abbreviations
-\RequirePackage[printonlyused]{acronym}
+\RequirePackage{acronym}
+%\RequirePackage[printonlyused]{acronym}
 
 % This package is for the index, if it is to be used.
 \if@umich@index

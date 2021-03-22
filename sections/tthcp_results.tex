@@ -52,8 +52,9 @@ The $ggF$ cross-section and $H \rightarrow \gamma \gamma$ branching ratio can al
 
 The signal and background shapes are parameterized according to the prescription in Chapter \ref{chap:sigbkgparam}, using a Double-Sided Crystal Ball function for the signal shape and following the spurious signal test procedure for the background parameterization. The DSCB shape does not vary noticeably with $\alpha$, so the Standard-Model Higgs signal DSCB parameterization is used for all $\alpha$ variations occurring in the analysis.
 
-In all categories but one, the $tt\gamma\gamma$ Monte Carlo sample is used for the background template. However, in Hadronic Category 10, a fluctuation in the Monte Carlo causes the spurious signal test to fail- in this category, we choose NTI data as the source of the template due to its lower statistical uncertainty. DSCB parameterizations are given in Tables \ref{tab:sig_param1}-\ref{tab:sig_param2} , while the spurious signal values, template source, choice of functional forms, and fit $\chi^{2}$ probability are shown in Table \ref{tab:spuriousSignal_1}. $Z_{sp}$ denotes the max spurious signal over the statistical uncertainty on the background, while $\mu_{sp}$ denotes the max spurious signal over the expected signal yield in that category.
+In all categories but one, the $tt\gamma\gamma$ Monte Carlo sample is used for the background template. However, in Hadronic Category 10, a fluctuation in the Monte Carlo causes the spurious signal test to fail- in this category, we choose NTI data as the source of the template due to its lower statistical uncertainty. DSCB parameterizations are given in Table \ref{tab:sig_param}, while the spurious signal values, template source, choice of functional forms, and fit $\chi^{2}$ probability are shown in Table \ref{tab:spuriousSignal_1}. $Z_{sp}$ denotes the max spurious signal over the statistical uncertainty on the background, while $\mu_{sp}$ denotes the max spurious signal over the expected signal yield in that category.
 
+\iffalse
 \begin{table}[!htp]
 \begin{center}
 \begin{tabular}{lrr}
@@ -87,37 +88,38 @@ In all categories but one, the $tt\gamma\gamma$ Monte Carlo sample is used for t
 \label{tab:sig_param1}
 \end{center}
 \end{table}
+\fi
 
 \begin{table}[!htp]
 \begin{center}
-\begin{tabular}{lrrrr}
+\begin{tabular}{lrrrrrr}
         \hline
-        {} & $\alpha_{CB}^\text{low}$ & $\alpha_{CB}^{high}$ & $n_{CB}^\text{low}$ & $n_{CB}^{high}$ \\
+        {} & $\mu_{CB}$ [GeV] & $\sigma_{CB}$ [GeV] &$\alpha_{CB}^\text{low}$ & $\alpha_{CB}^{high}$ & $n_{CB}^\text{low}$ & $n_{CB}^{high}$ \\
         \hline
-        1 & 1.616 & 1.484 & 6.226 & 15.519 \\
-        2 & 1.752 & 1.456 & 4.127 & 15.476 \\
-        3 & 1.715 & 1.719 & 4.516 & 11.878 \\
-        4 & 1.583 & 1.530 & 4.782 & 5.702 \\
-        5 & 1.660 & 1.481 & 6.853 & 15.048 \\
-        6 & 1.611 & 1.420 & 8.027 & 35.892 \\
-        7 & 1.615 & 1.494 & 5.570 & 11.610 \\
-        8 & 1.619 & 1.700 & 5.801 & 7.585 \\
-        9 & 1.710 & 1.676 & 4.356 & 12.189 \\
-        10 & 1.804 & 1.597 & 13.580 & 7.932 \\
-        11 & 1.700 & 1.594 & 4.740 & 7.589 \\
-        12 & 1.531 & 1.530 & 8.478 & 13.347\\ \hline
-        13 & 1.597& 1.546 & 6.806 & 11.117\\
-        14 & 1.659 & 1.549 & 5.237 & 15.030\\
-        15 & 1.600 & 1.633 & 5.741 & 5.970\\
-        16 & 1.691 & 1.698 & 6.650 & 14.434 \\
-        17 & 1.534 & 1.460 & 7.863 & 14.413 \\
-        18 & 1.848 & 1.606 & 18.705 & 12.706 \\
-        19 & 2.150 & 1.505 & 1.432 & 10.219\\
-        20 & 1.553 & 1.578 & 10.752 & 14.703\\
+        1 & 125.100 & 1.157 & 1.616 & 1.484 & 6.226 & 15.519 \\
+        2 & 125.121 & 1.345 & 1.752 & 1.456 & 4.127 & 15.476 \\
+        3 & 125.269 & 1.635 & 1.715 & 1.719 & 4.516 & 11.878 \\
+        4 & 125.132 & 1.206 & 1.583 & 1.530 & 4.782 & 5.702 \\
+        5 & 125.173 & 1.499 & 1.660 & 1.481 & 6.853 & 15.048 \\
+        6 & 125.169 & 1.635 & 1.611 & 1.420 & 8.027 & 35.892 \\
+        7 & 125.091 & 1.207 & 1.615 & 1.494 & 5.570 & 11.610 \\
+        8 & 125.177 & 1.580 & 1.619 & 1.700 & 5.801 & 7.585 \\
+        9 & 125.205 & 1.724 & 1.710 & 1.676 & 4.356 & 12.189 \\
+        10 & 125.100 & 1.290 & 1.804 & 1.597 & 13.580 & 7.932 \\
+        11 & 125.148 & 1.546 & 1.700 & 1.594 & 4.740 & 7.589 \\
+        12 & 125.206 & 1.697 & 1.531 & 1.530 & 8.478 & 13.347\\ \hline
+        13 & 125.109 & 1.293 & 1.597& 1.546 & 6.806 & 11.117\\
+        14 & 125.174 & 1.608 & 1.659 & 1.549 & 5.237 & 15.030\\
+        15 & 125.153 & 1.454 & 1.600 & 1.633 & 5.741 & 5.970\\
+        16 & 125.186 & 1.704 & 1.691 & 1.698 & 6.650 & 14.434 \\
+        17 & 125.200 & 1.705 & 1.534 & 1.460 & 7.863 & 14.413 \\
+        18 & 125.030 & 1.684 & 1.848 & 1.606 & 18.705 & 12.706 \\
+        19 & 125.173 & 1.759 & 2.150 & 1.505 & 1.432 & 10.219\\
+        20 & 125.143 & 1.784 & 1.553 & 1.578 & 10.752 & 14.703\\
         \hline
 \end{tabular}
-\caption{Best-fit parameter values for the DSCB exponential tails in each of the 20 analysis categories.}
-\label{tab:sig_param2}
+\caption{Best-fit parameter values for the DSCB Gaussian core and exponential tails in each of the 20 analysis categories.}
+\label{tab:sig_param}
 \end{center}
 \end{table}
 

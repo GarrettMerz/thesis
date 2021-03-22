@@ -1,10 +1,10 @@
 \contentsline {chapter}{Dedication}{ii}{section*.1}%
 \contentsline {chapter}{Acknowledgements}{iii}{section*.2}%
 \contentsline {chapter}{List of Figures}{vii}{section*.4}%
-\contentsline {chapter}{List of Tables}{xxvi}{section*.5}%
-\contentsline {chapter}{List of Appendices}{xxx}{section*.6}%
-\contentsline {chapter}{List of Abbreviations}{xxxi}{section*.8}%
-\contentsline {chapter}{Abstract}{xxxii}{section*.9}%
+\contentsline {chapter}{List of Tables}{xxv}{section*.5}%
+\contentsline {chapter}{List of Appendices}{xxix}{section*.6}%
+\contentsline {chapter}{List of Abbreviations}{xxx}{section*.8}%
+\contentsline {chapter}{Abstract}{xxxiii}{section*.9}%
 \vspace {1.3ex}\noindent {\bf Chapter}\vspace {1.3ex}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}An Overview of the Standard Model}{3}{chapter.2}%
@@ -31,83 +31,83 @@
 \contentsline {subsection}{\numberline {4.1.2}Reconstruction and Tagging}{45}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Tracks}{45}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}Clusters}{47}{subsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.4.1}Electrons and Photons}{48}{subsubsection.4.1.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.4.2}Jets}{52}{subsubsection.4.1.4.2}%
-\contentsline {subsubsection}{\numberline {4.1.4.3}b-jets}{53}{subsubsection.4.1.4.3}%
-\contentsline {subsubsection}{\numberline {4.1.4.4}Muons}{53}{subsubsection.4.1.4.4}%
-\contentsline {subsubsection}{\numberline {4.1.4.5}Overlap Removal}{55}{subsubsection.4.1.4.5}%
-\contentsline {subsubsection}{\numberline {4.1.4.6}Missing Transverse Energy}{55}{subsubsection.4.1.4.6}%
-\contentsline {subsubsection}{\numberline {4.1.4.7}Tau Leptons}{56}{subsubsection.4.1.4.7}%
-\contentsline {subsubsection}{\numberline {4.1.4.8}Top reconstruction}{56}{subsubsection.4.1.4.8}%
+\contentsline {subsection}{\numberline {4.1.5}Electrons and Photons}{48}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Jets}{52}{subsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.6.1}b-jets}{53}{subsubsection.4.1.6.1}%
+\contentsline {subsection}{\numberline {4.1.7}Muons}{53}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}Overlap Removal}{55}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}Missing Transverse Energy}{55}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.10}Tau Leptons}{56}{subsection.4.1.10}%
+\contentsline {subsection}{\numberline {4.1.11}Top reconstruction}{56}{subsection.4.1.11}%
 \contentsline {paragraph}{Fully hadronic events}{57}{paragraph*.35}%
 \contentsline {paragraph}{Leptonic events}{58}{paragraph*.36}%
-\contentsline {paragraph}{Retraining with PFlow jets}{58}{paragraph*.37}%
+\contentsline {paragraph}{Retraining with PFlow Jets}{58}{paragraph*.37}%
 \contentsline {chapter}{\numberline {5}Data and Monte Carlo Samples}{60}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Data, Monte Carlo, and HGam Pre-selection}{60}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Data}{60}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Higgs Preselection and Data CRs}{61}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Nominal and Alternative Monte Carlo Samples}{62}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}ttHCP Monte Carlo Samples}{65}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.2}Nominal and Alternative Monte Carlo Samples}{61}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}ttHCP Monte Carlo Samples}{65}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Higgs Preselection and Data CRs}{66}{subsection.5.1.4}%
 \contentsline {chapter}{\numberline {6}Signal Parameterization, Background Parametrization, and Statistical Methods}{69}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Signal Modelling}{69}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Background Modelling and Spurious Signal}{70}{section.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.0.1}Background Templates}{73}{subsubsection.6.2.0.1}%
-\contentsline {subsection}{\numberline {6.2.1}The Kappa Framework}{75}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Simplified Template Cross-Sections}{76}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Likelihood Fitting and Asimov Data}{78}{section.6.3}%
+\contentsline {subsection}{\numberline {6.2.1}Background Templates}{73}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}The Kappa Framework}{75}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Simplified Template Cross-Sections}{76}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Likelihood Fitting and Asimov Data}{80}{section.6.5}%
 \contentsline {chapter}{\numberline {7}Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar {t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma $: Selection and Categorization}{82}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Categorization}{82}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}SBBDT}{83}{subsection.7.1.1}%
 \contentsline {subsubsection}{\numberline {7.1.1.1}Hadronic Region}{83}{subsubsection.7.1.1.1}%
 \contentsline {subsubsection}{\numberline {7.1.1.2}Leptonic Region}{84}{subsubsection.7.1.1.2}%
 \contentsline {subsection}{\numberline {7.1.2}CP-Sensitive Observables}{86}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}CPBDT}{92}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Poisson Number-Counting Significance}{98}{subsection.7.1.4}%
-\contentsline {subsection}{\numberline {7.1.5}2D Categorization}{105}{subsection.7.1.5}%
-\contentsline {chapter}{\numberline {8}Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar {t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma $: Results}{109}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Yield Dependence on $\alpha $}{109}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Signal and Background Parameterization}{110}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Systematic Uncertainty}{110}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Theory Systematics}{113}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Experimental Systematics}{115}{subsection.8.3.2}%
-\contentsline {section}{\numberline {8.4}Results and Interpretations}{115}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Observed and Expected $ttH$ Significance}{116}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Upper Limit on $tH$}{120}{subsection.8.4.2}%
-\contentsline {subsection}{\numberline {8.4.3}Limits on $\kappa _{t}$ and $\alpha $}{121}{subsection.8.4.3}%
-\contentsline {subsubsection}{\numberline {8.4.3.1}2-D Constraint Using Previous Measurements}{121}{subsubsection.8.4.3.1}%
-\contentsline {subsubsection}{\numberline {8.4.3.2}1-D Constraint Using Previous Measurements}{122}{subsubsection.8.4.3.2}%
-\contentsline {subsubsection}{\numberline {8.4.3.3}2-D Constraint Using $\kappa _{t}$ Parameterization}{123}{subsubsection.8.4.3.3}%
-\contentsline {subsubsection}{\numberline {8.4.3.4}1-D Constraint Using $\kappa _{t}$ Parameterization}{124}{subsubsection.8.4.3.4}%
-\contentsline {chapter}{\numberline {9}Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma $}{130}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Categorization}{130}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Signal and Background Modelling}{138}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{146}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{149}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{150}{subsection.9.3.2}%
-\contentsline {section}{\numberline {9.4}Results}{151}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{151}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}STXS}{152}{subsection.9.4.2}%
-\contentsline {chapter}{\numberline {10}Conclusion}{174}{chapter.10}%
-\contentsline {chapter}{Appendices}{176}{section*.147}%
+\contentsline {subsection}{\numberline {7.1.3}CPBDT}{90}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Poisson Number-Counting Significance}{94}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}2D Categorization}{99}{subsection.7.1.5}%
+\contentsline {chapter}{\numberline {8}Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar {t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma $: Results}{104}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Yield Dependence on $\alpha $}{104}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Signal and Background Parameterization}{105}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Systematic Uncertainty}{105}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Theory Systematics}{107}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Experimental Systematics}{109}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Results and Interpretations}{109}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Observed and Expected $ttH$ Significance}{110}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Upper Limit on $tH$}{114}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}Limits on $\kappa _{t}$ and $\alpha $}{115}{subsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.3.1}2-D Constraint Using Previous Measurements}{115}{subsubsection.8.4.3.1}%
+\contentsline {subsubsection}{\numberline {8.4.3.2}1-D Constraint Using Previous Measurements}{116}{subsubsection.8.4.3.2}%
+\contentsline {subsubsection}{\numberline {8.4.3.3}2-D Constraint Using $\kappa _{t}$ Parameterization}{117}{subsubsection.8.4.3.3}%
+\contentsline {subsubsection}{\numberline {8.4.3.4}1-D Constraint Using $\kappa _{t}$ Parameterization}{118}{subsubsection.8.4.3.4}%
+\contentsline {chapter}{\numberline {9}Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma $}{124}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Categorization}{124}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Signal and Background Modelling}{132}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{140}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{143}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{144}{subsection.9.3.2}%
+\contentsline {section}{\numberline {9.4}Results}{145}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{145}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}STXS}{146}{subsection.9.4.2}%
+\contentsline {chapter}{\numberline {10}Conclusion}{168}{chapter.10}%
+\contentsline {chapter}{Appendices}{170}{section*.135}%
 \setcounter {tocdepth}{1}
-\contentsline {section}{\numberline {A.1}The KLFitter}{176}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Comparison}{177}{section.A.2}%
-\contentsline {section}{\numberline {B.1}Additional CP BDT Studies with TMVA}{178}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Four-Vector BDT, ttH only}{178}{subsection.B.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.1}Hadronic Channel}{178}{subsubsection.B.1.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.2}Leptonic channel}{183}{subsubsection.B.1.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.1.3}Results}{188}{subsubsection.B.1.1.3}%
-\contentsline {subsection}{\numberline {B.1.2}Dilep/Semilep BDT, ttH Only}{192}{subsection.B.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.2.1}Dileptonic BDT}{192}{subsubsection.B.1.2.1}%
-\contentsline {subsubsection}{\numberline {B.1.2.2}Semileptonic BDT}{195}{subsubsection.B.1.2.2}%
-\contentsline {subsection}{\numberline {B.1.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{195}{subsection.B.1.3}%
-\contentsline {subsection}{\numberline {B.1.4}Dedicated CP-45 BDT Training}{200}{subsection.B.1.4}%
-\contentsline {section}{\numberline {C.1}Gaussian Processes smoothed background templates}{204}{section.C.1}%
-\contentsline {subsection}{\numberline {C.1.1}Spurious Signal GPR-smoothed templates}{204}{subsection.C.1.1}%
-\contentsline {section}{\numberline {D.1}Validation of Gaussian Process Smoothing}{234}{section.D.1}%
-\contentsline {subsection}{\numberline {D.1.1}Nominal Bias Study}{235}{subsection.D.1.1}%
-\contentsline {subsection}{\numberline {D.1.2}Extended Templates}{244}{subsection.D.1.2}%
-\contentsline {subsection}{\numberline {D.1.3}Extended Templates, Linear Error Kernel}{256}{subsection.D.1.3}%
-\contentsline {subsection}{\numberline {D.1.4}Feature Injection Study}{272}{subsection.D.1.4}%
-\contentsline {subsection}{\numberline {D.1.5}Results}{298}{subsection.D.1.5}%
-\contentsline {chapter}{Bibliography}{299}{section*.268}%
+\contentsline {section}{\numberline {A.1}The KLFitter}{170}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Comparison}{171}{section.A.2}%
+\contentsline {section}{\numberline {B.1}Additional CP BDT Studies with TMVA}{172}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Four-Vector BDT, ttH only}{172}{subsection.B.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.1}Hadronic Channel}{172}{subsubsection.B.1.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.2}Leptonic channel}{177}{subsubsection.B.1.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.1.3}Results}{182}{subsubsection.B.1.1.3}%
+\contentsline {subsection}{\numberline {B.1.2}Dilep/Semilep BDT, ttH Only}{186}{subsection.B.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.2.1}Dileptonic BDT}{186}{subsubsection.B.1.2.1}%
+\contentsline {subsubsection}{\numberline {B.1.2.2}Semileptonic BDT}{189}{subsubsection.B.1.2.2}%
+\contentsline {subsection}{\numberline {B.1.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{189}{subsection.B.1.3}%
+\contentsline {subsection}{\numberline {B.1.4}Dedicated CP-45 BDT Training}{194}{subsection.B.1.4}%
+\contentsline {section}{\numberline {C.1}Gaussian Processes smoothed background templates}{198}{section.C.1}%
+\contentsline {subsection}{\numberline {C.1.1}Spurious Signal GPR-smoothed templates}{198}{subsection.C.1.1}%
+\contentsline {section}{\numberline {D.1}Validation of Gaussian Process Smoothing}{228}{section.D.1}%
+\contentsline {subsection}{\numberline {D.1.1}Nominal Bias Study}{229}{subsection.D.1.1}%
+\contentsline {subsection}{\numberline {D.1.2}Extended Templates}{238}{subsection.D.1.2}%
+\contentsline {subsection}{\numberline {D.1.3}Extended Templates, Linear Error Kernel}{250}{subsection.D.1.3}%
+\contentsline {subsection}{\numberline {D.1.4}Feature Injection Study}{266}{subsection.D.1.4}%
+\contentsline {subsection}{\numberline {D.1.5}Results}{292}{subsection.D.1.5}%
+\contentsline {chapter}{Bibliography}{293}{section*.256}%

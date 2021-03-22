@@ -22,28 +22,30 @@
 \BOOKMARK [0][-]{chapter.6}{Signal Parameterization, Background Parametrization, and Statistical Methods}{}% 22
 \BOOKMARK [1][-]{section.6.1}{Signal Modelling}{chapter.6}% 23
 \BOOKMARK [1][-]{section.6.2}{Background Modelling and Spurious Signal}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.3}{Likelihood Fitting and Asimov Data}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Selection and Categorization}{}% 26
-\BOOKMARK [1][-]{section.7.1}{Categorization}{chapter.7}% 27
-\BOOKMARK [0][-]{chapter.8}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Results}{}% 28
-\BOOKMARK [1][-]{section.8.1}{Yield Dependence on }{chapter.8}% 29
-\BOOKMARK [1][-]{section.8.2}{Signal and Background Parameterization}{chapter.8}% 30
-\BOOKMARK [1][-]{section.8.3}{Systematic Uncertainty}{chapter.8}% 31
-\BOOKMARK [1][-]{section.8.4}{Results and Interpretations}{chapter.8}% 32
-\BOOKMARK [0][-]{chapter.9}{Measurements of the Properties of Higgs Boson Production with H }{}% 33
-\BOOKMARK [1][-]{section.9.1}{Categorization}{chapter.9}% 34
-\BOOKMARK [1][-]{section.9.2}{Signal and Background Modelling}{chapter.9}% 35
-\BOOKMARK [1][-]{section.9.3}{Systematic Uncertainties}{chapter.9}% 36
-\BOOKMARK [1][-]{section.9.4}{Results}{chapter.9}% 37
-\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 38
-\BOOKMARK [0][-]{section*.147}{Appendices}{}% 39
-\BOOKMARK [0][-]{Alternative Top Reconstruction with the KLFitter.0}{Alternative Top Reconstruction with the KLFitter}{}% 40
-\BOOKMARK [1][-]{section.A.1}{The KLFitter}{Alternative Top Reconstruction with the KLFitter.0}% 41
-\BOOKMARK [1][-]{section.A.2}{Comparison}{Alternative Top Reconstruction with the KLFitter.0}% 42
-\BOOKMARK [0][-]{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}{CP-BDT Studies with the Toolkit for Multivariate Analysis}{}% 43
-\BOOKMARK [1][-]{section.B.1}{Additional CP BDT Studies with TMVA}{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}% 44
-\BOOKMARK [0][-]{Reducing Spurious Signal With Gaussian Process Regression.0}{Reducing Spurious Signal With Gaussian Process Regression}{}% 45
-\BOOKMARK [1][-]{section.C.1}{Gaussian Processes smoothed background templates}{Reducing Spurious Signal With Gaussian Process Regression.0}% 46
-\BOOKMARK [0][-]{Validation Tests of the Gaussian Process Regression Method.0}{Validation Tests of the Gaussian Process Regression Method}{}% 47
-\BOOKMARK [1][-]{section.D.1}{Validation of Gaussian Process Smoothing}{Validation Tests of the Gaussian Process Regression Method.0}% 48
-\BOOKMARK [0][-]{section*.268}{Bibliography}{}% 49
+\BOOKMARK [1][-]{section.6.3}{The Kappa Framework}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.4}{Simplified Template Cross-Sections}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.5}{Likelihood Fitting and Asimov Data}{chapter.6}% 27
+\BOOKMARK [0][-]{chapter.7}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Selection and Categorization}{}% 28
+\BOOKMARK [1][-]{section.7.1}{Categorization}{chapter.7}% 29
+\BOOKMARK [0][-]{chapter.8}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Results}{}% 30
+\BOOKMARK [1][-]{section.8.1}{Yield Dependence on }{chapter.8}% 31
+\BOOKMARK [1][-]{section.8.2}{Signal and Background Parameterization}{chapter.8}% 32
+\BOOKMARK [1][-]{section.8.3}{Systematic Uncertainty}{chapter.8}% 33
+\BOOKMARK [1][-]{section.8.4}{Results and Interpretations}{chapter.8}% 34
+\BOOKMARK [0][-]{chapter.9}{Measurements of the Properties of Higgs Boson Production with H }{}% 35
+\BOOKMARK [1][-]{section.9.1}{Categorization}{chapter.9}% 36
+\BOOKMARK [1][-]{section.9.2}{Signal and Background Modelling}{chapter.9}% 37
+\BOOKMARK [1][-]{section.9.3}{Systematic Uncertainties}{chapter.9}% 38
+\BOOKMARK [1][-]{section.9.4}{Results}{chapter.9}% 39
+\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 40
+\BOOKMARK [0][-]{section*.135}{Appendices}{}% 41
+\BOOKMARK [0][-]{Alternative Top Reconstruction with the KLFitter.0}{Alternative Top Reconstruction with the KLFitter}{}% 42
+\BOOKMARK [1][-]{section.A.1}{The KLFitter}{Alternative Top Reconstruction with the KLFitter.0}% 43
+\BOOKMARK [1][-]{section.A.2}{Comparison}{Alternative Top Reconstruction with the KLFitter.0}% 44
+\BOOKMARK [0][-]{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}{CP-BDT Studies with the Toolkit for Multivariate Analysis}{}% 45
+\BOOKMARK [1][-]{section.B.1}{Additional CP BDT Studies with TMVA}{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}% 46
+\BOOKMARK [0][-]{Reducing Spurious Signal With Gaussian Process Regression.0}{Reducing Spurious Signal With Gaussian Process Regression}{}% 47
+\BOOKMARK [1][-]{section.C.1}{Gaussian Processes smoothed background templates}{Reducing Spurious Signal With Gaussian Process Regression.0}% 48
+\BOOKMARK [0][-]{Validation Tests of the Gaussian Process Regression Method.0}{Validation Tests of the Gaussian Process Regression Method}{}% 49
+\BOOKMARK [1][-]{section.D.1}{Validation of Gaussian Process Smoothing}{Validation Tests of the Gaussian Process Regression Method.0}% 50
+\BOOKMARK [0][-]{section*.256}{Bibliography}{}% 51
