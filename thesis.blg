@@ -60,45 +60,45 @@ Warning--empty author in MET2
 Name 1 in "Aad, G, and others" has a comma at the end for entry coups127
 while executing---line 1245 of file aiaa.bst
 Warning--empty journal in coups127
-You've used 165 entries,
+You've used 167 entries,
             2292 wiz_defined-function locations,
-            1477 strings with 28120 characters,
-and the built_in function-call counts, 33457 in all, are:
-= -- 2520
-> -- 1347
-< -- 117
-+ -- 514
-- -- 349
-* -- 3531
-:= -- 4868
-add.period$ -- 314
-call.type$ -- 165
+            1487 strings with 28496 characters,
+and the built_in function-call counts, 33858 in all, are:
+= -- 2551
+> -- 1366
+< -- 119
++ -- 521
+- -- 354
+* -- 3575
+:= -- 4930
+add.period$ -- 318
+call.type$ -- 167
 change.case$ -- 2
 chr.to.int$ -- 3
-cite$ -- 179
-duplicate$ -- 1663
-empty$ -- 3583
-format.name$ -- 349
-if$ -- 7228
+cite$ -- 181
+duplicate$ -- 1682
+empty$ -- 3622
+format.name$ -- 354
+if$ -- 7314
 int.to.chr$ -- 0
-int.to.str$ -- 165
-missing$ -- 152
-newline$ -- 499
-num.names$ -- 164
-pop$ -- 282
+int.to.str$ -- 167
+missing$ -- 153
+newline$ -- 505
+num.names$ -- 166
+pop$ -- 284
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 667
+skip$ -- 672
 stack$ -- 0
-substring$ -- 2142
-swap$ -- 602
-text.length$ -- 116
+substring$ -- 2165
+swap$ -- 609
+text.length$ -- 118
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 14
-while$ -- 261
-width$ -- 168
-write$ -- 1492
+while$ -- 264
+width$ -- 170
+write$ -- 1511
 (There were 18 error messages)

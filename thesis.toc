@@ -80,34 +80,34 @@
 \contentsline {subsubsection}{\numberline {8.4.3.4}1-D Constraint Using $\kappa _{t}$ Parameterization}{118}{subsubsection.8.4.3.4}%
 \contentsline {chapter}{\numberline {9}Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma $}{124}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Categorization}{124}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Signal and Background Modelling}{132}{section.9.2}%
+\contentsline {section}{\numberline {9.2}Signal and Background Modelling}{136}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Systematic Uncertainties}{140}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{143}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{144}{subsection.9.3.2}%
-\contentsline {section}{\numberline {9.4}Results}{145}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{145}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}STXS}{146}{subsection.9.4.2}%
-\contentsline {chapter}{\numberline {10}Conclusion}{168}{chapter.10}%
-\contentsline {chapter}{Appendices}{170}{section*.135}%
+\contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{140}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{141}{subsection.9.3.2}%
+\contentsline {section}{\numberline {9.4}Results}{142}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{143}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}STXS}{144}{subsection.9.4.2}%
+\contentsline {chapter}{\numberline {10}Conclusion}{154}{chapter.10}%
+\contentsline {chapter}{Appendices}{157}{section*.128}%
 \setcounter {tocdepth}{1}
-\contentsline {section}{\numberline {A.1}The KLFitter}{170}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Comparison}{171}{section.A.2}%
-\contentsline {section}{\numberline {B.1}Additional CP BDT Studies with TMVA}{172}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Four-Vector BDT, ttH only}{172}{subsection.B.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.1}Hadronic Channel}{172}{subsubsection.B.1.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.2}Leptonic channel}{177}{subsubsection.B.1.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.1.3}Results}{182}{subsubsection.B.1.1.3}%
-\contentsline {subsection}{\numberline {B.1.2}Dilep/Semilep BDT, ttH Only}{186}{subsection.B.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.2.1}Dileptonic BDT}{186}{subsubsection.B.1.2.1}%
-\contentsline {subsubsection}{\numberline {B.1.2.2}Semileptonic BDT}{189}{subsubsection.B.1.2.2}%
-\contentsline {subsection}{\numberline {B.1.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{189}{subsection.B.1.3}%
-\contentsline {subsection}{\numberline {B.1.4}Dedicated CP-45 BDT Training}{194}{subsection.B.1.4}%
-\contentsline {section}{\numberline {C.1}Gaussian Processes smoothed background templates}{198}{section.C.1}%
-\contentsline {subsection}{\numberline {C.1.1}Spurious Signal GPR-smoothed templates}{198}{subsection.C.1.1}%
-\contentsline {section}{\numberline {D.1}Validation of Gaussian Process Smoothing}{228}{section.D.1}%
-\contentsline {subsection}{\numberline {D.1.1}Nominal Bias Study}{229}{subsection.D.1.1}%
-\contentsline {subsection}{\numberline {D.1.2}Extended Templates}{238}{subsection.D.1.2}%
-\contentsline {subsection}{\numberline {D.1.3}Extended Templates, Linear Error Kernel}{250}{subsection.D.1.3}%
-\contentsline {subsection}{\numberline {D.1.4}Feature Injection Study}{266}{subsection.D.1.4}%
-\contentsline {subsection}{\numberline {D.1.5}Results}{292}{subsection.D.1.5}%
-\contentsline {chapter}{Bibliography}{293}{section*.256}%
+\contentsline {section}{\numberline {A.1}The KLFitter}{157}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Comparison}{158}{section.A.2}%
+\contentsline {section}{\numberline {B.1}Additional CP BDT Studies with TMVA}{159}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Four-Vector BDT, ttH only}{159}{subsection.B.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.1}Hadronic Channel}{159}{subsubsection.B.1.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.2}Leptonic channel}{164}{subsubsection.B.1.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.1.3}Results}{169}{subsubsection.B.1.1.3}%
+\contentsline {subsection}{\numberline {B.1.2}Dilep/Semilep BDT, ttH Only}{173}{subsection.B.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.2.1}Dileptonic BDT}{173}{subsubsection.B.1.2.1}%
+\contentsline {subsubsection}{\numberline {B.1.2.2}Semileptonic BDT}{176}{subsubsection.B.1.2.2}%
+\contentsline {subsection}{\numberline {B.1.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{176}{subsection.B.1.3}%
+\contentsline {subsection}{\numberline {B.1.4}Dedicated CP-45 BDT Training}{181}{subsection.B.1.4}%
+\contentsline {section}{\numberline {D.1}Gaussian Processes smoothed background templates}{199}{section.D.1}%
+\contentsline {subsection}{\numberline {D.1.1}Spurious Signal GPR-smoothed templates}{199}{subsection.D.1.1}%
+\contentsline {section}{\numberline {E.1}Validation of Gaussian Process Smoothing}{229}{section.E.1}%
+\contentsline {subsection}{\numberline {E.1.1}Nominal Bias Study}{230}{subsection.E.1.1}%
+\contentsline {subsection}{\numberline {E.1.2}Extended Templates}{239}{subsection.E.1.2}%
+\contentsline {subsection}{\numberline {E.1.3}Extended Templates, Linear Error Kernel}{251}{subsection.E.1.3}%
+\contentsline {subsection}{\numberline {E.1.4}Feature Injection Study}{267}{subsection.E.1.4}%
+\contentsline {subsection}{\numberline {E.1.5}Results}{293}{subsection.E.1.5}%
+\contentsline {chapter}{Bibliography}{294}{section*.257}%

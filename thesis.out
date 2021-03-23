@@ -38,14 +38,15 @@
 \BOOKMARK [1][-]{section.9.3}{Systematic Uncertainties}{chapter.9}% 38
 \BOOKMARK [1][-]{section.9.4}{Results}{chapter.9}% 39
 \BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 40
-\BOOKMARK [0][-]{section*.135}{Appendices}{}% 41
+\BOOKMARK [0][-]{section*.128}{Appendices}{}% 41
 \BOOKMARK [0][-]{Alternative Top Reconstruction with the KLFitter.0}{Alternative Top Reconstruction with the KLFitter}{}% 42
 \BOOKMARK [1][-]{section.A.1}{The KLFitter}{Alternative Top Reconstruction with the KLFitter.0}% 43
 \BOOKMARK [1][-]{section.A.2}{Comparison}{Alternative Top Reconstruction with the KLFitter.0}% 44
 \BOOKMARK [0][-]{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}{CP-BDT Studies with the Toolkit for Multivariate Analysis}{}% 45
 \BOOKMARK [1][-]{section.B.1}{Additional CP BDT Studies with TMVA}{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}% 46
-\BOOKMARK [0][-]{Reducing Spurious Signal With Gaussian Process Regression.0}{Reducing Spurious Signal With Gaussian Process Regression}{}% 47
-\BOOKMARK [1][-]{section.C.1}{Gaussian Processes smoothed background templates}{Reducing Spurious Signal With Gaussian Process Regression.0}% 48
-\BOOKMARK [0][-]{Validation Tests of the Gaussian Process Regression Method.0}{Validation Tests of the Gaussian Process Regression Method}{}% 49
-\BOOKMARK [1][-]{section.D.1}{Validation of Gaussian Process Smoothing}{Validation Tests of the Gaussian Process Regression Method.0}% 50
-\BOOKMARK [0][-]{section*.256}{Bibliography}{}% 51
+\BOOKMARK [0][-]{Auxiliary Plots.0}{Auxiliary Plots}{}% 47
+\BOOKMARK [0][-]{Reducing Spurious Signal With Gaussian Process Regression.0}{Reducing Spurious Signal With Gaussian Process Regression}{}% 48
+\BOOKMARK [1][-]{section.D.1}{Gaussian Processes smoothed background templates}{Reducing Spurious Signal With Gaussian Process Regression.0}% 49
+\BOOKMARK [0][-]{Validation Tests of the Gaussian Process Regression Method.0}{Validation Tests of the Gaussian Process Regression Method}{}% 50
+\BOOKMARK [1][-]{section.E.1}{Validation of Gaussian Process Smoothing}{Validation Tests of the Gaussian Process Regression Method.0}% 51
+\BOOKMARK [0][-]{section*.257}{Bibliography}{}% 52

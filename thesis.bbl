@@ -773,6 +773,17 @@ Avoni, G. et~al., \enquote{The new {LUCID}-2 detector for luminosity
   measurement and monitoring in {ATLAS},} {\em Journal of Instrumentation\/},
   Vol.~13, No.~07, jul 2018, pp.~P07017--P07017.
 
+\bibitem{XSecs}
+Aaboud, M. et~al., \enquote{{Measurements and interpretations of Higgs-boson
+  fiducial cross sections in the diphoton decay channel using 139 fb$^{-1}$ of
+  $pp$ collision data at $\sqrt{s}$ = 13 TeV with the ATLAS detector},} Tech.
+  Rep. ATLAS-CONF-2019-029, CERN, Geneva, Jul 2019.
+
+\bibitem{LogCox}
+Møller, J., Syversveen, A.~R., and Waagepetersen, R.~P., \enquote{Log Gaussian
+  Cox Processes,} {\em Scandinavian Journal of Statistics\/}, Vol.~25, No.~3,
+  1998, pp.~451--482.
+
 \bibitem{KLFitter}
 Erdmann, J. et~al., \enquote{A likelihood-based reconstruction algorithm for
   top-quark pairs and the KLFitter framework,} {\em Nuclear Instruments and
