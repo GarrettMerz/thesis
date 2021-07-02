@@ -102,12 +102,12 @@
 \contentsline {subsubsection}{\numberline {B.1.2.2}Semileptonic BDT}{176}{subsubsection.B.1.2.2}%
 \contentsline {subsection}{\numberline {B.1.3}Variable Optimization Studies, Nominal BDT, ttH and tH}{176}{subsection.B.1.3}%
 \contentsline {subsection}{\numberline {B.1.4}Dedicated CP-45 BDT Training}{181}{subsection.B.1.4}%
-\contentsline {section}{\numberline {D.1}Gaussian Processes smoothed background templates}{199}{section.D.1}%
-\contentsline {subsection}{\numberline {D.1.1}Spurious Signal GPR-smoothed templates}{199}{subsection.D.1.1}%
-\contentsline {section}{\numberline {E.1}Validation of Gaussian Process Smoothing}{229}{section.E.1}%
-\contentsline {subsection}{\numberline {E.1.1}Nominal Bias Study}{230}{subsection.E.1.1}%
-\contentsline {subsection}{\numberline {E.1.2}Extended Templates}{239}{subsection.E.1.2}%
-\contentsline {subsection}{\numberline {E.1.3}Extended Templates, Linear Error Kernel}{251}{subsection.E.1.3}%
-\contentsline {subsection}{\numberline {E.1.4}Feature Injection Study}{267}{subsection.E.1.4}%
-\contentsline {subsection}{\numberline {E.1.5}Results}{293}{subsection.E.1.5}%
-\contentsline {chapter}{Bibliography}{294}{section*.257}%
+\contentsline {section}{\numberline {D.1}Gaussian Processes smoothed background templates}{192}{section.D.1}%
+\contentsline {subsection}{\numberline {D.1.1}Spurious Signal GPR-smoothed templates}{192}{subsection.D.1.1}%
+\contentsline {section}{\numberline {E.1}Validation of Gaussian Process Smoothing}{222}{section.E.1}%
+\contentsline {subsection}{\numberline {E.1.1}Nominal Bias Study}{223}{subsection.E.1.1}%
+\contentsline {subsection}{\numberline {E.1.2}Extended Templates}{232}{subsection.E.1.2}%
+\contentsline {subsection}{\numberline {E.1.3}Extended Templates, Linear Error Kernel}{244}{subsection.E.1.3}%
+\contentsline {subsection}{\numberline {E.1.4}Feature Injection Study}{260}{subsection.E.1.4}%
+\contentsline {subsection}{\numberline {E.1.5}Results}{286}{subsection.E.1.5}%
+\contentsline {chapter}{Bibliography}{287}{section*.256}%
