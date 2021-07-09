@@ -1,10 +1,10 @@
 \contentsline {chapter}{Dedication}{ii}{section*.1}%
-\contentsline {chapter}{Acknowledgements}{iii}{section*.2}%
-\contentsline {chapter}{List of Figures}{vii}{section*.4}%
-\contentsline {chapter}{List of Tables}{xxv}{section*.5}%
-\contentsline {chapter}{List of Appendices}{xxix}{section*.6}%
-\contentsline {chapter}{List of Abbreviations}{xxx}{section*.8}%
-\contentsline {chapter}{Abstract}{xxxiii}{section*.9}%
+\contentsline {chapter}{Acknowledgements}{iv}{section*.2}%
+\contentsline {chapter}{List of Figures}{viii}{section*.4}%
+\contentsline {chapter}{List of Tables}{xxvi}{section*.5}%
+\contentsline {chapter}{List of Appendices}{xxx}{section*.6}%
+\contentsline {chapter}{List of Abbreviations}{xxxi}{section*.8}%
+\contentsline {chapter}{Abstract}{xxxiv}{section*.9}%
 \vspace {1.3ex}\noindent {\bf Chapter}\vspace {1.3ex}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}An Overview of the Standard Model}{3}{chapter.2}%
@@ -67,26 +67,26 @@
 \contentsline {chapter}{\numberline {8}Study of the CP Properties of the Top Quark Yukawa Interaction in $t\bar {t}H$ and $tH$ Events with $H \rightarrow \gamma \gamma $: Results}{104}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Yield Dependence on $\alpha $}{104}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Signal and Background Parameterization}{105}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Systematic Uncertainty}{105}{section.8.3}%
+\contentsline {section}{\numberline {8.3}Systematic Uncertainty}{107}{section.8.3}%
 \contentsline {subsection}{\numberline {8.3.1}Theory Systematics}{107}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Experimental Systematics}{109}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.2}Experimental Systematics}{108}{subsection.8.3.2}%
 \contentsline {section}{\numberline {8.4}Results and Interpretations}{109}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Observed and Expected $ttH$ Significance}{110}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Upper Limit on $tH$}{114}{subsection.8.4.2}%
-\contentsline {subsection}{\numberline {8.4.3}Limits on $\kappa _{t}$ and $\alpha $}{115}{subsection.8.4.3}%
-\contentsline {subsubsection}{\numberline {8.4.3.1}2-D Constraint Using Previous Measurements}{115}{subsubsection.8.4.3.1}%
-\contentsline {subsubsection}{\numberline {8.4.3.2}1-D Constraint Using Previous Measurements}{116}{subsubsection.8.4.3.2}%
+\contentsline {subsection}{\numberline {8.4.1}Observed and Expected $ttH$ Significance}{114}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Upper Limit on $tH$}{115}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}Limits on $\kappa _{t}$ and $\alpha $}{116}{subsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.3.1}2-D Constraint Using Previous Measurements}{116}{subsubsection.8.4.3.1}%
+\contentsline {subsubsection}{\numberline {8.4.3.2}1-D Constraint Using Previous Measurements}{117}{subsubsection.8.4.3.2}%
 \contentsline {subsubsection}{\numberline {8.4.3.3}2-D Constraint Using $\kappa _{t}$ Parameterization}{117}{subsubsection.8.4.3.3}%
 \contentsline {subsubsection}{\numberline {8.4.3.4}1-D Constraint Using $\kappa _{t}$ Parameterization}{118}{subsubsection.8.4.3.4}%
 \contentsline {chapter}{\numberline {9}Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma $}{124}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Categorization}{124}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Signal and Background Modelling}{136}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{140}{section.9.3}%
+\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{139}{section.9.3}%
 \contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{140}{subsection.9.3.1}%
 \contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{141}{subsection.9.3.2}%
 \contentsline {section}{\numberline {9.4}Results}{142}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{143}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}STXS}{144}{subsection.9.4.2}%
+\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{142}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}STXS}{143}{subsection.9.4.2}%
 \contentsline {chapter}{\numberline {10}Conclusion}{154}{chapter.10}%
 \contentsline {chapter}{Appendices}{157}{section*.128}%
 \setcounter {tocdepth}{1}

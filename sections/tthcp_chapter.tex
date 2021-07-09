@@ -2,7 +2,7 @@
 
 In order to properly measure the dependence of the top Yukawa coupling on the CP-mixing angle $\alpha$, a region of $ttH$-and-$tH$-enriched phase space  is divided into a number of different categories based both upon the similarity of events it contains to signal (Higgs processes like $ttH$ and $tH$) rather than background (non-Higgs continuum diphoton processes), as well as the similarity of events it contains to CP-odd rather than CP-even Higgs processes. By creating many such categories and fitting the event yield in each, detailed constraints can be set on the value of $\alpha$.
 
-First, two sets of regions are defined. The "hadronic" region targets events containing fully-hadronic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as two additional jets with $p_{T} > 25$ GeV and exactly zero electrons or muons. Similarly, the "leptonic" region targets events containing semi-leptonic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as at least one isolated electron or muon.
+First, two sets of regions are defined. The ``hadronic" region targets events containing fully-hadronic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as two additional jets with $p_{T} > 25$ GeV and exactly zero electrons or muons. Similarly, the ``leptonic" region targets events containing semi-leptonic top decays, requiring two loose-ID photons, one b-tagged jet at the 77\% working point with $p_{T} > 25$ GeV, as well as at least one isolated electron or muon.
 
 To perform the categorization in these regions, two multivariate Boosted Decision Trees (BDTs) are used, one to separate Higgs events from background and one to separate CP-odd Higgs events from CP-even Higgs events. Both BDTs are trained on low-level kinematic features using the XGBoost package \cite{XGBoost}. A series of cuts on these BDT scores are then defined, delineating a total of 20 orthogonal regions, each with differing sensitivity both to the $ttH+tH$ signal and to the CP-odd $ttH+tH$ hypothesis. An illustration of the categorization strategy is shown in figure \ref{fig:cartoon}.
 
@@ -189,16 +189,17 @@ These variables are shown in Figures \ref{fig:ttH_truth} - \ref{fig:tHjb_truth}.
 
 \subsection{CPBDT}
 
-Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \cite{TMVA} and is discussed in Appendix \ref{app:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables.
+Similar to the SBBDT case, two dedicated CPBDTs are trained using XGBoost, one in the hadronic preselection region and one in the leptonic preselection region. An alternative implementation of the BDT is developed using the Toolkit for Multivariate Analysis (TMVA) \cite{TMVA} and is discussed in Appendix \ref{app:TMVABDT}. Studies performed with the TMVA BDT helped guide the implementation of this BDT, including making the determination that only one dedicated CP-even vs CP-odd BDT was needed (rather than training for multiple $\alpha$ points) and the discovery of several useful high-level variables. Much of my personal contribution to this analysis was in this area: I performed the dedicated TMVA BDT studies with multiple $\alpha$ points, explored the discriminatory effects of a number of high-level variables (most notably $\Delta R_{min}$).
 
+ 
 The signal samples are the CP-odd $ttH+tWH+tHjb$, added according to their expected cross-sections, while the background samples are the CP-even $ttH+tWH+tHjb$. 50\% of the signal and background samples are used for training, 25 \% are used for categorization, and 25\% are used for testing and significance evaluation.
 
 For both the hadronic and leptonic CPBDTs, input variables chosen are:
 
 \begin{itemize}
 \item $p_{T}$ (again scaled by $m_{\gamma \gamma}$) and $\eta$ of the Higgs candidate
-\item $p_{T}$, $\eta$, $\phi$ (with respect to the Higgs candidate), and BDT score of the first and second reconstructed tops. Due to its potential to be composed of fewer than three jets, the second top is referred to as the 'hybrid' top. In events where no hybrid top is reconstructed, a dummy value is passed to XGBoost.
-\item Angles $\Delta\eta$ and $\Delta\phi$ between the two top candidates. If no second ('hybrid') top is reconstructed, a dummy value is passed to XGBoost.
+\item $p_{T}$, $\eta$, $\phi$ (with respect to the Higgs candidate), and BDT score of the first and second reconstructed tops. Due to its potential to be composed of fewer than three jets, the second top is referred to as the `hybrid' top. In events where no hybrid top is reconstructed, a dummy value is passed to XGBoost.
+\item Angles $\Delta\eta$ and $\Delta\phi$ between the two top candidates. If no second (`hybrid') top is reconstructed, a dummy value is passed to XGBoost.
 \item The invariant mass of the top-Higgs system ($m_{t1H}$), and the invariant mass of the two-top system ($m_{t1hy}$). In the case where no second hybrid top is reconstructed, a dummy value is passed to XGBoost.
 \item $H_{T} = \sum_\text{jet j} p^{j}_{T}$
 \item The minimum $\Delta$R between a photon and a jet (out of all possible photon-jet pairs in the event)
@@ -230,7 +231,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
 	\subfloat[Hybrid top 2 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/t2_score.png}}
   	\subfloat[$\Delta\eta_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_eta_t1hy.png}}
 	\subfloat[$\Delta\phi_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_phi_t1hy.png}}  
-  \caption{Leptonic BDT training variables. The top $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in hybrid top $p_{T}$/$\eta$/ $\phi$ and $\Delta\eta_{t1t2}$/ $\Delta\phi_{t1t2}$ contain events where no second ('hybrid') top is reconstructed, while the underflow bin in the BDT score contains events with fewer than six jets (i.e., events with either no hybrid top or a hybrid top that is reconstructed using the remaining-jets method). The open squares indicate data in the NTI sideband region, which approximates the shape of the continuum background. }
+  \caption{Leptonic BDT training variables. The top $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in hybrid top $p_{T}$/$\eta$/ $\phi$ and $\Delta\eta_{t1t2}$/ $\Delta\phi_{t1t2}$ contain events where no second (`hybrid') top is reconstructed, while the underflow bin in the BDT score contains events with fewer than six jets (i.e., events with either no hybrid top or a hybrid top that is reconstructed using the remaining-jets method). The open squares indicate data in the NTI sideband region, which approximates the shape of the continuum background. }
   \label{fig:lepvbls2}
 \end{figure}
 
@@ -244,7 +245,7 @@ Plots of the CPBDT input variables for the leptonic BDT are shown in figures \re
 	\subfloat[Missing $E_{T}$ significance]{\includegraphics[width=0.31\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/m_met_sig.png}}\\
   	\subfloat[$\Delta R_{min}^{\gamma j}$]{\includegraphics[width=0.31\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj.png}}
   	\subfloat[$\Delta R_{min}^{\gamma j2}$]{\includegraphics[width=0.31\textwidth]{figures/tthcp_chapter/categorization_xgb/lep-vbls/delta_Rmin_yj2.png}}
-  \caption{Leptonic BDT training variables. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ contain events where no second ('hybrid') top is reconstructed. The open squares indicate data in the NTI sideband region, which approximates the continuum background shape. }  	
+  \caption{Leptonic BDT training variables. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ contain events where no second (`hybrid') top is reconstructed. The open squares indicate data in the NTI sideband region, which approximates the continuum background shape. }  	
   \label{fig:lepvbls3}
 \end{figure}
 
@@ -273,7 +274,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
 	\subfloat[Hybrid top 2 Reco BDT score]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/t2_score.png}}
   	\subfloat[$\Delta\eta_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_eta_t1hy.png}}
 	\subfloat[$\Delta\phi_{t1t2}$]{\includegraphics[width=0.32\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_phi_t1hy.png}}  
-  \caption{Hadronic BDT training variables. The top $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in top $p_{T}$/$\eta$/ $\phi$ and $\Delta\eta_{t1t2}$/ $\Delta\phi_{t1t2}$ contain events where no second ('hybrid') top is reconstructed, while the underflow bin in the BDT score contains events with fewer than six jets (i.e., events with either no hybrid top or a hybrid top that is reconstructed using the remaining-jets method). The open squares indicate data in the NTI sideband region, which approximates the shape of the continuum background. }
+  \caption{Hadronic BDT training variables. The top $\phi$ is calculated with respect to the Higgs candidate. The underflow bins in top $p_{T}$/$\eta$/ $\phi$ and $\Delta\eta_{t1t2}$/ $\Delta\phi_{t1t2}$ contain events where no second (`hybrid') top is reconstructed, while the underflow bin in the BDT score contains events with fewer than six jets (i.e., events with either no hybrid top or a hybrid top that is reconstructed using the remaining-jets method). The open squares indicate data in the NTI sideband region, which approximates the shape of the continuum background. }
   \label{fig:hadvbls2}
 \end{figure}
 
@@ -287,7 +288,7 @@ The XGBoost BDT parameters are optimized by running the training 100 times with 
 	\subfloat[Missing $E_{T}$ significance]{\includegraphics[width=0.31\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/m_met_sig.png}}\\
   	\subfloat[$\Delta R_{min}^{\gamma j}$]{\includegraphics[width=0.31\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj.png}}
   	\subfloat[$\Delta R_{min}^{\gamma j2}$]{\includegraphics[width=0.31\textwidth]{figures/tthcp_chapter/categorization_xgb/had-vbls/delta_Rmin_yj2.png}}
-  \caption{Hadronic BDT training variables. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ contain events where no second ('hybrid') top is reconstructed. The open squares indicate data in the NTI sideband region, which approximates the continuum background shape. }  	
+  \caption{Hadronic BDT training variables. The underflow bins in $m_{t2H}$ and $m_{t1t2}$ contain events where no second (`hybrid') top is reconstructed. The open squares indicate data in the NTI sideband region, which approximates the continuum background shape. }  	
   \label{fig:hadvbls2}
 \end{figure}
 
@@ -336,7 +337,7 @@ Z^{2} = -2 ln(\frac{P(S + B, S_{H} + B)}{P(S + B, S + B)}) \\
 
 Where S and B are the Standard-Model expected signal and background and $S_{H}$ is the expected signal under hypothesis H.
 
-Thus, the $ttH+tH$ Standard-Model number-counting significance (that is, the significance of observing the amount of $ttH+tWH+tHjb$ in analysis categories that is predicted by the Standard Model if, in fact, the signal process does not exist and the background-only "null hypothesis" is true) can be defined as:
+Thus, the $ttH+tH$ Standard-Model number-counting significance (that is, the significance of observing the amount of $ttH+tWH+tHjb$ in analysis categories that is predicted by the Standard Model if, in fact, the signal process does not exist and the background-only ``null hypothesis" is true) can be defined as:
 
 \begin{align}
 Z_{ttH+tH} = \sqrt{2((S+B)\ln(1+S/B)-S)}
@@ -434,7 +435,7 @@ It is also useful to define:
 n_{s}(\alpha) = n_{ttH}^{SM} + n_{tWH}^{SM} + n_{tHjb}^{SM} - n_{ttH}(\alpha) - n_{tWH}(\alpha) - n_{tHjb}(\alpha)
 \end{equation}
 
-as an indication of the "signal" (i.e., difference between Standard-Model and alternative-$\alpha$ yield) in each category. 
+as an indication of the ``signal" (i.e., difference between Standard-Model and alternative-$\alpha$ yield) in each category. 
 
 \begin{figure}
 \end{figure}

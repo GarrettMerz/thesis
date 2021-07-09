@@ -2,7 +2,7 @@
 
 The Standard Model of Particle Physics is arguably one of the crowning achievements of the last century of physics research. Though it is doubtless incomplete (it does not, for instance, explain the dark energy or dark matter observed in cosmological experiments, nor does it provide a satisfactory quantum-mechanical model of gravity), all predictions it has made have yet to be falsified \cite{Peskin}, \cite{kane_2017}, \cite{Griffiths}.
 
-The Standard Model is a quantum field theory, meaning that it describes the behavior of fields (physical quantities that are defined at all points in spacetime; common examples of fields include electric and magnetic fields) and their discrete, quantized excitations, referred to as particles (common examples of particles are the electron and the photon, which are excitations of the "electron field" and the electromagnetic field respectively). More about the mathematics of field dynamics will be discussed in section \ref{sec:Lagrangians}.
+The Standard Model is a quantum field theory, meaning that it describes the behavior of fields (physical quantities that are defined at all points in spacetime; common examples of fields include electric and magnetic fields) and their discrete, quantized excitations, referred to as particles (common examples of particles are the electron and the photon, which are excitations of the ``electron field" and the electromagnetic field respectively). More about the mathematics of field dynamics will be discussed in section \ref{sec:Lagrangians}.
 
 The Standard Model divides these fundamental particles (and their corresponding fields) into two major categories: the bosons and the fermions. Fermions carry half-integer spin, while bosons carry integer spin. In a general sense, the elementary fermions can be thought of as the particles that comprise matter, while the elementary bosons can be thought of as the particles that correspond to the behavior of the four fundamental forces (electromagnetism, the strong nuclear force, the weak nuclear force, and gravity).
 
@@ -10,26 +10,26 @@ The elementary fermions of the Standard Model all have spin $1/2$. They are divi
 
 The quarks are the only fermions that undergo both the strong and weak nuclear interactions, and are also the only particles in the Standard Model that have fractional electromagnetic charge ($+2/3$ for up-type quarks and $-1/3$ for down-type quarks). However, because quarks are never found in isolation and are always bound to other quarks in composite states called hadrons, all observable quark final states have integer charge. Conversely, the charged leptons all have an electromagnetic charge of $-1$, while neutrinos are chargeless. While the quarks and charged leptons have precisely-measured masses, the mass of the neutrinos is vanishingly small, and, to date, only the differences between the different neutrino masses have been conclusively measured.
 
-In addition to these 12 fermion species, each fermion species has a corresponding antimatter "antifermion" species, which has the opposite charge and parity quantum numbers. This is discussed at length in section \ref{sec:CPT}.
+In addition to these 12 fermion species, each fermion species has a corresponding antimatter ``antifermion" species, which has the opposite charge and parity quantum numbers. This is discussed at length in section \ref{sec:CPT}.
 
-The bosons of the standard model are the "messengers" through which the fundamental forces operate (with the exception of the Higgs boson, which is detailed at length in section \ref{sec:EWSB}). The photon and the gluons are massless, while the two W-bosons, the Z-boson, and the Higgs boson are all massive. The photon is the mediator of the electromagnetic force and couples to charged particles; the gluon is the mediator of the strong nuclear force and couples to particles with "color charge", and the W and Z bosons are the mediators of the weak nuclear interaction, coupling to all fermions with left-handed parity and antifermions with right-handed parity. In addition, the three weak bosons ($W^{+}$, $W^{-}$, and $Z$) can all couple to each other, as can the gluons.
+The bosons of the standard model are the ``messengers" through which the fundamental forces operate (with the exception of the Higgs boson, which is detailed at length in section \ref{sec:EWSB}). The photon and the gluons are massless, while the two W-bosons, the Z-boson, and the Higgs boson are all massive. The photon is the mediator of the electromagnetic force and couples to charged particles; the gluon is the mediator of the strong nuclear force and couples to particles with ``color charge", and the W and Z bosons are the mediators of the weak nuclear interaction, coupling to all fermions with left-handed parity and antifermions with right-handed parity. In addition, the three weak bosons ($W^{+}$, $W^{-}$, and $Z$) can all couple to each other, as can the gluons.
 
 The strong nuclear interaction binds quarks together, while the weak interaction governs the decay of one species of fermion into another. Weak interactions operate primarily on fermion doublets, coupling each up-type quark to its corresponding down-type quark and each charged lepton to its corresponding neutrino. However, some intergenerational coupling does occur, the rarity of which is governed by a matrix of coefficients called the Cabibbo-Kobayashi-Masakawa (or CKM) matrix \cite{CKM1}, \cite{CKM2}. 
 
-The Higgs boson is the only scalar (spin-0) boson in the Standard Model. Though it does not mediate any force directly, its existence is a consequence of the unification of the electromagnetic and weak nuclear interactions into one "electroweak" interaction at high energy scales. Without the role of the Higgs boson in this process, the fermions, the W-bosons, and the Z-boson would all be massless; thus, the Higgs can be said to "give mass" to the particles of the Standard Model. It couples to all massive particles in the Standard Model, namely, the fermions and the W and Z bosons.
+The Higgs boson is the only scalar (spin-0) boson in the Standard Model. Though it does not mediate any force directly, its existence is a consequence of the unification of the electromagnetic and weak nuclear interactions into one ``electroweak" interaction at high energy scales. Without the role of the Higgs boson in this process, the fermions, the W-bosons, and the Z-boson would all be massless; thus, the Higgs can be said to ``give mass" to the particles of the Standard Model. It couples to all massive particles in the Standard Model, namely, the fermions and the W and Z bosons.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/SM.png}
-\caption{The "periodic table" of the Standard Model, depicting the three generations of fermions, the gauge bosons, and the Higgs \cite{WikipediaSM}.}
+\caption{The ``periodic table" of the Standard Model, depicting the three generations of fermions, the gauge bosons, and the Higgs \cite{WikipediaSM}.}
 \end{figure}
 
 \subsection{Lagrangians, Fields, and Gauge Transformations}\label{sec:Lagrangians}
 
-In order to fully explain the Higgs mechanism, we must first discuss the mathematical language of quantum field theory. Both quantum and classical field theories are often discussed using Lagrangian dynamics, where the Lagrangian is defined as  $\mathcal{L} = T - V$, the difference of the kinetic and the potential energy. Physical properties will always evolve in such a way that the integral of this property with respect to time, $\mathcal{S} = \int \mathcal{L} dt$, called the action, is a constant. Lagrangians are also incredibly useful in that they give rise to conservation laws: Noether's Theorem states that operations performed on a system that do not change the Lagrangian are each associated to conserved quantities of a system (i.e., systems with translationally invariant Lagrangians must respect conservation of momentum, systems with temporally-invariant Lagrangians must respect conservation of energy, etc.).
+In order to fully explain the Higgs mechanism, we must first discuss the mathematical language of quantum field theory. Both quantum and classical field theories are often discussed using Lagrangian dynamics, where the Lagrangian is defined as  $\mathcal{L} = T - V$, the difference of the kinetic and the potential energy. Physical properties will always evolve in such a way that the integral of this property with respect to time, $\mathcal{S} = \int \mathcal{L} dt$, called the action, is extremized. Lagrangians are also incredibly useful in that they give rise to conservation laws: Noether's Theorem states that operations performed on a system that do not change the Lagrangian are each associated to conserved quantities of a system (i.e., systems with translationally invariant Lagrangians must respect conservation of momentum, systems with temporally-invariant Lagrangians must respect conservation of energy, etc.).
 
-A variety of types of fields exist, but we will discuss three at length: Klein-Gordon fields, which are scalar fields, Dirac spinor (vector) fields, and gauge fields (additional vector fields that must be introduced in order to preserve certain physical symmetries. We begin with the Klein-Gordon field.
+A variety of types of fields exist, but we will discuss three at length: Klein-Gordon fields, which are scalar fields, Dirac spinor fields, and gauge fields (additional vector fields that must be introduced in order to preserve certain physical symmetries. We begin with the Klein-Gordon field.
 
-Klein-Gordon fields, one of the simplest examples of a field, are real scalar-valued quantities often denoted using the symbol $\phi$. A non-interacting "free" Klein-Gordon field evolves according to the Lagrangian:
+Klein-Gordon fields, one of the simplest examples of a field, are real scalar-valued quantities often denoted using the symbol $\phi$. A non-interacting ``free" Klein-Gordon field evolves according to the Lagrangian:
 
 \begin{align}
   \begin{aligned}
@@ -44,23 +44,23 @@ where we utilize Einstein sum notation in the last line to compress the four der
 While the concept of a complex-valued scalar field does not directly correspond to any of the physical elementary particles that are present in the Standard Model, it plays an important role in the understanding of the Higgs mechanism. A complex-valued scalar field behaves similarly to a real-valued one, with the Lagrangian:
 
 \begin{equation}
-\mathcal{L} = (\partial^{\mu}\phi^{*})(\partial_{\mu}\phi) - \frac{1}{2} m^{2} \phi^{*} \phi
+\mathcal{L} = (\partial^{\mu}\phi^{*})(\partial_{\mu}\phi) - m^{2} \phi^{*} \phi
 \end{equation}
 
 Where * denotes the complex conjugate of the scalar field.
 
-Finally, Dirac fields describe all Standard Model fermions (with the possible exception of neutrinos). They are vector fields as opposed to scalar fields, and behave according to the Lagrangian:
+Finally, Dirac fields describe all Standard Model fermions (with the possible exception of neutrinos). They are spinor fields as opposed to scalar fields, and behave according to the Lagrangian:
 
 \begin{equation}
 \mathcal{L} = \bar{\psi}(i \gamma^{\mu} \partial_{\mu} - m) \psi
 \label{eq:Dirac}
 \end{equation}
 
-where $\gamma^{\mu}$ denotes the set of Dirac gamma matrices, and $\bar{\psi} = \psi^{\dag} \gamma^0$ denotes the transpose of the complex conjugate of the vector field multiplied by one of these matrices, defined as such in order to preserve invariance under relativistic Lorentz boosts. 
+where $\gamma^{\mu}$ denotes the set of Dirac gamma matrices, and $\bar{\psi} = \psi^{\dag} \gamma^0$ denotes the transpose of the complex conjugate of the spinor field multiplied by one of these matrices, defined as such in order to preserve invariance under relativistic Lorentz boosts. 
 
-A four-component Dirac vector field can be written in a variety of representations, but one of the most useful is that of a doublet of two two-component Weyl spinors, one left-handed and one right-handed, that is, $\psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}$. Each of these components transforms differently under Lorentz boosts.
+A four-component Dirac spinor field can be written in a variety of representations, but one of the most useful is that of a doublet of two two-component Weyl spinors, one left-handed and one right-handed, that is, $\psi = \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}$. Each of these components transforms differently under Lorentz boosts.
 
-In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a single Dirac vector field described by equation \ref{eq:Dirac}. We transform the field by rotating it by a constant phase $\alpha$:  $\psi \rightarrow e^{i \alpha} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha} \bar{\psi} $.
+In order to discuss the gauge fields corresponding to the Standard Model bosons, we must first discuss the concept of gauge symmetries. Consider a single Dirac spinor field described by equation \ref{eq:Dirac}. We transform the field by rotating it by a constant phase $\alpha$:  $\psi \rightarrow e^{i \alpha} \psi $, $\bar{\psi} \rightarrow e^{-i \alpha} \bar{\psi} $.
 
 \begin{align}
   \begin{aligned}
@@ -77,7 +77,7 @@ We next consider the concept of a local gauge transformation, that is, one in wh
 \begin{align}
   \begin{aligned}
 \mathcal{L} = - (e^{-i \alpha (x)} \bar{\psi})(i \gamma^{\mu} \partial_{\mu} - m) (e^{i \alpha (x)} \psi) \\
-=-i e^{-i \alpha (x)} \bar{\psi} \gamma^{\mu} (e^{i \alpha (x)} \partial_{\mu} \psi  + i e^{i \alpha (x)} \psi \partial_{\mu} \alpha -m \bar{\psi}\psi \\
+=-i e^{-i \alpha (x)} \bar{\psi} \gamma^{\mu} (e^{i \alpha (x)} \partial_{\mu} \psi  + i e^{i \alpha (x)} \psi \partial_{\mu} \alpha) -m \bar{\psi}\psi \\
 =-\bar{\psi}(i \gamma^{\mu} \partial_{\mu} + \gamma^{\mu} \partial_{\mu} \alpha - m) \psi
   \end{aligned}&&&
 \end{align}
@@ -104,11 +104,11 @@ Let us replace the $\partial_{\mu}\phi$ terms in the initial Lagrangian with $D_
   \end{aligned}&&&
 \end{align}
 
-Thus, by introducing an additional vector field that corresponds to the local U(1) gauge symmetry, we have restored the invariance of our lagrangian. Physically, this field is analogous to the introduction of electromagnetism to our single Dirac fermion model, with the $A_\mu$ field playing the role of the photon: it is a vector quantity and so has spin-1, it must be massless (as adding an $A_\mu$ mass term to the Lagrangian would violate the symmetry again), and couples to the fermion fields according to their electromagnetic charge. We note that we can also still preserve invariance if we add an additional term $L_{kin} = -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}$ to the Lagrangian, where $F_{\mu \nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}$: this corresponds to the energy inherent in electromagnetic fields themselves. 
+Thus, by introducing an additional vector field that corresponds to the local U(1) gauge symmetry, we have restored the invariance of our lagrangian. Physically, this field is analogous to the introduction of electromagnetism to our single Dirac fermion model, with the $A_\mu$ field playing the role of the photon: it is a vector quantity and so has spin-1, must be massless (as adding an $A_\mu$ mass term to the Lagrangian would violate the symmetry again) and couples to the fermion fields according to their electromagnetic charge. We note that we can also still preserve invariance if we add an additional term $L_{kin} = -\frac{1}{4}F^{\mu \nu} F_{\mu \nu}$ to the Lagrangian, where $F_{\mu \nu} = \partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}$: this corresponds to the energy inherent in electromagnetic fields themselves. 
 
-Each of the fundamental forces in the Standard Model can be understood in terms of these sorts of gauge symmetries. The photon is the particle excitiation of the electromagnetic field, which corresponds to a one-dimensional rotation "U(1)" transformation. In order to be invariant under three dimensional transformations of the type "SU(3)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 3D vector space), we must add eight new vector fields (these are the eight gluons), leading to the incorporation of the strong interaction into the Standard Model.
+Each of the fundamental forces in the Standard Model can be understood in terms of these sorts of gauge symmetries. The photon is the particle excitiation of the electromagnetic field, which corresponds to a one-dimensional rotation ``U(1)" transformation. In order to be invariant under three dimensional transformations of the type ``SU(3)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a complex 3D vector space), we must add eight new vector fields (these are the eight gluons), leading to the incorporation of the strong interaction into the Standard Model.
 
-Similarly, in order to be invariant under two-dimensional transformations of the type "SU(2)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a 2D vector space), we must add three new vector fields. However, these cannot be the observed weak-interaction bosons, the $W^{+}, W^{-}$ and $Z$: as mentioned before, the new fields must be massless, as adding a mass term for these bosons would violate the local gauge symmetry. How, then, can the masses of the weak bosons fit into the Standard Model? The answer lies in the introduction of yet another field, called the Higgs field, the particle excitation of which is the much-lauded Higgs boson.
+Similarly, in order to be invariant under two-dimensional transformations of the type ``SU(2)" (the set of all volume-preserving, $\bar{\psi}\psi$-preserving transformations in a complex 2D vector space), we must add three new vector fields. However, these cannot be the observed weak-interaction bosons, the $W^{+}, W^{-}$ and $Z$: as mentioned before, the new fields must be massless, as adding a mass term for these bosons would violate the local gauge symmetry. How, then, can the masses of the weak bosons fit into the Standard Model? The answer lies in the introduction of yet another field, called the Higgs field, the particle excitation of which is the much-lauded Higgs boson.
 
 \section{CP-Symmetry}\label{sec:CPT}
 
@@ -120,31 +120,31 @@ A parity inversion is equivalent to reversing a particle's momentum without reve
 
 Given this, we find that the expression $P \bar{\psi}\psi P = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under parity, while the expression $iP \bar{\psi}\gamma^{5}\psi P = -i\bar{\psi}\gamma^{5}\psi$ acquires a minus sign, so $i\bar{\psi}\gamma^{5}\psi$ is a $\emph{pseudoscalar}$ under parity.
 
-A time-reversal is equivalent to "running a process backward". For example, a swinging pendulum is a process that is approximately T symmetric, as it looks similar "played" in forward or reverse, while a plate shattering on the ground is not a T symmetric process, as reversing it does not make physical sense (broken plates do not spontaneously reform). For a fermion field $\psi(t,x)$, a time-reversal transform T takes $\psi(t,x)$ to $\psi(-t,x)$, and looks like $T \psi(t,x) T = -\gamma^{1}\gamma^{3} \psi(-t,x)$. Given this, we find that the expression $T \bar{\psi}\psi T = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under parity, while the expression $iT \bar{\psi}\gamma^{5}\psi T = -i\bar{\psi}\gamma^{5}\psi$ acquires a minus sign, so $i\bar{\psi}\gamma^{5}\psi$ is a pseudoscalar under time-reversal.
+A time-reversal is equivalent to ``running a process backward". For example, a swinging pendulum is a process that is approximately T symmetric, as it looks similar ``played" in forward or reverse, while a plate shattering on the ground is not a T symmetric process, as reversing it does not make physical sense (broken plates do not spontaneously reform). For a fermion field $\psi(t,x)$, a time-reversal transform T takes $\psi(t,x)$ to $\psi(-t,x)$, and looks like $T \psi(t,x) T = -\gamma^{1}\gamma^{3} \psi(-t,x)$. Given this, we find that the expression $T \bar{\psi}\psi T = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under parity, while the expression $iT \bar{\psi}\gamma^{5}\psi T = -i\bar{\psi}\gamma^{5}\psi$ acquires a minus sign, so $i\bar{\psi}\gamma^{5}\psi$ is a pseudoscalar under time-reversal.
 
-A charge conjugation is a reversal of all charges (electric charge, weak hypercharge, and strong-nuclear color charge). For a fermion field $\psi(t,x)$, a charge conjugation transform C takes $\psi$ to $\bar{psi}$, and looks like $C \psi C = -i (\bar{\psi} \gamma^{0} \gamma^{2})^{T}$ (where T here denotes the matrix transpose). Given this, we find that the expression $C \bar{\psi}\psi C = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under charge conjugtion, as is the expression $iC \bar{\psi}\gamma^{5}\psi C = i\bar{\psi}\gamma^{5}\psi$ is as well. Thus, Lagrangians containing terms of the form $i\bar{\psi}\gamma^{5}\psi$ are invariant under C and CPT, but not P, T or CP.
+A charge conjugation is a reversal of all charges (electric charge, weak hypercharge, and strong-nuclear color charge). For a fermion field $\psi(t,x)$, a charge conjugation transform C takes $\psi$ to $\bar{\psi}$, and looks like $C \psi C = -i (\bar{\psi} \gamma^{0} \gamma^{2})^{T}$ (where T here denotes the matrix transpose). Given this, we find that the expression $C \bar{\psi}\psi C = \bar{\psi}\psi$ , so $\bar{\psi}\psi$ is a $\emph{scalar}$ under charge conjugtion, as is the expression $iC \bar{\psi}\gamma^{5}\psi C = i\bar{\psi}\gamma^{5}\psi$ is as well. Thus, Lagrangians containing terms of the form $i\bar{\psi}\gamma^{5}\psi$ are invariant under C and CPT, but not P, T or CP.
 
-Applying C and P together is equivalent to switching particles and antiparticles. However, we also know that our universe is composed almost entirely of matter, and not equal parts matter and antimatter (living in a universe in which matter and antimatter are equally abundant would be very unpleasant, as the two would be constantly annhilating each other, bathing us in a near-constant shower of gamma rays) \cite{Sakharov}. Thus, some physics process that occurs in the high-energy regime near the Big Bang must violate CP in a substantial way. The CP-invariance that occurs through the CKM mixing is not enough to account for the matter-antimatter asymmetry, so searching for this source of CP violation is of pressing interest to experimental physicists \cite{CKM1} \cite{CKM2}.
+Applying C and P together is equivalent to switching particles and antiparticles. However, we also know that our universe is composed almost entirely of matter, and not equal parts matter and antimatter (living in a universe in which matter and antimatter are equally abundant would be very unpleasant, as the two would be constantly annhilating each other, bathing us in a near-constant shower of gamma rays) \cite{Sakharov}. Thus, some physics process that occurs in the high-energy regime near the Big Bang must violate CP in a substantial way. The CP-violation that occurs through the CKM mixing is not enough to account for the matter-antimatter asymmetry, so searching for this source of CP violation is of pressing interest to experimental physicists \cite{CKM1} \cite{CKM2}.
 
 \section{The Higgs Mechanism and Electroweak Symmetry Breaking} \label{sec:EWSB} 
 
-Given the results of previous sections, it should be clear that the Higgs field is important not simply because it "gives particles mass" (an often-made claim which is, in a sense, true), but because it is a vital missing piece of the Standard Model that is necessary to reconcile the elegant mathematical language of the fundamental interactions with the particles we observe in real-world experiments \cite{Higgs}.
+Given the results of previous sections, it should be clear that the Higgs field is important not simply because it ``gives particles mass" (an often-made claim which is, in a sense, true), but because it is a vital missing piece of the Standard Model that is necessary to reconcile the elegant mathematical language of the fundamental interactions with the particles we observe in real-world experiments \cite{Higgs}.
 
-To understand the Higgs mechanism, we must first devote a brief detour to the concept of spontaneous symmetry breaking. This occurs when an unstable, continuous symmetric state spontaneously changes into a more stable, asymmetric one. Consider, for example, the "wine-bottle" potential shape depicted in figure \ref{fig:potential}.
+To understand the Higgs mechanism, we must first devote a brief detour to the concept of spontaneous symmetry breaking. This occurs when an unstable, continuous symmetric state spontaneously changes into a more stable, asymmetric one. Consider, for example, the ``wine-bottle" potential shape depicted in figure \ref{fig:potential}.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/higgspotential.png}
-\caption{The "wine bottle" Higgs potential hill, from reference \cite{EllisHiggs}}
+\caption{The ``wine bottle" Higgs potential hill, from reference \cite{EllisHiggs}}
 \label{fig:potential}
 \end{figure}
 
-When the ball is balanced at the top of the potential "hill", the configuration is spatially symmetric: that is, no direction is privileged over any other. However, when this delicate balance is even slightly disturbed, the ball will roll down the hill in some direction, resulting in a final state that is $\emph{not}$ symmetrical. This is the phenomenon known as "spontaneous symmetry breaking".
+When the ball is balanced at the top of the potential ``hill", the configuration is spatially symmetric: that is, no direction is privileged over any other. However, when this delicate balance is even slightly disturbed, the ball will roll down the hill in some direction, resulting in a final state that is $\emph{not}$ symmetrical. This is the phenomenon known as ``spontaneous symmetry breaking".
 
-Using the language of quantum field theory, we can add spontaneously-breakable symmetric potential terms to a Lagrangian. If we do so, the phenomenon of symmetry breaking allows us to rewrite these terms as a combination of massless fields (one for each "choice" the symmetry breaking must make) and massive fields (corresponding to the leftover degrees of freedom). If we rewrite the "wine-bottle" potential in this way, for example, the one new massless field corresponds to the ball's angular position along the circle at the base, while the massive field corresponds to the ball's  radial position "up" or "down" the hill. The massless particles that arise from these massless fields are known as Goldstone bosons.
+Using the language of quantum field theory, we can add spontaneously-breakable symmetric potential terms to a Lagrangian. If we do so, the phenomenon of symmetry breaking allows us to rewrite these terms as a combination of massless fields (one for each ``choice" the symmetry breaking must make) and massive fields (corresponding to the leftover degrees of freedom). If we rewrite the ``wine-bottle" potential in this way, for example, the one new massless field corresponds to the ball's angular position along the circle at the base, while the massive field corresponds to the ball's  radial position ``up" or ``down" the hill. The massless particles that arise from these massless fields are known as Goldstone bosons.
 
 We are now ready to discuss the Higgs mechanism. We can combine the electromagnetic and weak nuclear forces as different manifestations of the same force, called the electroweak force, that transforms like $U(1) \times SU(2)$. We write the terms of the Standard Model electroweak Lagrangian, noting that, since the weak interaction is observed to be chiral, it couples differently to left- and right-handed fermions.
 
-In this case, the generator of the U(1) symmetry ($\alpha(x)$) is not the electric charge $Q$ as in our previous example, but is instead the "Weak Hypercharge" $Y = 2(Q -I_{3})$, where $I_{3}$ is the third component of the "Weak Isospin" $I$. For right-handed particles, $I_{3} = 0$, for left-handed up/charm/top quarks and neutrinos, $I_{3} = +\frac{1}{2}$, and for left-handed down/strange/bottom quarks and charged leptons, $I_{3} = +\frac{1}{2}$. We will call our U(1) boson $B_{\mu}$ rather than $A_{\mu}$, to distinguish it from the photon. For a fermion $\psi$ (u/c/s/e/$\mu$/$\tau$) that couples weakly to another fermion $\psi'$, we can write the left-and-right-handed components of f as 
+In this case, the generator of the U(1) symmetry ($\alpha(x)$) is not the electric charge $Q$ as in our previous example, but is instead the ``Weak Hypercharge" $Y = 2(Q -I_{3})$, where $I_{3}$ is the third component of the ``Weak Isospin" $I$. For right-handed particles, $I_{3} = 0$, for left-handed up/charm/top quarks and neutrinos, $I_{3} = +\frac{1}{2}$, and for left-handed down/strange/bottom quarks and charged leptons, $I_{3} = -\frac{1}{2}$. We will call our U(1) boson $B_{\mu}$ rather than $A_{\mu}$, to distinguish it from the photon. For a fermion $\psi$ (u/c/s/e/$\mu$/$\tau$) that couples weakly to another fermion $\psi'$, we can write the left-and-right-handed components of $\psi$ as 
 
 $L = \begin{pmatrix} \psi_{L} \\ \psi'_{L} \end{pmatrix}$, $R = \begin{pmatrix}\psi_{R} \end{pmatrix}$.
 
@@ -157,7 +157,7 @@ G_{\mu \nu} = \partial_{\mu} W_{\nu} - \partial_{\nu} W_{\mu}+\frac{g}{2} W_{\mu
 We can define a new covariant derivative capturing the weak interaction terms as well:
 
 \begin{equation}
-D^{\mu} = \partial^{\mu}- \frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i I g_2 \Sigma \tau_{i}W_{i}^\mu
+D^{\mu} = \partial^{\mu}- \frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i g_2 \Sigma \tau_{i}W_{i}^\mu
 \end{equation}
 
 Thus, the full electroweak $SU(2)_L \times U(1)$ Lagrangian is:
@@ -184,7 +184,7 @@ which, if $\mu^{2} < 0$ has a minimum at
 \phi^{\dag}\phi = \frac{-\mu^{2}}{2 \lambda} = \frac{v^{2}}{2}
 \end{equation}
 
-We note that the potential is symmetric, so we can pick a direction to "break the symmetry" in. Let us define the vacuum as:
+We note that the potential is symmetric, so we can pick a direction to ``break the symmetry" in. Let us define the vacuum as:
 
 \begin{equation}
 \phi_0 = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ v \end{pmatrix}
@@ -201,15 +201,15 @@ Then, for any arbitrary configuration of the field, we can expand the potential 
 We can expand the kinetic term in the Lagrangian as
 
 \begin{equation}
-(D^{\mu}\phi)^{\dag}(D_{\mu}\phi) = \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h)+ \phi^{\dag}(\frac{1}{2}iYg_{1}B_{\mu} -\frac{1}{2}iI g_2 \Sigma \tau_{i}W_{i\mu})^{\dag}(\frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}iI g_2 \Sigma \tau_{i}W_{i}^{\mu}) \phi
+(D^{\mu}\phi)^{\dag}(D_{\mu}\phi) = \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h)+ \phi^{\dag}(\frac{1}{2}iYg_{1}B_{\mu} -\frac{1}{2}i g_2 \Sigma \tau_{i}W_{i\mu})^{\dag}(\frac{1}{2}iYg_{1}B^{\mu} -\frac{1}{2}i g_2 \Sigma \tau_{i}W_{i}^{\mu}) \phi
 \end{equation} 
 
-Which, using the definitions of the three tau matrices, and putting Y = I = 1, becomes
+Which, using the definitions of the three tau matrices, and putting Y = 1, becomes
 
 \begin{align}
   \begin{aligned}
 \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8} |\begin{bmatrix} g_{1}B_{\mu}+g_{2}W_{\mu}^{3} & g_{2}(W_{\mu}^{1}-iW_{\mu}^{2}) \\ g_{2}(W_{\mu}^{1}+iW_{\mu}^{2}) & g_{1}B_{\mu}+g_{2}W_{\mu}^{3} \end{bmatrix} \begin{bmatrix} 0 \\ v \end{bmatrix}|^{2} \\
-= \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8}v^{2}g_{2}^{2}((W_{\mu}^{1})^{2}+(W_{\mu}^{2})^{2})) + \frac{1}{8}v^{2}(g_{1} B{\mu}-g_{2}W_{\mu}^{3})^{2}
+= \frac{1}{2}(\partial_{\mu}h)(\partial^{\mu}h) + \frac{1}{8}v^{2}g_{2}^{2}((W_{\mu}^{1})^{2}+(W_{\mu}^{2})^{2})) + \frac{1}{8}v^{2}(g_{1} B_{\mu}-g_{2}W_{\mu}^{3})^{2}
   \end{aligned}&&&
 \end{align}
 
@@ -219,8 +219,8 @@ If we again define some new field combinations here:
   \begin{aligned}
 {W_{\mu}^{+} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}-iW_{\mu}^{2})}\\
 {W_{\mu}^{-} -\frac{1}{\sqrt{2}}(W_{\mu}^{1}+iW_{\mu}^{2})}\\
-{Z_{\mu} = \frac{g_{1}B{\mu}+g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}\\ 
-{A_{\mu} = \frac{g_{1}B{\mu}-g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}
+{Z_{\mu} = \frac{g_{1}B_{\mu}+g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}\\ 
+{A_{\mu} = \frac{g_{1}B_{\mu}-g_{2}W_{\mu}}{\sqrt{{g_1}^2+{g_2}^2}}}
   \end{aligned}&&&
 \end{align}
 
@@ -242,7 +242,7 @@ g_{f}(\bar{f}_{L}\phi f_{R} + \phi^{\dag}\bar{f}_{R} f_{L})
 We note that, if we expand $\phi(x)$ about the minimum as in \ref{eq:min}, we find that the coupling term now looks like:
 
 \begin{equation}
-\frac{g_{f}v}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L}) + \frac{g_{f}}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L})
+\frac{g_{f}v}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L}) + \frac{g_{f}h}{\sqrt{2}}(\bar{f}_{L}f_{R} + \bar{f}_{R}f_{L})
 \end{equation}
 
 
@@ -274,7 +274,7 @@ As we have seen, the Standard Model Higgs is massive, and couples directly to al
 
 With the discovery of the Higgs, it can be argued that we have now entered an era of precision-measurement in collider physics. By closely studying interactions that are very sensitive to the injection of new physics, we can potentially detect deviations from the Standard Model: in many cases, we may see hints of the existence of new particles through changes to quantities of interest well before we are actually able to produce these particles in colliders directly. Due to the Higgs coupling to all massive particles, Higgs interactions are especially sensitive to new physics, and thus can serve as a useful bellwether for physics beyond the standard model.
 
-The Large Hadron Collider is a proton-proton collider; as such, physics processes that occur in it are almost always initiated by quarks or gluons. The predominant production modes are, in order of frequency, gluon-gluon fusion ($ggF$), vector boson fusion ($VBF$), vector-boson associated ($VH$) and top-associated ($ttH$). The top-associated Higgs production mode is of particular interest to many experimentalists due to its direct dependence on the Higgs coupling to a fermion- by closely measuring the frequency and properties of the $ttH$ mode, we can better understand the nature of this variety of couplings. Rarer production modes, such as single-top associated Higgs production ($tH$), can shed still more light on the nature of the top-quark/Higgs coupling (called the top quark Yukawa coupling), but are much more difficult to observe. The $tH$ process occurs in two final-state modes, $tWH$ and $tHj$; however, there is some nuance in their definitions which we will come to shortly.
+The Large Hadron Collider is a proton-proton collider; as such, physics processes that occur in it are almost always initiated by quarks or gluons. The predominant Higgs production modes are, in order of frequency, gluon-gluon fusion ($ggF$), vector boson fusion ($VBF$), vector-boson associated Higgs production($VH$) and top-associated Higgs production ($ttH$). The top-associated Higgs production mode is of particular interest to many experimentalists due to its direct dependence on the Higgs coupling to a fermion- by closely measuring the frequency and properties of the $ttH$ mode, we can better understand the nature of this variety of couplings. Rarer production modes, such as single-top associated Higgs production ($tH$), can shed still more light on the nature of the top-quark/Higgs coupling (called the top quark Yukawa coupling), but are much more difficult to observe. The $tH$ process occurs in two final-state modes, $tWH$ and $tHj$; however, there is some nuance in their definitions which we will come to shortly.
 
 \begin{figure}[htp]
   \centering
@@ -327,7 +327,7 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
      \end{subfigure}
      \hfill
   \label{fig:loopmodes}
-  \caption{Feynman diagrams depicting relevant less-common Higgs production modes.Made with \cite{FeynmanMaker}}  
+  \caption{Feynman diagrams depicting relevant less-common Higgs production modes. Made with \cite{FeynmanMaker}}  
 \end{figure}
 
 \begin{figure}[htp]
@@ -357,7 +357,7 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
      \end{subfigure}
      \hfill 
   \label{fig:loopmodes}
-  \caption{Feynman diagrams depicting ttH production modes.Made with \cite{FeynmanMaker}}  
+  \caption{Feynman diagrams depicting ttH production modes. Made with \cite{FeynmanMaker}}  
 \end{figure}
 
 \begin{figure}[htp]
@@ -387,19 +387,19 @@ The Large Hadron Collider is a proton-proton collider; as such, physics processe
   \caption{Feynman diagrams depicting the leading-order processes contributing to the Higgs diphoton decay. Made with \cite{FeynmanMaker}}  
 \end{figure}
 
-Similarly, the dominant decay mode of the Higgs is to bottom quarks ($H \rightarrow bb$), followed by to W bosons ($H \rightarrow WW$), gluons ($H \rightarrow WW$), tau leptons ($H \rightarrow \tau \tau$), charm quarks ($H \rightarrow bb$), Z bosons ($H \rightarrow ZZ$), photons ($H \rightarrow \gamma \gamma$), and a Z boson and a photon ($H \rightarrow Z \gamma$). Because the Higgs does not couple to massless particles directly, the decays to gg and $\gamma \gamma$ are mediated by loop diagrams, most often involving top quarks.
+Similarly, the dominant decay mode of the Higgs is to bottom quarks ($H \rightarrow bb$), followed by to W bosons ($H \rightarrow WW$), gluons ($H \rightarrow jj$), tau leptons ($H \rightarrow \tau \tau$), charm quarks ($H \rightarrow bb$), Z bosons ($H \rightarrow ZZ$), photons ($H \rightarrow \gamma \gamma$), and a Z boson and a photon ($H \rightarrow Z \gamma$). Because the Higgs does not couple to massless particles directly, the decays to gg and $\gamma \gamma$ are mediated by loop diagrams, most often involving top quarks.
 
-Investigating each of these decay modes has different benefits and detriments. While the Higgs decay to bottom quarks is the most common, correctly identifying and accurately reconstructing quarks and gluons using the jets that they produce in detectors is often very difficult. Decays to W bosons, Z bosons, and $\tau$ leptons provide "cleaner" channels, but because the W, Z and $\tau$ decay dominantly to hadrons, similar reconstruction issues occur unless we restrict ourselves to the rarer leptonic subchannels of these decays. The Higgs to diphoton channel occurs very rarely, but offers a much more unambiguous signal, as the odds of misidentifying high-energy gamma rays are fairly low.
+Investigating each of these decay modes has different benefits and detriments. While the Higgs decay to bottom quarks is the most common, correctly identifying and accurately reconstructing quarks and gluons using the jets that they produce in detectors is often very difficult. Decays to W bosons, Z bosons, and $\tau$ leptons provide ``cleaner" channels, but because the W, Z and $\tau$ decay dominantly to hadrons, similar reconstruction issues occur unless we restrict ourselves to the rarer leptonic subchannels of these decays. The Higgs to diphoton channel occurs very rarely, but offers a much more unambiguous signal, as the odds of misidentifying high-energy gamma rays are fairly low.
 
 Additionally, we must consider combinatorics: in the ttH production mode, for instance, the final state contains two bottom quarks from the decay of the associated top quarks. If we choose to examine the subchannel in which the Higgs decays to bottom quarks as well, we find that we have at least four final-state bottom quark jets in the event, with 12 different unique assignments of bottom quark jets to parent particles. Correctly matching up which jet originated from which parent particle thus further complicates the reconstruction problem.
 
-The rate of a particular physics production mode or scattering process is parameterized using a quantity called the cross-section $\sigma$, which is measured in units of "barns". Similarly, the rate of a particular decay process is parameterized using a quantity called the decay width $\Gamma$, which measures the probability of a particular decay occurring per unit time. We can also define the "Branching Fraction" of a particular process: if $\Gamma_{H}$ denotes the sum of all Higgs decay widths, for a given process $H \rightarrow XX$ we define
+The rate of a particular physics production mode or scattering process is parameterized using a quantity called the cross-section $\sigma$, which is measured in units of ``barns". Similarly, the rate of a particular decay process is parameterized using a quantity called the decay width $\Gamma$, which measures the probability of a particular decay occurring per unit time. We can also define the ``Branching Fraction" of a particular process: if $\Gamma_{H}$ denotes the sum of all Higgs decay widths, for a given process $H \rightarrow XX$ we define
 
 \begin{equation}
 Br(H \rightarrow XX) = \frac{\Gamma(H \rightarrow XX)}{\Gamma_{H}}
 \end{equation}
 
-The second of the two analyses discussed in this dissertation is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the "Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the $ggF$, $VBF$, $VH$, $ttH$, and $tH$ processes; by doing this, we can extract limits on the individual Higgs production cross-sections in targeted regions of phase space.
+The second of the two analyses discussed in this dissertation is a survey of a wide variety of Higgs-based physics processes using the Higgs-to-diphoton decay channel (referred to in this dissertation as the ``Higgs Couplings Analysis"). A combined fit is performed in different regions of phase space that correspond to the $ggF$, $VBF$, $VH$, $ttH$, and $tH$ processes; by doing this, we can extract limits on the individual Higgs production cross-sections in targeted regions of phase space.
 
 \begin{figure}
 \includegraphics[width=\linewidth]{figures/theory_chapter/HiggsBR.png}
@@ -424,9 +424,9 @@ The second of the two analyses discussed in this dissertation is a survey of a w
     \label{mytable}
 \end{table}
 
-Cross-sections are calculated at a given perturbation-theoretic "order", indicating how many additional correction terms (often indicated by Feynman diagrams with internal loops and vertices) are accounted for in the calculation- for a given process, leading-order (or "LO"), next-to-leading order ("NLO"), and next-to-next-to-leading order ("NNLO") indicate increasing numbers of correction terms. Calculating and simulating to higher orders is more accurate, but is often much more computationally expensive. These correction terms can be applied for both electroweak (EW) and quantum-chromodynamical (QCD) effects.
+Cross-sections are calculated at a given perturbation-theoretic ``order", indicating how many additional correction terms (often indicated by Feynman diagrams with internal loops and vertices) are accounted for in the calculation- for a given process, leading-order (or ``LO"), next-to-leading order (``NLO"), and next-to-next-to-leading order (``NNLO") indicate increasing numbers of correction terms. Calculating and simulating to higher orders is more accurate, but is often much more computationally expensive. These correction terms can be applied for both electroweak (EW) and quantum-chromodynamical (QCD) effects.
 
-In addition to considering which corrections to apply, we must also consider the flavor scheme of the Monte Carlo generator. Physics processes can be initiated by real quarks or gluons that are present in the initial scattering protons, as well as virtual quarks that are present in the primordial soup of energy that binds each proton together. In the five-flavor Parton Distribution Function (PDF) scheme, we consider massless virtual bottom quarks to be constituents of the proton that are capable of initiating physics processes, while in the four-flavor PDF scheme, we do not. These schemes differ primarily in which diagrams they treat as corrections and which they do not- thus, if we perform QCD corrections at all orders (that is, NN...NNLO), we find that these two schemes produce identical results \cite{FedericotH}. Diagrams from the five-flavor PDF scheme that are initiated by a bottom quark can be mapped into the four-flavor scheme by adding an additional bottom-quark to the final state; however, for $ttH$, $tt\gamma\gamma$ and $tWH$ processes, this presents a number of nontrivial modelling issues \cite{FedericotWH}. While the five-flavor scheme offers easier calculation and the ability to model more processes, the four-flavor scheme is better at modelling Higgs kinematics, such as $p_{T}$ and bottom-quark  $p_{T}$. For these reasons, we use the four-flavor scheme to model the $tHj$ process only (henceforth called $tHjb$ due to the presence of the additional final-state b-jet) and the five-flavor scheme for all other top-quark-based processes. 
+In addition to considering which corrections to apply, we must also consider the flavor scheme of the Monte Carlo generator. Physics processes can be initiated by real quarks or gluons that are present in the initial scattering protons, as well as virtual quarks that are present in the churning sea of energy that binds each proton together. In the five-flavor Parton Distribution Function (PDF) scheme, we consider massless virtual bottom quarks to be constituents of the proton that are capable of initiating physics processes, while in the four-flavor PDF scheme, we do not. These schemes differ primarily in which diagrams they treat as corrections and which they do not- thus, if we perform QCD corrections at all orders (that is, NN...NNLO), we find that these two schemes produce identical results \cite{FedericotH}. Diagrams from the five-flavor PDF scheme that are initiated by a bottom quark can be mapped into the four-flavor scheme by adding an additional bottom-quark to the final state; however, for $ttH$, $tt\gamma\gamma$ and $tWH$ processes, this presents a number of nontrivial modelling issues \cite{FedericotWH}. While the five-flavor scheme offers easier calculation and the ability to model more processes, the four-flavor scheme is better at modelling Higgs kinematics, such as $p_{T}$ and bottom-quark  $p_{T}$. For these reasons, we use the four-flavor scheme to model the $tHj$ process only (henceforth called $tHjb$ due to the presence of the additional final-state b-jet) and the five-flavor scheme for all other top-quark-based processes. 
 
 \begin{figure}[htp]
   \centering
@@ -505,7 +505,7 @@ In addition to considering which corrections to apply, we must also consider the
          \label{fig:tHjb5}
      \end{subfigure}
   \label{fig:tHjbmodes}
-  \caption{Feynman diagrams depicting the leading-order terms for $tHjb$, made with \cite{FeynmanMaker}. These diagrams are calculated using the four-flavor PDF scheme. Note that additional diagrams can be created by reversing the direction of the upper fermion "circuit" (the final-state top and bottom must be opposite sign, but $tHj\bar{b}$ and $\bar{t}Hjb$ are equally likely to occur).}  
+  \caption{Feynman diagrams depicting the leading-order terms for $tHjb$, made with \cite{FeynmanMaker}. These diagrams are calculated using the four-flavor PDF scheme. Note that additional diagrams can be created by reversing the direction of the upper fermion ``circuit" (the final-state top and bottom must be opposite sign, but $tHj\bar{b}$ and $\bar{t}Hjb$ are equally likely to occur).}  
 \end{figure}
 
 
@@ -514,7 +514,7 @@ In addition to considering which corrections to apply, we must also consider the
 
 According to the Standard Model, the Higgs boson is a CP-even scalar boson: it is predicted to have spin-zero, with all its interactions CP-even. Previous analyses from both ATLAS and CMS have placed limits on the existence of anomalous CP-violating Higgs couplings to the gauge bosons (\cite{Aad_2016} \cite{Khachatryan_2016} and \cite{Sirunyan_2019}); however, any such couplings would be suppressed by a factor of 1/$(\Lambda)^2$ (where $\Lambda$ indicates the energy scale of the new CP-violating physics) \cite{Zhang_2011}, so these studies are thus somewhat limited in their sensitivity. Similarly, indirect measurements of the CP-nature of the Higgs coupling to fermions in loop-diagram mediated processes have been performed \cite{Ellis} \cite{Brod_2013}; however, these measurements are highly dependent on the choice of BSM model that induces CP violation.
 
-The first of the two analyses detailed in this dissertation, referred to as the "ttHCP Analysis", marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner, but such constraints are indirect \cite{Aaboud_2018} \cite{couplings80fb}.
+The first of the two analyses detailed in this dissertation, referred to as the ``ttHCP Analysis", marks the first direct measurement of the CP-nature of the Higgs couplings to fermions. Because the top quark Yukawa is the strongest Higgs coupling, it is one of the most useful channels for the performance of this measurement. A CP-violating top Yukawa coupling will influence production rates and kinematics in top-pair associated Higgs production ($t \bar{t} H$) and single-top associated Higgs production ($tH$, specifically $tHjb$ and $tWH$). Additionally, CP-violation in the top Yukawa coupling will modify the rates of gluon-gluon fusion Higgs production and Higgs to diphoton decay; however, because these two processes are loop-mediated, they are sensitive to other forms of new physics as well, and thus not enough to directly constrain the CP nature of the top Yukawa coupling on their own. Previous ATLAS analyses have measured the CP properties of the top Yukawa coupling in this manner, but such constraints are indirect \cite{Aaboud_2018} \cite{couplings80fb}.
 
 Because of its combined direct and indirect sensitivity to the top Yukawa coupling, we thus find that the $ttH$ and $tH$ processes with $H \rightarrow \gamma \gamma $ provide a well-motivated channel for probing the CP-structure of the top-Higgs interaction. In addition, the presence of two photons in the event final state provides a clean signal, further motivating the use of this channel. 
 
@@ -575,7 +575,7 @@ The dimension-6 Lagrangian term can be expanded as a linear combination of all a
 \mathcal{L}_{6} = \sum_{i} c_{i}^6 O_{i}^{6}
 \end{equation}
 
-In the Couplings Analysis, the operators are chosen using the so-called "Warsaw Basis" \cite{Warsaw}; the $c_{i}$ terms are the free parameters to be determined by the final likelihood fit, called "Wilson Coefficients". A list of all allowed dimension-6 operators and their corresponding coefficients is given in \ref{tab:EFT}.
+In the Couplings Analysis, the operators are chosen using the so-called ``Warsaw Basis" \cite{Warsaw}; the $c_{i}$ terms are the free parameters to be determined by the final likelihood fit, called ``Wilson Coefficients". A list of all allowed dimension-6 operators and their corresponding coefficients is given in \ref{tab:EFT}.
 
 \begin{table}
   \centering
