@@ -105,8 +105,7 @@ At this stage, the bias is shown to be consistently less than 40\% of the statis
 
 We report the results of the nominal bias study for all categories in the \Tab{\ref{tab:NoSigSS}}.
 
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcSS
@@ -153,8 +152,7 @@ We report the results of the nominal bias study for all categories in the \Tab{\
 		}
 		\caption{Spurious signal means and widths for the three test functional-form distributions for a range of different template statistics.}
 		\label{tab:NoSigSS}
-	\end{table}	
-\end{landscape}
+\end{sidewaystable}	
 
 To determine how to reduce the bias further, we note a further set of tests performed in an earlier iteration of this method \cite{Hyneman}, evaluating the difference in GP fit bias when different functional priors were used as the GP mean. Templates were constructed for several statistics regimes using power law (Fig.~\ref{fig:prior_bias_powerlaw}), ExpPoly2 (Fig.~\ref{fig:prior_bias_exppoly2}), and Bernstein 5 (Fig.~\ref{fig:prior_bias_bern5}) functions as the template basis; the possible choices of GP mean tested for each template were an exponential function, a linear function, and a flat line. In the tested templates with more than 10 effective MC events per bin, the choice of GP mean does not seem to affect the GP fit behavior significantly, though some fitting bias is observed in the lower-statistics templates. The unit of the y-axis in these plots is the percentage disagreement between the smoothed and the unsmoothed template, similar to a ratio plot.
 
@@ -270,8 +268,7 @@ To approximate this extension, we can also perform a linear fit padding on the t
 
 We report the results of the padded-template bias study for all categories in the \Tab{\ref{tab:NoSigSSpadded}}.
 
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcS
@@ -316,8 +313,7 @@ We report the results of the padded-template bias study for all categories in th
 		}
 		\caption{Spurious signal means and widths for the three test functional-form distributions for a range of different template statistics.}
 		\label{tab:NoSigSSpadded}
-	\end{table}	
-\end{landscape}
+\end{sidewaystable}	
 
 \subsection{Extended Templates, Linear Error Kernel}
 
@@ -406,8 +402,7 @@ We note that the seeming lack of bias far below the 20 effective Monte-Carlo eve
 
 We report the results of the padded-template, linear-error kernel bias study for all categories in the \Tab{\ref{tab:NoSigSSlinear}}. 
 
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcSS
@@ -454,8 +449,7 @@ We report the results of the padded-template, linear-error kernel bias study for
 		}
 		\caption{Spurious signal means and widths for the three test functional-form distributions for a range of different template statistics.}
 		\label{tab:NoSigSSlinear}
-	\end{table}	
-\end{landscape}
+\end{sidewaystable}	
 
 To further validate the choice of 20 effective events per bin as the cutoff, we investigate some edge cases. Since the templates have 130 bins (due to the 10 bin padding on either side), we note that the 1000-event templates have just over 7 effective events per bin, while the 10000 event templates have just over 76 events per bin. We test templates with exactly 10 effective events per bin (1300 total events), slightly more than 10 effective events per bin (1400 total events), exactly 20 effective events per bin (2600 total events), and slightly more than 21 effective events per bin (2800 total events).
 
@@ -463,8 +457,7 @@ We note that, in the 10 event/bin regime, for templates generated with ExpPoly2 
 
 However, by requiring at least 20 effective events per bin, we observe that this bias is reduced to less than or equal to 20\% of the statistical uncertainty on the spurious signal. At the low-statistics end of this range, however, we note that the statistical uncertainty is expected to dominate (that is, spurious signal will not be a significant uncertainty), so we can conclude that the effects of the GPR bias will be minimal. We further note that, as statistics increase past 75 effective events per bin, bias drops off to less than 10\% of the spurious signal uncertainty- in regimes where the spurious signal uncertainty is expected to dominate, the bias is found to be negligible.
 
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcSS
@@ -506,12 +499,10 @@ Low2800&0&2800&21.5384615384615&-0.004503417466248&0.003561303750613&-0.00806472
 		}
 		\caption{Spurious signal means and widths for all choices of fit functional-form, using the "low" template with the ExpPoly2 generating functional form, for a range of different template statistics.}
 		\label{tab:NoSigSSedges1}
-	\end{table}	
-\end{landscape}
+\end{sidewaystable}	
 
 
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcSS
@@ -559,8 +550,7 @@ High2800&0&2800&21.5384615384615&-0.005217646454879&0.015515164923075&-0.0207328
 		}
 		\caption{Spurious signal means and widths for all choices of fit functional-form, using the "medium" template with the ExpPoly3 generating functional form and the "high" template with the ExpPoly3 generating functional form, for a range of different template statistics.}
 		\label{tab:NoSigSSedges2}
-	\end{table}	
-\end{landscape}
+\end{sidewaystable}	
 
 
 \begin{figure} 
@@ -734,8 +724,7 @@ Following this, we set the size of a feature as 3 times the standard-model signa
 \end{center}
 \end{figure}
 
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcSS
@@ -779,8 +768,7 @@ Following this, we set the size of a feature as 3 times the standard-model signa
 		}
 		\caption{Spurious signal means and widths for the three test functional-form distributions for a range of different template statistics, with a signal feature injection that is approximately 3 GeV wide and 1\% of the template integral.}
 		\label{tab:SigSS}
-	\end{table}
-\end{landscape}
+\end{sidewaystable}
 
 The feature-injection bias for a three-sigma feature does not change appreciably with template shape (that is, for a given statistics level, the bias is approximately the same for all three templates). However, at high stats, the bias / feature size drops off as a function of template statistics. This makes sense, as the presence of true underlying features in high statistics templates is not compatible with the assumption that our true templates are smoothly falling functions. However, for templates containing greater than 20 effective background MC events per bin prior to feature injection (that is, those in the statistics range we conclude that it is safe to use GPR in), the measured bias is less than 18\% of the injected feature size. 
 
@@ -830,8 +818,7 @@ As a further check, we investigate the bias when the number of background events
 \end{center}
 \end{figure}
 
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcSS
@@ -867,8 +854,7 @@ high100k&4000&1e6&4e4&1078.98190239696&1076.93856262147&2.04333977548163&19.1476
 		}
 		\caption{Spurious signal means and widths for the three test functional-form distributions for a range of different template statistics, with a signal feature injection that is approximately 3 GeV wide. The template statistics are fixed at one million events, and the feature size is varied.}
 		\label{tab:SigSSvarinj}
-	\end{table}
-\end{landscape}
+\end{sidewaystable}
 
 As a final check, we investigate the bias when a standard-model-signal like feature is injected (~1 GeV wide). As expected, we see that the bias is larger- narrow features are more smoothed by the Gaussian Process fit, but are still present in the templates.
 
@@ -949,8 +935,7 @@ As a final check, we investigate the bias when a standard-model-signal like feat
 \end{center}
 \end{figure}
 				
-\begin{landscape}
-	\begin{table}
+\begin{sidewaystable}
 		\centering 
 		\resizebox{\linewidth}{!}{
 			\begin{tabular}{lcSS
@@ -994,8 +979,7 @@ high10M&4E+3&1E+7&4E+5&3944.35538150966&3932.4420473971&11.9133341125607&49.1708
 		}
 		\caption{Spurious signal means and widths for the three test functional-form distributions for a range of different template statistics, with a signal feature injection that is approximately 3 GeV wide and 1\% of the template integral.}
 		\label{tab:SigSS1S}
-	\end{table}
-\end{landscape}
+\end{sidewaystable}
 
 From these studies, we conclude that, in the presence of underlying features that we wish to preserve, the bias is dependent on both the size and shape of the expected feature- features are blunted somewhat by the GP, but are still present in the smoothed template; how much they are blunted depends on their shape and size, both absolute and relative to the template as a whole.
 

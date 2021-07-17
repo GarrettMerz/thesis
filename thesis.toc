@@ -1,10 +1,9 @@
-\contentsline {chapter}{Dedication}{ii}{section*.1}%
-\contentsline {chapter}{Acknowledgements}{iv}{section*.2}%
-\contentsline {chapter}{List of Figures}{viii}{section*.4}%
-\contentsline {chapter}{List of Tables}{xxvi}{section*.5}%
-\contentsline {chapter}{List of Appendices}{xxx}{section*.6}%
-\contentsline {chapter}{List of Abbreviations}{xxxi}{section*.8}%
-\contentsline {chapter}{Abstract}{xxxiv}{section*.9}%
+\contentsline {chapter}{Acknowledgements}{v}{section*.1}%
+\contentsline {chapter}{List of Figures}{ix}{section*.3}%
+\contentsline {chapter}{List of Tables}{xxvii}{section*.4}%
+\contentsline {chapter}{List of Appendices}{xxxi}{section*.5}%
+\contentsline {chapter}{List of Abbreviations}{xxxii}{section*.7}%
+\contentsline {chapter}{Abstract}{xxxv}{section*.8}%
 \vspace {1.3ex}\noindent {\bf Chapter}\vspace {1.3ex}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}An Overview of the Standard Model}{3}{chapter.2}%
@@ -39,9 +38,9 @@
 \contentsline {subsection}{\numberline {4.1.9}Missing Transverse Energy}{55}{subsection.4.1.9}%
 \contentsline {subsection}{\numberline {4.1.10}Tau Leptons}{56}{subsection.4.1.10}%
 \contentsline {subsection}{\numberline {4.1.11}Top reconstruction}{56}{subsection.4.1.11}%
-\contentsline {paragraph}{Fully hadronic events}{57}{paragraph*.35}%
-\contentsline {paragraph}{Leptonic events}{58}{paragraph*.36}%
-\contentsline {paragraph}{Retraining with PFlow Jets}{58}{paragraph*.37}%
+\contentsline {paragraph}{Fully hadronic events}{57}{paragraph*.34}%
+\contentsline {paragraph}{Leptonic events}{58}{paragraph*.35}%
+\contentsline {paragraph}{Retraining with PFlow Jets}{58}{paragraph*.36}%
 \contentsline {chapter}{\numberline {5}Data and Monte Carlo Samples}{60}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Data, Monte Carlo, and HGam Pre-selection}{60}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Data}{60}{subsection.5.1.1}%
@@ -80,15 +79,15 @@
 \contentsline {subsubsection}{\numberline {8.4.3.4}1-D Constraint Using $\kappa _{t}$ Parameterization}{118}{subsubsection.8.4.3.4}%
 \contentsline {chapter}{\numberline {9}Measurements of the Properties of Higgs Boson Production with $H \rightarrow \gamma \gamma $}{124}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Categorization}{124}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Signal and Background Modelling}{136}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{139}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{140}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{141}{subsection.9.3.2}%
-\contentsline {section}{\numberline {9.4}Results}{142}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{142}{subsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.4.2}STXS}{143}{subsection.9.4.2}%
+\contentsline {section}{\numberline {9.2}Signal and Background Modelling}{130}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Systematic Uncertainties}{132}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Theory Systematics}{133}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Experimental Systematics}{137}{subsection.9.3.2}%
+\contentsline {section}{\numberline {9.4}Results}{138}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Cross-Sections}{138}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}STXS}{139}{subsection.9.4.2}%
 \contentsline {chapter}{\numberline {10}Conclusion}{154}{chapter.10}%
-\contentsline {chapter}{Appendices}{157}{section*.128}%
+\contentsline {chapter}{Appendices}{157}{section*.127}%
 \setcounter {tocdepth}{1}
 \contentsline {section}{\numberline {A.1}The KLFitter}{157}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Comparison}{158}{section.A.2}%
@@ -107,7 +106,7 @@
 \contentsline {section}{\numberline {E.1}Validation of Gaussian Process Smoothing}{222}{section.E.1}%
 \contentsline {subsection}{\numberline {E.1.1}Nominal Bias Study}{223}{subsection.E.1.1}%
 \contentsline {subsection}{\numberline {E.1.2}Extended Templates}{232}{subsection.E.1.2}%
-\contentsline {subsection}{\numberline {E.1.3}Extended Templates, Linear Error Kernel}{244}{subsection.E.1.3}%
-\contentsline {subsection}{\numberline {E.1.4}Feature Injection Study}{260}{subsection.E.1.4}%
-\contentsline {subsection}{\numberline {E.1.5}Results}{286}{subsection.E.1.5}%
-\contentsline {chapter}{Bibliography}{287}{section*.256}%
+\contentsline {subsection}{\numberline {E.1.3}Extended Templates, Linear Error Kernel}{235}{subsection.E.1.3}%
+\contentsline {subsection}{\numberline {E.1.4}Feature Injection Study}{258}{subsection.E.1.4}%
+\contentsline {subsection}{\numberline {E.1.5}Results}{282}{subsection.E.1.5}%
+\contentsline {chapter}{Bibliography}{283}{section*.255}%

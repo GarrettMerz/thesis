@@ -1,52 +1,51 @@
-\BOOKMARK [0][-]{section*.1}{Dedication}{}% 1
-\BOOKMARK [0][-]{section*.2}{Acknowledgements}{}% 2
-\BOOKMARK [0][-]{v.0}{Table of Contents}{}% 3
-\BOOKMARK [0][-]{section*.4}{List of Figures}{}% 4
-\BOOKMARK [0][-]{section*.5}{List of Tables}{}% 5
-\BOOKMARK [0][-]{section*.6}{List of Appendices}{}% 6
-\BOOKMARK [0][-]{section*.8}{List of Abbreviations}{}% 7
-\BOOKMARK [0][-]{section*.9}{Abstract}{}% 8
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 9
-\BOOKMARK [0][-]{chapter.2}{An Overview of the Standard Model}{}% 10
-\BOOKMARK [1][-]{section.2.1}{The Standard Model}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{CP-Symmetry}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{The Higgs Mechanism and Electroweak Symmetry Breaking}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.4}{The Higgs Boson and Its Couplings}{chapter.2}% 14
-\BOOKMARK [0][-]{chapter.3}{The ATLAS Detector}{}% 15
-\BOOKMARK [1][-]{section.3.1}{The Large Hadron Collider}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.2}{The ATLAS Detector}{chapter.3}% 17
-\BOOKMARK [0][-]{chapter.4}{Experimental Methods}{}% 18
-\BOOKMARK [1][-]{section.4.1}{Experimental Methods}{chapter.4}% 19
-\BOOKMARK [0][-]{chapter.5}{Data and Monte Carlo Samples}{}% 20
-\BOOKMARK [1][-]{section.5.1}{Data, Monte Carlo, and HGam Pre-selection}{chapter.5}% 21
-\BOOKMARK [0][-]{chapter.6}{Signal Parameterization, Background Parametrization, and Statistical Methods}{}% 22
-\BOOKMARK [1][-]{section.6.1}{Signal Modelling}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.2}{Background Modelling and Spurious Signal}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.3}{The Kappa Framework}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.4}{Simplified Template Cross-Sections}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.5}{Likelihood Fitting and Asimov Data}{chapter.6}% 27
-\BOOKMARK [0][-]{chapter.7}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Selection and Categorization}{}% 28
-\BOOKMARK [1][-]{section.7.1}{Categorization}{chapter.7}% 29
-\BOOKMARK [0][-]{chapter.8}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Results}{}% 30
-\BOOKMARK [1][-]{section.8.1}{Yield Dependence on }{chapter.8}% 31
-\BOOKMARK [1][-]{section.8.2}{Signal and Background Parameterization}{chapter.8}% 32
-\BOOKMARK [1][-]{section.8.3}{Systematic Uncertainty}{chapter.8}% 33
-\BOOKMARK [1][-]{section.8.4}{Results and Interpretations}{chapter.8}% 34
-\BOOKMARK [0][-]{chapter.9}{Measurements of the Properties of Higgs Boson Production with H }{}% 35
-\BOOKMARK [1][-]{section.9.1}{Categorization}{chapter.9}% 36
-\BOOKMARK [1][-]{section.9.2}{Signal and Background Modelling}{chapter.9}% 37
-\BOOKMARK [1][-]{section.9.3}{Systematic Uncertainties}{chapter.9}% 38
-\BOOKMARK [1][-]{section.9.4}{Results}{chapter.9}% 39
-\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 40
-\BOOKMARK [0][-]{section*.128}{Appendices}{}% 41
-\BOOKMARK [0][-]{Alternative Top Reconstruction with the KLFitter.0}{Alternative Top Reconstruction with the KLFitter}{}% 42
-\BOOKMARK [1][-]{section.A.1}{The KLFitter}{Alternative Top Reconstruction with the KLFitter.0}% 43
-\BOOKMARK [1][-]{section.A.2}{Comparison}{Alternative Top Reconstruction with the KLFitter.0}% 44
-\BOOKMARK [0][-]{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}{CP-BDT Studies with the Toolkit for Multivariate Analysis}{}% 45
-\BOOKMARK [1][-]{section.B.1}{Additional CP BDT Studies with TMVA}{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}% 46
-\BOOKMARK [0][-]{Auxiliary Plots.0}{Auxiliary Plots}{}% 47
-\BOOKMARK [0][-]{Reducing Spurious Signal With Gaussian Process Regression.0}{Reducing Spurious Signal With Gaussian Process Regression}{}% 48
-\BOOKMARK [1][-]{section.D.1}{Gaussian Processes smoothed background templates}{Reducing Spurious Signal With Gaussian Process Regression.0}% 49
-\BOOKMARK [0][-]{Validation Tests of the Gaussian Process Regression Method.0}{Validation Tests of the Gaussian Process Regression Method}{}% 50
-\BOOKMARK [1][-]{section.E.1}{Validation of Gaussian Process Smoothing}{Validation Tests of the Gaussian Process Regression Method.0}% 51
-\BOOKMARK [0][-]{section*.256}{Bibliography}{}% 52
+\BOOKMARK [0][-]{section*.1}{Acknowledgements}{}% 1
+\BOOKMARK [0][-]{vi.0}{Table of Contents}{}% 2
+\BOOKMARK [0][-]{section*.3}{List of Figures}{}% 3
+\BOOKMARK [0][-]{section*.4}{List of Tables}{}% 4
+\BOOKMARK [0][-]{section*.5}{List of Appendices}{}% 5
+\BOOKMARK [0][-]{section*.7}{List of Abbreviations}{}% 6
+\BOOKMARK [0][-]{section*.8}{Abstract}{}% 7
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
+\BOOKMARK [0][-]{chapter.2}{An Overview of the Standard Model}{}% 9
+\BOOKMARK [1][-]{section.2.1}{The Standard Model}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{CP-Symmetry}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{The Higgs Mechanism and Electroweak Symmetry Breaking}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{The Higgs Boson and Its Couplings}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{The ATLAS Detector}{}% 14
+\BOOKMARK [1][-]{section.3.1}{The Large Hadron Collider}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{The ATLAS Detector}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Experimental Methods}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Experimental Methods}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Data and Monte Carlo Samples}{}% 19
+\BOOKMARK [1][-]{section.5.1}{Data, Monte Carlo, and HGam Pre-selection}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{Signal Parameterization, Background Parametrization, and Statistical Methods}{}% 21
+\BOOKMARK [1][-]{section.6.1}{Signal Modelling}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.2}{Background Modelling and Spurious Signal}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.3}{The Kappa Framework}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.4}{Simplified Template Cross-Sections}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.5}{Likelihood Fitting and Asimov Data}{chapter.6}% 26
+\BOOKMARK [0][-]{chapter.7}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Selection and Categorization}{}% 27
+\BOOKMARK [1][-]{section.7.1}{Categorization}{chapter.7}% 28
+\BOOKMARK [0][-]{chapter.8}{Study of the CP Properties of the Top Quark Yukawa Interaction in tbartH and tH Events with H : Results}{}% 29
+\BOOKMARK [1][-]{section.8.1}{Yield Dependence on }{chapter.8}% 30
+\BOOKMARK [1][-]{section.8.2}{Signal and Background Parameterization}{chapter.8}% 31
+\BOOKMARK [1][-]{section.8.3}{Systematic Uncertainty}{chapter.8}% 32
+\BOOKMARK [1][-]{section.8.4}{Results and Interpretations}{chapter.8}% 33
+\BOOKMARK [0][-]{chapter.9}{Measurements of the Properties of Higgs Boson Production with H }{}% 34
+\BOOKMARK [1][-]{section.9.1}{Categorization}{chapter.9}% 35
+\BOOKMARK [1][-]{section.9.2}{Signal and Background Modelling}{chapter.9}% 36
+\BOOKMARK [1][-]{section.9.3}{Systematic Uncertainties}{chapter.9}% 37
+\BOOKMARK [1][-]{section.9.4}{Results}{chapter.9}% 38
+\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 39
+\BOOKMARK [0][-]{section*.127}{Appendices}{}% 40
+\BOOKMARK [0][-]{Alternative Top Reconstruction with the KLFitter.0}{Alternative Top Reconstruction with the KLFitter}{}% 41
+\BOOKMARK [1][-]{section.A.1}{The KLFitter}{Alternative Top Reconstruction with the KLFitter.0}% 42
+\BOOKMARK [1][-]{section.A.2}{Comparison}{Alternative Top Reconstruction with the KLFitter.0}% 43
+\BOOKMARK [0][-]{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}{CP-BDT Studies with the Toolkit for Multivariate Analysis}{}% 44
+\BOOKMARK [1][-]{section.B.1}{Additional CP BDT Studies with TMVA}{CP-BDT Studies with the Toolkit for Multivariate Analysis.0}% 45
+\BOOKMARK [0][-]{Auxiliary Plots.0}{Auxiliary Plots}{}% 46
+\BOOKMARK [0][-]{Reducing Spurious Signal With Gaussian Process Regression.0}{Reducing Spurious Signal With Gaussian Process Regression}{}% 47
+\BOOKMARK [1][-]{section.D.1}{Gaussian Processes smoothed background templates}{Reducing Spurious Signal With Gaussian Process Regression.0}% 48
+\BOOKMARK [0][-]{Validation Tests of the Gaussian Process Regression Method.0}{Validation Tests of the Gaussian Process Regression Method}{}% 49
+\BOOKMARK [1][-]{section.E.1}{Validation of Gaussian Process Smoothing}{Validation Tests of the Gaussian Process Regression Method.0}% 50
+\BOOKMARK [0][-]{section*.255}{Bibliography}{}% 51

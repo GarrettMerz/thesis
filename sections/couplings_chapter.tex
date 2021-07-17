@@ -19,11 +19,10 @@ Categorization proceeds in two primary steps. First, a multiclassifier Boosted D
 
 The inputs to all BDTs are kinematic variables for the various objects in an event. In order to avoid sculpting of the shapes used in the statistical analysis, any variable found to be linearly correlated with $m_{\gamma \gamma}$ in the signal or background training samples by 5\% or more is removed from the list of inputs. The list of all variables used as input to both the multiclassifier BDT and the binary BDTs is given in Table \ref{tab:design:trainingvariables}.
 
-\begin{landscape}
 
-\begin{table}[]
+\begin{sidewaystable}[]
 \begin{center} \footnotesize
-\resizebox{1.25\textwidth}{!}{
+\resizebox{\textwidth}{!}{
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 STXS regions & Multi-class BDT & STXS regions  & Binary BDT  \\ \hline
@@ -91,8 +90,7 @@ STXS regions & Multi-class BDT & STXS regions  & Binary BDT  \\ \hline
 \label{tab:design:trainingvariables}
 
 \end{center}
-\end{table}
-\end{landscape}
+\end{sidewaystable}
 
 To train the multiclassifier BDT, all signal samples are merged ($ggF$, $VH$, $VBF$, $ttH$, $tH$). A weight is then applied to each event such that all processes have equal yields in the training sample (that is, so processes such as $tH$ with a small cross-section are not underrepresented). The output of the multiclassifier BDT is a 44-dimensional vector discriminant with an index $y_{i}$ for each truth bin; these indices are then converted into class probabilities $z_{i}$ using a softmax function: $z_{i} = e^{y_{i}}/{\Sigma_{j}e^{y_{j}}}$. The BDT is trained by minimizing the cross-entropy of the softmax $z_{i}$ using the LightGBM package \cite{LightGBM}.
 
@@ -243,7 +241,7 @@ $tHjb$                           &      0.88  &   2.7  &  0.24  &   0.5  \\
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_1}
+\includegraphics[width=\textwidth]{figures/couplings_chapter/purity_2D_subplots_1}
 \caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \ggtoH\ categories and truth bins. Entries with a value below $1\%$ are omitted.}
 \label{fig:yields_1}
 \end{figure}
@@ -251,7 +249,7 @@ $tHjb$                           &      0.88  &   2.7  &  0.24  &   0.5  \\
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_2}
+\includegraphics[width=\textwidth]{figures/couplings_chapter/purity_2D_subplots_2}
 \caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \qqtoHqq\ categories and truth bins. Entries with a value below $1\%$ are omitted.}
 \label{fig:yields_2}
 \end{figure}
@@ -259,7 +257,7 @@ $tHjb$                           &      0.88  &   2.7  &  0.24  &   0.5  \\
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_3}
+\includegraphics[width=\textwidth]{figures/couplings_chapter/purity_2D_subplots_3}
 \caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \qqtoHll\ and \qqtoHln\ categories and truth bins. Entries with a value below $1\%$ are omitted.}
 \label{fig:yields_3}
 \end{figure}
@@ -267,23 +265,21 @@ $tHjb$                           &      0.88  &   2.7  &  0.24  &   0.5  \\
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_4}
+\includegraphics[width=\textwidth]{figures/couplings_chapter/purity_2D_subplots_4}
 \caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \ttH\, $tWH$, and $tHjb$ categories and truth bins. Entries with a value below $1\%$ are omitted.}
 \label{fig:yields_4}
 \end{figure}
 
-\begin{landscape}
-\begin{figure}[h]
+\begin{sidewaysfigure}[h]
 \centering
-\includegraphics[width=1.5\textwidth]{figures/couplings_chapter/purity_2D_subplots_5}
+\includegraphics[width=\textwidth]{figures/couplings_chapter/purity_2D_subplots_5}
 \caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \qqtoHqq\ STXS truth bins and \ggtoH\ analysis categories. Entries with a value below $1\%$ are omitted.}
 \label{fig:yields_5}
-\end{figure}
-\end{landscape}
+\end{sidewaysfigure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.09\textwidth]{figures/couplings_chapter/purity_2D_subplots_6}
+\includegraphics[width=\textwidth]{figures/couplings_chapter/purity_2D_subplots_6}
 \caption{The correspondence between analysis category and STXS truth bins, in terms of the percentage contribution of a given STXS truth bin (y-axis) to the Higgs signal yield in a given analysis category (x-axis) for \ggtoH\ STXS truth bins and \qqtoHqq\ analysis categories. Entries with a value below $1\%$ are omitted.}
 \label{fig:yields_6}
 \end{figure}
@@ -292,7 +288,7 @@ $tHjb$                           &      0.88  &   2.7  &  0.24  &   0.5  \\
 
 As in the CP analysis, a profile likelihood ratio fit is conducted simultaneously in all categories and a signal strength parameter is extracted.
 
-Signal in each category is modelled using a Double-Sided Crystal Ball function, fit to Higgs-signal Monte Carlo. The Higgs mass is fixed to the run-1 measured value of $125.09$ GeV $\pm 0.21 $GeV(stat) $\pm 0.1 $GeV(syst) \cite{Higgsmass}.
+Signal in each category is modelled using a Double-Sided Crystal Ball function, fit to Higgs-signal Monte Carlo. The Higgs mass is fixed to the run-1 measured value of $125.09$ GeV $\pm 0.21 $GeV (stat) $\pm 0.1 $GeV (syst) \cite{Higgsmass}.
 
 Similarly, background is modelled using the spurious signal test. As detailed in Chapter \ref{chap:sigbkgparam}, in the $ggH$ and $qq \rightarrow Hqq'$ categories, the templates for the spurious signal study are conducted from Sherpa diphoton samples reweighted to model the proportional contributions of $\gamma \gamma$, $\gamma j$ and $jj$ events consisting of both true and fake photons in each category. In the leptonic $VH$ and $ttH+tH$ regions, however, the $\gamma j$ and $jj$ contributions are small enough to be neglected, so $V\gamma\gamma$ and $tt\gamma\gamma$ Monte Carlo respectively are used for the templates. In the low-stat categories, a Wald test is used to select the functional form. The spurious signal values and the choice of function are given in Tables \ref{tab:spurious_sig} and \ref{tab:spurious_sig2} . 
 

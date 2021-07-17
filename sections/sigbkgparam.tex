@@ -8,12 +8,14 @@ In collider physics analyses, the production of a particle in a particular regio
 
 For both analyses discussed in this dissertation, a ``Double-Sided Crystal Ball" (DSCB) function \cite{CB}\cite{DSCB} is used. The function has six parameters, two that describe the shape of its Gaussian core $\mu_{CB}$, and $\sigma_{CB}$, and two that describe the shape of each of its exponential tails: $\alpha_{low}$ and $n_{low}$; $\alpha_{high}$ and $n_{high}$. The function is defined as:
 
-\[f_{DSCB}(m_{\gamma \gamma}) = \begin{cases} 
+\begin{equation}
+ f_{DSCB}(m_{\gamma \gamma}) = \begin{cases} 
       e^{\frac{-{\alpha_{low}^{2}}}{2}} (\frac{R_{low}-\alpha_{low}-t}{R_{low}})^{n_{low}} & \mbox{if } t < -\alpha_{low} \\
       e^{\frac{-t^{2}}{2}} & \mbox{if } -\alpha_{low} \leq t \leq \alpha_{high} \\
       e^{\frac{-{\alpha_{high}^{2}}}{2}} (\frac{R_{high}-\alpha_{high}+t}{R_{high}})^{n_{high}} & \mbox{if } t > \alpha_{high} \\
    \end{cases}
-\]
+\end{equation}
+
 
 where $t = \frac{(m_{\gamma \gamma} - \mu_{CB})}{\sigma_{CB}}$ and $R = \frac{n}{\alpha}$. 
 
@@ -49,7 +51,7 @@ The spurious signal fit is performed for signal masses from 121 GeV to 129 GeV a
 \begin{itemize}
 \item Exponential Function: $f(\myy) = e^{c\cdot \myy}$
 \item Exponential Function of $2^{nd}$ Order Polynomial: $f(\myy) = e^{c_1\cdot m^2_{\gamma\gamma}+c_2\cdot \myy}$
-\item Bernstein polynomial of order $N$: $B_{N}(\myy) = \sum_{i=0}^N c_i\cdot b_{i,N}$ with ${b_{i,N} = \begin{pmatrix}N\\i\end{pmatrix}\myy^i (1-\myy)^{N-i}}$
+\item Bernstein polynomial of order $N$: $B_{N}(\myy) = \sum_{i=0}^N c_i\cdot b_{i,N}$\\ with ${b_{i,N} = \begin{pmatrix}N\\i\end{pmatrix}\myy^i (1-\myy)^{N-i}}$
 \item First-Order Power Law Function: $f(\myy) = \myy^c$
 \end{itemize}
 

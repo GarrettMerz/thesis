@@ -6,6 +6,7 @@
 \usepackage{\ATLASLATEXPATH atlasphysics}
 \usepackage{ANA-HIGG-2020-16-INT1-defs}
 
+\usepackage{showframe}
 \RequirePackage{doi}
 \usepackage{hyperref}
 \usepackage{pgffor}
@@ -17,7 +18,7 @@
 \usepackage{mathrsfs}
 \usepackage{float}
 \usepackage{makecell}
-\usepackage{lscape}
+\usepackage{rotating}
 \usepackage{pdflscape}
 \usepackage{amsmath}
 \usepackage{xifthen}
@@ -60,45 +61,42 @@
 \year=2021
 
 % ORCID ID 
-\orcid{My Orcid ID}
+\orcid{0000-0003-4737-3931}
 
 % UM Unique Name 
 \umuniquename{gwmerz}
 
 % Frontispiece
-%\frontispiece{\includegraphics[width=4in]{./pics/frontispiece.pdf}}
+\frontispiece{ “Questing Physicks isn’t like the Quiet and Queer branches. You can’t do it at home in a comfortable chair—you have to be out in the thick of the business, with your tools on your belt and your heart on your sleeve!” - Catherynne Valente, The Girl Who Fell Beneath Fairyland and Led The Revels There \cite{Fairyland}. \\ }
 
 % Default style for front pages
 \frontpagestyle{1}
 
 % Dedication
-\dedication{ “Questing Physicks isn’t like the Quiet and Queer branches. You can’t do it at home in a comfortable chair—you have to be out in the thick of the business, with your tools on your belt and your heart on your sleeve!” - Catherynne Valente, The Girl Who Fell Beneath Fairyland and Led The Revels There \cite{Fairyland}. \\ }
-
-
-
-
-
+%\dedication{}
 
 % Acknowledgments
 \acknowledgments[6]{
 
 The acknowledgements section of this dissertation, perhaps surprisingly, is the hardest for me to write. If left to my own devices, I have no doubt that the list of people I'd want to thank would be as long as the rest of this paper, if not longer. Like the globe held up by the Atlas of myth, my world is perched upon the shoulders of giants. Completing a dissertation at any point is no easy task, let alone in the middle of a pandemic- I could not have done this alone.
 
-To all the members of the Fondue group, past and present- thank you for making graduate school a place where I could give my best and know it was enough, and for helping me learn how to keep my often-very-scattered brain on task. Learning how to thrive as part of a big collaboration like ATLAS has been difficult, but Tom, Yanlin, Allison, Rachel, Dan, Hao, Xueyue, Sabrina, and everyone else- if it weren't for your kindness and support, I don't know if I'd have been stubborn enough to stick around long enough to see this thing through.
+To all the members of the Fondue group, past and present- thank you for making graduate school a place where I could give my best and know it was enough, and for helping me learn how to keep my often-very-scattered brain on task. Learning how to thrive as part of a big collaboration like ATLAS has been difficult, but Tom, Yanlin, Allison, Rachel, Dan, Hao, Xueyue, Sabrina, and everyone else- if it weren't for the kindness and support of a group like yours, I don't know if I'd have been stubborn enough to stick around long enough to see this thing through.
 
-%To all the other math and science mentors I've had over the years- Richard Hughes, Brian Winer, Robert Perry, Richard Chute, Brett Miller, and so many more: thank you for everything you've done for me. 
+To all the other math and science mentors I've had over the years- Richard Hughes, Brian Winer, Robert Perry, Richard Chute, Brett Miller, and so many more: thank you for sharing your passion and your time, and for walking me along your part of this road.
 
-%To all the friends who have gotten me through: Lucas, Kaeli, Doug, Abby, Gates, Gaurav, Rob, Iris, Johnathon, Jennifer, Rachel, Karley, Owen, Rory, Matt, Kara, Eric, and countless others- thank you.
+To all the friends who have gotten me through: Lucas, Kaeli, Doug, Abby, Gates, Gaurav, Rob, Iris, Johnathon, Jennifer, Rachel, Karley, Owen, Rory, Matt, Kara, Eric, and countless others- thank you. Having a life full of laughter to come back to at the end of a long science time has made the days go by easier.
 
 To my parents, Gregg and Gretchen, thank you for working so hard to foster a lifelong sense of curiosity in me, in a world that doesn't always value it. Without the endless stream of NOVA specials, public lectures, and museum trips, I would not be the person I am today. Thank you for always taking an interest in the ideas I've devoted the last few years of my life to- the endless stream of questions and articles and excitement has made me a much better science communicator, and has served as a constant reminder of why I like this stuff in the first place.
 
-To my brother Grant, thank you for being such a constant companion throughout my science career- the fact that there are two physicists in the family has made this work a lot less lonely. The fact that we're so different and yet so similar has shown me that there are many, many different ways to love the universe and the ways it's put together. I've learned a lot about myself during my time in graduate school, and I hope yours is as illuminating as mine has been (though hopefully less exhausting).
+To my brother Grant, thank you for being such a constant companion throughout my science career- the fact that there are two physicists in the family has made this work so much less lonely. The fact that we're so different and yet so similar has shown me that there are many, many different ways to love the universe and the ways it's put together. I've learned a lot about myself during my time in graduate school, and I hope your time is as illuminating as mine has been (though hopefully less exhausting).
 
 To my grandparents, JoAnn and Ray, Ray and Sue, and Bert and Ron- thank you for your investments of time, energy, resources, and love for all these years. I know you're proud of me, but I'm just as proud of you- I hope when I'm old I can love the younger generations of my family as profoundly as you've loved yours. 
 
-%To the rest of my family- cousins, 
+To all the Goodharts: thank you for welcoming me into your family, and for being there to offer support, coffee, and company when I've needed it most. You're all wonderful, thoughtful people, and I'm very grateful for your kindness.
 
-Most of all, of course, thanks to my partner, Abigail Goodhart. Thank you for helping me to nurture a poet's eye as well as a scientist's, for helping me to better know the kind of person I am and want to be, and for making this hard year (and the ones before it) brighter and more full of joy. Every day with you is a gift- even when the world feels like it's ending, we have fun. I love you.
+To the rest of my family- cousins, aunts, uncles, and the rest: thank you for always being excited about and interested in the things I do and the person I am. It takes a whole village to make a doctor, and you are all a part of the person I am today.
+
+Most of all, of course, thanks to my partner, Abigail Goodhart. Thank you for helping me to nurture a poet's eye as well as a scientist's, for helping me to better know the kind of person I am and want to be, and for making this hard year (and the ones before it) brighter and more full of joy. Every day with you is a gift- even when the world feels like it's falling to pieces, we have fun. I love you.
 
 This material is based upon work supported by the National Science Foundation under Grant No. DGE 1256260. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author and do not necessarily reflect the views of the National Science Foundation.
 
@@ -112,11 +110,11 @@ This material is based upon work supported by the National Science Foundation un
 
 % Committee
 \committee{ %
-Thomas Schwarz, Chair \\
-Dante Amidei \\ 
-Junjie Zhu \\ 
-James Liu \\ 
-Eric Bell \\ }
+Professor Thomas Schwarz, Chair \\
+Professor Dante Amidei \\ 
+Professor Eric Bell \\
+Professor James Liu \\
+Professor Junjie Zhu \\ }
 
 % Chair must be entered separately for formatting reasons.
 \chair{Thomas Schwarz}

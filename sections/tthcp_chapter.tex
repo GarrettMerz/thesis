@@ -21,9 +21,7 @@ The signal-versus-background BDT (SBBDT) developed for use in the CP Analysis is
 Both the hadronic and leptonic BDTs are trained using a Standard-Model Powheg $ttH$ Monte Carlo sample to model the signal and NTI data control events to model the continuum diphoton background.
 
 \subsubsection{Hadronic Region} \label{sec:SBBDThad} 
-In the hadronic region, 60\% of the $ttH$ Monte Carlo signal events are used for training, 20\% are reserved for categorization and BDT hyperparameter optimization, and the final 20\% are reserved for validation. 60\% of the NTI events are used for training, 20\% are reserved for hyperparameter optimization, and the remaining 20\% are reserved for testing and significance evaluation.
-
-The input variables chosen are: 
+In the hadronic region, 60\% of the $ttH$ Monte Carlo signal events are used for training, 20\% are reserved for categorization and BDT hyperparameter optimization, and the final 20\% are reserved for validation. 60\% of the NTI events are used for training, 20\% are reserved for hyperparameter optimization, and the remaining 20\% are reserved for testing and significance evaluation. The input variables chosen are: 
 
 \begin{itemize}
 \item $p_{T}/m_{\gamma \gamma}$, $\eta$ and $\phi$ of the two photons. Photon $p_{T}$ is scaled by $m_{\gamma \gamma}$ to reduce unwanted sculpting of the diphoton mass spectrum. 
@@ -143,7 +141,7 @@ These variables are shown in Figures \ref{fig:ttH_truth} - \ref{fig:tHjb_truth}.
       \includegraphics[width=0.31\textwidth]{figures/tthcp_chapter/observables/ttH/c_tH_m.pdf}
     }
   \end{center}
-  \caption{Truth-level distributions in $t\bar{t}H$ Monte Carlo of the Higgs boson $p_{T}$, Higgs boson $\eta$, and top quark $p_{T}$ (top row), top quark $\eta$ and angular separation between top and anti-top quarks (second row), signed $\Delta\phi$ between (a) the two top quarks, (b) a top quark and the daughter W of the other top quark, and (c) a top quark and the highest $p_{T}$ light jet from the hadronic decay of the other top's daughter W (third row) and invariant mass of the top-Higgs system (bottom row) for different values of the CP mixing angle $\alpha$.}
+  \caption{Truth-level distributions in $t\bar{t}H$ Monte Carlo of the Higgs $p_{T}$, Higgs $\eta$, and top quark $p_{T}$ (top row), top quark $\eta$ and angular separation between the top and anti-top (second row), signed $\Delta\phi$ between the leading top quark and, in order: the subleading top, the daughter W of the other top quark, and the highest $p_{T}$ light jet from the hadronic decay of the subleading top (third row) and invariant mass of the top-Higgs system (bottom row) for different values of $\alpha$.}
   \label{fig:ttH_truth}
 \end{figure}
 
