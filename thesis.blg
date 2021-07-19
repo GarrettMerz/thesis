@@ -14,6 +14,9 @@ Repeated entry---line 2017 of file ./bib/thesis-bib.bib
  : @article{Higgsmass
  :                   ,
 I'm skipping whatever remains of this entry
+Warning--empty journal in LHCRing
+Name 1 in "Aad, G., and others" has a comma at the end for entry ATLAS_Jinst
+while executing---line 1245 of file aiaa.bst
 Name 1 in "de Florian, D., and others" has a comma at the end for entry YellowReport4
 while executing---line 1245 of file aiaa.bst
 Warning--empty publisher in YellowReport4
@@ -26,10 +29,7 @@ while executing---line 1245 of file aiaa.bst
 Name 1 in "S Chatrchyan, and others" has a comma at the end for entry CMS_TDR
 while executing---line 1245 of file aiaa.bst
 Warning--empty author in LHCb_TDR
-Warning--empty journal in LHCRing
 Name 1 in "Aad, G., and others" has a comma at the end for entry muonsTDR
-while executing---line 1245 of file aiaa.bst
-Name 1 in "Aad, G., and others" has a comma at the end for entry ATLAS_Jinst
 while executing---line 1245 of file aiaa.bst
 Name 1 in "Aad, G., and others" has a comma at the end for entry ID
 while executing---line 1245 of file aiaa.bst

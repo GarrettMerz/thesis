@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  19 JUL 2021 09:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.12.19)  19 JUL 2021 14:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10426,20 +10426,20 @@ background/gpr/validation/linear/ToyTest_FitSigVals_highpT_1M_Sig_1s.pdf>]
 ig_1s.pdf> <./figures/background/gpr/validation/linear/ToyTest_FitSigVals_medpT
 _10M_Sig_1s.pdf> <./figures/background/gpr/validation/linear/ToyTest_FitSigVals
 _highpT_10M_Sig_1s.pdf>] [281]) [282] (./thesis.bbl
-Overfull \hbox (10.45197pt too wide) in paragraph at lines 61--64
+Overfull \hbox (10.45197pt too wide) in paragraph at lines 9--12
 []\OT1/ptm/m/n/12 Wikipedia Con-trib-u-tors, ``Stan-dard Model,'' 2021, https:e
 n.wikipedia.orgwikiStandard[]Model.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+[]\OT1/ptm/m/n/12 Randle-Conde, Aidan, ``Feyn-man Di-a-gram Maker,'' 2015,
  []
 
 [283
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-[]\OT1/ptm/m/n/12 Randle-Conde, Aidan, ``Feyn-man Di-a-gram Maker,'' 2015,
- []
-
-[284] [285] [286] [287] [288] [289] [290] [291]
+] [284] [285] [286] [287] [288] [289] [290] [291]
 Underfull \hbox (badness 10000) in paragraph at lines 678--680
 []\OT1/ptm/m/n/12 Head, T. et al., ``scikit-optimize/scikit-optimize: v0.5.2,''
  March 2018,
@@ -10465,7 +10465,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 280.
 Here is how much of TeX's memory you used:
  30652 strings out of 481239
  694871 string characters out of 5920376
- 1285338 words of memory out of 5000000
+ 1285333 words of memory out of 5000000
  43845 multiletter control sequences out of 15000+600000
  584642 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -10496,7 +10496,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
 ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on thesis.pdf (331 pages, 27287760 bytes).
+Output written on thesis.pdf (331 pages, 27287897 bytes).
 PDF statistics:
  9552 PDF objects out of 10688 (max. 8388607)
  6341 compressed objects within 64 object streams
